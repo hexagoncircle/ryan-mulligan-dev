@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Site Information-->
+  <title>Ryan Mulligan</title>
+  <meta name="description" content="A front-end developer and UI engineer specializing in HTML, CSS, and Javascript, design system thinking, and client-side product development"/>
+  <meta name="theme-color" content="#E01A4F">
+  <!-- Favicon-->
+  <link rel="icon" href="assets/favicon.svg">
+  <link rel="mask-icon" href="assets/favicon.svg" color="#E01A4F">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <!-- Open Graph Meta-->
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="http://hexagoncircle.com"/>
+  <meta property="og:title" content="Ryan Mulligan"/>
+  <meta property="og:description" content="Front-end developer and UI engineer"/>
+  <meta property="og:image" content="http://hexagoncircle.com/assets/hc_screenshot.png"/>
+  <!-- Twitter Card Meta-->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@hexagoncircle"/>
+  <meta name="twitter:title" content="Ryan Mulligan"/>
+  <meta name="twitter:description" content="Front-end developer and UI engineer"/>
+  <meta name="twitter:image" content="http://hexagoncircle.com/assets/hc_screenshot.png"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Petrona:ital,wght@1,500&family=Work+Sans:ital,wght@0,360;0,560;1,360&display=swap" rel="stylesheet">
+	<title></title>
+	<link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body data-no-js data-theme="1">
+	<header class="page-header">
+		<svg class="icon-header" aria-hidden="true" viewBox="0 0 24 36">
+			<rect x="0" y="0" width="24" height="12" />
+			<rect x="0" y="0" width="12" height="24"/>
+			<rect x="12" y="24" width="12" height="12"/>
+		</svg>
+		<nav id="nav" aria-label="Social navigation links" class="nav-header">
+  <ul class="social-links">
+    <li>
+      <a class="social-link" href="https://www.twitter.com/hexagoncircle" title="Chat with me on Twitter" target="_blank" rel="noopener">
+        <svg class="icon" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+        </svg>
+      </a>
+    </li>
+    <li>
+      <a class="social-link" href="https://www.codepen.io/hexagoncircle" title="Check out my projects on CodePen" target="_blank" rel="noopener">
+        <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="m.455 16.512 10.969 7.314c.374.23.774.233 1.152 0l10.969-7.314c.281-.187.455-.522.455-.857v-7.312c0-.335-.174-.67-.455-.857l-10.969-7.313c-.374-.23-.774-.232-1.152 0l-10.969 7.313c-.281.187-.455.522-.455.857v7.312c0 .335.174.67.455.857zm10.514 4.528-8.076-5.384 3.603-2.411 4.473 2.987zm2.062 0v-4.808l4.473-2.987 3.603 2.411zm8.907-7.314-2.585-1.727 2.585-1.728zm-8.907-10.767 8.076 5.384-3.603 2.411-4.473-2.987zm-1.031 6.602 3.643 2.438-3.643 2.438-3.643-2.438zm-1.031-6.602v4.808l-4.473 2.987-3.603-2.411zm-8.906 7.314v-.001l2.585 1.728-2.585 1.728z" />
+        </svg>
+      </a>
+    </li>
+    <li>
+      <a class="social-link" href="https://github.com/hexagoncircle" title="Fork me on GitHub" target="_blank" rel="noopener">
+        <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+        </svg>
+      </a>
+    </li>
+    <li>
+      <a class="social-link" href="https://dribbble.com/hexagoncircle" title="See my shots on Dribbble" target="_blank" rel="noopener">
+        <svg class="icon" aria-hidden="true" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M12 24C5.385 24 0 18.615 0 12S5.385 0 12 0s12 5.385 12 12-5.385 12-12 12zm10.12-10.358c-.35-.11-3.17-.953-6.384-.438 1.34 3.684 1.887 6.684 1.992 7.308 2.3-1.555 3.936-4.02 4.395-6.87zm-6.115 7.808c-.153-.9-.75-4.032-2.19-7.77l-.066.02c-5.79 2.015-7.86 6.025-8.04 6.4 1.73 1.358 3.92 2.166 6.29 2.166 1.42 0 2.77-.29 4-.814zm-11.62-2.58c.232-.4 3.045-5.055 8.332-6.765.135-.045.27-.084.405-.12-.26-.585-.54-1.167-.832-1.74C7.17 11.775 2.206 11.71 1.756 11.7l-.004.312c0 2.633.998 5.037 2.634 6.855zm-2.42-8.955c.46.008 4.683.026 9.477-1.248-1.698-3.018-3.53-5.558-3.8-5.928-2.868 1.35-5.01 3.99-5.676 7.17zM9.6 2.052c.282.38 2.145 2.914 3.822 6 3.645-1.365 5.19-3.44 5.373-3.702-1.81-1.61-4.19-2.586-6.795-2.586-.825 0-1.63.1-2.4.285zm10.335 3.483c-.218.29-1.935 2.493-5.724 4.04.24.49.47.985.68 1.486.08.18.15.36.22.53 3.41-.43 6.8.26 7.14.33-.02-2.42-.88-4.64-2.31-6.38z" />
+        </svg>
+      </a>
+    </li>
+  </ul>
+</nav>
+		<h1 class="title">Ryan Mulligan</h1>
+		<p class="subtitle">your friendly <span>front-end interface <label for="theme" class="visually-hidden">Slide to change the theme</label><input title="Slide to change the theme" class="theme-slider" type="range" id="theme" name="theme" min="1" max="5" value="1"></span> <span>& experience engineer<span></p>
+	</header>
+
+	<section class="full-bleed">
+		<ul class="project-list scroll-x">
+			<li class="project-list-mark">
+				<a class="icon-codepen" href="https://codepen.io/hexagoncircle" title="View my CodePen profile" target="_blank" rel="noopener">
+					<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+						<path d="M18.144 13.067v-2.134L16.55 12zm1.276 1.194a.628.628 0 01-.006.083l-.005.028-.011.053-.01.031c-.005.016-.01.031-.017.047l-.014.03a.78.78 0 01-.021.043l-.019.03a.57.57 0 01-.08.1l-.026.025a.602.602 0 01-.036.03l-.029.022-.01.008-6.782 4.522a.637.637 0 01-.708 0L4.864 14.79l-.01-.008a.599.599 0 01-.065-.052l-.026-.025-.032-.034-.021-.028a.588.588 0 01-.067-.11l-.014-.031a.644.644 0 01-.017-.047l-.01-.03c-.004-.018-.008-.036-.01-.054l-.006-.028a.628.628 0 01-.006-.083V9.739c0-.028.002-.055.006-.083l.005-.027.011-.054.01-.03a.574.574 0 01.12-.217l.031-.034.026-.025a.62.62 0 01.065-.052l.01-.008 6.782-4.521a.638.638 0 01.708 0l6.782 4.521.01.008.03.022.035.03c.01.008.017.016.026.025a.545.545 0 01.08.1l.019.03a.633.633 0 01.021.043l.014.03c.007.016.012.032.017.047l.01.031c.004.018.008.036.01.054l.006.027a.619.619 0 01.006.083zM12 0C5.373 0 0 5.372 0 12 0 18.627 5.373 24 12 24c6.628 0 12-5.372 12-12 0-6.627-5.372-12-12-12m0 10.492L9.745 12 12 13.51 14.255 12zm.638 4.124v2.975l4.996-3.33-2.232-1.493zm-6.272-.356l4.996 3.33v-2.974l-2.764-1.849zm11.268-4.52l-4.996-3.33v2.974l2.764 1.85zm-6.272-.356V6.41L6.366 9.74l2.232 1.493zm-5.506 1.549v2.134L7.45 12Z" />
+					</svg>
+				</a>
+			</li>
+			
+				<li class="project-list-item">
+					<a href="https://codepen.io/hexagoncircle/full/jgGxKR" title="React Slider w/ Hover Effect" target="_blank" rel="noopener">
+							<img src="https://codepen.io/hexagoncircle/pen/jgGxKR/image/large.png" alt="" loading="lazy" data-is-loading />
+					</a>
+				</li>
+			
+				<li class="project-list-item">
+					<a href="https://codepen.io/hexagoncircle/full/XWbWKwL" title="Card Hover Interactions" target="_blank" rel="noopener">
+							<img src="https://codepen.io/hexagoncircle/pen/XWbWKwL/image/large.png" alt="" loading="lazy" data-is-loading />
+					</a>
+				</li>
+			
+				<li class="project-list-item">
+					<a href="https://codepen.io/hexagoncircle/full/gOMrbOR" title="CSSometric" target="_blank" rel="noopener">
+							<img src="https://codepen.io/hexagoncircle/pen/gOMrbOR/image/large.png" alt="" loading="lazy" data-is-loading />
+					</a>
+				</li>
+			
+				<li class="project-list-item">
+					<a href="https://codepen.io/hexagoncircle/full/gORePQx" title="Cool Spotlight Shadows" target="_blank" rel="noopener">
+							<img src="https://codepen.io/hexagoncircle/pen/gORePQx/image/large.png" alt="" loading="lazy" data-is-loading />
+					</a>
+				</li>
+			
+				<li class="project-list-item">
+					<a href="https://codepen.io/hexagoncircle/full/gORYwrg" title="Food Trucks On Demand" target="_blank" rel="noopener">
+							<img src="https://codepen.io/hexagoncircle/pen/gORYwrg/image/large.png" alt="" loading="lazy" data-is-loading />
+					</a>
+				</li>
+			
+				<li class="project-list-item">
+					<a href="https://codepen.io/hexagoncircle/full/gOWjwme" title="Horizontal scrolling in a centered max-width container" target="_blank" rel="noopener">
+							<img src="https://codepen.io/hexagoncircle/pen/gOWjwme/image/large.png" alt="" loading="lazy" data-is-loading />
+					</a>
+				</li>
+			
+				<li class="project-list-item">
+					<a href="https://codepen.io/hexagoncircle/full/MWgbqON" title="Animated Verbs (part one of three)" target="_blank" rel="noopener">
+							<img src="https://codepen.io/hexagoncircle/pen/MWgbqON/image/large.png" alt="" loading="lazy" data-is-loading />
+					</a>
+				</li>
+			
+				<li class="project-list-item">
+					<a href="https://codepen.io/hexagoncircle/full/wvJPjQa" title="Thank you – have a nice day" target="_blank" rel="noopener">
+							<img src="https://codepen.io/hexagoncircle/pen/wvJPjQa/image/large.png" alt="" loading="lazy" data-is-loading />
+					</a>
+				</li>
+			
+				<li class="project-list-item">
+					<a href="https://codepen.io/hexagoncircle/full/abJEeXL" title="Viewport Gradient Rotation" target="_blank" rel="noopener">
+							<img src="https://codepen.io/hexagoncircle/pen/abJEeXL/image/large.png" alt="" loading="lazy" data-is-loading />
+					</a>
+				</li>
+			
+				<li class="project-list-item">
+					<a href="https://codepen.io/hexagoncircle/full/bGWmExK" title="Alternating Sections" target="_blank" rel="noopener">
+							<img src="https://codepen.io/hexagoncircle/pen/bGWmExK/image/large.png" alt="" loading="lazy" data-is-loading />
+					</a>
+				</li>
+			
+				<li class="project-list-item">
+					<a href="https://codepen.io/hexagoncircle/full/vYJWVvy" title="Good Morning Friends" target="_blank" rel="noopener">
+							<img src="https://codepen.io/hexagoncircle/pen/vYJWVvy/image/large.png" alt="" loading="lazy" data-is-loading />
+					</a>
+				</li>
+			
+				<li class="project-list-item">
+					<a href="https://codepen.io/hexagoncircle/full/JjYLLNR" title="MCU Timeline Carousel" target="_blank" rel="noopener">
+							<img src="https://codepen.io/hexagoncircle/pen/JjYLLNR/image/large.png" alt="" loading="lazy" data-is-loading />
+					</a>
+				</li>
+			
+				<li class="project-list-item">
+					<a href="https://codepen.io/hexagoncircle/full/zYxzQqa" title="Password Input Light" target="_blank" rel="noopener">
+							<img src="https://codepen.io/hexagoncircle/pen/zYxzQqa/image/large.png" alt="" loading="lazy" data-is-loading />
+					</a>
+				</li>
+			
+				<li class="project-list-item">
+					<a href="https://codepen.io/hexagoncircle/full/bGqVyxm" title="Grim Reaper&#39;s Used Cars - Deal Wheel" target="_blank" rel="noopener">
+							<img src="https://codepen.io/hexagoncircle/pen/bGqVyxm/image/large.png" alt="" loading="lazy" data-is-loading />
+					</a>
+				</li>
+			
+				<li class="project-list-item">
+					<a href="https://codepen.io/hexagoncircle/full/LYNNYyQ" title="Supa Dupa Fly Hover" target="_blank" rel="noopener">
+							<img src="https://codepen.io/hexagoncircle/pen/LYNNYyQ/image/large.png" alt="" loading="lazy" data-is-loading />
+					</a>
+				</li>
+			
+				<li class="project-list-item">
+					<a href="https://codepen.io/hexagoncircle/full/gJNPON" title="Burger Boxer" target="_blank" rel="noopener">
+							<img src="https://codepen.io/hexagoncircle/pen/gJNPON/image/large.png" alt="" loading="lazy" data-is-loading />
+					</a>
+				</li>
+			
+				<li class="project-list-item">
+					<a href="https://codepen.io/hexagoncircle/full/oNLZmvV" title="Dynamic Sticky Sidebar Component" target="_blank" rel="noopener">
+							<img src="https://codepen.io/hexagoncircle/pen/oNLZmvV/image/large.png" alt="" loading="lazy" data-is-loading />
+					</a>
+				</li>
+			
+				<li class="project-list-item">
+					<a href="https://codepen.io/hexagoncircle/full/KexJjm" title="CSS Grid Menu Panels" target="_blank" rel="noopener">
+							<img src="https://codepen.io/hexagoncircle/pen/KexJjm/image/large.png" alt="" loading="lazy" data-is-loading />
+					</a>
+				</li>
+			
+				<li class="project-list-item">
+					<a href="https://codepen.io/hexagoncircle/full/xxRNRwP" title="Simon Says, &#39;Tetradic Color Palette #CodePenChallenge&#39;" target="_blank" rel="noopener">
+							<img src="https://codepen.io/hexagoncircle/pen/xxRNRwP/image/large.png" alt="" loading="lazy" data-is-loading />
+					</a>
+				</li>
+			
+				<li class="project-list-item">
+					<a href="https://codepen.io/hexagoncircle/full/abmyQBN" title="Ask Emoji" target="_blank" rel="noopener">
+							<img src="https://codepen.io/hexagoncircle/pen/abmyQBN/image/large.png" alt="" loading="lazy" data-is-loading />
+					</a>
+				</li>
+			
+				<li class="project-list-item">
+					<a href="https://codepen.io/hexagoncircle/full/JjRYaZw" title="CSS Sticky Parallax Sections" target="_blank" rel="noopener">
+							<img src="https://codepen.io/hexagoncircle/pen/JjRYaZw/image/large.png" alt="" loading="lazy" data-is-loading />
+					</a>
+				</li>
+			
+				<li class="project-list-item">
+					<a href="https://codepen.io/hexagoncircle/full/zYqYvEV" title="CSSpirograph" target="_blank" rel="noopener">
+							<img src="https://codepen.io/hexagoncircle/pen/zYqYvEV/image/large.png" alt="" loading="lazy" data-is-loading />
+					</a>
+				</li>
+			
+				<li class="project-list-item">
+					<a href="https://codepen.io/hexagoncircle/full/yLeGbgJ" title="Bold Hover Animations with Splitting.js" target="_blank" rel="noopener">
+							<img src="https://codepen.io/hexagoncircle/pen/yLeGbgJ/image/large.png" alt="" loading="lazy" data-is-loading />
+					</a>
+				</li>
+			
+				<li class="project-list-item">
+					<a href="https://codepen.io/hexagoncircle/full/MWJoYxv" title="Orbiting Through Torus" target="_blank" rel="noopener">
+							<img src="https://codepen.io/hexagoncircle/pen/MWJoYxv/image/large.png" alt="" loading="lazy" data-is-loading />
+					</a>
+				</li>
+			
+				<li class="project-list-item">
+					<a href="https://codepen.io/hexagoncircle/full/ExjwZZg" title="CSS Chop!" target="_blank" rel="noopener">
+							<img src="https://codepen.io/hexagoncircle/pen/ExjwZZg/image/large.png" alt="" loading="lazy" data-is-loading />
+					</a>
+				</li>
+			
+				<li class="project-list-item">
+					<a href="https://codepen.io/hexagoncircle/full/jOWyepg" title="Horizontal Scroll Cards" target="_blank" rel="noopener">
+							<img src="https://codepen.io/hexagoncircle/pen/jOWyepg/image/large.png" alt="" loading="lazy" data-is-loading />
+					</a>
+				</li>
+			
+				<li class="project-list-item">
+					<a href="https://codepen.io/hexagoncircle/full/YzPmyjx" title="Interactive MOOD Pedal" target="_blank" rel="noopener">
+							<img src="https://codepen.io/hexagoncircle/pen/YzPmyjx/image/large.png" alt="" loading="lazy" data-is-loading />
+					</a>
+				</li>
+			
+				<li class="project-list-item">
+					<a href="https://codepen.io/hexagoncircle/full/VoExWp" title="Waves" target="_blank" rel="noopener">
+							<img src="https://codepen.io/hexagoncircle/pen/VoExWp/image/large.png" alt="" loading="lazy" data-is-loading />
+					</a>
+				</li>
+			
+				<li class="project-list-item">
+					<a href="https://codepen.io/hexagoncircle/full/VwLKbWJ" title="Spinning CSS" target="_blank" rel="noopener">
+							<img src="https://codepen.io/hexagoncircle/pen/VwLKbWJ/image/large.png" alt="" loading="lazy" data-is-loading />
+					</a>
+				</li>
+			
+				<li class="project-list-item">
+					<a href="https://codepen.io/hexagoncircle/full/OJRLBYJ" title="CSS Putt-Putt Radio Buttons" target="_blank" rel="noopener">
+							<img src="https://codepen.io/hexagoncircle/pen/OJRLBYJ/image/large.png" alt="" loading="lazy" data-is-loading />
+					</a>
+				</li>
+			
+				<li class="project-list-item">
+					<a href="https://codepen.io/hexagoncircle/full/xxwBLMy" title="GSAP ScrollTrigger - Marquee Page Border" target="_blank" rel="noopener">
+							<img src="https://codepen.io/hexagoncircle/pen/xxwBLMy/image/large.png" alt="" loading="lazy" data-is-loading />
+					</a>
+				</li>
+			
+				<li class="project-list-item">
+					<a href="https://codepen.io/hexagoncircle/full/poNGaGO" title="CSS Triadic Color Palette #CodePenChallenge" target="_blank" rel="noopener">
+							<img src="https://codepen.io/hexagoncircle/pen/poNGaGO/image/large.png" alt="" loading="lazy" data-is-loading />
+					</a>
+				</li>
+			
+				<li class="project-list-item">
+					<a href="https://codepen.io/hexagoncircle/full/jOWXzrw" title="CSS variables in cubic-bezier function" target="_blank" rel="noopener">
+							<img src="https://codepen.io/hexagoncircle/pen/jOWXzrw/image/large.png" alt="" loading="lazy" data-is-loading />
+					</a>
+				</li>
+			
+				<li class="project-list-item">
+					<a href="https://codepen.io/hexagoncircle/full/ZZQLoM" title="Vue.js Mad Libs" target="_blank" rel="noopener">
+							<img src="https://codepen.io/hexagoncircle/pen/ZZQLoM/image/large.png" alt="" loading="lazy" data-is-loading />
+					</a>
+				</li>
+			
+				<li class="project-list-item">
+					<a href="https://codepen.io/hexagoncircle/full/joqYEj" title="Rocket Through Space" target="_blank" rel="noopener">
+							<img src="https://codepen.io/hexagoncircle/pen/joqYEj/image/large.png" alt="" loading="lazy" data-is-loading />
+					</a>
+				</li>
+			
+				<li class="project-list-item">
+					<a href="https://codepen.io/hexagoncircle/full/XWJGQqy" title="Folded Paper Login Form" target="_blank" rel="noopener">
+							<img src="https://codepen.io/hexagoncircle/pen/XWJGQqy/image/large.png" alt="" loading="lazy" data-is-loading />
+					</a>
+				</li>
+			
+				<li class="project-list-item">
+					<a href="https://codepen.io/hexagoncircle/full/MKaVzM" title="Hexagon Circle Panel Transition" target="_blank" rel="noopener">
+							<img src="https://codepen.io/hexagoncircle/pen/MKaVzM/image/large.png" alt="" loading="lazy" data-is-loading />
+					</a>
+				</li>
+			
+				<li class="project-list-item">
+					<a href="https://codepen.io/hexagoncircle/full/PoPpKKg" title="CSS Clip-Path Hover Effect" target="_blank" rel="noopener">
+							<img src="https://codepen.io/hexagoncircle/pen/PoPpKKg/image/large.png" alt="" loading="lazy" data-is-loading />
+					</a>
+				</li>
+			
+				<li class="project-list-item">
+					<a href="https://codepen.io/hexagoncircle/full/dwreYm" title="Primary Color Bounce" target="_blank" rel="noopener">
+							<img src="https://codepen.io/hexagoncircle/pen/dwreYm/image/large.png" alt="" loading="lazy" data-is-loading />
+					</a>
+				</li>
+			
+				<li class="project-list-item">
+					<a href="https://codepen.io/hexagoncircle/full/WRqEaV" title="Parallax Emoji" target="_blank" rel="noopener">
+							<img src="https://codepen.io/hexagoncircle/pen/WRqEaV/image/large.png" alt="" loading="lazy" data-is-loading />
+					</a>
+				</li>
+			
+				<li class="project-list-item">
+					<a href="https://codepen.io/hexagoncircle/full/WdEdKO" title="Sticky Title/Page Progress Bar" target="_blank" rel="noopener">
+							<img src="https://codepen.io/hexagoncircle/pen/WdEdKO/image/large.png" alt="" loading="lazy" data-is-loading />
+					</a>
+				</li>
+			
+				<li class="project-list-item">
+					<a href="https://codepen.io/hexagoncircle/full/GRJPXLa" title="Hello, World!" target="_blank" rel="noopener">
+							<img src="https://codepen.io/hexagoncircle/pen/GRJPXLa/image/large.png" alt="" loading="lazy" data-is-loading />
+					</a>
+				</li>
+			
+				<li class="project-list-item">
+					<a href="https://codepen.io/hexagoncircle/full/OJLMgYY" title="Fork This Nav" target="_blank" rel="noopener">
+							<img src="https://codepen.io/hexagoncircle/pen/OJLMgYY/image/large.png" alt="" loading="lazy" data-is-loading />
+					</a>
+				</li>
+			
+		</ul>
+	</section>
+
+	<main class="flow page-content">
+		<h2>Articles &amp; features</h2>
+<ul><li>
+      <a href="https://css-tricks.com/positioning-overlay-content-with-css-grid/" target="_blank" rel="noopener">Positioning Overlay Content with CSS Grid</a>
+      <span class="link-source">CSS-Tricks</span>
+    </li><li>
+      <a href="https://css-tricks.com/a-dynamically-sized-sticky-sidebar-with-html-and-css/" target="_blank" rel="noopener">A Dynamically-Sized Sticky Sidebar with HTML and CSS</a>
+      <span class="link-source">CSS-Tricks</span>
+    </li><li>
+      <a href="https://tympanus.net/codrops/2019/08/20/react-slider-with-parallax-hover-effects/" target="_blank" rel="noopener">React Slider with Parallax Hover Effects</a>
+      <span class="link-source">Codrops</span>
+    </li><li>
+      <a href="https://youtu.be/Y-Mht3mTaPo" target="_blank" rel="noopener">Spinning Up a Deal Wheel Component</a>
+      <span class="link-source">Component Carousel live stream</span>
+    </li><li>
+      <a href="https://frontend.horse/articles/make-gifs-into-letters-with-clip-paths/" target="_blank" rel="noopener">Making GIFs into Letters with Clip Paths</a>
+      <span class="link-source">Frontend Horse</span>
+    </li><li>
+      <a href="https://css-tricks.com/bold-on-hover-without-the-layout-shift/" target="_blank" rel="noopener">Bold on Hover… Without the Layout Shift</a>
+      <span class="link-source">CSS-Tricks</span>
+    </li></ul>
+<h2>Creative projects</h2>
+<ul class="multi-column">
+<li><a href="https://ryanandaly.com/">Ryan &amp; Aly</a></li>
+<li><a href="https://animatedverbs.com/">Animated Verbs</a></li>
+<li><a href="https://stylestage.dev/styles/css-cli/">CSS CLI</a></li>
+<li><a href="https://ryanmulligan.dev/soundcloud-grid/">SoundCloud Grid</a></li>
+<li><a href="https://ryanmulligan.dev/vue-playlist/">Vue Playlist</a></li>
+<li><a href="https://ryanmulligan.dev/cocktails/">Cocktails</a></li>
+</ul>
+<h2>A bit about me</h2>
+<p>I'm a fun-loving front-end engineer that strives to bridge the gap between web design and develop­ment, building user experiences with positive interactivity through thoughtful interfaces. I advocate for modern best practices on the web and love working with diverse, inclusive teams.</p>
+<p>When I'm not coding, you can catch me <a href="https://twitter.com/hexagoncircle/status/1413526995376295941?s=20%22">noodling on my acoustic guitar</a> or <a href="https://twitter.com/hexagoncircle/status/1285798846568767496?s=20">blasting out rhythms</a> if there's a drum kit ready for a lefty nearby.</p>
+<p>Want to know more? <a class="hello-link" href='mai&#108;to&#58;he&#120;&#37;61&#103;%6Fncircl%65&#37;40&#103;&#109;&#97;il&#46;&#99;&#111;m?subject=You are wonderful and I had to tell you' target="_blank" rel="noopener">Say hello anytime!</a> <span class="himoji">👋</span></p>
+<h2>Current role</h2>
+<p>I joined <a href="https://www.inspirato.com/">Inspirato</a> as a Senior UI Engineer on the <em>Pass UX and List Architecture</em> team near the end of August, 2019. As of May 2021, I stepped into a Manager, UI Engineering role and became a frontend team lead. Notable work includes building our latest front-end design system, developing consumer-facing application workflows for our <a href="https://www.inspirato.com/pass/trips/">Inspirato Pass</a> property listings and trip collections, and evolving our user experience to make a more stable, performant, and accessible product.</p>
+<h2>Everyday focus areas</h2>
+<ul class="multi-column">
+<li>HTML, CSS, &amp; JS</li>
+<li>Web Accessibility</li>
+<li>React/JSX</li>
+<li>Component design</li>
+<li>CSS Modules</li>
+<li>Next.js</li>
+<li>Typescript</li>
+<li>XState</li>
+</ul>
+<h2>Recent history</h2>
+<p>My time at <a href="https://www.egencia.com">Expedia Group (Egencia)</a> had me focused on creating product prototypes concentrated around business travel consumer needs. Being involved in user studies helped guide a rapid, iterative process for UX feature A/B testing. I was a core member of the <em>Global UI Engineering Team</em> and worked on the UI toolkit for our suite of applications. I led our internal <em>Front-end Improvements Team</em> assisting product engineers with development direction and code contributions while advocating for quality and consistency in the presentation layer of our products.</p></p>
+<p>Soon after, I helped <a href="https://elevatedthird.com">Elevated Third</a> start and manage their Seattle office. As a project development leader, I wrote build specs, estimated feature work, engaged directly with clients, and mentored junior team members.</p>
+<h2>Other stuff I love</h2>
+<ul class="multi-column">
+<li>CSS grid &amp; flexbox</li>
+<li>CSS logical properties</li>
+<li>Transitions &amp; animations</li>
+<li><abbr title="GreenSock Animation Platform">GSAP</abbr></li>
+<li>Vue</li>
+<li>Svelte</li>
+<li>CodePen</li>
+<li>Any beach, any ocean</li>
+<li>Nick Drake's Pink Moon in its entirety</li>
+<li>Cool side of pillow</li>
+<li>Guitar noodling</li>
+<li>Trashing a drum kit</li>
+</ul>
+<h2>Employment</h2>
+<div class="employment-list">
+  <dl>
+    <div>
+      <dt>Inspirato</dt>
+      <dd class="employment-location">Denver, CO / Remote</dd>
+    </div>
+    <div>
+      <dd class="employment-role">Manager, UI Engineering</dd>
+      <dd class="employment-info">May 2021 – Present</dd>
+      <dd class="employment-role">Senior UI Engineer</dd>
+      <dd class="employment-info">August 2019 – May 2021</dd>
+    </div>
+  </dl>
+  <dl>
+    <div>
+      <dt>Elevated Third</dt>
+      <dd class="employment-location">Seattle, WA</dd>
+    </div>
+    <div>
+      <dd class="employment-role">Senior Front-end Developer</dd>
+      <dd class="employment-info">July 2018 – April 2019</dd>
+    </div>
+  </dl>
+  <dl>
+    <div>
+      <dt>Expedia Group</dt>
+      <dd class="employment-location">Bellevue, WA</dd>
+    </div>
+    <div>
+      <dd class="employment-role">Software Dev Engineer II</dd>
+      <dd class="employment-info">June 2017– May 2018</dd>
+      <dd class="employment-role">Senior Design Engineer</dd>
+      <dd class="employment-info">June 2016 – June 2017</dd>
+    </div>
+  </dl>
+  <dl>
+    <div>
+      <dt>Elevated Third</dt>
+      <dd class="employment-location">Denver, CO</dd>
+    </div>
+    <div>
+      <dd class="employment-role">Senior Developer</dd>
+      <dd class="employment-info">May 2012 – May 2016</dd>
+    </div>
+  </dl>
+  <dl>
+    <div>
+      <dt>Entravision Communications</dt>
+      <dd class="employment-location">Denver, CO</dd>
+    </div>
+    <div>
+      <dd class="employment-role">Interactive Content Publisher</dd>
+      <dd class="employment-info">January 2010 – January 2012</dd>
+    </div>
+  </dl>
+</div>
+
+	</main>
+
+	<script src="/scripts/main.js" defer></script>
+</body>
+</html>
