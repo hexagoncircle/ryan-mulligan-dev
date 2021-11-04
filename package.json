@@ -4,11 +4,11 @@
   "description": "Personal website",
   "main": "index.html",
   "scripts": {
-    "watch:sass": "sass  --no-source-map --watch src/sass:public/css",
+    "watch:sass": "sass  --no-source-map --watch src/sass:_site/css",
     "watch:eleventy": "eleventy --serve",
-    "build:sass": "sass  --no-source-map src/sass:public/css",
+    "build:sass": "sass  --no-source-map src/sass:_site/css",
     "build:eleventy": "eleventy",
-    "postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map",
+    "postbuild": "postcss _site/css/*.css -u autoprefixer cssnano -r --no-map",
     "start": "npm-run-all build:sass --parallel watch:*",
     "build": "npm-run-all build:sass build:eleventy"
   },
