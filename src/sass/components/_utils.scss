@@ -1,0 +1,82 @@
+/* Utilities */
+.flow > * + * {
+  margin-top: var(--space-md);
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.scroll-x {
+  --scrollbar-offset: 4px;
+  display: flex;
+  max-width: 100%;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+  scroll-snap-type: x mandatory;
+}
+
+.scroll-x > * {
+  scroll-snap-align: start;
+  scroll-snap-margin-left: var(--page-padding);
+  scroll-margin-left: var(--page-padding);
+}
+
+@media not all and (any-hover: hover) {
+  .scroll-x::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.scroll-x::-webkit-scrollbar {
+  height: 12px;
+  background-color: transparent;
+}
+
+.scroll-x::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.scroll-x:hover::-webkit-scrollbar,
+.scroll-x::-webkit-scrollbar:active {
+  background-color: var(--color-primary);
+  box-shadow: inset var(--color-bg) 0 0 0 var(--scrollbar-offset);
+}
+
+.scroll-x:hover::-webkit-scrollbar-thumb,
+.scroll-x::-webkit-scrollbar-thumb:active {
+  background-color: var(--color-primary);
+  border-left: var(--scrollbar-offset) solid var(--color-bg);
+  border-right: var(--scrollbar-offset) solid var(--color-bg);
+}
+
+.multi-column {
+  column-width: var(--column-width);
+  column-gap: var(--column-gap);
+}
+
+.multi-column > * {
+  margin-top: calc(var(--outline-offset) / 2);
+  margin-bottom: calc(var(--outline-offset) / 2);
+}
+
+.full-bleed {
+  width: 100%;
+  grid-column: 1 / 4;
+}
+
+[data-is-loading] {
+  opacity: 0;
+}
+
+[data-no-js] [data-is-loading] {
+  opacity: 1;
+}

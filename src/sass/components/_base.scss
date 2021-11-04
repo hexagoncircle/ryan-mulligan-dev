@@ -1,0 +1,48 @@
+/* Globals */
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--color-secondary);
+}
+
+a:hover,
+a:focus {
+  color: var(--color-text);
+}
+
+a:focus,
+input[type="range"]:focus {
+  outline: 2px dashed var(--color-secondary);
+  outline-offset: var(--outline-offset);
+}
+
+input[type="range"]:focus {
+  outline-offset: calc(var(--outline-offset) * 2);
+}
+
+em {
+  font-style: italic;
+}
+
+body {
+  display: grid;
+  grid-column-gap: var(--page-padding);
+  grid-template-columns:
+    1fr
+    #{"min(var(--page-max-width), calc(100% - var(--page-padding) * 2))"}
+    1fr;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  font-family: var(--font-family-primary);
+  font-size: var(--text-base);
+  font-weight: 300;
+  line-height: 1.6;
+  transition: var(--duration) var(--ease);
+  transition-property: background-color, color;
+}
+
+body > * {
+  grid-column: 2;
+}

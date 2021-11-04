@@ -1,0 +1,90 @@
+/* Themes */
+[data-theme="1"] {
+  --color-text: hsl(0, 0%, 88%);
+  --color-text-accent: hsl(0, 0%, 68%);
+  --color-bg: hsl(285, 18%, 4%);
+  --color-bg-accent: hsl(285, 18%, 15%);
+  --color-primary: hsl(344, 85%, 50%);
+  --color-secondary: hsl(47, 81%, 56%);
+}
+
+[data-theme="2"] {
+  --color-text: hsl(197, 100%, 75%);
+  --color-text-accent: hsl(197, 100%, 55%);
+  --color-bg: hsl(210, 100%, 12%);
+  --color-bg-accent: hsl(210, 100%, 22%);
+  --color-primary: hsl(146deg 100% 50%);
+  --color-secondary: hsl(146deg 100% 50%);
+}
+
+[data-theme="3"] {
+  --color-text: hsl(0, 0%, 100%);
+  --color-text-accent: hsl(0, 0%, 94%);
+  --color-bg: hsl(217, 92%, 49%);
+  --color-bg-accent: hsl(217, 92%, 39%);
+  --color-primary: hsl(57, 100%, 50%);
+  --color-secondary: hsl(57, 100%, 65%);
+}
+
+[data-theme="4"] {
+  --color-text: hsl(0, 0%, 7%);
+  --color-text-accent: hsl(0, 0%, 0%);
+  --color-bg: hsl(314, 88%, 51%);
+  --color-bg-accent: hsl(314, 88%, 71%);
+  --color-primary: hsl(0, 0%, 7%);
+  --color-secondary: hsl(0, 0%, 7%);
+}
+
+[data-theme="5"] {
+  --color-text: hsl(0, 0%, 5%);
+  --color-text-accent: hsl(0, 0%, 20%);
+  --color-bg: hsl(0, 0%, 98%);
+  --color-bg-accent: hsl(0, 0%, 90%);
+  --color-primary: hsl(230, 80%, 60%);
+  --color-secondary: hsl(344, 85%, 48%);
+}
+
+/* Global custom properties */
+body {
+  --font-family-primary: "Work Sans", serif;
+  --font-family-secondary: "Fraunces", serif;
+  --font-family-accent: "Petrona", serif;
+  --font-bold: 600;
+
+  --text-base: clamp(1.1rem, 4vw, 1.3rem);
+  --text-sm: clamp(1rem, 3.5vw, 1.12rem);
+  --text-md: clamp(1.5rem, 5vw, 2.25rem);
+  --text-md-accent: clamp(1.4rem, 5vw, 2rem);
+  --text-lg: clamp(2.5rem, 8.7vw, 3.4rem);
+
+  --space-base: 1rem;
+  --space-xxs: calc(var(--space-base) / 4);
+  --space-xs: calc(var(--space-base) / 3);
+  --space-sm: calc(var(--space-base) / 2);
+  --space-md: calc(var(--space-base) * 2);
+  --space-lg: clamp(
+    calc(var(--space-base) * 2),
+    8vw,
+    calc(var(--space-base) * 4)
+  );
+  --space-xl: clamp(
+    calc(var(--space-base) * 3),
+    8vw,
+    calc(var(--space-base) * 5)
+  );
+
+  --list-offset: 1.25rem;
+  --list-style-type: square;
+  --list-marker-color: var(--color-primary);
+
+  --column-width: 250px;
+  --column-gap: var(--space-base);
+
+  --border-radius: 0.1rem;
+  --outline-offset: 2px;
+  --duration: 0s;
+  --ease: cubic-bezier(0.33, 1, 0.68, 1);
+
+  --page-max-width: 600px;
+  --page-padding: var(--space-md);
+}

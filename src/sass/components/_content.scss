@@ -1,0 +1,41 @@
+/* Say hi */
+.hello-link:hover + .himoji,
+.hello-link:focus + .himoji {
+  display: inline-block;
+  transform-origin: right bottom;
+  animation: waving 300ms linear 3;
+}
+
+@keyframes waving {
+  50% {
+    transform: rotate(15deg);
+  }
+}
+
+/* Page content */
+.page-content {
+  margin-bottom: var(--space-xl);
+}
+
+.page-content ul {
+  list-style-type: var(--list-style-type);
+  margin-left: var(--list-offset);
+}
+
+.page-content li {
+  margin-right: var(--space-base);
+  margin-bottom: var(--space-xs);
+}
+
+.page-content li::marker {
+  color: var(--list-marker-color);
+  transition: color var(--duration) var(--ease);
+}
+
+.page-content h2 {
+  font-family: var(--font-family-secondary);
+  font-size: var(--text-md);
+  font-weight: var(--font-bold);
+  line-height: 1.25;
+  margin-top: var(--space-xl);
+}

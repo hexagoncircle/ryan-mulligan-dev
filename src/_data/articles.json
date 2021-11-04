@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Positioning Overlay Content with CSS Grid",
+    "url": "https://css-tricks.com/positioning-overlay-content-with-css-grid/",
+    "source": "CSS-Tricks"
+  },
+  {
+    "title": "A Dynamically-Sized Sticky Sidebar with HTML and CSS",
+    "url": "https://css-tricks.com/a-dynamically-sized-sticky-sidebar-with-html-and-css/",
+    "source": "CSS-Tricks"
+  },
+  {
+    "title": "React Slider with Parallax Hover Effects",
+    "url": "https://tympanus.net/codrops/2019/08/20/react-slider-with-parallax-hover-effects/",
+    "source": "Codrops"
+  },
+  {
+    "title": "Spinning Up a Deal Wheel Component",
+    "url": "https://youtu.be/Y-Mht3mTaPo",
+    "source": "Component Carousel live stream"
+  },
+  {
+    "title": "Making GIFs into Letters with Clip Paths",
+    "url": "https://frontend.horse/articles/make-gifs-into-letters-with-clip-paths/",
+    "source": "Frontend Horse"
+  },
+  {
+    "title": "Bold on Hover… Without the Layout Shift",
+    "url": "https://css-tricks.com/bold-on-hover-without-the-layout-shift/",
+    "source": "CSS-Tricks"
+  }
+]
