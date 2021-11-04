@@ -14,7 +14,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("./src/sass/");
   eleventyConfig.addPassthroughCopy("./src/scripts/");
   eleventyConfig.addPassthroughCopy("./src/assets/");
-  eleventyConfig.addPassthroughCopy("./src/manifest.webmanifest");
 
   return {
     dir: {
