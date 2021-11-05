@@ -40,12 +40,6 @@ em {
 }
 
 body {
-  display: grid;
-  grid-column-gap: var(--page-padding);
-  grid-template-columns:
-    1fr
-    #{"min(var(--page-max-width), calc(100% - var(--page-padding) * 2))"}
-    1fr;
   color: var(--color-text);
   background-color: var(--color-bg);
   font-family: var(--font-family-primary);
@@ -54,6 +48,19 @@ body {
   line-height: 1.6;
   transition: var(--duration) var(--ease);
   transition-property: background-color, color;
+}
+
+body {
+  display: grid;
+  grid-column-gap: var(--page-padding);
+  grid-template-columns:
+    1fr
+    #{"min(var(--page-max-width), calc(100% - var(--page-padding) * 2))"}
+    1fr;
+}
+
+main {
+  display: contents;
 }
 
 body > * {

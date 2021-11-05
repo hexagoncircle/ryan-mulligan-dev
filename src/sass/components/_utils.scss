@@ -68,6 +68,15 @@
   margin-bottom: calc(var(--outline-offset) / 2);
 }
 
+.page-grid {
+  display: grid;
+  grid-column-gap: var(--page-padding);
+  grid-template-columns:
+    1fr
+    #{"min(var(--page-max-width), calc(100% - var(--page-padding) * 2))"}
+    1fr;
+}
+
 .full-bleed {
   width: 100%;
   grid-column: 1 / 4;
