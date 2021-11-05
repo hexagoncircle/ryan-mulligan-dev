@@ -22,7 +22,7 @@ images.forEach((img) => {
   });
 });
 
-document.body.removeAttribute("data-no-js");
+document.documentElement.removeAttribute("data-no-js");
 
 getThemeValue();
 setTimeout(() => document.body.style.setProperty("--duration", "200ms"), 1000);
