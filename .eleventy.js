@@ -1,4 +1,5 @@
 const markdownIt = require("markdown-it");
+
 module.exports = function (eleventyConfig) {
   const markdownItAttrs = require("markdown-it-attrs");
 
@@ -15,6 +16,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/scripts/");
   eleventyConfig.addPassthroughCopy("./src/assets/");
   eleventyConfig.addPassthroughCopy("./src/manifest.webmanifest");
+  eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
   return {
     dir: {

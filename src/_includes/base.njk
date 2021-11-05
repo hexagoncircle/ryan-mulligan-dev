@@ -45,14 +45,18 @@
 	</header>
 
 	<main>
-		<section class="full-bleed">
+		<section id="projects" class="full-bleed">
 			{% include "projects.njk" %}
 		</section>
 
-		<section class="flow content">
+		<section id="content" class="flow content">
 			{{ content | safe }}
 		</section>
 	</main>
+
+	<footer class="full-bleed">
+		<p class="footer-copy">© {% year %} assembled by Ryan Mulligan, with love.</p>
+	</footer>
 
 	<script src="{{ '/scripts/main.js' | url }}" defer></script>
 	<script src="{{ '/scripts/projects.js' | url }}" defer></script>
