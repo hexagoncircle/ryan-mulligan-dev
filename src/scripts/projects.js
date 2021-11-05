@@ -10,17 +10,17 @@ const enableFocusableChildren = (enabled, element) => {
   if (enabled) {
     element.setAttribute(
       "aria-label",
-      "Press the up arrow or escape key to exit this list."
+      "Press up arrow or escape key to exit this list."
     );
     element.removeAttribute("tabIndex");
     [...children].forEach((child) => child.removeAttribute("tabIndex"));
   } else {
     element.setAttribute(
       "aria-label",
-      "CodePen projects. Press the down arrow or enter key to navigate this collection of links."
+      "CodePen projects. Press down arrow or enter key to navigate this collection of links."
     );
     element.setAttribute("tabIndex", 0);
-    [...children].forEach((child, index) => child.setAttribute("tabIndex", -1));
+    [...children].forEach((child) => child.setAttribute("tabIndex", -1));
   }
 };
 
@@ -63,12 +63,33 @@ const init = (element) => {
   });
 };
 
-const carousel = document.querySelector("[data-carousel]");
+const projectGallery = document.querySelector(".projects");
+const projects = projectGallery.querySelectorAll(".item");
 
 document.addEventListener("click", (event) => {
-  if (!carousel.contains(event.target)) {
-    enableFocusableChildren(false, carousel);
+  if (!projectGallery.contains(event.target)) {
+    enableFocusableChildren(false, projectGallery);
   }
 });
 
-init(carousel);
+projects.forEach((project) => {
+  project.addEventListener("mousemove", (e) => {
+    const r = project.getBoundingClientRect();
+
+    project.style.setProperty(
+      "--x",
+      e.clientX - (r.left + Math.floor(r.width / 2))
+    );
+    project.style.setProperty(
+      "--y",
+      e.clientY - (r.top + Math.floor(r.height / 2))
+    );
+  });
+
+  project.addEventListener("mouseleave", () => {
+    project.style.setProperty("--x", 0);
+    project.style.setProperty("--y", 0);
+  });
+});
+
+init(projectGallery);

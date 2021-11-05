@@ -22,13 +22,13 @@ a:focus {
 
 a:focus,
 input[type="range"]:focus,
-[data-carousel]:focus-visible {
+.projects:focus-visible {
   outline: 2px dashed var(--color-secondary);
   outline-offset: var(--outline-offset);
 }
 
-[data-carousel]:focus-visible {
-  outline-offset: -6px;
+.projects:focus-visible {
+  outline-offset: -8px;
 }
 
 input[type="range"]:focus {
