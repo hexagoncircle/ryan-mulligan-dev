@@ -18,9 +18,9 @@ layout: base.njk
 - [Ryan & Aly](https://ryanandaly.com/)
 - [Animated Verbs](https://animatedverbs.com/)
 - [CSS CLI](https://stylestage.dev/styles/css-cli/)
-- [SoundCloud Grid](https://ryanmulligan.dev/soundcloud-grid/)
-- [Vue Playlist](https://ryanmulligan.dev/vue-playlist/)
-- [Cocktails](https://ryanmulligan.dev/cocktails/)
+- [SoundCloud Grid](https://hexagoncircle.github.io/soundcloud-grid/)
+- [Vue Playlist](https://hexagoncircle.github.io/vue-playlist/)
+- [Cocktails](https://hexagoncircle.github.io/cocktails/)
   {.multi-column }
 
 ## A bit about me
