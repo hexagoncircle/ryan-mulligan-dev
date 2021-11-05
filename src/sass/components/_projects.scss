@@ -38,11 +38,13 @@
 }
 
 .icon-codepen::before {
+  content: "•";
   content: "•" / "";
   right: calc(100% + var(--offset));
 }
 
 .icon-codepen::after {
+  content: "• • •";
   content: "• • •" / "";
   left: calc(100% + var(--offset));
 }
