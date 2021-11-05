@@ -1,5 +1,6 @@
 /* Projects */
 .project-list {
+  position: relative;
   margin-top: var(--space-lg);
   margin-bottom: calc(var(--space-sm) * -1);
   padding: var(--page-padding);
@@ -37,12 +38,12 @@
 }
 
 .icon-codepen::before {
-  content: "•";
+  content: "•" / "";
   right: calc(100% + var(--offset));
 }
 
 .icon-codepen::after {
-  content: "• • •";
+  content: "• • •" / "";
   left: calc(100% + var(--offset));
 }
 
@@ -56,6 +57,16 @@
 .icon-codepen:hover svg,
 .icon-codepen:focus svg {
   fill: var(--color-text);
+}
+
+.skip-projects-link {
+  position: absolute;
+  bottom: 6px;
+  z-index: 1;
+
+  &:not(:focus) {
+    @extend .visually-hidden;
+  }
 }
 
 .project-list-item {

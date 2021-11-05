@@ -13,9 +13,14 @@ a:focus {
 }
 
 a:focus,
-input[type="range"]:focus {
+input[type="range"]:focus,
+[data-carousel]:focus-visible {
   outline: 2px dashed var(--color-secondary);
   outline-offset: var(--outline-offset);
+}
+
+[data-carousel]:focus-visible {
+  outline-offset: -6px;
 }
 
 input[type="range"]:focus {

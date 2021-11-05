@@ -45,7 +45,7 @@
 	</header>
 
 	<section class="full-bleed">
-		<ul class="project-list scroll-x">
+		<ul class="project-list scroll-x" data-carousel>
 			<li class="project-list-mark">
 				<a class="icon-codepen" href="https://codepen.io/hexagoncircle" title="View my CodePen profile" target="_blank" rel="noopener">
 					<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -63,10 +63,11 @@
 		</ul>
 	</section>
 
-	<main class="flow page-content">
+	<main id="main" class="flow page-content">
 		{{ content | safe }}
 	</main>
 
 	<script src="{{ '/scripts/main.js' | url }}" defer></script>
+	<script src="{{ '/scripts/projects.js' | url }}" defer></script>
 </body>
 </html>
