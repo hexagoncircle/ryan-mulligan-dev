@@ -1,74 +1,70 @@
-const getAllFocusableElements = (element) => {
-  return element.querySelectorAll(
+const getAllFocusableElements = (el) => {
+  return el.querySelectorAll(
     'button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"]):not([disabled]), details:not([disabled]), summary:not(:disabled)'
   );
 };
 
-const enableFocusableChildren = (enabled, element) => {
-  const children = getAllFocusableElements(element);
+const enableFocusableChildren = (enabled, el) => {
+  const children = getAllFocusableElements(el);
 
   if (enabled) {
-    element.setAttribute(
-      "aria-label",
-      "Press up arrow or escape key to exit this list."
-    );
-    element.removeAttribute("tabIndex");
+    el.removeAttribute("tabIndex");
     [...children].forEach((child) => child.removeAttribute("tabIndex"));
   } else {
-    element.setAttribute(
-      "aria-label",
-      "CodePen projects. Press down arrow or enter key to navigate this collection of links."
-    );
-    element.setAttribute("tabIndex", 0);
+    el.setAttribute("tabIndex", 0);
     [...children].forEach((child) => child.setAttribute("tabIndex", -1));
   }
 };
 
-const handleKeyPress = (event, element) => {
-  const focusableElements = getAllFocusableElements(element);
+const handleKeyPress = (e, el) => {
+  const focusableElements = getAllFocusableElements(el);
   const firstFocusableElement = focusableElements[0];
   const lastFocusableElement = focusableElements[focusableElements.length - 1];
 
-  if (event.key === "ArrowDown" || event.key === "Enter") {
-    event.preventDefault();
-    enableFocusableChildren(true, element);
-    getAllFocusableElements(element)[0].focus();
+  if (e.key === "ArrowDown" || e.key === "Enter") {
+    e.preventDefault();
+    enableFocusableChildren(true, el);
+    getAllFocusableElements(el)[0].focus();
     return;
   }
 
-  if (event.key === "ArrowUp" || event.key === "Escape") {
-    event.preventDefault();
-    enableFocusableChildren(false, element);
-    element.focus();
+  if (e.key === "ArrowUp" || e.key === "Escape") {
+    e.preventDefault();
+    enableFocusableChildren(false, el);
+    el.focus();
     return;
   }
 
-  if (event.key === "Tab") {
+  if (e.key === "Tab") {
     if (document.activeElement === lastFocusableElement) {
-      setTimeout(() => enableFocusableChildren(false, element));
+      setTimeout(() => enableFocusableChildren(false, el));
     }
   }
 
-  if (event.key === "Tab" && event.shiftKey) {
+  if (e.key === "Tab" && e.shiftKey) {
     if (document.activeElement === firstFocusableElement) {
-      setTimeout(() => enableFocusableChildren(false, element));
+      setTimeout(() => enableFocusableChildren(false, el));
     }
   }
 };
 
-const init = (element) => {
-  enableFocusableChildren(false, element);
-  element.addEventListener("keydown", (event) => {
-    handleKeyPress(event, element);
+const init = (el) => {
+  el.setAttribute(
+    "aria-label",
+    "CodePen projects. Press down arrow or enter key to navigate this collection of links."
+  );
+  enableFocusableChildren(false, el);
+  el.addEventListener("keydown", (e) => {
+    handleKeyPress(e, el);
   });
 };
 
-const projectGallery = document.querySelector(".projects");
-const projects = projectGallery.querySelectorAll(".item");
+const projectsContainer = document.querySelector(".projects");
+const projects = projectsContainer.querySelectorAll(".item");
 
-document.addEventListener("click", (event) => {
-  if (!projectGallery.contains(event.target)) {
-    enableFocusableChildren(false, projectGallery);
+document.addEventListener("click", (e) => {
+  if (!projectsContainer.contains(e.target)) {
+    enableFocusableChildren(false, projectsContainer);
   }
 });
 
@@ -92,4 +88,4 @@ projects.forEach((project) => {
   });
 });
 
-init(projectGallery);
+init(container);

@@ -74,32 +74,6 @@
   transform-style: preserve-3d;
 }
 
-@media (hover: hover) and (pointer: fine) {
-  .projects .item:hover a {
-    transition-timing-function: var(--ease);
-    transform: translate3d(
-        calc(var(--x) / var(--t) * 1px),
-        calc(var(--y) / var(--t) * 1px),
-        2rem
-      )
-      rotateY(calc(var(--x) / var(--t) * 1deg))
-      rotateX(calc(var(--y) / var(--t) * -1deg));
-  }
-
-  .projects .item:hover a::after {
-    opacity: 0.25;
-    transform: translate(calc(var(--x) * 1px), calc(var(--y) * 1px));
-  }
-
-  .projects .item:hover img {
-    transform: scale(1.04)
-      translate(
-        calc(var(--x) / var(--t) * 1px),
-        calc(var(--y) / var(--t) * 1px)
-      );
-  }
-}
-
 .projects .item a {
   display: block;
   aspect-ratio: 16/9;
@@ -109,29 +83,6 @@
   overflow: hidden;
   border-radius: var(--border-radius);
   transform: translate3d(0, 0, 0);
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-    z-index: 1;
-    width: 40%;
-    height: 0;
-    padding-bottom: 50%;
-    border-radius: 100%;
-    background: white;
-    pointer-events: none;
-    filter: blur(100px);
-    opacity: 0;
-    transform-style: preserve-3d;
-    transform: translate3d(0, 0, 0);
-    transition: opacity var(--duration) var(--ease);
-    will-change: transform, opacity;
-  }
 }
 
 .projects .item + .item {
@@ -149,4 +100,56 @@
     transform var(--duration) var(--ease);
   border-radius: var(--border-radius);
   will-change: transform;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .projects .item a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    z-index: 1;
+    width: 50%;
+    height: 0;
+    padding-bottom: 50%;
+    border-radius: 100%;
+    background: white;
+    pointer-events: none;
+    filter: blur(60px);
+    opacity: 0;
+    transform-style: preserve-3d;
+    transform: translate3d(0, 0, 0);
+    transition: opacity var(--duration) var(--ease),
+      transform 0s var(--duration);
+    will-change: transform, opacity;
+  }
+
+  .projects .item:hover a {
+    transition-timing-function: var(--ease);
+    transform: translate3d(
+        calc(var(--x) / var(--t) * 1px),
+        calc(var(--y) / var(--t) * 1px),
+        2rem
+      )
+      rotateX(calc(var(--y) / var(--t) * -1deg))
+      rotateY(calc(var(--x) / var(--t) * 1deg));
+  }
+
+  .projects .item:hover a::after {
+    opacity: 0.2;
+    transform: translate(calc(var(--x) * 1px), calc(var(--y) * 1px));
+    transition: opacity var(--duration) var(--ease),
+      transform var(--duration) var(--ease);
+  }
+
+  .projects .item:hover img {
+    transform: scale(1.04)
+      translate(
+        calc(var(--x) / var(--t) * 1px),
+        calc(var(--y) / var(--t) * 1px)
+      );
+  }
 }
