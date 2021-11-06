@@ -1,4 +1,25 @@
-/* Themes */
+/* Default themes */
+:root {
+  --color-text: hsl(0, 0%, 88%);
+  --color-text-accent: hsl(0, 0%, 68%);
+  --color-bg: hsl(285, 18%, 4%);
+  --color-bg-accent: hsl(285, 18%, 15%);
+  --color-primary: hsl(344, 85%, 50%);
+  --color-secondary: hsl(47, 81%, 56%);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-text: hsl(0, 0%, 5%);
+    --color-text-accent: hsl(0, 0%, 20%);
+    --color-bg: hsl(0, 0%, 98%);
+    --color-bg-accent: hsl(0, 0%, 90%);
+    --color-primary: hsl(230, 80%, 60%);
+    --color-secondary: hsl(344, 85%, 48%);
+  }
+}
+
+/* User selected themes */
 [data-theme="1"] {
   --color-text: hsl(0, 0%, 88%);
   --color-text-accent: hsl(0, 0%, 68%);
