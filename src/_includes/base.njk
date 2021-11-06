@@ -54,11 +54,12 @@
 	</header>
 
 	<main>
-		<section id="projects" class="full-bleed">
+		<section class="full-bleed">
+			<h2 class="visually-hidden">CodePen Projects</h2>
 			{% include "projects.njk" %}
 		</section>
 
-		<section id="content" class="flow content">
+		<section class="flow content">
 			{{ content | safe }}
 		</section>
 	</main>
