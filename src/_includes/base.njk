@@ -40,7 +40,16 @@
 			<rect x="12" y="24" width="12" height="12"/>
 		</svg>
 		<h1 class="title">Ryan Mulligan</h1>
-		<p class="subtitle">your friendly <span>front-end interface <label for="theme" class="visually-hidden">Slide to change the theme</label><input title="Slide to change the theme" class="theme-slider" type="range" id="theme" name="theme" min="1" max="5" value="1"></span> <span>& experience engineer<span></p>
+		<p class="visually-hidden">Your friendly front-end interface and experience engineer</p>
+		<div aria-hidden="true" class="subtitle">
+			<span>your friendly</span>
+			<div>
+				front-end interface
+				<label for="theme" class="visually-hidden theme-slider-label">Slide to change the theme</label>
+				<input title="Slide to change the theme" class="theme-slider" type="range" id="theme" name="theme" min="1" max="5" value="1" />
+			</div>
+			<span>& experience engineer</span>
+		</div>
 		{% include "social-navigation.njk" %}
 	</header>
 

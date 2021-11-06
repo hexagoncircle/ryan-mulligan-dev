@@ -58,7 +58,7 @@
   width: 100%;
 }
 
-.subtitle span {
+.subtitle > * {
   display: inline-flex;
   align-items: center;
 }
@@ -68,6 +68,10 @@
   max-width: 60px;
   padding: 0.2rem 0;
   margin-left: 0.8rem;
+}
+
+.theme-slider-label {
+  user-select: none;
 }
 
 .link-source {
