@@ -30,6 +30,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Petrona:ital,wght@1,500&family=Work+Sans:ital,wght@0,360;0,560;1,360&display=swap" rel="stylesheet">
 	<title>{{ title }}</title>
 	<link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
+	<script>
+		if (localStorage.getItem('theme')) {
+			document.documentElement.setAttribute('data-theme', localStorage.getItem('theme'));
+		}
+		if (window.matchMedia("(prefers-color-scheme: light)").matches) {
+			document.documentElement.setAttribute('data-theme', 5);
+  	}
+	</script>
 </head>
 
 <body>

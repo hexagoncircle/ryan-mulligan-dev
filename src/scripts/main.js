@@ -2,7 +2,7 @@ const images = document.querySelectorAll("img");
 const slider = document.querySelector(".theme-slider");
 
 const setThemeValue = (value) => {
-  document.body.dataset.theme = value;
+  document.documentElement.dataset.theme = value;
   slider.value = value;
 };
 
@@ -25,7 +25,6 @@ images.forEach((img) => {
 document.documentElement.removeAttribute("data-no-js");
 
 getThemeValue();
-setTimeout(() => document.body.style.setProperty("--duration", "200ms"), 1000);
 
 slider.addEventListener("input", () => {
   setThemeValue(slider.value);
