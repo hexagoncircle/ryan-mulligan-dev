@@ -88,4 +88,4 @@ projects.forEach((project) => {
   });
 });
 
-init(container);
+init(projectsContainer);
