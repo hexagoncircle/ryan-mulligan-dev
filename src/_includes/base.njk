@@ -31,12 +31,7 @@
 	<title>{{ title }}</title>
 	<link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
 	<script>
-		if (localStorage.getItem('theme')) {
-			document.documentElement.setAttribute('data-theme', localStorage.getItem('theme'));
-		}
-		if (window.matchMedia("(prefers-color-scheme: light)").matches) {
-			document.documentElement.setAttribute('data-theme', 5);
-  	}
+		localStorage.getItem('theme') && document.documentElement.setAttribute('data-theme', localStorage.getItem('theme'));
 	</script>
 </head>
 
