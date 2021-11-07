@@ -1,5 +1,5 @@
 /* Nav */
-.nav-header {
+.social-navigation {
   position: fixed;
   top: var(--space-sm);
   right: var(--space-base);
@@ -24,7 +24,7 @@
 }
 
 /* Header */
-.icon-header {
+.icon-page-top {
   margin-bottom: var(--space-lg);
   width: var(--text-md);
   height: var(--text-md);
@@ -32,13 +32,7 @@
   transition: fill var(--duration) var(--ease);
 }
 
-.page-header {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .title {
-  flex: 1 0 100%;
   font-family: var(--font-family-secondary);
   font-size: var(--text-lg);
   font-weight: var(--font-bold);
@@ -48,8 +42,7 @@
   transition: color var(--duration) var(--ease);
 }
 
-.subtitle {
-  flex: 1 1 auto;
+.subtitle-wrapper {
   font-style: italic;
   font-family: var(--font-family-accent);
   font-size: var(--text-md-accent);
@@ -58,7 +51,7 @@
   width: 100%;
 }
 
-.subtitle > * {
+.subtitle-wrapper > * {
   display: inline-flex;
   align-items: center;
 }

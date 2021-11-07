@@ -1,4 +1,5 @@
 const markdownIt = require("markdown-it");
+const { DateTime } = require("luxon");
 
 module.exports = function (eleventyConfig) {
   const markdownItAttrs = require("markdown-it-attrs");
@@ -17,6 +18,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/assets/");
   eleventyConfig.addPassthroughCopy("./src/manifest.webmanifest");
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+  eleventyConfig.addFilter("postDate", (dateObj) =>
+    DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED)
+  );
 
   return {
     dir: {

@@ -1,77 +1,81 @@
 <!DOCTYPE html>
 <html lang="en" data-no-js>
+{%- set pageTitle %}{% if title %}{{ title }} | {% endif %}{{ meta.siteName }}{% endset -%}
+{%- set pageDescription %}{% if description %}{{ description }}{% else %}{{ meta.siteDescription }}{% endif %}{% endset -%}
+{%- set pageSocialImg %}{{ meta.url }}/assets/social-image-default.png{% endset -%}
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- Site Information-->
-  <title>Ryan Mulligan</title>
-  <meta name="description" content="A front-end developer and UI engineer specializing in HTML, CSS, and Javascript, design system thinking, and client-side product development"/>
-  <meta name="theme-color" content="var(--color-primary)">
-  <!-- Favicon-->
-  <link rel="icon" href="assets/favicon.svg">
-  <link rel="mask-icon" href="assets/favicon.svg" color="#E01A4F">
-  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-  <link rel="manifest" href="{{ 'manifest.webmanifest' | url }}">
-  <!-- Open Graph Meta-->
-  <meta property="og:type" content="website"/>
-  <meta property="og:url" content="http://hexagoncircle.com"/>
-  <meta property="og:title" content="Ryan Mulligan"/>
-  <meta property="og:description" content="Front-end developer and UI engineer"/>
-  <meta property="og:image" content="http://hexagoncircle.com/assets/hc_screenshot.png"/>
-  <!-- Twitter Card Meta-->
-  <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:site" content="@hexagoncircle"/>
-  <meta name="twitter:title" content="Ryan Mulligan"/>
-  <meta name="twitter:description" content="Front-end developer and UI engineer"/>
-  <meta name="twitter:image" content="http://hexagoncircle.com/assets/hc_screenshot.png"/>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<title>{{ pageTitle }}</title>
+	<meta name="description" content="{{ pageDescription }}" />
+
+	<link rel="icon" href="{{ '/assets/favicon.svg' | url }}" />
+  <link rel="mask-icon" href="{{ '/assets/favicon.svg' | url }}" color="#E01A4F">
+  <link rel="apple-touch-icon" href="{{ '/assets/apple-touch-icon.png' | url }}">
+  <link rel="manifest" href="{{ '/manifest.webmanifest' | url }}">
+
+	<meta name="twitter:card" content="summary_large_image" />
+	{% if meta.twitterUsername %}
+		<meta name="twitter:creator" content="@{{ meta.twitterUsername }}" />
+	{% endif %}
+	<meta name="twitter:title" content="{{ pageTitle }}" />
+	<meta name="twitter:description" content="{{ pageDescription }}" />
+
+	<meta name="og:title" content="{{ pageTitle }}" />
+	<meta name="og:description" content="{{ pageDescription }}" />
+	<meta property="og:image" content="{{ pageSocialImg }}" />
+	<meta name="twitter:image" content="{{ pageSocialImg }}" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Petrona:ital,wght@1,500&family=Work+Sans:ital,wght@0,360;0,560;1,360&display=swap" rel="stylesheet">
-	<title>{{ title }}</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Petrona:ital,wght@1,500&family=Work+Sans:ital,wght@0,360;0,560;1,360&display=swap">
 	<link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
+
 	<script>
 		localStorage.getItem('theme') && document.documentElement.setAttribute('data-theme', localStorage.getItem('theme'));
 	</script>
 </head>
 
 <body>
+	<svg class="icon-page-top" aria-hidden="true" viewBox="0 0 24 36">
+    <rect x="0" y="0" width="24" height="12" />
+    <rect x="0" y="0" width="12" height="24"/>
+    <rect x="12" y="24" width="12" height="12"/>
+  </svg>
+
+	{% include "social-navigation.njk" %}
+
 	<header>
-		<svg class="icon-header" aria-hidden="true" viewBox="0 0 24 36">
-			<rect x="0" y="0" width="24" height="12" />
-			<rect x="0" y="0" width="12" height="24"/>
-			<rect x="12" y="24" width="12" height="12"/>
-		</svg>
-		<h1 class="title">Ryan Mulligan</h1>
-		<p class="visually-hidden">Your friendly front-end interface and experience engineer</p>
-		<div aria-hidden="true" class="subtitle">
-			<span>your friendly</span>
-			<div>
-				front-end interface
-				<label for="theme" class="visually-hidden theme-slider-label">Slide to change the theme</label>
-				<input title="Slide to change the theme" class="theme-slider" type="range" id="theme" name="theme" min="1" max="5" value="1" />
-			</div>
-			<span>& experience engineer</span>
-		</div>
-		{% include "social-navigation.njk" %}
+		{% block header %}
+		  <h1 class="title">{{ title }}</h1>
+
+  		{% if subtitle %}
+				<p class="subtitle">{{ subtitle }}</p>
+			{% endif %}
+
+			{% if meta %}
+				<div class="meta">
+					<p>Posted on {{ page.date | postDate }}</p>
+				</div>
+			{% endif %}
+		{% endblock %}
 	</header>
 
 	<main>
-		<section class="full-bleed">
-			<h2 class="visually-hidden">CodePen Projects</h2>
-			{% include "projects.njk" %}
-		</section>
-
-		<section class="flow content">
-			{{ content | safe }}
-		</section>
+		{% block content %}
+			<article class="flow content">
+				{{ content | safe }}
+			</article>
+		{% endblock %}
 	</main>
 
 	<footer class="full-bleed">
-		<p class="footer-copy">© {% year %} assembled by Ryan Mulligan, with love.</p>
+		<p class="footer-copy">© {% year %} assembled by Ryan Mulligan, with love. Bring it on <a title="Go to the site homepage" href="{{ '/' | url }}">home</a></p>
 	</footer>
 
-	<script src="{{ '/scripts/main.js' | url }}" defer></script>
-	<script src="{{ '/scripts/projects.js' | url }}" defer></script>
+	{% block scripts %}
+	{% endblock %}
 </body>
 </html>

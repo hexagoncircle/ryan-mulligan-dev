@@ -1,0 +1,32 @@
+{% extends "base.njk" %}
+
+{% block header %}
+  <h1 class="title">Ryan Mulligan</h1>
+  <p class="visually-hidden">Your friendly front-end interface and experience engineer</p>
+
+  <div aria-hidden="true" class="subtitle-wrapper">
+    <span>your friendly</span>
+    <div>
+      front-end interface
+      <label for="theme" class="visually-hidden theme-slider-label">Slide to change the theme</label>
+      <input title="Slide to change the theme" class="theme-slider" type="range" id="theme" name="theme" min="1" max="5" value="1" />
+    </div>
+    <span>& experience engineer</span>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <article class="full-bleed">
+    <h2 class="visually-hidden">CodePen Projects</h2>
+    {% include "projects.njk" %}
+  </article>
+
+  <article class="flow content">
+    {{ content | safe }}
+  </article>
+{% endblock %}
+
+{% block scripts %}
+	<script src="{{ '/scripts/main.js' | url }}" defer></script>
+	<script src="{{ '/scripts/projects.js' | url }}" defer></script>
+{% endblock %}
