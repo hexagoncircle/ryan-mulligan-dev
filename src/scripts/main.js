@@ -2,9 +2,11 @@ const images = document.querySelectorAll("img");
 const slider = document.querySelector(".theme-slider");
 
 images.forEach((img) => {
-  img.addEventListener("load", (event) => {
-    event.target.removeAttribute("data-is-loading");
-  });
+  if (img.complete) {
+    img.removeAttribute("data-is-loading");
+    return;
+  }
+  img.addEventListener("load", () => img.removeAttribute("data-is-loading"));
 });
 
 document.documentElement.removeAttribute("data-no-js");
