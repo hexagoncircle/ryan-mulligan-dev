@@ -11,7 +11,7 @@ The migration process for my personal website was dead simple. Not that moving a
 
 ## Why choose Eleventy?
 
-Most of my curiosity around 11ty stems from the amount of positive feedback and love I see for this project around the web. It's decoupled from the rest of my tech stack and tooling. It works with multiple template engines (using markdown and nunjucks here). Spinning up dynamic pages from external data is no sweat. There are _no_ client-side javascript dependencies. Instead of me going on about it, check out the [11ty Docs](https://www.11ty.dev/docs/) or amazing resources like [11ty.rocks](https://11ty.rocks/).
+Most of my curiosity around 11ty stems from the amount of positive feedback and love I see for this project around the web. It's decoupled from the rest of my tech stack and tooling. It works with multiple template engines (using markdown and nunjucks here). Spinning up dynamic pages from external data is no sweat. There are _no_ client-side javascript dependencies. Instead of me going on about it, check out the [11ty Docs](https://www.11ty.dev/docs/) or amazing resources like [11ty.rocks](https://11ty.rocks/) and [11ty.recipes](https://11ty.recipes/)
 
 On top of it all, the community is made up of really stellar people that I admire. People that care about a performant and inclusive web. I'll always be sold on that.
 
