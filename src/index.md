@@ -13,6 +13,16 @@ layout: home.njk
   {%- endfor -%}
 </ul>
 
+## Blog posts
+
+My own random thoughts, code snippets, and other web-related stuff I'd like to share out there. Still in the process of writing content but I have a few in the cooker!
+
+<ul>
+  {%- for post in collections.post -%}
+    <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+  {%- endfor -%}
+</ul>
+
 ## Creative projects
 
 - [Ryan & Aly](https://ryanandaly.com/)
