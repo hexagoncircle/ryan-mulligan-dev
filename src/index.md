@@ -68,7 +68,7 @@ Soon after, I helped [Elevated Third](https://elevatedthird.com) start and manag
 
 - CSS grid & flexbox
 - CSS logical properties
-- Just the right custom cubic Bézier curve
+- Finding the right custom cubic Bézier curve
 - <abbr title="GreenSock Animation Platform">GSAP</abbr>
 - Vue
 - Svelte
