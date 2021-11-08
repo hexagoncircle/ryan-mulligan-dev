@@ -1,5 +1,6 @@
 ---
 layout: home.njk
+templateEngineOverride: njk,md
 ---
 
 ## Articles & features
@@ -39,7 +40,7 @@ I'm a fun-loving front-end engineer that strives to bridge the gap between web d
 
 When I'm not coding, you can catch me [noodling on my acoustic guitar](https://twitter.com/hexagoncircle/status/1413526995376295941?s=20") or [blasting out rhythms](https://twitter.com/hexagoncircle/status/1285798846568767496?s=20) if there's a drum kit ready for a lefty nearby.
 
-Want to know more? <a class="hello-link" href='mai&#108;to&#58;he&#120;&#37;61&#103;%6Fncircl%65&#37;40&#103;&#109;&#97;il&#46;&#99;&#111;m?subject=You are wonderful and I had to tell you' target="_blank" rel="noopener">Say hello anytime!</a> <span class="himoji">👋</span>
+Want to know more? <a class="hello-link" href="{% mailToPath %}" target="_blank" rel="noopener">Say hello anytime!</a> <span class="himoji">👋</span>
 
 ## Current role
 
