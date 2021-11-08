@@ -47,18 +47,12 @@
 
 	{% include "social-navigation.njk" %}
 
-	<header>
+	<header class="flow" style="--flow: var(--space-base)">
 		{% block header %}
 		  <h1 class="title">{{ title }}</h1>
 
   		{% if subtitle %}
 				<p class="subtitle">{{ subtitle }}</p>
-			{% endif %}
-
-			{% if meta %}
-				<div class="meta">
-					<p>Posted on {{ page.date | postDate }}</p>
-				</div>
 			{% endif %}
 		{% endblock %}
 	</header>

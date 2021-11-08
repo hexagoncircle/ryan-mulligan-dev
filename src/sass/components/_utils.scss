@@ -1,6 +1,6 @@
 /* Utilities */
 .flow > * + * {
-  margin-top: var(--space-md);
+  margin-top: var(--flow, var(--space-md));
 }
 
 .visually-hidden {

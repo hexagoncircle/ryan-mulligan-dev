@@ -18,7 +18,6 @@
 
 .content {
   grid-column: 2;
-  margin-bottom: var(--space-xl);
 }
 
 .content ul {
@@ -37,9 +36,9 @@
 }
 
 .content h2 {
+  --flow: var(--space-xl);
   font-family: var(--font-family-secondary);
   font-size: var(--text-md);
   font-weight: var(--font-bold);
   line-height: 1.25;
-  margin-top: var(--space-xl);
 }

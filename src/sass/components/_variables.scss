@@ -85,12 +85,12 @@ body {
   --space-sm: calc(var(--space-base) / 2);
   --space-md: calc(var(--space-base) * 2);
   --space-lg: clamp(
-    calc(var(--space-base) * 2),
+    calc(var(--space-base) * 1.5),
     8vw,
     calc(var(--space-base) * 4)
   );
   --space-xl: clamp(
-    calc(var(--space-base) * 3),
+    calc(var(--space-base) * 2),
     8vw,
     calc(var(--space-base) * 5)
   );

@@ -1,4 +1,3 @@
-/* Nav */
 .social-navigation {
   position: fixed;
   top: var(--space-sm);
@@ -23,11 +22,10 @@
   fill: currentcolor;
 }
 
-/* Header */
 .icon-page-top {
-  margin-bottom: var(--space-lg);
-  width: var(--text-md);
-  height: var(--text-md);
+  margin-bottom: var(--space-base);
+  width: 2rem;
+  height: 2rem;
   fill: var(--color-primary);
   transition: fill var(--duration) var(--ease);
 }
@@ -37,7 +35,6 @@
   font-size: var(--text-lg);
   font-weight: var(--font-bold);
   line-height: 1.2;
-  margin-bottom: var(--space-base);
   color: var(--color-primary);
   transition: color var(--duration) var(--ease);
 }
