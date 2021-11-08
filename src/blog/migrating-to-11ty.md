@@ -21,4 +21,4 @@ This only marks the beginning of this website's evolution. It will probably be a
 
 I have often wanted to write small articles around front-end techniques that have been helpful for me and share them with the community. It will also be nice to have a space where I can look up solutions I've since forgotten. I haven't been compelled to set up that space until now. The desire to mess around with 11ty gave me the push I needed.
 
-Be on the look out for small snippets and chunks of thoughts. Looking forward to sharing with you all and getting feedback on improvements or alternatives.
+Be on the lookout for small snippets and chunks of thoughts. Looking forward to sharing with you all and getting feedback on improvements or alternatives.
