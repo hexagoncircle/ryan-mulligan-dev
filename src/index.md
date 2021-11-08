@@ -67,13 +67,15 @@ Soon after, I helped [Elevated Third](https://elevatedthird.com) start and manag
 
 - CSS grid & flexbox
 - CSS logical properties
-- Transitions & animations
+- Just the right custom cubic Bézier curve
 - <abbr title="GreenSock Animation Platform">GSAP</abbr>
 - Vue
 - Svelte
+- <abbr title="Eleventy">11ty</abbr>
 - CodePen
 - Any beach, any ocean
-- Nick Drake's Pink Moon in its entirety
+- Early morning coffee
+- Nick Drake's <em>Pink Moon</em> in its entirety
 - Cool side of pillow
 - Guitar noodling
 - Trashing a drum kit
