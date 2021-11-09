@@ -44,7 +44,7 @@ Want to know more? <a class="hello-link" href="{% mailToPath %}" target="_blank"
 
 ## Current role
 
-I joined [Inspirato](https://www.inspirato.com/) as a Senior UI Engineer on the _Pass UX and List Architecture_ team near the end of August, 2019. As of May 2021, I stepped into a Manager, UI Engineering role and became a frontend team lead. Notable work includes building our latest front-end design system, developing consumer-facing application workflows for our [Inspirato Pass](https://www.inspirato.com/pass/trips/) property listings and trip collections, and evolving our user experience to make a more stable, performant, and accessible product.
+I joined [Inspirato](https://www.inspirato.com/) as a Senior UI Engineer on the _Pass UX and List Architecture_ team near the end of August, 2019. As of May 2021, I stepped into a management role and became a UI Engineering team leader. Notable work includes building our latest front-end design system, developing consumer-facing application workflows for our [Inspirato Pass](https://www.inspirato.com/pass/trips/) property listings and trip collections, and evolving our user experience to make a more stable, performant, and accessible product.
 
 ## Everyday focus areas
 
