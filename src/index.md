@@ -58,12 +58,6 @@ I joined [Inspirato](https://www.inspirato.com/) as a Senior UI Engineer on the 
 - XState
   {.multi-column }
 
-## Recent history
-
-My time at [Expedia Group (Egencia)](https://www.egencia.com) had me focused on creating product prototypes concentrated around business travel consumer needs. Being involved in user studies helped guide a rapid, iterative process for UX feature A/B testing. I was a core member of the _Global UI Engineering Team_ and worked on the UI toolkit for our suite of applications. I led our internal _Front-end Improvements Team_ assisting product engineers with development direction and code contributions while advocating for quality and consistency in the presentation layer of our products.</p>
-
-Soon after, I helped [Elevated Third](https://elevatedthird.com) start and manage their Seattle office. As a project development leader, I wrote build specs, estimated feature work, engaged directly with clients, and mentored junior team members.
-
 ## Other stuff I love
 
 - CSS grid & flexbox
