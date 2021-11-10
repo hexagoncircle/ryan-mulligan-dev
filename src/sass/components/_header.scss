@@ -32,14 +32,14 @@
 
 .title {
   font-family: var(--font-family-secondary);
-  font-size: var(--text-lg);
+  font-size: var(--text-xl);
   font-weight: var(--font-bold);
   line-height: 1.2;
   color: var(--color-primary);
   transition: color var(--duration) var(--ease);
 }
 
-.subtitle-wrapper {
+.subtitle {
   font-style: italic;
   font-family: var(--font-family-accent);
   font-size: var(--text-md-accent);
@@ -48,7 +48,7 @@
   width: 100%;
 }
 
-.subtitle-wrapper > * {
+.subtitle > * {
   display: inline-flex;
   align-items: center;
 }

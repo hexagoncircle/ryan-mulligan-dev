@@ -23,6 +23,16 @@
 .content ul {
   list-style-type: var(--list-style-type);
   margin-left: var(--list-offset);
+
+  li::marker {
+    color: var(--list-marker-color);
+    transition: color var(--duration) var(--ease);
+  }
+}
+
+.content ol {
+  list-style: decimal;
+  padding-left: 1.125em;
 }
 
 .content li {
@@ -30,15 +40,43 @@
   margin-bottom: var(--space-xs);
 }
 
-.content li::marker {
-  color: var(--list-marker-color);
-  transition: color var(--duration) var(--ease);
+.content :is(h2, h3) {
+  font-family: var(--font-family-secondary);
+  font-weight: var(--font-bold);
+  line-height: 1.25;
 }
 
 .content h2 {
   --flow: var(--space-xl);
-  font-family: var(--font-family-secondary);
+  font-size: var(--text-lg);
+}
+
+.content h3 {
   font-size: var(--text-md);
+}
+
+.content blockquote {
+  border-inline-start: 2px dashed var(--color-primary);
+  padding: var(--space-sm) var(--space-md);
+  font-family: var(--font-family-accent);
+  font-size: var(--text-md);
+  font-style: italic;
+}
+
+.content pre[class*="language-"] {
+  margin: var(--space-md) 0;
+  border-radius: var(--border-radius);
+}
+
+.content s {
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+.content strong {
   font-weight: var(--font-bold);
-  line-height: 1.25;
+}
+
+.content img {
+  border-radius: var(--border-radius);
 }

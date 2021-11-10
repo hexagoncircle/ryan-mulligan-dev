@@ -75,9 +75,10 @@ body {
   --text-base: clamp(1.1rem, 4vw, 1.3rem);
   --text-xs: 0.85rem;
   --text-sm: clamp(1rem, 3.5vw, 1.12rem);
-  --text-md: clamp(1.5rem, 5vw, 2.25rem);
+  --text-md: clamp(1.5rem, 6vw, 2rem);
   --text-md-accent: clamp(1.4rem, 5vw, 2rem);
-  --text-lg: clamp(2.5rem, 8.7vw, 3.4rem);
+  --text-lg: clamp(2rem, 8vw, 2.5rem);
+  --text-xl: clamp(2.5rem, 10vw, 3.4rem);
 
   --space-base: 1rem;
   --space-xxs: calc(var(--space-base) / 4);
