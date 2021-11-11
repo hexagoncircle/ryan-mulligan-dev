@@ -9,7 +9,7 @@ templateEngineOverride: njk,md
   {%- for article in articles -%}
     <li>
       <a href="{{ article.url }}" target="_blank" rel="noopener">{{ article.title }}</a>
-      <span class="link-source">{{ article.source }}</span>
+      <span class="source">{{ article.source }}</span>
     </li>
   {%- endfor -%}
 </ul>

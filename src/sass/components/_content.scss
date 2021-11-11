@@ -1,21 +1,3 @@
-/* Say hi */
-.hello-link:hover + .himoji,
-.hello-link:focus + .himoji {
-  display: inline-block;
-  transform-origin: right bottom;
-  animation: waving 300ms linear 3;
-}
-
-@keyframes waving {
-  50% {
-    transform: rotate(15deg);
-  }
-}
-
-.meta {
-  font-size: var(--text-sm);
-}
-
 .content {
   grid-column: 2;
 }
@@ -92,4 +74,25 @@
 .content img {
   width: 100%;
   border-radius: var(--border-radius);
+}
+
+.content .source {
+  display: block;
+  font-size: var(--text-sm);
+}
+
+/* Hello link emoji interaction */
+.hello-link:hover,
+.hello-link:focus {
+  + .himoji {
+    display: inline-block;
+    transform-origin: right bottom;
+    animation: waving 300ms linear 3;
+  }
+}
+
+@keyframes waving {
+  50% {
+    transform: rotate(15deg);
+  }
 }

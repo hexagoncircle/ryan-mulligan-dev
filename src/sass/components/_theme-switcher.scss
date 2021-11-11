@@ -1,4 +1,14 @@
-/* Input range slider */
+.theme-slider {
+  flex: 1 1 0;
+  max-width: 60px;
+  padding: 0.2rem 0;
+  margin-left: 0.8rem;
+}
+
+.theme-slider-label {
+  user-select: none;
+}
+
 input[type="range"] {
   --thumb-size: 12px;
   --thumb-offset: -4px;
