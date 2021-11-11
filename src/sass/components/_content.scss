@@ -63,9 +63,21 @@
   font-style: italic;
 }
 
+.content pre[class*="language-"],
+.content figure {
+  margin-right: var(--page-content-offset);
+  margin-left: var(--page-content-offset);
+}
+
 .content pre[class*="language-"] {
-  margin: var(--space-md) 0;
+  padding: calc(var(--page-content-offset) * -1);
   border-radius: var(--border-radius);
+}
+
+.content figcaption {
+  padding: 0 var(--space-sm);
+  font-size: var(--text-xs);
+  text-align: center;
 }
 
 .content s {
@@ -78,5 +90,6 @@
 }
 
 .content img {
+  width: 100%;
   border-radius: var(--border-radius);
 }

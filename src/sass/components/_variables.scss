@@ -108,6 +108,7 @@ body {
   --duration: 200ms;
   --ease: cubic-bezier(0.33, 1, 0.68, 1);
 
-  --page-max-width: 600px;
   --page-padding: var(--space-md);
+  --page-max-width: min(38rem, 100% - var(--page-padding) * 2);
+  --page-content-offset: calc(var(--space-base) * -1);
 }

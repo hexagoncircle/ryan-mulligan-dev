@@ -15,12 +15,9 @@
 {% endblock %}
 
 {% block content %}
-  <article class="full-bleed">
-    <h2 class="visually-hidden">CodePen Projects</h2>
-    {% include "projects.njk" %}
-  </article>
+  {% include "projects.njk" %}
 
-  <article class="flow content">
+  <article class="content wrapper flow">
     {{ content | safe }}
   </article>
 {% endblock %}

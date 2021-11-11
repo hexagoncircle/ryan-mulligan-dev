@@ -1,5 +1,6 @@
 .social-navigation {
   position: fixed;
+  margin-top: unset;
   top: var(--space-sm);
   right: var(--space-base);
   z-index: 1;
@@ -23,7 +24,6 @@
 }
 
 .icon-page-top {
-  margin-bottom: var(--space-base);
   width: 2rem;
   height: 2rem;
   fill: var(--color-primary);
@@ -31,6 +31,7 @@
 }
 
 .title {
+  --flow: var(--space-xl);
   font-family: var(--font-family-secondary);
   font-size: var(--text-xl);
   font-weight: var(--font-bold);
