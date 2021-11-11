@@ -76,11 +76,20 @@
 .projects .item a {
   display: block;
   aspect-ratio: 16/9;
-  background: var(--color-bg-accent);
   transform-style: preserve-3d;
   transition: transform 250ms cubic-bezier(0.34, 1.85, 0.66, 1);
   overflow: hidden;
   border-radius: var(--border-radius);
+
+  &::before {
+    content: "";
+    display: block;
+    top: 1px;
+    left: 1px;
+    width: calc(100% - 2px);
+    height: calc(100% - 2px);
+    background: var(--color-bg-accent);
+  }
 }
 
 .projects .item + .item {
