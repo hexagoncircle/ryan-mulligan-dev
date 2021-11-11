@@ -22,7 +22,7 @@
 
 .content ul {
   list-style-type: var(--list-style-type);
-  margin-left: var(--list-offset);
+  margin-inline-start: var(--list-offset);
 
   li::marker {
     color: var(--list-marker-color);
@@ -32,12 +32,12 @@
 
 .content ol {
   list-style: decimal;
-  padding-left: 1.125em;
+  margin-inline-start: 1.5rem;
 }
 
 .content li {
-  margin-right: var(--space-base);
-  margin-bottom: var(--space-xs);
+  margin-inline-end: var(--space-base);
+  margin-block-end: var(--space-xs);
 }
 
 .content :is(h2, h3) {
