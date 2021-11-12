@@ -41,23 +41,29 @@
 <body>
 	<header class="header wrapper flow">
 		<svg class="header-icon" aria-hidden="true" viewBox="0 0 24 36">
-    	<rect x="0" y="0" width="24" height="12" />
-    	<rect x="0" y="0" width="12" height="24"/>
-    	<rect x="12" y="24" width="12" height="12"/>
-	  </svg>
+			<rect x="0" y="0" width="24" height="12" />
+			<rect x="0" y="0" width="12" height="24"/>
+			<rect x="12" y="24" width="12" height="12"/>
+		</svg>
+
+		<a class="skip-to-content" href="#main">
+			Skip to content
+			<svg class="icon" viewBox="0 0 320 512" aria-hidden="true">
+				<path d="M143 352.3L7 216.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.2 9.4-24.4 9.4-33.8 0z" />
+			</svg>
+		</a>
 
 		{% block header %}
 		  <h1 class="title">{{ title }}</h1>
-
-  		{% if subtitle %}
+			{% if subtitle %}
 				<p class="subtitle">{{ subtitle }}</p>
 			{% endif %}
 		{% endblock %}
+
 		{% include "social-navigation.njk" %}
 	</header>
 
-
-	<main>
+	<main id="main">
 		{% block content %}
 			<article class="content wrapper flow">
 				{{ content | safe }}
@@ -69,7 +75,6 @@
 		<p class="footer-copy">© {% year %} assembled by Ryan Mulligan, with love. Bring it on <a title="Go to the site homepage" href="{{ '/' | url }}">home</a></p>
 	</footer>
 
-	{% block scripts %}
-	{% endblock %}
+	{% block scripts %}{% endblock %}
 </body>
 </html>

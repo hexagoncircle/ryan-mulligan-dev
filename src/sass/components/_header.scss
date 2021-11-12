@@ -1,5 +1,10 @@
 .header {
   --flow: var(--space-base);
+  position: relative;
+}
+
+.container {
+  display: flex;
 }
 
 .header-icon {
@@ -35,7 +40,7 @@
 }
 
 .title {
-  --flow: var(--space-xl);
+  --flow: 0;
   font-family: var(--font-family-secondary);
   font-size: var(--text-xl);
   font-weight: var(--font-bold);
@@ -60,4 +65,31 @@
 
 .meta {
   font-size: var(--text-sm);
+}
+
+.skip-to-content {
+  --flow: calc(var(--space-xl) - var(--text-sm));
+  display: inline-flex;
+  gap: 3px;
+  place-self: start;
+  margin-inline-start: 0.3rem;
+  opacity: 0;
+  pointer-events: none;
+  user-select: none;
+  font-size: var(--text-sm);
+  line-height: 1;
+  text-decoration: none;
+
+  &:focus {
+    opacity: 1;
+    pointer-events: initial;
+    user-select: initial;
+    outline-offset: 4px;
+  }
+}
+
+.skip-to-content .icon {
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
 }
