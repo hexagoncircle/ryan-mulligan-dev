@@ -70,26 +70,27 @@
 .skip-to-content {
   --flow: calc(var(--space-xl) - var(--text-sm));
   display: inline-flex;
-  gap: 3px;
+  align-items: center;
+  gap: 2px;
   place-self: start;
   margin-inline-start: 0.3rem;
-  opacity: 0;
-  pointer-events: none;
-  user-select: none;
   font-size: var(--text-sm);
   line-height: 1;
   text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  user-select: none;
 
   &:focus {
     opacity: 1;
     pointer-events: initial;
     user-select: initial;
-    outline-offset: 4px;
+    outline-offset: 3px;
   }
 }
 
 .skip-to-content .icon {
-  width: 1em;
-  height: 1em;
+  width: 1.125em;
+  height: 1.125em;
   fill: currentColor;
 }
