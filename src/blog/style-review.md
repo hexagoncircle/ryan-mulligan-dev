@@ -2,7 +2,7 @@
 title: Style Review
 subtitle: This post is reserved for reviewing the styles of common page elements.
 description: This post is reserved for reviewing the styles of common page elements.
-date: 11-05-2021
+date: 2021-11-05
 ---
 
 ## Donut dessert lollipop dragée pudding marzipan jelly

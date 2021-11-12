@@ -1,7 +1,7 @@
 ---
 title: Migrating to Eleventy
 description: Quick brain dump around my experience with Eleventy.js, a static site generator.
-date: 11-08-2021
+date: 2021-11-08
 ---
 
 ## Hello, world!
