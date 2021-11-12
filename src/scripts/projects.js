@@ -9,9 +9,11 @@ const enableFocusableChildren = (enabled, el) => {
 
   if (enabled) {
     el.removeAttribute("tabIndex");
+    el.setAttribute("data-tab-active", true);
     [...children].forEach((child) => child.removeAttribute("tabIndex"));
   } else {
     el.setAttribute("tabIndex", 0);
+    el.removeAttribute("data-tab-active");
     [...children].forEach((child) => child.setAttribute("tabIndex", -1));
   }
 };
@@ -22,6 +24,7 @@ const handleKeyPress = (e, el) => {
   const lastFocusableElement = focusableElements[focusableElements.length - 1];
 
   if (e.key === "ArrowDown" || e.key === "Enter") {
+    if (el.hasAttribute("data-tab-active")) return;
     e.preventDefault();
     enableFocusableChildren(true, el);
     getAllFocusableElements(el)[0].focus();
@@ -29,6 +32,7 @@ const handleKeyPress = (e, el) => {
   }
 
   if (e.key === "ArrowUp" || e.key === "Escape") {
+    if (!el.hasAttribute("data-tab-active")) return;
     e.preventDefault();
     enableFocusableChildren(false, el);
     el.focus();
