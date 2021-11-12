@@ -1,4 +1,11 @@
-/* Utilities */
+@mixin smooth-scroll {
+  scroll-behavior: smooth;
+
+  @media screen and (prefers-reduced-motion: reduce) {
+    scroll-behavior: auto;
+  }
+}
+
 .flow > * + * {
   margin-top: var(--flow, var(--space-md));
 }
@@ -24,7 +31,7 @@
 }
 
 .scroll-x:focus-within {
-  scroll-behavior: smooth;
+  @include smooth-scroll;
 }
 
 .scroll-x > * {

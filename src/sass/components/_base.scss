@@ -1,10 +1,5 @@
-/* Globals */
 html:focus-within {
-  scroll-behavior: smooth;
-
-  @media screen and (prefers-reduced-motion: reduce) {
-    scroll-behavior: auto;
-  }
+  @include smooth-scroll;
 }
 
 html,
