@@ -18,10 +18,13 @@
   display: flex;
   max-width: 100%;
   overflow-x: scroll;
-  scroll-behavior: smooth;
   overscroll-behavior-x: contain;
   scrollbar-width: none;
   scroll-snap-type: x mandatory;
+}
+
+.scroll-x:focus-within {
+  scroll-behavior: smooth;
 }
 
 .scroll-x > * {

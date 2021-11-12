@@ -66,6 +66,10 @@ footer {
   border-top: 2px dashed var(--color-bg-accent);
 }
 
+main {
+  scroll-margin-top: var(--space-lg);
+}
+
 main > * + * {
   margin-top: var(--space-xl);
 }
