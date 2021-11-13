@@ -48,7 +48,7 @@ Pudding lollipop cake gummi bears oat cake bear claw muffin powder chupa chups. 
 
 > Chupa chups bear claw biscuit cookie! Sweet biscuit powder... ice cream cupcake danish?
 
-Sweet chocolate cake oat cake dragée candy apple pie. Oat cake soufflé brownie toffee gummi bears marzipan chocolate bar. Jelly beans chocolate cake chocolate bar fruitcake pie chocolate bar shortbread.
+Sweet chocolate cake oat cake dragée candy apple pie. Oat cake soufflé brownie toffee gummi bears marzipan chocolate bar. Try `getChocolate('cake')` or fruitcake pie chocolate bar shortbread.
 
 Chocolate cake sweet roll jelly beans. Cake lollipop apple pie lollipop jelly beans cookie.
 

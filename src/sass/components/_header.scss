@@ -67,8 +67,22 @@
   font-size: var(--text-sm);
 }
 
+.meta > * {
+  display: flex;
+  align-items: center;
+}
+
+.meta .icon {
+  --color-icon: var(--color-primary);
+  --size: 1.4em;
+  flex-shrink: 0;
+  width: var(--size);
+  height: var(--size);
+  margin-inline-end: var(--space-xs);
+}
+
 .skip-to-content {
-  --flow: calc(var(--space-xl) - var(--text-sm));
+  margin-top: var(--space-xl);
   display: inline-flex;
   align-items: center;
   gap: 2px;

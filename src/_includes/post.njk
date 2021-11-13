@@ -9,7 +9,13 @@
 
   {% if meta %}
     <div class="meta">
-      <p>Posted on {{ page.date | postDate }}</p>
+      <p>
+        <svg class="icon" aria-hidden="true" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M92.68629,216H48a8,8,0,0,1-8-8V163.31371a8,8,0,0,1,2.34315-5.65686l120-120a8,8,0,0,1,11.3137,0l44.6863,44.6863a8,8,0,0,1,0,11.3137l-120,120A8,8,0,0,1,92.68629,216Z" fill="none" stroke="var(--color-icon)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path><line x1="136" y1="64" x2="192" y2="120" fill="none" stroke="var(--color-icon)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><polyline points="160 192 200 152 192 120" fill="none" stroke="var(--color-icon)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline><line x1="40.50826" y1="160.50826" x2="95.49177" y2="215.49177" fill="none" stroke="var(--color-icon)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line></svg>
+        Posted on {{ page.date | postDate }}</p>
+      <p>
+        <svg class="icon" aria-hidden="true" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><polyline points="176.002 32 176.002 128 143.995 104 112.002 128 112.002 32" fill="none" stroke="var(--color-icon)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline><path d="M48.00244,216a24,24,0,0,1,24-24h136V32h-136a24,24,0,0,0-24,24Z" fill="none" stroke="var(--color-icon)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path><polyline points="48.002 216 48.002 224 192.002 224" fill="none" stroke="var(--color-icon)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline></svg>
+        About {{ content | timeToRead }} of reading time
+      </p>
     </div>
   {% endif %}
 {% endblock %}

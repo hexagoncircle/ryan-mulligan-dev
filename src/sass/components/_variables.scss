@@ -58,9 +58,9 @@
 
 [data-theme="5"] {
   --color-text: hsl(0, 0%, 5%);
-  --color-text-accent: hsl(0, 0%, 20%);
+  --color-text-accent: hsl(0, 0%, 16%);
   --color-bg: hsl(0, 0%, 98%);
-  --color-bg-accent: hsl(0, 0%, 90%);
+  --color-bg-accent: hsl(0, 0%, 94%);
   --color-primary: hsl(230, 80%, 60%);
   --color-secondary: hsl(344, 85%, 48%);
 }
@@ -109,6 +109,6 @@ body {
   --ease: cubic-bezier(0.33, 1, 0.68, 1);
 
   --page-padding: var(--space-md);
-  --page-max-width: min(38rem, 100% - var(--page-padding) * 2);
+  --page-max-width: min(40rem, 100% - var(--page-padding) * 2);
   --page-content-offset: calc(var(--space-base) * -1);
 }

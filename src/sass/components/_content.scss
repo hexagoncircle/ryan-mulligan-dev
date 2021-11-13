@@ -47,8 +47,7 @@
 
 .content pre[class*="language-"],
 .content figure {
-  margin-right: var(--page-content-offset);
-  margin-left: var(--page-content-offset);
+  margin-inline: var(--page-content-offset);
 }
 
 .content pre[class*="language-"] {
@@ -79,6 +78,35 @@
 .content .source {
   display: block;
   font-size: var(--text-sm);
+}
+
+.content .callout {
+  --border-width: 0.125rem;
+  --border: var(--border-width) dashed var(--color-primary);
+  position: relative;
+  font-size: var(--text-sm);
+  padding: calc(var(--space-md) / 1.5);
+  padding-inline-start: var(--space-md);
+  margin-inline-start: calc(var(--border-width) * -1);
+  border-inline-start: var(--border);
+  background-color: var(--color-bg-accent);
+
+  &::before {
+    --size: 2.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: "🙌";
+    font-size: 1.3em;
+    position: absolute;
+    top: 0.5em;
+    left: calc((var(--size) / -2) - (var(--border-width) / 2));
+    width: var(--size);
+    height: var(--size);
+    border: var(--border);
+    background-color: var(--color-bg);
+    border-radius: 100%;
+  }
 }
 
 /* Hello link emoji interaction */

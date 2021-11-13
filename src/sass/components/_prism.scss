@@ -1,3 +1,11 @@
+code {
+  font-size: 0.9em;
+  font-family: "Fira Code", monospace;
+  padding: 2px var(--space-xs);
+  background: var(--color-bg-accent);
+  border-radius: var(--border-radius);
+}
+
 code[class*="language-"],
 pre[class*="language-"] {
   text-align: left;
@@ -37,7 +45,7 @@ pre[class*="language-"] ::selection {
 
 :not(pre) > code[class*="language-"] {
   white-space: normal;
-  border-radius: 0.2em;
+  border-radius: var(--border-radius);
   padding: 0.1em;
 }
 

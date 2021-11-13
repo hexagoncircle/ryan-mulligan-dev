@@ -1,0 +1,17 @@
+.codepen-wrapper {
+  position: relative;
+  overflow: auto;
+  display: grid;
+  grid-template-areas: "container";
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  resize: horizontal;
+  width: min(50rem, 100% - var(--page-padding) * 2);
+  box-shadow: var(--color-bg-accent) var(--space-sm) var(--space-sm) 0;
+
+  iframe {
+    grid-area: container;
+    width: 100%;
+    height: 100%;
+  }
+}

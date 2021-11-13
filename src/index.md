@@ -19,7 +19,7 @@ templateEngineOverride: njk,md
 My own random thoughts, code snippets, and other web-related stuff I'd like to share out there. Still in the process of writing content but I have a few in the cooker!
 
 <ul>
-  {%- for post in collections.post -%}
+  {%- for post in collections.post | reverse  -%}
     <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
   {%- endfor -%}
 </ul>
