@@ -1,4 +1,4 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "default-src 'self' 'unsafe-inline' fonts.googleapis.com fonts.gstatic.com; img-src * data: blob: 'unsafe-inline'; frame-src codepen.io"
+    Content-Security-Policy = "default-src 'self' 'unsafe-inline' fonts.googleapis.com fonts.gstatic.com; img-src * data: blob: 'unsafe-inline'; frame-src https://codepen.io/"
