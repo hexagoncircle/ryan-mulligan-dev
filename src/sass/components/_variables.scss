@@ -75,25 +75,29 @@ body {
   --text-base: clamp(1.1rem, 4vw, 1.3rem);
   --text-xs: 0.85rem;
   --text-sm: clamp(1rem, 3.5vw, 1.12rem);
-  --text-md: clamp(1.5rem, 6vw, 2rem);
+  --text-md: clamp(1.25rem, 6vw, 2rem);
   --text-md-accent: clamp(1.4rem, 5vw, 2rem);
-  --text-lg: clamp(2rem, 7.5vw, 2.5rem);
-  --text-xl: clamp(2.5rem, 10vw, 3.4rem);
+  --text-lg: clamp(1.75rem, 7.5vw, 2.5rem);
+  --text-xl: clamp(2.25rem, 10vw, 3.4rem);
 
   --space-base: 1rem;
-  --space-xxs: calc(var(--space-base) / 4);
   --space-xs: calc(var(--space-base) / 3);
   --space-sm: calc(var(--space-base) / 2);
   --space-md: calc(var(--space-base) * 2);
   --space-lg: clamp(
     calc(var(--space-base) * 1.5),
     8vw,
-    calc(var(--space-base) * 4)
+    calc(var(--space-base) * 3)
   );
   --space-xl: clamp(
     calc(var(--space-base) * 2),
     8vw,
-    calc(var(--space-base) * 5)
+    calc(var(--space-base) * 4)
+  );
+  --space-2xl: clamp(
+    calc(var(--space-base) * 3),
+    8vw,
+    calc(var(--space-base) * 6)
   );
 
   --list-offset: 1.25rem;

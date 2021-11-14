@@ -3,28 +3,18 @@
   position: relative;
 }
 
-.container {
-  display: flex;
-}
-
-.header-icon {
-  width: 2rem;
-  height: 2rem;
-  fill: var(--color-primary);
-  transition: fill var(--duration) var(--ease);
-}
-
 .social-navigation {
+  --offset: clamp(var(--space-sm), 0.8vw, var(--space-base));
   position: fixed;
   margin-top: unset;
-  top: var(--space-sm);
-  right: var(--space-base);
+  top: var(--offset);
+  right: var(--offset);
   z-index: 1;
 }
 
 .social-navigation .list {
   display: flex;
-  gap: var(--space-sm);
+  gap: var(--offset);
 }
 
 .social-navigation .link {
@@ -34,8 +24,9 @@
 }
 
 .social-navigation .icon {
-  width: var(--text-base);
-  height: var(--text-base);
+  --size: clamp(1.25rem, 1.5vw, 1.75rem);
+  width: var(--size);
+  height: var(--size);
   fill: currentcolor;
 }
 
@@ -82,7 +73,7 @@
 }
 
 .skip-to-content {
-  margin-top: var(--space-xl);
+  margin-top: var(--space-2xl);
   display: inline-flex;
   align-items: center;
   gap: 2px;

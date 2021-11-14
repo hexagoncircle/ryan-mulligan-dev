@@ -31,10 +31,19 @@
 .content h2 {
   --flow: var(--space-xl);
   font-size: var(--text-lg);
+
+  + * {
+    --flow: var(--space-base);
+  }
 }
 
 .content h3 {
+  --flow: var(--space-lg);
   font-size: var(--text-md);
+
+  + * {
+    --flow: var(--space-base);
+  }
 }
 
 .content blockquote {
@@ -97,7 +106,7 @@
     align-items: center;
     justify-content: center;
     content: "🙌";
-    font-size: 1.3em;
+    font-size: 1.25em;
     position: absolute;
     top: 0.5em;
     left: calc((var(--size) / -2) - (var(--border-width) / 2));

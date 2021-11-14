@@ -1,7 +1,7 @@
 /* Projects */
 .projects {
   position: relative;
-  margin-bottom: calc(var(--space-sm) * -1);
+  margin-top: calc(var(--space-base) * -1);
   padding: var(--page-padding);
   width: 100%;
 }
@@ -21,6 +21,7 @@
 
 .icon-codepen {
   display: flex;
+  border-radius: 50%;
 }
 
 .icon-codepen::before,
