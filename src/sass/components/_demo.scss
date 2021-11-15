@@ -1,17 +1,22 @@
-.codepen-wrapper {
+.codepen {
+  font-style: italic;
+}
+
+.cp_embed_wrapper {
+  grid-column: 1 / -1;
   position: relative;
   overflow: auto;
   display: grid;
+  place-items: center;
   grid-template-areas: "container";
   margin-inline-start: auto;
   margin-inline-end: auto;
+  min-height: 300px;
   resize: horizontal;
   width: min(50rem, 100% - var(--page-padding) * 2);
-  box-shadow: var(--color-bg-accent) var(--space-sm) var(--space-sm) 0;
 
   iframe {
     grid-area: container;
     width: 100%;
-    height: 100%;
   }
 }

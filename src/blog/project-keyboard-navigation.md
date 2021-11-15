@@ -21,7 +21,12 @@ The argument against a carousel-style UX popped in my head, naturally, and maybe
 Below is a stripped-down CodePen demo focused on layout and keyboard navigation criteria:
 {#codepen-demo}
 
-{% CodePen "https://codepen.io/hexagoncircle/pen/QWMZBve", "38rem" %}
+<p class="codepen" data-height="590" data-default-tab="result" data-slug-hash="QWMZBve" data-user="hexagoncircle">
+  <span>See the Pen <a href="https://codepen.io/hexagoncircle/pen/QWMZBve">
+  Section keyboard navigation with arrow keys</a> by Ryan Mulligan (<a href="https://codepen.io/hexagoncircle">@hexagoncircle</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
 
 Overall, I'd consider this a horizontal scroll container. Not _really_ a carousel. If you're shaking your head, disagree, and have feedback already, I'm looking forward to it! For the sake of getting to the real purpose of this article, let's read on.
 
@@ -72,15 +77,12 @@ Here's how it works:
 - The right arrow jumps to the next project link in sequence until it reaches the end, then loops back to the beginning of the list.
 - The left arrow focuses the previous project link until it reaches the first item, then it jumps to the end of the list and continues working backwards.
 
-In an effort to better surface this interaction, help text is inserted into the <abbr title="Document Object Model">DOM</abbr> when the container focus is visible. My screen reader testing has been limited to Voiceover on macOS at the time of writing this article, but it's good to note that with Voiceover enabled, we are given feedback on how to traverse the list using built-in keyboard shortcuts.
+In an effort to better surface this interaction, helper text is inserted into the <abbr title="Document Object Model">DOM</abbr> when the container focus is visible. My screen reader testing has been limited to Voiceover on macOS at the time of writing this article, but it's good to note that with Voiceover enabled, we are given feedback on how to traverse the list using built-in keyboard shortcuts.
 
 <figure>
   <img src="/assets/blog/projects-list-focus-voiceover-text.png" alt="A screenshot of the projects list focused and the Voiceover notification" />
   <figcaption>An example of the voiceover notification that reads, "You are currently on a list. To move between items in this list, press Control-Option-Right Arrow or Control-Option-Left Arrow."</figcaption>
 </figure>
-
-In the above screenshot, this help text is not rendered in the Voiceover prompt, but I have since added it to an `aria-describedby` attribute on the project list element. When using Voiceover, the help text does seem semi-redundant being prefixed to that default list messaging. However, it still seems like this customization should be surfaced. What are your thoughts?
-{.callout}
 
 To review the code used in setting up these custom keyboard interactions, head back up to the [CodePen example](#codepen-demo) from earlier in this article and click the JS tab.
 
