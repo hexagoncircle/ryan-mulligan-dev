@@ -1,5 +1,25 @@
+// Smooth scrolling + Find on a page fix
+@keyframes smoothscroll1 {
+  from,
+  to {
+    scroll-behavior: smooth;
+  }
+}
+
+@keyframes smoothscroll2 {
+  from,
+  to {
+    scroll-behavior: smooth;
+  }
+}
+
 @mixin smooth-scroll {
+  & {
+    animation: smoothscroll1 1s;
+  }
+
   &:focus-within {
+    animation-name: smoothscroll2;
     scroll-behavior: smooth;
 
     @media screen and (prefers-reduced-motion: reduce) {

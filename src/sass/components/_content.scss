@@ -1,5 +1,9 @@
 .content {
   grid-column: 2;
+
+  > * {
+    scroll-margin-top: var(--space-md);
+  }
 }
 
 .content ul {
