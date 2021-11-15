@@ -1,95 +1,46 @@
-const getAllFocusableElements = (el) => {
-  return el.querySelectorAll(
-    'button:not([disabled]), [href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"]):not([disabled]), details:not([disabled]), summary:not(:disabled)'
-  );
-};
+const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+const projectList = document.querySelector(".projects");
+const projects = [...projectList.querySelectorAll("a")];
+let focusedProjectIndex = -1;
 
-const enableFocusableChildren = (enabled, el) => {
-  const children = getAllFocusableElements(el);
-
-  if (enabled) {
-    el.removeAttribute("tabIndex");
-    el.setAttribute("data-tab-active", true);
-    [...children].forEach((child) => child.removeAttribute("tabIndex"));
-  } else {
-    el.setAttribute("tabIndex", 0);
-    el.removeAttribute("data-tab-active");
-    [...children].forEach((child) => child.setAttribute("tabIndex", -1));
-  }
-};
-
-const handleKeyPress = (e, el) => {
-  const focusableElements = getAllFocusableElements(el);
-  const firstFocusableElement = focusableElements[0];
-  const lastFocusableElement = focusableElements[focusableElements.length - 1];
-
-  if (e.key === "ArrowDown" || e.key === "Enter") {
-    if (el.hasAttribute("data-tab-active")) return;
-    e.preventDefault();
-    enableFocusableChildren(true, el);
-    getAllFocusableElements(el)[0].focus();
-    return;
-  }
-
-  if (e.key === "ArrowUp" || e.key === "Escape") {
-    if (!el.hasAttribute("data-tab-active")) return;
-    e.preventDefault();
-    enableFocusableChildren(false, el);
-    el.focus();
-    return;
-  }
-
-  if (e.key === "Tab") {
-    if (document.activeElement === lastFocusableElement) {
-      setTimeout(() => enableFocusableChildren(false, el));
+const handleKeyPress = (e) => {
+  if (e.key === "ArrowRight") {
+    if (focusedProjectIndex === projects.length - 1) {
+      focusedProjectIndex = 0;
+    } else {
+      focusedProjectIndex++;
     }
   }
 
-  if (e.key === "Tab" && e.shiftKey) {
-    if (document.activeElement === firstFocusableElement) {
-      setTimeout(() => enableFocusableChildren(false, el));
+  if (e.key === "ArrowLeft") {
+    if (focusedProjectIndex === 0 || focusedProjectIndex === -1) {
+      focusedProjectIndex = projects.length - 1;
+    } else {
+      focusedProjectIndex--;
     }
+  }
+
+  if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
+    const selected = projects[focusedProjectIndex];
+
+    e.preventDefault();
+    selected.scrollIntoView({
+      block: "nearest",
+      inline: "start",
+      behavior: reducedMotion.matches ? "auto" : "smooth",
+    });
+    selected.focus({ preventScroll: true });
   }
 };
 
-const init = (el) => {
-  el.setAttribute(
+const initProjectListKeyboardControl = () => {
+  projects.forEach((child) => child.setAttribute("tabIndex", -1));
+  projectList.setAttribute("tabIndex", 0);
+  projectList.setAttribute(
     "aria-label",
-    "CodePen projects. Press down arrow or enter key to navigate this collection of links."
+    "Press left or right arrow key to navigate this collection of links."
   );
-  enableFocusableChildren(false, el);
-  el.addEventListener("keydown", (e) => {
-    handleKeyPress(e, el);
-  });
+  projectList.addEventListener("keydown", (e) => handleKeyPress(e));
 };
 
-const projectsContainer = document.querySelector(".projects");
-const projects = projectsContainer.querySelectorAll(".item");
-
-document.addEventListener("click", (e) => {
-  if (!projectsContainer.contains(e.target)) {
-    enableFocusableChildren(false, projectsContainer);
-  }
-});
-
-projects.forEach((project) => {
-  project.addEventListener("mousemove", (e) => {
-    const r = project.getBoundingClientRect();
-
-    project.style.setProperty(
-      "--x",
-      e.clientX - (r.left + Math.floor(r.width / 2))
-    );
-    project.style.setProperty(
-      "--y",
-      e.clientY - (r.top + Math.floor(r.height / 2))
-    );
-  });
-
-  project.addEventListener("mouseleave", () => {
-    project.style.setProperty("--x", 0);
-    project.style.setProperty("--y", 0);
-  });
-});
-
-init(projectsContainer);
+initProjectListKeyboardControl();
