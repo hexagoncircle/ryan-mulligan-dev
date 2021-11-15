@@ -2,8 +2,8 @@
 title: A Horizontal Scroll List and Custom Keyboard Navigation
 description: An exploration of component keyboard control and interactions with large sections of focusable content.
 subtitle: An exploration of component keyboard control and interactions with large sections of focusable content.
-tags: draft
-date: 2021-11-13
+tags: post
+date: 2021-11-15
 ---
 
 ## Getting started
@@ -19,8 +19,9 @@ The argument against a carousel-style UX popped in my head, naturally, and maybe
 - We can quickly scan down to the next article on the page without scrolling through a list of 40+ cards, e.g. displayed in a layout such as a traditional responsive grid.
 
 Below is a stripped-down CodePen demo focused on layout and keyboard navigation criteria:
+{#codepen-demo}
 
-{% CodePen "https://codepen.io/hexagoncircle/pen/29fbbc0b99af26ddc46b8ba896ef10bf", "38rem" %}
+{% CodePen "https://codepen.io/hexagoncircle/pen/QWMZBve", "38rem" %}
 
 Overall, I'd consider this a horizontal scroll container. Not _really_ a carousel. If you're shaking your head, disagree, and have feedback already, I'm looking forward to it! For the sake of getting to the real purpose of this article, humor me and read on.
 
@@ -47,12 +48,13 @@ Instead of adding more elements to the <abbr title="Document Object Model">DOM</
 
 Here's how it works:
 
-- The script is initialized, setting `tabindex="0"` on the project list element. Now it's focusable in the document's source order.
-- The project links are set to `tabindex="-1"` so that they become unreachable through sequential keyboard navigation.
-- Pressing the `down arrow` or `enter` key will revert the above `tabindex` changes. We can then `tab` and `shift + tab` through the series of links.
-- Pressing the `up arrow` or `escape` key _or_ tabbing beyond the first or last focusable item in the project list will jump out to the next focusable element in sequential keyboard navigation. The tabindex is reset to what is described in the first two bullet points.
+- The script is initialized, and `tabindex="0"` is applied to the project list. This adds it as a focusable element in the document's source order.
+- `tabindex="-1"` is set on every project link making them unreachable through sequential keyboard navigation.
+- When the list element is focused, the left and right arrow keys become activated to traverse its links.
+- The right arrow jumps to the next project link in sequence until it reaches the end, then loops back to the beginning of the list.
+- The left arrow focuses the previous project link until it reaches the first item, then it jumps to the end of the list and continues working backwards.
 
-In the CodePen example above, click on the JS tab for the specific JavaScript being used on this project list.
+In the [CodePen example](#codepen-demo) above, click on the JS tab to review the code used in setting up these custom keyboard interactions.
 
 ## When JavaScript is disabled
 
@@ -63,6 +65,8 @@ Most importantly, this layout works as intended without JavaScript. The level of
 I've made quite a few assumptions here. Does this feel intuitive when navigating using a keyboard? Or is it possible that this may diminish the default flow? Your feedback will help me improve this experience or think about this component behavior differently. [Reach out on Twitter](https://twitter.com/hexagoncircle) or <a href="{% mailToPath title %}" target="_blank" rel="noopener">send me an email</a>.
 
 ### Helpful resources
+
+Special thanks to my good friends that gave initial feedback in a draft of this article. Your help is very appreciated! Here are some other supportive resources:
 
 - [Use the tabindex attribute - The A11Y Project](https://www.a11yproject.com/posts/2021-01-28-how-to-use-the-tabindex-attribute/)
 - [Optimizing keyboard navigation using tabindex and ARIA](https://www.sarasoueidan.com/blog/keyboard-friendlier-article-listings/)
