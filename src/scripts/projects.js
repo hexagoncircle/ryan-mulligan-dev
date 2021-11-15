@@ -33,14 +33,36 @@ const handleKeyPress = (e) => {
   }
 };
 
-const initProjectListKeyboardControl = () => {
-  projects.forEach((child) => child.setAttribute("tabIndex", -1));
+const initProjectList = () => {
+  projects.forEach((project) => {
+    project.setAttribute("tabIndex", -1);
+
+    project.addEventListener("mousemove", (e) => {
+      const r = project.getBoundingClientRect();
+
+      project.style.setProperty(
+        "--x",
+        e.clientX - (r.left + Math.floor(r.width / 2))
+      );
+      project.style.setProperty(
+        "--y",
+        e.clientY - (r.top + Math.floor(r.height / 2))
+      );
+    });
+
+    project.addEventListener("mouseleave", () => {
+      project.style.setProperty("--x", 0);
+      project.style.setProperty("--y", 0);
+    });
+  });
+
   projectList.setAttribute("tabIndex", 0);
-  projectList.setAttribute(
-    "aria-label",
-    "Press left or right arrow key to navigate this collection of links."
-  );
   projectList.addEventListener("keydown", (e) => handleKeyPress(e));
+  projectList.insertAdjacentHTML(
+    "afterend",
+    `<p id="projects-focus-text">Navigate with left and right arrow keys</p>`
+  );
+  projectList.setAttribute("aria-label", "Links to CodePen projects");
 };
 
-initProjectListKeyboardControl();
+initProjectList();

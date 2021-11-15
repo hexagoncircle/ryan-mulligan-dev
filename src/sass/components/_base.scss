@@ -23,10 +23,6 @@ input[type="range"]:focus,
   outline-offset: var(--outline-offset);
 }
 
-.projects:focus-visible {
-  outline-offset: -8px;
-}
-
 small {
   font-size: var(--text-sm);
 }

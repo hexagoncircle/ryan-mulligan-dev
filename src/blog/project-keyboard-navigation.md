@@ -23,7 +23,7 @@ Below is a stripped-down CodePen demo focused on layout and keyboard navigation 
 
 {% CodePen "https://codepen.io/hexagoncircle/pen/QWMZBve", "38rem" %}
 
-Overall, I'd consider this a horizontal scroll container. Not _really_ a carousel. If you're shaking your head, disagree, and have feedback already, I'm looking forward to it! For the sake of getting to the real purpose of this article, humor me and read on.
+Overall, I'd consider this a horizontal scroll container. Not _really_ a carousel. If you're shaking your head, disagree, and have feedback already, I'm looking forward to it! For the sake of getting to the real purpose of this article, let's read on.
 
 ## User flow on a keyboard
 
@@ -62,7 +62,7 @@ Hmm. This seems somewhat restrictive and perhaps confusing. I felt that there ma
 
 ### Custom keyboard control
 
-Instead of adding more elements to the <abbr title="Document Object Model">DOM</abbr> tree, this iteration explores setting focus on the project list element with [tabindex](https://www.a11yproject.com/posts/2021-01-28-how-to-use-the-tabindex-attribute/). By customizing the tabindex on this component, we now have the choice of interacting with this list of links or jumping to the next focusable element on the page.
+This iteration explores setting focus on the project list element with [tabindex](https://www.a11yproject.com/posts/2021-01-28-how-to-use-the-tabindex-attribute/). By customizing the tabindex on this component, we now have the choice of interacting with this list of links or jumping to the next focusable element on the page.
 
 Here's how it works:
 
@@ -72,7 +72,14 @@ Here's how it works:
 - The right arrow jumps to the next project link in sequence until it reaches the end, then loops back to the beginning of the list.
 - The left arrow focuses the previous project link until it reaches the first item, then it jumps to the end of the list and continues working backwards.
 
-In the [CodePen example](#codepen-demo) above, click on the JS tab to review the code used in setting up these custom keyboard interactions.
+In an effort to better surface this interaction, help text is inserted into the <abbr title="Document Object Model">DOM</abbr> when the container focus is visible. My screen reader testing has been limited to Voiceover on macOS at the time of writing this article, but it's good to note that with Voiceover activated, we are given feedback on how to traverse the list using built-in keyboard shortcuts.
+
+<figure>
+  <img src="/assets/blog/projects-list-focus-voiceover-text.png" alt="A screenshot of the projects list focused and the Voiceover notification" />
+  <figcaption>An example of the voiceover notification that reads, "You are currently on a list. To move between items in this list, press Control-Option-Right Arrow or Control-Option-Left Arrow."</figcaption>
+</figure>
+
+In the [CodePen example](#codepen-demo) further up in this post, click on the JS tab to review the code used in setting up these custom keyboard interactions.
 
 ## When JavaScript is disabled
 
