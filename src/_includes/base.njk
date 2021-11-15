@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-no-js>
+{%- set pageUrlLength = page.url | length -%}
 {%- set pageTitle %}{% if title %}{{ title }} | {% endif %}{{ meta.siteName }}{% endset -%}
 {%- set pageDescription %}{% if description %}{{ description }}{% else %}{{ meta.siteDescription }}{% endif %}{% endset -%}
 {%- set pageSocialImg %}{{ meta.url }}/assets/social-image-default.png{% endset -%}
@@ -46,6 +47,10 @@
 				<path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
 			</svg>
 		</a>
+
+		{% if pageUrlLength > 1 %}
+			<a class="home-link" href="{{ '/' | url }}">⟵ home</a>
+		{% endif %}
 
 		{% block header %}
 		  <h1 class="title">{{ title }}</h1>

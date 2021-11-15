@@ -1,10 +1,22 @@
 .header {
+  --offset: clamp(var(--space-sm), 0.8vw, var(--space-base));
   --flow: var(--space-base);
   position: relative;
 }
 
+.home-link {
+  position: fixed;
+  top: var(--offset);
+  left: var(--offset);
+  padding: var(--space-xs);
+  font-size: var(--text-sm);
+  line-height: 1.2;
+  margin-top: unset;
+  text-decoration: none;
+  z-index: 1;
+}
+
 .social-navigation {
-  --offset: clamp(var(--space-sm), 0.8vw, var(--space-base));
   position: fixed;
   margin-top: unset;
   top: var(--offset);
