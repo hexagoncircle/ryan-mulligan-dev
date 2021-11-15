@@ -79,6 +79,9 @@ In an effort to better surface this interaction, help text is inserted into the 
   <figcaption>An example of the voiceover notification that reads, "You are currently on a list. To move between items in this list, press Control-Option-Right Arrow or Control-Option-Left Arrow."</figcaption>
 </figure>
 
+This help text is used in an `aria-describedby` attribute on the project list element. When using Voiceover, the text seems redundant prefixed to the default list messaging prompt but still helpful in calling out these custom controls. What are your thoughts?
+{.callout}
+
 To review the code used in setting up these custom keyboard interactions, head back up to the [CodePen example](#codepen-demo) from earlier in this article and click the JS tab.
 
 ## When JavaScript is disabled

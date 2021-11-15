@@ -34,6 +34,8 @@ const handleKeyPress = (e) => {
 };
 
 const initProjectList = () => {
+  const focusTextElementId = "projects-focus-text";
+
   projects.forEach((project) => {
     project.setAttribute("tabIndex", -1);
 
@@ -60,9 +62,10 @@ const initProjectList = () => {
   projectList.addEventListener("keydown", (e) => handleKeyPress(e));
   projectList.insertAdjacentHTML(
     "afterend",
-    `<p id="projects-focus-text">Navigate with left and right arrow keys</p>`
+    `<p id="${focusTextElementId}">Navigate with left and right arrow keys</p>`
   );
   projectList.setAttribute("aria-label", "Links to CodePen projects");
+  projectList.setAttribute("aria-describedby", focusTextElementId);
 };
 
 initProjectList();

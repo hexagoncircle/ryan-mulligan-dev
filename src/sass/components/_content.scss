@@ -110,7 +110,8 @@
     align-items: center;
     justify-content: center;
     content: "🙌";
-    font-size: 1.25em;
+    font-size: 1.2em;
+    line-height: 1;
     position: absolute;
     top: 0.5em;
     left: calc((var(--size) / -2) - (var(--border-width) / 2));
@@ -119,6 +120,10 @@
     border: var(--border);
     background-color: var(--color-bg);
     border-radius: 100%;
+  }
+
+  code {
+    background-color: var(--color-bg);
   }
 }
 

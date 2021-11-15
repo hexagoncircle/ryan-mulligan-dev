@@ -24,7 +24,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addShortcode("CodePen", (url, height) => {
     const id = new URL(url).pathname.split("/")[3];
 
-    return `<div class="codepen-wrapper full-bleed" style="height: ${height}"><iframe scrolling="no" title="CodePen Embed" src="https://codepen.io/hexagoncircle/embed/${id}?default-tab=result&theme-id=default" frameborder="0" loading="lazy" allowtransparency="true" allowfullscreen="true"><p><a href="${url}" target="_blank" rel="noopener">See the Pen</a></p></iframe></div>`;
+    return `<div class="codepen-wrapper full-bleed" style="height: ${height}"><iframe scrolling="no" title="CodePen Embed" src="https://codepen.io/hexagoncircle/embed/${id}?default-tab=result&theme-id=default&embedded=true" frameborder="0" loading="lazy" allowtransparency="true" allowfullscreen="true"><p><a href="${url}" target="_blank" rel="noopener">See the Pen</a></p></iframe></div>`;
   });
 
   eleventyConfig.addFilter("postDate", (dateObj) =>
