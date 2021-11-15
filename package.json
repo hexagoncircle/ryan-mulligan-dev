@@ -8,9 +8,10 @@
     "watch:eleventy": "eleventy --serve",
     "build:sass": "sass  --no-source-map src/sass:_site/css",
     "build:eleventy": "eleventy",
+    "social-images": "eleventy-social-images --siteName 'Ryan Mulligan'",
     "postbuild": "postcss _site/css/*.css -u autoprefixer cssnano -r --no-map",
     "start": "npm-run-all build:sass --parallel watch:*",
-    "build": "npm-run-all build:sass build:eleventy"
+    "build": "npm-run-all build:sass build:eleventy; npm run social-images"
   },
   "repository": {
     "type": "git",
@@ -34,7 +35,7 @@
   "devDependencies": {
     "@11ty/eleventy-img": "^1.0.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.3",
-    "@manustays/eleventy-plugin-codepen-iframe": "^2.0.1",
+    "@11tyrocks/eleventy-plugin-social-images": "^0.2.0",
     "eleventy-plugin-time-to-read": "^1.1.1",
     "markdown-it": "^10.0.0",
     "markdown-it-attrs": "^4.1.0"

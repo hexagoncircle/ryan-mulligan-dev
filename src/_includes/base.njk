@@ -2,7 +2,8 @@
 <html lang="en" data-no-js>
 {%- set pageTitle %}{% if title %}{{ title }} | {% endif %}{{ meta.siteName }}{% endset -%}
 {%- set pageDescription %}{% if description %}{{ description }}{% else %}{{ meta.siteDescription }}{% endif %}{% endset -%}
-{%- set pageSocialImg %}{{ meta.url }}/assets/social-image-default.png{% endset -%}
+{# {%- set pageSocialImg %}{{ meta.url }}/assets/social-image-default.png{% endset -%} #}
+{%- set pageSocialImg %}{{ meta.url }}/previews/{{ title | slug }}.png{% endset -%}
 
 <head>
 	<meta charset="UTF-8" />
