@@ -36,11 +36,29 @@ Let's jump into some solutions. The following is what I had tried with the latte
 
 ### Skip links
 
-My first solution was to introduce a "skip this section" anchor element that would be focused prior to entering the project list. It's similar to [skip navigation links](https://www.a11ymatters.com/pattern/skip-link/), a common pattern for keyboard navigation and screen readers that allow us to jump directly to the site's main content area.
+My first solution was to introduce a "skip to next section" anchor element that would be focused prior to entering the project list. It's similar to [skip navigation links](https://www.a11ymatters.com/pattern/skip-link/), a common pattern for keyboard navigation and screen readers that allow us to jump directly to the site's main content area.
 
-While inactive, this anchor element is visually hidden on the page. Once focused, the link appears on screen. We can then press the `enter` key and skip the project list to the next page section.
+While inactive, this anchor element is visually hidden on the page. Once focused, the link appears on screen. We can then press the `enter` key and skip over these projects to the next page section based on the hash id set in the `href` attribute.
 
-Using `shift + tab` to navigate back up the page will surface the same issue in reverse. At this point, I debated appending a skip link to the end of the project list. Not a bad idea, but I felt that there may be a better way to handle this navigation instead of sandwiching the component with these skip links.
+Using `shift + tab` to navigate back up the page will surface the same issue in reverse. At this point, I debated appending a skip link to the end of the project list. Doing so would lead to something like this:
+
+```html
+<section id="above-section">
+  <!-- section content -->
+</section>
+
+<a href="#below-section">Skip project section</a>
+<ul class="projects">
+  <!-- 40+ links -->
+</ul>
+<a href="#above-section">Skip project section</a>
+
+<section id="below-section">
+  <!-- section content -->
+</section>
+```
+
+Hmm. This seems somewhat restrictive and perhaps confusing. I felt that there may be a better way to handle this navigation instead of sandwiching the component with these skip elements.
 
 ### Custom keyboard control
 
