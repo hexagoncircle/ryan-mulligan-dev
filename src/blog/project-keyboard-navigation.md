@@ -27,7 +27,7 @@ Overall, I'd consider this a horizontal scroll container. Not _really_ a carouse
 
 ## User flow on a keyboard
 
-After building out the page structure, I tried navigating this site using my keyboard. I quickly noticed how tedious it was tabbing through every single one of those CodePen project links. Perhaps there was a way to make this interaction and page flow feel more seamless.
+After building out the page structure, I tried navigating this site using my keyboard. I quickly noticed how tedious it was tabbing through every single one of those CodePen project links. Perhaps there's a way to make this interaction and page flow feel more seamless.
 
 Experts in the accessibility community may have some really helpful feedback and guidance on these ideas. If you're one of them, I'd love to get your thoughts and update this article accordingly! You can [message me on Twitter](https://twitter.com/hexagoncircle) or <a href="{% mailToPath title %}" target="_blank" rel="noopener">email me</a>.
 {.callout}
@@ -38,7 +38,7 @@ Let's jump into some solutions. The following is what I had tried with the latte
 
 My first solution was to introduce a "skip to next section" anchor element that would be focused prior to entering the project list. It's similar to [skip navigation links](https://www.a11ymatters.com/pattern/skip-link/), a common pattern for keyboard navigation and screen readers that allow us to jump directly to the site's main content area.
 
-While inactive, this anchor element is visually hidden on the page. Once focused, the link appears on screen. We can then press the `enter` key and skip over these projects to the next page section based on the hash id set in the `href` attribute.
+While inactive, this anchor element is visually hidden on the page. Once focused, the link appears on screen. We can then press the `enter` key and skip over these projects to the next page section containing the `id` used in the `href` attribute.
 
 Using `shift + tab` to navigate back up the page will surface the same issue in reverse. At this point, I debated appending a skip link to the end of the project list. Doing so would lead to something like this:
 
@@ -58,11 +58,11 @@ Using `shift + tab` to navigate back up the page will surface the same issue in 
 </section>
 ```
 
-Hmm. This seems somewhat restrictive and perhaps confusing. I felt that there may be a better way to handle this navigation instead of sandwiching the component with these skip elements.
+Hmm. This seems somewhat restrictive and may be confusing. Let's explore a different way to handle this navigation instead of sandwiching the component with these skip elements.
 
 ### Custom keyboard control
 
-This iteration explores setting focus on the project list element with [tabindex](https://www.a11yproject.com/posts/2021-01-28-how-to-use-the-tabindex-attribute/). By customizing the tabindex on this component, we now have the choice of interacting with this list of links or jumping to the next focusable element on the page.
+This iteration explores setting focus on the project list element with [tabindex](https://www.a11yproject.com/posts/2021-01-28-how-to-use-the-tabindex-attribute/). By customizing the `tabindex` on this component, we now have the choice of interacting with this list of links or jumping to the next focusable element on the page.
 
 Here's how it works:
 
@@ -72,18 +72,18 @@ Here's how it works:
 - The right arrow jumps to the next project link in sequence until it reaches the end, then loops back to the beginning of the list.
 - The left arrow focuses the previous project link until it reaches the first item, then it jumps to the end of the list and continues working backwards.
 
-In an effort to better surface this interaction, help text is inserted into the <abbr title="Document Object Model">DOM</abbr> when the container focus is visible. My screen reader testing has been limited to Voiceover on macOS at the time of writing this article, but it's good to note that with Voiceover activated, we are given feedback on how to traverse the list using built-in keyboard shortcuts.
+In an effort to better surface this interaction, help text is inserted into the <abbr title="Document Object Model">DOM</abbr> when the container focus is visible. My screen reader testing has been limited to Voiceover on macOS at the time of writing this article, but it's good to note that with Voiceover enabled, we are given feedback on how to traverse the list using built-in keyboard shortcuts.
 
 <figure>
   <img src="/assets/blog/projects-list-focus-voiceover-text.png" alt="A screenshot of the projects list focused and the Voiceover notification" />
   <figcaption>An example of the voiceover notification that reads, "You are currently on a list. To move between items in this list, press Control-Option-Right Arrow or Control-Option-Left Arrow."</figcaption>
 </figure>
 
-In the [CodePen example](#codepen-demo) further up in this post, click on the JS tab to review the code used in setting up these custom keyboard interactions.
+To review the code used in setting up these custom keyboard interactions, head back up to the [CodePen example](#codepen-demo) from earlier in this article and click the JS tab.
 
 ## When JavaScript is disabled
 
-Most importantly, this layout works as intended without JavaScript. The level of control I've added attempts to make it easier to interact with this component, but content is still navigable without it. You can give it a shot by disabling JavaScript in your browser settings. Navigating with your keyboard still works; You'll just have to tab through every project in the list. Mouse and touch scrolling are no different.
+This layout works as intended without JavaScript. The level of control I've added attempts to make it easier to interact with this component, but content is still navigable without it. You can give it a shot by disabling JavaScript in your browser settings. Navigating with your keyboard still works; You'll just have to tab through every project in the list. Mouse and touch scrolling are no different.
 
 ## What's your take?
 
