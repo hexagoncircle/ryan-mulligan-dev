@@ -19,7 +19,7 @@
 }
 
 .home-link .icon {
-  --size: 1.4em;
+  --size: clamp(1.3rem, 2vw, 1.75rem);
   flex-shrink: 0;
   width: var(--size);
   height: var(--size);
