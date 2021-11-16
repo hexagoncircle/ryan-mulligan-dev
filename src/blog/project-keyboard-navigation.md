@@ -98,7 +98,7 @@ selected.scrollIntoView({
 selected.focus({ preventScroll: true });
 ```
 
-Notice that a `prefers-reduced-motion` conditional is set on the `behavior` option. This will respect our reduced motion settings and disable smooth scrolling of the list.
+Notice that a `prefers-reduced-motion` conditional is applied to the `behavior` option. This will respect our reduced motion settings and disable smooth scrolling of the list.
 
 To review all the code used in setting up these custom keyboard interactions, scroll back up to the embedded [CodePen example](#codepen-demo) from earlier in this article and select the JS tab.
 {.callout}
