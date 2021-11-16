@@ -84,7 +84,24 @@ In an effort to better surface this interaction, helper text is inserted into th
   <figcaption>An example of the voiceover notification that reads, "You are currently on a list. To move between items in this list, press Control-Option-Right Arrow or Control-Option-Left Arrow."</figcaption>
 </figure>
 
-To review the code used in setting up these custom keyboard interactions, head back up to the [CodePen example](#codepen-demo) from earlier in this article and click the JS tab.
+One final tweak: Elements now scroll completely into view when focused. Without this bit of code, it was possible to focus an element overflowing the boundary of the viewport but it did not pull it all the way on screen. Combining the `scrollIntoView` method with a programmatic focus improves this flow:
+
+```js
+const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+//...
+selected.scrollIntoView({
+  block: "nearest",
+  inline: "start",
+  behavior: reducedMotion.matches ? "auto" : "smooth",
+});
+
+selected.focus({ preventScroll: true });
+```
+
+Notice that a `prefers-reduced-motion` conditional is set on the `behavior` option. This will respect our reduced motion settings and disable smooth scrolling of the list.
+
+To review all the code used in setting up these custom keyboard interactions, scroll back up to the embedded [CodePen example](#codepen-demo) from earlier in this article and select the JS tab.
+{.callout}
 
 ## When JavaScript is disabled
 
