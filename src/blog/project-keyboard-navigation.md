@@ -32,7 +32,7 @@ Overall, I'd consider this a horizontal scroll container. Not _really_ a carouse
 
 ## User flow on a keyboard
 
-After building out the page structure, I tried navigating this site using my keyboard. I quickly noticed how tedious it was tabbing through every single one of those CodePen project links. Perhaps there's a way to make this interaction and page flow feel more seamless.
+After building out the page structure, I tried navigating [the site homepage](/) using my keyboard. I quickly noticed how tedious it was tabbing through every single one of those CodePen project links. Perhaps there's a way to make this interaction and page flow feel more seamless.
 
 Experts in the accessibility community may have some really helpful feedback and guidance on these ideas. If you're one of them, I'd love to get your thoughts and update this article accordingly! You can [message me on Twitter](https://twitter.com/hexagoncircle) or <a href="{% mailToPath title %}" target="_blank" rel="noopener">email me</a>.
 {.callout}
