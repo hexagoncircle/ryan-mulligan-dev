@@ -49,7 +49,9 @@
 		</a>
 
 		{% if pageUrlLength > 1 %}
-			<a class="home-link" href="{{ '/' | url }}">⟵ home</a>
+			<a class="home-link" href="{{ '/' | url }}" title="Go to site homepage">
+				<svg class="icon" aria-hidden="true" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="216" y1="128" x2="40" y2="128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><polyline points="112 56 40 128 112 200" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline></svg>
+			</a>
 		{% endif %}
 
 		{% block header %}
