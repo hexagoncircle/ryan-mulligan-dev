@@ -35,7 +35,10 @@
 	<link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
 
 	<script>
-		localStorage.getItem('theme') && document.documentElement.setAttribute('data-theme', localStorage.getItem('theme'));
+		(function() {
+			document.documentElement.removeAttribute("data-no-js");
+			localStorage.getItem('theme') && document.documentElement.setAttribute('data-theme', localStorage.getItem('theme'));
+		})();
 	</script>
 </head>
 
