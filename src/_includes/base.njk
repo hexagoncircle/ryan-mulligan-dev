@@ -77,7 +77,9 @@
 	</main>
 
 	<footer class="wrapper">
-		<p class="footer-copy">© {% year %} assembled by Ryan Mulligan, with love. Bring it on <a title="Go to the site homepage" href="{{ '/' | url }}">home</a></p>
+		<p class="footer-copy">
+			© {% year %} assembled by Ryan Mulligan, with love. Bring it on <a title="Go to the site homepage" href="{{ '/' | url }}">home</a> ⫶ <a href="{{ '/blog/feed.xml' | url }}">RSS feed</a>
+		</p>
 	</footer>
 
 	{% block scripts %}{% endblock %}
