@@ -2,3 +2,5 @@
   for = "/*"
   [headers.values]
     Content-Security-Policy = "default-src 'self' 'unsafe-inline' fonts.googleapis.com fonts.gstatic.com *.codepen.io; img-src * data: blob: 'unsafe-inline'; frame-src codepen.io;"
+[build]
+  command = "AWS_LAMBDA_FUNCTION_NAME=trickpuppeteer npm run build"
