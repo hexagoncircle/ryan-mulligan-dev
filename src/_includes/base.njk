@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" data-no-js>
+{%- set pageUrlLength = page.url | length -%}
 {%- set pageTitle %}{% if title %}{{ title }} | {% endif %}{{ meta.siteName }}{% endset -%}
 {%- set pageDescription %}{% if description %}{{ description }}{% else %}{{ meta.siteDescription }}{% endif %}{% endset -%}
 {# {%- set pageSocialImg %}{{ meta.url }}/assets/social-image-default.png{% endset -%} #}
@@ -35,7 +36,10 @@
 	<link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
 
 	<script>
-		localStorage.getItem('theme') && document.documentElement.setAttribute('data-theme', localStorage.getItem('theme'));
+		(function() {
+			document.documentElement.removeAttribute("data-no-js");
+			localStorage.getItem('theme') && document.documentElement.setAttribute('data-theme', localStorage.getItem('theme'));
+		})();
 	</script>
 </head>
 
@@ -48,6 +52,12 @@
 			</svg>
 		</a>
 
+		{% if pageUrlLength > 1 %}
+			<a class="home-link" href="{{ '/' | url }}" title="Go to site homepage">
+				<svg class="icon" aria-hidden="true" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="216" y1="128" x2="40" y2="128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><polyline points="112 56 40 128 112 200" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline></svg>
+			</a>
+		{% endif %}
+
 		{% block header %}
 		  <h1 class="title">{{ title }}</h1>
 			{% if subtitle %}
@@ -58,7 +68,7 @@
 		{% include "social-navigation.njk" %}
 	</header>
 
-	<main id="main" tabindex="-1">
+	<main id="main">
 		{% block content %}
 			<article class="content wrapper flow">
 				{{ content | safe }}

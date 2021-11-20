@@ -4,6 +4,21 @@
   margin-top: calc(var(--space-base) * -1);
   padding: var(--page-padding);
   width: 100%;
+
+  &:focus-visible {
+    outline-offset: calc(var(--projects-outline-offset) * -1);
+  }
+}
+
+#projects-focus-text {
+  float: left;
+  visibility: hidden;
+  font-size: var(--text-sm);
+  margin-inline: var(--projects-outline-offset);
+}
+
+.projects:focus-visible + #projects-focus-text {
+  visibility: visible;
 }
 
 .projects::after {

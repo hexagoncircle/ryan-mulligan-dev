@@ -100,19 +100,18 @@ body {
     calc(var(--space-base) * 6)
   );
 
+  --border-radius: 0.1rem;
+  --color-icon: var(--color-primary);
+  --column-gap: var(--space-md);
+  --column-width: 250px;
+  --duration: 200ms;
+  --ease: cubic-bezier(0.33, 1, 0.68, 1);
   --list-offset: 1.25rem;
   --list-style-type: square;
   --list-marker-color: var(--color-primary);
-
-  --column-width: 250px;
-  --column-gap: var(--space-md);
-
-  --border-radius: 0.1rem;
   --outline-offset: 2px;
-  --duration: 200ms;
-  --ease: cubic-bezier(0.33, 1, 0.68, 1);
-
   --page-padding: var(--space-md);
   --page-max-width: min(40rem, 100% - var(--page-padding) * 2);
   --page-content-offset: calc(var(--space-base) * -1);
+  --projects-outline-offset: 8px;
 }

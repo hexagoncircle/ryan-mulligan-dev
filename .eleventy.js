@@ -23,12 +23,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/assets/");
   eleventyConfig.addPassthroughCopy("./src/manifest.webmanifest");
 
-  eleventyConfig.addShortcode("CodePen", (url, height) => {
-    const id = new URL(url).pathname.split("/")[3];
-
-    return `<div class="codepen-wrapper full-bleed" style="height: ${height}"><iframe scrolling="no" title="CodePen Embed" src="https://codepen.io/hexagoncircle/embed/${id}?default-tab=result&theme-id=default" frameborder="0" loading="lazy" allowtransparency="true" allowfullscreen="true"><p><a href="${url}" target="_blank" rel="noopener">See the Pen</a></p></iframe></div>`;
-  });
-
   eleventyConfig.addFilter("postDate", (dateObj) =>
     DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED)
   );

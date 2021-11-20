@@ -1,10 +1,31 @@
 .header {
+  --offset: clamp(var(--space-sm), 0.8vw, var(--space-base));
   --flow: var(--space-base);
   position: relative;
 }
 
+.home-link {
+  position: fixed;
+  top: var(--offset);
+  left: var(--offset);
+  display: flex;
+  align-items: center;
+  padding: var(--space-xs);
+  font-size: var(--text-sm);
+  line-height: 1.4;
+  margin-top: unset;
+  text-decoration: none;
+  z-index: 1;
+}
+
+.home-link .icon {
+  --size: clamp(1.3rem, 2vw, 1.75rem);
+  flex-shrink: 0;
+  width: var(--size);
+  height: var(--size);
+}
+
 .social-navigation {
-  --offset: clamp(var(--space-sm), 0.8vw, var(--space-base));
   position: fixed;
   margin-top: unset;
   top: var(--offset);
@@ -64,7 +85,6 @@
 }
 
 .meta .icon {
-  --color-icon: var(--color-primary);
   --size: 1.4em;
   flex-shrink: 0;
   width: var(--size);

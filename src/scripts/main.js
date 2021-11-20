@@ -9,7 +9,6 @@ images.forEach((img) => {
   img.addEventListener("load", () => img.removeAttribute("data-is-loading"));
 });
 
-document.documentElement.removeAttribute("data-no-js");
 slider.value = document.documentElement.dataset.theme;
 
 slider.addEventListener("input", () => {
