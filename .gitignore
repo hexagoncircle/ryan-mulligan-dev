@@ -3,6 +3,7 @@ node_modules
 
 # build artefacts
 _site
+social
 
 # secrets and errors
 .env

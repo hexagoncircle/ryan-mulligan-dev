@@ -8,7 +8,7 @@
     "watch:eleventy": "eleventy --serve",
     "build:sass": "sass  --no-source-map src/sass:_site/css",
     "build:eleventy": "eleventy",
-    "social-images": "eleventy-social-images --siteName 'Ryan Mulligan'",
+    "social-images": "eleventy-social-images --siteName 'Ryan Mulligan' --imageDir assets/social --stylesPath social/style.css --templatePath social/index.html",
     "postbuild": "postcss _site/css/*.css -u autoprefixer cssnano -r --no-map",
     "start": "npm-run-all build:sass --parallel watch:*",
     "build": "npm-run-all build:sass build:eleventy; npm run social-images"
