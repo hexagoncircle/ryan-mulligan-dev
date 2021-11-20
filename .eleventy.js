@@ -2,6 +2,7 @@ const markdownIt = require("markdown-it");
 const { DateTime } = require("luxon");
 const markdownItAttrs = require("markdown-it-attrs");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const pluginRss = require("@11ty/eleventy-plugin-rss");
 const timeToRead = require("eleventy-plugin-time-to-read");
 const socialImages = require("@11tyrocks/eleventy-plugin-social-images");
 
@@ -16,6 +17,7 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.setLibrary("md", markdownLib);
   eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(timeToRead);
   eleventyConfig.addPlugin(socialImages);
   eleventyConfig.addWatchTarget("./src/sass/");

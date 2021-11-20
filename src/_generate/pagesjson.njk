@@ -3,7 +3,7 @@ permalink: ./pages.json
 permalinkBypassOutputDir: true
 eleventyExcludeFromCollections: true
 ---
-[{% for post in collections.post %}
+[{% for post in collections.posts %}
 	{
    "title":"{% if post.data.title %}{{ post.data.title | addNbsp | safe }}{% else %}{{ meta.siteName }}{% endif %}",
    "imgName":"{% if post.data.title %}{{ post.data.title | slug}}{% else %}home{% endif %}"
