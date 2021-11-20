@@ -3,8 +3,8 @@
 {%- set pageUrlLength = page.url | length -%}
 {%- set pageTitle %}{% if title %}{{ title }} | {% endif %}{{ meta.siteName }}{% endset -%}
 {%- set pageDescription %}{% if description %}{{ description }}{% else %}{{ meta.siteDescription }}{% endif %}{% endset -%}
-{# {%- set pageSocialImg %}{{ meta.url }}/assets/social-image-default.png{% endset -%} #}
-{%- set pageSocialImg %}{{ meta.url }}/previews/{{ title | slug }}.png{% endset -%}
+{%- set pageSocialImg %}{% if '/blog' in page.url %}{{ meta.url }}/assets/social/{{ title | slug }}.png{% else %}{{ meta.url }}/assets/social-image-default.png{% endif %}{% endset -%}
+
 
 <head>
 	<meta charset="UTF-8" />
