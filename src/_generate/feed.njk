@@ -4,9 +4,9 @@ eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-	<title>{{ meta.siteName }}</title>
+	<title>Articles by {{ meta.siteName }}</title>
 	<subtitle>{{ meta.siteDescription }}</subtitle>
-	{% set absoluteUrl %}{{ '/feed/' | url | absoluteUrl(meta.url) }}{% endset %}
+	{% set absoluteUrl %}{{ 'blog/feed/' | url | absoluteUrl(meta.url) }}{% endset %}
 	<link href="{{ absoluteUrl }}" rel="self"/>
 	<link href="{{ meta.url }}"/>
 	<updated>{{ collections.posts | rssLastUpdatedDate }}</updated>
