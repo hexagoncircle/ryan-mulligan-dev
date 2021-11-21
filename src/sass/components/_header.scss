@@ -6,8 +6,8 @@
 
 .home-link {
   position: fixed;
-  top: var(--offset);
-  left: var(--offset);
+  top: calc(var(--offset) + env(safe-area-inset-top));
+  left: calc(var(--offset) + env(safe-area-inset-left));
   display: flex;
   align-items: center;
   padding: var(--space-xs);
@@ -28,8 +28,8 @@
 .social-navigation {
   position: fixed;
   margin-top: unset;
-  top: var(--offset);
-  right: var(--offset);
+  top: calc(var(--offset) + env(safe-area-inset-top));
+  right: calc(var(--offset) + env(safe-area-inset-right));
   z-index: 1;
 }
 
