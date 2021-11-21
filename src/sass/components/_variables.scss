@@ -112,6 +112,6 @@ body {
   --outline-offset: 2px;
   --page-padding: var(--space-md);
   --page-max-width: min(40rem, 100% - var(--page-padding) * 2);
-  --page-content-offset: calc(var(--space-base) * -1);
+  --page-content-offset: calc(var(--space-md) * -1);
   --projects-outline-offset: 8px;
 }

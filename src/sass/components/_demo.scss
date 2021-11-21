@@ -3,17 +3,13 @@
 }
 
 .cp_embed_wrapper {
-  grid-column: 1 / -1;
   position: relative;
   overflow: auto;
   display: grid;
   place-items: center;
   grid-template-areas: "container";
-  margin-inline-start: auto;
-  margin-inline-end: auto;
   min-height: 300px;
   resize: horizontal;
-  width: min(50rem, 100% - var(--page-padding) * 2);
 
   iframe {
     grid-area: container;
