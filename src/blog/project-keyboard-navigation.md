@@ -79,7 +79,7 @@ Here's how it works:
 In an effort to better surface this interaction, helper text is inserted into the <abbr title="Document Object Model">DOM</abbr> when the container focus is visible. My screen reader testing has been limited to Voiceover on macOS at the time of writing this article, but it's good to note that with Voiceover enabled, we are given feedback on how to traverse the list using built-in keyboard shortcuts.
 
 <figure>
-  <img src="/assets/blog/projects-list-focus-voiceover-text.png" alt="A screenshot of the projects list focused and the Voiceover notification" />
+  <img src="/assets/blog/projects-list-focus-voiceover-text.png" alt="A screenshot of the projects list focused and the Voiceover notification" width="700" height="500" loading="lazy"  />
   <figcaption>An example of the voiceover notification that reads, "You are currently on a list. To move between items in this list, press Control-Option-Right Arrow or Control-Option-Left Arrow."</figcaption>
 </figure>
 
