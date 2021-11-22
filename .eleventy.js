@@ -5,6 +5,7 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const timeToRead = require("eleventy-plugin-time-to-read");
 const socialImages = require("@11tyrocks/eleventy-plugin-social-images");
+const imageShortcode = require("./src/utils/imageShortcode.js");
 
 module.exports = function (eleventyConfig) {
   const markdownItOptions = {
@@ -29,6 +30,7 @@ module.exports = function (eleventyConfig) {
     DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED)
   );
 
+  eleventyConfig.addShortcode("image", imageShortcode);
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
   eleventyConfig.addShortcode("mailToPath", (subject) => {
     if (!subject) {
