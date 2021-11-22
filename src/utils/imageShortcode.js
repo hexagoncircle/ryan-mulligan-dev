@@ -29,8 +29,7 @@ function generateHTML(metadata, imageAttributes) {
     </picture>`;
 }
 
-async function imageShortcode(src, alt, sizes = "", caption = "") {
-  // create images and return the files metadata
+async function imageShortcode(src, alt, caption = "") {
   const metadata = await Image(src, {
     widths: [320, 640, 1280],
     formats: ["avif", "webp", "jpeg"],
@@ -45,7 +44,7 @@ async function imageShortcode(src, alt, sizes = "", caption = "") {
 
   const imageAttributes = {
     alt,
-    sizes,
+    sizes: "(min-width: 600px) 100vw",
     loading: "lazy",
     decoding: "async",
   };
