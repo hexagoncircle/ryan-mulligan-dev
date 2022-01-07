@@ -56,7 +56,7 @@ When an item is selected, Flip's `getState` method is called to collect data abo
 const state = Flip.getState(item);
 ```
 
-The Flip plugin by default only records the following CSS properties: transforms (x, y, scaleX, scaleY, rotation, skewX), width, height, and opacity. However, it can be configured to affect others by defining an optional `props` object that takes a comma-delimited list of values. Learn more under the "Usage" section in [the docs](https://greensock.com/docs/v3/Plugins/Flip)!
+The Flip plugin by default only records the following CSS properties: transforms (x, y, scaleX, scaleY, rotation, skewX), width, height, and opacity. However, it can be configured to affect others by adding `props` with a comma-delimited list of values in the `options` object. Learn more under the "Usage" section in [the docs](https://greensock.com/docs/v3/Plugins/Flip)!
 {.callout}
 
 ### Step 2: Make the changes
@@ -103,7 +103,7 @@ After that, other animations are run such as sliding the item into place and the
 
 This experiment seems like it only just begins to harness the superpower supplied by the GSAP Flip plugin. I'm looking forward to seeing how you all utilize this in projects. As always, with this great power comes a lot of responsibility. Consider folks that prefer reduced motion or how larger layout animations could affect the overall experience.
 
-Friendly feedback forever welcome. Share with me on [Twitter](https://twitter.com/hexagoncircle).
+Friendly feedback forever welcome. Share with me on [Twitter](https://twitter.com/hexagoncircle/status/1479564224347066368).
 
 ### Helpful resources
 
