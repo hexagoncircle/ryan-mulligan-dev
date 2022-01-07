@@ -56,7 +56,7 @@ When an item is selected, Flip's `getState` method is called to collect data abo
 const state = Flip.getState(item);
 ```
 
-Flip isn't concerned with CSS properties outside of those previously mentioned. However, FLIP can be configured to affect others by defining an optional `props` object that takes a comma-delimited list of values as a second parameter in the `getState` method. Learn more under the "Usage" section in [the docs](https://greensock.com/docs/v3/Plugins/Flip)!
+Flip by default only affects size, position, rotation, and skew. However, it can be configured to affect others by defining an optional `props` object that takes a comma-delimited list of values as a second parameter in the `getState` method. Learn more under the "Usage" section in [the docs](https://greensock.com/docs/v3/Plugins/Flip)!
 {.callout}
 
 ### Step 2: Make the changes
