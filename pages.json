@@ -12,5 +12,10 @@
 	{
    "title":"A Horizontal Scroll List and Custom Keyboard&nbsp;Navigation",
    "imgName":"a-horizontal-scroll-list-and-custom-keyboard-navigation"
+	},
+
+	{
+   "title":"Animating with the Flip Plugin for&nbsp;GSAP",
+   "imgName":"animating-with-the-flip-plugin-for-gsap"
 	}
 ]
