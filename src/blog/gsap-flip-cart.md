@@ -42,7 +42,7 @@ Let's get into some of the key features that bring this animation to life.
 
 ## How it works
 
-The "Usage" section of the [Flip plugin docs](https://greensock.com/docs/v3/Plugins/Flip) breaks this down into three steps followed to execute this add-to-cart animation:
+The "Usage" section of the [Flip plugin docs](https://greensock.com/docs/v3/Plugins/Flip) breaks this down into three steps that are followed to execute this add-to-cart animation:
 
 1. Get the current state
 2. Make your state changes
