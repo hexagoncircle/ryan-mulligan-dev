@@ -54,7 +54,7 @@
   border-inline-start: 2px dashed var(--color-primary);
   padding: var(--space-sm) var(--space-md);
   font-family: var(--font-family-accent);
-  font-size: var(--text-md);
+  font-size: calc(var(--text-md) / 1.25);
   font-style: italic;
 }
 
@@ -137,6 +137,11 @@
   code {
     background-color: var(--color-bg);
   }
+}
+
+.content .section-anchor {
+  margin-top: 0;
+  height: 0;
 }
 
 /* Hello link emoji interaction */

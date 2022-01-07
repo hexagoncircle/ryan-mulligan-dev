@@ -18,9 +18,10 @@ The argument against a carousel-style UX popped in my head, naturally, and maybe
 - We can quickly scan down to the next article on the page without scrolling through a list of 40+ cards, e.g. displayed in a layout such as a traditional responsive grid.
 
 Below is a stripped-down CodePen demo focused on layout and keyboard navigation criteria:
-{#codepen-demo}
 
-<p class="codepen" data-height="590" data-default-tab="result" data-slug-hash="QWMZBve" data-user="hexagoncircle">
+{#codepen-demo .section-anchor}
+
+<p class="codepen" data-height="600" data-default-tab="result" data-slug-hash="QWMZBve" data-user="hexagoncircle">
   <span>See the Pen <a href="https://codepen.io/hexagoncircle/pen/QWMZBve">
   Section keyboard navigation with arrow keys</a> by Ryan Mulligan (<a href="https://codepen.io/hexagoncircle">@hexagoncircle</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
