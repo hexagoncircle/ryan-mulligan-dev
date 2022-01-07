@@ -56,7 +56,7 @@ When an item is selected, Flip's `getState` method is called to collect data abo
 const state = Flip.getState(item);
 ```
 
-The Flip plugin by default only records the following CSS properties: transforms (x, y, scaleX, scaleY, rotation, skewX), width, height, and opacity. However, it can be configured to affect others by adding `props` with a comma-delimited list of values in the `options` object. Learn more under the "Usage" section in [the docs](https://greensock.com/docs/v3/Plugins/Flip)!
+The Flip plugin by default only records the following CSS properties: transforms (x, y, scaleX, scaleY, rotation, skewX), width, height, and opacity. However, it can be configured to affect others by adding a `props` property with a comma-delimited list of values in the `options` object. Learn more under the "Usage" section in [the docs](https://greensock.com/docs/v3/Plugins/Flip)!
 {.callout}
 
 ### Step 2: Make the changes
