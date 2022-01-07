@@ -56,7 +56,7 @@ When an item is selected, Flip's `getState` method is called to collect data abo
 const state = Flip.getState(item);
 ```
 
-Flip by default only affects size, position, rotation, and skew. However, it can be configured to affect others by defining an optional `props` object that takes a comma-delimited list of values as a second parameter in the `getState` method. Learn more under the "Usage" section in [the docs](https://greensock.com/docs/v3/Plugins/Flip)!
+Flip plugin by default only records the following CSS properties: transforms (x, y, scaleX, scaleY, rotation, skewX), width, height, and opacity. However, it can be configured to affect others by defining an optional `props` object that takes a comma-delimited list of values. Learn more under the "Usage" section in [the docs](https://greensock.com/docs/v3/Plugins/Flip)!
 {.callout}
 
 ### Step 2: Make the changes
@@ -82,7 +82,7 @@ FLIP checks out the stored `state` object, compares it to the item's current sta
 
 I did nearly nothing here. This is all GSAP Flip sorcery. My goodness it's good.
 
-You might be wondering about the `reducedMotion` variable which can be see in the full version of the JavaScript code (click the JS tab in the [CodePen embed](#codepen-demo) above). It detects if a user has requested less movement on screen. If true, the item will be instantly added to the cart instead of animating across the page. Learn more about `prefers-reduced-motion` in [this web.dev article](https://web.dev/prefers-reduced-motion/)
+You might be wondering about the `reducedMotion` variable which can be see in the full version of the JavaScript code (click the JS tab in the [CodePen embed](#codepen-demo) above). It detects if a user has requested less movement on screen. If true, the item will be instantly added to the cart instead of animating across the page. Learn more about `prefers-reduced-motion` in [this web.dev article](https://web.dev/prefers-reduced-motion/).
 {.callout}
 
 In order to get the item to move into the cart once the animation has finished, the `onComplete` callback is used to append the item as a child.
