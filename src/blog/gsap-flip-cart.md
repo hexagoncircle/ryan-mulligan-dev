@@ -56,7 +56,7 @@ When an item is selected, Flip's `getState` method is called to collect data abo
 const state = Flip.getState(item);
 ```
 
-Flip plugin by default only records the following CSS properties: transforms (x, y, scaleX, scaleY, rotation, skewX), width, height, and opacity. However, it can be configured to affect others by defining an optional `props` object that takes a comma-delimited list of values. Learn more under the "Usage" section in [the docs](https://greensock.com/docs/v3/Plugins/Flip)!
+The Flip plugin by default only records the following CSS properties: transforms (x, y, scaleX, scaleY, rotation, skewX), width, height, and opacity. However, it can be configured to affect others by defining an optional `props` object that takes a comma-delimited list of values. Learn more under the "Usage" section in [the docs](https://greensock.com/docs/v3/Plugins/Flip)!
 {.callout}
 
 ### Step 2: Make the changes
@@ -78,7 +78,7 @@ Flip.from(state, {
 });
 ```
 
-FLIP checks out the stored `state` object, compares it to the item's current state data, and immediately sets the position and size so that the item appears to still exist in its grid placement. Then the item transitions to its _actual_ placement inside the button by animating the removal of these position and size offset values.
+Flip checks out the stored `state` object, compares it to the item's current state data, and immediately sets the position and size so that the item appears to still exist in its grid placement. Then the item transitions to its _actual_ placement inside the button by animating the removal of these position and size offset values.
 
 I did nearly nothing here. This is all GSAP Flip sorcery. My goodness it's good.
 
