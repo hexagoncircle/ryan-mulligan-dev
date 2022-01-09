@@ -44,6 +44,8 @@ body {
   font-weight: 300;
   line-height: 1.6;
   -webkit-text-size-adjust: 100%;
+  transition: var(--duration) var(--ease);
+  transition-property: background-color, color;
 }
 
 footer {
