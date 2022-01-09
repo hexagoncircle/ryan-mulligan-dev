@@ -1,0 +1,42 @@
+@mixin icon-display($value) {
+  @if $value == "dark" {
+    .icon.light {
+      display: none;
+    }
+    .icon.dark {
+      display: block;
+    }
+  } @else {
+    .icon.light {
+      display: block;
+    }
+    .icon.dark {
+      display: none;
+    }
+  }
+}
+
+[id="toggle-color-scheme"] {
+  @include icon-display("light");
+
+  @media (prefers-color-scheme: dark) {
+    @include icon-display(dark);
+  }
+
+  display: flex;
+  align-items: center;
+  padding: var(--space-xs);
+  cursor: pointer;
+
+  &:active {
+    transform: translateY(1px);
+  }
+}
+
+[data-color-scheme="light"] {
+  @include icon-display(light);
+}
+
+[data-color-scheme="dark"] {
+  @include icon-display(dark);
+}

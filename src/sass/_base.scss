@@ -12,13 +12,11 @@ a {
 }
 
 a:hover,
-a:focus {
+a:focus-visible {
   color: var(--color-text);
 }
 
-a:focus,
-input[type="range"]:focus,
-.projects:focus-visible {
+:is(a:focus-visible, button:focus-visible, input:focus-visible, .projects:focus-visible) {
   outline: 2px dashed var(--color-secondary);
   outline-offset: var(--outline-offset);
 }
@@ -27,7 +25,7 @@ small {
   font-size: var(--text-sm);
 }
 
-input[type="range"]:focus {
+input[type="range"]:focus-visible {
   outline-offset: calc(var(--outline-offset) * 2);
 }
 
@@ -61,6 +59,8 @@ footer {
 }
 
 main {
+  position: relative;
+  z-index: 0;
   scroll-margin-top: var(--space-lg);
 }
 

@@ -2,16 +2,7 @@
 
 {% block header %}
   <h1 class="title">Ryan Mulligan</h1>
-  <p class="visually-hidden">Your friendly front-end interface and experience engineer</p>
-
-  <div aria-hidden="true" class="subtitle">
-    <span>your friendly</span>
-    <div>
-      front-end interface
-      {% include "theme-slider.njk" %}
-    </div>
-    <span>& experience engineer</span>
-  </div>
+  <p class="subtitle">Your friendly front-end interface and experience engineer</p>
 {% endblock %}
 
 {% block content %}
@@ -23,6 +14,5 @@
 {% endblock %}
 
 {% block scripts %}
-	<script src="{{ '/scripts/main.js' | url }}" defer></script>
-	<script src="{{ '/scripts/projects.js' | url }}" defer></script>
+  <script src="{{ '/scripts/projects.js' | url }}" defer></script>
 {% endblock %}

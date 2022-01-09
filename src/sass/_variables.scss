@@ -1,26 +1,32 @@
-/* Default themes */
-:root {
-  --color-text: hsl(0, 0%, 88%);
-  --color-text-accent: hsl(0, 0%, 68%);
-  --color-bg: hsl(285, 18%, 4%);
-  --color-bg-accent: hsl(285, 18%, 15%);
-  --color-primary: hsl(344, 85%, 50%);
-  --color-secondary: hsl(47, 81%, 56%);
-}
+:where(html) {
+  color-scheme: light dark;
+  --color-text: hsl(0, 0%, 5%);
+  --color-text-accent: hsl(0, 0%, 20%);
+  --color-bg: hsl(0, 0%, 98%);
+  --color-bg-accent: hsl(0, 0%, 90%);
+  --color-primary: hsl(230, 80%, 60%);
+  --color-secondary: hsl(344, 85%, 48%);
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --color-text: hsl(0, 0%, 5%);
-    --color-text-accent: hsl(0, 0%, 20%);
-    --color-bg: hsl(0, 0%, 98%);
-    --color-bg-accent: hsl(0, 0%, 90%);
-    --color-primary: hsl(230, 80%, 60%);
-    --color-secondary: hsl(344, 85%, 48%);
+  @media (prefers-color-scheme: dark) {
+    --color-text: hsl(0, 0%, 88%);
+    --color-text-accent: hsl(0, 0%, 68%);
+    --color-bg: hsl(285, 18%, 4%);
+    --color-bg-accent: hsl(285, 18%, 15%);
+    --color-primary: hsl(344, 85%, 50%);
+    --color-secondary: hsl(47, 81%, 56%);
   }
 }
 
-/* User selected themes */
-[data-theme="1"] {
+[data-color-scheme="light"] {
+  --color-text: hsl(0, 0%, 5%);
+  --color-text-accent: hsl(0, 0%, 20%);
+  --color-bg: hsl(0, 0%, 98%);
+  --color-bg-accent: hsl(0, 0%, 90%);
+  --color-primary: hsl(230, 80%, 60%);
+  --color-secondary: hsl(344, 85%, 48%);
+}
+
+[data-color-scheme="dark"] {
   --color-text: hsl(0, 0%, 88%);
   --color-text-accent: hsl(0, 0%, 68%);
   --color-bg: hsl(285, 18%, 4%);
@@ -30,6 +36,15 @@
 }
 
 [data-theme="2"] {
+  --color-text: hsl(197, 100%, 15%);
+  --color-text-accent: hsl(197, 100%, 20%);
+  --color-bg: hsl(210, 55%, 90%);
+  --color-bg-accent: hsl(210, 55%, 85%);
+  --color-primary: hsl(230, 66%, 47%);
+  --color-secondary: hsl(351, 77%, 44%);
+}
+
+[data-theme="2"][data-color-scheme="dark"] {
   --color-text: hsl(197, 100%, 75%);
   --color-text-accent: hsl(197, 100%, 55%);
   --color-bg: hsl(210, 100%, 12%);
@@ -45,24 +60,27 @@
   --color-bg-accent: hsl(217, 92%, 39%);
   --color-primary: hsl(57, 100%, 50%);
   --color-secondary: hsl(57, 100%, 65%);
+
+  &[data-color-scheme="dark"] {
+    --color-bg: hsl(217, 52%, 10%);
+    --color-bg-accent: hsl(218, 76%, 21%);
+    --color-primary: hsl(67, 18%, 68%);
+    --color-secondary: hsl(0, 71%, 63%);
+  }
 }
 
 [data-theme="4"] {
   --color-text: hsl(0, 0%, 7%);
   --color-text-accent: hsl(0, 0%, 0%);
-  --color-bg: hsl(314, 88%, 51%);
-  --color-bg-accent: hsl(314, 88%, 71%);
+  --color-bg: hsl(63, 88%, 64%);
+  --color-bg-accent: hsl(63, 88%, 78%);
   --color-primary: hsl(0, 0%, 7%);
   --color-secondary: hsl(0, 0%, 7%);
-}
 
-[data-theme="5"] {
-  --color-text: hsl(0, 0%, 5%);
-  --color-text-accent: hsl(0, 0%, 16%);
-  --color-bg: hsl(0, 0%, 98%);
-  --color-bg-accent: hsl(0, 0%, 94%);
-  --color-primary: hsl(230, 80%, 60%);
-  --color-secondary: hsl(344, 85%, 48%);
+  &[data-color-scheme="dark"] {
+    --color-bg: hsl(314, 88%, 51%);
+    --color-bg-accent: hsl(314, 88%, 71%);
+  }
 }
 
 /* Global custom properties */
@@ -107,11 +125,11 @@ body {
   --duration: 200ms;
   --ease: cubic-bezier(0.33, 1, 0.68, 1);
   --list-offset: 1.25rem;
-  --list-style-type: square;
+  --list-style-type: initial;
   --list-marker-color: var(--color-primary);
   --outline-offset: 2px;
   --page-padding: var(--space-md);
-  --page-max-width: min(40rem, 100% - var(--page-padding) * 2);
+  --page-max-width: min(40rem, 100% - (var(--page-padding) * 2));
   --page-content-offset: calc(
     clamp(var(--space-sm), 4vw, var(--space-md)) * -1
   );
