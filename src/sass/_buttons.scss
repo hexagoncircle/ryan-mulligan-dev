@@ -1,26 +1,34 @@
-@mixin icon-display($value) {
+@mixin current-mode($value) {
   @if $value == "dark" {
-    .icon.light {
+    .light {
       display: none;
     }
-    .icon.dark {
+    .dark {
       display: block;
     }
   } @else {
-    .icon.light {
+    .light {
       display: block;
     }
-    .icon.dark {
+    .dark {
       display: none;
     }
   }
 }
 
 [id="toggle-color-scheme"] {
-  @include icon-display("light");
+  @include current-mode(light);
 
   @media (prefers-color-scheme: dark) {
-    @include icon-display(dark);
+    @include current-mode(dark);
+  }
+
+  [data-color-scheme="light"] & {
+    @include current-mode(light);
+  }
+
+  [data-color-scheme="dark"] & {
+    @include current-mode(dark);
   }
 
   display: flex;
@@ -31,12 +39,4 @@
   &:active {
     transform: translateY(1px);
   }
-}
-
-[data-color-scheme="light"] {
-  @include icon-display(light);
-}
-
-[data-color-scheme="dark"] {
-  @include icon-display(dark);
 }
