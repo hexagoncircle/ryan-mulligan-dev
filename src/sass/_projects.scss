@@ -49,7 +49,6 @@
   white-space: nowrap;
   z-index: 1;
   pointer-events: none;
-  transition: color var(--duration) var(--ease);
 }
 
 .icon-codepen::before {
@@ -68,7 +67,6 @@
   width: clamp(4rem, 6vw, 7rem);
   height: clamp(4rem, 6vw, 7rem);
   fill: var(--color-secondary);
-  transition: fill var(--duration) var(--ease);
 }
 
 .icon-codepen:hover svg,

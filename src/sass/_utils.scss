@@ -28,6 +28,11 @@
   }
 }
 
+@mixin color-scheme-transition($props...) {
+  transition: 5s var(--ease);
+  transition-property: $props;
+}
+
 .flow > * + * {
   margin-top: var(--flow, var(--space-md));
 }

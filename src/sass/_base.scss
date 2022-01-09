@@ -43,8 +43,6 @@ body {
   font-size: var(--text-base);
   font-weight: 300;
   line-height: 1.6;
-  transition: var(--duration) var(--ease);
-  transition-property: background-color, color;
   -webkit-text-size-adjust: 100%;
 }
 

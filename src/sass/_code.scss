@@ -213,3 +213,25 @@ pre[class*="language-"] {
 .token.variable {
   color: #f07178;
 }
+
+.codepen {
+  padding: var(--space-base);
+  font-size: var(--text-sm);
+  color: var(--color-text-accent);
+  border: 2px dashed var(--color-bg-accent);
+}
+
+.cp_embed_wrapper {
+  position: relative;
+  overflow: auto;
+  display: grid;
+  place-items: center;
+  grid-template-areas: "container";
+  min-height: 300px;
+  resize: horizontal;
+
+  iframe {
+    grid-area: container;
+    width: 100%;
+  }
+}
