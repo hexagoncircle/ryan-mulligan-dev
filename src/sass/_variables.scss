@@ -113,7 +113,7 @@ body {
     calc(var(--space-base) * 4)
   );
   --space-2xl: clamp(
-    calc(var(--space-base) * 3),
+    calc(var(--space-base) * 4),
     8vw,
     calc(var(--space-base) * 6)
   );

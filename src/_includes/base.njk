@@ -54,7 +54,7 @@
 		</script>
 	</head>
 
-	<body>
+	<body data-page="{{ page.fileSlug or 'home' }}">
 		<header class="header wrapper flow">
 			<a class="skip-to-content" href="#main">
 				Skip to content
@@ -69,9 +69,9 @@
 					<p class="subtitle">{{ subtitle }}</p>
 				{% endif %}
 			{% endblock %}
-
-			{% include "navigation.njk" %}
 		</header>
+
+		{% include "navigation.njk" %}
 
 		<main id="main">
 			{% block content %}

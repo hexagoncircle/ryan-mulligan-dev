@@ -1,11 +1,10 @@
 .header {
-  --padding: clamp(var(--space-sm), 0.8vw, var(--space-base));
   --flow: var(--space-base);
   position: relative;
-  z-index: 1;
+  margin-top: calc(var(--space-lg) * -1);
 }
 
-.header .icon {
+.main-navigation .icon {
   --size: clamp(1.5rem, 1.5vw, 1.75rem);
   flex-shrink: 0;
   width: var(--size);
@@ -28,16 +27,17 @@
 }
 
 .main-navigation {
-  position: fixed;
-  top: env(safe-area-inset-right);
-  left: env(safe-area-inset-right);
-  margin-top: unset;
+  --padding: clamp(var(--space-sm), 0.8vw, var(--space-base));
+  order: -1;
+  position: sticky;
+  top: 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: var(--space-sm);
   padding: var(--padding) calc(var(--page-padding) - var(--space-sm));
   width: 100%;
+  z-index: 1;
 }
 
 .social-nav-list {
@@ -69,7 +69,10 @@
   font-weight: 500;
   line-height: 1.25;
   width: 100%;
-  max-width: 24ch;
+
+  [data-page="home"] & {
+    max-width: 24ch;
+  }
 }
 
 .meta {
@@ -94,7 +97,6 @@
   align-items: center;
   gap: 2px;
   place-self: start;
-  margin-top: var(--space-2xl);
   margin-left: 0.3rem;
   font-size: var(--text-sm);
   line-height: 1;
