@@ -1,7 +1,7 @@
 .theme-slider {
   flex: 1 1 0;
   width: 100%;
-  max-width: 60px;
+  max-width: 4.5rem;
 }
 
 .theme-slider-label {
@@ -13,7 +13,7 @@ input[type="range"] {
   --thumb-offset: -4px;
   --track-height: 4px;
   background-color: transparent;
-  padding: var(--space-xs) 0;
+  padding: var(--space-xs);
   -webkit-appearance: none;
 }
 
