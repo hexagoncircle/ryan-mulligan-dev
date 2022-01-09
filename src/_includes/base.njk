@@ -1,88 +1,93 @@
 <!DOCTYPE html>
 <html lang="en" data-no-js>
-{%- set pageUrlLength = page.url | length -%}
-{%- set pageTitle %}{% if title %}{{ title }} | {% endif %}{{ meta.siteName }}{% endset -%}
-{%- set pageDescription %}{% if description %}{{ description }}{% else %}{{ meta.siteDescription }}{% endif %}{% endset -%}
-{%- set pageSocialImg %}{% if '/blog' in page.url %}{{ meta.url }}/assets/social/{{ title | slug }}.png{% else %}{{ meta.url }}/assets/social-image-default.png{% endif %}{% endset -%}
+	{%- set pageTitle %}
+	{% if title %}{{ title }} | {% endif %}{{ meta.siteName }}{% endset -%}
+	{%- set pageDescription %}
+	{% if description %}{{ description }}
+	{% else %}{{ meta.siteDescription }}
+	{% endif %}{% endset -%}
+	{%- set pageSocialImg %}
+	{% if '/blog' in page.url %}{{ meta.url }}/assets/social/{{ title | slug }}.png{% else %}{{ meta.url }}/assets/social-image-default.png{% endif %}{% endset -%}
 
+	<head>
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+		<title>{{ pageTitle }}</title>
+		<meta name="description" content="{{ pageDescription }}"/>
 
-	<title>{{ pageTitle }}</title>
-	<meta name="description" content="{{ pageDescription }}" />
+		<link rel="icon" href="{{ '/assets/favicon.svg' | url }}"/>
+		<link rel="mask-icon" href="{{ '/assets/favicon.svg' | url }}" color="#E01A4F">
+		<link rel="apple-touch-icon" href="{{ '/assets/apple-touch-icon.png' | url }}">
+		<link rel="manifest" href="{{ '/manifest.webmanifest' | url }}">
 
-	<link rel="icon" href="{{ '/assets/favicon.svg' | url }}" />
-  <link rel="mask-icon" href="{{ '/assets/favicon.svg' | url }}" color="#E01A4F">
-  <link rel="apple-touch-icon" href="{{ '/assets/apple-touch-icon.png' | url }}">
-  <link rel="manifest" href="{{ '/manifest.webmanifest' | url }}">
-
-	<meta name="theme-color" content="var(--color-primary)">
-	<meta name="twitter:card" content="summary_large_image" />
-	{% if meta.twitterUsername %}
-		<meta name="twitter:creator" content="@{{ meta.twitterUsername }}" />
-	{% endif %}
-	<meta name="twitter:title" content="{{ pageTitle }}" />
-	<meta name="twitter:description" content="{{ pageDescription }}" />
-
-	<meta name="og:title" content="{{ pageTitle }}" />
-	<meta name="og:description" content="{{ pageDescription }}" />
-	<meta property="og:image" content="{{ pageSocialImg }}" />
-	<meta name="twitter:image" content="{{ pageSocialImg }}" />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Petrona:ital,wght@1,500&family=Work+Sans:ital,wght@0,360;0,560;1,360&family=Fira+Code&display=swap">
-	<link rel="stylesheet" href="{{ '/css/style.css' | url }}" />
-
-	<script>
-		(function() {
-			document.documentElement.removeAttribute("data-no-js");
-			localStorage.getItem('theme') && document.documentElement.setAttribute('data-theme', localStorage.getItem('theme'));
-		})();
-	</script>
-</head>
-
-<body>
-	<header class="header wrapper flow">
-		<a class="skip-to-content" href="#main">
-			Skip to content
-			<svg class="icon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
-				<path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" />
-			</svg>
-		</a>
-
-		{% if pageUrlLength > 1 %}
-			<a class="home-link" href="{{ '/' | url }}" title="Go to site homepage">
-				<svg class="icon" aria-hidden="true" width="24" height="24" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><line x1="216" y1="128" x2="40" y2="128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></line><polyline points="112 56 40 128 112 200" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline></svg>
-			</a>
+		<meta name="theme-color" content="var(--color-primary)">
+		<meta name="twitter:card" content="summary_large_image"/>
+		{% if meta.twitterUsername %}
+			<meta name="twitter:creator" content="@{{ meta.twitterUsername }}"/>
 		{% endif %}
+		<meta name="twitter:title" content="{{ pageTitle }}"/>
+		<meta name="twitter:description" content="{{ pageDescription }}"/>
 
-		{% block header %}
-		  <h1 class="title">{{ title }}</h1>
-			{% if subtitle %}
-				<p class="subtitle">{{ subtitle }}</p>
-			{% endif %}
-		{% endblock %}
+		<meta name="og:title" content="{{ pageTitle }}"/>
+		<meta name="og:description" content="{{ pageDescription }}"/>
+		<meta property="og:image" content="{{ pageSocialImg }}"/>
+		<meta name="twitter:image" content="{{ pageSocialImg }}"/>
 
-		{% include "social-navigation.njk" %}
-	</header>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Petrona:ital,wght@1,500&family=Work+Sans:ital,wght@0,360;0,560;1,360&family=Fira+Code&display=swap">
+		<link rel="stylesheet" href="{{ '/css/style.css' | url }}"/>
 
-	<main id="main">
-		{% block content %}
-			<article class="content wrapper flow">
-				{{ content | safe }}
-			</article>
-		{% endblock %}
-	</main>
+		<script>
+			(function () {
+				document
+					.documentElement
+					.removeAttribute("data-no-js");
+				localStorage.getItem('color-scheme') && document
+					.documentElement
+					.setAttribute('data-color-scheme', localStorage.getItem('color-scheme'));
+				localStorage.getItem('theme') && document
+					.documentElement
+					.setAttribute('data-theme', localStorage.getItem('theme'));
+			})();
+		</script>
+	</head>
 
-	<footer class="wrapper">
-		<p class="footer-copy">
+	<body>
+		<header class="header wrapper flow">
+			<a class="skip-to-content" href="#main">
+				Skip to content
+				<svg class="icon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
+					<path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
+				</svg>
+			</a>
+
+			{% block header %}
+				<h1 class="title">{{ title }}</h1>
+				{% if subtitle %}
+					<p class="subtitle">{{ subtitle }}</p>
+				{% endif %}
+			{% endblock %}
+
+			{% include "navigation.njk" %}
+		</header>
+
+		<main id="main">
+			{% block content %}
+				<article class="content wrapper flow">
+					{{ content | safe }}
+				</article>
+			{% endblock %}
+		</main>
+
+		<footer class="wrapper">
+			<p class="footer-copy">
 			© {% year %} assembled by Ryan Mulligan, with love. Bring it on <a title="Go to the site homepage" href="{{ '/' | url }}">home</a> ⫶ <a href="{{ '/blog/feed.xml' | url }}">RSS feed</a>
-		</p>
-	</footer>
+			</p>
+		</footer>
 
-	{% block scripts %}{% endblock %}
-</body>
+		<script src="{{ '/scripts/main.js' | url }}" defer></script>
+		{% block scripts %}{% endblock %}
+	</body>
 </html>
