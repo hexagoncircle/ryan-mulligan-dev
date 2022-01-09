@@ -36,7 +36,7 @@
   flex-wrap: wrap;
   align-items: center;
   gap: var(--space-sm);
-  padding: var(--padding);
+  padding: var(--padding) calc(var(--page-padding) - var(--space-sm));
   width: 100%;
 }
 
@@ -90,12 +90,12 @@
 }
 
 .skip-to-content {
-  margin-top: calc(var(--space-2xl) + var(--space-md));
   display: inline-flex;
   align-items: center;
   gap: 2px;
   place-self: start;
-  margin-inline-start: 0.3rem;
+  margin-top: var(--space-2xl);
+  margin-left: 0.3rem;
   font-size: var(--text-sm);
   line-height: 1;
   text-decoration: none;
