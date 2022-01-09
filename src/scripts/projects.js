@@ -33,27 +33,30 @@ const handleKeyPress = (e) => {
   }
 };
 
+const handleProjectHover = (project) => {
+  project.addEventListener("mousemove", (e) => {
+    const r = project.getBoundingClientRect();
+
+    project.style.setProperty(
+      "--x",
+      e.clientX - (r.left + Math.floor(r.width / 2))
+    );
+    project.style.setProperty(
+      "--y",
+      e.clientY - (r.top + Math.floor(r.height / 2))
+    );
+  });
+
+  project.addEventListener("mouseleave", () => {
+    project.style.setProperty("--x", 0);
+    project.style.setProperty("--y", 0);
+  });
+};
+
 const initProjectList = () => {
   projects.forEach((project) => {
     project.setAttribute("tabIndex", -1);
-
-    project.addEventListener("mousemove", (e) => {
-      const r = project.getBoundingClientRect();
-
-      project.style.setProperty(
-        "--x",
-        e.clientX - (r.left + Math.floor(r.width / 2))
-      );
-      project.style.setProperty(
-        "--y",
-        e.clientY - (r.top + Math.floor(r.height / 2))
-      );
-    });
-
-    project.addEventListener("mouseleave", () => {
-      project.style.setProperty("--x", 0);
-      project.style.setProperty("--y", 0);
-    });
+    handleProjectHover(project);
   });
 
   projectList.setAttribute("tabIndex", 0);
