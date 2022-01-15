@@ -1,3 +1,61 @@
+@mixin current-mode($value) {
+  @if $value == "dark" {
+    .light {
+      display: none;
+    }
+    .dark {
+      display: block;
+    }
+  } @else {
+    .light {
+      display: block;
+    }
+    .dark {
+      display: none;
+    }
+  }
+}
+
+.color-scheme-toggle {
+  @include current-mode(light);
+
+  @media (prefers-color-scheme: dark) {
+    @include current-mode(dark);
+  }
+
+  [data-color-scheme="light"] & {
+    @include current-mode(light);
+  }
+
+  [data-color-scheme="dark"] & {
+    @include current-mode(dark);
+  }
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: var(--space-xs);
+  cursor: pointer;
+
+  &:active {
+    transform: translateY(1px);
+  }
+}
+
+.color-scheme-toggle .focus-arrows {
+  display: none;
+  position: absolute;
+  bottom: -0.6em;
+  left: 100%;
+  color: var(--color-secondary);
+  transform: translateX(50%) rotate(45deg);
+  pointer-events: none;
+}
+
+.color-scheme-toggle:focus-visible .focus-arrows {
+  display: block;
+}
+
 .theme-slider {
   flex: 1 1 0;
   width: 100%;

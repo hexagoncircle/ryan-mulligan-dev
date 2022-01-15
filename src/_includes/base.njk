@@ -41,15 +41,13 @@
 
 		<script>
 			(function () {
-				document
-					.documentElement
-					.removeAttribute("data-no-js");
-				localStorage.getItem('color-scheme') && document
-					.documentElement
-					.setAttribute('data-color-scheme', localStorage.getItem('color-scheme'));
-				localStorage.getItem('theme') && document
-					.documentElement
-					.setAttribute('data-theme', localStorage.getItem('theme'));
+				const html = document.documentElement;
+				const theme = localStorage.getItem('theme');
+				const colorScheme = localStorage.getItem('color-scheme');
+
+				html.removeAttribute("data-no-js");
+				colorScheme && html.setAttribute('data-color-scheme', colorScheme);
+				theme && html.setAttribute('data-theme', theme);
 			})();
 		</script>
 	</head>
@@ -57,7 +55,7 @@
 	<body data-page="{{ page.fileSlug or 'home' }}">
 		<header class="header wrapper flow">
 			<a class="skip-to-content" href="#main">
-				Skip to content
+				Skip to main content
 				<svg class="icon" aria-hidden="true" width="24" height="24" viewBox="0 0 24 24">
 					<path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"/>
 				</svg>
@@ -87,7 +85,8 @@
 			</p>
 		</footer>
 
-		<script src="{{ '/scripts/main.js' | url }}" defer></script>
+		<script src="{{ '/scripts/main.js' | url }}"></script>
+		<script src="{{ '/scripts/color-scheme.js' | url }}" async></script>
 		{% block scripts %}{% endblock %}
 	</body>
 </html>
