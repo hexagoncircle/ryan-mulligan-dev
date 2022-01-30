@@ -1,7 +1,7 @@
 ---
 title: Animating with the Flip Plugin for GSAP
-description: Initial experimentation with the FLIP animation technique provided by the GreenSock Animation Platform for add-to-cart transitions
-subtitle: Initial experimentation with the FLIP technique to create fun add-to-cart transitions
+description: Initial experimentation with the FLIP animation technique provided by the GreenSock Animation Platform for add-to-cart transitions.
+subtitle: Initial experimentation with the FLIP technique to create fun add-to-cart transitions.
 date: 2022-01-07
 ---
 

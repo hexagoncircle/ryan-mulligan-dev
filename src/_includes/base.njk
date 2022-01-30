@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" data-no-js>
 	{%- set pageTitle %}
-	{% if title %}{{ title }} | {% endif %}{{ meta.siteName }}{% endset -%}
+	{%- if title -%}{{ title }} | {% endif %}{{ meta.siteName }}{% endset -%}
 	{%- set pageDescription %}
-	{% if description %}{{ description }}
-	{% else %}{{ meta.siteDescription }}
-	{% endif %}{% endset -%}
+	{%- if description -%}{{ description }}
+	{%- else -%}{{ meta.siteDescription }}
+	{%- endif -%}{% endset -%}
 	{%- set pageSocialImg %}
 	{% if '/blog' in page.url %}{{ meta.url }}/assets/social/{{ title | slug }}.png{% else %}{{ meta.url }}/assets/social-image-default.png{% endif %}{% endset -%}
 
