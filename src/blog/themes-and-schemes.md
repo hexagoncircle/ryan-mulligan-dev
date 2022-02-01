@@ -66,7 +66,7 @@ In the following example, you'll notice that the base default colors are the sam
 For visual history, I shared my site refresh and demonstrated the original theme slider implementation in [this tweet](https://twitter.com/hexagoncircle/status/1338885523658555394?s=20&t=WebRdkKmXfB5ntsYPFwNwA). _Small note:_ this was tweeted before I decided to ditch the old domain in favor of the one you're on now.
 {.callout}
 
-This first iteration felt limited. Preferred color scheme values were tied to specific themes (1 for dark, 5 for light/no-preference) and disconnected from the values sandwiched in between. It was a fine start but left me wondering about other ways to handle this preference settings.
+This first iteration felt limited. Preferred color scheme values were tied to specific themes (1 for dark, 5 for light/no-preference) and disconnected from the values sandwiched in between. It was a fine start but left me wondering about other ways to handle these preference settings.
 
 ## Decoupling scheme and theme
 
