@@ -45,7 +45,7 @@ The `min` and `max` attributes on the theme slider were set to 1 and 5 respectiv
 Worth pointing out that it's totally possible to approach this the other way, starting with dark mode styles and overriding them with `light` or `no-preference` rulesets as Michelle explains in [her article](https://css-irl.info/quick-and-easy-dark-mode-with-css-custom-properties/).
 {.callout}
 
-In the following example, you'll notice that the base default colors are the same values in `data-theme="1"` and then get updated to match `data-theme="5"` for the dark color scheme preference.
+In the following example, you'll notice that the base default colors are the same values in `data-theme="5"` and then get updated to match `data-theme="1"` for the dark color scheme preference.
 
 ```css
 :root {
