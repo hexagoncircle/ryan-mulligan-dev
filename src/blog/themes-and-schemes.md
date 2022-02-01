@@ -141,7 +141,7 @@ Something I enjoy about the latter bullet point is that it reveals the actual th
 
 Thanks for joining while I recounted the tale of my website's first theming trial and its follow-up adventure. Some of the patterns here may change over time but this has been a blast putting together. I'm no champion of color, but I think these are some good lookin' themes.
 
-If you have your own unique implementation or favorites out there on the wild web, [please share](https://twitter.com/hexagoncircle)! Max Böck and Josh Comeau have beautiful theme switchers and wrote detailed articles about their journeys. Definitely worth the read:
+If you have your own unique implementation or favorites out there on the wild web, [please share](https://twitter.com/hexagoncircle/status/1488589211577946114?s=20&t=EldD8DIkTHYUdsKTsxJslQ)! Max Böck and Josh Comeau have beautiful theme switchers and wrote detailed articles about their journeys. Definitely worth the read:
 
 - [Color Theme Switcher](https://mxb.dev/blog/color-theme-switcher/)
 - [The Quest for the Perfect Dark Mode](https://www.joshwcomeau.com/react/dark-mode/)
