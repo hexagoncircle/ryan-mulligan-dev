@@ -76,7 +76,7 @@ When I first [migrated over to 11ty](/blog/migrating-to-11ty) and added more pag
 
 🤯
 
-Here's what I came up with. The theme slider works the same as before but now has a new neighbor: a color scheme toggle button. This button sets a light or dark version of the current theme. My selection of colors may be somewhat arbitrary and subjective, but I tried pairing palettes that compliment one another.
+Here's what I came up with. The theme slider works the same as before but now has a new neighbor: a `color-scheme` toggle button. This button sets a light or dark version of the current theme. My selection of colors may be somewhat arbitrary and subjective, but I tried pairing palettes that complement one another.
 
 <p class="codepen" data-height="300" data-default-tab="css,result" data-slug-hash="zYPrjNd" data-user="hexagoncircle">
   <span>See the Pen <a href="https://codepen.io/hexagoncircle/pen/zYPrjNd">
@@ -123,16 +123,16 @@ A hefty thanks to [Andy Bell's article](https://piccalil.li/tutorial/create-a-us
 Keyboard navigation and interaction for these two elements works as one might suspect. The button toggles between dark and light mode. The range input updates the theme value. It's debatable that they are best left like that. However, I wanted to explore a version that combined these element interactions; A way to cycle through themes and toggle their light/dark variants as a single control.
 
 - `tabindex="-1"` is set on the theme slider so it's no longer focusable in the keyboard tab sequence.
-- When the color scheme toggle button is focused, left and right arrow keys cycle through the theme slider values.
+- When the `color-scheme` toggle button is focused, left and right arrow keys cycle through the theme slider values.
 - The space bar and enter key toggle light and dark mode.
-- Visually, the toggle button has a focus outline with a left/right arrow icon beside it.
+- Visually, the button has a focus outline with a left/right arrow icon beside it.
 - A screen reader informs us that we can press the left and right arrow keys to change the theme in addition to our default button control.
 
 ## Theme status
 
 One last feature is the usage of the status role, another gem from [Andy Bell's article](https://piccalil.li/tutorial/create-a-user-controlled-dark-or-light-mode/). An HTML element with a `role="status"` attribute is grouped next to each control. Although visually hidden, when the content inside these containers changes, assistive technology will relay that update back to us.
 
-- Clicking the color scheme toggle button announces the change to light or dark mode.
+- Clicking the `color-scheme` toggle button announces the change to light or dark mode.
 - Changing the value in the theme slider announces the new theme being displayed.
 
 Something I enjoy about the latter bullet point is that it reveals the actual theme names which are based on ice cream flavors. Without inspecting code, it's currently the only path to this discovery. What's cooler than being cool? Ice cream.
