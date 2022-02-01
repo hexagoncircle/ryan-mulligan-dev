@@ -26,7 +26,7 @@ Each theme changed the site colors set in CSS custom properties. I've simplified
 
 ```css
 [data-theme="1"] {
-  /* darkest theme */
+  /* dark theme */
   --color-text: papayawhip;
   --color-bg: midnightblue;
 }
@@ -34,7 +34,7 @@ Each theme changed the site colors set in CSS custom properties. I've simplified
 /* ...rulesets for themes 2 through 4... */
 
 [data-theme="5"] {
-  /* lightest theme */
+  /* light theme */
   --color-text: darkslategray;
   --color-bg: lightsalmon;
 }
@@ -49,13 +49,13 @@ In the following example, you'll notice that the base default colors are the sam
 
 ```css
 :root {
-  /* same values used in theme 5 (lightest) */
+  /* same values used in theme 5 */
   --color-text: darkslategray;
   --color-bg: lightsalmon;
 }
 
 @media (prefers-color-scheme: dark) {
-  /* same values used in theme 1 (darkest) */
+  /* same values used in theme 1 */
   :root {
     --color-text: papayawhip;
     --color-bg: midnightblue;
