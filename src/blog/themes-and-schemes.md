@@ -17,7 +17,7 @@ Read those already? Skimmed them a fair amount at least? Fantastic. Let's jump i
 
 ## Range of styles
 
-My first go-around in custom theme selection on this site was handled with an HTML range input (dubbed _theme slider_). Each input value correlated to a CSS ruleset. Interacting with the theme slider did a couple things:
+My first go-around with theme switching was handled with an HTML range input (dubbed _theme slider_). Each input value correlated to a CSS ruleset. Interacting with the theme slider did a couple things:
 
 1. Set a `data-theme` attribute on the `<html>` element.
 2. Saved the theme value to the browser's local storage to be referenced on subsequent site visits.
