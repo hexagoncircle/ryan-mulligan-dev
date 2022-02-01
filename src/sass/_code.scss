@@ -227,7 +227,6 @@ pre[class*="language-"] {
   display: grid;
   place-items: center;
   grid-template-areas: "container";
-  min-height: 300px;
   resize: horizontal;
 
   iframe {

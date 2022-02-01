@@ -14,20 +14,6 @@
     "fruit sorbet",
   ];
 
-  const handleKeyPress = (e) => {
-    if (e.key === "ArrowRight") {
-      slider.value++;
-      setTheme(slider.value);
-      updateThemeStatus(slider.value);
-    }
-
-    if (e.key === "ArrowLeft") {
-      slider.value--;
-      setTheme(slider.value);
-      updateThemeStatus(slider.value);
-    }
-  };
-
   const setToggleLabel = () => {
     let mode;
 
@@ -50,8 +36,15 @@
   };
 
   const setTheme = (value) => {
-    html.dataset.theme = value;
-    localStorage.setItem("theme", value);
+    const theme = themeFlavors[value - 1];
+    html.dataset.theme = theme;
+    localStorage.setItem("theme", theme);
+
+    if (!html.dataset.colorScheme) {
+      const scheme = prefersDark.matches ? "dark" : "light";
+      setColorScheme(scheme);
+      updateColorSchemeStatus(scheme);
+    }
   };
 
   const updateColorSchemeStatus = (value) => {
@@ -66,7 +59,10 @@
 
   const init = () => {
     slider.setAttribute("tabIndex", -1);
-    slider.setAttribute("value", html.dataset.theme || 1);
+    slider.setAttribute(
+      "value",
+      themeFlavors.indexOf(html.dataset.theme) + 1 || 1
+    );
     setToggleLabel();
   };
 
@@ -76,6 +72,7 @@
       In addition, use the left and right arrow keys to change the theme
     </p>`
   );
+
   toggle.setAttribute("aria-describedby", "theme-controls-focus-text");
 
   toggle.addEventListener("click", () => {
@@ -91,15 +88,28 @@
     updateColorSchemeStatus(scheme);
   });
 
-  toggle.addEventListener("keydown", (e) => handleKeyPress(e));
-
-  slider.addEventListener("input", () => {
-    if (!html.dataset.colorScheme) {
-      const scheme = prefersDark.matches ? "dark" : "light";
-      setColorScheme(scheme);
-      updateColorSchemeStatus(scheme);
+  toggle.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowRight") {
+      slider.value === slider.max ? (slider.value = 0) : slider.value++;
     }
 
+    if (e.key === "ArrowLeft") {
+      slider.value === slider.min
+        ? (slider.value = slider.max)
+        : slider.value--;
+    }
+
+    setTheme(slider.value);
+    updateThemeStatus(slider.value);
+  });
+
+  slider.addEventListener("keydown", (e) => {
+    if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
+      toggle.focus();
+    }
+  });
+
+  slider.addEventListener("input", () => {
     setTheme(slider.value);
     updateThemeStatus(slider.value);
   });

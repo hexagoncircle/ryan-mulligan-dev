@@ -1,32 +1,4 @@
-:where(html) {
-  color-scheme: light dark;
-  --color-text: hsl(0, 0%, 5%);
-  --color-text-accent: hsl(0, 0%, 20%);
-  --color-bg: hsl(0, 0%, 98%);
-  --color-bg-accent: hsl(0, 0%, 90%);
-  --color-primary: hsl(230, 80%, 60%);
-  --color-secondary: hsl(344, 85%, 48%);
-
-  @media (prefers-color-scheme: dark) {
-    --color-text: hsl(0, 0%, 88%);
-    --color-text-accent: hsl(0, 0%, 68%);
-    --color-bg: hsl(285, 18%, 4%);
-    --color-bg-accent: hsl(285, 18%, 15%);
-    --color-primary: hsl(344, 85%, 50%);
-    --color-secondary: hsl(47, 81%, 56%);
-  }
-}
-
-[data-color-scheme="light"] {
-  --color-text: hsl(0, 0%, 5%);
-  --color-text-accent: hsl(0, 0%, 20%);
-  --color-bg: hsl(0, 0%, 98%);
-  --color-bg-accent: hsl(0, 0%, 90%);
-  --color-primary: hsl(230, 80%, 60%);
-  --color-secondary: hsl(344, 85%, 48%);
-}
-
-[data-color-scheme="dark"] {
+@mixin color-scheme-dark {
   --color-text: hsl(0, 0%, 88%);
   --color-text-accent: hsl(0, 0%, 68%);
   --color-bg: hsl(285, 18%, 4%);
@@ -35,25 +7,44 @@
   --color-secondary: hsl(47, 81%, 56%);
 }
 
-[data-theme="2"] {
+:where(html) {
+  --color-text: hsl(0, 0%, 5%);
+  --color-text-accent: hsl(0, 0%, 20%);
+  --color-bg: hsl(0, 0%, 98%);
+  --color-bg-accent: hsl(0, 0%, 90%);
+  --color-primary: hsl(230, 80%, 60%);
+  --color-secondary: hsl(344, 85%, 48%);
+
+  @media (prefers-color-scheme: dark) {
+    &:not([data-color-scheme]) {
+      @include color-scheme-dark;
+    }
+  }
+
+  &[data-color-scheme="dark"] {
+    @include color-scheme-dark;
+  }
+}
+
+[data-theme="brambleberry crisp"] {
   --color-text: hsl(197, 100%, 15%);
   --color-text-accent: hsl(197, 100%, 20%);
   --color-bg: hsl(210, 55%, 90%);
   --color-bg-accent: hsl(210, 55%, 85%);
   --color-primary: hsl(230, 66%, 47%);
   --color-secondary: hsl(351, 77%, 44%);
+
+  &[data-color-scheme="dark"] {
+    --color-text: hsl(197, 100%, 75%);
+    --color-text-accent: hsl(197, 100%, 55%);
+    --color-bg: hsl(210, 100%, 12%);
+    --color-bg-accent: hsl(210, 100%, 22%);
+    --color-primary: hsl(146deg 100% 50%);
+    --color-secondary: hsl(146deg 100% 50%);
+  }
 }
 
-[data-theme="2"][data-color-scheme="dark"] {
-  --color-text: hsl(197, 100%, 75%);
-  --color-text-accent: hsl(197, 100%, 55%);
-  --color-bg: hsl(210, 100%, 12%);
-  --color-bg-accent: hsl(210, 100%, 22%);
-  --color-primary: hsl(146deg 100% 50%);
-  --color-secondary: hsl(146deg 100% 50%);
-}
-
-[data-theme="3"] {
+[data-theme="lemon blueberry parfait"] {
   --color-text: hsl(0, 0%, 100%);
   --color-text-accent: hsl(0, 0%, 94%);
   --color-bg: hsl(217, 92%, 49%);
@@ -69,7 +60,7 @@
   }
 }
 
-[data-theme="4"] {
+[data-theme="fruit sorbet"] {
   --color-text: hsl(0, 0%, 7%);
   --color-text-accent: hsl(0, 0%, 0%);
   --color-bg: hsl(63, 88%, 64%);
