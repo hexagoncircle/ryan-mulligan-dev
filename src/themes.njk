@@ -1,0 +1,32 @@
+---
+permalink: '/css/theme.css'
+excludeFromSitemap: true
+---
+
+{%- macro themeVars(variant) -%}
+{% for name, color in variant %}
+  --color-{{ name | camelToKabob }}: {{ color }};
+{%- endfor %}
+{%- endmacro -%}
+
+{%- set default = themes | first -%}
+
+:where(html) {
+  {{- themeVars(default.variants.base) }}
+}
+
+@media(prefers-color-scheme: dark) {
+  :where(html) {
+    {{- themeVars(default.variants.dark) }}
+  }
+}
+
+{% for theme in themes %}
+[data-theme="{{ theme.name }}"] {
+  {{- themeVars(theme.variants.base) }}
+}
+
+[data-theme="{{ theme.name }}"][data-color-scheme="dark"] {
+  {{- themeVars(theme.variants.dark) }}
+}
+{% endfor %}

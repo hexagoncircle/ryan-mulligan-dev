@@ -30,6 +30,10 @@ module.exports = function (eleventyConfig) {
     DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED)
   );
 
+  eleventyConfig.addNunjucksFilter("camelToKabob", (str) =>
+    str.replace(/([a-z0-9]|(?=[A-Z]))([A-Z])/g, "$1-$2").toLowerCase()
+  );
+
   eleventyConfig.addShortcode("image", imageShortcode);
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
   eleventyConfig.addShortcode("mailToPath", (subject) => {

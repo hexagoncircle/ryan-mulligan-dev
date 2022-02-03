@@ -1,4 +1,5 @@
-<div data-theme-controls>
+{# {%- set themeNames = {%- for theme in themes -%}{{ theme.name }}{%- endfor -%} -%} #}
+<div data-theme-controls data-themes="{%- for theme in themes -%}{{ theme.name }}{% if not loop.last %}, {% endif %}{%- endfor -%}">
   <div class="color-scheme-status visually-hidden" role="status"></div>
   <button class="color-scheme-toggle" title="Toggle between light and dark mode">
     <svg class="icon light" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentcolor" viewBox="0 0 256 256">
@@ -30,5 +31,5 @@
 
   <div class="theme-status visually-hidden" role="status"></div>
   <label for="theme" class="theme-slider-label visually-hidden">Slide to change the theme</label>
-  <input title="Slide to change the theme" class="theme-slider" type="range" id="theme" name="theme" min="1" max="4" value="1"/>
+  <input title="Slide to change the theme" class="theme-slider" type="range" id="theme" name="theme" min="0" max="3" value="0"/>
 </div>

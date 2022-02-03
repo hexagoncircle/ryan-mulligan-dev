@@ -1,18 +1,12 @@
 (function () {
   const html = document.documentElement;
   const themeControls = document.querySelector("[data-theme-controls]");
+  const themeNames = Array.from(themeControls.dataset.themes.split(", "));
   const toggle = themeControls.querySelector(".color-scheme-toggle");
   const slider = themeControls.querySelector(".theme-slider");
   const colorSchemeStatus = themeControls.querySelector(".color-scheme-status");
   const themeStatus = themeControls.querySelector(".theme-status");
   const prefersDark = window.matchMedia("(prefers-color-scheme: dark)");
-
-  const themeFlavors = [
-    "cookies and cream",
-    "brambleberry crisp",
-    "lemon blueberry parfait",
-    "fruit sorbet",
-  ];
 
   const setToggleLabel = () => {
     let mode;
@@ -33,17 +27,19 @@
     html.dataset.colorScheme = value;
     localStorage.setItem("color-scheme", value);
     setToggleLabel();
+
+    if (!html.dataset.theme) {
+      setTheme(0);
+    }
   };
 
   const setTheme = (value) => {
-    const theme = themeFlavors[value - 1];
+    const theme = themeNames[value];
     html.dataset.theme = theme;
     localStorage.setItem("theme", theme);
 
     if (!html.dataset.colorScheme) {
-      const scheme = prefersDark.matches ? "dark" : "light";
-      setColorScheme(scheme);
-      updateColorSchemeStatus(scheme);
+      setColorScheme(prefersDark.matches ? "dark" : "light");
     }
   };
 
@@ -52,17 +48,12 @@
   };
 
   const updateThemeStatus = (value) => {
-    themeStatus.innerText = `Site display set to ${
-      themeFlavors[value - 1]
-    } theme`;
+    themeStatus.innerText = `Site display set to ${themeNames[value]} theme`;
   };
 
   const init = () => {
     slider.setAttribute("tabIndex", -1);
-    slider.setAttribute(
-      "value",
-      themeFlavors.indexOf(html.dataset.theme) + 1 || 1
-    );
+    slider.setAttribute("value", themeNames.indexOf(html.dataset.theme) || 0);
     setToggleLabel();
   };
 
