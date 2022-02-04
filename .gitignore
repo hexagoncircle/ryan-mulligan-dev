@@ -4,6 +4,7 @@ node_modules
 # build artefacts
 _site
 .cache
+.vscode
 
 # secrets and errors
 .env
