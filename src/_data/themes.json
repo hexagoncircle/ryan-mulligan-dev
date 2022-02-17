@@ -12,7 +12,7 @@
       },
       "dark": {
         "text": "hsl(0, 0%, 88%)",
-        "textAccent": "hsl(0, 21%, 5%)",
+        "textAccent": "hsl(0, 0%, 68%)",
         "bg": "hsl(285, 18%, 4%)",
         "bgAccent": "hsl(285, 18%, 15%)",
         "primary": "hsl(344, 85%, 50%)",
