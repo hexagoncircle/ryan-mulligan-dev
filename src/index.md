@@ -62,6 +62,16 @@ My own random thoughts, code snippets, and other web-related stuff I'd like to s
 <div class="employment-list">
   <dl>
     <div>
+      <dt>Netlify</dt>
+      <dd class="employment-location">Remote</dd>
+    </div>
+    <div>
+      <dd class="employment-role">Marketing Engineering Lead</dd>
+      <dd class="employment-info">February 2022 – Present</dd>
+    </div>
+  </dl>
+  <dl>
+    <div>
       <dt>Inspirato</dt>
       <dd class="employment-location">Denver, CO / Remote</dd>
     </div>
