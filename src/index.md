@@ -5,7 +5,7 @@ templateEngineOverride: njk,md
 
 ## A bit about me
 
-I'm a fun-loving front-end engineer that strives to bridge the gap between web design and develop&shy;ment, building user experiences with positive interactivity through thoughtful interfaces. I advocate for modern best practices on the web and love working with diverse, inclusive teams.
+I'm a fun-loving front-end engineer that strives to bridge the gap between web design and develop&shy;ment, building user experiences with positive interactivity through thoughtful interfaces. I advocate for modern best practices on the web and love working with diverse, inclusive teams. Currently, I build for the web with a lovely team at <a href="https://www.netlify.com/">Netlify</a>.
 
 When I'm not coding, you can catch me [noodling on my acoustic guitar](https://twitter.com/hexagoncircle/status/1413526995376295941?s=20") or [blasting out rhythms](https://twitter.com/hexagoncircle/status/1285798846568767496?s=20) if there's a drum kit ready for a lefty nearby.
 
@@ -56,72 +56,3 @@ My own random thoughts, code snippets, and other web-related stuff I'd like to s
 - Guitar noodling
 - Trashing a drum kit
   {.multi-column }
-
-## Employment
-
-<div class="employment-list">
-  <dl>
-    <div>
-      <dt>Netlify</dt>
-      <dd class="employment-location">Remote</dd>
-    </div>
-    <div>
-      <dd class="employment-role">Marketing Engineering Lead</dd>
-      <dd class="employment-info">February 2022 – Present</dd>
-    </div>
-  </dl>
-  <dl>
-    <div>
-      <dt>Inspirato</dt>
-      <dd class="employment-location">Denver, CO / Remote</dd>
-    </div>
-    <div>
-      <dd class="employment-role">Manager, UI Engineering</dd>
-      <dd class="employment-info">May 2021 – January 2022</dd>
-      <dd class="employment-role">Senior UI Engineer</dd>
-      <dd class="employment-info">August 2019 – May 2021</dd>
-    </div>
-  </dl>
-  <dl>
-    <div>
-      <dt>Elevated Third</dt>
-      <dd class="employment-location">Seattle, WA</dd>
-    </div>
-    <div>
-      <dd class="employment-role">Senior Front-end Developer</dd>
-      <dd class="employment-info">July 2018 – April 2019</dd>
-    </div>
-  </dl>
-  <dl>
-    <div>
-      <dt>Expedia Group</dt>
-      <dd class="employment-location">Bellevue, WA</dd>
-    </div>
-    <div>
-      <dd class="employment-role">Software Dev Engineer II</dd>
-      <dd class="employment-info">June 2017– May 2018</dd>
-      <dd class="employment-role">Senior Design Engineer</dd>
-      <dd class="employment-info">June 2016 – June 2017</dd>
-    </div>
-  </dl>
-  <dl>
-    <div>
-      <dt>Elevated Third</dt>
-      <dd class="employment-location">Denver, CO</dd>
-    </div>
-    <div>
-      <dd class="employment-role">Senior Developer</dd>
-      <dd class="employment-info">May 2012 – May 2016</dd>
-    </div>
-  </dl>
-  <dl>
-    <div>
-      <dt>Entravision Communications</dt>
-      <dd class="employment-location">Denver, CO</dd>
-    </div>
-    <div>
-      <dd class="employment-role">Interactive Content Publisher</dd>
-      <dd class="employment-info">January 2010 – January 2012</dd>
-    </div>
-  </dl>
-</div>
