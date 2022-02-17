@@ -35,7 +35,7 @@ My own random thoughts, code snippets, and other web-related stuff I'd like to s
 ## Creative projects
 
 - [Ryan & Aly](https://ryanandaly.com/)
-- [Almost before we knew it](https://hexagoncircle.github.io/almost-before-we-knew-it/)
+- [Almost before we knew it](https://mesend.love/)
 - [Animated Verbs](https://animatedverbs.com/)
 - [CSS CLI](https://stylestage.dev/styles/css-cli/)
 - [SoundCloud Grid](https://hexagoncircle.github.io/soundcloud-grid/)
