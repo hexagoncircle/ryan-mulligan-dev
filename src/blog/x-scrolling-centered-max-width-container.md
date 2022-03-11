@@ -134,9 +134,6 @@ Adding `flex-shrink: 0` on project items keeps them from collapsing to fit withi
 
 Something that I found really interesting: `scroll-snap-align` can be declared on nested elements! Notice that `scroll-snap-align: center` is set on project items. Although, while this works nicely for the `center` value, the result is not what you might hope for when using `start` or `end`. The elements are aligning to the scroll container edges of the gallery, which handles the scroll snap positioning, not the wrapper.
 
-Seems like there's a scroll snap regression in Firefox. For now, I've unset scroll snap alignment in a `@-moz-document url-prefix()` ruleset while waiting on a fix for [this](https://bugzilla.mozilla.org/show_bug.cgi?id=1737820) to be deployed.
-{.callout}
-
 ## Reverse scroll direction
 
 Scroll direction is handled quite gracefully. For languages that read from right to left, project items will be flipped appropriately thanks to their parent wrapper's flexbox display. The first item aligns to the right edge of the page content area and the gallery scrolls in from the left. Check the [CodePen demo](#codepen-demo) for an example of this further down the page.
