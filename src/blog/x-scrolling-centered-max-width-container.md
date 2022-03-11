@@ -149,8 +149,9 @@ CSS Grid and Flexbox open the doors to so many layout patterns that, not long ag
 
 ## Helpful resources
 
-- [A Horizontal Scroll List and Custom Keyboard Navigation](/blog/project-keyboard-navigation/)
+- [CSS Full-Bleed Scroll-Snapping Carousel with Centered Content and Visible Overflow](https://www.bram.us/2021/05/06/css-full-bleed-scroll-snapping-carousel-with-visible-overflow/)
 - [Full-Bleed Layout Using CSS Grid](https://www.joshwcomeau.com/css/full-bleed/)
+- [A Horizontal Scroll List and Custom Keyboard Navigation](/blog/project-keyboard-navigation/)
 - [min(), max(), and clamp(): three logical CSS functions to use today](https://web.dev/min-max-clamp/)
 - [CSS subgrid vs nested grid — are they the same?](https://www.annalytic.com/css-subgrid-vs-nested-grid.html)
 - [RTL Styling 101](https://rtlstyling.com/)
