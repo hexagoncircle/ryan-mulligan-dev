@@ -77,7 +77,7 @@ With the page layout finished, we can move on to the gallery component, starting
 
 ```css
 .gallery {
-  grid-column: viewport;
+  grid-column: full;
   display: grid;
   grid-template-columns: inherit;
   padding-block: var(--gap);
@@ -102,7 +102,7 @@ In browser developer tools, we can enable layout grid lines visually and get a s
 
 ### The inner wrapper
 
-In order to align the initial project item to the page content area, a wrapper element surrounds the project items and has `grid-column: content` declared. Remember, the gallery inherits the `grid-template-column` property value so the `viewport` and `content` keywords are available.
+In order to align the initial project item to the page content area, a wrapper element surrounds the project items and has `grid-column: content` declared. Remember, the gallery inherits the `grid-template-column` property value so the `full` and `content` keywords are available.
 
 ```css
 .gallery .wrapper {
