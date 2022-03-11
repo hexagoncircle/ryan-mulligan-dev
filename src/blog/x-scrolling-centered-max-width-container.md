@@ -108,14 +108,16 @@ In order to align the initial project item to the page content area, a wrapper e
 .gallery .wrapper {
   grid-column: content;
   display: flex;
+  align-items: center;
   gap: var(--space);
 }
 
 .gallery .wrapper::after {
   content: "";
+  align-self: stretch;
   padding-inline-end: max(
-    var(--gap) / 2,
-    (100vw - var(--content-max-width)) / 2 - (var(--gap) / 2)
+    var(--space),
+    (100vw - var(--content-max-width)) / 2 - var(--space)
   );
 }
 ```
