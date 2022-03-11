@@ -55,7 +55,7 @@ The CodePen above follows Josh's [padding example](https://www.joshwcomeau.com/c
 
 .gallery {
   grid-column: full;
-  // other gallery code
+  /* other gallery code */
 }
 ```
 
