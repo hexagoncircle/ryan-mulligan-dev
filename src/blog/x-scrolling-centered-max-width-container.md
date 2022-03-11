@@ -90,7 +90,7 @@ With the page layout finished, we can move on to the gallery component, starting
 
 This is where scroll behavior and scroll snapping are handled, as well as stretching the viewport width. It inherits the `grid-columns-template` from the parent grid, acquiring the same column values and named grid lines.
 
-`inherit` works as expected since the gallery spans the full row of the parent grid, so its column dimensions match. However, its grid is independent of the parent one, unlike `subgrid` which allows nested elements to utilize the parent grid. [This article](https://www.annalytic.com/css-subgrid-vs-nested-grid.html) by Anna Monus explains it well. [CSS Subgrid](https://www.smashingmagazine.com/2022/03/new-css-features-2022/#subgrid) support is very low with only Firefox supporting it at the time of writing.
+`inherit` works as expected since the gallery spans the full row of the parent grid, so its column dimensions match. However, its grid is independent of the parent one, unlike `subgrid` which allows nested elements to utilize the parent grid. [This article](https://www.annalytic.com/css-subgrid-vs-nested-grid.html) by Anna Monus explains it well. [CSS Subgrid](https://www.smashingmagazine.com/2022/03/new-css-features-2022/#subgrid) support is very low at the time of writing.
 {.callout}
 
 In browser developer tools, we can enable layout grid lines visually and get a sense of how it's all working. I'm using Chrome dev tools in the screenshot below but Firefox and Safari share similar steps.
