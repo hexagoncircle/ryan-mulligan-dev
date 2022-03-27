@@ -1,25 +1,5 @@
-// Smooth scrolling + Find on a page fix
-@keyframes smoothscroll1 {
-  from,
-  to {
-    scroll-behavior: smooth;
-  }
-}
-
-@keyframes smoothscroll2 {
-  from,
-  to {
-    scroll-behavior: smooth;
-  }
-}
-
 @mixin smooth-scroll {
   & {
-    animation: smoothscroll1 1s;
-  }
-
-  &:focus-within {
-    animation-name: smoothscroll2;
     scroll-behavior: smooth;
 
     @media screen and (prefers-reduced-motion: reduce) {
@@ -54,9 +34,7 @@
 }
 
 .scroll-x > * {
-  scroll-snap-align: start;
-  scroll-snap-margin-left: var(--page-padding);
-  scroll-margin-left: var(--page-padding);
+  scroll-snap-align: center;
 }
 
 @media not all and (any-hover: hover) {

@@ -27,7 +27,7 @@
       e.preventDefault();
       selected.scrollIntoView({
         block: "nearest",
-        inline: "start",
+        inline: "center",
         behavior: reducedMotion.matches ? "auto" : "smooth",
       });
       selected.focus({ preventScroll: true });
