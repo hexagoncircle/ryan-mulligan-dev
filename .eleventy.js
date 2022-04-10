@@ -6,6 +6,7 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const timeToRead = require("eleventy-plugin-time-to-read");
 const socialImages = require("@11tyrocks/eleventy-plugin-social-images");
 const imageShortcode = require("./src/utils/imageShortcode.js");
+const EleventyVitePlugin = require("@11ty/eleventy-plugin-vite");
 
 module.exports = function (eleventyConfig) {
   const markdownItOptions = {
@@ -21,7 +22,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(timeToRead);
   eleventyConfig.addPlugin(socialImages);
-  eleventyConfig.addWatchTarget("./src/sass/");
+  eleventyConfig.addPlugin(EleventyVitePlugin);
+  eleventyConfig.addPassthroughCopy({ "./src/sass/": "./css/" });
   eleventyConfig.addPassthroughCopy("./src/scripts/");
   eleventyConfig.addPassthroughCopy("./src/assets/");
   eleventyConfig.addPassthroughCopy("./src/manifest.webmanifest");
