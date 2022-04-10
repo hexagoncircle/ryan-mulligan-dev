@@ -12,8 +12,8 @@
     {% for pen in codePen %}
       <li class="item">
         <a href="https://codepen.io/hexagoncircle/full/{{ pen.id }}" target="_blank" rel="noopener">
+          <img src="https://codepen.io/hexagoncircle/pen/{{ pen.id }}/image/large.png" alt="" width="400" height="225" loading="lazy" data-is-loading />
           <span class="visually-hidden">{{ pen.title }}</span>
-          <img src="https://codepen.io/hexagoncircle/pen/{{ pen.id }}/image/large.png" alt="" loading="lazy" data-is-loading />
         </a>
       </li>
     {% endfor %}
