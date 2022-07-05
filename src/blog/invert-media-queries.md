@@ -66,12 +66,12 @@ Level 4 [media query range contexts](https://www.bram.us/2021/10/26/media-querie
 
 ```css
 /* @media (max-width: 599px) becomes */
-@media (< 600px) {
+@media (width < 600px) {
   /* ... */
 }
 
 /* @media (min-width: 600px) becomes */
-@media (>= 600px) {
+@media (width >= 600px) {
   /* ... */
 }
 ```
