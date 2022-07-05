@@ -8,7 +8,7 @@ date: 2022-07-05
 
 Nowadays I lean on [modern CSS solutions](https://moderncss.dev/contextual-spacing-for-intrinsic-web-design/), [fluid layout patterns](https://css-tricks.com/responsive-layouts-fewer-media-queries/), and [intrinsic sizing](https://ishadeed.com/article/intrinsic-sizing-in-css/) over viewport dimension-based media queries – typically referred to as _breakpoints_ – that adapt a design at particular screen sizes. Let's not forget that [container queries](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Container_Queries) will soon join our CSS toolset, expanding the exciting universe of parent context styling.
 
-However, I do still find the occasional place to apply adaptive styling. Common example: a "desktop" menu (imagine a horizontal list of navigation items) that converts into its "mobile" counterpart (imagine a [hamburger button](https://en.wikipedia.org/wiki/Hamburger_button) that toggles a vertically stacked menu's visibility). After building out the foundational styles, I often prefer separating adaptive CSS properties versus having to override or unset them. This means I end up with rulesets that might look like this:
+However, I do still find the occasional place to apply adaptive styles. Common example: a "desktop" menu (imagine a horizontal list of navigation items) that converts into its "mobile" counterpart (imagine a [hamburger button](https://en.wikipedia.org/wiki/Hamburger_button) that toggles a vertically stacked menu's visibility). After building out the foundational styles, I often prefer separating adaptive CSS properties versus having to override or unset them. This means I end up with rulesets that might look like this:
 
 ```css
 .menu {
