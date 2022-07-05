@@ -14,9 +14,9 @@ module.exports = function (eleventyConfig) {
     linkify: true,
   };
 
-  const markdownLib = markdownIt(markdownItOptions).use(markdownItAttrs);
+  eleventyConfig.setLibrary("md", markdownIt(markdownItOptions));
+  eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItAttrs));
 
-  eleventyConfig.setLibrary("md", markdownLib);
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(timeToRead);
