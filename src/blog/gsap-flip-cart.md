@@ -25,8 +25,6 @@ I recommend reading [the docs](https://greensock.com/docs/v3/Plugins/Flip) (alwa
 
 The final week's prompt for the [December 2021 CodePen Challenge](https://codepen.io/challenges/2021/december/4) involved using the FLIP technique. This couldn't have lined up more perfectly. The holidays had arrived. The office was quiet. I filled my coffee mug to its very top and, after a few hours of learning and experimentation, came up with this animation prototype:
 
-{#codepen-demo .section-anchor}
-
 <p class="codepen" data-height="600" data-default-tab="result" data-slug-hash="RwLQLop" data-user="hexagoncircle">
   <span>See the Pen <a href="https://codepen.io/hexagoncircle/pen/RwLQLop">
   GSAP Flip Cart</a> by Ryan Mulligan (<a href="https://codepen.io/hexagoncircle">@hexagoncircle</a>)
@@ -82,7 +80,7 @@ Flip checks out the stored `state` object, compares it to the item's current sta
 
 I did nearly nothing here. This is all GSAP Flip sorcery. My goodness it's good.
 
-You might be wondering about the `reducedMotion` variable; review its value in the full version of the JavaScript code (click the JS tab in the [CodePen embed](#codepen-demo) above). It detects if a user has requested less movement on screen. If true, the item will be instantly added to the cart instead of animating across the page. Learn more about `prefers-reduced-motion` in [this web.dev article](https://web.dev/prefers-reduced-motion/).
+You might be wondering about the `reducedMotion` variable; review its value in the full version of the JavaScript code (click the JS tab in the CodePen embed above). It detects if a user has requested less movement on screen. If true, the item will be instantly added to the cart instead of animating across the page. Learn more about `prefers-reduced-motion` in [this web.dev article](https://web.dev/prefers-reduced-motion/).
 {.callout}
 
 In order to get the item to move into the cart once the animation has finished, the `onComplete` callback is used to append the item as a child.

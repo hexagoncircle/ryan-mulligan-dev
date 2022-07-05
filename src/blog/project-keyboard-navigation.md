@@ -18,8 +18,6 @@ The argument against a carousel-style UX popped in my head, naturally, and maybe
 
 Below is a stripped-down CodePen demo focused on layout and keyboard navigation criteria:
 
-{#codepen-demo .section-anchor}
-
 <p class="codepen" data-height="600" data-default-tab="result" data-slug-hash="QWMZBve" data-user="hexagoncircle">
   <span>See the Pen <a href="https://codepen.io/hexagoncircle/pen/QWMZBve">
   Section keyboard navigation with arrow keys</a> by Ryan Mulligan (<a href="https://codepen.io/hexagoncircle">@hexagoncircle</a>)
@@ -96,7 +94,7 @@ selected.focus({ preventScroll: true });
 
 Notice that a `prefers-reduced-motion` conditional is applied to the `behavior` option. This will respect our reduced motion settings and disable smooth scrolling of the list.
 
-To review all the code used in setting up these custom keyboard interactions, scroll back up to the embedded [CodePen example](#codepen-demo) from earlier in this article and select the JS tab.
+To review all the code used in setting up these custom keyboard interactions, scroll back up to the embedded CodePen example from earlier in this article and select the JS tab.
 {.callout}
 
 ## When JavaScript is disabled
