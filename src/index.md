@@ -3,6 +3,19 @@ layout: home.njk
 templateEngineOverride: njk,md
 ---
 
+## Blog posts
+
+My own random thoughts, code snippets, and other web-related stuff I'd like to share out there. Still in the process of writing content but I have a few in the cooker!
+
+<ul>
+  {%- for post in collections.posts | reverse  -%}
+    <li>
+      <a href="{{ post.url }}">{{ post.data.title }}</a>
+      <span class="source">{{ post.data.date | postDate }}</span>
+    </li>
+  {%- endfor -%}
+</ul>
+
 ## A bit about me
 
 I'm a fun-loving front-end engineer that strives to bridge the gap between web design and develop&shy;ment, building user experiences with positive interactivity through thoughtful interfaces. I advocate for modern best practices on the web and love working with diverse, inclusive teams. Currently, I build for the web with a lovely team at <a href="https://www.netlify.com/">Netlify</a>.
@@ -10,16 +23,6 @@ I'm a fun-loving front-end engineer that strives to bridge the gap between web d
 When I'm not coding, you can catch me [noodling on my acoustic guitar](https://twitter.com/hexagoncircle/status/1413526995376295941?s=20") or [blasting out rhythms](https://twitter.com/hexagoncircle/status/1285798846568767496?s=20) if there's a drum kit ready for a lefty nearby.
 
 Want to know more? <a class="hello-link" href="{% mailToPath %}" target="_blank" rel="noopener">Say hello anytime!</a> <span class="himoji">👋</span>
-
-## Blog posts
-
-My own random thoughts, code snippets, and other web-related stuff I'd like to share out there. Still in the process of writing content but I have a few in the cooker!
-
-<ul>
-  {%- for post in collections.posts | reverse  -%}
-    <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
-  {%- endfor -%}
-</ul>
 
 ## Articles & features
 

@@ -27,5 +27,10 @@
 	{
    "title":"Horizontal Scrolling in a Centered Max-Width&nbsp;Container",
    "imgName":"horizontal-scrolling-in-a-centered-max-width-container"
+	},
+
+	{
+   "title":"Inverted Media Queries and&nbsp;Breakpoints",
+   "imgName":"inverted-media-queries-and-breakpoints"
 	}
 ]
