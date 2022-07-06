@@ -6,6 +6,9 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const timeToRead = require("eleventy-plugin-time-to-read");
 const socialImages = require("@11tyrocks/eleventy-plugin-social-images");
 const imageShortcode = require("./src/utils/imageShortcode.js");
+const codepens = require("./src/_data/codePen.json");
+const path = require("path");
+const Image = require("@11ty/eleventy-img");
 
 module.exports = function (eleventyConfig) {
   const markdownItOptions = {
@@ -13,6 +16,27 @@ module.exports = function (eleventyConfig) {
     breaks: true,
     linkify: true,
   };
+
+  codepens.forEach(({ id }) => {
+    (async () => {
+      let url = `https://shots.codepen.io/hexagoncircle/pen/${id}-1280.jpg`;
+
+      await Image(url, {
+        widths: [800],
+        outputDir: "_site/img",
+        cacheOptions: {
+          duration: "2w",
+          directory: ".cache",
+          removeUrlQueryParams: false,
+        },
+        filenameFormat: function (id, src, width, format, options) {
+          const extension = path.extname(src);
+          const name = path.basename(src, extension).split("-")[0];
+          return `${name}-${width}w.${format}`;
+        },
+      });
+    })();
+  });
 
   eleventyConfig.setLibrary("md", markdownIt(markdownItOptions));
   eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItAttrs));

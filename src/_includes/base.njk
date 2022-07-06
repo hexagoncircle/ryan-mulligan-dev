@@ -23,9 +23,7 @@
 
 		<meta name="theme-color" content="var(--color-primary)">
 		<meta name="twitter:card" content="summary_large_image"/>
-		{% if meta.twitterUsername %}
-			<meta name="twitter:creator" content="@{{ meta.twitterUsername }}"/>
-		{% endif %}
+		{% if meta.twitterUsername %}<meta name="twitter:creator" content="@{{ meta.twitterUsername }}"/>{% endif %}
 		<meta name="twitter:title" content="{{ pageTitle }}"/>
 		<meta name="twitter:description" content="{{ pageDescription }}"/>
 
