@@ -62,7 +62,7 @@ If your current browser window is large enough, you can resize the CodePen resul
 
 ## Future CSS solutions
 
-Level 4 [media query range contexts](https://www.bram.us/2021/10/26/media-queries-level-4-media-query-range-contexts/), which is getting closer to full modern browser support, will allow use of the same value:
+Level 4 [media query range contexts](https://www.bram.us/2021/10/26/media-queries-level-4-media-query-range-contexts/), which are getting closer to full modern browser support, will allow use of the same value:
 
 ```css
 /* @media (max-width: 599px) becomes */
