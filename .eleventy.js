@@ -32,7 +32,7 @@ module.exports = function (eleventyConfig) {
         filenameFormat: function (id, src, width, format, options) {
           const extension = path.extname(src);
           const name = path.basename(src, extension).split("-")[0];
-          return `${name}-${width}w.${format}`;
+          return `codepen-${name}.${format}`;
         },
       });
     })();
