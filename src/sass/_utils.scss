@@ -70,11 +70,6 @@
   column-gap: var(--column-gap);
 }
 
-.multi-column > * {
-  margin-top: calc(var(--outline-offset) / 2);
-  margin-bottom: calc(var(--outline-offset) / 2);
-}
-
 .wrapper {
   display: grid;
   grid-column-gap: var(--page-padding);
