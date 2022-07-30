@@ -1,0 +1,49 @@
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local(""),
+    url("/assets/fonts/fraunces-v23-latin-600.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Petrona";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: local(""),
+    url("/assets/fonts/petrona-v28-latin-500italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: local(""),
+    url("/assets/fonts/work-sans-v17-latin-500.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(""),
+    url("/assets/fonts/work-sans-v17-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Work Sans";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local(""),
+    url("/assets/fonts/work-sans-v17-latin-italic.woff2") format("woff2");
+}
+/* fira-code-regular - latin */
+@font-face {
+  font-family: "Fira Code";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(""),
+    url("/assets/fonts/fira-code-v21-latin-regular.woff2") format("woff2");
+}
