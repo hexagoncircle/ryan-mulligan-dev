@@ -48,6 +48,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addWatchTarget("./src/sass/");
   eleventyConfig.addPassthroughCopy("./src/scripts/");
   eleventyConfig.addPassthroughCopy("./src/assets/");
+  eleventyConfig.addPassthroughCopy("./src/fonts/");
   eleventyConfig.addPassthroughCopy("./src/manifest.webmanifest");
 
   eleventyConfig.addFilter("postDate", (dateObj) =>
