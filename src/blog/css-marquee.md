@@ -69,9 +69,9 @@ Allow me to explain what this CSS is doing.
 - `user-select: none` disables highlighting or selecting text inside the marquee.
 - `flex-shrink: 0` prevents the child containers from shrinking, avoiding overlap of content.
 - `min-width: 100%` stretches each child container to the parent width. With this rule, the first child container is visible while the duplicate container is hidden in the overflow.
-- `justify-content: space-around` evenly distributes space between each child container item, then applies half of that space as empty space before the first item and after the last.
+- `justify-content: space-around` evenly distributes space between each child container item, then applies half of that as empty space before the first item and after the last.
 
-As items begin to overflow, gaps can be set to provide some space. The parent and child container gap values need to match. A perfect case for a CSS variable! The `--gap` supplies space between each item when content overflows the parent. It also comes in handy to offset the ending position in the animation precisely:
+As items begin to overflow, gaps can be set to create space between each item. The parent and child container gap values need to match. A perfect case for using a CSS variable! The `--gap` supplies space between each item when content overflows the parent. It also comes in handy to offset the ending position in the animation precisely:
 
 ```css
 @keyframes scroll {
@@ -103,6 +103,7 @@ Here are a couple of CodePen ideas I had thrown together while experimenting wit
 
 - [CSS Marquee Logo Wall](https://codepen.io/hexagoncircle/full/wvmjomb)
 - [The Dogs of Unsplash](https://codepen.io/hexagoncircle/full/jOzZPJw)
+- [CSS Marquee Examples](https://codepen.io/hexagoncircle/full/eYMrGwW)
 
 ## Explore more resources
 
