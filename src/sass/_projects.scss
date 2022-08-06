@@ -82,7 +82,8 @@
 
   flex: 1 0 auto;
   position: relative;
-  width: clamp(260px, 26vw, 500px);
+  inline-size: 100%;
+  max-inline-size: clamp(350px, 1rem + 25vw, 500px);
   perspective: 500px;
   transform-style: preserve-3d;
 }
