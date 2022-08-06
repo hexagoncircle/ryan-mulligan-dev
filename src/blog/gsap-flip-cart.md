@@ -25,12 +25,7 @@ I recommend reading [the docs](https://greensock.com/docs/v3/Plugins/Flip) (alwa
 
 The final week's prompt for the [December 2021 CodePen Challenge](https://codepen.io/challenges/2021/december/4) involved using the FLIP technique. This couldn't have lined up more perfectly. The holidays had arrived. The office was quiet. I filled my coffee mug to its very top and, after a few hours of learning and experimentation, came up with this animation prototype:
 
-<p class="codepen" data-height="600" data-default-tab="result" data-slug-hash="RwLQLop" data-user="hexagoncircle">
-  <span>See the Pen <a href="https://codepen.io/hexagoncircle/pen/RwLQLop">
-  GSAP Flip Cart</a> by Ryan Mulligan (<a href="https://codepen.io/hexagoncircle">@hexagoncircle</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+{% codepen "https://codepen.io/hexagoncircle/pen/RwLQLop" %}
 
 In the above CodePen embed, click on a product item square and it will magically slingshot towards the cart button. Once the element reaches the end of its transition, it will be inserted into the cart alongside other selected products. Click on the cart button to pull its container into view with those selections. Inside this container, clicking items sends them back to their initial positions in the grid.
 

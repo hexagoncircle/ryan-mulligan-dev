@@ -53,12 +53,7 @@ The `not` keyword only seems to apply when first defining a [media type](https:/
 
 If your current browser window is large enough, you can resize the CodePen result window below to see the text and background color change based on their respective media query declarations:
 
-<p class="codepen" data-height="600" data-default-tab="result" data-slug-hash="QWmbRXe" data-user="hexagoncircle">
-  <span>See the Pen <a href="https://codepen.io/hexagoncircle/pen/QWmbRXe">
-  Invert media query</a> by Ryan Mulligan (<a href="https://codepen.io/hexagoncircle">@hexagoncircle</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+{% codepen "https://codepen.io/hexagoncircle/pen/QWmbRXe" %}
 
 ## Future CSS solutions
 

@@ -18,12 +18,7 @@ The argument against a carousel-style UX popped in my head, naturally, and maybe
 
 Below is a stripped-down CodePen demo focused on layout and keyboard navigation criteria:
 
-<p class="codepen" data-height="600" data-default-tab="result" data-slug-hash="QWMZBve" data-user="hexagoncircle">
-  <span>See the Pen <a href="https://codepen.io/hexagoncircle/pen/QWMZBve">
-  Section keyboard navigation with arrow keys</a> by Ryan Mulligan (<a href="https://codepen.io/hexagoncircle">@hexagoncircle</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+{% codepen "https://codepen.io/hexagoncircle/pen/QWMZBve" %}
 
 Overall, I'd consider this a horizontal scroll container. Not _really_ a carousel. If you're shaking your head, disagree, and have feedback already, I'm looking forward to it! For the sake of getting to the real purpose of this article, let's read on.
 

@@ -78,12 +78,7 @@ When I first [migrated over to 11ty](/blog/migrating-to-11ty) and added more pag
 
 Here's what I came up with. The theme slider works the same as before but now has a new neighbor: a color scheme toggle button. This button sets a light or dark version of the current theme. My selection of colors may be somewhat arbitrary and subjective, but I tried pairing palettes that complement one another.
 
-<p class="codepen" data-height="300" data-default-tab="css,result" data-slug-hash="zYPrjNd" data-user="hexagoncircle">
-  <span>See the Pen <a href="https://codepen.io/hexagoncircle/pen/zYPrjNd">
-  Theme Controls [Toggle + Slider]</a> by Ryan Mulligan (<a href="https://codepen.io/hexagoncircle">@hexagoncircle</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+{% codepen "https://codepen.io/hexagoncircle/pen/zYPrjNd" %}
 
 What I like about this theming model is that it welcomes future variants based on other user preferences and system settings. For instance, introducing high and low contrast styles for each theme using the `prefers-contrast` media query.
 

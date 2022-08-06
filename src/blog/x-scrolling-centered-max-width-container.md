@@ -23,12 +23,7 @@ In case my site design has been updated, this is for my future friends reading: 
 
 The altered design worked well. But I still couldn't shake it. There had to be a way to build that original layout. Turns out nearly anything is possible with CSS these days. Here's a CodePen containing some gallery examples:
 
-<p id="codepen-demo" class="codepen" data-height="650" data-default-tab="result" data-slug-hash="gOWjwme" data-user="hexagoncircle">
-  <span>See the Pen <a href="https://codepen.io/hexagoncircle/pen/gOWjwme">
-  Horizontal scrolling in a centered max-width container</a> by Ryan Mulligan (<a href="https://codepen.io/hexagoncircle">@hexagoncircle</a>)
-  on <a href="https://codepen.io">CodePen</a>.</span>
-</p>
-<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+{% codepen "https://codepen.io/hexagoncircle/pen/gOWjwme", 650 %}
 
 I shared [this solution](https://twitter.com/hexagoncircle/status/1422559196088737797) on Twitter back before I had a blog space. Now that I do have one, I thought I'd take a deeper dive into how I achieved the final result.
 

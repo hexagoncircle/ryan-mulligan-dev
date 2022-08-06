@@ -67,6 +67,23 @@ module.exports = function (eleventyConfig) {
     }
     return `&#109;a&#105;lto&#58;&#104;%65y&#64;%72%79&#37;61%6E&#37;6D%75&#37;&#54;Clig%61&#110;&#46;&#100;&#101;v?subject=${subject}`;
   });
+  eleventyConfig.addShortcode(
+    "codepen",
+    (url, height = 600, preview = true) => {
+      const url_array = url.split("/");
+      const profile_url_array = url_array.filter((_string, index) => {
+        return index < url_array.length - 2 ? true : false;
+      });
+      const username = profile_url_array[profile_url_array.length - 1];
+      const user_profile = profile_url_array.join("/");
+      const data_slug_hash = url_array[url_array.length - 1];
+
+      return `<p class="codepen" data-height="${height}" data-preview="${preview}" data-default-tab="result" data-slug-hash="${data_slug_hash}" data-user="${username}" class="codepen">
+    <span><a href="${url}">See the pen</a> (<a href="${user_profile}">@${username}</a>) on <a href="https://codepen.io">CodePen</a>.</span>
+    </p>
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>`;
+    }
+  );
 
   return {
     dir: {
