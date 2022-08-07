@@ -71,7 +71,7 @@ Allow me to explain what this CSS is doing.
 - `min-width: 100%` stretches each child container to the parent width. With this rule, the first child container is visible while the duplicate container is hidden in the overflow.
 - `justify-content: space-around` evenly distributes space between each child container item, then applies half of that as empty space before the first item and after the last.
 
-As items begin to overflow, gaps can be set to create room between each item. Gap values for the parent and child containers will need to match – the perfect case for defining a [CSS custom property](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)! The `gap: var(--gap)` declaration supplies the space between each item when content overflows the parent plus space between the two child containers. This variable also comes in handy to offset the end position in the animation precisely:
+As items begin to overflow, gaps can be set to create room between each item. Gap values for the parent and child containers will need to match; Well that's a perfect case for defining a new [CSS custom property](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)! The `gap: var(--gap)` declaration supplies the space between each item when content overflows the parent plus space between the two child containers. This variable also comes in handy to offset the end position in the animation precisely:
 
 ```css
 @keyframes scroll {
