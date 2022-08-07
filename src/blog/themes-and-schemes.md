@@ -78,7 +78,7 @@ When I first [migrated over to 11ty](/blog/migrating-to-11ty) and added more pag
 
 Here's what I came up with. The theme slider works the same as before but now has a new neighbor: a color scheme toggle button. This button sets a light or dark version of the current theme. My selection of colors may be somewhat arbitrary and subjective, but I tried pairing palettes that complement one another.
 
-{% codepen "https://codepen.io/hexagoncircle/pen/zYPrjNd" %}
+{% codepen "https://codepen.io/hexagoncircle/pen/zYPrjNd", "css,result", "300" %}
 
 What I like about this theming model is that it welcomes future variants based on other user preferences and system settings. For instance, introducing high and low contrast styles for each theme using the `prefers-contrast` media query.
 

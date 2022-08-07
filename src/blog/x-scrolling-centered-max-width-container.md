@@ -23,7 +23,7 @@ In case my site design has been updated, this is for my future friends reading: 
 
 The altered design worked well. But I still couldn't shake it. There had to be a way to build that original layout. Turns out nearly anything is possible with CSS these days. Here's a CodePen containing some gallery examples:
 
-{% codepen "https://codepen.io/hexagoncircle/pen/gOWjwme", 650 %}
+{% codepen "https://codepen.io/hexagoncircle/pen/gOWjwme", "result", 650 %}
 
 I shared [this solution](https://twitter.com/hexagoncircle/status/1422559196088737797) on Twitter back before I had a blog space. Now that I do have one, I thought I'd take a deeper dive into how I achieved the final result.
 

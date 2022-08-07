@@ -69,7 +69,7 @@ module.exports = function (eleventyConfig) {
   });
   eleventyConfig.addShortcode(
     "codepen",
-    (url, height = 600, preview = true) => {
+    (url, defaultTab = "result", height = 600, preview = false) => {
       const url_array = url.split("/");
       const profile_url_array = url_array.filter((_string, index) => {
         return index < url_array.length - 2 ? true : false;
@@ -78,7 +78,7 @@ module.exports = function (eleventyConfig) {
       const user_profile = profile_url_array.join("/");
       const data_slug_hash = url_array[url_array.length - 1];
 
-      return `<p class="codepen" data-height="${height}" data-preview="${preview}" data-default-tab="result" data-slug-hash="${data_slug_hash}" data-user="${username}" class="codepen">
+      return `<p class="codepen" data-height="${height}" data-preview="${preview}" data-default-tab="${defaultTab}" data-slug-hash="${data_slug_hash}" data-user="${username}" class="codepen">
     <span><a href="${url}">See the pen</a> (<a href="${user_profile}">@${username}</a>) on <a href="https://codepen.io">CodePen</a>.</span>
     </p>
     <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>`;
