@@ -6,9 +6,9 @@
         "text": "hsl(0, 0%, 5%)",
         "textAccent": "hsl(0, 0%, 20%)",
         "bg": "hsl(0, 0%, 98%)",
-        "bgAccent": "hsl(0, 0%, 90%)",
+        "bgAccent": "hsl(0, 0%, 93%)",
         "primary": "hsl(230, 80%, 60%)",
-        "secondary": "hsl(344, 85%, 48%)"
+        "secondary": "hsl(344, 85%, 45%)"
       },
       "dark": {
         "text": "hsl(0, 0%, 88%)",
