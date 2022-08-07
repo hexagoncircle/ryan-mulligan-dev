@@ -94,7 +94,7 @@ Really examine the use case for a marquee. They can be incredibly distracting an
 
 - Use them sparingly. Overloading a page with a bunch of auto-scrolling areas is never a good time.
 - Marquee content should be purely decorative. Leave out important page copy and focusable elements.
-- Animation speeds should be slow. Content scrolling by super fast can be nauseating even for those that don't prefer reduced motion.
+- Animation speeds should be slow. Content scrolling by super fast can be nauseating even for those that don't have reduced-motion enabled.
 - Respect reduced-motion preferences. If set, best bet would be to completely disable auto-scrolling.
 
 ## Welcome to the demo zone
