@@ -7,7 +7,7 @@ date: 2022-08-06
 
 ## The deprecated tag
 
-The HTML `<marquee>` element blessed (cursed?) the early days of the internet with the ability to insert scrolling text onto a webpage. It even included options to control text behavior once it reached the end of its container with a handful of attributes. Review them [here on MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/marquee) if you're curious. Also, when visiting that MDN link, notice the page starts with a deprecation warning that this feature is no longer recommended:
+The HTML `<marquee>` element had blessed (cursed?) the early days of the internet with the ability to insert scrolling text onto a webpage. It even included options to control text behavior once it reached the end of its container with a handful of attributes. Review them [here on MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/marquee) if you're curious. Also, when visiting that MDN link, notice the page starts with a deprecation warning that this feature is no longer recommended:
 
 > Avoid using it, and update existing code if possible [...] Be aware that this feature may cease to work at any time.
 
@@ -60,7 +60,7 @@ Here are the responsive styles that correspond with the HTML code block above:
 }
 ```
 
-To get a better sense of what's happening, try removing/adding back CSS rules in [this CodePen demo](https://codepen.io/hexagoncircle/pen/eYMrGwW) to see how they change the marquee. Update the item count in the HTML. See how they spread out as the viewport widens or naturally overflow as it narrows.
+To get a better sense of what's happening, open up [this CodePen demo](https://codepen.io/hexagoncircle/pen/eYMrGwW). Try turning each CSS rule off and on to see how it affects the marquee. Adjust the amount of items in the marquee's HTML. Watch how they spread out as the viewport widens or naturally overflow as it narrows.
 
 Allow me to explain what this CSS is doing.
 
@@ -71,7 +71,7 @@ Allow me to explain what this CSS is doing.
 - `min-width: 100%` stretches each child container to the parent width. With this rule, the first child container is visible while the duplicate container is hidden in the overflow.
 - `justify-content: space-around` evenly distributes space between each child container item, then applies half of that as empty space before the first item and after the last.
 
-As items begin to overflow, gaps can be set to create space between each item. The parent and child container gap values need to match. A perfect case for using a CSS variable! The `--gap` supplies space between each item when content overflows the parent. It also comes in handy to offset the ending position in the animation precisely:
+As items begin to overflow, gaps can be set to create room between each item. Gap values for the parent and child containers will need to match – the perfect case for defining a [CSS custom property](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties)! The `gap: var(--gap)` declaration supplies the space between each item when content overflows the parent plus space between the two child containers. This variable also comes in handy to offset the end position in the animation precisely:
 
 ```css
 @keyframes scroll {
