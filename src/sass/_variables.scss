@@ -1,8 +1,11 @@
 /* Global custom properties */
 body {
+  --serif-font-stack: Iowan Old Style, Apple Garamond, Baskerville,
+    Times New Roman, Droid Serif, Times, Source Serif Pro, serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
   --font-family-primary: "Work Sans", "Helvetica", sans-serif;
-  --font-family-secondary: "Fraunces", "Georgia", serif;
-  --font-family-accent: "Petrona", "Georgia", serif;
+  --font-family-secondary: "Fraunces", var(--serif-font-stack);
+  --font-family-accent: "Petrona", var(--serif-font-stack);
   --font-bold: 600;
 
   --text-base: clamp(1.1rem, 4vw, 1.3rem);
