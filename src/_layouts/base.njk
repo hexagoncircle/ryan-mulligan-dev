@@ -10,7 +10,7 @@
   {%- endif -%}
   {% endset -%}
 
-  {%- set pageSocialImg %}{{ meta.url }}/assets/images/social/{{ title | slug }}.png{% endset-%}
+  {%- set pageSocialImg %}{{ meta.url }}/images/social/{{ title | slug }}.png{% endset-%}
 
   <head>
     <meta charset="UTF-8">
@@ -35,11 +35,10 @@
     <meta name="twitter:creator" content="@{{ meta.twitterHandle }}"/>
     <meta name="twitter:title" content="{{ pageTitle }}"/>
     <meta name="twitter:description" content="{{ description or meta.description }}"/>
-
+    <meta name="twitter:image" content="{{ pageSocialImg }}"/>
     <meta name="og:title" content="{{ pageTitle }}"/>
     <meta name="og:description" content="{{ description or meta.description }}"/>
     <meta property="og:image" content="{{ pageSocialImg }}"/>
-    <meta name="twitter:image" content="{{ pageSocialImg }}"/>
 
     <script>
       (function () {
