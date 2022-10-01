@@ -1,11 +1,11 @@
 ---
-permalink: '/css/theme.css'
+permalink: '/assets/css/theme.css'
 excludeFromSitemap: true
 ---
 
 {%- macro themeVars(variant) -%}
-{% for name, color in variant %}
-  --color-{{ name | camelToKabob }}: {{ color }};
+  {% for name, color in variant %}
+  --color-{{ name | slugify }}: {{ color }};
 {%- endfor %}
 {%- endmacro -%}
 

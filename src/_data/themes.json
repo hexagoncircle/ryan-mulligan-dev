@@ -4,19 +4,19 @@
     "variants": {
       "base": {
         "text": "hsl(0, 0%, 5%)",
-        "textAccent": "hsl(0, 0%, 20%)",
+        "text-accent": "hsl(0, 0%, 20%)",
         "bg": "hsl(0, 0%, 98%)",
-        "bgAccent": "hsl(0, 0%, 93%)",
-        "primary": "hsl(230, 80%, 60%)",
-        "secondary": "hsl(344, 85%, 45%)"
+        "bg-accent": "hsl(0, 0%, 93%)",
+        "primary": "hsl(314, 88%, 51%)",
+        "secondary": "hsl(230, 80%, 60%)"
       },
       "dark": {
         "text": "hsl(0, 0%, 88%)",
-        "textAccent": "hsl(0, 0%, 68%)",
+        "text-accent": "hsl(0 0% 86%)",
         "bg": "hsl(285, 18%, 4%)",
-        "bgAccent": "hsl(285, 18%, 15%)",
-        "primary": "hsl(344, 85%, 50%)",
-        "secondary": "hsl(47, 81%, 56%)"
+        "bg-accent": "hsl(285, 18%, 15%)",
+        "primary": "hsl(314, 88%, 51%)",
+        "secondary": "hsl(63, 88%, 64%)"
       }
     }
   },
@@ -25,17 +25,17 @@
     "variants": {
       "base": {
         "text": "hsl(197, 100%, 15%)",
-        "textAccent": "hsl(197, 100%, 20%)",
-        "bg": "hsl(210, 55%, 90%)",
-        "bgAccent": "hsl(210, 55%, 85%)",
-        "primary": "hsl(230, 66%, 47%)",
-        "secondary": "hsl(351, 77%, 44%)"
+        "text-accent": "hsl(197, 100%, 20%)",
+        "bg": "hsl(200 87% 94%)",
+        "bg-accent": "hsl(210, 55%, 85%)",
+        "primary": "hsl(177 70% 49%)",
+        "secondary": "hsl(239 72% 54%)"
       },
       "dark": {
         "text": "hsl(197, 100%, 75%)",
-        "textAccent": "hsl(197, 100%, 55%)",
+        "text-accent": "hsl(197, 100%, 55%)",
         "bg": "hsl(210, 100%, 12%)",
-        "bgAccent": "hsl(210, 100%, 22%)",
+        "bg-accent": "hsl(210, 100%, 22%)",
         "primary": "hsl(146, 100%, 50%)",
         "secondary": "hsl(146, 100%, 50%)"
       }
@@ -46,15 +46,15 @@
     "variants": {
       "base": {
         "text": "hsl(0, 0%, 100%)",
-        "textAccent": "hsl(0, 0%, 94%)",
-        "bg": "hsl(217, 92%, 49%)",
-        "bgAccent": "hsl(217, 92%, 39%)",
-        "primary": "hsl(57, 100%, 50%)",
-        "secondary": "hsl(57, 100%, 65%)"
+        "text-accent": "hsl(0, 0%, 94%)",
+        "bg": "hsl(217 71% 49%)",
+        "bg-accent": "hsl(217, 92%, 39%)",
+        "primary": "hsl(217 79% 78%)",
+        "secondary": "hsl(57, 100%, 50%)"
       },
       "dark": {
         "bg": "hsl(217, 52%, 10%)",
-        "bgAccent": "hsl(218, 76%, 21%)",
+        "bg-accent": "hsl(218, 76%, 21%)",
         "primary": "hsl(67, 18%, 68%)",
         "secondary": "hsl(0, 71%, 63%)"
       }
@@ -65,15 +65,15 @@
     "variants": {
       "base": {
         "text": "hsl(0, 0%, 7%)",
-        "textAccent": "hsl(0, 0%, 0%)",
+        "text-accent": "hsl(0, 0%, 0%)",
         "bg": "hsl(63, 88%, 64%)",
-        "bgAccent": "hsl(63, 88%, 78%)",
+        "bg-accent": "hsl(63, 88%, 78%)",
         "primary": "hsl(0, 0%, 7%)",
         "secondary": "hsl(0, 0%, 7%)"
       },
       "dark": {
         "bg": "hsl(314, 88%, 51%)",
-        "bgAccent": "hsl(314, 88%, 71%)"
+        "bg-accent": "hsl(314, 88%, 71%)"
       }
     }
   }

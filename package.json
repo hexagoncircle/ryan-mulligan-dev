@@ -1,44 +1,30 @@
 {
   "name": "ryan-mulligan-dev",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Personal website",
-  "main": "index.html",
   "scripts": {
-    "watch:sass": "sass  --no-source-map --watch src/sass:_site/css",
-    "watch:eleventy": "eleventy --serve",
-    "build:sass": "sass  --no-source-map src/sass:_site/css",
-    "build:eleventy": "eleventy",
-    "social-images": "eleventy-social-images --siteName 'Ryan Mulligan' --imageDir assets/social --stylesPath social/style.css --templatePath social/index.html",
-    "postbuild": "postcss _site/css/*.css -u autoprefixer cssnano -r --no-map",
-    "start": "npm-run-all build:sass --parallel watch:*",
-    "build": "npm-run-all build:sass build:eleventy; npm run social-images"
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy",
+    "clean": "rm -rf _site && rm -rf .11ty-vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/hexagoncircle/ryan-mulligan-dev"
-  },
-  "author": "hexagoncircle",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "browserslist": [
-    "last 2 versions"
-  ],
   "devDependencies": {
-    "@11ty/eleventy": "^2.0.0-canary.11",
-    "@11ty/eleventy-cache-assets": "^2.3.0",
-    "@11ty/eleventy-img": "^1.0.0",
-    "@11ty/eleventy-plugin-rss": "^1.1.2",
-    "@11ty/eleventy-plugin-syntaxhighlight": "^3.1.3",
+    "@11ty/eleventy": "^2.0.0-canary.16",
+    "@11ty/eleventy-img": "^2.0.1",
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.1.0",
+    "@11ty/eleventy-plugin-vite": "^2.0.0-canary.2",
     "@11tyrocks/eleventy-plugin-social-images": "^0.4.1",
-    "autoprefixer": "^10.4.2",
-    "cross-env": "^7.0.3",
-    "cssnano": "^5.0.15",
-    "eleventy-plugin-time-to-read": "^1.1.1",
-    "markdown-it": "^12.3.2",
-    "markdown-it-attrs": "^4.1.3",
-    "netlify-plugin-cache": "^1.0.3",
-    "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.5",
-    "postcss-cli": "^9.1.0",
-    "sass": "^1.48.0"
+    "autoprefixer": "^10.4.12",
+    "cssnano": "^5.1.13",
+    "eleventy-plugin-time-to-read": "^1.2.0",
+    "luxon": "^3.0.4",
+    "markdown-it": "^13.0.1",
+    "markdown-it-attrs": "^4.1.4",
+    "postcss-nesting": "^10.2.0",
+    "sass": "^1.55.0"
   }
 }
