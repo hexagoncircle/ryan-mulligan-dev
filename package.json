@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "Personal website",
   "scripts": {
-    "start": "npx @11ty/eleventy --serve",
+    "start": "npx @11ty/eleventy --serve --incremental",
     "build": "npx @11ty/eleventy",
     "clean": "rm -rf _site && rm -rf .11ty-vite",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,7 +17,7 @@
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.1.0",
     "@11ty/eleventy-plugin-vite": "^2.0.0-canary.2",
-    "@11tyrocks/eleventy-plugin-social-images": "^0.4.1",
+    "@11ty/eleventy-plugin-webc": "^0.4.0",
     "autoprefixer": "^10.4.12",
     "cssnano": "^5.1.13",
     "eleventy-plugin-time-to-read": "^1.2.0",

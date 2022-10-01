@@ -1,11 +1,9 @@
 const markdownIt = require("markdown-it");
 const markdownItAttrs = require("markdown-it-attrs");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const pluginRss = require("@11ty/eleventy-plugin-rss");
 const EleventyVitePlugin = require("@11ty/eleventy-plugin-vite");
-const socialImages = require("@11tyrocks/eleventy-plugin-social-images");
-const timeToRead = require("eleventy-plugin-time-to-read");
-
+const pluginRss = require("@11ty/eleventy-plugin-rss");
+const pluginTimeToRead = require("eleventy-plugin-time-to-read");
 const filters = require("./utils/filters.js");
 const transforms = require("./utils/transforms.js");
 const shortcodes = require("./utils/shortcodes.js");
@@ -26,9 +24,8 @@ module.exports = function (eleventyConfig) {
 
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss);
-  eleventyConfig.addPlugin(timeToRead);
+  eleventyConfig.addPlugin(pluginTimeToRead);
   eleventyConfig.addPlugin(EleventyVitePlugin);
-  eleventyConfig.addPlugin(socialImages);
 
   Object.keys(filters).forEach((filter) => {
     eleventyConfig.addFilter(filter, filters[filter]);
@@ -63,9 +60,9 @@ module.exports = function (eleventyConfig) {
   });
 
   return {
-    templateFormats: ["md", "njk", "html"],
+    templateFormats: ["webc", "md", "njk", "html"],
     markdownTemplateEngine: "njk",
-    htmlTemplateEngine: "njk",
+    htmlTemplateEngine: "webc",
     dataTemplateEngine: "njk",
     dir: {
       input: "src",
