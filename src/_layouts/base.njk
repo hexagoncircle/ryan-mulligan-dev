@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="en" data-no-js>
-  {%- set pageTitle %}
+  {% set pageTitle -%}
   {%- if title -%}{{ title }} | {% endif %}{{ meta.siteName }}
-  {% endset -%}
+  {%- endset %}
 
-  {%- set pageDescription %}
+  {% set pageDescription -%}
   {%- if description -%}{{ description }}
   {%- else -%}{{ meta.siteDescription }}
   {%- endif -%}
-  {% endset -%}
+  {%- endset %}
 
-  {%- set pageSocialImg %}{{ meta.url }}/images/social/{{ title | slug }}.png{% endset-%}
+  {% set pageSocialImg -%}
+  {%- if '/blog' in page.url -%}
+    {{ meta.url }}/images/social/{{ title | slug }}.png
+  {%- else -%}
+    {{ meta.url }}/images/social/ryan-mulligan-dev.png
+  {%- endif %}
+  {%- endset %}
 
   <head>
     <meta charset="UTF-8">
