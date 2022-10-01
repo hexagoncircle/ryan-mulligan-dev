@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" data-no-js>
   {% set pageTitle -%}
-  {%- if title -%}{{ title }} | {% endif %}{{ meta.siteName }}
+  {%- if title -%}{{ title }} | {% endif -%}{{ meta.siteName }}
   {%- endset %}
 
   {% set pageDescription -%}
@@ -23,10 +23,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Eleventy">
-
-    <title>
-      {{ pageTitle }}
-    </title>
+    <title>{{ pageTitle }}</title>
     <meta name="description" content="{{ description or meta.description }}"/>
 
     <link rel="icon" href="/favicon/favicon.svg"/>
