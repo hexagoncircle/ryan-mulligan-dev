@@ -26,7 +26,13 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginTimeToRead);
-  eleventyConfig.addPlugin(EleventyVitePlugin);
+  eleventyConfig.addPlugin(EleventyVitePlugin, {
+    viteOptions: {
+      build: {
+        assetsInlineLimit: 0,
+      },
+    },
+  });
 
   Object.keys(filters).forEach((filter) => {
     eleventyConfig.addFilter(filter, filters[filter]);
