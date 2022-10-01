@@ -1,9 +1,10 @@
 const markdownIt = require("markdown-it");
 const markdownItAttrs = require("markdown-it-attrs");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const EleventyVitePlugin = require("@11ty/eleventy-plugin-vite");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginTimeToRead = require("eleventy-plugin-time-to-read");
+const EleventyVitePlugin = require("@11ty/eleventy-plugin-vite");
+
 const filters = require("./utils/filters.js");
 const transforms = require("./utils/transforms.js");
 const shortcodes = require("./utils/shortcodes.js");
@@ -60,9 +61,9 @@ module.exports = function (eleventyConfig) {
   });
 
   return {
-    templateFormats: ["webc", "md", "njk", "html"],
+    templateFormats: ["md", "njk", "html"],
     markdownTemplateEngine: "njk",
-    htmlTemplateEngine: "webc",
+    htmlTemplateEngine: "njk",
     dataTemplateEngine: "njk",
     dir: {
       input: "src",

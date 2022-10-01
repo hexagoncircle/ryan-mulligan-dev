@@ -17,7 +17,6 @@
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.1.0",
     "@11ty/eleventy-plugin-vite": "^2.0.0-canary.2",
-    "@11ty/eleventy-plugin-webc": "^0.4.0",
     "autoprefixer": "^10.4.12",
     "cssnano": "^5.1.13",
     "eleventy-plugin-time-to-read": "^1.2.0",
