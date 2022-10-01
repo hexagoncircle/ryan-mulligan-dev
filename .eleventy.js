@@ -56,8 +56,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets/css");
   eleventyConfig.addPassthroughCopy("src/assets/js");
 
+  // Server options
   eleventyConfig.setServerOptions({
-    showAllHosts: true,
+    showAllHosts: false,
   });
 
   return {
