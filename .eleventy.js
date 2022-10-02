@@ -1,93 +1,88 @@
 const markdownIt = require("markdown-it");
-const { DateTime } = require("luxon");
 const markdownItAttrs = require("markdown-it-attrs");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
-const timeToRead = require("eleventy-plugin-time-to-read");
-const socialImages = require("@11tyrocks/eleventy-plugin-social-images");
-const imageShortcode = require("./src/utils/imageShortcode.js");
-const codepens = require("./src/_data/codePen.json");
-const path = require("path");
-const Image = require("@11ty/eleventy-img");
+const pluginTimeToRead = require("eleventy-plugin-time-to-read");
+const EleventyVitePlugin = require("@11ty/eleventy-plugin-vite");
+
+const filters = require("./utils/filters.js");
+const transforms = require("./utils/transforms.js");
+const shortcodes = require("./utils/shortcodes.js");
+const fetchCodePenScreenshots = require("./utils/codepen-screenshots.js");
 
 module.exports = function (eleventyConfig) {
-  const markdownItOptions = {
-    html: true,
-    breaks: true,
-    linkify: true,
-  };
+  fetchCodePenScreenshots();
 
-  codepens.forEach(({ id }) => {
-    (async () => {
-      let url = `https://shots.codepen.io/hexagoncircle/pen/${id}-1280.jpg`;
-
-      await Image(url, {
-        widths: [800],
-        outputDir: "_site/img",
-        cacheOptions: {
-          duration: "2w",
-          directory: ".cache",
-          removeUrlQueryParams: false,
-        },
-        filenameFormat: function (id, src, width, format, options) {
-          const extension = path.extname(src);
-          const name = path.basename(src, extension).split("-")[0];
-          return `codepen-${name}.${format}`;
-        },
-      });
-    })();
-  });
-
-  eleventyConfig.setLibrary("md", markdownIt(markdownItOptions));
+  eleventyConfig.setLibrary(
+    "md",
+    markdownIt({
+      html: true,
+      breaks: true,
+      linkify: true,
+    })
+  );
   eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItAttrs));
 
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss);
-  eleventyConfig.addPlugin(timeToRead);
-  eleventyConfig.addPlugin(socialImages);
-  eleventyConfig.addWatchTarget("./src/sass/");
-  eleventyConfig.addPassthroughCopy("./src/scripts/");
-  eleventyConfig.addPassthroughCopy("./src/assets/");
-  eleventyConfig.addPassthroughCopy("./src/fonts/");
-  eleventyConfig.addPassthroughCopy("./src/manifest.webmanifest");
-
-  eleventyConfig.addFilter("postDate", (dateObj) =>
-    DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED)
-  );
-
-  eleventyConfig.addNunjucksFilter("camelToKabob", (str) =>
-    str.replace(/([a-z0-9]|(?=[A-Z]))([A-Z])/g, "$1-$2").toLowerCase()
-  );
-
-  eleventyConfig.addShortcode("image", imageShortcode);
-  eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
-  eleventyConfig.addShortcode("mailToPath", (subject) => {
-    if (!subject) {
-      subject = "You are wonderful and I had to tell you";
-    }
-    return `&#109;a&#105;lto&#58;&#104;%65y&#64;%72%79&#37;61%6E&#37;6D%75&#37;&#54;Clig%61&#110;&#46;&#100;&#101;v?subject=${subject}`;
+  eleventyConfig.addPlugin(pluginTimeToRead);
+  eleventyConfig.addPlugin(EleventyVitePlugin, {
+    viteOptions: {
+      build: {
+        assetsInlineLimit: 0,
+        assetsInclude: ["**/*.xml"],
+      },
+    },
   });
-  eleventyConfig.addShortcode(
-    "codepen",
-    (url, defaultTab = "result", height = 600, preview = false) => {
-      const url_array = url.split("/");
-      const profile_url_array = url_array.filter((_string, index) => {
-        return index < url_array.length - 2 ? true : false;
-      });
-      const username = profile_url_array[profile_url_array.length - 1];
-      const user_profile = profile_url_array.join("/");
-      const data_slug_hash = url_array[url_array.length - 1];
 
-      return `<p class="codepen" data-height="${height}" data-preview="${preview}" data-default-tab="${defaultTab}" data-slug-hash="${data_slug_hash}" data-user="${username}" class="codepen">
-    <span><a href="${url}">See the pen</a> (<a href="${user_profile}">@${username}</a>) on <a href="https://codepen.io">CodePen</a>.</span>
-    </p>
-    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>`;
+  Object.keys(filters).forEach((filter) => {
+    eleventyConfig.addFilter(filter, filters[filter]);
+  });
+
+  Object.keys(transforms).forEach((transform) => {
+    eleventyConfig.addTransform(transform, transforms[transform]);
+  });
+
+  Object.keys(shortcodes).forEach((shortcode) => {
+    if (shortcode === "image") {
+      eleventyConfig.addNunjucksAsyncShortcode(
+        shortcode,
+        shortcodes[shortcode]
+      );
+      return;
     }
-  );
+    eleventyConfig.addShortcode(shortcode, shortcodes[shortcode]);
+  });
+
+  // Layouts
+  eleventyConfig.addLayoutAlias("base", "base.njk");
+  eleventyConfig.addLayoutAlias("home", "home.njk");
+  eleventyConfig.addLayoutAlias("post", "post.njk");
+
+  // Copy/pass-through files
+  eleventyConfig.addPassthroughCopy("src/assets/css");
+  eleventyConfig.addPassthroughCopy("src/assets/js");
+  eleventyConfig.addPassthroughCopy("public/favicon");
+  eleventyConfig.addPassthroughCopy("public/social");
+  eleventyConfig.addPassthroughCopy("public/site.webmanifest");
+
+  // Server options
+  eleventyConfig.setServerOptions({
+    showAllHosts: false,
+  });
 
   return {
+    templateFormats: ["md", "njk", "html"],
+    markdownTemplateEngine: "njk",
+    htmlTemplateEngine: "njk",
+    dataTemplateEngine: "njk",
+    passthroughFileCopy: true,
     dir: {
       input: "src",
+      output: "_site",
+      includes: "_includes",
+      layouts: "_layouts",
+      data: "_data",
     },
   };
 };

@@ -1,8 +1,6 @@
 ---
 title: Blog Posts
-subtitle: My own random thoughts, code snippets, and other web-related stuff I'd like to share out there
-layout: base.njk
-templateEngineOverride: njk,md
+layout: base
 ---
 
 <ul>

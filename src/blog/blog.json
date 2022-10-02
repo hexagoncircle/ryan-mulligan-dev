@@ -1,5 +1,4 @@
 {
-  "layout": "post.njk",
-  "tags": "posts",
-  "templateEngineOverride": "njk,md"
+  "layout": "post",
+  "tags": "posts"
 }

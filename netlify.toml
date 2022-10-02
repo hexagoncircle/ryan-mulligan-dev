@@ -1,12 +1,12 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' *.codepen.io *.withcabin.com; connect-src 'self' *.withcabin.com; style-src 'self' 'unsafe-inline'; img-src 'self' *.codepen.io codepen.io images.unsplash.com; object-src 'none'; frame-src codepen.io; base-uri 'none'"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' *.codepen.io *.withcabin.com *.netlify.app; connect-src 'self' *.withcabin.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: *.codepen.io *.netlify.app images.unsplash.com; object-src 'none'; frame-src *.codepen.io *.netlify.app app.netlify.com; base-uri 'none'; manifest-src 'self' data:"
 [build]
-  command = "AWS_LAMBDA_FUNCTION_NAME=trickpuppeteer npm run build"
+  command = "npm run build"
 
 [[plugins]]
-package = "netlify-plugin-cache"
+  package = "netlify-plugin-cache"
 
   [plugins.inputs]
   paths = [".cache"]

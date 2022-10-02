@@ -71,7 +71,7 @@ Here's how it works:
 
 In an effort to better surface this interaction, helper text is inserted into the <abbr title="Document Object Model">DOM</abbr> when the container focus is visible. My screen reader testing has been limited to Voiceover on macOS at the time of writing this article, but it's good to note that with Voiceover enabled, we are given feedback on how to traverse the list using built-in keyboard shortcuts.
 
-{% image "./src/images/projects-list-focus-voiceover-text.png", "A screenshot of the projects list focused and the Voiceover notification", "An example of the voiceover notification that reads, 'You are currently on a list. To move between items in this list, press Control-Option-Right Arrow or Control-Option-Left Arrow.'" %}
+{% image "public/images/projects-list-focus-voiceover-text.png", "A screenshot of the projects list focused and the Voiceover notification", "An example of the voiceover notification that reads, 'You are currently on a list. To move between items in this list, press Control-Option-Right Arrow or Control-Option-Left Arrow.'" %}
 
 One final tweak: Elements now scroll completely into view when focused. Without this bit of code, it was possible to focus an element overflowing the boundary of the viewport but it did not pull it all the way on screen. Combining the `scrollIntoView` method with a programmatic focus improves this flow:
 

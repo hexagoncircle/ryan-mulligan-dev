@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="{{ meta.lang }}" data-no-js>
+  {%- set absolutePageUrl -%}{{ page.url | url | absoluteUrl(meta.url) }}{%- endset -%}
+
+  {% set pageTitle -%}
+  {%- if title -%}{{ title }} | {% endif -%}{{ meta.siteName }}
+  {%- endset %}
+
+  {% set pageDescription -%}
+  {%- if description -%}{{ description }}
+  {%- else -%}{{ meta.siteDescription }}
+  {%- endif -%}
+  {%- endset %}
+
+  {% set pageSocialImg -%}
+  {%- if '/blog' in page.url -%}
+    {{ meta.url }}/social/{{ title | slug }}.png
+  {%- else -%}
+    {{ meta.url }}/social/ryan-mulligan-dev.png
+  {%- endif %}
+  {%- endset %}
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Eleventy">
+    <title>{{ pageTitle }}</title>
+    <meta name="description" content="{{ description or meta.description }}"/>
+    <link rel="canonical" href="{{ absolutePageUrl }}">
+    <meta name="author" content="{{ meta.author }}">
+    <meta name="generator" content="{{ eleventy.generator }}">
+
+    <link rel="icon" href="/favicon/favicon.svg"/>
+    <link rel="mask-icon" href="/favicon/favicon.svg" color="#E01A4F">
+    <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta name="theme-color" content="#f014bd"/>
+
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:creator" content="@{{ meta.twitterHandle }}"/>
+    <meta name="twitter:title" content="{{ pageTitle }}"/>
+    <meta name="twitter:description" content="{{ description or meta.description }}"/>
+    <meta name="twitter:image" content="{{ pageSocialImg }}"/>
+    <meta name="og:title" content="{{ pageTitle }}"/>
+    <meta name="og:description" content="{{ description or meta.description }}"/>
+    <meta property="og:image" content="{{ pageSocialImg }}"/>
+
+    <link type="application/atom+xml" rel="alternate" href="{{ meta.url }}/feed.xml" title="{{ meta.title }}">
+
+    <script>
+      (function () {
+        const html = document.documentElement;
+        const theme = localStorage.getItem('theme');
+        const colorScheme = localStorage.getItem('color-scheme');
+
+        html.removeAttribute("data-no-js");
+        colorScheme && html.setAttribute('data-color-scheme', colorScheme);
+        theme && html.setAttribute('data-theme', theme);
+      })();
+    </script>
+
+    <link rel="stylesheet" href="/assets/css/theme.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+  </head>
+
+  <body>
+    {% include "header.njk" %}
+
+    <main id="main" class="content wrapper flow">
+      <h1 class="title">{{ title or meta.siteName}}</h1>
+      {% if subtitle %}
+        <p class="subtitle">{{ subtitle }}</p>
+      {% endif %}
+      {% block beforeContent %}{% endblock %}
+      {{ content | safe }}
+    </main>
+
+    <footer class="footer wrapper">
+      <p class="footer-copy">
+			© 2015—{% year %} assembled by Ryan Mulligan, with love. Bring it on <a title="Go to the site homepage" href="{{ '/' | url }}">home</a> ⫶ <a href="{{ '/feed.xml' | url }}">RSS feed</a>
+      </p>
+    </footer>
+
+    <script type="module" src="/assets/js/themes.js"></script>
+    <script type="module" src="/assets/js/main.js"></script>
+    {% block scripts %}{% endblock %}
+    <script async defer src="https://scripts.withcabin.com/hello.js"></script>
+  </body>
+</html>

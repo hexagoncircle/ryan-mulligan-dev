@@ -17,7 +17,7 @@ Before I continue, let's take a moment to celebrate the amazing GreenSock team f
 
 FLIP, coined by [Paul Lewis](https://aerotwist.com/blog/flip-your-animations/), is an acronym for First, Last, Invert, and Play. The Flip plugin harnesses this technique so that web developers can effortlessly and smoothly transition elements between states. Take it straight from [the plugin's introduction](https://greensock.com/docs/v3/Plugins/Flip):
 
-> Flip records the current position/size/rotation of your elements, then you make whatever changes you want, and then Flip applies offsets to make them LOOK like they never moved/resized/rotated and then animates the removal of those offsets! UI transitions become remarkably simple to code. Flip does all the heavy lifting.
+> Flip records the current position/<wbr>size/<wbr>rotation of your elements, then you make whatever changes you want, and then Flip applies offsets to make them LOOK like they never moved/<wbr>resized/<wbr>rotated and then animates the removal of those offsets! UI transitions become remarkably simple to code. Flip does all the heavy lifting.
 
 I recommend reading [the docs](https://greensock.com/docs/v3/Plugins/Flip) (always!), and watching that intro tutorial video (or jump straight down to their code examples if that's your fancy) to find out how you, too, can produce super sizzlin' layout animations with a minimal amount of code.
 

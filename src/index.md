@@ -1,11 +1,12 @@
 ---
-layout: home.njk
-templateEngineOverride: njk,md
+layout: home
+title: Ryan Mulligan
+subtitle: Passenger through space and time, front-end web builder & bittersweet songs enthusiast
 ---
 
 ## Blog posts
 
-My own random thoughts, code snippets, and other web-related stuff I'd like to share out there. Still in the process of writing content but I have a few in the cooker!
+Sometimes general thoughts and rambles, mostly code snippets and front-end web discoveries that I want to share with you internet folks. Still in the process of writing content but I have a few in the cooker!
 
 <ul>
   {%- for post in collections.posts | reverse  -%}
@@ -16,9 +17,9 @@ My own random thoughts, code snippets, and other web-related stuff I'd like to s
   {%- endfor -%}
 </ul>
 
-## A bit about me
+## The bit about myself
 
-I'm a fun-loving front-end engineer that strives to bridge the gap between web design and develop&shy;ment, building user experiences with positive interactivity through thoughtful interfaces. I advocate for modern best practices on the web and love working with diverse, inclusive teams. Currently, I build for the web with a lovely team at <a href="https://www.netlify.com/">Netlify</a>.
+I'm a fun-loving front-end engineer that strives to bridge the gap between web design and development, building user experiences with positive interactivity through thoughtful interfaces. I advocate for modern best practices on the web and love working with diverse, inclusive teams. Currently, I build for the web with a lovely team at <a href="https://www.netlify.com/">Netlify</a>.
 
 When I'm not coding, you can catch me [noodling on my acoustic guitar](https://twitter.com/hexagoncircle/status/1413526995376295941?s=20") or [blasting out rhythms](https://twitter.com/hexagoncircle/status/1285798846568767496?s=20) if there's a drum kit ready for a lefty nearby.
 
@@ -27,24 +28,13 @@ Want to know more? <a class="hello-link" href="{% mailToPath %}" target="_blank"
 ## Articles & features
 
 <ul>
-  {%- for article in articles -%}
+  {%- for feature in features -%}
     <li>
-      <a href="{{ article.url }}" target="_blank" rel="noopener">{{ article.title }}</a>
-      <span class="source">{{ article.source }}</span>
+      <a href="{{ feature.url }}" target="_blank" rel="noopener">{{ feature.title }}</a>
+      <span class="source">{{ feature.source }}</span>
     </li>
   {%- endfor -%}
 </ul>
-
-## Creative projects
-
-- [Ryan & Aly](https://ryanandaly.com/)
-- [mesend.love](https://mesend.love/)
-- [Animated Verbs](https://animatedverbs.com/)
-- [CSS CLI](https://stylestage.dev/styles/css-cli/)
-- [SoundCloud Grid](https://hexagoncircle.github.io/soundcloud-grid/)
-- [Vue Playlist](https://hexagoncircle.github.io/vue-playlist/)
-- [Cocktails](https://hexagoncircle.github.io/cocktails/)
-  {.multi-column }
 
 ## A few things I enjoy
 

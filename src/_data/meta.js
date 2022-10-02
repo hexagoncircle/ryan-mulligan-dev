@@ -1,7 +1,9 @@
 module.exports = {
+  lang: "en",
   url: process.env.URL || "http://localhost:8080",
   siteName: "Ryan Mulligan",
-  siteDescription: "Your friendly front-end interface and experience engineer",
-  authorName: "Ryan Mulligan",
-  twitterUsername: "hexagoncircle",
+  description:
+    "Passenger through space and time, front-end web builder & bittersweet songs enthusiast",
+  author: "Ryan Mulligan",
+  twitterHandle: "hexagoncircle",
 };
