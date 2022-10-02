@@ -1,6 +1,5 @@
 ---
 layout: home
-title: Ryan Mulligan
 subtitle: Passenger through space and time, front-end web builder & bittersweet songs enthusiast
 ---
 
