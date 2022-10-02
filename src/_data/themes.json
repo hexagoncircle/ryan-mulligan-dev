@@ -7,6 +7,7 @@
         "text-accent": "hsl(0, 0%, 20%)",
         "bg": "hsl(0, 0%, 98%)",
         "bg-accent": "hsl(0, 0%, 93%)",
+        "bg-shadow": "hsl(0, 0%, 95%)",
         "primary": "hsl(314, 88%, 51%)",
         "secondary": "hsl(230, 80%, 60%)"
       },
@@ -15,6 +16,7 @@
         "text-accent": "hsl(0 0% 86%)",
         "bg": "hsl(285, 18%, 4%)",
         "bg-accent": "hsl(285, 18%, 15%)",
+        "bg-shadow": "hsl(285, 18%, 10%)",
         "primary": "hsl(314, 88%, 51%)",
         "secondary": "hsl(63, 88%, 64%)"
       }
@@ -28,6 +30,7 @@
         "text-accent": "hsl(197, 100%, 20%)",
         "bg": "hsl(200 87% 94%)",
         "bg-accent": "hsl(210, 55%, 85%)",
+        "bg-shadow": "hsl(200 87% 90%)",
         "primary": "hsl(177 70% 49%)",
         "secondary": "hsl(239 72% 54%)"
       },
@@ -36,6 +39,7 @@
         "text-accent": "hsl(197, 100%, 55%)",
         "bg": "hsl(210, 100%, 12%)",
         "bg-accent": "hsl(210, 100%, 22%)",
+        "bg-shadow": "hsl(210, 100%, 16%)",
         "primary": "hsl(146, 100%, 50%)",
         "secondary": "hsl(146, 100%, 50%)"
       }
@@ -47,14 +51,16 @@
       "base": {
         "text": "hsl(0, 0%, 100%)",
         "text-accent": "hsl(0, 0%, 94%)",
-        "bg": "hsl(217 71% 49%)",
-        "bg-accent": "hsl(217, 92%, 39%)",
+        "bg": "hsl(217, 71%, 49%)",
+        "bg-accent": "hsl(217, 92%, 41%)",
+        "bg-shadow": "hsl(217, 72%, 47%)",
         "primary": "hsl(217 79% 78%)",
         "secondary": "hsl(57, 100%, 50%)"
       },
       "dark": {
         "bg": "hsl(217, 52%, 10%)",
         "bg-accent": "hsl(218, 76%, 21%)",
+        "bg-shadow": "hsl(217, 52%, 14%)",
         "primary": "hsl(67, 18%, 68%)",
         "secondary": "hsl(0, 71%, 63%)"
       }
@@ -68,12 +74,14 @@
         "text-accent": "hsl(0, 0%, 0%)",
         "bg": "hsl(63, 88%, 64%)",
         "bg-accent": "hsl(63, 88%, 78%)",
+        "bg-shadow": "hsl(63, 75%, 55%)",
         "primary": "hsl(0, 0%, 7%)",
         "secondary": "hsl(0, 0%, 7%)"
       },
       "dark": {
         "bg": "hsl(314, 88%, 51%)",
-        "bg-accent": "hsl(314, 88%, 71%)"
+        "bg-accent": "hsl(314, 88%, 71%)",
+        "bg-shadow": "hsl(314, 100%, 44%)"
       }
     }
   }

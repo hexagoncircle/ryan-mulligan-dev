@@ -112,7 +112,7 @@
   border: var(--border);
   border-radius: var(--radius-sm);
   background-color: var(--color-bg-accent);
-  box-shadow: var(--space-2xs) var(--space-2xs) 0 hsla(0 0% 0% / 0.075);
+  box-shadow: var(--space-2xs) var(--space-2xs) 0 var(--color-bg-shadow);
 }
 
 .callout::before {
