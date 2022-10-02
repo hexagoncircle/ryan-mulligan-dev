@@ -45,6 +45,9 @@
     <meta name="og:description" content="{{ description or meta.description }}"/>
     <meta property="og:image" content="{{ pageSocialImg }}"/>
 
+    <link rel="stylesheet" href="/assets/css/theme.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
     <link type="application/atom+xml" rel="alternate" href="{{ meta.url }}/feed.xml" title="{{ meta.title }}">
 
     <script>
@@ -58,9 +61,6 @@
         theme && html.setAttribute('data-theme', theme);
       })();
     </script>
-
-    <link rel="stylesheet" href="/assets/css/theme.css">
-    <link rel="stylesheet" href="/assets/css/styles.css">
   </head>
 
   <body>
