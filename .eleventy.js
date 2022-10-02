@@ -61,6 +61,9 @@ module.exports = function (eleventyConfig) {
   // Copy/pass-through files
   eleventyConfig.addPassthroughCopy("src/assets/css");
   eleventyConfig.addPassthroughCopy("src/assets/js");
+  eleventyConfig.addPassthroughCopy("public/favicon");
+  eleventyConfig.addPassthroughCopy("public/social");
+  eleventyConfig.addPassthroughCopy("public/site.webmanifest");
 
   // Server options
   eleventyConfig.setServerOptions({
@@ -72,6 +75,7 @@ module.exports = function (eleventyConfig) {
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
     dataTemplateEngine: "njk",
+    passthroughFileCopy: true,
     dir: {
       input: "src",
       output: "_site",

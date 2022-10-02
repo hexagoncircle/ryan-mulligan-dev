@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en" data-no-js>
+<html lang="{{ meta.lang }}" data-no-js>
+  {%- set absolutePageUrl -%}{{ page.url | url | absoluteUrl(meta.url) }}{%- endset -%}
+
   {% set pageTitle -%}
   {%- if title -%}{{ title }} | {% endif -%}{{ meta.siteName }}
   {%- endset %}
@@ -20,20 +22,19 @@
 
   <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Eleventy">
     <title>{{ pageTitle }}</title>
     <meta name="description" content="{{ description or meta.description }}"/>
+    <link rel="canonical" href="{{ absolutePageUrl }}">
+    <meta name="author" content="{{ meta.author }}">
+    <meta name="generator" content="{{ eleventy.generator }}">
 
     <link rel="icon" href="/favicon/favicon.svg"/>
     <link rel="mask-icon" href="/favicon/favicon.svg" color="#E01A4F">
     <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png">
     <link rel="manifest" href="/site.webmanifest">
-    <meta name="theme-color" content="hsl(314, 88%, 51%)"/>
-
-    <link rel="stylesheet" href="/assets/css/theme.css">
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <meta name="theme-color" content="#f014bd"/>
 
     <meta name="twitter:card" content="summary_large_image"/>
     <meta name="twitter:creator" content="@{{ meta.twitterHandle }}"/>
@@ -55,6 +56,9 @@
         theme && html.setAttribute('data-theme', theme);
       })();
     </script>
+
+    <link rel="stylesheet" href="/assets/css/theme.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
   </head>
 
   <body>

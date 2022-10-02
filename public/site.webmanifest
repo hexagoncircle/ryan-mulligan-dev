@@ -1,7 +1,9 @@
 {
-  "name": "Ryan Mulligan",
-  "short_name": "Ryan Mulligan",
+  "name": "Ryan Mulligan | ryanmulligan.dev",
+  "short_name": "ryanmulligan.dev",
   "description": "Front-end developer and UI engineer",
+  "lang": "en",
+  "dir": "ltr",
   "icons": [
     {
       "src": "./favicon/android-chrome-192x192.png",
@@ -20,7 +22,9 @@
       "purpose": "maskable"
     }
   ],
-  "start_url": ".",
-  "background_color": "#000000",
-  "display": "standalone"
+  "theme_color": "#f014bd",
+  "background_color": "#f014bd",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "orientation": "natural"
 }
