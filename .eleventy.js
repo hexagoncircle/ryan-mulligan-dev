@@ -30,6 +30,7 @@ module.exports = function (eleventyConfig) {
     viteOptions: {
       build: {
         assetsInlineLimit: 0,
+        assetsInclude: ["**/*.xml"],
       },
     },
   });
