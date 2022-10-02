@@ -3,7 +3,7 @@
   {%- set absolutePageUrl -%}{{ page.url | url | absoluteUrl(meta.url) }}{%- endset -%}
 
   {% set pageTitle -%}
-  {%- if title -%}{{ title }} | {% endif -%}{{ meta.siteName }}
+  {%- if title -%}{{ title }} | {% endif -%}{{ meta.title }}
   {%- endset %}
 
   {% set pageDescription -%}
@@ -67,7 +67,7 @@
     {% include "header.njk" %}
 
     <main id="main" class="content wrapper flow">
-      <h1 class="title">{{ title or meta.siteName}}</h1>
+      <h1 class="title">{{ title or meta.title}}</h1>
       {% if subtitle %}
         <p class="subtitle">{{ subtitle }}</p>
       {% endif %}
