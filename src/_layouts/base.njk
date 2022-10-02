@@ -13,10 +13,10 @@
   {%- endset %}
 
   {% set pageSocialImg -%}
-  {%- if '/blog' in page.url -%}
-    {{ meta.url }}/social/{{ title | slug }}.png
+  {%- if ogImage -%}
+    {{ meta.url }}{{ ogImage }}
   {%- else -%}
-    {{ meta.url }}/social/ryan-mulligan-dev.png
+    {{ meta.url }}{{ meta.ogImage }}
   {%- endif %}
   {%- endset %}
 

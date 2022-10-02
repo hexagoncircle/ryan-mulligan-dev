@@ -2,6 +2,7 @@
 title: Style Review
 subtitle: This post is reserved for reviewing the styles of common page elements.
 description: This post is reserved for reviewing the styles of common page elements.
+ogImage: /social/style-review.png
 date: 2021-11-05
 ---
 

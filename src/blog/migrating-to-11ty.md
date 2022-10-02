@@ -1,6 +1,7 @@
 ---
 title: Migrating to Eleventy
 description: Quick brain dump around my experience with Eleventy.js, a static site generator.
+ogImage: /social/migrating-to-eleventy.png
 date: 2021-11-08
 ---
 

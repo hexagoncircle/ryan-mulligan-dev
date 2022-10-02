@@ -1,6 +1,7 @@
 ---
 title: Inverted Media Queries and Breakpoints
 description: Using the `not` keyword to negate a media query breakpoint and apply CSS rules.
+ogImage: /social/inverted-media-queries-and-breakpoints.png
 date: 2022-07-05
 ---
 

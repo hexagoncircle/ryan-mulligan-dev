@@ -1,6 +1,7 @@
 ---
 title: A Horizontal Scroll List and Custom Keyboard Navigation
 subtitle: An exploration of component keyboard control and interactions with large sections of focusable content.
+ogImage: /social/a-horizontal-scroll-list-and-custom-keyboard-navigation.png
 date: 2021-11-15
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: Blog Posts
 layout: base
+ogImage: /social/blog-posts.png
 ---
 
 <ul>
