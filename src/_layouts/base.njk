@@ -51,15 +51,13 @@
     <link type="application/atom+xml" rel="alternate" href="{{ meta.url }}/feed.xml" title="{{ meta.title }}">
 
     <script>
-      (function () {
-        const html = document.documentElement;
-        const theme = localStorage.getItem('theme');
-        const colorScheme = localStorage.getItem('color-scheme');
+      const html = document.documentElement;
+      const theme = localStorage.getItem('theme');
+      const colorScheme = localStorage.getItem('color-scheme');
 
-        html.removeAttribute("data-no-js");
-        colorScheme && html.setAttribute('data-color-scheme', colorScheme);
-        theme && html.setAttribute('data-theme', theme);
-      })();
+      html.removeAttribute("data-no-js");
+      colorScheme && html.setAttribute('data-color-scheme', colorScheme);
+      theme && html.setAttribute('data-theme', theme);
     </script>
   </head>
 
