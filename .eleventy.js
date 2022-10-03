@@ -53,6 +53,9 @@ module.exports = function (eleventyConfig) {
 
   // Copy/pass-through files
   eleventyConfig.addPassthroughCopy("src/assets/");
+  eleventyConfig.addPassthroughCopy({
+    "src/assets/site.webmanifest": "/site.webmanifest",
+  });
 
   // Server options
   eleventyConfig.setServerOptions({
