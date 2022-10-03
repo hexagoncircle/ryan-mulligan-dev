@@ -6,5 +6,5 @@ module.exports = {
     "Passenger through space and time, front-end web builder & bittersweet songs enthusiast",
   author: "Ryan Mulligan",
   twitterHandle: "hexagoncircle",
-  ogImage: "/social/ryan-mulligan-dev.png",
+  ogImage: "/assets/social/ryan-mulligan-dev.png",
 };

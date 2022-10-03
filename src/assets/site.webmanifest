@@ -6,17 +6,17 @@
   "dir": "ltr",
   "icons": [
     {
-      "src": "./favicon/android-chrome-192x192.png",
+      "src": "./assets/favicon/android-chrome-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "./favicon/android-chrome-512x512.png",
+      "src": "./assets/favicon/android-chrome-512x512.png",
       "type": "image/png",
       "sizes": "512x512"
     },
     {
-      "src": "./favicon/maskable_icon.png",
+      "src": "./assets/favicon/maskable_icon.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "maskable"
