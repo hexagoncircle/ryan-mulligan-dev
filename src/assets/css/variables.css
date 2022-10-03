@@ -13,8 +13,12 @@
   --font-weight-md: 300;
   --font-weight-bold: 700;
 
-  --font-primary: system-ui, sans-serif;
-  --font-secondary: "Quincy CF", system-ui, sans-serif;
+  --font-fallback: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+
+  --font-primary: system-ui, var(--font-fallback);
+  --font-secondary: "Quincy CF", var(--font-fallback);
   --font-monospace: "Fira Code", monospace;
 
   --radius-xs: 0.25rem;
