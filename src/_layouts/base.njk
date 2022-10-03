@@ -31,9 +31,9 @@
     <meta name="author" content="{{ meta.author }}">
     <meta name="generator" content="{{ eleventy.generator }}">
 
-    <link rel="icon" href="/favicon/favicon.svg"/>
-    <link rel="mask-icon" href="/favicon/favicon.svg" color="#E01A4F">
-    <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" href="/assets/favicon/assets/favicon.svg"/>
+    <link rel="mask-icon" href="/assets/favicon/assets/favicon.svg" color="#E01A4F">
+    <link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png">
     <link rel="manifest" href="/site.webmanifest">
     <meta name="theme-color" content="#f014bd"/>
 
@@ -50,12 +50,12 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
 
     <link type="application/atom+xml" rel="alternate" href="{{ meta.url }}/feed.xml" title="{{ meta.title }}">
-  </head>
-
-  <body>
     <script>
       {% include "init-theme.njk" %}
     </script>
+  </head>
+
+  <body>
     {% include "header.njk" %}
 
     <main id="main" class="content wrapper flow">

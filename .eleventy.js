@@ -26,13 +26,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginTimeToRead);
-  eleventyConfig.addPlugin(EleventyVitePlugin, {
-    viteOptions: {
-      build: {
-        assetsInclude: ["**/*.xml"],
-      },
-    },
-  });
 
   Object.keys(filters).forEach((filter) => {
     eleventyConfig.addFilter(filter, filters[filter]);
@@ -59,11 +52,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLayoutAlias("post", "post.njk");
 
   // Copy/pass-through files
-  eleventyConfig.addPassthroughCopy("src/assets/css");
-  eleventyConfig.addPassthroughCopy("src/assets/js");
-  eleventyConfig.addPassthroughCopy("public/favicon");
-  eleventyConfig.addPassthroughCopy("public/social");
-  eleventyConfig.addPassthroughCopy("public/site.webmanifest");
+  eleventyConfig.addPassthroughCopy("src/assets/");
 
   // Server options
   eleventyConfig.setServerOptions({
@@ -75,7 +64,6 @@ module.exports = function (eleventyConfig) {
     markdownTemplateEngine: "njk",
     htmlTemplateEngine: "njk",
     dataTemplateEngine: "njk",
-    passthroughFileCopy: true,
     dir: {
       input: "src",
       output: "_site",
