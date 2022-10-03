@@ -29,7 +29,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(EleventyVitePlugin, {
     viteOptions: {
       build: {
-        assetsInlineLimit: 0,
         assetsInclude: ["**/*.xml"],
       },
     },
