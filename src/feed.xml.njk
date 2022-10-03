@@ -1,10 +1,10 @@
 ---
-permalink: feed.xml
+permalink: blog/feed.xml
 eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>{{ meta.title }}</title>
+  <title>Articles by {{ meta.title }}</title>
   <subtitle>{{ meta.description }}</subtitle>
   <link href="{{ meta.url }}/feed.xml" rel="self" type="application/atom+xml"/>
   <link href="{{ meta.url }}" rel="alternate" type="text/html"/>
