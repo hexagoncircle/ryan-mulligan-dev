@@ -55,9 +55,6 @@ module.exports = function (eleventyConfig) {
   // Copy/pass-through files
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy({
-    "src/assets/css/_styles.css": "/assets/css/styles.css",
-  });
-  eleventyConfig.addPassthroughCopy({
     "src/assets/site.webmanifest": "/site.webmanifest",
   });
 
