@@ -18,10 +18,7 @@ Toffee wafer bonbon dessert dragée topping. Jelly tiramisu ~~gingerbread pie~~ 
 
 ### Chocolate cake! Danish toffee!
 
-<figure>
-  <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNjUxNjE3MA&ixlib=rb-1.2.1&q=80&w=800" alt="Stock photo of a fancy chocolate cake">
-  <figcaption>The fanciest of the chocolate cakes</figcaption>
-</figure>
+{% image "https://images.unsplash.com/photo-1578985545062-69928b1d9587?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNjUxNjE3MA&ixlib=rb-1.2.1&q=80&w=800", "Stock photo of a fancy chocolate cake", "The fanciest of the chocolate cakes" %}
 
 Pastry jelly tootsie roll biscuit sesame snaps sesame snaps cotton candy sweet. Muffin tart cupcake jelly marzipan jelly beans liquorice pudding. Croissant powder marshmallow donut candy canes cupcake.
 
