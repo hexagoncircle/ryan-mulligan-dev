@@ -3,7 +3,7 @@ const markdownItAttrs = require("markdown-it-attrs");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginTimeToRead = require("eleventy-plugin-time-to-read");
-const EleventyVitePlugin = require("@11ty/eleventy-plugin-vite");
+const pluginPostCss = require("eleventy-plugin-postcss");
 
 const filters = require("./utils/filters.js");
 const transforms = require("./utils/transforms.js");
@@ -26,6 +26,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginTimeToRead);
+  eleventyConfig.addPlugin(pluginPostCss);
 
   Object.keys(filters).forEach((filter) => {
     eleventyConfig.addFilter(filter, filters[filter]);
@@ -52,7 +53,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLayoutAlias("post", "post.njk");
 
   // Copy/pass-through files
-  eleventyConfig.addPassthroughCopy("src/assets/");
+  eleventyConfig.addPassthroughCopy("src/assets");
+  eleventyConfig.addPassthroughCopy({
+    "src/assets/css/_styles.css": "/assets/css/styles.css",
+  });
   eleventyConfig.addPassthroughCopy({
     "src/assets/site.webmanifest": "/site.webmanifest",
   });

@@ -19,10 +19,12 @@
     "@11ty/eleventy-plugin-vite": "^2.0.0-canary.2",
     "autoprefixer": "^10.4.12",
     "cssnano": "^5.1.13",
+    "eleventy-plugin-postcss": "^1.0.4",
     "eleventy-plugin-time-to-read": "^1.2.0",
     "luxon": "^3.0.4",
     "markdown-it": "^13.0.1",
     "markdown-it-attrs": "^4.1.4",
+    "postcss-import": "^15.0.0",
     "postcss-nesting": "^10.2.0",
     "sass": "^1.55.0"
   }
