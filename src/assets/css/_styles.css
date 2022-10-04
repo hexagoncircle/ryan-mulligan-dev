@@ -8,9 +8,9 @@
 
 @import url("layout.css") layer(layout);
 @import url("navigation.css") layer(layout);
+@import url("content.css") layer(layout);
 
 @import url("code.css") layer(components);
-@import url("content.css") layer(components);
 @import url("theme-controls.css") layer(components);
 @import url("projects.css") layer(components);
 

@@ -30,12 +30,16 @@
 .footer {
   margin-top: auto;
   justify-items: center;
-  padding: var(--space-sm) 0 calc(var(--space-sm) + env(safe-area-inset-bottom));
-  font-size: var(--font--1);
-  line-height: 1.3;
+  padding-block: var(--space-sm)
+    calc(var(--space-sm) + env(safe-area-inset-bottom));
   border-top: 2px dashed var(--color-bg-accent);
 }
 
+.footer p {
+  font-size: var(--font--1);
+  line-height: 1.3;
+}
+
 .footer > * {
-  grid-column: feature;
+  grid-column: content;
 }

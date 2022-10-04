@@ -15,40 +15,17 @@
   fill: currentcolor;
 }
 
-.social-nav-list {
+.nav-list {
   display: flex;
   gap: var(--space-2xs);
   margin-left: auto;
 }
 
-.social-nav-list a {
+.nav-list a {
   display: flex;
   align-items: center;
   padding: var(--space-2xs);
   border-radius: var(--radius-round);
-}
-
-/* 
-.home-link[aria-hidden="true"] {
-  pointer-events: none;
-  user-select: none;
-}
-
-[data-path="home"] .home-link {
-  animation: blast-off 1s var(--ease) forwards;
-} */
-
-@keyframes blast-off {
-  20% {
-    transform: translate(0, 5%);
-  }
-  40% {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-    transform: translate(-5%, -100%);
-  }
 }
 
 @media (hover: hover) and (pointer: fine) {

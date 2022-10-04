@@ -24,7 +24,7 @@
 
 .content .cp_embed_wrapper,
 .content .cp_embed_wrapper + script + * {
-  --space: var(--space-lg);
+  --space: var(--space-xl);
 }
 
 .content h2 {
