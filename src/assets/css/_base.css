@@ -49,9 +49,3 @@ ol[class]:not(.multi-column) {
 li::marker {
   color: var(--color-primary);
 }
-
-.focus-arrows {
-  flex-shrink: 0;
-  color: var(--color-secondary);
-  transform: rotate(45deg);
-}

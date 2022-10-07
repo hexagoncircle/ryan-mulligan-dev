@@ -208,3 +208,9 @@
     transform: rotate(15deg);
   }
 }
+
+.focus-arrows {
+  flex-shrink: 0;
+  color: var(--color-secondary);
+  transform: rotate(45deg);
+}
