@@ -25,6 +25,12 @@
   position: sticky;
   top: 0;
   z-index: 1;
+  pointer-events: none;
+}
+
+.page-header [data-theme-controls],
+.page-header .nav-list {
+  pointer-events: auto;
 }
 
 .footer {
