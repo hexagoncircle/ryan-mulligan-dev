@@ -122,12 +122,14 @@ input[type="range"]::-moz-range-track {
 }
 
 input[type="range"]::-moz-range-thumb {
+  margin-top: var(--thumb-offset);
   width: var(--thumb-size);
   height: var(--thumb-size);
-  background-color: var(--color-primary);
+  background-color: var(--color-text);
   border: none;
   border-radius: var(--radius-round);
   cursor: grab;
+  box-shadow: inset var(--color-bg) 0 0 0 4px, var(--color-text) 0 0 0 2px;
 }
 
 input[type="range"]:active::-moz-range-thumb {
