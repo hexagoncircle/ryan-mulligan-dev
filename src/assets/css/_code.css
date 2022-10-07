@@ -1,3 +1,7 @@
+code {
+  font-size: 0.85em;
+}
+
 code,
 pre {
   padding: 0.125em 0.4em;
@@ -23,7 +27,6 @@ pre[class*="language-"] {
   word-wrap: normal;
   color: #c3cee3;
   background: #263238;
-  line-height: 1.5;
   border-radius: var(--radius-sm);
 
   -moz-tab-size: 4;

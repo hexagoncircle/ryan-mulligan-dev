@@ -1,8 +1,8 @@
 .wrapper {
   --full: minmax(var(--page-padding), 1fr);
   --content: min(var(--page-max-width), 100% - var(--page-padding) * 2);
-  --popout: minmax(0, min(1rem, 100%));
-  --feature: minmax(0, min(3rem, 100%));
+  --popout: minmax(0, 2rem);
+  --feature: minmax(0, 5rem);
 
   display: grid;
   grid-template-columns:
