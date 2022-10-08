@@ -18,6 +18,8 @@ Toffee wafer bonbon dessert dragée topping. Jelly tiramisu ~~gingerbread pie~~ 
 
 ### Chocolate cake! Danish toffee!
 
+Danish sugar plum chocolate cake wafer:
+
 {% image "https://images.unsplash.com/photo-1578985545062-69928b1d9587?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYzNjUxNjE3MA&ixlib=rb-1.2.1&q=80&w=800", "Stock photo of a fancy chocolate cake", "The fanciest of the chocolate cakes" %}
 
 Pastry jelly tootsie roll biscuit sesame snaps sesame snaps cotton candy sweet. Muffin tart cupcake jelly marzipan jelly beans liquorice pudding. Croissant powder marshmallow donut candy canes cupcake.
@@ -49,7 +51,7 @@ Jujubes chocolate sesame snaps donut topping pie. Cake gummies powder chocolate 
 
 Pudding lollipop cake gummi bears oat cake bear claw muffin powder chupa chups. Tiramisu apple pie muffin fruitcake wafer powder macaroon muffin caramels.
 
-> Chupa chups bear claw biscuit cookie! Sweet biscuit powder... ice cream cupcake danish?
+> Chupa chups bear claw biscuit cookie! Sweet biscuit powder... ice cream cupcake danish? Cake gummies powder chocolate cake cookie.
 
 Sweet chocolate cake oat cake dragée candy apple pie. Oat cake soufflé brownie toffee gummi bears marzipan chocolate bar. Try `getChocolate('cake')` or fruitcake pie chocolate bar shortbread.
 
@@ -65,6 +67,10 @@ function handleClick() {
 
 yum.addEventListener("click", handleClick);
 ```
+
+1. Chocolate cake sweet roll jelly beans.
+2. Cake lollipop apple pie.
+3. Lollipop jelly beans cookie!
 
 Jelly-o gummi bears cake. Dragée chocolate cake danish toffee cupcake brownie cheesecake oat cake topping. Carrot cake chupa chups ice cream tart soufflé gummi bears gummies danish.
 

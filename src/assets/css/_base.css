@@ -37,7 +37,7 @@ small {
 
 ul,
 ol {
-  padding-inline-start: 1rem;
+  padding-inline-start: 1em;
 }
 
 ul[class]:not(.multi-column),

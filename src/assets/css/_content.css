@@ -8,7 +8,7 @@
 }
 
 .content pre[class*="language-"],
-.content pre[class*="language-"] + * {
+.content pre[class*="language-"] + *:not(h2) {
   --space: var(--space-lg);
 }
 
@@ -23,7 +23,7 @@
 }
 
 .content .cp_embed_wrapper,
-.content .cp_embed_wrapper + script + * {
+.content .cp_embed_wrapper + script + *:not(h2) {
   --space: var(--space-xl);
 }
 
@@ -59,7 +59,7 @@
 
 .content blockquote {
   position: relative;
-  padding: var(--space-2xs) var(--space-lg);
+  padding: var(--space-2xs) var(--space-md);
   font-family: var(--font-secondary);
   font-size: var(--font-1);
   font-weight: var(--font-weight-lite);
@@ -88,7 +88,7 @@
   color: #747474;
 }
 
-.content > ul li + li {
+.content > :where(ul, ol) li + li {
   margin-block-start: var(--space-2xs);
 }
 
