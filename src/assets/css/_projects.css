@@ -57,17 +57,10 @@
 
   flex: 1 0 auto;
   position: relative;
-  inline-size: min(300px + 5vw, 100% - var(--page-padding) / 2);
+  inline-size: min(300px + 5vw, 100%);
   perspective: 500px;
   transform-style: preserve-3d;
   scroll-snap-align: center;
-}
-
-@media (max-width: 55ch) {
-  .projects .item {
-    scroll-snap-align: start;
-    scroll-margin-inline-start: var(--page-padding);
-  }
 }
 
 .projects .item a {
