@@ -8,7 +8,7 @@ date: 2022-10-07
 
 ## A post about the layout you're looking at right now
 
-The previous structure of this page layout was virtually the same, the foundation of it expertly defined in the article, [Full-Bleed Layout Using CSS Grid](https://www.joshwcomeau.com/css/full-bleed/) by Josh Comeau. It's a technique I've used on many projects. I've even blogged about it previously in [Horizontal Scrolling in a Centered Max-Width Container](/blog/x-scrolling-centered-max-width-container/).
+The previous structure of this page layout was virtually the same, the foundation of it expertly defined in the article [Full-Bleed Layout Using CSS Grid](https://www.joshwcomeau.com/css/full-bleed/) by Josh Comeau. It's a technique I've used on many projects. I've even blogged about it previously in [Horizontal Scrolling in a Centered Max-Width Container](/blog/x-scrolling-centered-max-width-container/).
 
 What I'm documenting here is an extension of the full-bleed CSS Grid layout. In the last version of my site, selected elements  – images, code blocks, quotes – were made wider than the page content area using negative margins. It worked well! For this next iteration, I explored applying these breakout offsets using CSS grid and [named grid lines](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines).
 
