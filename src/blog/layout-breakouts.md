@@ -90,7 +90,7 @@ Let's revisit the CSS variables declared at the top of the ruleset. I'll explain
 
 ## Losing floats
 
-Alex Carpenter's [tweet](https://twitter.com/hybrid_alex/status/1580173843267989506) exposes a limitation in this layout pattern: we lose the ability to float elements. For example, we wouldn't be able to float an image to the left and wrap text around it. The full-bleed solution from the CSS-Tricks article, [Full Width Containers in Limited Width Parents](https://css-tricks.com/full-width-containers-limited-width-parents/#aa-no-calc-needed) is handy in this situation.
+Alex Carpenter's [tweet](https://twitter.com/hybrid_alex/status/1580173843267989506) exposes a limitation in this layout pattern: we lose the ability to float elements. For example, we wouldn't be able to float an image to the left and wrap text around it. The full-bleed solution from the CSS-Tricks article [Full Width Containers in Limited Width Parents](https://css-tricks.com/full-width-containers-limited-width-parents/#aa-no-calc-needed) is handy in this situation.
 
 ## Breakout session
 
