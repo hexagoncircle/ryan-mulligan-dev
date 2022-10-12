@@ -88,9 +88,15 @@ Let's revisit the CSS variables declared at the top of the ruleset. I'll explain
 * `--content` acts as the main content area. The [`min()`](https://developer.mozilla.org/en-US/docs/Web/CSS/min) function sets the max-width of this column. Once the available space falls below this value, it then switches to 100% while also subtracting the left and right gutter sizes.
 * `--popout` and `--feature` extend elements beyond the content area by `2rem` and `5rem` respectively. As the available horizontal area tightens, these values collapse down to nothing, aligning elements with the main content space on smaller screens.
 
+## Losing floats
+
+Alex Carpenter's [tweet](https://twitter.com/hybrid_alex/status/1580173843267989506) exposes a limitation in this layout pattern: we lose the ability to float elements. For example, we wouldn't be able to float an image to the left and wrap text around it. The full-bleed solution from the CSS-Tricks article, [Full Width Containers in Limited Width Parents](https://css-tricks.com/full-width-containers-limited-width-parents/#aa-no-calc-needed) is handy in this situation.
+
 ## Breakout session
 
 That wraps things up! The potential of this concept doesn't stop here. How might you extend or refactor? Drop me a note on [Twitter](https://twitter.com/hexagoncircle) with your awesome layout ideas. 🙌
+
+_This article was updated on October 12th, 2022 to include the "Losing Floats" section._
 
 ## Helpful Resources
 
