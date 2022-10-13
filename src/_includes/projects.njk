@@ -4,7 +4,7 @@
       <li class="item">
         <a href="https://codepen.io/hexagoncircle/full/{{ pen.id }}" target="_blank" rel="noopener">
           <span class="visually-hidden">{{ pen.title }}</span>
-          <img src="/assets/images/codepen-{{ pen.id }}.webp" alt="" loading="lazy" data-is-loading/>
+          {% codepenImage pen.id %}
         </a>
       </li>
     {% endfor %}
