@@ -1,6 +1,11 @@
 const Image = require("@11ty/eleventy-img");
 const path = require("path");
 
+const sharedImageMetadata = {
+  outputDir: "_site/assets/images",
+  urlPath: "/assets/images",
+};
+
 module.exports = {
   codepen: (url, defaultTab = "result", height = 600, preview = false) => {
     const url_array = url.split("/");
@@ -22,8 +27,7 @@ module.exports = {
 
     let metadata = await Image(url, {
       widths: [800],
-      outputDir: "_site/assets/images",
-      urlPath: "/assets/images",
+      ...sharedImageMetadata,
       cacheOptions: {
         duration: "2w",
         directory: ".cache",
@@ -58,8 +62,7 @@ module.exports = {
     let metadata = await Image(src, {
       widths,
       formats,
-      outputDir: "_site/assets/images",
-      urlPath: "/assets/images",
+      ...sharedImageMetadata,
     });
 
     let imageAttributes = {
