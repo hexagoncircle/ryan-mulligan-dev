@@ -8,11 +8,8 @@ const pluginPostCss = require("eleventy-plugin-postcss");
 const filters = require("./utils/filters.js");
 const transforms = require("./utils/transforms.js");
 const shortcodes = require("./utils/shortcodes.js");
-const fetchCodePenScreenshots = require("./utils/codepen-screenshots.js");
 
 module.exports = function (eleventyConfig) {
-  fetchCodePenScreenshots();
-
   eleventyConfig.setLibrary(
     "md",
     markdownIt({
@@ -37,7 +34,7 @@ module.exports = function (eleventyConfig) {
   });
 
   Object.keys(shortcodes).forEach((shortcode) => {
-    if (shortcode === "image") {
+    if (shortcodes[shortcode].constructor.name === "AsyncFunction") {
       eleventyConfig.addNunjucksAsyncShortcode(
         shortcode,
         shortcodes[shortcode]
