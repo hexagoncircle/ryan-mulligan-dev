@@ -19,7 +19,7 @@
 
   --font-primary: system-ui, var(--font-fallback);
   --font-secondary: "Quincy CF", var(--font-fallback);
-  --font-monospace: "Fira Code", monospace;
+  --font-monospace: "Jet Brains Mono", monospace;
 
   --radius-xs: 0.25rem;
   --radius-sm: 0.4rem;
