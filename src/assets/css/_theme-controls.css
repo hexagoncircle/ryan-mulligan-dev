@@ -10,8 +10,9 @@
 
 .color-scheme-toggle {
   position: relative;
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-areas: "toggle";
+  place-items: center;
   padding: var(--space-2xs);
   color: var(--color-text);
   background-color: transparent;
@@ -20,48 +21,135 @@
   cursor: pointer;
 }
 
+.color-scheme-toggle > * {
+  grid-area: toggle;
+}
+
 .color-scheme-toggle:active {
   transform: translateY(1px);
 }
 
 .color-scheme-toggle .light {
-  display: block;
+  opacity: 1;
 }
 
 .color-scheme-toggle .dark {
-  display: none;
+  opacity: 0;
 }
 
 @media (prefers-color-scheme: dark) {
   .color-scheme-toggle .light {
-    display: none;
+    opacity: 0;
   }
   .color-scheme-toggle .dark {
-    display: block;
+    opacity: 1;
   }
 }
 
-[data-color-scheme="light"] .color-scheme-toggle .light {
-  display: block;
-}
-
-[data-color-scheme="light"] .color-scheme-toggle .dark {
-  display: none;
-}
-
+[data-color-scheme="light"] .color-scheme-toggle .dark,
 [data-color-scheme="dark"] .color-scheme-toggle .light {
-  display: none;
+  opacity: 0;
 }
 
+[data-color-scheme="light"] .color-scheme-toggle .light,
 [data-color-scheme="dark"] .color-scheme-toggle .dark {
-  display: block;
+  opacity: 1;
+}
+
+.color-scheme-toggle .light line:nth-of-type(-n + 4) {
+  stroke-dasharray: 80;
+  stroke-dashoffset: 80;
+}
+
+[data-color-scheme="light"]
+  .color-scheme-toggle
+  .light
+  line:nth-of-type(-n + 4) {
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset calc(var(--duration) * 4) var(--ease);
+}
+
+[data-color-scheme="light"] .color-scheme-toggle .light line:nth-of-type(1) {
+  transition-delay: 0.2s;
+}
+[data-color-scheme="light"] .color-scheme-toggle .light line:nth-of-type(2) {
+  transition-delay: 0.3s;
+}
+[data-color-scheme="light"] .color-scheme-toggle .light line:nth-of-type(3) {
+  transition-delay: 0.4s;
+}
+[data-color-scheme="light"] .color-scheme-toggle .light line:nth-of-type(4) {
+  transition-delay: 0.5s;
+}
+
+.color-scheme-toggle .light line:nth-last-of-type(-n + 2) {
+  stroke-dasharray: 250;
+  stroke-dashoffset: -250;
+}
+
+[data-color-scheme="light"]
+  .color-scheme-toggle
+  .light
+  line:nth-last-of-type(-n + 2) {
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset var(--duration) var(--ease);
+}
+
+[data-color-scheme="light"]
+  .color-scheme-toggle
+  .light
+  line:nth-last-of-type(1) {
+  transition-delay: 0.2s;
+}
+
+.color-scheme-toggle .light path {
+  stroke-dasharray: 250;
+  stroke-dashoffset: 250;
+}
+
+[data-color-scheme="light"] .color-scheme-toggle .light path {
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset calc(var(--duration) * 2) 0.3s var(--ease);
+}
+
+.color-scheme-toggle .dark line {
+  stroke-dasharray: 80;
+  stroke-dashoffset: -80;
+}
+
+[data-color-scheme="dark"] .color-scheme-toggle .dark line {
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset var(--duration) var(--ease);
+}
+
+[data-color-scheme="dark"] .color-scheme-toggle .dark line:nth-of-type(1) {
+  transition-delay: 0.1s;
+}
+[data-color-scheme="dark"] .color-scheme-toggle .dark line:nth-of-type(2) {
+  transition-delay: 0.2s;
+}
+[data-color-scheme="dark"] .color-scheme-toggle .dark line:nth-of-type(3) {
+  transition-delay: 0.3s;
+}
+[data-color-scheme="dark"] .color-scheme-toggle .dark line:nth-of-type(4) {
+  transition-delay: 0.4s;
+}
+
+.color-scheme-toggle .dark path {
+  stroke-dasharray: 700;
+  stroke-dashoffset: 700;
+}
+
+[data-color-scheme="dark"] .color-scheme-toggle .dark path {
+  stroke-dashoffset: 0;
+  transition: stroke-dashoffset calc(var(--duration) * 4) var(--ease);
 }
 
 .color-scheme-toggle .focus-arrows {
   display: none;
   position: absolute;
-  bottom: -0.5em;
-  left: calc(100% + var(--space-2xs));
+  top: var(--space-sm);
+  left: calc(100% + var(--space-sm));
   color: var(--color-secondary);
   pointer-events: none;
 }
