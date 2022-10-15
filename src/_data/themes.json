@@ -62,7 +62,7 @@
         "bg-accent": "hsl(218, 76%, 21%)",
         "bg-shadow": "hsl(217, 52%, 14%)",
         "primary": "hsl(67, 18%, 68%)",
-        "secondary": "hsl(0, 71%, 63%)"
+        "secondary": "hsl(0, 75%, 65%)"
       }
     }
   },
