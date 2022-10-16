@@ -154,7 +154,7 @@
  */
 @media (prefers-color-scheme: light) {
   .color-scheme-toggle .dark line {
-    opacity: 0.01;
+    opacity: 0;
   }
   .color-scheme-toggle .dark path {
     stroke-dashoffset: var(--icon-dash-moon);
@@ -162,7 +162,7 @@
 }
 
 [data-color-scheme="light"] .color-scheme-toggle .dark line {
-  opacity: 0.01;
+  opacity: 0;
 }
 
 [data-color-scheme="dark"] .color-scheme-toggle .dark line {
@@ -170,10 +170,10 @@
   transition: opacity var(--duration) 0.2s var(--ease);
 }
 
-[data-color-scheme="dark"]
-  .color-scheme-toggle
-  .dark
-  line:nth-last-of-type(-n + 2) {
+[data-color-scheme="dark"] .color-scheme-toggle .dark line:nth-of-type(3) {
+  transition-delay: 0.3s;
+}
+[data-color-scheme="dark"] .color-scheme-toggle .dark line:nth-of-type(4) {
   transition-delay: 0.3s;
 }
 
