@@ -12,7 +12,6 @@
   --icon-dash-ray: 80;
   --icon-dash-horizon: 250;
   --icon-dash-sun: 250;
-  --icon-dash-star: 80;
   --icon-dash-moon: 700;
 
   position: relative;
@@ -73,7 +72,7 @@
     stroke-dashoffset: var(--icon-dash-ray);
   }
   .color-scheme-toggle .light line:nth-last-of-type(-n + 2) {
-    stroke-dashoffset: calc(var(--icon-dash-horizon) * -1);
+    stroke-dashoffset: var(--icon-dash-horizon);
   }
   .color-scheme-toggle .light path {
     stroke-dashoffset: var(--icon-dash-sun);
@@ -96,12 +95,9 @@
   .light
   line:nth-of-type(-n + 4) {
   stroke-dashoffset: 0;
-  transition: stroke-dashoffset calc(var(--duration) * 4) var(--ease);
+  transition: stroke-dashoffset calc(var(--duration) * 4) 0.2s var(--ease);
 }
 
-[data-color-scheme="light"] .color-scheme-toggle .light line:nth-of-type(1) {
-  transition-delay: 0.2s;
-}
 [data-color-scheme="light"] .color-scheme-toggle .light line:nth-of-type(2) {
   transition-delay: 0.3s;
 }
@@ -113,14 +109,16 @@
 }
 
 .color-scheme-toggle .light line:nth-last-of-type(-n + 2) {
-  stroke-dasharray: var(--icon-dash-horizon);
+  transform: scaleX(-1);
+  transform-origin: center;
+  stroke-dasharray: var(--icon-dash-horizon) var(--icon-dash-horizon);
 }
 
 [data-color-scheme="dark"]
   .color-scheme-toggle
   .light
   line:nth-last-of-type(-n + 2) {
-  stroke-dashoffset: calc(var(--icon-dash-horizon) * -1);
+  stroke-dashoffset: var(--icon-dash-horizon);
 }
 
 [data-color-scheme="light"]
@@ -128,7 +126,7 @@
   .light
   line:nth-last-of-type(-n + 2) {
   stroke-dashoffset: 0;
-  transition: stroke-dashoffset var(--duration) var(--ease);
+  transition: stroke-dashoffset calc(var(--duration) * 2) var(--ease);
 }
 
 [data-color-scheme="light"]
@@ -148,7 +146,7 @@
 
 [data-color-scheme="light"] .color-scheme-toggle .light path {
   stroke-dashoffset: 0;
-  transition: stroke-dashoffset calc(var(--duration) * 2) 0.3s var(--ease);
+  transition: stroke-dashoffset calc(var(--duration) * 2) 0.2s var(--ease);
 }
 
 /**
@@ -156,37 +154,27 @@
  */
 @media (prefers-color-scheme: light) {
   .color-scheme-toggle .dark line {
-    stroke-dashoffset: var(--icon-dash-star);
+    opacity: 0.01;
   }
   .color-scheme-toggle .dark path {
     stroke-dashoffset: var(--icon-dash-moon);
   }
 }
 
-.color-scheme-toggle .dark line {
-  stroke-dasharray: var(--icon-dash-star);
-}
-
 [data-color-scheme="light"] .color-scheme-toggle .dark line {
-  stroke-dashoffset: calc(var(--icon-dash-star) * -1);
+  opacity: 0.01;
 }
 
 [data-color-scheme="dark"] .color-scheme-toggle .dark line {
-  stroke-dashoffset: 0;
-  transition: stroke-dashoffset var(--duration) var(--ease);
+  opacity: 1;
+  transition: opacity var(--duration) 0.2s var(--ease);
 }
 
-[data-color-scheme="dark"] .color-scheme-toggle .dark line:nth-of-type(1) {
-  transition-delay: 0.1s;
-}
-[data-color-scheme="dark"] .color-scheme-toggle .dark line:nth-of-type(2) {
-  transition-delay: 0.2s;
-}
-[data-color-scheme="dark"] .color-scheme-toggle .dark line:nth-of-type(3) {
+[data-color-scheme="dark"]
+  .color-scheme-toggle
+  .dark
+  line:nth-last-of-type(-n + 2) {
   transition-delay: 0.3s;
-}
-[data-color-scheme="dark"] .color-scheme-toggle .dark line:nth-of-type(4) {
-  transition-delay: 0.4s;
 }
 
 .color-scheme-toggle .dark path {
