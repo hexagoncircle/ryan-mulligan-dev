@@ -56,8 +56,26 @@
   opacity: 1;
 }
 
+@media (prefers-color-scheme: dark) {
+  .color-scheme-toggle .light line:nth-of-type(-n + 4) {
+    stroke-dashoffset: 80;
+  }
+  .color-scheme-toggle .light line:nth-last-of-type(-n + 2) {
+    stroke-dashoffset: -250;
+  }
+  .color-scheme-toggle .light path {
+    stroke-dashoffset: 250;
+  }
+}
+
 .color-scheme-toggle .light line:nth-of-type(-n + 4) {
   stroke-dasharray: 80;
+}
+
+[data-color-scheme="dark"]
+  .color-scheme-toggle
+  .light
+  line:nth-of-type(-n + 4) {
   stroke-dashoffset: 80;
 }
 
@@ -84,6 +102,12 @@
 
 .color-scheme-toggle .light line:nth-last-of-type(-n + 2) {
   stroke-dasharray: 250;
+}
+
+[data-color-scheme="dark"]
+  .color-scheme-toggle
+  .light
+  line:nth-last-of-type(-n + 2) {
   stroke-dashoffset: -250;
 }
 
@@ -104,6 +128,9 @@
 
 .color-scheme-toggle .light path {
   stroke-dasharray: 250;
+}
+
+[data-color-scheme="dark"] .color-scheme-toggle .light path {
   stroke-dashoffset: 250;
 }
 
@@ -114,6 +141,18 @@
 
 .color-scheme-toggle .dark line {
   stroke-dasharray: 80;
+}
+
+@media (prefers-color-scheme: light) {
+  .color-scheme-toggle .dark line {
+    stroke-dashoffset: -80;
+  }
+  .color-scheme-toggle .dark path {
+    stroke-dashoffset: 700;
+  }
+}
+
+[data-color-scheme="light"] .color-scheme-toggle .dark line {
   stroke-dashoffset: -80;
 }
 
@@ -137,6 +176,9 @@
 
 .color-scheme-toggle .dark path {
   stroke-dasharray: 700;
+}
+
+[data-color-scheme="light"] .color-scheme-toggle .dark path {
   stroke-dashoffset: 700;
 }
 
