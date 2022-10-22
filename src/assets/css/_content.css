@@ -195,20 +195,6 @@
   line-height: 1.2;
 }
 
-/* Hello link emoji interaction */
-.hello-link:hover + .himoji,
-.hello-link:focus + .himoji {
-  display: inline-block;
-  transform-origin: right bottom;
-  animation: waving 300ms linear 3;
-}
-
-@keyframes waving {
-  50% {
-    transform: rotate(15deg);
-  }
-}
-
 .focus-arrows {
   flex-shrink: 0;
   color: var(--color-secondary);

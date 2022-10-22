@@ -55,6 +55,12 @@
     <link rel="stylesheet" href="/assets/css/theme.css">
     <link rel="stylesheet" href="/assets/css/styles.css">
 
+    {% if page.url | webcGetCss %}
+      <style>
+        {{page.url | webcGetCss | safe}}
+      </style>
+    {% endif %}
+
     <script>
       {% include "init-theme.njk" %}
     </script>

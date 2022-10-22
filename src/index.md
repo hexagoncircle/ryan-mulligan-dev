@@ -22,7 +22,9 @@ I'm a fun-loving front-end engineer that strives to bridge the gap between web d
 
 When I'm not coding, you can catch me [noodling on my acoustic guitar](https://twitter.com/hexagoncircle/status/1413526995376295941?s=20"){target="_blank" rel="me"} or [blasting out rhythms](https://twitter.com/hexagoncircle/status/1285798846568767496?s=20){target="_blank" rel="me"} if there's a drum kit ready for a lefty nearby.
 
-Want to know more? <a class="hello-link" href="{% mailToPath %}" target="_blank" rel="noopener">Say hello anytime!</a> <span class="himoji">👋</span>
+{% renderTemplate "webc" %}
+Want to know more? <rm-wave-hello webc:nokeep />
+{% endrenderTemplate %}
 
 ## Articles & features
 
