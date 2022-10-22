@@ -1,9 +1,11 @@
+const { EleventyRenderPlugin } = require("@11ty/eleventy");
 const markdownIt = require("markdown-it");
 const markdownItAttrs = require("markdown-it-attrs");
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const pluginPostCss = require("eleventy-plugin-postcss");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginTimeToRead = require("eleventy-plugin-time-to-read");
-const pluginPostCss = require("eleventy-plugin-postcss");
+const pluginWebc = require("@11ty/eleventy-plugin-webc");
+const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 const filters = require("./utils/filters.js");
 const transforms = require("./utils/transforms.js");
@@ -20,10 +22,14 @@ module.exports = function (eleventyConfig) {
   );
   eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItAttrs));
 
+  eleventyConfig.addPlugin(EleventyRenderPlugin);
   eleventyConfig.addPlugin(syntaxHighlight);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginTimeToRead);
   eleventyConfig.addPlugin(pluginPostCss);
+  eleventyConfig.addPlugin(pluginWebc, {
+    components: "src/_components/**/*.webc",
+  });
 
   Object.keys(filters).forEach((filter) => {
     eleventyConfig.addFilter(filter, filters[filter]);
@@ -61,9 +67,9 @@ module.exports = function (eleventyConfig) {
   });
 
   return {
-    templateFormats: ["md", "njk", "html"],
+    templateFormats: ["webc", "md", "njk", "html"],
     markdownTemplateEngine: "njk",
-    htmlTemplateEngine: "njk",
+    htmlTemplateEngine: ["njk"],
     dataTemplateEngine: "njk",
     dir: {
       input: "src",
