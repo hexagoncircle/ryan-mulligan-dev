@@ -28,7 +28,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginTimeToRead);
   eleventyConfig.addPlugin(pluginPostCss);
   eleventyConfig.addPlugin(pluginWebc, {
-    components: "src/_components/**/*.webc",
+    components: "src/_includes/components/**/*.webc",
   });
 
   Object.keys(filters).forEach((filter) => {
