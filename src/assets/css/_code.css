@@ -10,6 +10,10 @@ pre {
   border-radius: var(--radius-xs);
 }
 
+pre > code {
+  display: inline-block;
+}
+
 pre[class*="language-"] {
   padding: var(--space-sm);
 }
