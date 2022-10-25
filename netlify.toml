@@ -1,6 +1,2 @@
-[[headers]]
-  for = "/*"
-  [headers.values]
-    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' *.codepen.io *.withcabin.com *.netlify.app; connect-src 'self' *.withcabin.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: *.codepen.io *.netlify.app images.unsplash.com; object-src 'none'; frame-src codepen.io *.codepen.io *.netlify.app app.netlify.com; base-uri 'none'; manifest-src 'self' data:"
 [build]
   command = "npm run build"
