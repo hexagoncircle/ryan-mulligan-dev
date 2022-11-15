@@ -5,7 +5,7 @@ subtitle: Passenger through space and time, front-end web builder & bittersweet 
 
 ## Blog posts
 
-Sometimes general thoughts and rambles, mostly code snippets and front-end web discoveries that I want to share with you internet folks. Still in the process of writing content but I have a few in the cooker!
+Sometimes general thoughts and rambles, mostly code snippets and front-end development discoveries to share with the world wide web.
 
 <ul>
   {%- for post in collections.posts | reverse  -%}
