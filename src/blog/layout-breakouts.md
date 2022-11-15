@@ -102,6 +102,6 @@ _This article was updated on October 12th, 2022 to include the "Losing Floats" s
 
 * [Grid layout using named grid lines](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines)
 * [A Deep Dive Into CSS Grid `minmax()`](https://ishadeed.com/article/css-grid-minmax/)
-* [min(), max(), and clamp(): three logical CSS functions to use today](https://web.dev/min-max-clamp/)
+* [`min()`, `max()`, and `clamp()`: three logical CSS functions to use today](https://web.dev/min-max-clamp/)
 * [Re-thinking the layout grid with CSS grid](https://florian.geierstanger.org/blog/css-layout-grid)
 * [Grid by Example](https://gridbyexample.com/)
