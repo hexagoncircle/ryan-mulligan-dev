@@ -1,0 +1,81 @@
+[
+  {
+    "company": "Netlify",
+    "location": "Remote",
+    "roles": [
+      {
+        "title": "Marketing Engineering Lead",
+        "type": "Full-time",
+        "startDate": "February 2022",
+        "endDate": "Present",
+        "description": "Focused on performance, enablement, inclusion and scale across the Netlify marketing ecosystem. Role includes individual contribution, team leadership, and evolving our internal processes to be more efficient and self-serving."
+      }
+    ]
+  },
+  {
+    "company": "Inspirato",
+    "location": "Denver, Colorado",
+    "roles": [
+      {
+        "title": "Manager, UI Engineering",
+        "type": "Full-time",
+        "startDate": "May 2021",
+        "endDate": "January 2022",
+        "description": "UI engineering team lead on the Inspirato Pass product. I advocate for modern best practices and inclusive patterns across application teams and the web platform while continuing to commit code updates as an individual contributor. The management role extends previous senior level duties and includes employee 1:1s, working with recruitment in the hiring process, and providing direction towards organizational growth."
+      },
+      {
+        "title": "Senior UI Engineer",
+        "type": "Full-time",
+        "startDate": "August 2019",
+        "endDate": "May 2021",
+        "description": "I started as a front-end engineer on the Pass UX and List Architecture team. Notable work includes building our latest front-end design system, developing consumer-facing application workflows for our Inspirato Pass property listings and trip collections, and evolving our user experience to make a more stable, performant, and accessible product."
+      }
+    ]
+  },
+  {
+    "company": "Elevated Third",
+    "location": "Seattle, Washington",
+    "roles": [
+      {
+        "title": "Senior Frontend Developer",
+        "type": "Full-time",
+        "startDate": "July 2018",
+        "endDate": "April 2019",
+        "description": "Helped start and managed the Seattle office. As a Senior Developer, I led development teams on projects, worked on build specs and feature estimates, spoke directly with client teams as the lead developer, and provided guidance to junior developers."
+      }
+    ]
+  },
+  {
+    "company": "Expedia Group",
+    "location": "Bellevue, Washington",
+    "roles": [
+      {
+        "title": "Software Dev Engineer II",
+        "type": "Full-time",
+        "startDate": "June 2017",
+        "endDate": "May 2018",
+        "description": "I became a core member of the Global UI Engineering Team and worked on the UI toolkit for our suite of applications. I led our internal Front-end Improvements Team assisting engineering teams with development direction and code contributions while advocating for quality and consistency in the presentation layer of our products."
+      },
+      {
+        "title": "Senior Design Engineer",
+        "type": "Full-time",
+        "startDate": "June 2016",
+        "endDate": "June 2017",
+        "description": "I joined the design team to focus on engineering responsive product prototypes concentrated around business travel consumer needs. Being involved in user studies helped guide a rapid, iterative process for UX feature A/B testing. I contributed work to our global UI toolkit where I iterated, tested, and ensured we met design standards."
+      }
+    ]
+  },
+  {
+    "company": "Elevated Third",
+    "location": "Denver, Colorado",
+    "roles": [
+      {
+        "title": "Senior Frontend Developer",
+        "type": "Full-time",
+        "startDate": "May 2012",
+        "endDate": "May 2016",
+        "description": "I led projects from inception to completion. Most of my commitment with client projects focused on front-end web development, Drupal site theming, admin/client-facing site configuration, custom module development, and lighter back-end development. I had also estimated development time on new projects and features, as well as the information architecture for new site builds."
+      }
+    ]
+  }
+]

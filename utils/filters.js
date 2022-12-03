@@ -22,4 +22,8 @@ module.exports = {
 
   postDate: (dateObj) =>
     DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED),
+
+  removeHttp: (url) => {
+    return url.replace(/^https?:\/\//, "");
+  },
 };

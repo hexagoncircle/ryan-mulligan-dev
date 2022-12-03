@@ -21,13 +21,18 @@ a:focus-visible {
   color: var(--color-text-accent);
 }
 
-:is(a:focus-visible, button:focus-visible, input:focus-visible, .projects:focus-visible) {
+:is(
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible,
+    .projects:focus-visible
+  ) {
   outline: var(--outline);
   outline-offset: var(--outline-offset);
 }
 
 small {
-  font-size: var(--text-sm);
+  font-size: var(--font--1);
 }
 
 :is(h1, h2, h3, h4, h5) {

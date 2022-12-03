@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "Personal website",
   "scripts": {
-    "start": "npx @11ty/eleventy --serve",
+    "start": "npx @11ty/eleventy --serve --quiet",
     "build": "npx @11ty/eleventy",
     "clean": "rm -rf _site && rm -rf .11ty-vite",
     "test": "echo \"Error: no test specified\" && exit 1"

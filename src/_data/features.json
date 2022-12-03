@@ -1,10 +1,5 @@
 [
   {
-    "title": "CodePen Radio 357: Ryan Mulligan",
-    "url": "https://blog.codepen.io/2022/03/02/357-ryan-mulligan/",
-    "source": "CodePen Podcast"
-  },
-  {
     "title": "Positioning Overlay Content with CSS Grid",
     "url": "https://css-tricks.com/positioning-overlay-content-with-css-grid/",
     "source": "CSS-Tricks"
@@ -18,6 +13,11 @@
     "title": "React Slider with Parallax Hover Effects",
     "url": "https://tympanus.net/codrops/2019/08/20/react-slider-with-parallax-hover-effects/",
     "source": "Codrops"
+  },
+  {
+    "title": "CodePen Radio 357: Ryan Mulligan",
+    "url": "https://blog.codepen.io/2022/03/02/357-ryan-mulligan/",
+    "source": "CodePen Podcast"
   },
   {
     "title": "Behind the Scenes: Netlify's Homepage",

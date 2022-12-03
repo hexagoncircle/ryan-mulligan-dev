@@ -1,0 +1,126 @@
+.personal-info {
+  font-style: normal;
+}
+
+.personal-info dl > * {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2xs);
+}
+
+.personal-info dt {
+  display: flex;
+  align-items: center;
+}
+
+.job {
+  padding: var(--space-lg);
+  background-color: var(--color-bg);
+  border: 3px solid var(--color-bg-accent);
+  border-radius: var(--radius-md);
+  box-shadow: var(--space-3xs) var(--space-3xs) 0 var(--color-bg-shadow);
+}
+
+.job-info {
+  --space: var(--space-xs);
+}
+
+.job-location {
+  font-size: var(--font--2);
+  background: var(--color-bg-accent);
+  padding: var(--space-3xs) var(--space-2xs);
+  border-radius: var(--radius-xs);
+}
+
+.roles {
+  --dot-size: 0.7em;
+  --dot-inline-offset: var(--space-xs);
+  --dot-block-offset: 0.5em;
+  --stroke-size: 0.16em;
+
+  margin-block-start: var(--space-2xs);
+}
+
+.role:not(:only-child) {
+  position: relative;
+  margin-inline-start: calc(1em + var(--dot-inline-offset) / 2);
+}
+
+.role:not(:only-child)::before {
+  content: "";
+  position: absolute;
+  top: var(--dot-block-offset);
+  right: calc(100% + var(--dot-inline-offset));
+  display: block;
+  width: var(--dot-size);
+  height: var(--dot-size);
+  border-radius: var(--radius-round);
+  border: var(--stroke-size) solid var(--color-primary);
+}
+
+.role:not(:last-child):not(:only-child)::after {
+  content: "";
+  position: absolute;
+  top: calc(var(--dot-block-offset) + var(--dot-size) * 1.5);
+  right: calc(
+    100% + var(--dot-inline-offset) + (var(--dot-size) / 2) -
+      (var(--stroke-size) / 2)
+  );
+  display: block;
+  width: var(--stroke-size);
+  height: calc(100% + var(--space-md) - var(--dot-size) * 2);
+  background: var(--color-primary);
+  border: calc(var(--stroke-size) / 2) solid var(--color-primary);
+  border-radius: var(--radius-pill);
+}
+
+.role-title {
+  font-weight: var(--font-weight-bold);
+}
+
+.role-meta {
+  font-size: var(--font--1);
+}
+
+.role-description {
+  margin-block-start: var(--space-3xs);
+}
+
+.award-title {
+  font-weight: var(--font-weight-bold);
+}
+
+@media print {
+  html {
+    font-size: 75%;
+    --page-max-width: 65ch;
+  }
+
+  .page-header,
+  .page-footer {
+    display: none;
+  }
+
+  .content {
+    margin-block: var(--space-2xl);
+  }
+
+  .job,
+  .role {
+    break-before: auto;
+    break-after: auto;
+    break-inside: avoid;
+    position: relative;
+  }
+
+  .job {
+    padding: unset;
+    border: unset;
+    box-shadow: unset;
+  }
+
+  .job-location {
+    background: unset;
+    padding: unset;
+  }
+}

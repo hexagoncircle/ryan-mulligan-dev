@@ -1,0 +1,142 @@
+---
+layout: base
+noindex: true
+metaTitle: "Resume"
+---
+
+{% block styles %}
+  <link rel="stylesheet" href="/assets/css/resume.css">
+{% endblock %}
+
+<address class="personal-info">
+  <dl>
+    <div>
+      <dt>
+        <span class="visually-hidden">Location:</span>
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="var(--color-primary)" viewBox="0 0 256 256">
+          <rect width="256" height="256" fill="none"></rect>
+          <circle cx="128" cy="104" r="32" fill="none" stroke="var(--color-primary)" stroke-linecap="round" stroke-linejoin="round" stroke-width="20"></circle>
+          <path d="M208,104c0,72-80,128-80,128S48,176,48,104a80,80,0,0,1,160,0Z" fill="none" stroke="var(--color-primary)" stroke-linecap="round" stroke-linejoin="round" stroke-width="20"></path>
+        </svg>
+      </dt>
+      <dd>Los Angeles Metropolitan Area</dd>
+    </div>
+    <div>
+      <dt>
+        <span class="visually-hidden">Email:</span>
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="var(--color-primary)" viewBox="0 0 256 256">
+          <rect width="256" height="256" fill="none"></rect>
+          <path d="M32,56H224a0,0,0,0,1,0,0V192a8,8,0,0,1-8,8H40a8,8,0,0,1-8-8V56A0,0,0,0,1,32,56Z" fill="none" stroke="var(--color-primary)" stroke-linecap="round" stroke-linejoin="round" stroke-width="20"></path>
+          <polyline points="224 56 128 144 32 56" fill="none" stroke="var(--color-primary)" stroke-linecap="round" stroke-linejoin="round" stroke-width="20"></polyline>
+        </svg>
+      </dt>
+      <dd>
+        <a href="{% mailToPath %}">hexagoncircle@gmail.com</a>
+      </dd>
+    </div>
+    <div>
+      <dt>
+        <span class="visually-hidden">Personal Website:</span>
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="var(--color-primary)" viewBox="0 0 256 256">
+          <rect width="256" height="256" fill="none"></rect>
+          <circle cx="128" cy="128" r="96" fill="none" stroke="var(--color-primary)" stroke-linecap="round" stroke-linejoin="round" stroke-width="20"></circle>
+          <circle cx="128" cy="120" r="40" fill="none" stroke="var(--color-primary)" stroke-linecap="round" stroke-linejoin="round" stroke-width="20"></circle>
+          <path d="M63.8,199.4a72,72,0,0,1,128.4,0" fill="none" stroke="var(--color-primary)" stroke-linecap="round" stroke-linejoin="round" stroke-width="20"></path>
+        </svg>
+      </dt>
+      <dd>
+        <a href="https://ryanmulligan.dev">ryanmulligan.dev</a>
+      </dd>
+    </div>
+    <div>
+      <dt>
+        <span class="visually-hidden">LinkedIn:</span>
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="var(--color-primary)" viewBox="0 0 256 256">
+          <rect width="256" height="256" fill="none"></rect>
+          <rect x="36" y="36" width="184" height="184" rx="8" fill="none" stroke="var(--color-primary)" stroke-linecap="round" stroke-linejoin="round" stroke-width="20"></rect>
+          <line x1="120" y1="112" x2="120" y2="176" fill="none" stroke="var(--color-primary)" stroke-linecap="round" stroke-linejoin="round" stroke-width="20"></line>
+          <line x1="88" y1="112" x2="88" y2="176" fill="none" stroke="var(--color-primary)" stroke-linecap="round" stroke-linejoin="round" stroke-width="20"></line>
+          <path d="M120,140a28,28,0,0,1,56,0v36" fill="none" stroke="var(--color-primary)" stroke-linecap="round" stroke-linejoin="round" stroke-width="20"></path>
+          <circle cx="88" cy="80" r="12"></circle>
+        </svg>
+      </dt>
+      <dd>
+        <a href="https://www.linkedin.com/in/mulliganryan">www.linkedin.com/in/mulliganryan</a>
+      </dd>
+    </div>
+  </dl>
+</address>
+
+<h2>The bit about myself</h2>
+
+<p>I'm a fun-loving front-end engineer that strives to bridge the gap between web design and development, building user experiences with positive interactivity through thoughtful interfaces. I advocate for modern best practices on the web and love working with diverse, inclusive teams.</p>
+
+<h2>Experience</h2>
+
+{% for job in jobs %}
+  <section class="job">
+    <h3 class="job-company">{{job.company}}</h3>
+    <span class="job-location">{{job.location}}</span>
+    <dl class="roles flow">
+      {% for role in job.roles %}
+        <div class="role">
+          <dt class="role-title">{{role.title}}</dt>
+          <dd class="role-meta">{{role.startDate}} – {{role.endDate}}</dd>
+          <dd class="role-meta">{{role.type}}</dd>
+          <dd class="role-description">{{role.description}}</dd>
+        </div>
+      {% endfor %}
+    </dl>
+  </section>
+{% endfor %}
+
+<h2>Skills</h2>
+<p>My primary goal is to build online experiences using the foundational building blocks of the web and stick to the principle of least power: start with the simpler, more maintainable language to get the job done before jumping to more complex frameworks. Keep systems simple, understandable, and well-documented. Below highlights a few areas of expertise:</p>
+
+<ul class="multi-column">
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>Javascript</li>
+  <li>Accessibility</li>
+  <li>Animation</li>
+  <li>11ty</li>
+  <li>Astro</li>
+  <li>React</li>
+  <li>Vue</li>
+  <li>Svelte</li>
+  <li>Design Systems</li>
+  <li>MPAs + SPAs</li>
+  <li>Progressive Enhancement</li>
+  <li>Content Architecture</li>
+  <li>CMS Management</li>
+</ul>
+
+<h2>Publications & Features</h2>
+<ul>
+  {% for feature in features %}
+    <li>
+      <a href="{{ feature.url }}" target="_blank" rel="noopener">{{ feature.title }}</a>
+      <span class="source">{{ feature.source }}</span>
+    </li>
+  {% endfor %}
+</ul>
+
+<h2>Honors & Awards</h2>
+<dl class="awards flow">
+  {% for award in awards %}
+    <div class="award">
+      <dt class="award-title">{{ award.title }}</dt>
+      <dd class="source">
+        🏆 Issued by {{ award.company }}
+      </dd>
+      {% if award.url %}
+        <dd class="source">
+          <a href="{{ award.url }}" target="_blank" rel="noopener">{{award.url | removeHttp }}</a>
+        </dd>
+      {% endif %}
+      <dd class="award-description">
+        {{ award.description}}
+      </dd>
+    </div>
+  {% endfor %}
+</dl>

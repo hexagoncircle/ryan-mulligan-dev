@@ -3,7 +3,8 @@
   {%- set absolutePageUrl -%}{{ page.url | url | absoluteUrl(meta.url) }}{%- endset -%}
 
   {% set pageTitle -%}
-  {%- if title -%}{{ title }} | {% endif -%}{{ meta.title }}
+  {%- if title and not metaTitle -%}{{ title }} | {% elif metaTitle %}
+    {{ metaTitle }} | {% endif -%}{{ meta.title }}
   {%- endset %}
 
   {% set pageDescription -%}
@@ -25,6 +26,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Eleventy">
+    {% if noindex %}
+      <meta name="robots" content="noindex">
+    {% endif %}
 
     <title>{{ pageTitle }}</title>
     <meta name="description" content="{{ description or meta.description }}"/>
@@ -54,6 +58,7 @@
 
     <link rel="stylesheet" href="/assets/css/theme.css">
     <link rel="stylesheet" href="/assets/css/styles.css">
+    {% block styles %}{% endblock %}
 
     {% if page.url | webcGetCss %}
       <style>
@@ -78,7 +83,7 @@
       {{ content | safe }}
     </main>
 
-    <footer class="footer wrapper">
+    <footer class="page-footer wrapper">
       <p>
         © 2015—{% year %} assembled by Ryan Mulligan, with love. Bring it on <a title="Go to the site homepage" href="{{ '/' | url }}">home</a> ⫶ <a href="{{ '/blog/feed.xml' | url }}">RSS feed</a>
       </p>

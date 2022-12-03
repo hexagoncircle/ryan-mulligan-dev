@@ -33,7 +33,7 @@
   pointer-events: auto;
 }
 
-.footer {
+.page-footer {
   margin-top: auto;
   justify-items: center;
   padding-block: var(--space-sm)
@@ -41,11 +41,11 @@
   border-top: 2px dashed var(--color-bg-accent);
 }
 
-.footer p {
+.page-footer p {
   font-size: var(--font--1);
   line-height: 1.3;
 }
 
-.footer > * {
+.page-footer > * {
   grid-column: content;
 }
