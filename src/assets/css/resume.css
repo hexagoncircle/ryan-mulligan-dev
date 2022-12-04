@@ -13,6 +13,12 @@
   align-items: center;
 }
 
+.personal-info svg {
+  --size: 1.25em;
+  width: var(--size);
+  height: var(--size);
+}
+
 .job {
   padding: var(--space-lg);
   background-color: var(--color-bg);
@@ -36,7 +42,7 @@
   --dot-size: 0.7em;
   --dot-inline-offset: var(--space-xs);
   --dot-block-offset: 0.5em;
-  --stroke-size: 0.16em;
+  --stroke-size: 0.17em;
 
   margin-block-start: var(--space-2xs);
 }
