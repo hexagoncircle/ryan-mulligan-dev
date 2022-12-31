@@ -1,10 +1,10 @@
 <article class="projects-container scroll-x">
   <ul class="projects" role="list">
-    {% for pen in codePen %}
+    {% for project in projects %}
       <li class="item">
-        <a href="https://codepen.io/hexagoncircle/full/{{ pen.id }}" target="_blank" rel="noopener">
-          <span class="visually-hidden">{{ pen.title }}</span>
-          {% codepenImage pen.id %}
+        <a href="https://codepen.io/hexagoncircle/full/{{ project.id }}" target="_blank" rel="noopener">
+          <span class="visually-hidden">{{ project.title }}</span>
+          {% codepenImage project.id %}
         </a>
       </li>
     {% endfor %}
