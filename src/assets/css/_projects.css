@@ -41,7 +41,7 @@
   font-size: var(--font--1);
 }
 
-.current:focus-within #projects-focus-text {
+.current :focus-visible + #projects-focus-text {
   visibility: visible;
 }
 
