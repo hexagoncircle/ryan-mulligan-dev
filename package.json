@@ -5,7 +5,7 @@
   "scripts": {
     "start": "npx @11ty/eleventy --serve --quiet",
     "build": "npx @11ty/eleventy",
-    "clean": "rm -rf _site && rm -rf .11ty-vite",
+    "clean": "rm -rf _site",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
