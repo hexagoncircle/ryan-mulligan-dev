@@ -5,10 +5,10 @@ const pluginPostCss = require("eleventy-plugin-postcss");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginTimeToRead = require("eleventy-plugin-time-to-read");
 const pluginWebc = require("@11ty/eleventy-plugin-webc");
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const pluginWebmentions = require("eleventy-plugin-webmentions");
+const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 const filters = require("./utils/filters.js");
-const transforms = require("./utils/transforms.js");
 const shortcodes = require("./utils/shortcodes.js");
 
 module.exports = function (eleventyConfig) {
@@ -23,22 +23,24 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItAttrs));
 
   eleventyConfig.addPlugin(EleventyRenderPlugin);
-  eleventyConfig.addPlugin(syntaxHighlight);
+  eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginTimeToRead);
   eleventyConfig.addPlugin(pluginPostCss);
   eleventyConfig.addPlugin(pluginWebc, {
     components: "src/_includes/components/**/*.webc",
   });
+  eleventyConfig.addPlugin(pluginWebmentions, {
+    domain: "ryanmulligan.dev",
+    token: process.env.WEBMENTION_IO_TOKEN,
+  });
 
+  // Filters
   Object.keys(filters).forEach((filter) => {
     eleventyConfig.addFilter(filter, filters[filter]);
   });
 
-  Object.keys(transforms).forEach((transform) => {
-    eleventyConfig.addTransform(transform, transforms[transform]);
-  });
-
+  // Shortcodes
   Object.keys(shortcodes).forEach((shortcode) => {
     if (shortcodes[shortcode].constructor.name === "AsyncFunction") {
       eleventyConfig.addNunjucksAsyncShortcode(
@@ -55,7 +57,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLayoutAlias("home", "home.njk");
   eleventyConfig.addLayoutAlias("post", "post.njk");
 
-  // Copy/pass-through files
+  // Passthrough file copy
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy({
     "src/assets/site.webmanifest": "/site.webmanifest",
