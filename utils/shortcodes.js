@@ -8,18 +8,17 @@ const sharedImageMetadata = {
 
 module.exports = {
   codepen: (url, defaultTab = "result", height = 600, preview = false) => {
-    const url_array = url.split("/");
-    const profile_url_array = url_array.filter((_string, index) => {
-      return index < url_array.length - 2 ? true : false;
-    });
-    const username = profile_url_array[profile_url_array.length - 1];
-    const user_profile = profile_url_array.join("/");
-    const data_slug_hash = url_array[url_array.length - 1];
+    const base = "https://codepen.io";
+    const pathname = new URL(url).pathname.split("/");
+    const user = pathname[1];
+    const hash = pathname[pathname.length - 1];
 
-    return `<p class="codepen" data-height="${height}" data-preview="${preview}" data-default-tab="${defaultTab}" data-slug-hash="${data_slug_hash}" data-user="${username}" class="codepen">
-    <span><a href="${url}">See the pen</a> (<a href="${user_profile}">@${username}</a>) on <a href="https://codepen.io">CodePen</a>.</span>
+    return `
+    <p class="codepen" data-height="${height}" data-preview="${preview}" data-default-tab="${defaultTab}" data-slug-hash="${hash}" data-user="${user}" class="codepen">
+      <span><a href="${url}">See the pen</a> (<a href="${base}/${user}">@${user}</a>) on <a href="${base}">CodePen</a>.</span>
     </p>
-    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>`;
+    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+    `;
   },
 
   image: async function (
