@@ -4,12 +4,10 @@
       <li class="item">
         <a href="https://codepen.io/hexagoncircle/full/{{ project.id }}" target="_blank" rel="noopener">
           <span class="visually-hidden">{{ project.title }}</span>
-          {% if loop.index < 5 %}
-            {% set src = ["./src/assets/images/codepen/", project.id, ".jpg"] | join %}
-            {% image src,
-            "" %}
+          {% if loop.index < 4 %}
+            {% codepenImage project.id %}
           {% else %}
-            <img src="https://codepen.io/hexagoncircle/pen/{{ project.id }}/image/small.png" alt="" loading="lazy" data-is-loading="data-is-loading"/>
+            {% codepenImage project.id, {loading: "lazy"} %}
           {% endif %}
         </a>
       </li>

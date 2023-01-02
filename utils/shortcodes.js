@@ -21,6 +21,34 @@ module.exports = {
     `;
   },
 
+  codepenImage: async function (id, attrs = {}) {
+    const url = `https://shots.codepen.io/hexagoncircle/pen/${id}-1280.jpg`;
+
+    let metadata = await Image(url, {
+      widths: [800],
+      ...sharedImageMetadata,
+      cacheOptions: {
+        duration: "2w",
+        directory: ".cache",
+        removeUrlQueryParams: false,
+      },
+      filenameFormat: function (id, src, width, format, options) {
+        const extension = path.extname(src);
+        const name = path.basename(src, extension).split("-")[0];
+        return `codepen-${name}.${format}`;
+      },
+    });
+
+    let imageAttributes = {
+      alt: "",
+      decoding: "async",
+      "data-is-loading": true,
+      ...attrs,
+    };
+
+    return Image.generateHTML(metadata, imageAttributes);
+  },
+
   image: async function (
     src,
     alt,
