@@ -20,7 +20,7 @@ metaTitle: "Resume"
         </dt>
         <dd>
           {% if item.link.url === "mailto" %}
-            <a href="{% mailToPath ""+item.link.subject %}">{{item.link.text}}</a>
+            <a href="{% mailToPath ""+item.link.subject %}" class="u-email">{{item.link.text}}</a>
           {% elif item.link.url %}
             <a href="{{item.link.url}}" class="{{item.link.classnames}}" {% if item.link.rel %}rel="{{item.link.rel}}"{% endif %}>
               {{item.link.text}}
