@@ -8,7 +8,8 @@ metaTitle: "Resume"
   <link rel="stylesheet" href="/assets/css/resume.css">
 {% endblock %}
 
-<address class="personal-info">
+<address class="personal-info h-card">
+  <h2 class="visually-hidden">Ryan Mulligan</h2>
   <dl>
     <div>
       <dt>
@@ -69,46 +70,62 @@ metaTitle: "Resume"
 
 <h2>The bit about myself</h2>
 
-<p>I'm a fun-loving front-end engineer that strives to bridge the gap between web design and development, building user experiences with positive interactivity through thoughtful interfaces. I advocate for modern best practices on the web and love working with diverse, inclusive teams.</p>
+<p class="p-summary">I'm a fun-loving front-end engineer that strives to bridge the gap between web design and development, building user experiences with positive interactivity through thoughtful interfaces. I advocate for modern best practices on the web and love working with diverse, inclusive teams.</p>
 
 <h2>Experience</h2>
 
 {% for job in jobs %}
-  <section class="job">
-    <h3 class="job-company">{{job.company}}</h3>
-    <span class="job-location">{{job.location}}</span>
+  <article class="job p-experience">
+    <h3 class="job-company p-org">{{job.company}}</h3>
+    <span class="job-location p-location">{{job.location}}</span>
     <dl class="roles flow">
       {% for role in job.roles %}
         <div class="role">
-          <dt class="role-title">{{role.title}}</dt>
-          <dd class="role-meta">{{role.startDate}} – {{role.endDate}}</dd>
+          <dt class="role-title p-name">{{role.title}}</dt>
+          <dd class="role-meta">
+            <time datetime="{{role.startDate | formatJobDate}}">{{ role.startDate }}</time> —
+            {% if role.endDate === "Present" %}
+              {{role.endDate}}
+            {% else %}
+              <time datetime="{{role.endDate | formatJobDate}}">{{role.endDate}}</time>
+            {% endif %}
+          </dd>
           <dd class="role-meta">{{role.type}}</dd>
-          <dd class="role-description">{{role.description}}</dd>
+          <dd class="role-description p-summary">{{role.description}}</dd>
         </div>
       {% endfor %}
     </dl>
-  </section>
+  </article>
 {% endfor %}
+
+<h2>Education</h2>
+<dl class="h-event p-education">
+  <dt class="h-card">
+    <strong>Ramapo College of New Jersey</strong>
+  </dt>
+  <dd>Bachelors, Communications, Graphic Design</dd>
+  <dd>2001—2005</dd>
+</dl>
 
 <h2>Skills</h2>
 <p>My primary goal is to build online experiences using the foundational building blocks of the web and align to the principle of least power: start with simpler languages like HTML and CSS before jumping into more complex frameworks. Keep systems straightforward, extensible, and well-documented. Below highlights a few general areas of expertise:</p>
 
 <ul class="multi-column">
-  <li>HTML</li>
-  <li>CSS</li>
-  <li>Javascript</li>
-  <li>Accessibility</li>
-  <li>Animation</li>
-  <li>11ty</li>
-  <li>Astro</li>
-  <li>React</li>
-  <li>Vue</li>
-  <li>Svelte</li>
-  <li>Design Systems</li>
-  <li>MPAs + SPAs</li>
-  <li>Progressive Enhancement</li>
-  <li>Content Architecture</li>
-  <li>CMS Management</li>
+  <li class="p-skill">HTML</li>
+  <li class="p-skill">CSS</li>
+  <li class="p-skill">Javascript</li>
+  <li class="p-skill">Accessibility</li>
+  <li class="p-skill">Animation</li>
+  <li class="p-skill">11ty</li>
+  <li class="p-skill">Astro</li>
+  <li class="p-skill">React</li>
+  <li class="p-skill">Vue</li>
+  <li class="p-skill">Svelte</li>
+  <li class="p-skill">Design Systems</li>
+  <li class="p-skill">MPAs + SPAs</li>
+  <li class="p-skill">Progressive Enhancement</li>
+  <li class="p-skill">Content Architecture</li>
+  <li class="p-skill">CMS Management</li>
 </ul>
 
 <h2>Publications & Features</h2>

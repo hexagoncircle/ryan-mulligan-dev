@@ -12,6 +12,10 @@ module.exports = {
     });
   },
 
+  formatJobDate: function (date) {
+    return DateTime.fromFormat(date, "MMMM y").toFormat("y-MM");
+  },
+
   obfuscate: function (str) {
     const chars = [];
     for (var i = str.length - 1; i >= 0; i--) {
@@ -20,8 +24,8 @@ module.exports = {
     return chars.join("");
   },
 
-  postDate: (dateObj) =>
-    DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED),
+  postDate: (dateObj, format) =>
+    DateTime.fromJSDate(dateObj).toLocaleString(format || DateTime.DATE_MED),
 
   removeHttp: (url) => {
     return url.replace(/^https?:\/\//, "");
