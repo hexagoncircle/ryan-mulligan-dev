@@ -21,6 +21,7 @@
     "cssnano": "^5.1.13",
     "dotenv": "^16.0.3",
     "eleventy-plugin-postcss": "^1.0.4",
+    "eleventy-plugin-svg-contents": "^0.7.0",
     "eleventy-plugin-time-to-read": "^1.2.0",
     "eleventy-plugin-webmentions": "^0.0.1",
     "luxon": "^3.0.4",

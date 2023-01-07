@@ -1,0 +1,35 @@
+[
+  {
+    "title": "Location",
+    "link": {
+      "text": "Los Angeles Metropolitan Area",
+      "url": null
+    },
+    "icon": "map-pin"
+  },
+  {
+    "title": "Email",
+    "link": {
+      "text": "hey@ryanmulligan.dev",
+      "url": "mailto",
+      "subject": "I found your resume, now tell me more"
+    },
+    "icon": "email"
+  },
+  {
+    "title": "Personal website",
+    "link": {
+      "text": "ryanmulligan.dev",
+      "url": "https://ryanmulligan.dev"
+    },
+    "icon": "avatar"
+  },
+  {
+    "title": "LinkedIn",
+    "link": {
+      "text": "linkedin.com/in/mulliganryan",
+      "url": "https://www.linkedin.com/in/mulliganryan"
+    },
+    "icon": "linkedin"
+  }
+]

@@ -16,6 +16,14 @@ module.exports = {
     return DateTime.fromFormat(date, "MMMM y").toFormat("y-MM");
   },
 
+  getVarFromString: function (varName) {
+    return this.getVariables()[varName];
+  },
+
+  icon: (name) => {
+    return `/src/assets/icons/${name}.svg`;
+  },
+
   obfuscate: function (str) {
     const chars = [];
     for (var i = str.length - 1; i >= 0; i--) {
