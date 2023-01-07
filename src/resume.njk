@@ -9,8 +9,8 @@ metaTitle: "Resume"
 {% endblock %}
 
 <address class="personal-info h-card">
-  <h2 class="visually-hidden">Ryan Mulligan</h2>
-  <img class="u-photo" src="/assets/images/headshot.jpg" alt="Profile headshot of Ryan Mulligan" style="display: none"/>
+  <h2 class="visually-hidden p-name">Ryan Mulligan</h2>
+  <img class="u-photo" src="/assets/images/headshot.jpg" alt="" style="display: none"/>
   <dl>
     {% for item in "resume-header" | getVarFromString %}
       <div>
@@ -22,7 +22,9 @@ metaTitle: "Resume"
           {% if item.link.url === "mailto" %}
             <a href="{% mailToPath ""+item.link.subject %}">{{item.link.text}}</a>
           {% elif item.link.url %}
-            <a href="{{item.link.url}}" class="u-url">{{item.link.text}}</a>
+            <a href="{{item.link.url}}" class="{{item.link.classnames}}" {% if item.link.rel %}rel="{{item.link.rel}}"{% endif %}>
+              {{item.link.text}}
+            </a>
           {% else %}
             {{item.link.text}}
           {% endif %}

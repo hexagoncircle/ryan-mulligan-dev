@@ -20,7 +20,8 @@
     "title": "Personal website",
     "link": {
       "text": "ryanmulligan.dev",
-      "url": "https://ryanmulligan.dev"
+      "url": "https://ryanmulligan.dev",
+      "classnames": "u-url u-uid"
     },
     "icon": "avatar"
   },
@@ -28,7 +29,9 @@
     "title": "LinkedIn",
     "link": {
       "text": "linkedin.com/in/mulliganryan",
-      "url": "https://www.linkedin.com/in/mulliganryan"
+      "url": "https://www.linkedin.com/in/mulliganryan",
+      "classnames": "u-url",
+      "rel": "me"
     },
     "icon": "linkedin"
   }
