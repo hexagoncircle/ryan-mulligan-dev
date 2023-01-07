@@ -71,6 +71,7 @@
   overflow: hidden;
   border-radius: var(--radius-md);
   background-color: var(--color-bg-accent);
+  border: 2px solid var(--color-bg-accent);
 }
 
 .projects .item a::before {
@@ -91,7 +92,7 @@
   width: calc(100% + 4px);
   height: calc(100% + 4px);
   transform-style: preserve-3d;
-  transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0) scale(1.01) rotateX(0) rotateY(0);
   transition: var(--duration) var(--ease);
   transition-property: transform, opacity;
   border-radius: inherit;
@@ -147,12 +148,12 @@
   }
 
   .projects .item:hover img {
-    transform: scale(1.04)
-      translate(
+    transform: translate3d(
         calc(var(--x) / var(--t) * 1px),
-        calc(var(--y) / var(--t) * 1px)
+        calc(var(--y) / var(--t) * 1px),
+        0
       )
-      rotateX(calc(var(--y) / var(--t) * -1deg))
+      scale(1.04) rotateX(calc(var(--y) / var(--t) * -1deg))
       rotateY(calc(var(--x) / var(--t) * 1deg));
   }
 }
