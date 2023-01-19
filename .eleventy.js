@@ -25,13 +25,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.amendLibrary("md", (library) => {
     library.use(markdownAttrs);
     library.use(markdownContainer, "callout", {
-      render: function (tokens, idx) {
-        var m = tokens[idx].info.trim().match(/^aside\s+(.*)$/);
-        if (tokens[idx].nesting === 1) {
-          return '<aside class="' + tokens[idx].info.trim() + '">\n';
-        } else {
-          return "</aside>\n";
-        }
+      render: function (tokens, i) {
+        return tokens[i].nesting === 1 ? `<aside class="callout">` : `</aside>`;
       },
     });
   });
