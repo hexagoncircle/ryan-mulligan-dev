@@ -49,8 +49,9 @@ One way around this is to negate the media query. The `not` keyword in a media q
 }
 ```
 
+::: callout
 The `not` keyword only seems to apply when first defining a [media type](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#targeting_media_types) and then the [media feature](https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries#targeting_media_features) as I have above. Something like `@media not (min-width: 600px)` won't work.
-{.callout}
+:::
 
 If your current browser window is large enough, you can resize the CodePen result window below to see the text and background color change based on their respective media query declarations:
 

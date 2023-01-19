@@ -43,8 +43,9 @@ Each theme changed the site colors set in CSS custom properties. I've simplified
 
 The `min` and `max` attributes on the theme slider were set to 1 and 5 respectively, allowing five different themes. If the slider had not yet been moved, a theme was applied to the site based on color scheme preferences in a user's system settings. By default, color values were set to CSS custom properties. These values were then updated for dark mode within a `prefers-color-scheme` media query.
 
+::: callout
 Worth pointing out that it's totally possible to approach this the other way, starting with dark mode styles and overriding them with `light` or `no-preference` rulesets as Michelle explains in [her article](https://css-irl.info/quick-and-easy-dark-mode-with-css-custom-properties/).
-{.callout}
+:::
 
 In the following example, you'll notice that the base default colors are the same values in `data-theme="5"` and then get updated to match `data-theme="1"` for the dark color scheme preference.
 
@@ -64,8 +65,9 @@ In the following example, you'll notice that the base default colors are the sam
 }
 ```
 
+::: callout
 For visual history, I shared my site refresh and demonstrated the original theme slider implementation in [this tweet](https://twitter.com/hexagoncircle/status/1338885523658555394?s=20&t=WebRdkKmXfB5ntsYPFwNwA). _Small note:_ this was tweeted before I decided to ditch the old domain in favor of the one you're on now.
-{.callout}
+:::
 
 This first iteration felt limited. Preferred color scheme values were tied to specific themes (1 for dark, 5 for light/no-preference) and disconnected from the values sandwiched in between. It was a fine start but left me wondering about other ways to handle these preference settings.
 
@@ -83,8 +85,9 @@ Here's what I came up with. The theme slider works the same as before but now ha
 
 What I like about this theming model is that it welcomes future variants based on other user preferences and system settings. For instance, introducing high and low contrast styles for each theme using the `prefers-contrast` media query.
 
+::: callout
 At the time of writing, `prefers-contrast` is still considered an experimental feature according to the [MDN docs](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-contrast). This behavior may possibly change in the future.
-{.callout}
+:::
 
 ## Redundant rulesets
 

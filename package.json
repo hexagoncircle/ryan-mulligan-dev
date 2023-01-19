@@ -27,6 +27,7 @@
     "luxon": "^3.0.4",
     "markdown-it": "^13.0.1",
     "markdown-it-attrs": "^4.1.4",
+    "markdown-it-container": "^3.0.0",
     "postcss-import": "^15.0.0",
     "postcss-nesting": "^10.2.0",
     "sass": "^1.55.0"

@@ -48,7 +48,9 @@ As a way to visualize this grid, I've created a fresh CodePen demo below. Click 
 
 {% codepen "https://codepen.io/hexagoncircle/pen/dyejrpE" %}
 
-Many modern browser developer tools include the ability to inspect CSS grid and display grid lines. Here's how to do it in [Chrome](https://developer.chrome.com/docs/devtools/css/grid/), [Firefox](https://firefox-source-docs.mozilla.org/devtools-user/page_inspector/how_to/examine_grid_layouts/index.html), and [Safari](https://webkit.org/blog/11588/introducing-css-grid-inspector/).{.callout}
+::: callout
+Many modern browser developer tools include the ability to inspect CSS grid and display grid lines. Here's how to do it in [Chrome](https://developer.chrome.com/docs/devtools/css/grid/), [Firefox](https://firefox-source-docs.mozilla.org/devtools-user/page_inspector/how_to/examine_grid_layouts/index.html), and [Safari](https://webkit.org/blog/11588/introducing-css-grid-inspector/).
+:::
 
 In the CSS tab of that demo, we can see how these grid areas are being applied. The first ruleset, `.content > *`, matches all direct children of the container, setting them to the center `content` area. Cascading rulesets then revise `grid-column` with their respective keyword values.
 

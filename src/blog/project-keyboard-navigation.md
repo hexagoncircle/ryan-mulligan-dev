@@ -27,8 +27,9 @@ Overall, I'd consider this a horizontal scroll container. Not _really_ a carouse
 
 After building out the page structure, I tried navigating [the site homepage](/) using my keyboard. I quickly noticed how tedious it was tabbing through every single one of those CodePen project links. Perhaps there's a way to make this interaction and page flow feel more seamless.
 
+::: callout
 Experts in the accessibility community may have some really helpful feedback and guidance on these ideas. If you're one of them, I'd love to get your thoughts and update this article accordingly! You can [message me on Twitter](https://twitter.com/hexagoncircle) or <a href="{% mailToPath title %}" target="_blank" rel="noopener">email me</a>.
-{.callout}
+:::
 
 Let's jump into some solutions. The following is what I had tried with the latter option being the path forward.
 
@@ -90,8 +91,9 @@ selected.focus({ preventScroll: true });
 
 Notice that a `prefers-reduced-motion` conditional is applied to the `behavior` option. This will respect our reduced motion settings and disable smooth scrolling of the list.
 
+::: callout
 To review all the code used in setting up these custom keyboard interactions, scroll back up to the embedded CodePen example from earlier in this article and select the JS tab.
-{.callout}
+:::
 
 ## When JavaScript is disabled
 

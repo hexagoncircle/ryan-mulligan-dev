@@ -36,8 +36,9 @@ Now that we've gleaned a tiny slice of web history, it's arguable that a marquee
 </div>
 ```
 
+::: callout
 Be sure to set `aria-hidden="true"` to hide any repeated or redundant content from screen readers.
-{.callout}
+:::
 
 The marquee concept has been done plenty of times and may seem old hat. However, most of the examples I came across weren't fully responsive. Many rely on a fixed-width parent or having enough elements to overflow the container for a seamless loop. What if, when the parent container is wider than the content overflow, the items spread themselves out so that the loop works at any size? I experimented with a few ideas to see what's possible in making this concept more flexible.
 

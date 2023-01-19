@@ -5,12 +5,12 @@
 @import url("_font.css") layer(base);
 @import url("_variables.css") layer(base);
 @import url("_base.css") layer(base);
+@import url("_code.css") layer(base);
 
 @import url("_layout.css") layer(layout);
 @import url("_navigation.css") layer(layout);
 @import url("_content.css") layer(layout);
 
-@import url("_code.css") layer(components);
 @import url("_theme-controls.css") layer(components);
 @import url("_projects.css") layer(components);
 

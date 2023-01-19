@@ -50,8 +50,9 @@ When an item is selected, Flip's `getState` method is called to collect data abo
 const state = Flip.getState(item);
 ```
 
+::: callout
 The Flip plugin by default only records the following CSS properties: transforms (x, y, scaleX, scaleY, rotation, skewX), width, height, and opacity. However, it can be configured to affect others by adding a `props` property with a comma-delimited list of values in the `options` object. Learn more under the "Usage" section in [the docs](https://greensock.com/docs/v3/Plugins/Flip)!
-{.callout}
+:::
 
 ### Step 2: Make the changes
 
@@ -76,8 +77,9 @@ Flip checks out the stored `state` object, compares it to the item's current sta
 
 I did nearly nothing here. This is all GSAP Flip sorcery. My goodness it's good.
 
+::: callout
 You might be wondering about the `reducedMotion` variable; review its value in the full version of the JavaScript code (click the JS tab in the CodePen embed above). It detects if a user has requested less movement on screen. If true, the item will be instantly added to the cart instead of animating across the page. Learn more about `prefers-reduced-motion` in [this web.dev article](https://web.dev/prefers-reduced-motion/).
-{.callout}
+:::
 
 In order to get the item to move into the cart once the animation has finished, the `onComplete` callback is used to append the item as a child.
 

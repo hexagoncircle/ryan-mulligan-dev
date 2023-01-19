@@ -24,8 +24,9 @@ Danish sugar plum chocolate cake wafer:
 
 Pastry jelly tootsie roll biscuit sesame snaps sesame snaps cotton candy sweet. Muffin tart cupcake jelly marzipan jelly beans liquorice pudding. Croissant powder marshmallow donut candy canes cupcake.
 
+::: callout
 Cake gummies powder chocolate cake gummi bears bear claw chocolate sugar plum apple pie muffin.
-{.callout}
+:::
 
 Tiramisu apple pie muffin fruitcake wafer powder macaroon muffin caramels.
 

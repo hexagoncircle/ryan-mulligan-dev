@@ -1,6 +1,7 @@
 const { EleventyRenderPlugin } = require("@11ty/eleventy");
-const markdownIt = require("markdown-it");
-const markdownItAttrs = require("markdown-it-attrs");
+const markdown = require("markdown-it");
+const markdownAttrs = require("markdown-it-attrs");
+const markdownContainer = require("markdown-it-container");
 const pluginPostCss = require("eleventy-plugin-postcss");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginTimeToRead = require("eleventy-plugin-time-to-read");
@@ -15,13 +16,25 @@ const shortcodes = require("./utils/shortcodes.js");
 module.exports = function (eleventyConfig) {
   eleventyConfig.setLibrary(
     "md",
-    markdownIt({
+    markdown({
       html: true,
       breaks: true,
       linkify: true,
     })
   );
-  eleventyConfig.amendLibrary("md", (mdLib) => mdLib.use(markdownItAttrs));
+  eleventyConfig.amendLibrary("md", (library) => {
+    library.use(markdownAttrs);
+    library.use(markdownContainer, "callout", {
+      render: function (tokens, idx) {
+        var m = tokens[idx].info.trim().match(/^aside\s+(.*)$/);
+        if (tokens[idx].nesting === 1) {
+          return '<aside class="' + tokens[idx].info.trim() + '">\n';
+        } else {
+          return "</aside>\n";
+        }
+      },
+    });
+  });
 
   eleventyConfig.addPlugin(EleventyRenderPlugin);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);

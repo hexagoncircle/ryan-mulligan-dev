@@ -17,8 +17,9 @@ When I had first assembled a gallery of [CodePen projects](https://codepen.io/he
 
 This was a tough layout to get right! Ultimately, I decided to go with a slightly different [homepage](/) design that didn't rely on aligning the start position inside the page content area.
 
+::: callout
 In case my site design has been updated, this is for my future friends reading: You can see the aforementioned version of my site in [this tweet](https://twitter.com/hexagoncircle/status/1338885523658555394?s=20&t=u2zpk5LgvhQeV5_YwYB5rg) from August 2021.
-{.callout}
+:::
 
 ## Revisiting the desired result
 
@@ -57,8 +58,9 @@ The CodePen above follows Josh's [padding example](https://www.joshwcomeau.com/c
 
 The first and third columns are set to `1fr`, causing them to fill the space surrounding either side of the second. The value of the second column is calculated by a CSS `min()` function, which selects the smaller of its two values depending on the window size. On screensizes smaller than `--content-max-width`, padding is created on either side by doubling a space value and subtracting it from 100% to suppress any unwanted page overflow.
 
+::: callout
 Something to note is that `calc()` can be used but is not necessary for calculations written inside `min()`, `max()`, and `clamp()` functions.
-{.callout}
+:::
 
 A noticeable difference in this code are the [named grid lines](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines) declared in `grid-template-columns`. Appending `-start` and `-end` creates a named area (or [custom-ident](https://drafts.csswg.org/css-values-4/#custom-idents)) that can be referenced in a child element's `grid-column` property. When applied, an element will span the area between these two lines.
 
@@ -86,8 +88,9 @@ With the page layout finished, we can move on to the gallery component, starting
 
 This is where scroll behavior and scroll snapping are handled, as well as stretching the viewport width. It inherits the `grid-columns-template` from the parent grid, acquiring the same column values and named grid lines.
 
+::: callout
 `inherit` works as expected since the gallery spans the full row of the parent grid, so its column dimensions match. However, its grid is independent of the parent one, unlike `subgrid` which allows nested elements to utilize the parent grid. [This article](https://www.annalytic.com/css-subgrid-vs-nested-grid.html) by Anna Monus explains it well. [CSS Subgrid](https://www.smashingmagazine.com/2022/03/new-css-features-2022/#subgrid) support is very low at the time of writing.
-{.callout}
+:::
 
 In browser developer tools, we can enable layout grid lines visually and get a sense of how it's all working. I'm using Chrome dev tools in the screenshot below but Firefox and Safari share similar steps.
 
