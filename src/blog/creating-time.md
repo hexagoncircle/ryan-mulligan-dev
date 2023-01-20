@@ -5,7 +5,7 @@ ogImage: /assets/social/creating-time.png
 date: 2023-01-20
 ---
 
-For my birthday, my partner put together the sweetest, most thoughtful surprise I could ever imagine. She recognized that I had been in a complete creative rut the previous year. I'd complain that I work too much, play too little. I'm too tired. Way too busy. This, that, and the other thing is blocking my time in some way. Sometimes I would straight up conclude that I'm just not _good_ at anything—a collaboration between imposter syndrome and plateauing.
+For my birthday, my partner put together the sweetest, most thoughtful surprise I could ever imagine. She recognized that I had been in a complete creative rut the previous year. I'd complain that I work too much, play too little. I'm too tired. Way too busy. This, that, and the other thing is blocking my time. Sometimes I would straight up conclude that I'm just not _good_ at anything—a collaboration between imposter syndrome and plateauing.
 
 I'd often sink into the couch after a long day instead of logging time towards hobbies or creative projects. All day screen time had frazzled my mind. But then I'd follow up with more of it, doomscrolling on my phone or gazing at the television. Not a lot was being accomplished outside of work hours.
 
