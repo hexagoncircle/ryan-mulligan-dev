@@ -74,7 +74,7 @@
         "text-accent": "hsl(0, 0%, 0%)",
         "bg": "hsl(63, 88%, 64%)",
         "bg-accent": "hsl(63, 88%, 78%)",
-        "bg-shadow": "hsl(63, 75%, 55%)",
+        "bg-shadow": "hsl(63, 83%, 57%)",
         "primary": "hsl(0, 0%, 7%)",
         "secondary": "hsl(0, 0%, 7%)"
       },
