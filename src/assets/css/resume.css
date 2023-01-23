@@ -42,7 +42,7 @@
   --dot-size: 0.7em;
   --dot-inline-offset: var(--space-xs);
   --dot-block-offset: 0.5em;
-  --stroke-size: 0.17em;
+  --stroke-size: 0.175em;
 
   margin-block-start: var(--space-2xs);
 }
@@ -97,9 +97,29 @@
 }
 
 @media print {
+  html[data-theme][data-color-scheme] {
+    --color-text: hsl(0, 0%, 5%);
+    --color-text-accent: hsl(0, 0%, 20%);
+    --color-bg: hsl(0, 0%, 98%);
+    --color-bg-accent: hsl(0, 0%, 93%);
+    --color-bg-shadow: hsl(0, 0%, 95%);
+    --color-primary: hsl(314, 88%, 51%);
+    --color-secondary: hsl(230, 80%, 60%);
+  }
+
   html {
-    font-size: 75%;
+    font-size: 65%;
     --page-max-width: 65ch;
+  }
+
+  .personal-info dl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .multi-column {
+    column-width: unset;
+    column-count: 3;
   }
 
   .page-header,
@@ -111,12 +131,18 @@
     margin-block: var(--space-2xl);
   }
 
-  .job,
   .role {
+    --dot-size: 10px;
+    --dot-block-offset: 6px;
+    --stroke-size: 2px;
     break-before: auto;
     break-after: auto;
     break-inside: avoid;
     position: relative;
+  }
+
+  .role:not(:last-child):not(:only-child)::after {
+    background-color: var(--color-primary) !important;
   }
 
   .job {
@@ -126,6 +152,8 @@
   }
 
   .job-location {
+    display: block;
+    font-size: var(--font--1);
     background: unset;
     padding: unset;
   }
