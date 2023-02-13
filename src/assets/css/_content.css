@@ -7,6 +7,10 @@
   --space: var(--space-lg);
 }
 
+.content blockquote code {
+  font-size: 0.75em;
+}
+
 .content pre[class*="language-"],
 .content pre[class*="language-"] + *:not(h2) {
   --space: var(--space-lg);
