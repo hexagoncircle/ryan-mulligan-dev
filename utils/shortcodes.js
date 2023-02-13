@@ -14,10 +14,10 @@ module.exports = {
     const hash = pathname[pathname.length - 1];
 
     return `
-    <p class="codepen" data-height="${height}" data-preview="${preview}" data-default-tab="${defaultTab}" data-slug-hash="${hash}" data-user="${user}" class="codepen">
-      <span><a href="${url}">See the pen</a> (<a href="${base}/${user}">@${user}</a>) on <a href="${base}">CodePen</a>.</span>
-    </p>
-    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+<p class="codepen" data-height="${height}" data-preview="${preview}" data-default-tab="${defaultTab}" data-slug-hash="${hash}" data-user="${user}" class="codepen">
+  <span><a href="${url}">See the pen</a> (<a href="${base}/${user}">@${user}</a>) on <a href="${base}">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
     `;
   },
 
