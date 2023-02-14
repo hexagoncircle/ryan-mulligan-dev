@@ -10,7 +10,7 @@ I was recently prototyping a component layout that included a way to toggle the 
 
 ## Template or auto layout?
 
-What are the differences between `grid-template-*` and `grid-auto-*` when defined for columns or rows in a grid layout? Ire Aderinokun has [a fantastic article](https://bitsofco.de/understanding-the-difference-between-grid-template-and-grid-auto/) that thoroughly explains these distinctions and I recommend giving it a read. I'll try to quickly summarize: `grid-template-*` sets explicit column and row tracks, while `grid-auto-*` creates implicit track patterns.
+What are the differences between `grid-template-*` and `grid-auto-*` when declared for columns or rows in a grid layout? Ire Aderinokun has [a fantastic article](https://bitsofco.de/understanding-the-difference-between-grid-template-and-grid-auto/) that thoroughly explains these distinctions and I recommend giving it a read. I'll try to quickly summarize: `grid-template-*` sets explicit column and row tracks, while `grid-auto-*` creates implicit track patterns.
 
 The following excerpt in the "How grid-auto works" section from the article stood out to me:
 
