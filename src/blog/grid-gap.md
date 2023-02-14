@@ -3,7 +3,7 @@ title: CSS Grid Gap Behavior with Hidden Elements
 description: Some discoveries on how the CSS Grid gap property operates when hiding items in grid-template and grid-auto layouts.
 subtitle: Some discoveries on how the CSS gap property operates when hiding items in grid-template & grid-auto layouts
 ogImage: /assets/social/grid-gap-behavior.png
-date: 2023-02-12
+date: 2023-02-14
 ---
 
 I was recently prototyping a component layout that included a way to toggle the visibility of sibling elements inside a grid display. What tripped me up was, while these elements were hidden, all of the container's `gap` gutters remained, leaving undesired extra visual spacing. I expected these gutters to collapse. The reason they stick around is related to explicitly defining grid templates.
