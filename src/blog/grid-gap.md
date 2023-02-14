@@ -2,7 +2,7 @@
 title: CSS Grid Gap Behavior with Hidden Elements
 description: Some discoveries on how the CSS Grid gap property operates when hiding items in grid-template and grid-auto layouts.
 subtitle: Some discoveries on how the CSS gap property operates when hiding items in grid-template & grid-auto layouts
-ogImage: /assets/social/creating-time.png
+ogImage: /assets/social/grid-gap-behavior.png
 date: 2023-02-12
 ---
 
