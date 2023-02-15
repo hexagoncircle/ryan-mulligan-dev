@@ -33,7 +33,7 @@ _Note:_ I'm toggling the container height value to help emphasize the difference
 
 So what's happening here? When collapsed, the `grid-template-rows` container is slightly taller than its `grid-auto-rows` counterpart because of the extra space appearing beneath the remaining visible elements. Recall that rows are _explicitly_ set with `grid-template-rows`. In this situation, the `gap` gutters still apply even when elements are hidden or removed from the container.
 
-I ending up moving forward with `grid-auto-rows` for my component's layout needs. You can see a stripped down version of it in the CodePen below. The classic small screen navigation!
+I ended up moving forward with `grid-auto-rows` for my component's layout needs. You can see a stripped down version of it in the CodePen below. The classic small screen navigation!
 
 {% codepen "https://codepen.io/hexagoncircle/pen/zYJOGbv" %}
 
