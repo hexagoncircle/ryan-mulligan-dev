@@ -24,6 +24,10 @@ module.exports = {
     return `/src/assets/icons/${name}.svg`;
   },
 
+  limit: (array, limit) => {
+    return array.slice(0, limit);
+  },
+
   obfuscate: function (str) {
     const chars = [];
     for (var i = str.length - 1; i >= 0; i--) {

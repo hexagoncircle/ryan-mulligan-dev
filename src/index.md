@@ -3,18 +3,21 @@ layout: home
 subtitle: Passenger through space and time, front-end web builder & bittersweet songs enthusiast
 ---
 
-## Blog posts
+## Most recent articles
 
 Sometimes general thoughts and rambles, mostly code snippets and front-end development discoveries to share with the world wide web.
 
 <ul>
-  {%- for post in collections.posts | reverse  -%}
+  {%- for post in collections.posts | reverse | limit(6) -%}
     <li>
       <a href="{{ post.url }}">{{ post.data.title }}</a>
       <span class="source">{{ post.data.date | postDate }}</span>
     </li>
   {%- endfor -%}
 </ul>
+
+[Read more articles](/blog)
+{.cta}
 
 ## The bit about myself
 
@@ -26,7 +29,7 @@ When I'm not coding, you can catch me [noodling on my acoustic guitar](https://t
 Want to know more? <rm-wave-hello webc:nokeep />
 {% endrenderTemplate %}
 
-## Articles & features
+## Features around the web
 
 <ul>
   {%- for feature in features -%}

@@ -204,3 +204,30 @@
   color: var(--color-secondary);
   transform: rotate(45deg);
 }
+
+.cta {
+  display: inline-block;
+}
+
+.cta:has(:hover, :focus-visible)::after, {
+  color: var(--color-secondary);
+  animation: cta 400ms var(--ease) infinite;
+}
+
+@keyframes cta {
+  50% {
+    transform: translateX(2px);
+  }
+}
+
+.cta::after {
+  content: "→";
+  display: inline-flex;
+  margin-inline-start: var(--space-3xs);
+}
+
+.articles-list > li + li {
+  margin-block-start: var(--space-sm);
+  padding-block-start: var(--space-sm);
+  border-block-start: 1px solid var(--color-bg-accent);
+}
