@@ -3,7 +3,7 @@ layout: home
 subtitle: Passenger through space and time, front-end web builder & bittersweet songs enthusiast
 ---
 
-## My most recent articles
+## Latest articles
 
 Sometimes general thoughts and rambles, mostly code snippets and front-end development discoveries to share with the world wide web.
 
