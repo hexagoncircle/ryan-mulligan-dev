@@ -3,7 +3,7 @@ layout: home
 subtitle: Passenger through space and time, front-end web builder & bittersweet songs enthusiast
 ---
 
-## Most recent articles
+## My most recent articles
 
 Sometimes general thoughts and rambles, mostly code snippets and front-end development discoveries to share with the world wide web.
 
@@ -29,7 +29,7 @@ When I'm not coding, you can catch me [noodling on my acoustic guitar](https://t
 Want to know more? <rm-wave-hello webc:nokeep />
 {% endrenderTemplate %}
 
-## Features around the web
+## Featured around the web
 
 <ul>
   {%- for feature in features -%}
