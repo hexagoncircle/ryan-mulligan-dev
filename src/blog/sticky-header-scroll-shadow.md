@@ -16,7 +16,7 @@ We've seen it plenty of times around the web where a website's page header follo
 
 What if we desired something a little bit extra, like applying a `box-shadow` to the sticky header as soon as the page is scrolled? I thought it was worth sharing one solution that has worked well for me to accomplish this goal. Check out the following CodePen demo. As soon as the page is scrolled, a shadow fades in below the header.
 
-{% codepen "https://codepen.io/hexagoncircle/pen/qBMeWqo/2ff53ae5a630280964c633228b4b532d", "result", "400" %}
+{% codepen "https://codepen.io/hexagoncircle/pen/qBMeWqo", "result", "400" %}
 
 An element that I've decided to call an "intercept"—naming is hard and this felt right—is created and inserted above the header component at the top of the page. The [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) is being used to observe when the intercept is no longer visible in the viewport, which happens as soon as the page scrolls. In the demo's JS tab, we find a new `IntersectionObserver` that observes the intercept element. When the element is _not_ intersecting, meaning that it is no longer visible in the viewport, a class is applied to the page header.
 
