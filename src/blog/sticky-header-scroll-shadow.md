@@ -18,7 +18,7 @@ What if we desired something a little bit extra, like applying a `box-shadow` to
 
 {% codepen "https://codepen.io/hexagoncircle/pen/qBMeWqo", "result", "400" %}
 
-An element that I've decidedly dubbed an "intercept"—naming is hard and this felt right in the moment—is created and inserted above the page header at the top of the page. Inspect the <abbr title="Document Object Model">DOM</abbr> and we'll find:
+An element that I've decidedly dubbed an "intercept"—naming is hard and this felt right in the moment—is created and inserted above the page header at the top of the page. If we open the browser dev tools and inspect the <abbr title="Document Object Model">DOM</abbr>, we'll find:
 
 ```html
  <div data-observer-intercept></div>
@@ -39,7 +39,7 @@ const observer = new IntersectionObserver(([entry]) => {
 observer.observe(intercept);
 ```
 
-If we open the browser dev tools and inspect the DOM, we catch the `active` class name on the page header element toggling on and off as we scroll down and back up.
+Inspecting the DOM again, we'll catch the `active` class name on the page header element toggling on and off as we scroll down and back up.
 
 ## Delay that shadow
 
