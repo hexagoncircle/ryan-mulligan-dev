@@ -1,0 +1,2622 @@
+{
+  "lastFetched": "2023-04-02T15:24:59.561Z",
+  "children": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Lee Martin",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/59a145a26e71f16ab430c29c075c8a20ad874d13d415408db750695f4c9d94bc.jpg",
+        "url": "https://twitter.com/leemartin"
+      },
+      "url": "https://twitter.com/leemartin/status/1638680808343969794",
+      "published": "2023-03-22T23:15:24+00:00",
+      "wm-received": "2023-03-22T23:40:55Z",
+      "wm-id": 1646823,
+      "wm-source": "https://brid.gy/comment/twitter/hexagoncircle/1638680808343969794/1638680808343969794",
+      "wm-target": "https://ryanmulligan.dev/blog/layout-breakouts/",
+      "content": {
+        "html": "Oh wow, and this expansion by <a href=\"https://twitter.com/hexagoncircle\">@hexagoncircle</a> is very nice. 🔥 <a href=\"https://ryanmulligan.dev/blog/layout-breakouts/\">ryanmulligan.dev/blog/layout-br…</a>\n<a class=\"u-mention\" href=\"https://twitter.com/rachelandrew\"></a>",
+        "text": "Oh wow, and this expansion by @hexagoncircle is very nice. 🔥 ryanmulligan.dev/blog/layout-br…"
+      },
+      "in-reply-to": "https://ryanmulligan.dev/blog/layout-breakouts/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Lauri Lännenmäki",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/747e9ae8d82027e7a83b33863680f1515fde9a56276399ba1bb7fe92c30fbe1f.jpg",
+        "url": "https://twitter.com/laurilllll"
+      },
+      "url": "https://twitter.com/laurilllll/status/1638242825195122693",
+      "published": "2023-03-21T18:15:01+00:00",
+      "wm-received": "2023-03-21T18:33:42Z",
+      "wm-id": 1645973,
+      "wm-source": "https://brid.gy/comment/twitter/hexagoncircle/1638242825195122693/1638242825195122693",
+      "wm-target": "https://ryanmulligan.dev/",
+      "content": {
+        "html": "I feel you. My most recent finding is <a href=\"https://ryanmulligan.dev/\">ryanmulligan.dev</a> Very good writing but mostly CSS though. \n\nAlso, if someone needs their own blogging site, you better checkout 👇\n<a class=\"u-mention\" href=\"https://twitter.com/SergiiKirianov\"></a>",
+        "text": "I feel you. My most recent finding is ryanmulligan.dev Very good writing but mostly CSS though. \n\nAlso, if someone needs their own blogging site, you better checkout 👇"
+      },
+      "in-reply-to": "https://ryanmulligan.dev/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Frontend Dogma",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/f86fa5ee44022d672f562b1d0cd54c13925fdec45ee000806485facc952b1d79.jpg",
+        "url": "https://twitter.com/frontenddogma"
+      },
+      "url": "https://twitter.com/frontenddogma/status/1636052455556370434",
+      "published": "2023-03-15T17:11:16+00:00",
+      "wm-received": "2023-03-15T17:57:06Z",
+      "wm-id": 1641599,
+      "wm-source": "https://brid.gy/post/twitter/hexagoncircle/1636052455556370434",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "content": {
+        "html": "CSS Grid Gap Behavior with Hidden Elements, by @hexagoncircle@fosstodon.org:\n\n<a href=\"https://ryanmulligan.dev/blog/grid-gap/\">ryanmulligan.dev/blog/grid-gap/</a>",
+        "text": "CSS Grid Gap Behavior with Hidden Elements, by @hexagoncircle@fosstodon.org:\n\nryanmulligan.dev/blog/grid-gap/"
+      },
+      "mention-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Lauri Lännenmäki",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/747e9ae8d82027e7a83b33863680f1515fde9a56276399ba1bb7fe92c30fbe1f.jpg",
+        "url": "https://twitter.com/laurilllll"
+      },
+      "url": "https://twitter.com/laurilllll/status/1632470274334490624",
+      "published": "2023-03-05T19:56:57+00:00",
+      "wm-received": "2023-03-05T21:34:28Z",
+      "wm-id": 1634846,
+      "wm-source": "https://brid.gy/comment/twitter/hexagoncircle/1632470274334490624/1632470274334490624",
+      "wm-target": "https://ryanmulligan.dev/blog/layout-breakouts/",
+      "content": {
+        "html": "Grid. \n\nThis is one of my favourite articles. It has some other fancy stuff too like clamp and minmax\n\n <a href=\"https://ryanmulligan.dev/blog/layout-breakouts/\">ryanmulligan.dev/blog/layout-br…</a>\n<a class=\"u-mention\" href=\"https://twitter.com/justinfagnani\"></a>",
+        "text": "Grid. \n\nThis is one of my favourite articles. It has some other fancy stuff too like clamp and minmax\n\n ryanmulligan.dev/blog/layout-br…"
+      },
+      "in-reply-to": "https://ryanmulligan.dev/blog/layout-breakouts/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "青紫のミヤザワ@a11y🐇",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/877608b5918338b875da455f9e28a18c2801176adc9ebfed92c1e312e23891e7.jpg",
+        "url": "https://twitter.com/purplemiyazawa"
+      },
+      "url": "https://twitter.com/purplemiyazawa/status/1626973034459566081",
+      "published": "2023-02-18T15:52:53+00:00",
+      "wm-received": "2023-02-18T16:08:57Z",
+      "wm-id": 1625739,
+      "wm-source": "https://brid.gy/repost/twitter/hexagoncircle/1625576218354667521/1626973034459566081",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "content": {
+        "text": "I wrote a little something that tripped me up when declaring CSS grid templates, adding gaps, and hiding elements. Hope it might help you as well! 🙌  ryanmulligan.dev/blog/grid-gap/"
+      },
+      "repost-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "황규연 / Kyooyeon Hwang",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/f2c76b88cc3d95af5293d378796fede3d3aa609e0ecb2029f6f4d0e455082d77.jpg",
+        "url": "https://twitter.com/yeoni"
+      },
+      "url": "https://twitter.com/yeoni/status/1626957172201455617",
+      "published": "2023-02-18T14:49:51+00:00",
+      "wm-received": "2023-02-18T15:05:22Z",
+      "wm-id": 1625725,
+      "wm-source": "https://brid.gy/post/twitter/hexagoncircle/1626957172201455617",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "content": {
+        "html": "숨겨진 요소가 있는 CSS 그리드 간격 동작\ngrid-template 및 grid-auto 레이아웃에서 항목을 숨길 때 CSS 간격 속성이 작동하는 방식에 대한 몇 가지 발견\n(그냥 그리드 관련 글인가 궁금했는데 그리드에 대한 정보를 또 하나 발견... )\n<a class=\"u-mention\" href=\"https://ryanmulligan.dev/blog/grid-gap/\"></a>",
+        "text": "숨겨진 요소가 있는 CSS 그리드 간격 동작\ngrid-template 및 grid-auto 레이아웃에서 항목을 숨길 때 CSS 간격 속성이 작동하는 방식에 대한 몇 가지 발견\n(그냥 그리드 관련 글인가 궁금했는데 그리드에 대한 정보를 또 하나 발견... )"
+      },
+      "mention-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "황규연 / Kyooyeon Hwang",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/f2c76b88cc3d95af5293d378796fede3d3aa609e0ecb2029f6f4d0e455082d77.jpg",
+        "url": "https://twitter.com/yeoni"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1625576218354667521#favorited-by-19333643",
+      "published": null,
+      "wm-received": "2023-02-18T15:05:21Z",
+      "wm-id": 1625724,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1625576218354667521/19333643",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Renee Quinn",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/f798ebdcd8e8d21080dc8b4ad125dad475b7cdcf38d0bcd09a32a84e8cd67a71.jpg",
+        "url": "https://twitter.com/_rquinn"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1625576218354667521#favorited-by-1298463445923160065",
+      "published": null,
+      "wm-received": "2023-02-16T20:35:57Z",
+      "wm-id": 1624542,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1625576218354667521/1298463445923160065",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "rwittmann",
+        "photo": "https://webmention.io/avatar/abs.twimg.com/0e6b2cd70aa5b35dec24ca4e1e63f8963f0118736d9ec3bba77e3a8c99a27bc2.png",
+        "url": "https://twitter.com/rwittmann"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1625576218354667521#favorited-by-16094513",
+      "published": null,
+      "wm-received": "2023-02-15T21:41:03Z",
+      "wm-id": 1623559,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1625576218354667521/16094513",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "barthelemy.ehui",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/ea7d887520e9bb2d685be061b5b8acde4962559c4f6d0edce67a594aaa854402.jpg",
+        "url": "https://twitter.com/ehui_barthelemy"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1625576218354667521#favorited-by-3294986356",
+      "published": null,
+      "wm-received": "2023-02-15T21:10:21Z",
+      "wm-id": 1623552,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1625576218354667521/3294986356",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Cath Levett",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/b13ebc186bfe29976ec606c6ecc392c2000f08ab13babd02837f70b2f69368ee.jpg",
+        "url": "https://twitter.com/CathLevett"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1625576218354667521#favorited-by-474038759",
+      "published": null,
+      "wm-received": "2023-02-15T17:07:46Z",
+      "wm-id": 1623447,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1625576218354667521/474038759",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "tanangular",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/99eaf005a189df113a75c71a394d9709ec60f0fa2964112a886c52a3cbf7953b.jpg",
+        "url": "https://twitter.com/cooldezign"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1625576218354667521#favorited-by-17018537",
+      "published": null,
+      "wm-received": "2023-02-15T16:16:24Z",
+      "wm-id": 1623420,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1625576218354667521/17018537",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Tanner Dolby",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/ef864e0e4634eba979272b9a3ea480536b5ce71402ee55651a7f69a5950b5f2f.jpg",
+        "url": "https://twitter.com/tannerdolby"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1625576218354667521#favorited-by-1259622945955016705",
+      "published": null,
+      "wm-received": "2023-02-15T15:51:22Z",
+      "wm-id": 1623414,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1625576218354667521/1259622945955016705",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Pablo Lara H",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/9a8b209d6d0e2dd068ad8e9cd247a0b247b0b42d0ae6aa497b84900e35019931.jpg",
+        "url": "https://twitter.com/pablolarah"
+      },
+      "url": "https://twitter.com/pablolarah/status/1625874270650880003",
+      "published": "2023-02-15T15:06:48+00:00",
+      "wm-received": "2023-02-15T15:15:47Z",
+      "wm-id": 1623399,
+      "wm-source": "https://brid.gy/post/twitter/hexagoncircle/1625874270650880003",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "photo": [
+        "https://pbs.twimg.com/media/FpBD2JwXgAAMlvE.png"
+      ],
+      "content": {
+        "html": "🔴🟣 CSS Grid Gap Behavior with Hidden Elements\n by Ryan Mulligan <a href=\"https://twitter.com/hexagoncircle\">@hexagoncircle</a>  @hexagoncircle@fosstodon.org   \n\n<a href=\"https://twitter.com/search?q=%23CSS\">#CSS</a> <a href=\"https://twitter.com/search?q=%23cssgridgap\">#cssgridgap</a> <a href=\"https://twitter.com/search?q=%23webdev\">#webdev</a> \n\n<a href=\"https://ryanmulligan.dev/blog/grid-gap/\">ryanmulligan.dev/blog/grid-gap/</a>",
+        "text": "🔴🟣 CSS Grid Gap Behavior with Hidden Elements\n by Ryan Mulligan @hexagoncircle  @hexagoncircle@fosstodon.org   \n\n#CSS #cssgridgap #webdev \n\nryanmulligan.dev/blog/grid-gap/"
+      },
+      "mention-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "vipul",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/9d25222608a0d573e67fd884b713271cfc3edf2a34c59bc9a8900ab4bd065d6f.png",
+        "url": "https://twitter.com/vipulnkm"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1625576218354667521#favorited-by-1510431638",
+      "published": null,
+      "wm-received": "2023-02-15T15:15:47Z",
+      "wm-id": 1623400,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1625576218354667521/1510431638",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ajmal Afif",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/f631246f305ad2c3fa94627566572c6b22032fd3dd1cc7db67111a313bfe261d.jpg",
+        "url": "https://twitter.com/ajmalafif"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1625576218354667521#favorited-by-29646710",
+      "published": null,
+      "wm-received": "2023-02-15T12:16:58Z",
+      "wm-id": 1623340,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1625576218354667521/29646710",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "spb@uiuxdev.social",
+        "photo": "https://webmention.io/avatar/fosstodon.org/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png",
+        "url": "https://uiuxdev.social/@spb"
+      },
+      "url": "https://fosstodon.org/@hexagoncircle/109863921703481246#favorited-by-109634428902913258",
+      "published": null,
+      "wm-received": "2023-02-15T11:01:53Z",
+      "wm-id": 1623324,
+      "wm-source": "https://brid.gy/like/mastodon/@hexagoncircle@fosstodon.org/109863921703481246/109634428902913258",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dr nutCase",
+        "photo": "https://webmention.io/avatar/abs.twimg.com/0e6b2cd70aa5b35dec24ca4e1e63f8963f0118736d9ec3bba77e3a8c99a27bc2.png",
+        "url": "https://twitter.com/mauricenyanja"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1625576218354667521#favorited-by-805390142085206016",
+      "published": null,
+      "wm-received": "2023-02-15T10:20:09Z",
+      "wm-id": 1623310,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1625576218354667521/805390142085206016",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "CSS {IRL}",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/18cc05bb841dc1e9808263eb14eb1931263921e414673920d572eb4f6ee2a340.jpg",
+        "url": "https://twitter.com/CSSInRealLife"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1625576218354667521#favorited-by-984162487544242176",
+      "published": null,
+      "wm-received": "2023-02-15T09:45:53Z",
+      "wm-id": 1623296,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1625576218354667521/984162487544242176",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "NikolaySh4wn",
+        "photo": "https://webmention.io/avatar/abs.twimg.com/0e6b2cd70aa5b35dec24ca4e1e63f8963f0118736d9ec3bba77e3a8c99a27bc2.png",
+        "url": "https://twitter.com/shawnorium"
+      },
+      "url": "https://twitter.com/shawnorium/status/1625778764536852480",
+      "published": "2023-02-15T08:47:17+00:00",
+      "wm-received": "2023-02-15T09:15:00Z",
+      "wm-id": 1623291,
+      "wm-source": "https://brid.gy/repost/twitter/hexagoncircle/1625576218354667521/1625778764536852480",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "content": {
+        "text": "I wrote a little something that tripped me up when declaring CSS grid templates, adding gaps, and hiding elements. Hope it might help you as well! 🙌  ryanmulligan.dev/blog/grid-gap/"
+      },
+      "repost-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Amirhossein",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/cb45303d0b21cb9d46b2313279d4bc2c578e1244326c60e1209d4c489ac85468.jpg",
+        "url": "https://twitter.com/_amirhosseinf"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1625576218354667521#favorited-by-1623937590113058817",
+      "published": null,
+      "wm-received": "2023-02-15T08:10:42Z",
+      "wm-id": 1623261,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1625576218354667521/1623937590113058817",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ben Smith",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/cf11bec7951816d017329e8e25178d1ba01dee732c6c18ef5033012ff0ae25db.jpg",
+        "url": "https://twitter.com/smithbm2316"
+      },
+      "url": "https://twitter.com/smithbm2316/status/1625640305818234881",
+      "published": "2023-02-14T23:37:06+00:00",
+      "wm-received": "2023-02-15T05:16:11Z",
+      "wm-id": 1623203,
+      "wm-source": "https://brid.gy/repost/twitter/hexagoncircle/1625576218354667521/1625640305818234881",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "content": {
+        "text": "I wrote a little something that tripped me up when declaring CSS grid templates, adding gaps, and hiding elements. Hope it might help you as well! 🙌  ryanmulligan.dev/blog/grid-gap/"
+      },
+      "repost-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Victor Foster",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/1f162030f10bed84278ab9f357656a991dd5df2c1cf9ee5d20329eb4af483867.jpg",
+        "url": "https://twitter.com/victor_foster"
+      },
+      "url": "https://twitter.com/victor_foster/status/1625707866408591361",
+      "published": "2023-02-15T04:05:34+00:00",
+      "wm-received": "2023-02-15T05:16:09Z",
+      "wm-id": 1623202,
+      "wm-source": "https://brid.gy/post/twitter/hexagoncircle/1625707866408591361",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "content": {
+        "html": "Such a great read on CSS grid templates\n<a class=\"u-mention\" href=\"https://ryanmulligan.dev/blog/grid-gap/\"></a>",
+        "text": "Such a great read on CSS grid templates"
+      },
+      "mention-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andy",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/7b0490a4bb53014cdccc3be2c8f50ba4ebf25332b5d3f0b2ac624738ca8bfa98.jpg",
+        "url": "https://twitter.com/DTAndyB"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1625576218354667521#favorited-by-72486886",
+      "published": null,
+      "wm-received": "2023-02-15T05:16:05Z",
+      "wm-id": 1623200,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1625576218354667521/72486886",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "David Leininger",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/ae87ebd47981b480f2b6ad211b9a8ef6bfd79e9594535e70973765280ccb3198.jpg",
+        "url": "https://twitter.com/davidleininger"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1625576218354667521#favorited-by-21155214",
+      "published": null,
+      "wm-received": "2023-02-15T05:16:05Z",
+      "wm-id": 1623201,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1625576218354667521/21155214",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ben Smith",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/cf11bec7951816d017329e8e25178d1ba01dee732c6c18ef5033012ff0ae25db.jpg",
+        "url": "https://twitter.com/smithbm2316"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1625576218354667521#favorited-by-1378031856017281025",
+      "published": null,
+      "wm-received": "2023-02-15T05:16:03Z",
+      "wm-id": 1623198,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1625576218354667521/1378031856017281025",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dolt Patterson",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/d151c8ba966f92d60f21533a6e15143453a5a970453be2ea9f4feb68569f7c14.jpg",
+        "url": "https://twitter.com/cacacabeza"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1625576218354667521#favorited-by-873226256019595264",
+      "published": null,
+      "wm-received": "2023-02-15T05:16:03Z",
+      "wm-id": 1623199,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1625576218354667521/873226256019595264",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "danny",
+        "photo": "https://webmention.io/avatar/fosstodon.org/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png",
+        "url": "https://mas.to/@dsongman"
+      },
+      "url": "https://fosstodon.org/@hexagoncircle/109863921703481246#favorited-by-109774239656170064",
+      "published": null,
+      "wm-received": "2023-02-15T04:50:06Z",
+      "wm-id": 1623185,
+      "wm-source": "https://brid.gy/like/mastodon/@hexagoncircle@fosstodon.org/109863921703481246/109774239656170064",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Derek P. Collins",
+        "photo": "https://webmention.io/avatar/cdn.fosstodon.org/408f914072eebbb7d321b1290f4f6247f3964d676549b9a8e2e858da39d34d27.png",
+        "url": "https://mastodon.design/@derek"
+      },
+      "url": "https://fosstodon.org/@hexagoncircle/109863921703481246#favorited-by-109775708392592709",
+      "published": null,
+      "wm-received": "2023-02-15T01:13:26Z",
+      "wm-id": 1623134,
+      "wm-source": "https://brid.gy/like/mastodon/@hexagoncircle@fosstodon.org/109863921703481246/109775708392592709",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Todd Morey",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/f1b648a04bf0df3070c7f65302c15dd3e6dc9a8e12f5b9c77298275a4235a3c8.jpg",
+        "url": "https://twitter.com/toddmorey"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1625576218354667521#favorited-by-14142690",
+      "published": null,
+      "wm-received": "2023-02-14T23:36:03Z",
+      "wm-id": 1623040,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1625576218354667521/14142690",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "bullzito",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/5430329d5ec66f5bc349c6d8dcec39f0d4007390d61e4d8da79219d1468ef12a.jpg",
+        "url": "https://twitter.com/bullzito"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1625576218354667521#favorited-by-17219815",
+      "published": null,
+      "wm-received": "2023-02-14T23:36:03Z",
+      "wm-id": 1623039,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1625576218354667521/17219815",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jason Lengstorf ⚡️",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/f511d62bfc16a853fc23637e000ac7a47845564588a9b2a968072563b3cd45de.jpg",
+        "url": "https://twitter.com/jlengstorf"
+      },
+      "url": "https://twitter.com/jlengstorf/status/1625632602668531712",
+      "published": "2023-02-14T23:06:29+00:00",
+      "wm-received": "2023-02-14T23:35:55Z",
+      "wm-id": 1623038,
+      "wm-source": "https://brid.gy/repost/twitter/hexagoncircle/1625576218354667521/1625632602668531712",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "content": {
+        "text": "I wrote a little something that tripped me up when declaring CSS grid templates, adding gaps, and hiding elements. Hope it might help you as well! 🙌  ryanmulligan.dev/blog/grid-gap/"
+      },
+      "repost-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jonathan",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/384797e81e582adba9938f898f298e3aaeb781dc86a35be3c95941587f156f02.jpg",
+        "url": "https://twitter.com/jony_silva"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1625576218354667521#favorited-by-15399427",
+      "published": null,
+      "wm-received": "2023-02-14T23:35:54Z",
+      "wm-id": 1623036,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1625576218354667521/15399427",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ursulo",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/0847dc42977a39e247d921e4f5a678c4e9905b6c1e258778408b41867d45418a.jpg",
+        "url": "https://twitter.com/UrsuloCabeza"
+      },
+      "url": "https://twitter.com/UrsuloCabeza/status/1625635722576244738",
+      "published": "2023-02-14T23:18:53+00:00",
+      "wm-received": "2023-02-14T23:35:54Z",
+      "wm-id": 1623037,
+      "wm-source": "https://brid.gy/repost/twitter/hexagoncircle/1625576218354667521/1625635722576244738",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "content": {
+        "text": "I wrote a little something that tripped me up when declaring CSS grid templates, adding gaps, and hiding elements. Hope it might help you as well! 🙌  ryanmulligan.dev/blog/grid-gap/"
+      },
+      "repost-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ben Gammon",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/0daac5b0e4f368a42b7b9fcceef77dd31632e2cf2e386200506ef76af3fcdfee.jpg",
+        "url": "https://twitter.com/bengammon"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1625576218354667521#favorited-by-71551446",
+      "published": null,
+      "wm-received": "2023-02-14T23:35:52Z",
+      "wm-id": 1623035,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1625576218354667521/71551446",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jesús Gómez",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/da763f180fa65c906e491fc47c776bf65d220e604c20111612c06b32f41e181d.jpg",
+        "url": "https://twitter.com/JesusGH_"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1625576218354667521#favorited-by-1514657611",
+      "published": null,
+      "wm-received": "2023-02-14T23:35:51Z",
+      "wm-id": 1623034,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1625576218354667521/1514657611",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ursulo",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/0847dc42977a39e247d921e4f5a678c4e9905b6c1e258778408b41867d45418a.jpg",
+        "url": "https://twitter.com/UrsuloCabeza"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1625576218354667521#favorited-by-1305267415941550088",
+      "published": null,
+      "wm-received": "2023-02-14T23:35:50Z",
+      "wm-id": 1623033,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1625576218354667521/1305267415941550088",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "James Bateson",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/3d91b52f4f959d4e9a0f62ecbae5977ed9f2166539e67213332d974d5074503a.jpg",
+        "url": "https://twitter.com/_jamesbateson"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1625576218354667521#favorited-by-1462094988209176590",
+      "published": null,
+      "wm-received": "2023-02-14T23:35:49Z",
+      "wm-id": 1623032,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1625576218354667521/1462094988209176590",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Kunuk Nykjaer",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/3be5bdaf91e3aa459e882c2305427df4bd9242ef508ff0e2e3ab18c405bb2c3f.jpg",
+        "url": "https://twitter.com/kunukn"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1625576218354667521#favorited-by-10437932",
+      "published": null,
+      "wm-received": "2023-02-14T23:35:48Z",
+      "wm-id": 1623031,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1625576218354667521/10437932",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Alex Carpenter",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/b4d9e8d3417cd99754fcb275f0a010c52e862723a1b5d6047fc9c868339d2c09.jpg",
+        "url": "https://twitter.com/hybrid_alex"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1625576218354667521#favorited-by-299812306",
+      "published": null,
+      "wm-received": "2023-02-14T23:35:45Z",
+      "wm-id": 1623030,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1625576218354667521/299812306",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jason Lengstorf ⚡️",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/f511d62bfc16a853fc23637e000ac7a47845564588a9b2a968072563b3cd45de.jpg",
+        "url": "https://twitter.com/jlengstorf"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1625576218354667521#favorited-by-15668072",
+      "published": null,
+      "wm-received": "2023-02-14T23:35:44Z",
+      "wm-id": 1623029,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1625576218354667521/15668072",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "_",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/f65b7696ed1158633a6de0438a3f71f58258d5a89a20c5a02a5e80058f27c8b2.jpg",
+        "url": "https://twitter.com/_adamwright"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1625576218354667521#favorited-by-72516430",
+      "published": null,
+      "wm-received": "2023-02-14T23:35:42Z",
+      "wm-id": 1623028,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1625576218354667521/72516430",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "hanan shoubaki",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/618263cdf0eebfd630fd5bac7838d47b8d302d7faf37b466705a5a24d558bf99.jpg",
+        "url": "https://twitter.com/sleeepybun"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1625576218354667521#favorited-by-610794677",
+      "published": null,
+      "wm-received": "2023-02-14T23:35:40Z",
+      "wm-id": 1623026,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1625576218354667521/610794677",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "T. Afif @ CSS Challenges",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/52104894ba58cf8c84a281f07f7cbd3fa7b290bd6a1e5ff99d2108d28c060fea.jpg",
+        "url": "https://twitter.com/ChallengesCss"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1625576218354667521#favorited-by-1384161676090437646",
+      "published": null,
+      "wm-received": "2023-02-14T23:35:40Z",
+      "wm-id": 1623027,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1625576218354667521/1384161676090437646",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Katie Langerman",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/77758ed88cb335e9c5ccdc59d7d179d0d96141db538a6a4fe2259b4f42a2c829.jpg",
+        "url": "https://twitter.com/KatieLangerman"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1625576218354667521#favorited-by-3104668668",
+      "published": null,
+      "wm-received": "2023-02-14T23:35:39Z",
+      "wm-id": 1623025,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1625576218354667521/3104668668",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Victor Foster",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/1f162030f10bed84278ab9f357656a991dd5df2c1cf9ee5d20329eb4af483867.jpg",
+        "url": "https://twitter.com/victor_foster"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1625576218354667521#favorited-by-15372644",
+      "published": null,
+      "wm-received": "2023-02-14T23:35:38Z",
+      "wm-id": 1623023,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1625576218354667521/15372644",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Kivi Teara",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/41a2a52de54ca77ac828dc68fa9a1a6037938f2a4f8c56f248b625eebc792770.jpg",
+        "url": "https://twitter.com/kivi_teara"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1625576218354667521#favorited-by-42754581",
+      "published": null,
+      "wm-received": "2023-02-14T23:35:38Z",
+      "wm-id": 1623024,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1625576218354667521/42754581",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Danks",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/bac3195bedb9af3841926712b38a5c5e26a5434ddefd04aff054ec8aa799b360.jpg",
+        "url": "https://twitter.com/JustinDanks"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1625576218354667521#favorited-by-31212390",
+      "published": null,
+      "wm-received": "2023-02-14T23:35:37Z",
+      "wm-id": 1623022,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1625576218354667521/31212390",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Noah Liebman",
+        "photo": "https://webmention.io/avatar/cdn.fosstodon.org/e2d621b39879d96dde7984fa7a5976e5758f1d01122789b81a4b7740cfcdfe8c.jpg",
+        "url": "https://mastodon.social/@noleli"
+      },
+      "url": "https://fosstodon.org/@hexagoncircle/109863921703481246#favorited-by-40984",
+      "published": null,
+      "wm-received": "2023-02-14T20:24:22Z",
+      "wm-id": 1622957,
+      "wm-source": "https://brid.gy/like/mastodon/@hexagoncircle@fosstodon.org/109863921703481246/40984",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Mike Aparicio",
+        "photo": "https://webmention.io/avatar/cdn.fosstodon.org/f54c39f0036cf3d1cdaa7e2f04ce0ad5b66663bf267342f42f2fccdb18f53c7a.jpg",
+        "url": "https://mastodon.social/@peruvianidol"
+      },
+      "url": "https://fosstodon.org/@hexagoncircle/109863921703481246#favorited-by-53182",
+      "published": null,
+      "wm-received": "2023-02-14T20:24:21Z",
+      "wm-id": 1622956,
+      "wm-source": "https://brid.gy/like/mastodon/@hexagoncircle@fosstodon.org/109863921703481246/53182",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jon Hicks",
+        "photo": "https://webmention.io/avatar/cdn.fosstodon.org/6f0a0adb7f508022af3b006df5f5725c0053a258e6a9549c061b60a9d7db82bf.jpg",
+        "url": "https://mastodon.social/@jonhicks"
+      },
+      "url": "https://fosstodon.org/@hexagoncircle/109863921703481246#favorited-by-47919",
+      "published": null,
+      "wm-received": "2023-02-14T20:24:20Z",
+      "wm-id": 1622955,
+      "wm-source": "https://brid.gy/like/mastodon/@hexagoncircle@fosstodon.org/109863921703481246/47919",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Brandon",
+        "photo": "https://webmention.io/avatar/cdn.fosstodon.org/26f1ac4e41200d53db291ffb9ce2bc9efbbbaa964d92245a2f92acb2fab41806.jpg",
+        "url": "https://appdot.net/@brandonscript"
+      },
+      "url": "https://appdot.net/@brandonscript/109863967207456269",
+      "published": "2023-02-14T16:11:41",
+      "wm-received": "2023-02-14T20:24:19Z",
+      "wm-id": 1622954,
+      "wm-source": "https://brid.gy/comment/mastodon/@hexagoncircle@fosstodon.org/109863921703481246/109863967449306507",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "content": {
+        "html": "<p><span class=\"h-card\"><a href=\"https://fosstodon.org/@hexagoncircle\" class=\"u-url\">@<span>hexagoncircle</span></a></span> yep just another reason why CSS grid is maniacal. Imagine a \"grid-gap-behavior: collapse;\" property 😥</p>",
+        "text": "@hexagoncircle yep just another reason why CSS grid is maniacal. Imagine a \"grid-gap-behavior: collapse;\" property 😥"
+      },
+      "in-reply-to": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "simgobb",
+        "photo": "https://webmention.io/avatar/cdn.fosstodon.org/9e6229ba675221f121ad7ab15c43ede9badfd44a2bc70bb525575bd5053907ca.png",
+        "url": "https://mastodon.uno/@simgobb"
+      },
+      "url": "https://fosstodon.org/@hexagoncircle/109863921703481246#favorited-by-109864695412438368",
+      "published": null,
+      "wm-received": "2023-02-14T20:24:18Z",
+      "wm-id": 1622953,
+      "wm-source": "https://brid.gy/like/mastodon/@hexagoncircle@fosstodon.org/109863921703481246/109864695412438368",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andy Bell",
+        "photo": "https://webmention.io/avatar/cdn.fosstodon.org/cea017ea6e66e1ee7d2f97f7278d83b1aa6a13ccb195c71c06a3e7b04d9bdfa0.jpg",
+        "url": "https://bell.bz/@andy"
+      },
+      "url": "https://fosstodon.org/@hexagoncircle/109863921703481246#reblogged-by-109365862157855301",
+      "published": null,
+      "wm-received": "2023-02-14T20:23:59Z",
+      "wm-id": 1622952,
+      "wm-source": "https://brid.gy/repost/mastodon/@hexagoncircle@fosstodon.org/109863921703481246/109365862157855301",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "repost-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Apple Annie :prami:",
+        "photo": "https://webmention.io/avatar/cdn.fosstodon.org/4821963268bea3d928f545928018d15657a6490333d8ec5588f18f74bec4acd1.jpg",
+        "url": "https://social.lol/@anniegreens"
+      },
+      "url": "https://fosstodon.org/@hexagoncircle/109863921703481246#reblogged-by-109740646085796830",
+      "published": null,
+      "wm-received": "2023-02-14T20:23:58Z",
+      "wm-id": 1622951,
+      "wm-source": "https://brid.gy/repost/mastodon/@hexagoncircle@fosstodon.org/109863921703481246/109740646085796830",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "repost-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andy Bell",
+        "photo": "https://webmention.io/avatar/cdn.fosstodon.org/cea017ea6e66e1ee7d2f97f7278d83b1aa6a13ccb195c71c06a3e7b04d9bdfa0.jpg",
+        "url": "https://bell.bz/@andy"
+      },
+      "url": "https://fosstodon.org/@hexagoncircle/109863921703481246#favorited-by-109365862157855301",
+      "published": null,
+      "wm-received": "2023-02-14T20:23:57Z",
+      "wm-id": 1622950,
+      "wm-source": "https://brid.gy/like/mastodon/@hexagoncircle@fosstodon.org/109863921703481246/109365862157855301",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Brandon",
+        "photo": "https://webmention.io/avatar/cdn.fosstodon.org/26f1ac4e41200d53db291ffb9ce2bc9efbbbaa964d92245a2f92acb2fab41806.jpg",
+        "url": "https://appdot.net/@brandonscript"
+      },
+      "url": "https://fosstodon.org/@hexagoncircle/109863921703481246#favorited-by-57867",
+      "published": null,
+      "wm-received": "2023-02-14T20:23:56Z",
+      "wm-id": 1622949,
+      "wm-source": "https://brid.gy/like/mastodon/@hexagoncircle@fosstodon.org/109863921703481246/57867",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Fernando Mateus",
+        "photo": "https://webmention.io/avatar/cdn.fosstodon.org/8b9e6c3330eec2f350eebb5e974202b7395f077f2ad86223e37fabfddf15cf61.jpg",
+        "url": "https://mastodon.social/@fernandomateus"
+      },
+      "url": "https://fosstodon.org/@hexagoncircle/109863921703481246#favorited-by-109262112676879618",
+      "published": null,
+      "wm-received": "2023-02-14T20:23:55Z",
+      "wm-id": 1622948,
+      "wm-source": "https://brid.gy/like/mastodon/@hexagoncircle@fosstodon.org/109863921703481246/109262112676879618",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "devolute@mastodon.social",
+        "photo": "https://webmention.io/avatar/cdn.fosstodon.org/f4b6bdd82fa77503406f7a1f1e013a74b61b3ee464c33a143c25efdf5059a465.jpg",
+        "url": "https://mastodon.social/@devolute"
+      },
+      "url": "https://fosstodon.org/@hexagoncircle/109863921703481246#favorited-by-108353063740662218",
+      "published": null,
+      "wm-received": "2023-02-14T20:23:54Z",
+      "wm-id": 1622947,
+      "wm-source": "https://brid.gy/like/mastodon/@hexagoncircle@fosstodon.org/109863921703481246/108353063740662218",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andrew Walpole",
+        "photo": "https://webmention.io/avatar/cdn.fosstodon.org/c22a5a90f4ccece3e9f8786e80419d97cd9e80b1a1430a44e980e3f5e214440c.gif",
+        "url": "https://mastodon.online/@walpolea"
+      },
+      "url": "https://fosstodon.org/@hexagoncircle/109863921703481246#favorited-by-109280988910593909",
+      "published": null,
+      "wm-received": "2023-02-14T20:23:53Z",
+      "wm-id": 1622946,
+      "wm-source": "https://brid.gy/like/mastodon/@hexagoncircle@fosstodon.org/109863921703481246/109280988910593909",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Julien ٩◔̯◔۶",
+        "photo": "https://webmention.io/avatar/cdn.fosstodon.org/d6bb96a4456a64ecf68981741270c8ec8d09cd1f6d97b0d61f41fffd3c156701.jpg",
+        "url": "https://mastodon.social/@jdassonval"
+      },
+      "url": "https://fosstodon.org/@hexagoncircle/109863921703481246#favorited-by-109864084188863550",
+      "published": null,
+      "wm-received": "2023-02-14T20:23:50Z",
+      "wm-id": 1622944,
+      "wm-source": "https://brid.gy/like/mastodon/@hexagoncircle@fosstodon.org/109863921703481246/109864084188863550",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Apple Annie :prami:",
+        "photo": "https://webmention.io/avatar/cdn.fosstodon.org/4821963268bea3d928f545928018d15657a6490333d8ec5588f18f74bec4acd1.jpg",
+        "url": "https://social.lol/@anniegreens"
+      },
+      "url": "https://fosstodon.org/@hexagoncircle/109863921703481246#favorited-by-109740646085796830",
+      "published": null,
+      "wm-received": "2023-02-14T20:23:50Z",
+      "wm-id": 1622945,
+      "wm-source": "https://brid.gy/like/mastodon/@hexagoncircle@fosstodon.org/109863921703481246/109740646085796830",
+      "wm-target": "https://ryanmulligan.dev/blog/grid-gap/",
+      "like-of": "https://ryanmulligan.dev/blog/grid-gap/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "",
+        "url": ""
+      },
+      "url": "https://sharethelinks.com/edition-304-by-anselm-hannemann/",
+      "published": null,
+      "wm-received": "2023-01-29T21:06:37Z",
+      "wm-id": 1610065,
+      "wm-source": "https://sharethelinks.com/edition-304-by-anselm-hannemann/",
+      "wm-target": "https://ryanmulligan.dev/blog/layout-breakouts/",
+      "mention-of": "https://ryanmulligan.dev/blog/layout-breakouts/",
+      "wm-property": "mention-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://sharethelinks.com/edition-304-by-anselm-hannemann/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Matthew",
+        "photo": "https://webmention.io/avatar/cdn.fosstodon.org/9c739ef40f555f87cb33366ce3eb7d73b1161198962d1b8e9bbcc63069a18333.png",
+        "url": "https://indieweb.social/@matthewhowell"
+      },
+      "url": "https://fosstodon.org/@hexagoncircle/109722526580311865#favorited-by-109287599665517297",
+      "published": null,
+      "wm-received": "2023-01-22T00:46:44Z",
+      "wm-id": 1604047,
+      "wm-source": "https://brid.gy/like/mastodon/@hexagoncircle@fosstodon.org/109722526580311865/109287599665517297",
+      "wm-target": "https://ryanmulligan.dev/blog/creating-time/",
+      "like-of": "https://ryanmulligan.dev/blog/creating-time/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Lynn Fisher",
+        "photo": "https://webmention.io/avatar/cdn.fosstodon.org/ce3bb756160a12fcdc1a1b9713f9099b3380fd54c9f458b1f47eae24ffbd9161.jpg",
+        "url": "https://front-end.social/@lynnandtonic"
+      },
+      "url": "https://fosstodon.org/@hexagoncircle/109722526580311865#favorited-by-109291727634761811",
+      "published": null,
+      "wm-received": "2023-01-21T17:10:57Z",
+      "wm-id": 1603914,
+      "wm-source": "https://brid.gy/like/mastodon/@hexagoncircle@fosstodon.org/109722526580311865/109291727634761811",
+      "wm-target": "https://ryanmulligan.dev/blog/creating-time/",
+      "like-of": "https://ryanmulligan.dev/blog/creating-time/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Guillaume Deblock",
+        "photo": "https://webmention.io/avatar/cdn.fosstodon.org/877c4a244b25dd1a976846a84062b94fbec0bd9f318df9e51835f8797436de92.jpg",
+        "url": "https://mastodon.social/@blokche"
+      },
+      "url": "https://fosstodon.org/@hexagoncircle/109722526580311865#favorited-by-109249076094097585",
+      "published": null,
+      "wm-received": "2023-01-21T16:38:24Z",
+      "wm-id": 1603899,
+      "wm-source": "https://brid.gy/like/mastodon/@hexagoncircle@fosstodon.org/109722526580311865/109249076094097585",
+      "wm-target": "https://ryanmulligan.dev/blog/creating-time/",
+      "like-of": "https://ryanmulligan.dev/blog/creating-time/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Michelle Barker",
+        "photo": "https://webmention.io/avatar/cdn.fosstodon.org/7430075ff637e892dcde4c2b240222eff41209111509d14b8f3fffc26ac3909c.jpg",
+        "url": "https://front-end.social/@michelle"
+      },
+      "url": "https://fosstodon.org/@hexagoncircle/109722526580311865#reblogged-by-109370543548328508",
+      "published": null,
+      "wm-received": "2023-01-21T09:39:05Z",
+      "wm-id": 1603677,
+      "wm-source": "https://brid.gy/repost/mastodon/@hexagoncircle@fosstodon.org/109722526580311865/109370543548328508",
+      "wm-target": "https://ryanmulligan.dev/blog/creating-time/",
+      "repost-of": "https://ryanmulligan.dev/blog/creating-time/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Zach Leatherman :11ty:",
+        "photo": "https://webmention.io/avatar/cdn.fosstodon.org/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png",
+        "url": "https://fediverse.zachleat.com/@zachleat"
+      },
+      "url": "https://fosstodon.org/@hexagoncircle/109722526580311865#reblogged-by-109286920292920298",
+      "published": null,
+      "wm-received": "2023-01-21T09:39:03Z",
+      "wm-id": 1603676,
+      "wm-source": "https://brid.gy/repost/mastodon/@hexagoncircle@fosstodon.org/109722526580311865/109286920292920298",
+      "wm-target": "https://ryanmulligan.dev/blog/creating-time/",
+      "repost-of": "https://ryanmulligan.dev/blog/creating-time/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Lene Saile",
+        "photo": "https://webmention.io/avatar/cdn.fosstodon.org/7b11bce21a15d560ac99e575696be482d744f10237abefd30f3e7f6b0861f476.png",
+        "url": "https://front-end.social/@lene"
+      },
+      "url": "https://fosstodon.org/@hexagoncircle/109722526580311865#favorited-by-109301596551126041",
+      "published": null,
+      "wm-received": "2023-01-21T09:39:01Z",
+      "wm-id": 1603674,
+      "wm-source": "https://brid.gy/like/mastodon/@hexagoncircle@fosstodon.org/109722526580311865/109301596551126041",
+      "wm-target": "https://ryanmulligan.dev/blog/creating-time/",
+      "like-of": "https://ryanmulligan.dev/blog/creating-time/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Michelle Barker",
+        "photo": "https://webmention.io/avatar/cdn.fosstodon.org/7430075ff637e892dcde4c2b240222eff41209111509d14b8f3fffc26ac3909c.jpg",
+        "url": "https://front-end.social/@michelle"
+      },
+      "url": "https://fosstodon.org/@hexagoncircle/109722526580311865#favorited-by-109370543548328508",
+      "published": null,
+      "wm-received": "2023-01-21T09:39:01Z",
+      "wm-id": 1603675,
+      "wm-source": "https://brid.gy/like/mastodon/@hexagoncircle@fosstodon.org/109722526580311865/109370543548328508",
+      "wm-target": "https://ryanmulligan.dev/blog/creating-time/",
+      "like-of": "https://ryanmulligan.dev/blog/creating-time/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Zach Leatherman :11ty:",
+        "photo": "https://webmention.io/avatar/cdn.fosstodon.org/f4e48698b4079b12cff61448419d6cf2a13293b27bdaa0a551de22a70e402f70.png",
+        "url": "https://fediverse.zachleat.com/@zachleat"
+      },
+      "url": "https://fosstodon.org/@hexagoncircle/109722526580311865#favorited-by-109286920292920298",
+      "published": null,
+      "wm-received": "2023-01-21T09:38:58Z",
+      "wm-id": 1603673,
+      "wm-source": "https://brid.gy/like/mastodon/@hexagoncircle@fosstodon.org/109722526580311865/109286920292920298",
+      "wm-target": "https://ryanmulligan.dev/blog/creating-time/",
+      "like-of": "https://ryanmulligan.dev/blog/creating-time/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ondrej Sevcik",
+        "photo": "https://webmention.io/avatar/cdn.fosstodon.org/c9cb185bd38f0dce1bd9e0ea28ebeae2464b6ca3fd0e40f91d55be7e30d1f5f4.jpg",
+        "url": "https://hachyderm.io/@ondrejsevcik"
+      },
+      "url": "https://fosstodon.org/@hexagoncircle/109722526580311865#favorited-by-109705541793562299",
+      "published": null,
+      "wm-received": "2023-01-21T09:38:57Z",
+      "wm-id": 1603672,
+      "wm-source": "https://brid.gy/like/mastodon/@hexagoncircle@fosstodon.org/109722526580311865/109705541793562299",
+      "wm-target": "https://ryanmulligan.dev/blog/creating-time/",
+      "like-of": "https://ryanmulligan.dev/blog/creating-time/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Joface",
+        "photo": "https://webmention.io/avatar/cdn.fosstodon.org/960ac34937ecb4b639c20a1f5bf271f0be5bb68031bb7ed553e6831702280122.jpg",
+        "url": "https://mastodon.scot/@joface"
+      },
+      "url": "https://fosstodon.org/@hexagoncircle/109722526580311865#favorited-by-109519900336098775",
+      "published": null,
+      "wm-received": "2023-01-21T09:38:54Z",
+      "wm-id": 1603670,
+      "wm-source": "https://brid.gy/like/mastodon/@hexagoncircle@fosstodon.org/109722526580311865/109519900336098775",
+      "wm-target": "https://ryanmulligan.dev/blog/creating-time/",
+      "like-of": "https://ryanmulligan.dev/blog/creating-time/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dom Jay",
+        "photo": "https://webmention.io/avatar/cdn.fosstodon.org/5fdeb1a659236e3e82c6b5e51b88857eb1e830bf7520797ecea4bc8fc3349875.png",
+        "url": "https://mastodon.social/@dominickjay"
+      },
+      "url": "https://fosstodon.org/@hexagoncircle/109722526580311865#favorited-by-109366434201612712",
+      "published": null,
+      "wm-received": "2023-01-21T09:38:54Z",
+      "wm-id": 1603671,
+      "wm-source": "https://brid.gy/like/mastodon/@hexagoncircle@fosstodon.org/109722526580311865/109366434201612712",
+      "wm-target": "https://ryanmulligan.dev/blog/creating-time/",
+      "like-of": "https://ryanmulligan.dev/blog/creating-time/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ryan Mulligan",
+        "photo": "https://webmention.io/avatar/cdn.fosstodon.org/2b9e19461695dcc3d5426dbe58bc7f0337c9c2a838e5387c8c66677298ba3241.jpg",
+        "url": "https://fosstodon.org/@hexagoncircle"
+      },
+      "url": "https://fosstodon.org/@hexagoncircle/109722745643260495",
+      "published": "2023-01-20T17:37:11",
+      "wm-received": "2023-01-21T09:38:50Z",
+      "wm-id": 1603668,
+      "wm-source": "https://brid.gy/comment/mastodon/@hexagoncircle@fosstodon.org/109722526580311865/109722745643260495",
+      "wm-target": "https://ryanmulligan.dev/blog/creating-time/",
+      "content": {
+        "html": "<p><span class=\"h-card\"><a href=\"https://front-end.social/@michelle\" class=\"u-url\">@<span>michelle</span></a></span> It was a total dream! Makes me so happy to share the joy of jamming with such great people</p>",
+        "text": "@michelle It was a total dream! Makes me so happy to share the joy of jamming with such great people"
+      },
+      "in-reply-to": "https://ryanmulligan.dev/blog/creating-time/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Colin Gourlay",
+        "photo": "https://webmention.io/avatar/cdn.fosstodon.org/70e4700f40b01901e751604e11b58053edfc4ac4f4a6e10cdbeecdd94041c927.jpg",
+        "url": "https://bne.social/@colingourlay"
+      },
+      "url": "https://fosstodon.org/@hexagoncircle/109722526580311865#favorited-by-108235363925539626",
+      "published": null,
+      "wm-received": "2023-01-21T09:38:50Z",
+      "wm-id": 1603669,
+      "wm-source": "https://brid.gy/like/mastodon/@hexagoncircle@fosstodon.org/109722526580311865/108235363925539626",
+      "wm-target": "https://ryanmulligan.dev/blog/creating-time/",
+      "like-of": "https://ryanmulligan.dev/blog/creating-time/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Michelle Barker",
+        "photo": "https://webmention.io/avatar/cdn.fosstodon.org/7430075ff637e892dcde4c2b240222eff41209111509d14b8f3fffc26ac3909c.jpg",
+        "url": "https://front-end.social/@michelle"
+      },
+      "url": "https://front-end.social/@michelle/109722542516304163",
+      "published": "2023-01-20T16:45:31",
+      "wm-received": "2023-01-21T09:38:46Z",
+      "wm-id": 1603667,
+      "wm-source": "https://brid.gy/comment/mastodon/@hexagoncircle@fosstodon.org/109722526580311865/109722542550967599",
+      "wm-target": "https://ryanmulligan.dev/blog/creating-time/",
+      "content": {
+        "html": "<p><span class=\"h-card\"><a href=\"https://fosstodon.org/@hexagoncircle\" class=\"u-url\">@<span>hexagoncircle</span></a></span> I can definitely empathise with the create rut thing. This music getaway sounds like a dream! 💖</p>",
+        "text": "@hexagoncircle I can definitely empathise with the create rut thing. This music getaway sounds like a dream! 💖"
+      },
+      "in-reply-to": "https://ryanmulligan.dev/blog/creating-time/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Mikkel · Web Dev",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/3b4160a669b45251fc6e7b4c7cf85c8749a479fbe3a0532142b854d35a0d4ce8.jpg",
+        "url": "https://twitter.com/MikkelBirkeholm"
+      },
+      "url": "https://twitter.com/MikkelBirkeholm/status/1616538599436025868",
+      "published": "2023-01-20T20:50:10+00:00",
+      "wm-received": "2023-01-21T01:23:10Z",
+      "wm-id": 1603338,
+      "wm-source": "https://brid.gy/comment/twitter/hexagoncircle/1616538599436025868/1616538599436025868",
+      "wm-target": "https://ryanmulligan.dev/blog/layout-breakouts/",
+      "content": {
+        "html": "You might be too deep into it now to change approach, but check out this article from <a href=\"https://twitter.com/hexagoncircle\">@hexagoncircle</a>. Helped me a great deal with stuff like this.\n\n<a href=\"https://ryanmulligan.dev/blog/layout-breakouts/\">ryanmulligan.dev/blog/layout-br…</a>\n<a class=\"u-mention\" href=\"https://twitter.com/bookercodes\"></a>",
+        "text": "You might be too deep into it now to change approach, but check out this article from @hexagoncircle. Helped me a great deal with stuff like this.\n\nryanmulligan.dev/blog/layout-br…"
+      },
+      "in-reply-to": "https://ryanmulligan.dev/blog/layout-breakouts/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ryan Mulligan",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/83ecdd1f7b2d6a7a90e86802aa1ae6c2e0d2819b83db984892f9c0be96584092.jpg",
+        "url": "https://twitter.com/hexagoncircle"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1579902054796967936",
+      "published": "2022-10-11T18:29:37+00:00",
+      "wm-received": "2023-01-02T00:09:19Z",
+      "wm-id": 1590982,
+      "wm-source": "https://brid.gy/post/twitter/hexagoncircle/1579902054796967936",
+      "wm-target": "https://ryanmulligan.dev/blog/layout-breakouts/",
+      "video": [
+        "https://video.twimg.com/ext_tw_video/1579900280707026945/pu/vid/1280x720/3JoUdVQr2AfxfDUd.mp4?tag=12"
+      ],
+      "content": {
+        "html": "The <a href=\"https://twitter.com/CodePen\">@CodePen</a> demo from the article visualizes how this CSS grid layout responds as the viewport expands and collapses 👀  <a href=\"https://codepen.io/hexagoncircle/pen/dyejrpE\">codepen.io/hexagoncircle/…</a> \n<a class=\"u-mention\" href=\"https://ryanmulligan.dev/blog/layout-breakouts/\"></a>",
+        "text": "The @CodePen demo from the article visualizes how this CSS grid layout responds as the viewport expands and collapses 👀  codepen.io/hexagoncircle/…"
+      },
+      "mention-of": "https://ryanmulligan.dev/blog/layout-breakouts/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Eduardo Uribe",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/0a291ea9afff0430dd801bceaf71eb5db28fa001c93d57745696a20cfbc17b94.jpg",
+        "url": "https://twitter.com/Eduardo__Uribe"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1587943648737447937#favorited-by-3165967183",
+      "published": null,
+      "wm-received": "2023-01-02T00:09:18Z",
+      "wm-id": 1590981,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1587943648737447937/3165967183",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Lynn Fisher",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/4a25c965c76ad09f102fae61c644d7d888fda1eff4f90a86c3e47ad5af8d0df3.jpg",
+        "url": "https://twitter.com/lynnandtonic"
+      },
+      "url": "https://twitter.com/lynnandtonic/status/1582180149427986433",
+      "published": "2022-10-18T01:21:57+00:00",
+      "wm-received": "2023-01-02T00:09:16Z",
+      "wm-id": 1590979,
+      "wm-source": "https://brid.gy/repost/twitter/hexagoncircle/1582175193811730433/1582180149427986433",
+      "wm-target": "https://ryanmulligan.dev/",
+      "video": [
+        "https://video.twimg.com/ext_tw_video/1582173552282808320/pu/vid/800x450/gzCVLXzJ_nEwUF9c.mp4?tag=12"
+      ],
+      "content": {
+        "text": "Messing around with some tiny transition details on ryanmulligan.dev 👀"
+      },
+      "repost-of": "https://ryanmulligan.dev/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "samdkingdev",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/c633dcf82d43b4f58038a9cf314d0b73a3c15371952cb8b3c214741cdcfcc8ac.jpg",
+        "url": "https://twitter.com/samdkingdev"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1587943648737447937#favorited-by-1297436843781349376",
+      "published": null,
+      "wm-received": "2023-01-02T00:09:16Z",
+      "wm-id": 1590980,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1587943648737447937/1297436843781349376",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jason Lengstorf ⚡️",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/f511d62bfc16a853fc23637e000ac7a47845564588a9b2a968072563b3cd45de.jpg",
+        "url": "https://twitter.com/jlengstorf"
+      },
+      "url": "https://twitter.com/jlengstorf/status/1582186756169875456",
+      "published": "2022-10-18T01:48:12+00:00",
+      "wm-received": "2023-01-02T00:09:15Z",
+      "wm-id": 1590978,
+      "wm-source": "https://brid.gy/repost/twitter/hexagoncircle/1582175193811730433/1582186756169875456",
+      "wm-target": "https://ryanmulligan.dev/",
+      "video": [
+        "https://video.twimg.com/ext_tw_video/1582173552282808320/pu/vid/800x450/gzCVLXzJ_nEwUF9c.mp4?tag=12"
+      ],
+      "content": {
+        "text": "Messing around with some tiny transition details on ryanmulligan.dev 👀"
+      },
+      "repost-of": "https://ryanmulligan.dev/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Eydrent",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/15773f1cb205771092bae900aee82d9d698d5a95c10c7a63e3cd23b438329f0a.jpg",
+        "url": "https://twitter.com/Eydrent"
+      },
+      "url": "https://twitter.com/Eydrent/status/1582189329274703872",
+      "published": "2022-10-18T01:58:26+00:00",
+      "wm-received": "2023-01-02T00:09:14Z",
+      "wm-id": 1590977,
+      "wm-source": "https://brid.gy/repost/twitter/hexagoncircle/1582175193811730433/1582189329274703872",
+      "wm-target": "https://ryanmulligan.dev/",
+      "video": [
+        "https://video.twimg.com/ext_tw_video/1582173552282808320/pu/vid/800x450/gzCVLXzJ_nEwUF9c.mp4?tag=12"
+      ],
+      "content": {
+        "text": "Messing around with some tiny transition details on ryanmulligan.dev 👀"
+      },
+      "repost-of": "https://ryanmulligan.dev/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "WebDeveloper.com⚡",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/84989dee1f542eda755c49f7a33ce81ea49f2834dd5afefa7692aba6606a656c.jpg",
+        "url": "https://twitter.com/WebDeveloperHQ"
+      },
+      "url": "https://twitter.com/WebDeveloperHQ/status/1582199594620182529",
+      "published": "2022-10-18T02:39:13+00:00",
+      "wm-received": "2023-01-02T00:09:13Z",
+      "wm-id": 1590975,
+      "wm-source": "https://brid.gy/repost/twitter/hexagoncircle/1582175193811730433/1582199594620182529",
+      "wm-target": "https://ryanmulligan.dev/",
+      "video": [
+        "https://video.twimg.com/ext_tw_video/1582173552282808320/pu/vid/800x450/gzCVLXzJ_nEwUF9c.mp4?tag=12"
+      ],
+      "content": {
+        "text": "Messing around with some tiny transition details on ryanmulligan.dev 👀"
+      },
+      "repost-of": "https://ryanmulligan.dev/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ben Smith",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/81ccd0211ff35fc955e89bfbaf5d230d877fb8318d9a4aa7da38b85e33e11ae9.jpg",
+        "url": "https://twitter.com/smithbm2316"
+      },
+      "url": "https://twitter.com/smithbm2316/status/1582194159506497540",
+      "published": "2022-10-18T02:17:38+00:00",
+      "wm-received": "2023-01-02T00:09:13Z",
+      "wm-id": 1590976,
+      "wm-source": "https://brid.gy/repost/twitter/hexagoncircle/1582175193811730433/1582194159506497540",
+      "wm-target": "https://ryanmulligan.dev/",
+      "video": [
+        "https://video.twimg.com/ext_tw_video/1582173552282808320/pu/vid/800x450/gzCVLXzJ_nEwUF9c.mp4?tag=12"
+      ],
+      "content": {
+        "text": "Messing around with some tiny transition details on ryanmulligan.dev 👀"
+      },
+      "repost-of": "https://ryanmulligan.dev/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Denilson Barahona",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/259b364abcbdc56a0a68ae9f69e2ceb3bac767610da51e1b8ebeaba1280628da.jpg",
+        "url": "https://twitter.com/91sbarahona"
+      },
+      "url": "https://twitter.com/91sbarahona/status/1582460935083503616",
+      "published": "2022-10-18T19:57:42+00:00",
+      "wm-received": "2023-01-02T00:09:12Z",
+      "wm-id": 1590974,
+      "wm-source": "https://brid.gy/repost/twitter/hexagoncircle/1582175193811730433/1582460935083503616",
+      "wm-target": "https://ryanmulligan.dev/",
+      "video": [
+        "https://video.twimg.com/ext_tw_video/1582173552282808320/pu/vid/800x450/gzCVLXzJ_nEwUF9c.mp4?tag=12"
+      ],
+      "content": {
+        "text": "Messing around with some tiny transition details on ryanmulligan.dev 👀"
+      },
+      "repost-of": "https://ryanmulligan.dev/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Travis Maynard",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/85157d4297bc42f39c8112812ae8ba4f543c3f36201cfc3ae956b1f293482142.jpg",
+        "url": "https://twitter.com/travismaynard"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-14504516",
+      "published": null,
+      "wm-received": "2023-01-02T00:09:11Z",
+      "wm-id": 1590973,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/14504516",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ben Gammon",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/0daac5b0e4f368a42b7b9fcceef77dd31632e2cf2e386200506ef76af3fcdfee.jpg",
+        "url": "https://twitter.com/bengammon"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-71551446",
+      "published": null,
+      "wm-received": "2023-01-02T00:09:10Z",
+      "wm-id": 1590972,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/71551446",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Amit Sheen",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/2f39d0a4d736a7babb359438c786e329ce3bc8f7112399ce0d35800bf12a132f.jpg",
+        "url": "https://twitter.com/amit_sheen"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-1020412387541831680",
+      "published": null,
+      "wm-received": "2023-01-02T00:09:09Z",
+      "wm-id": 1590970,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/1020412387541831680",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Szymon Gajewy",
+        "photo": "https://webmention.io/avatar/abs.twimg.com/0e6b2cd70aa5b35dec24ca4e1e63f8963f0118736d9ec3bba77e3a8c99a27bc2.png",
+        "url": "https://twitter.com/hCuSek"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-3129435010",
+      "published": null,
+      "wm-received": "2023-01-02T00:09:09Z",
+      "wm-id": 1590971,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/3129435010",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Flow",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/7a02aca51d36450af54ca264fbac5e31a77fe83a06eb1b5c0a3b19be56fbcb71.jpg",
+        "url": "https://twitter.com/florian_x64"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-1211036677239496704",
+      "published": null,
+      "wm-received": "2023-01-02T00:09:05Z",
+      "wm-id": 1590969,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/1211036677239496704",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Bruno Poeta",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/2342558eeb1ec6fce10db9fa5ef8b01e6e2837a63b966521cedc3c2567cbd81b.jpg",
+        "url": "https://twitter.com/elpoteta"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-75885626",
+      "published": null,
+      "wm-received": "2023-01-02T00:09:04Z",
+      "wm-id": 1590968,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/75885626",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "ℭ𝔥𝔯𝔦𝔰 𝔅𝔞𝔯𝔯𝔞𝔫𝔠𝔢.",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/10cafb846f36c9188267cafe1ec586cb6a6d1e93b090f60a82960172f471c50c.jpg",
+        "url": "https://twitter.com/ecnarraBsirhC"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-3150952119",
+      "published": null,
+      "wm-received": "2023-01-02T00:09:02Z",
+      "wm-id": 1590967,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/3150952119",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sam Tancharoensuksavai",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/4df2e789937d59bfa54f9f0b9bbdfdf1f6d468b0c02a485dfe58ae49316725bd.jpg",
+        "url": "https://twitter.com/samtan_"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-1117234662030675968",
+      "published": null,
+      "wm-received": "2023-01-02T00:09:01Z",
+      "wm-id": 1590966,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/1117234662030675968",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jamie Weatherby",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/d184fc117308e20c15681a9236ec39bbb9690d621094bba23c3aca648338e773.jpg",
+        "url": "https://twitter.com/_jweatherby"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-344121601",
+      "published": null,
+      "wm-received": "2023-01-02T00:09:00Z",
+      "wm-id": 1590965,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/344121601",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "anivire",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/c2ac6756524a1ff5a652def5ba6c516f2a7a9b30a2513228c2bba63407fb24b8.jpg",
+        "url": "https://twitter.com/aniv1re"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-995575585379438592",
+      "published": null,
+      "wm-received": "2023-01-02T00:08:59Z",
+      "wm-id": 1590964,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/995575585379438592",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jimi Robaer",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/e6010e1c83343fbd2e7ab7e80f23b4354b067e211bfa85494fc2d12c322717e3.jpg",
+        "url": "https://twitter.com/jimirobaer"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-52491788",
+      "published": null,
+      "wm-received": "2023-01-02T00:08:58Z",
+      "wm-id": 1590963,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/52491788",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Aleyna Arı ✨",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/07e592bdb8010b3e2730dc5f21c0e426d519e61998bd58061a5681f7655e09ed.jpg",
+        "url": "https://twitter.com/AleynaaArii"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-1124761813437091853",
+      "published": null,
+      "wm-received": "2023-01-02T00:08:57Z",
+      "wm-id": 1590961,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/1124761813437091853",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Mayur Joshi ⚡",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/24fce143d52b6a6c298d63f26cfa397a280b101f646f639f8fbcd6a0ec4fadd3.jpg",
+        "url": "https://twitter.com/thecodinguy"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-1287827934",
+      "published": null,
+      "wm-received": "2023-01-02T00:08:57Z",
+      "wm-id": 1590962,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/1287827934",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Hardy 🇺🇦 🇬🇪",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/61449119e3e8d954ae29fb69c7829659eadeb1d1be312422e5046d1fa6f03691.jpg",
+        "url": "https://twitter.com/gela_samsonidze"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-897140592014225408",
+      "published": null,
+      "wm-received": "2023-01-02T00:08:56Z",
+      "wm-id": 1590960,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/897140592014225408",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Keith Purtell",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/ae88c55fc4a7c056a397e96a054119f31fab37e275fd8f4a28dcd93f4912d7e5.jpg",
+        "url": "https://twitter.com/keithpurtell"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-21061595",
+      "published": null,
+      "wm-received": "2023-01-02T00:08:55Z",
+      "wm-id": 1590959,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/21061595",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Purnima Kumar",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/c13247339d7a8e6cece692ace67f5c7a6a1b2808d4b2a1fdadfb44a6152d6524.jpg",
+        "url": "https://twitter.com/purnimakumarr"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-914867970765078534",
+      "published": null,
+      "wm-received": "2023-01-02T00:08:54Z",
+      "wm-id": 1590957,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/914867970765078534",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Harsh",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/3c8c34ae0bbf825efb48597c72ad234dac7795dccf0517fd930156149d0b3b24.jpg",
+        "url": "https://twitter.com/sourcificer"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-2468657341",
+      "published": null,
+      "wm-received": "2023-01-02T00:08:54Z",
+      "wm-id": 1590958,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/2468657341",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sam Paton",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/5d808cd92370083d2c1521860238a7b0072700af205ae23352b43ee267258518.jpg",
+        "url": "https://twitter.com/thesampaton"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-138703066",
+      "published": null,
+      "wm-received": "2023-01-02T00:08:53Z",
+      "wm-id": 1590955,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/138703066",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Mark Nunnikhoven",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/05644d1cd78a5cc784cbe5062cd46792f04b019c075a6a4e45dcc41e19bedaa3.jpg",
+        "url": "https://twitter.com/marknca"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-12143922",
+      "published": null,
+      "wm-received": "2023-01-02T00:08:53Z",
+      "wm-id": 1590956,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/12143922",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Mattias Nixell",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/2d738f419794e4310702912be46eded21ec0fe88ee3ea3635ac550130d51b44e.jpg",
+        "url": "https://twitter.com/MattiasNixell"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-2870382898",
+      "published": null,
+      "wm-received": "2023-01-02T00:08:52Z",
+      "wm-id": 1590954,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/2870382898",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sikriti Dakua",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/a9c6d12c40894869c70f66497cb6c1d786030798a491fa59d277f07199d38b63.jpg",
+        "url": "https://twitter.com/DevLoop01"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-934059491716349954",
+      "published": null,
+      "wm-received": "2023-01-02T00:08:51Z",
+      "wm-id": 1590953,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/934059491716349954",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "№ise ❒ bar ",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/55b02ad6d438685a4813f9a1ba97b55510e731560d71193ab3887a8c3884bc32.jpg",
+        "url": "https://twitter.com/noisedotbar"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-1563322445893091330",
+      "published": null,
+      "wm-received": "2023-01-02T00:08:50Z",
+      "wm-id": 1590952,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/1563322445893091330",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sascha Scholz",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/081868749333c29bc8de6bfacc5a78c670ae052410e8816c491a6daf915faab1.jpg",
+        "url": "https://twitter.com/bananablues"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-11734562",
+      "published": null,
+      "wm-received": "2023-01-02T00:08:49Z",
+      "wm-id": 1590951,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/11734562",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Piotrek Wojtasiewicz",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/121c1e2cfcd591a1b96a277fcada77f2196ea8f38df169e06a84f770544149d6.jpg",
+        "url": "https://twitter.com/PibedeBarr11"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-759148912259334144",
+      "published": null,
+      "wm-received": "2023-01-02T00:08:48Z",
+      "wm-id": 1590950,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/759148912259334144",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "ñàvéènvikràm",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/d1b5a72f5a3b5aa3fecb12e7a8a7ae25dd627d05304b3887cd4c5fcc5a532202.jpg",
+        "url": "https://twitter.com/Naveenvikram1"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-465636064",
+      "published": null,
+      "wm-received": "2023-01-02T00:08:46Z",
+      "wm-id": 1590949,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/465636064",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ivan Jovanović",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/17d1d6ccfbea97de1528d303ce6ad715eef005a35ccb7553d75c5e401263bf01.jpg",
+        "url": "https://twitter.com/bvebdev"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-1570888551511867392",
+      "published": null,
+      "wm-received": "2023-01-02T00:08:45Z",
+      "wm-id": 1590947,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/1570888551511867392",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Denilson Barahona",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/259b364abcbdc56a0a68ae9f69e2ceb3bac767610da51e1b8ebeaba1280628da.jpg",
+        "url": "https://twitter.com/91sbarahona"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-4426217300",
+      "published": null,
+      "wm-received": "2023-01-02T00:08:45Z",
+      "wm-id": 1590948,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/4426217300",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Danks",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/bac3195bedb9af3841926712b38a5c5e26a5434ddefd04aff054ec8aa799b360.jpg",
+        "url": "https://twitter.com/JustinDanks"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-31212390",
+      "published": null,
+      "wm-received": "2023-01-02T00:08:44Z",
+      "wm-id": 1590946,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/31212390",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Mr.Zyan",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/ca53bc0feed251c35a16d42571298aee56d1a41f0503b479d33bb916b70c28f4.jpg",
+        "url": "https://twitter.com/_mrzyan"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-560300799",
+      "published": null,
+      "wm-received": "2023-01-02T00:08:42Z",
+      "wm-id": 1590945,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/560300799",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Kaelig",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/a9e4df9785c839b78bda22c0b1e136604875d6cfe776c4280f0a271a81f747ca.jpg",
+        "url": "https://twitter.com/kaelig"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-26975453",
+      "published": null,
+      "wm-received": "2023-01-02T00:08:41Z",
+      "wm-id": 1590943,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/26975453",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dada",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/c208731d6131339e40eec3aed90031b14ec098fa2defb5dbddce8af4754bb51e.jpg",
+        "url": "https://twitter.com/radadawa"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-812401646730940416",
+      "published": null,
+      "wm-received": "2023-01-02T00:08:41Z",
+      "wm-id": 1590944,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/812401646730940416",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Евгений Резниченко",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/e833f1f533994a4e9ae9e102452005eaaa5e905d14720ee61bb0a7493ac55fed.jpg",
+        "url": "https://twitter.com/NikolaevUkr"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-459502456",
+      "published": null,
+      "wm-received": "2023-01-02T00:08:40Z",
+      "wm-id": 1590942,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/459502456",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "AleksandrSl",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/f37a817322eaf75e5c4771db8c9976fcf37a4707646bede5a13d1aa2f1ed054c.jpg",
+        "url": "https://twitter.com/AleksandrSl28"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-860430804589191168",
+      "published": null,
+      "wm-received": "2023-01-02T00:08:39Z",
+      "wm-id": 1590940,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/860430804589191168",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "AdirCode 🔥",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/66385ef65edb760b3a61298fe26d9b08c7d56a0fd37364174385653569ebc8f3.png",
+        "url": "https://twitter.com/adircode"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-1171313916003139584",
+      "published": null,
+      "wm-received": "2023-01-02T00:08:39Z",
+      "wm-id": 1590941,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/1171313916003139584",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "𝚃𝚎𝚜𝚑𝚊𝚗𝚎 𝙲𝚛𝚊𝚠𝚏𝚘𝚛𝚍",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/b9fbb8481f3e7b0c4bdb67f428af9dc5cde01123cd8f6fd14cf873e72addf6f6.jpg",
+        "url": "https://twitter.com/_D_Shybrid"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-1369483524286320650",
+      "published": null,
+      "wm-received": "2023-01-02T00:08:38Z",
+      "wm-id": 1590938,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/1369483524286320650",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "はらまき",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/24d696b5a4d6f905130cd003e32dde838013dd8c08e0274fea42afe4d27282d7.jpg",
+        "url": "https://twitter.com/ZlLZf7NvDAMCGN3"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-1173497509185912833",
+      "published": null,
+      "wm-received": "2023-01-02T00:08:38Z",
+      "wm-id": 1590939,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/1173497509185912833",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ryan Stainsby",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/01218d05fdb08bf78e1ec055648bae382dbb712f747e4c0a0336887be701b31f.jpg",
+        "url": "https://twitter.com/GooglerForHire"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-1486665848379088901",
+      "published": null,
+      "wm-received": "2023-01-02T00:08:37Z",
+      "wm-id": 1590937,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/1486665848379088901",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "はるか",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/cdb68d208ee130571a262ef7359ccec513811b236e693c4a185e39d9fa8fb1b0.jpg",
+        "url": "https://twitter.com/PHPkD8mDG3eH56B"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-1560798580293611520",
+      "published": null,
+      "wm-received": "2023-01-02T00:08:36Z",
+      "wm-id": 1590936,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/1560798580293611520",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Media 4 Your",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/747d145948b7bca55bdf3a38375c98890f38dcfd2badb4f89c25edcab6834d45.jpg",
+        "url": "https://twitter.com/Media4Your1"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-973519254342520832",
+      "published": null,
+      "wm-received": "2023-01-02T00:08:35Z",
+      "wm-id": 1590934,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/973519254342520832",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "@andy@bell.bz",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/fff5a9335e30fcd0e9def7bb0cc71d108fc5ae0c5638c3f3357f14da610cb171.jpg",
+        "url": "https://twitter.com/piccalilli_"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-98734097",
+      "published": null,
+      "wm-received": "2023-01-02T00:08:35Z",
+      "wm-id": 1590935,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/98734097",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ofer Shaal",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/b4e96c132f4401174c009607f5551ec855104e1e3c34c6329d4498a53649ab39.jpg",
+        "url": "https://twitter.com/shaal"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-1760991",
+      "published": null,
+      "wm-received": "2023-01-02T00:08:32Z",
+      "wm-id": 1590932,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/1760991",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Albertico",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/5dee8510ce18c4e7503c6b5d1dae34c5e6442027a78cface0c209b098c52f3ed.jpg",
+        "url": "https://twitter.com/Alberticograu"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-45918777",
+      "published": null,
+      "wm-received": "2023-01-02T00:08:32Z",
+      "wm-id": 1590933,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/45918777",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Maël C.",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/cfc909718e4de016d656a7976d1862997317f3e0620ece47102f469109524da1.png",
+        "url": "https://twitter.com/MaelConan"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-4507213097",
+      "published": null,
+      "wm-received": "2023-01-02T00:08:26Z",
+      "wm-id": 1590930,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/4507213097",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "JcToon",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/83bc4ba13cc2d67add1b12beb80c90e0b548ef5f528fa2c48c4df05511f79b92.jpg",
+        "url": "https://twitter.com/HelloJcToon"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-776341105642209280",
+      "published": null,
+      "wm-received": "2023-01-02T00:08:26Z",
+      "wm-id": 1590931,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/776341105642209280",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Guido Gattás",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/20e1f354a552c33e3f5635f36a8d93aa89ae2364a921bd0b2b99eb7da8dbb121.jpg",
+        "url": "https://twitter.com/gattasguido"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-616621976",
+      "published": null,
+      "wm-received": "2023-01-02T00:08:25Z",
+      "wm-id": 1590928,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/616621976",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Left Wingman",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/4870fc98266b431b99664237a2a04b15edbda185e34aeb69266ff751a1496816.jpg",
+        "url": "https://twitter.com/sentientnibble"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1582175193811730433#favorited-by-1359151459",
+      "published": null,
+      "wm-received": "2023-01-02T00:08:25Z",
+      "wm-id": 1590929,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1582175193811730433/1359151459",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Eleventy 🎈🐘 fosstodon.org/@eleventy",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/761cab6131337cc6c2ca3c4d237f1ee5516b3237dbd29ec63c211a9fb54687f4.jpg",
+        "url": "https://twitter.com/eleven_ty"
+      },
+      "url": "https://twitter.com/eleven_ty/status/1587955304326909952",
+      "published": "2022-11-02T23:50:21+00:00",
+      "wm-received": "2023-01-02T00:08:20Z",
+      "wm-id": 1590927,
+      "wm-source": "https://brid.gy/repost/twitter/hexagoncircle/1587943648737447937/1587955304326909952",
+      "wm-target": "https://ryanmulligan.dev/",
+      "content": {
+        "text": "🙌 ryanmulligan.dev"
+      },
+      "repost-of": "https://ryanmulligan.dev/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Phil Wolstenholme",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/7319fa9e2e2a3825bfc27bbe885cbebc5d5230bef94d8b2782c48e95cedb5dd3.jpg",
+        "url": "https://twitter.com/philw_"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1587943648737447937#favorited-by-38276082",
+      "published": null,
+      "wm-received": "2023-01-02T00:08:19Z",
+      "wm-id": 1590926,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1587943648737447937/38276082",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "JG",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/02a40b48ff498adca76fb0540f4b0ca4d92a8bfba7cebb076ecca8a1041db731.jpg",
+        "url": "https://twitter.com/joshg_013"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1587943648737447937#favorited-by-2592160094",
+      "published": null,
+      "wm-received": "2023-01-02T00:08:18Z",
+      "wm-id": 1590925,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1587943648737447937/2592160094",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "David Leininger",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/ae87ebd47981b480f2b6ad211b9a8ef6bfd79e9594535e70973765280ccb3198.jpg",
+        "url": "https://twitter.com/davidleininger"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1587943648737447937#favorited-by-21155214",
+      "published": null,
+      "wm-received": "2023-01-02T00:08:17Z",
+      "wm-id": 1590923,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1587943648737447937/21155214",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Eleventy 🎈🐘 fosstodon.org/@eleventy",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/761cab6131337cc6c2ca3c4d237f1ee5516b3237dbd29ec63c211a9fb54687f4.jpg",
+        "url": "https://twitter.com/eleven_ty"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1587943648737447937#favorited-by-949639269433380864",
+      "published": null,
+      "wm-received": "2023-01-02T00:08:17Z",
+      "wm-id": 1590924,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1587943648737447937/949639269433380864",
+      "wm-target": "https://ryanmulligan.dev/",
+      "like-of": "https://ryanmulligan.dev/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Victor Foster",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/1f162030f10bed84278ab9f357656a991dd5df2c1cf9ee5d20329eb4af483867.jpg",
+        "url": "https://twitter.com/victor_foster"
+      },
+      "url": "https://twitter.com/victor_foster/status/1608889201877209088",
+      "published": "2022-12-30T18:14:12+00:00",
+      "wm-received": "2023-01-02T00:08:03Z",
+      "wm-id": 1590922,
+      "wm-source": "https://brid.gy/comment/twitter/hexagoncircle/1608889201877209088/1608889201877209088",
+      "wm-target": "https://ryanmulligan.dev/blog/layout-breakouts/",
+      "content": {
+        "html": "Really enjoyed this article on Layout Breakouts with CSS Grid by <a href=\"https://twitter.com/hexagoncircle\">@hexagoncircle</a>  <a href=\"https://ryanmulligan.dev/blog/layout-breakouts/\">ryanmulligan.dev/blog/layout-br…</a>\n<a class=\"u-mention\" href=\"https://twitter.com/t3dotgg\"></a>",
+        "text": "Really enjoyed this article on Layout Breakouts with CSS Grid by @hexagoncircle  ryanmulligan.dev/blog/layout-br…"
+      },
+      "in-reply-to": "https://ryanmulligan.dev/blog/layout-breakouts/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    }
+  ]
+}

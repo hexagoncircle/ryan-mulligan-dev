@@ -13,6 +13,8 @@ const pluginSVGContents = require("eleventy-plugin-svg-contents");
 const filters = require("./utils/filters.js");
 const shortcodes = require("./utils/shortcodes.js");
 
+require("dotenv").config();
+
 module.exports = function (eleventyConfig) {
   eleventyConfig.setLibrary(
     "md",
