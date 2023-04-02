@@ -18,7 +18,7 @@ What if we desired something a little bit extra, like applying a `box-shadow` to
 
 {% codepen "https://codepen.io/hexagoncircle/pen/qBMeWqo", "result", "400" %}
 
-An element that I've decided to call an "intercept"—naming is hard and this felt right—is created and inserted above the page header at the top of the page. Inspect the <abbr title="Document Object Model">DOM</abbr> to find this change:
+An element that I've decidedly dubbed an "intercept"—naming is hard and this felt right in the moment—is created and inserted above the page header at the top of the page. Inspect the <abbr title="Document Object Model">DOM</abbr> to find this change:
 
 ```html
  <div data-observer-intercept></div>
