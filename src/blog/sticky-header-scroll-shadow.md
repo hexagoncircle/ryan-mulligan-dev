@@ -5,7 +5,7 @@ ogImage: /assets/social/sticky-page-header-shadow-scroll.png
 date: 2023-04-02
 ---
 
-We've seen it plenty of times around the web where a website's page header follows us as we scroll down the page. CSS makes doing so a breeze by setting the following properties:
+We've seen it plenty of times around the web where a website's page header follows us as we scroll down the page. CSS makes doing this a breeze with [sticky positioning](https://developer.mozilla.org/en-US/docs/Web/CSS/position#sticky_positioning):
 
 ```css
 .page-header {
@@ -18,7 +18,18 @@ What if we desired something a little bit extra, like applying a `box-shadow` to
 
 {% codepen "https://codepen.io/hexagoncircle/pen/qBMeWqo", "result", "400" %}
 
-An element that I've decided to call an "intercept"—naming is hard and this felt right—is created and inserted above the header component at the top of the page. The [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) is being used to observe when the intercept is no longer visible in the viewport, which happens as soon as the page scrolls. In the demo's JS tab, we find a new `IntersectionObserver` that watches the intercept element. When the element is _not_ intersecting, meaning that it is no longer visible in the viewport, a class is applied to the page header.
+An element that I've decided to call an "intercept"—naming is hard and this felt right—is created and inserted above the page header at the top of the page. Inspect the <abbr title="Document Object Model">DOM</abbr> to find this change:
+
+```html
+ <div data-observer-intercept></div>
+ <header id="page-header">
+  //...
+ </header>
+ ```
+
+
+
+The [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) is being used to observe when the intercept is no longer appearing in the visible viewport area which happens as soon as the page scrolls. So when the intercept is _not_ intersecting, a class is applied to the header element.
 
 ```js
 const observer = new IntersectionObserver(([entry]) => {
@@ -28,7 +39,7 @@ const observer = new IntersectionObserver(([entry]) => {
 observer.observe(intercept);
 ```
 
-If we open the browser dev tools and inspect the <abbr title="Document Object Model">DOM</abbr>, we catch the `active` class name on the page header element toggling on and off as we scroll down and back up.
+If we open the browser dev tools and inspect the DOM, we catch the `active` class name on the page header element toggling on and off as we scroll down and back up.
 
 ## Delay that shadow
 
