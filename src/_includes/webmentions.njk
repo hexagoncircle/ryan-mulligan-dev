@@ -2,17 +2,52 @@
 {%- set currentPostMentionCount = webmentions | webmentionCountForPage -%}
 
 <section class="webmentions">
-  <p>
-    <strong>{{ currentPostMentionCount }}</strong> likes
-  </p>
-  <ul class="avatar-list" role="list">
-    {% for item in currentPostMentions.likes %}
-      <li>
-        <a href="{{ item.url }}" target="_blank">
-          <span class="visually-hidden">Liked by {{ item.author.photo }}</span>
-          <img class="avatar" alt="" src="{{ item.author.photo }}" width="30" height="30" loading="lazy"/>
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
+  {% if currentPostMentions.likes.length %}
+    <p class="heading">
+      <strong>{{ currentPostMentions.likes.length }}</strong> likes
+    </p>
+    <ul class="webmentions-list" role="list">
+      {% for item in currentPostMentions.likes %}
+        <li>
+          <a href="{{ item.url }}" target="_blank">
+            <span class="visually-hidden">Liked by {{ item.author.photo }}</span>
+            <img src="{{ item.author.photo }}" alt="" width="30" height="30" loading="lazy"/>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% if currentPostMentions.reposts.length %}
+    <p class="heading">
+      <strong>{{ currentPostMentions.reposts.length }}</strong> reposts
+    </p>
+    <ul class="webmentions-list" role="list">
+      {% for item in currentPostMentions.reposts %}
+        <li>
+          <a href="{{ item.url }}" target="_blank">
+            <span class="visually-hidden">Liked by {{ item.author.photo }}</span>
+            <img src="{{ item.author.photo }}" alt="" width="30" height="30" loading="lazy"/>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
+  {% if currentPostMentions.comments.length %}
+    <p class="heading">
+      <strong>{{ currentPostMentions.comments.length }}</strong> comments
+    </p>
+    <ul class="webmentions-list" role="list">
+      {% for item in currentPostMentions.comments %}
+        <li class="comment">
+          <a href="{{ item.url }}" target="_blank">
+            <span class="visually-hidden">Liked by {{ item.author.photo }}</span>
+            <img src="{{ item.author.photo }}" alt="" width="30" height="30" loading="lazy"/>
+          </a>
+          <p>{{ item.content.text }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
 </section>
