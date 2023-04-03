@@ -209,7 +209,7 @@
   display: inline-block;
 }
 
-.cta:has(:hover, :focus-visible)::after, {
+.cta:has(:hover, :focus-visible)::after {
   color: var(--color-secondary);
   animation: cta 400ms var(--ease) infinite;
 }
@@ -230,4 +230,34 @@
   margin-block-start: var(--space-sm);
   padding-block-start: var(--space-sm);
   border-block-start: 1px solid var(--color-bg-accent);
+}
+
+.avatar-list {
+  --border-width: 4px;
+  --offset: calc((var(--border-width) * 3));
+  display: flex;
+  flex-wrap: wrap;
+  padding-inline-start: calc(var(--offset) - var(--border-width));
+}
+
+.avatar-list li {
+  margin-inline-start: calc(var(--offset) * -1);
+}
+
+.avatar-list li:hover,
+.avatar-list li:focus-within {
+  z-index: 1;
+}
+
+.avatar-list li:hover img,
+.avatar-list a:focus-visible img {
+  outline: inherit;
+  border-width: calc(var(--border-width) / 2);
+}
+
+.avatar-list img {
+  max-width: 50px;
+  aspect-ratio: 1;
+  border-radius: var(--radius-round);
+  border: var(--border-width) solid var(--color-bg);
 }

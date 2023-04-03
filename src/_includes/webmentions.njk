@@ -2,10 +2,17 @@
 {%- set currentPostMentionCount = webmentions | webmentionCountForPage -%}
 
 <section class="webmentions">
-  <p>{{ currentPostMentionCount }} likes</p>
-  <ul>
-    {% for mention in currentPostMentions.comments %}
-      <li>{{ mention.author.url | log }}</li>
+  <p>
+    <strong>{{ currentPostMentionCount }}</strong> likes
+  </p>
+  <ul class="avatar-list" role="list">
+    {% for item in currentPostMentions.likes %}
+      <li>
+        <a href="{{ item.url }}" target="_blank">
+          <span class="visually-hidden">Liked by {{ item.author.photo }}</span>
+          <img class="avatar" alt="" src="{{ item.author.photo }}" width="30" height="30" loading="lazy"/>
+        </a>
+      </li>
     {% endfor %}
   </ul>
 </section>
