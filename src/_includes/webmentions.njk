@@ -1,0 +1,11 @@
+{%- set currentPostMentions = webmentions | webmentionsForPage -%}
+{%- set currentPostMentionCount = webmentions | webmentionCountForPage -%}
+
+<section class="webmentions">
+  <p>{{ currentPostMentionCount }} likes</p>
+  <ul>
+    {% for mention in currentPostMentions.comments %}
+      <li>{{ mention.author.url | log }}</li>
+    {% endfor %}
+  </ul>
+</section>

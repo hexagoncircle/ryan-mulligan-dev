@@ -1,6 +1,60 @@
 {
-  "lastFetched": "2023-04-02T16:25:00.286Z",
+  "lastFetched": "2023-04-02T23:24:00.507Z",
   "children": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "T. Afif @ CSS Challenges",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/52104894ba58cf8c84a281f07f7cbd3fa7b290bd6a1e5ff99d2108d28c060fea.jpg",
+        "url": "https://twitter.com/ChallengesCss"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1642585351549227009#favorited-by-1384161676090437646",
+      "published": null,
+      "wm-received": "2023-04-02T18:55:31Z",
+      "wm-id": 1656633,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1642585351549227009/1384161676090437646",
+      "wm-target": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "like-of": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Karan Mathur",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/8a4fdc78e848dfc7582c0263e38d973b9343dceebee92474cb58a75f41966cc0.jpg",
+        "url": "https://twitter.com/logmonologue"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1642585351549227009#favorited-by-1277828372731555842",
+      "published": null,
+      "wm-received": "2023-04-02T18:55:30Z",
+      "wm-id": 1656632,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1642585351549227009/1277828372731555842",
+      "wm-target": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "like-of": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Matthias Ring",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/58dafa738301004f13318604145f5e12e8af55b53476d643de695b1f0aee0c87.png",
+        "url": "https://twitter.com/Matthias_Ring"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1642585351549227009#favorited-by-48055409",
+      "published": null,
+      "wm-received": "2023-04-02T18:55:03Z",
+      "wm-id": 1656631,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1642585351549227009/48055409",
+      "wm-target": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "like-of": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
     {
       "type": "entry",
       "author": {
