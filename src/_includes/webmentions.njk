@@ -18,7 +18,8 @@
           {% for item in currentPostMentions.likes %}
             <li>
               <a href="{{ item.url }}" target="_blank" title="{{ item.author.name }}">
-                <img src="{{ item.author.photo }}" alt="" width="30" height="30" loading="lazy"/>
+                {% image item.author.photo,
+                "" %}
               </a>
             </li>
           {% endfor %}
@@ -35,7 +36,8 @@
           {% for item in currentPostMentions.reposts %}
             <li>
               <a href="{{ item.url }}" target="_blank" title="{{ item.author.name }}">
-                <img src="{{ item.author.photo }}" alt="" width="30" height="30" loading="lazy"/>
+                {% image item.author.photo,
+                "" %}
               </a>
             </li>
           {% endfor %}
@@ -52,7 +54,8 @@
           {% for item in currentPostMentions.comments %}
             <li class="comment">
               <a href="{{ item.url }}" target="_blank" title="{{ item.author.name }}">
-                <img src="{{ item.author.photo }}" alt="" width="30" height="30" loading="lazy"/>
+                {% image item.author.photo,
+                "" %}
               </a>
               <p>{{ item.content.text }}</p>
             </li>
