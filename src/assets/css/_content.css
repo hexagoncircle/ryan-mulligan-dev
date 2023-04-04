@@ -96,6 +96,27 @@
   margin-block-start: var(--space-2xs);
 }
 
+summary {
+  display: inline;
+  cursor: pointer;
+}
+
+summary::marker {
+  content: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::before {
+  content: "+";
+}
+
+details[open] summary::before {
+  content: "−";
+}
+
 .content .cp_embed_wrapper {
   grid-column: full;
   width: min(60rem, 100% - var(--page-padding) * 2);
@@ -232,8 +253,32 @@
   border-block-start: 1px solid var(--color-bg-accent);
 }
 
-.webmentions .heading:not(:first-child) {
-  margin-block-start: var(--space-sm);
+.webmentions {
+  position: relative;
+  border-block-start: 1px solid var(--color-bg-accent);
+  padding-block-start: var(--space-sm);
+}
+
+.webmentions .section-title {
+  margin-block-end: var(--space-2xs);
+}
+
+.webmentions .section-title a {
+  display: inline-block;
+  margin-inline-start: -0.1em;
+  border-radius: var(--radius-round);
+}
+
+.webmentions .section-title svg {
+  --size: 1.2em;
+  display: block;
+  width: var(--size);
+  height: var(--size);
+}
+
+.webmentions-list,
+.webmentions-comments {
+  margin-block: var(--space-3xs) var(--space-sm);
 }
 
 .webmentions-list {
@@ -248,26 +293,27 @@
   margin-inline-start: calc(var(--offset) * -1);
 }
 
-.webmentions-list li:not(.comment):hover,
-.webmentions-list li:not(.comment):focus-within {
+.webmentions-list li:hover,
+.webmentions-list li:focus-within {
   z-index: 1;
 }
 
-.webmentions-list li:not(.comment):hover img,
-.webmentions-list a:not(.comment):focus-visible img {
+.webmentions-list li:hover img,
+.webmentions-list a:focus-visible img {
   outline: inherit;
   border-width: calc(var(--border-width) / 2);
 }
 
-.webmentions-list img {
+.webmentions img {
   max-width: 50px;
+  height: auto;
   aspect-ratio: 1;
   border-radius: var(--radius-round);
   border: var(--border-width) solid transparent;
   background-color: var(--color-bg);
 }
 
-.webmentions-list .comment {
+.webmentions-comments .comment {
   display: flex;
   align-items: center;
   gap: var(--space-2xs);
@@ -276,13 +322,18 @@
   background-color: var(--color-bg-accent);
   border-radius: var(--radius-sm);
   line-height: 1.4;
+  word-break: break-word;
 }
 
-.webmentions-list .comment {
+.webmentions-comments a {
+  border-radius: var(--radius-round);
+}
+
+.webmentions-comments .comment {
   margin-block-start: var(--space-2xs);
 }
 
-.webmentions-list .comment a {
+.webmentions-comments .comment a {
   flex-shrink: 0;
   align-self: start;
 }

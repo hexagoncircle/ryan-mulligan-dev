@@ -1,6 +1,527 @@
 {
-  "lastFetched": "2023-04-03T13:41:52.668Z",
+  "lastFetched": "2023-04-04T13:50:59.157Z",
   "children": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andy Bell",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/fff5a9335e30fcd0e9def7bb0cc71d108fc5ae0c5638c3f3357f14da610cb171.jpg",
+        "url": "https://twitter.com/piccalilli_"
+      },
+      "url": "https://twitter.com/piccalilli_/status/1643166066271559681",
+      "published": "2023-04-04T08:18:13+00:00",
+      "wm-received": "2023-04-04T08:46:30Z",
+      "wm-id": 1657627,
+      "wm-source": "https://brid.gy/comment/twitter/piccalilli_/1642865168769007620/1643166066271559681",
+      "wm-target": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "content": {
+        "html": "not sure tbh\n<a class=\"u-mention\" href=\"https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/worldsayer\"></a>",
+        "text": "not sure tbh"
+      },
+      "in-reply-to": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jan Maarten",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/809e19c9fa9c17833b483ef22391da07709abe0fcbe1168b1d6e084773aae75d.jpg",
+        "url": "https://twitter.com/worldsayer"
+      },
+      "url": "https://twitter.com/worldsayer/status/1643148752470044673",
+      "published": "2023-04-04T07:09:25+00:00",
+      "wm-received": "2023-04-04T07:41:41Z",
+      "wm-id": 1657609,
+      "wm-source": "https://brid.gy/comment/twitter/piccalilli_/1642865168769007620/1643148752470044673",
+      "wm-target": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "content": {
+        "html": "Is there a way to make a fancy sticky header that’s accessible? For instance, one where elements in focus never fall “behind” the header?\n<a class=\"u-mention\" href=\"http://andy-bell.co.uk/links/\"></a>\n<a class=\"u-mention\" href=\"http://bell.bz/@andy\"></a>\n<a class=\"u-mention\" href=\"http://tweets.andy-bell.co.uk/\"></a>\n<a class=\"u-mention\" href=\"https://andy-bell.co.uk/\"></a>\n<a class=\"u-mention\" href=\"https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/piccalilli_\"></a>",
+        "text": "Is there a way to make a fancy sticky header that’s accessible? For instance, one where elements in focus never fall “behind” the header?"
+      },
+      "in-reply-to": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Darryl Yeo 🔜 ETHTokyo 🗼",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/47c8eb504ff3e19062a54e31986da925e9374155622591bf5afded1351696671.jpg",
+        "url": "https://twitter.com/darryl__yeo"
+      },
+      "url": "https://twitter.com/darryl__yeo/status/1643138568356007936",
+      "published": "2023-04-04T06:28:57+00:00",
+      "wm-received": "2023-04-04T06:36:36Z",
+      "wm-id": 1657568,
+      "wm-source": "https://brid.gy/comment/twitter/piccalilli_/1642865168769007620/1643138568356007936",
+      "wm-target": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "content": {
+        "html": "What we really need here is a :sticky pseudo-class. That would be a total game changer.\n<a class=\"u-mention\" href=\"http://andy-bell.co.uk/links/\"></a>\n<a class=\"u-mention\" href=\"http://bell.bz/@andy\"></a>\n<a class=\"u-mention\" href=\"http://tweets.andy-bell.co.uk/\"></a>\n<a class=\"u-mention\" href=\"https://andy-bell.co.uk/\"></a>\n<a class=\"u-mention\" href=\"https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/piccalilli_\"></a>",
+        "text": "What we really need here is a :sticky pseudo-class. That would be a total game changer."
+      },
+      "in-reply-to": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "sebastianekströmVEVO",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/2436fa1a6b88f201da1a7896057bbd25132db6270ca44bb3cb21cdc4a5948189.jpg",
+        "url": "https://twitter.com/seb_ekstrom"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1642585351549227009#favorited-by-89854209",
+      "published": null,
+      "wm-received": "2023-04-04T00:33:44Z",
+      "wm-id": 1657419,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1642585351549227009/89854209",
+      "wm-target": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "like-of": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ryan Leichty",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/d100ec8b41807fc9819d10d68ec47a16a8c609c2c4f318907e4ff8716252e1d8.jpg",
+        "url": "https://twitter.com/ryanleichty"
+      },
+      "url": "https://twitter.com/ryanleichty/status/1642999946260664320",
+      "published": "2023-04-03T21:18:07+00:00",
+      "wm-received": "2023-04-03T21:31:46Z",
+      "wm-id": 1657358,
+      "wm-source": "https://brid.gy/comment/twitter/piccalilli_/1642865168769007620/1642999946260664320",
+      "wm-target": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "content": {
+        "html": "Nice, that’s a clean approach 👏🏻\n<a class=\"u-mention\" href=\"http://andy-bell.co.uk/links/\"></a>\n<a class=\"u-mention\" href=\"http://bell.bz/@andy\"></a>\n<a class=\"u-mention\" href=\"http://tweets.andy-bell.co.uk/\"></a>\n<a class=\"u-mention\" href=\"https://andy-bell.co.uk/\"></a>\n<a class=\"u-mention\" href=\"https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/piccalilli_\"></a>",
+        "text": "Nice, that’s a clean approach 👏🏻"
+      },
+      "in-reply-to": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "David Leininger",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/ae87ebd47981b480f2b6ad211b9a8ef6bfd79e9594535e70973765280ccb3198.jpg",
+        "url": "https://twitter.com/davidleininger"
+      },
+      "url": "https://twitter.com/davidleininger/status/1642987298764488706",
+      "published": "2023-04-03T20:27:51+00:00",
+      "wm-received": "2023-04-03T20:34:27Z",
+      "wm-id": 1657340,
+      "wm-source": "https://brid.gy/post/twitter/hexagoncircle/1642987298764488706",
+      "wm-target": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "content": {
+        "html": "This is smooth: <a href=\"https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/\">ryanmulligan.dev/blog/sticky-he…</a>. Well done <a href=\"https://twitter.com/hexagoncircle\">@hexagoncircle</a>",
+        "text": "This is smooth: ryanmulligan.dev/blog/sticky-he…. Well done @hexagoncircle"
+      },
+      "mention-of": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "narlie choller",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/ddfa0b4e753aaf3088342c94f15397fc40b2f2f3ca03d74d6f3113f30ac27506.jpg",
+        "url": "https://twitter.com/charlienoller_"
+      },
+      "url": "https://twitter.com/charlienoller_/status/1642983520472801281",
+      "published": "2023-04-03T20:12:51+00:00",
+      "wm-received": "2023-04-03T20:14:30Z",
+      "wm-id": 1657328,
+      "wm-source": "https://brid.gy/comment/twitter/piccalilli_/1642865168769007620/1642983520472801281",
+      "wm-target": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "content": {
+        "html": "just implemented this! nice one 🧑‍💻\n<a class=\"u-mention\" href=\"http://andy-bell.co.uk/links/\"></a>\n<a class=\"u-mention\" href=\"http://bell.bz/@andy\"></a>\n<a class=\"u-mention\" href=\"http://tweets.andy-bell.co.uk/\"></a>\n<a class=\"u-mention\" href=\"https://andy-bell.co.uk/\"></a>\n<a class=\"u-mention\" href=\"https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/piccalilli_\"></a>",
+        "text": "just implemented this! nice one 🧑‍💻"
+      },
+      "in-reply-to": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Arzivre",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/363ee7495e37670d0ba8693e8e56c8c6b5ecea0c4dd21eebcb2c051a3e06a0a9.jpg",
+        "url": "https://twitter.com/arzivre"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1642585351549227009#favorited-by-1352457931808100352",
+      "published": null,
+      "wm-received": "2023-04-03T19:34:00Z",
+      "wm-id": 1657311,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1642585351549227009/1352457931808100352",
+      "wm-target": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "like-of": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Steve Bauman 💎",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/a7a1a8eea42b122089424006929c5552966770a9b76e4e18e102ebc8c1613b7f.jpg",
+        "url": "https://twitter.com/ste_bau"
+      },
+      "url": "https://twitter.com/ste_bau/status/1642917690527342592",
+      "published": "2023-04-03T15:51:16+00:00",
+      "wm-received": "2023-04-03T16:09:35Z",
+      "wm-id": 1657203,
+      "wm-source": "https://brid.gy/comment/twitter/piccalilli_/1642865168769007620/1642917690527342592",
+      "wm-target": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "content": {
+        "html": "Thanks man! 😄\n<a class=\"u-mention\" href=\"http://andy-bell.co.uk/links/\"></a>\n<a class=\"u-mention\" href=\"http://bell.bz/@andy\"></a>\n<a class=\"u-mention\" href=\"http://tweets.andy-bell.co.uk/\"></a>\n<a class=\"u-mention\" href=\"https://andy-bell.co.uk/\"></a>\n<a class=\"u-mention\" href=\"https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/danmatthews\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/piccalilli_\"></a>",
+        "text": "Thanks man! 😄"
+      },
+      "in-reply-to": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Chris Burnell",
+        "photo": "https://webmention.io/avatar/chrisburnell.com/ace41559b8d4e8d8189b285d88b1ea2dc6c53056fc512be7d199c0c8cadc53fe.jpg",
+        "url": "https://chrisburnell.com/"
+      },
+      "url": "https://chrisburnell.com/bookmark/sticky-page-header-shadow-on-scroll/",
+      "published": "2023-04-03T16:49:28+01:00",
+      "wm-received": "2023-04-03T15:56:51Z",
+      "wm-id": 1657196,
+      "wm-source": "https://chrisburnell.com/bookmark/sticky-page-header-shadow-on-scroll",
+      "wm-target": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "name": "Sticky Page Header Shadow on Scroll",
+      "summary": {
+        "content-type": "text/plain",
+        "value": "I love rather simple but powerful solutions like this—so clever!"
+      },
+      "bookmark-of": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "wm-property": "bookmark-of",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://chrisburnell.com/bookmark/sticky-page-header-shadow-on-scroll/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "GianDev",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/02b1b25fb7906f6ca35efde0118b57ec62d8ab63ebd2eccc5435a083f3ab7594.jpg",
+        "url": "https://twitter.com/Giando_Riceputi"
+      },
+      "url": "https://twitter.com/Giando_Riceputi/status/1642910991980666880",
+      "published": "2023-04-03T15:24:38+00:00",
+      "wm-received": "2023-04-03T15:42:42Z",
+      "wm-id": 1657193,
+      "wm-source": "https://brid.gy/repost/twitter/hexagoncircle/1642585351549227009/1642910991980666880",
+      "wm-target": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "content": {
+        "text": "New post published today 🎉 ryanmulligan.dev/blog/sticky-he…"
+      },
+      "repost-of": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "GianDev",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/02b1b25fb7906f6ca35efde0118b57ec62d8ab63ebd2eccc5435a083f3ab7594.jpg",
+        "url": "https://twitter.com/Giando_Riceputi"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1642585351549227009#favorited-by-912290234838257664",
+      "published": null,
+      "wm-received": "2023-04-03T15:42:41Z",
+      "wm-id": 1657192,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1642585351549227009/912290234838257664",
+      "wm-target": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "like-of": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Pablo Lara H",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/9a8b209d6d0e2dd068ad8e9cd247a0b247b0b42d0ae6aa497b84900e35019931.jpg",
+        "url": "https://twitter.com/pablolarah"
+      },
+      "url": "https://twitter.com/pablolarah/status/1642906146783518721",
+      "published": "2023-04-03T15:05:23+00:00",
+      "wm-received": "2023-04-03T15:08:09Z",
+      "wm-id": 1657176,
+      "wm-source": "https://brid.gy/post/twitter/hexagoncircle/1642906146783518721",
+      "wm-target": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "photo": [
+        "https://pbs.twimg.com/media/FszGFjPWcAAXygB.png"
+      ],
+      "content": {
+        "html": "👁‍🗨Sticky Page Header Shadow on Scroll\nby Ryan Mulligan <a href=\"https://twitter.com/hexagoncircle\">@hexagoncircle</a> @hexagoncircle@fosstodon.org\n<a href=\"https://twitter.com/search?q=%23StickyHeader\">#StickyHeader</a> <a href=\"https://twitter.com/search?q=%23css\">#css</a> <a href=\"https://twitter.com/search?q=%23js\">#js</a> <a href=\"https://twitter.com/search?q=%23webdev\">#webdev</a> \n\n<a href=\"https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/\">ryanmulligan.dev/blog/sticky-he…</a>",
+        "text": "👁‍🗨Sticky Page Header Shadow on Scroll\nby Ryan Mulligan @hexagoncircle @hexagoncircle@fosstodon.org\n#StickyHeader #css #js #webdev \n\nryanmulligan.dev/blog/sticky-he…"
+      },
+      "mention-of": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "wm-property": "mention-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andy Bell",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/fff5a9335e30fcd0e9def7bb0cc71d108fc5ae0c5638c3f3357f14da610cb171.jpg",
+        "url": "https://twitter.com/piccalilli_"
+      },
+      "url": "https://twitter.com/piccalilli_/status/1642886957976961030",
+      "published": "2023-04-03T13:49:08+00:00",
+      "wm-received": "2023-04-03T14:09:43Z",
+      "wm-id": 1657151,
+      "wm-source": "https://brid.gy/comment/twitter/piccalilli_/1642865168769007620/1642886957976961030",
+      "wm-target": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "content": {
+        "html": "well know because that's a red background. Best bet is to look up mix-blend-mode. \n\nI wrote a lesson on it in Learn CSS <a href=\"https://web.dev/learn/css/blend-modes/\">web.dev/learn/css/blen…</a>\n<a class=\"u-mention\" href=\"https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/danmatthews\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/ste_bau\"></a>",
+        "text": "well know because that's a red background. Best bet is to look up mix-blend-mode. \n\nI wrote a lesson on it in Learn CSS web.dev/learn/css/blen…"
+      },
+      "in-reply-to": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Steve Bauman 💎",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/a7a1a8eea42b122089424006929c5552966770a9b76e4e18e102ebc8c1613b7f.jpg",
+        "url": "https://twitter.com/ste_bau"
+      },
+      "url": "https://twitter.com/ste_bau/status/1642889910892785667",
+      "published": "2023-04-03T14:00:52+00:00",
+      "wm-received": "2023-04-03T14:09:41Z",
+      "wm-id": 1657150,
+      "wm-source": "https://brid.gy/comment/twitter/piccalilli_/1642865168769007620/1642889910892785667",
+      "wm-target": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "content": {
+        "html": "Ok I'll check it out. Though, I'd rather implement a solution that works for all cases, rather than specific ones.\n<a class=\"u-mention\" href=\"http://andy-bell.co.uk/links/\"></a>\n<a class=\"u-mention\" href=\"http://bell.bz/@andy\"></a>\n<a class=\"u-mention\" href=\"http://tweets.andy-bell.co.uk/\"></a>\n<a class=\"u-mention\" href=\"https://andy-bell.co.uk/\"></a>\n<a class=\"u-mention\" href=\"https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/danmatthews\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/piccalilli_\"></a>",
+        "text": "Ok I'll check it out. Though, I'd rather implement a solution that works for all cases, rather than specific ones."
+      },
+      "in-reply-to": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andy Bell",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/fff5a9335e30fcd0e9def7bb0cc71d108fc5ae0c5638c3f3357f14da610cb171.jpg",
+        "url": "https://twitter.com/piccalilli_"
+      },
+      "url": "https://twitter.com/piccalilli_/status/1642891349362982915",
+      "published": "2023-04-03T14:06:35+00:00",
+      "wm-received": "2023-04-03T14:09:40Z",
+      "wm-id": 1657149,
+      "wm-source": "https://brid.gy/comment/twitter/piccalilli_/1642865168769007620/1642891349362982915",
+      "wm-target": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "content": {
+        "html": "&gt; I'd rather implement a solution that works for all cases\n\nWouldn't we all, but you certainly won't get that with JavaScript.\n\nAnyway, cool article and a nice trick!\n<a class=\"u-mention\" href=\"https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/danmatthews\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/ste_bau\"></a>",
+        "text": "> I'd rather implement a solution that works for all cases\n\nWouldn't we all, but you certainly won't get that with JavaScript.\n\nAnyway, cool article and a nice trick!"
+      },
+      "in-reply-to": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Luis Carranza Candia",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/5207943e994e622350702ee72a008a241d73c34b89b5bdf8b865416697bc7b6d.png",
+        "url": "https://twitter.com/luencode"
+      },
+      "url": "https://twitter.com/hexagoncircle/status/1642585351549227009#favorited-by-1536933680475676672",
+      "published": null,
+      "wm-received": "2023-04-03T14:07:34Z",
+      "wm-id": 1657144,
+      "wm-source": "https://brid.gy/like/twitter/hexagoncircle/1642585351549227009/1536933680475676672",
+      "wm-target": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "like-of": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dan Matthews ⚡",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/bacc8e184f687455d4507917068af31ee6715f0a9a6d22f81e4e773f06e47ad9.jpg",
+        "url": "https://twitter.com/danmatthews"
+      },
+      "url": "https://twitter.com/danmatthews/status/1642877440530829313",
+      "published": "2023-04-03T13:11:19+00:00",
+      "wm-received": "2023-04-03T13:49:29Z",
+      "wm-id": 1657131,
+      "wm-source": "https://brid.gy/comment/twitter/piccalilli_/1642865168769007620/1642877440530829313",
+      "wm-target": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "content": {
+        "html": "I feel like yours and <a href=\"https://twitter.com/ste_bau\">@ste_bau</a> 's last post will compliment each other very nicely.\n<a class=\"u-mention\" href=\"http://andy-bell.co.uk/links/\"></a>\n<a class=\"u-mention\" href=\"http://bell.bz/@andy\"></a>\n<a class=\"u-mention\" href=\"http://tweets.andy-bell.co.uk/\"></a>\n<a class=\"u-mention\" href=\"https://andy-bell.co.uk/\"></a>\n<a class=\"u-mention\" href=\"https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/piccalilli_\"></a>",
+        "text": "I feel like yours and @ste_bau 's last post will compliment each other very nicely."
+      },
+      "in-reply-to": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andy Bell",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/fff5a9335e30fcd0e9def7bb0cc71d108fc5ae0c5638c3f3357f14da610cb171.jpg",
+        "url": "https://twitter.com/piccalilli_"
+      },
+      "url": "https://twitter.com/piccalilli_/status/1642880860511674369",
+      "published": "2023-04-03T13:24:55+00:00",
+      "wm-received": "2023-04-03T13:49:29Z",
+      "wm-id": 1657132,
+      "wm-source": "https://brid.gy/comment/twitter/piccalilli_/1642865168769007620/1642880860511674369",
+      "wm-target": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "content": {
+        "html": "Ah yeh, we've been able to do that with CSS for over a decade now! <a href=\"https://lea.verou.me/2012/04/background-attachment-local/\">lea.verou.me/2012/04/backgr…</a>\n<a class=\"u-mention\" href=\"https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/danmatthews\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/ste_bau\"></a>",
+        "text": "Ah yeh, we've been able to do that with CSS for over a decade now! lea.verou.me/2012/04/backgr…"
+      },
+      "in-reply-to": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Andy Bell",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/fff5a9335e30fcd0e9def7bb0cc71d108fc5ae0c5638c3f3357f14da610cb171.jpg",
+        "url": "https://twitter.com/piccalilli_"
+      },
+      "url": "https://twitter.com/piccalilli_/status/1642882235933097987",
+      "published": "2023-04-03T13:30:22+00:00",
+      "wm-received": "2023-04-03T13:49:28Z",
+      "wm-id": 1657129,
+      "wm-source": "https://brid.gy/comment/twitter/piccalilli_/1642865168769007620/1642882235933097987",
+      "wm-target": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "content": {
+        "html": "If it's a light background, you can use the multiply blend mode\n<a class=\"u-mention\" href=\"https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/danmatthews\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/ste_bau\"></a>",
+        "text": "If it's a light background, you can use the multiply blend mode"
+      },
+      "in-reply-to": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "LukyVj - A$AP Luky",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/66bc79d7fd10cfcde3a75f3b6b1e47dcf144d3b5ecc2ce4153d86b7c31b4cd1a.jpg",
+        "url": "https://twitter.com/LukyVJ"
+      },
+      "url": "https://twitter.com/LukyVJ/status/1642884984351465474",
+      "published": "2023-04-03T13:41:18+00:00",
+      "wm-received": "2023-04-03T13:49:28Z",
+      "wm-id": 1657130,
+      "wm-source": "https://brid.gy/comment/twitter/piccalilli_/1642865168769007620/1642884984351465474",
+      "wm-target": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "content": {
+        "html": "Good share 🫶\n<a class=\"u-mention\" href=\"http://andy-bell.co.uk/links/\"></a>\n<a class=\"u-mention\" href=\"http://bell.bz/@andy\"></a>\n<a class=\"u-mention\" href=\"http://tweets.andy-bell.co.uk/\"></a>\n<a class=\"u-mention\" href=\"https://andy-bell.co.uk/\"></a>\n<a class=\"u-mention\" href=\"https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/piccalilli_\"></a>",
+        "text": "Good share 🫶"
+      },
+      "in-reply-to": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Steve Bauman 💎",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/a7a1a8eea42b122089424006929c5552966770a9b76e4e18e102ebc8c1613b7f.jpg",
+        "url": "https://twitter.com/ste_bau"
+      },
+      "url": "https://twitter.com/ste_bau/status/1642883467946983438",
+      "published": "2023-04-03T13:35:16+00:00",
+      "wm-received": "2023-04-03T13:49:27Z",
+      "wm-id": 1657126,
+      "wm-source": "https://brid.gy/comment/twitter/piccalilli_/1642865168769007620/1642883467946983438",
+      "wm-target": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "video": [
+        "https://video.twimg.com/ext_tw_video/1642882935962386432/pu/vid/884x318/68ihccVPEVrflmC3.mp4?tag=12"
+      ],
+      "content": {
+        "html": "I'd have to see a demo to understand. Can you resolve this issue shown below using your mentioned resolution?\n<a class=\"u-mention\" href=\"http://andy-bell.co.uk/links/\"></a>\n<a class=\"u-mention\" href=\"http://bell.bz/@andy\"></a>\n<a class=\"u-mention\" href=\"http://tweets.andy-bell.co.uk/\"></a>\n<a class=\"u-mention\" href=\"https://andy-bell.co.uk/\"></a>\n<a class=\"u-mention\" href=\"https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/danmatthews\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/piccalilli_\"></a>",
+        "text": "I'd have to see a demo to understand. Can you resolve this issue shown below using your mentioned resolution?"
+      },
+      "in-reply-to": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Dan Matthews ⚡",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/bacc8e184f687455d4507917068af31ee6715f0a9a6d22f81e4e773f06e47ad9.jpg",
+        "url": "https://twitter.com/danmatthews"
+      },
+      "url": "https://twitter.com/danmatthews/status/1642883666639454214",
+      "published": "2023-04-03T13:36:04+00:00",
+      "wm-received": "2023-04-03T13:49:27Z",
+      "wm-id": 1657127,
+      "wm-source": "https://brid.gy/comment/twitter/piccalilli_/1642865168769007620/1642883666639454214",
+      "wm-target": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "content": {
+        "html": "Also should apologise: I thought that was your article @piccalilli_ .\n<a class=\"u-mention\" href=\"http://andy-bell.co.uk/links/\"></a>\n<a class=\"u-mention\" href=\"http://bell.bz/@andy\"></a>\n<a class=\"u-mention\" href=\"http://tweets.andy-bell.co.uk/\"></a>\n<a class=\"u-mention\" href=\"https://andy-bell.co.uk/\"></a>\n<a class=\"u-mention\" href=\"https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/piccalilli_\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/ste_bau\"></a>",
+        "text": "Also should apologise: I thought that was your article @piccalilli_ ."
+      },
+      "in-reply-to": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Steve Bauman 💎",
+        "photo": "https://webmention.io/avatar/pbs.twimg.com/a7a1a8eea42b122089424006929c5552966770a9b76e4e18e102ebc8c1613b7f.jpg",
+        "url": "https://twitter.com/ste_bau"
+      },
+      "url": "https://twitter.com/ste_bau/status/1642881746311036929",
+      "published": "2023-04-03T13:28:26+00:00",
+      "wm-received": "2023-04-03T13:49:27Z",
+      "wm-id": 1657128,
+      "wm-source": "https://brid.gy/comment/twitter/piccalilli_/1642865168769007620/1642881746311036929",
+      "wm-target": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "content": {
+        "html": "Doesn't work when content inside has a background, this was the very first link I tried 😏\n<a class=\"u-mention\" href=\"http://andy-bell.co.uk/links/\"></a>\n<a class=\"u-mention\" href=\"http://bell.bz/@andy\"></a>\n<a class=\"u-mention\" href=\"http://tweets.andy-bell.co.uk/\"></a>\n<a class=\"u-mention\" href=\"https://andy-bell.co.uk/\"></a>\n<a class=\"u-mention\" href=\"https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/danmatthews\"></a>\n<a class=\"u-mention\" href=\"https://twitter.com/piccalilli_\"></a>",
+        "text": "Doesn't work when content inside has a background, this was the very first link I tried 😏"
+      },
+      "in-reply-to": "https://ryanmulligan.dev/blog/sticky-header-scroll-shadow/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
     {
       "type": "entry",
       "author": {
