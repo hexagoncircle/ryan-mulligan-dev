@@ -1,0 +1,69 @@
+{%- set currentPostMentions = webmentions | webmentionsForPage -%}
+{%- set currentPostMentionCount = webmentions | webmentionCountForPage -%}
+
+{% if currentPostMentions.likes.length or currentPostMentions.reposts.length or currentPostMentions.comments.length %}
+  <section class="webmentions">
+    <h2 class="section-title">
+      <strong>Webmentions</strong> for this post 
+      <a href="https://indieweb.org/webmention.io" title="What are webmentions?" target="_blank">
+        {{ 'question' | icon | svgContents | safe }}
+      </a>
+    </h2>
+    {% if currentPostMentions.likes.length %}
+      <details>
+        <summary class="heading">
+          <strong>{{ currentPostMentions.likes.length }}</strong> likes
+      </summary>
+        <ul class="webmentions-list" role="list">
+          {% for item in currentPostMentions.likes %}
+            <li>
+              <a href="{{ item.url }}" target="_blank" title="{{ item.author.name }}">
+                {% image item.author.photo,
+                "" %}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </details>
+    {% endif %}
+
+    {% if currentPostMentions.reposts.length %}
+      <details>
+        <summary class="heading">
+          <strong>{{ currentPostMentions.reposts.length }}</strong> reposts
+      </summary>
+        <ul class="webmentions-list" role="list">
+          {% for item in currentPostMentions.reposts %}
+            <li>
+              <a href="{{ item.url }}" target="_blank" title="{{ item.author.name }}">
+                {% image item.author.photo,
+                "" %}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </details>
+    {% endif %}
+
+    {% if currentPostMentions.comments.length %}
+      <details>
+        <summary class="heading">
+          <strong>{{ currentPostMentions.comments.length }}</strong> comments
+      </summary>
+        <ul class="webmentions-comments" role="list">
+          {% for item in currentPostMentions.comments %}
+            <li class="comment">
+              <a href="{{ item.url }}" target="_blank" title="{{ item.author.name }}">
+                {% image item.author.photo,
+                "" %}
+              </a>
+              <p>
+                {{ item.content.text }}
+              </p>
+            </li>
+          {% endfor %}
+        </ul>
+      </details>
+    {% endif %}
+  </section>
+{% endif %}

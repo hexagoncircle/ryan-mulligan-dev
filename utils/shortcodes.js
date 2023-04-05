@@ -54,7 +54,7 @@ module.exports = {
     alt,
     caption,
     attrs = {},
-    widths = [400, 800, 1280],
+    widths = [100, 400, 800, 1280],
     formats = ["webp", "jpeg"],
     sizes = "100vw"
   ) {

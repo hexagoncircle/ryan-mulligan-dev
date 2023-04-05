@@ -25,6 +25,7 @@ a:focus-visible {
     a:focus-visible,
     button:focus-visible,
     input:focus-visible,
+    summary:focus-visible,
     .projects:focus-visible
   ) {
   outline: var(--outline);
