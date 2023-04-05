@@ -254,12 +254,17 @@ details[open] summary::before {
 }
 
 .webmentions {
+  --border-width: 4px;
+  --offset: calc((var(--border-width) * 3));
   position: relative;
   border-block-start: 1px solid var(--color-bg-accent);
   padding-block-start: var(--space-sm);
 }
 
 .webmentions .section-title {
+  font-size: var(--font-0);
+  font-family: inherit;
+  font-weight: inherit;
   margin-block-end: var(--space-2xs);
 }
 
@@ -282,8 +287,6 @@ details[open] summary::before {
 }
 
 .webmentions-list {
-  --border-width: 4px;
-  --offset: calc((var(--border-width) * 3));
   display: flex;
   flex-wrap: wrap;
   padding-inline-start: calc(var(--offset) - var(--border-width));
@@ -304,36 +307,41 @@ details[open] summary::before {
   border-width: calc(var(--border-width) / 2);
 }
 
+.webmentions-list a {
+  display: block;
+  border-radius: var(--radius-round);
+}
+
 .webmentions img {
   max-width: 50px;
   height: auto;
   aspect-ratio: 1;
   border-radius: var(--radius-round);
-  border: var(--border-width) solid transparent;
+  border: var(--border-width) solid var(--color-bg);
   background-color: var(--color-bg);
 }
 
 .webmentions-comments .comment {
   display: flex;
   align-items: center;
-  gap: var(--space-2xs);
+  font-size: var(--font--1);
+  margin-block-start: var(--space-2xs);
+}
+
+.webmentions-comments .comment a {
+  position: relative;
+  flex-shrink: 0;
+  align-self: baseline;
+  border-radius: var(--radius-round);
+}
+
+.webmentions-comments .comment p {
   padding: var(--space-xs);
+  padding-inline-start: var(--space-md);
+  margin-inline-start: calc(var(--space-xs) * -1);
   inline-size: 100%;
   background-color: var(--color-bg-accent);
   border-radius: var(--radius-sm);
   line-height: 1.4;
   word-break: break-word;
-}
-
-.webmentions-comments a {
-  border-radius: var(--radius-round);
-}
-
-.webmentions-comments .comment {
-  margin-block-start: var(--space-2xs);
-}
-
-.webmentions-comments .comment a {
-  flex-shrink: 0;
-  align-self: start;
 }
