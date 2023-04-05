@@ -1,6 +1,9 @@
 (function () {
   const projectList = document.querySelector(".projects");
   const projects = [...projectList.querySelectorAll("a")];
+  const reducedMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  ).matches;
   const cls = {
     activeList: "active",
     currentProject: "current",
@@ -95,7 +98,7 @@
     initFocusTextElement();
     setProjectTabIndex();
     toggleProjectFocusClass();
-    projects.forEach((p) => handleProjectHover(p));
+    !reducedMotion && projects.forEach((p) => handleProjectHover(p));
     projectList.addEventListener("keydown", (e) => handleKeyPress(e));
 
     document.addEventListener("click", (e) => {

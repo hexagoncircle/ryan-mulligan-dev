@@ -67,11 +67,11 @@
   display: block;
   scroll-margin-top: var(--space-2xl);
   transform-style: preserve-3d;
-  transition: transform 250ms cubic-bezier(0.34, 1.85, 0.66, 1);
   overflow: hidden;
   border-radius: var(--radius-md);
   background-color: var(--color-bg-accent);
   border: 2px solid var(--color-bg-accent);
+  transition: transform var(--duration) cubic-bezier(0.34, 1.85, 0.66, 1);
 }
 
 .projects .item a::before {
@@ -99,7 +99,7 @@
   pointer-events: none;
 }
 
-@media (hover: hover) and (pointer: fine) {
+@media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
   .projects .item a::after {
     content: "";
     position: absolute;
