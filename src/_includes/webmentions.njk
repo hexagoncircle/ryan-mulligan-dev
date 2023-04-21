@@ -23,7 +23,7 @@
         <ul class="webmentions-list" role="list">
           {% for item in likes %}
             <li>
-              <a href="{{ item.url }}" target="_blank" title="{{ item.author.name }}">
+              <a class="author-source" href="{{ item.author.url }}" target="_blank" title="{{ item.author.name }}">
                 {% image item.author.photo,
                 "" %}
               </a>
@@ -41,7 +41,7 @@
         <ul class="webmentions-list" role="list">
           {% for item in reposts %}
             <li>
-              <a href="{{ item.url }}" target="_blank" title="{{ item.author.name }}">
+              <a class="author-source" href="{{ item.author.url }}" target="_blank" title="{{ item.author.name }}">
                 {% image item.author.photo,
                 "" %}
               </a>
@@ -58,17 +58,20 @@
         </summary>
         <ul class="webmentions-replies" role="list">
           {% for item in replies %}
-            <li class="comment">
-              <a href="{{ item.url }}" target="_blank" title="{{ item.author.name }}">
+            <li class="reply">
+              <a class="author-source" href="{{ item.author.url }}" target="_blank" title="{{ item.author.name }}">
                 {% if item.author.photo %}
                   {% image item.author.photo,
-                  "" %}
+                  item.author.name %}
                 {% else %}
                   <div class="image"></div>
                 {% endif %}
               </a>
               <p>
                 {{ item.content.text }}
+                <a class="reply-source" href="{{ item.url }}" target="_blank" title="Go to source of this reply">
+                  {{ 'arrow-square-out' | icon | svgContents | safe }}
+                </a>
               </p>
             </li>
           {% endfor %}

@@ -10,6 +10,7 @@
 @import url("_layout.css") layer(layout);
 @import url("_navigation.css") layer(layout);
 @import url("_content.css") layer(layout);
+@import url("_webmentions.css") layer(layout);
 
 @import url("_theme-controls.css") layer(components);
 @import url("_projects.css") layer(components);
