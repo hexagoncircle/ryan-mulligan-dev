@@ -28,25 +28,19 @@ module.exports = {
   },
 
   getWebmentionsForUrl(webmentions, url) {
-    const checkBlocklist = (entry) => {
-      const urlParts = new URL(entry.url).hostname.split(".");
-      const hostname = urlParts
-        .slice(0)
-        .slice(-(urlParts.length === 4 ? 3 : 2))
-        .join(".");
-
-      return !blocklist.includes(hostname);
-    };
+    const commentTypes = ["in-reply-to", "mention-of"];
 
     const hasRequiredFields = (entry) => {
-      const { author, published, content } = entry;
-      return author.name && published && content;
+      if (commentTypes.includes(entry["wm-property"])) {
+        const { author, published, content } = entry;
+        return author.name && published && content;
+      }
+      return entry;
     };
 
     return webmentions.children
       .filter((entry) => entry["wm-target"] === url)
-      .filter(hasRequiredFields)
-      .filter(checkBlocklist);
+      .filter(hasRequiredFields);
   },
 
   getWebmentionsSize: (mentions) => {
