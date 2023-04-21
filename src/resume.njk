@@ -12,7 +12,7 @@ metaTitle: "Resume"
   <h2 class="visually-hidden p-name">Ryan Mulligan</h2>
   <img class="u-photo" src="/assets/images/headshot.jpg" alt="" style="display: none"/>
   <dl>
-    {% for item in "resume-header" | getVarFromString %}
+    {% for item in resumeHeader | getVarFromString %}
       <div>
         <dt>
           <span class="visually-hidden">{{item.title}}</span>
@@ -74,7 +74,7 @@ metaTitle: "Resume"
 <h2>Skills</h2>
 <p>My primary goal is to build online experiences using the foundational building blocks of the web and align to the principle of least power: start with simpler languages like HTML and CSS before jumping into more complex frameworks. Keep systems straightforward, extensible, and well-documented. Below highlights a few general areas of expertise:</p>
 <ul class="multi-column">
-  {% for skill in "resume-skills" | getVarFromString %}
+  {% for skill in resumeSkills | getVarFromString %}
     <li class="p-skill">{{ skill }}</li>
   {% endfor %}
 </ul>

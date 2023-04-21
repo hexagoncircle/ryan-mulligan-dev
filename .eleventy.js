@@ -6,7 +6,6 @@ const pluginPostCss = require("eleventy-plugin-postcss");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginTimeToRead = require("eleventy-plugin-time-to-read");
 const pluginWebc = require("@11ty/eleventy-plugin-webc");
-const pluginWebmentions = require("eleventy-plugin-webmentions");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginSVGContents = require("eleventy-plugin-svg-contents");
 
@@ -41,10 +40,6 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginSVGContents);
   eleventyConfig.addPlugin(pluginWebc, {
     components: "src/_includes/components/**/*.webc",
-  });
-  eleventyConfig.addPlugin(pluginWebmentions, {
-    domain: "ryanmulligan.dev",
-    token: process.env.WEBMENTION_IO_TOKEN,
   });
 
   // Filters

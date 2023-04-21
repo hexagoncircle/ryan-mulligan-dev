@@ -50,7 +50,7 @@
   grid-column: feature;
 }
 
-.content img {
+.content .image {
   width: 100%;
   height: auto;
   vertical-align: bottom;
@@ -282,7 +282,7 @@ details[open] summary::before {
 }
 
 .webmentions-list,
-.webmentions-comments {
+.webmentions-replies {
   margin-block: var(--space-3xs) var(--space-sm);
 }
 
@@ -301,8 +301,8 @@ details[open] summary::before {
   z-index: 1;
 }
 
-.webmentions-list li:hover img,
-.webmentions-list a:focus-visible img {
+.webmentions-list li:hover .image,
+.webmentions-list a:focus-visible .image {
   outline: inherit;
   border-width: calc(var(--border-width) / 2);
 }
@@ -312,30 +312,30 @@ details[open] summary::before {
   border-radius: var(--radius-round);
 }
 
-.webmentions img {
+.webmentions .image {
   width: 3em;
   height: auto;
   aspect-ratio: 1;
   border-radius: var(--radius-round);
   border: var(--border-width) solid var(--color-bg);
-  background-color: var(--color-bg);
+  background-color: var(--color-bg-accent);
 }
 
-.webmentions-comments .comment {
+.webmentions-replies .comment {
   display: flex;
   align-items: center;
   font-size: var(--font--1);
   margin-block-start: var(--space-2xs);
 }
 
-.webmentions-comments .comment a {
+.webmentions-replies .comment a {
   position: relative;
   flex-shrink: 0;
   align-self: baseline;
   border-radius: var(--radius-round);
 }
 
-.webmentions-comments .comment p {
+.webmentions-replies .comment p {
   padding: var(--space-xs);
   padding-inline-start: var(--space-md);
   margin-inline-start: calc(var(--space-xs) * -1);

@@ -1,4 +1,5 @@
 const { DateTime } = require("luxon");
+const blocklist = require("../src/_data/webmentionsBlocklist.json");
 
 module.exports = {
   dateToFormat: function (date, format) {
@@ -18,6 +19,38 @@ module.exports = {
 
   getVarFromString: function (varName) {
     return this.getVariables()[varName];
+  },
+
+  getWebmentionsByType: (mentions, mentionType) => {
+    return mentions.filter((entry) =>
+      mentionType.split(", ").includes(entry["wm-property"])
+    );
+  },
+
+  getWebmentionsForUrl(webmentions, url) {
+    const checkBlocklist = (entry) => {
+      const urlParts = new URL(entry.url).hostname.split(".");
+      const hostname = urlParts
+        .slice(0)
+        .slice(-(urlParts.length === 4 ? 3 : 2))
+        .join(".");
+
+      return !blocklist.includes(hostname);
+    };
+
+    const hasRequiredFields = (entry) => {
+      const { author, published, content } = entry;
+      return author.name && published && content;
+    };
+
+    return webmentions.children
+      .filter((entry) => entry["wm-target"] === url)
+      .filter(hasRequiredFields)
+      .filter(checkBlocklist);
+  },
+
+  getWebmentionsSize: (mentions) => {
+    return !mentions ? 0 : mentions.length;
   },
 
   icon: (name) => {

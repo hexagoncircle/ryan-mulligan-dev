@@ -66,6 +66,7 @@ module.exports = {
 
     let imageAttributes = {
       alt,
+      class: "image",
       sizes,
       loading: "lazy",
       decoding: "async",
