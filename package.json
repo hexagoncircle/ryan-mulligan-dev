@@ -35,6 +35,7 @@
     "@11ty/webc": "^0.11.1",
     "@netlify/functions": "^1.4.0",
     "fs": "^0.0.1-security",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "node-fetch": "^2.6.9"
   }
 }
