@@ -13,7 +13,7 @@
       <details>
         <summary class="heading">
           <strong>{{ currentPostMentions.likes.length }}</strong> likes
-      </summary>
+        </summary>
         <ul class="webmentions-list" role="list">
           {% for item in currentPostMentions.likes %}
             <li>
@@ -31,7 +31,7 @@
       <details>
         <summary class="heading">
           <strong>{{ currentPostMentions.reposts.length }}</strong> reposts
-      </summary>
+        </summary>
         <ul class="webmentions-list" role="list">
           {% for item in currentPostMentions.reposts %}
             <li>
@@ -49,13 +49,17 @@
       <details>
         <summary class="heading">
           <strong>{{ currentPostMentions.comments.length }}</strong> comments
-      </summary>
+        </summary>
         <ul class="webmentions-comments" role="list">
           {% for item in currentPostMentions.comments %}
             <li class="comment">
               <a href="{{ item.url }}" target="_blank" title="{{ item.author.name }}">
-                {% image item.author.photo,
-                "" %}
+                {% if item.author.photo %}
+                  {% image item.author.photo,
+                  "" %}
+                {% else %}
+                  <div class="image"></div>
+                {% endif %}
               </a>
               <p>
                 {{ item.content.text }}
