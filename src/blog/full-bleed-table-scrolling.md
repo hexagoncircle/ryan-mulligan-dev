@@ -1,5 +1,5 @@
 ---
-title: Full-bleed table scrolling on narrow viewports
+title: Full-bleed Table Scrolling on Narrow Viewports
 description: Set an offset that matches the inline page gutter so the table can overflow the edge of the window.
 ogImage: /assets/social/full-bleed-table-scrolling.png
 date: 2023-05-20
