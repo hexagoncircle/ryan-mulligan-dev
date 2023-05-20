@@ -25,6 +25,7 @@ On this wrapper, a combination of inline padding and negative margins create an 
 ```css
 body {
   --page-gutter: clamp(1rem, 4vw, 2rem);
+  padding-inline: var(--page-gutter);
 }
 
 .wrapper {
