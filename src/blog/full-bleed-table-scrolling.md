@@ -33,7 +33,7 @@ body {
 }
 ```
 
-`clamp()` is used to create fluid padding. Check out how the gutter shrinks as the viewport gets narrower. Unfamiliar with how this CSS function works? Check out the [docs on MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp).
+`clamp()` is used to create fluid padding. The gutter size shrinks as the viewport gets narrower. Unfamiliar with how this CSS function works? Check out the [docs on MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp).
 {.callout}
 
 The inline margin will pull the table wrapper to the viewport edge. Then inline padding pushes the table back into position so that it's once again aligned with the page content. Here's all the CSS necessary for horizontal scrolling and wrapper repositioning:
