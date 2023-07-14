@@ -47,7 +47,7 @@ Remember! The `super-cool-list` styles needs to be declared _after_ the `grid` r
 I absolutely love this concept of altering layouts through exposed props like the example above. But what if we desired the ability to provide independent values for the horizontal and vertical spacing between each item? This is where a key feature of CSS custom properties comes into play: [fallback values](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties#custom_property_fallback_values). In the revised version of the above code snippet, The `--gap` value declared at the start of the ruleset becomes the fallback—or default value—for two new variables.
 
 ```css
-.css-grid {
+.grid {
   --min: 15ch;
   --gap: 1rem;
   --row-gap: initial;
@@ -71,13 +71,13 @@ The [`gap` property](https://developer.mozilla.org/en-US/docs/Web/CSS/gap) is sh
 
 The gap spacing between each row of items will now be `2rem` while the columns stick to the default `--gap` size of `1rem`.
 
-## Guaranteed-Invalid Values
+## Guaranteed-invalid values
 
 `--row-gap` and `--column-gap` are both set to the `initial` keyword because it's a [guaranteed-invalid value](https://drafts.csswg.org/css-variables/#guaranteed-invalid-value) in custom properties. This means that these two custom property values will become invalid and use a fallback if one is available. In the example above, since `--row-gap` and `--column-gap` are invalid, the fallback `--gap` value is applied.
 
-## Why not just use fallbacks?
+## Why not only use fallbacks?
 
-Custom properties can have more than one fallback value—a concept Miriam Suzanne refers to as custom property "stacks" in [this article](https://css-tricks.com/using-custom-property-stacks-to-tame-the-cascade/), which I love. This is also where I discovered how `initial` works in custom properties.
+Custom properties can have more than one fallback value—a concept Miriam Suzanne refers to as [custom property "stacks" in this article](https://css-tricks.com/using-custom-property-stacks-to-tame-the-cascade/), which I love. It's also where I discovered how `initial` works in custom properties.
 
 So then if custom properties can have multiple fallback values, could we instead write our CSS like this?
 
@@ -107,9 +107,9 @@ It seems that this works as one would expect. However, on the occasion there is 
 </ul>
 ```
 
-By declaring `--gap` at the top of the `grid` ruleset, it resets the value on the nested element to its default. I personally prefer this. I can imagine headaches may come from having a very deeply (but hopefully not too deep!) nested element where the gap is different than the default I expected. It wouldn't be immediately clear, especially in a componentized codebase.
+By setting `--gap` at the top of the `grid` ruleset, it resets the nested element's gap value to that declared default. I personally prefer this. I can imagine headaches may come from having a very deeply (hopefully not too deep!) nested element where the gap value is different than the presumed default. It wouldn't be immediately clear, especially in a componentized codebase.
 
-## Helpful Resources
+## Helpful resources
 
 - [Every Layout](https://every-layout.dev/) has been a key staple in my layout style diet and I highly recommend going through all of it if you haven't already.
 - [SmolCSS](https://smolcss.dev/) is a fantastic, robust collection of modern layout and component snippets. A must-bookmark for many revisits.
