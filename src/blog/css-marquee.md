@@ -1,6 +1,6 @@
 ---
 title: The Infinite Marquee
-description: A responsive looping marquee-style animation using HTML and CSS
+description: A responsive looping marquee-style animation using HTML and CSS.
 subtitle: A responsive looping marquee-style animation using HTML and CSS
 ogImage: /assets/social/the-infinite-marquee.png
 date: 2022-08-06

@@ -1,6 +1,6 @@
 ---
 title: Creating Time
-description: Personal goals for becoming a more creative me in the new year
+description: Personal goals for becoming a more creative me in the new year.
 ogImage: /assets/social/creating-time.png
 date: 2023-01-20
 ---
