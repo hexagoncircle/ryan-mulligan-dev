@@ -113,4 +113,4 @@ By setting `--gap` at the top of the `grid` ruleset, it resets the nested elemen
 
 - [Every Layout](https://every-layout.dev/) has been a key staple in my layout style diet and I highly recommend going through all of it if you haven't already.
 - [SmolCSS](https://smolcss.dev/) is a fantastic, robust collection of modern layout and component snippets. A must-bookmark for many revisits.
-- [Using Custom Property “Stacks” to Tame the Cascade](https://css-tricks.com/using-custom-property-stacks-to-tame-the-cascade/)—a special thanks to this article for introducing me to some amazing, new (to me) custom property concepts.
+- [Using Custom Property “Stacks” to Tame the Cascade](https://css-tricks.com/using-custom-property-stacks-to-tame-the-cascade/)—a special thanks to Miriam's article for introducing me to some amazing, new (to me) custom property concepts.
