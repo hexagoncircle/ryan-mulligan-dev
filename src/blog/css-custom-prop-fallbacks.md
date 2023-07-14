@@ -18,7 +18,7 @@ CSS Custom Properties are incredibly versatile and have become especially useful
 }
 ```
 
-The `--gap` and `--min` values can be overridden by declaring new values for those properties, whether it's through inline styles or a custom CSS ruleset:
+The `--gap` and `--min` custom property values can be customized by declaring new values for those properties, whether it's through inline styles or a custom CSS ruleset:
 
 ```html
 <!-- inline style -->
