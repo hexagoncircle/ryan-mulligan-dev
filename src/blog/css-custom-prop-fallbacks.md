@@ -44,7 +44,7 @@ The `--gap` and `--min` custom property values can be customized by declaring ne
 Remember! The `super-cool-list` styles needs to be declared _after_ the `grid` ruleset in the stylesheet. Otherwise the default `--gap` value inside `grid` would win with higher precedence. I'm a fan of using [CSS cascade layers](https://css-tricks.com/css-cascade-layers/) where layout primitives like `grid` would reside in a lower priority layer than component-specific styles.
 {.callout}
 
-I love the concept of altering layouts through exposed props like the example above. But what if we wanted more granular control over the horizontal and vertical spacing between each item? This is where a key feature of CSS custom properties comes into play: [fallback values](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties#custom_property_fallback_values). In the revised version of the above code snippet, The `--gap` value declared at the start of the ruleset becomes the fallback—or default value—for two new variables.
+I absolutely love this concept of altering layouts through exposed props like the example above. But what if we desired the ability to provide independent values for the horizontal and vertical spacing between each item? This is where a key feature of CSS custom properties comes into play: [fallback values](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties#custom_property_fallback_values). In the revised version of the above code snippet, The `--gap` value declared at the start of the ruleset becomes the fallback—or default value—for two new variables.
 
 ```css
 .css-grid {
