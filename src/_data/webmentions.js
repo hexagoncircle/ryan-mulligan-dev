@@ -1,4 +1,5 @@
 const fs = require("fs");
+const fetch = require("node-fetch");
 const unionBy = require("lodash/unionBy");
 const domain = require("./meta.js").domain;
 
