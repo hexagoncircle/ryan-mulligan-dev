@@ -81,7 +81,7 @@ In the example above, since `--row-gap` and `--column-gap` are undefined through
 
 ## Why not only use fallbacks?
 
-Custom properties can have more than one fallback value—a concept Miriam Suzanne refers to as [custom property "stacks"](https://css-tricks.com/using-custom-property-stacks-to-tame-the-cascade/), which I love. It's also where I discovered how `initial` works in custom properties as mentioned above.
+Custom properties can have more than one fallback value—a concept Miriam Suzanne refers to as [custom property "stacks" in this article](https://css-tricks.com/using-custom-property-stacks-to-tame-the-cascade/), which I love. It's also where I discovered how `initial` works in custom properties as mentioned above.
 
 So then if custom properties can have multiple fallback values, could we instead write our CSS like this?
 
