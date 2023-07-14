@@ -73,11 +73,15 @@ The gap spacing between each row of items will now be `2rem` while the columns s
 
 ## Guaranteed-invalid values
 
-`--row-gap` and `--column-gap` are both set to the `initial` keyword because it's a [guaranteed-invalid value](https://drafts.csswg.org/css-variables/#guaranteed-invalid-value) in custom properties. This means that these two custom property values will become invalid and use a fallback if one is available. In the example above, since `--row-gap` and `--column-gap` are invalid, the fallback `--gap` value is applied.
+`--row-gap` and `--column-gap` are both set to the `initial` keyword because it's a [guaranteed-invalid value](https://drafts.csswg.org/css-variables/#guaranteed-invalid-value) in custom properties. This means that these two custom property values will become invalid at computed-value time and revert to a fallback if one is available. I think this concept is summed up nicely in [a snippet from this article](https://css-tricks.com/using-custom-property-stacks-to-tame-the-cascade/):
+
+> [...] rather than being passed along to set `background: initial` or `color: initial`, the custom property becomes `undefined`, and we fallback to the next value in our stack [...]
+
+In the example above, since `--row-gap` and `--column-gap` are undefined through the `initial` keyword, the fallback `--gap` value is applied.
 
 ## Why not only use fallbacks?
 
-Custom properties can have more than one fallback value—a concept Miriam Suzanne refers to as [custom property "stacks" in this article](https://css-tricks.com/using-custom-property-stacks-to-tame-the-cascade/), which I love. It's also where I discovered how `initial` works in custom properties.
+Custom properties can have more than one fallback value—a concept Miriam Suzanne refers to as [custom property "stacks"](https://css-tricks.com/using-custom-property-stacks-to-tame-the-cascade/), which I love. It's also where I discovered how `initial` works in custom properties as mentioned above.
 
 So then if custom properties can have multiple fallback values, could we instead write our CSS like this?
 
