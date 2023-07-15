@@ -93,7 +93,7 @@ So then if custom properties can have multiple fallback values, could we instead
 }
 ```
 
-It seems that this works as one would expect. However, on the occasion there is a nested element that uses the `grid` selector, that element would inherit the `--gap` set on the parent.
+This works as one would expect. However, keep in mind that on the occasion there is a nested element that uses the `grid` selector, that element would inherit the `--gap` set on the parent.
 
 ```html
 <ul class="grid" style="--gap: 2rem">
@@ -111,7 +111,31 @@ It seems that this works as one would expect. However, on the occasion there is 
 </ul>
 ```
 
-By setting `--gap` at the top of the `grid` ruleset, it resets the nested element's gap value to that declared default. I personally prefer this. I can imagine headaches may come from having a very deeply (hopefully not too deep!) nested element where the gap value is different than the presumed default. It wouldn't be immediately clear, especially in a componentized codebase.
+By setting `--gap` at the top of the `grid` ruleset, the nested element's gap value will reset to that declared default. I personally prefer this. I can imagine headaches may come from having a very deeply (hopefully not too deep!) nested element where the gap value is different than the presumed default. It wouldn't be immediately clear, especially in a componentized codebase.
+
+**This content has been revised on July 15th** after a valid argument was made on [my Mastodon post sharing the article](https://fosstodon.org/@hexagoncircle/110713633805281051) in favor of inheriting ancestor custom property values:
+
+> Isn’t inheritance of custom properties a good thing? I thought that’s how they’re meant to be used. Setting a custom property _once_ on an outer container, and then it inherits to _all_ the nested components. I’m not sure that intentionally breaking this system is a good idea.
+
+Excellent point, and agreed: Inheritance of custom properties is a good thing. This has certainly given me some pause on my preferred approach. I had imagined layout primitives such as the `grid` example would set ideal default values every time the selector is applied. Instead, when inheriting properties on a nested element, we would then have to add a "reset" value to revert it back, which arguably may be the optimal method.
+
+```html
+<ul class="grid" style="--gap: 2rem">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>
+    Item 3
+    <!-- Revert the value on this element -->
+    <ul class="grid" style="--gap: 1rem">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+  </li>
+</ul>
+```
+
+What do you think? Please feel free to join us on [the Mastadon thread](https://fosstodon.org/@hexagoncircle/110713633805281051) with your opinions and feedback. 🙌
 
 ## Helpful resources
 
