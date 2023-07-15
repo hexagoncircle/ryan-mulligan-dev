@@ -113,6 +113,8 @@ This works as one would expect. However, keep in mind that on the occasion there
 
 By setting `--gap` at the top of the `grid` ruleset, the nested element's gap value will reset to that declared default. I personally prefer this. I can imagine headaches may come from having a very deeply (hopefully not too deep!) nested element where the gap value is different than the presumed default. It wouldn't be immediately clear, especially in a componentized codebase.
 
+## Inheritance is a good thing
+
 **This content has been revised on July 15th** after a valid argument was made on [my Mastodon post sharing the article](https://fosstodon.org/@hexagoncircle/110713633805281051) in favor of inheriting ancestor custom property values:
 
 > Isn’t inheritance of custom properties a good thing? I thought that’s how they’re meant to be used. Setting a custom property _once_ on an outer container, and then it inherits to _all_ the nested components. I’m not sure that intentionally breaking this system is a good idea.
