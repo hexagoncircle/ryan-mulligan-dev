@@ -135,7 +135,7 @@ Excellent point, and agreed: Inheritance of custom properties is a good thing. T
 </ul>
 ```
 
-What do you think? Please feel free to join us on [the Mastadon thread](https://fosstodon.org/@hexagoncircle/110713633805281051) with your opinions and feedback. 🙌
+What do you think? Please feel free to join us on [the Mastadon thread](https://fosstodon.org/@hexagoncircle/110713633805281051) with your opinions and feedback. Also, check out [this CodePen](https://codepen.io/hexagoncircle/pen/ExOEjGG) if you'd like to experiment with the different methods described here.
 
 ## Helpful resources
 
