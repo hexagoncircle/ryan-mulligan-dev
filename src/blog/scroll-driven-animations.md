@@ -21,7 +21,7 @@ When getting started, these [progress visualizer tools](https://scroll-driven-an
 
 I turned to a recent [CodePen Challenge](https://codepen.io/challenges) to begin my exploration, which leans into View Progress Timeline features.  When scrolling the page in the [Photo figures CodePen demo](https://codepen.io/hexagoncircle/full/PoxMPzM), notice that the heading text follows down as it fades out, the first three Polaroid-style photos have a "develop" effect, and the last stack of photos shuffle between themselves.
 
-{% video "/assets/videos/scroll-driven-animations-1" %}
+{% video "/assets/videos/scroll-driven-animations-1", "Scrolling through the <a href'https://codepen.io/hexagoncircle/full/PoxMPzM'>Photo figures CodePen demo</a>" %}
 
 To make this happen, the way we write animation `@keyframes` hasn't changed. Instead, when applying that animation to an element, we introduce two new properties: [`animation-timeline`](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timeline) and [`animation-range`](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-range). Here's the simplified HTML for each "developing" photo as an example:
 
@@ -84,7 +84,7 @@ When working with these new animation properties, there are a few important bits
 
 What excites me the most about scroll-driven animations is that it provides us the power to pull off some native-specific animation techniques directly in CSS. For example: the iOS weather app has been part of my daily ritual for quite some time. A lot of the app's animations are perfect for Scroll Progress Timeline! Check out my [Weather app prototype](https://codepen.io/hexagoncircle/full/OJrJZqR) on CodePen.
 
-{% video "/assets/videos/scroll-driven-animations-2" %}
+{% video "/assets/videos/scroll-driven-animations-2", "Scrolling through the <a href='https://codepen.io/hexagoncircle/full/OJrJZqR'>Weather app prototype</a> on CodePen" %}
 
 As explained in the previous demo, the `animation-range` property seems to be very versatile. I've only just scratched the surface of what it can do. In my first attempt to set an `animation-range` on the intro text fades, I used percentage values. Unfortunately, those animations would become slightly misaligned as the scroll container changed in height. In retrospect, that makes sense but, at the time, I had not realized that any [`<length-percentage>`](https://developer.mozilla.org/en-US/docs/Web/CSS/length-percentage) is a valid `animation-range` value. Once I switched from percentages to `rem` units, my animations lined up as expected, regardless of the scroll container height.
 

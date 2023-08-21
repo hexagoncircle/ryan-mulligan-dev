@@ -89,13 +89,19 @@ module.exports = {
     return `&#109;a&#105;lto&#58;&#104;%65y&#64;%72%79&#37;61%6E&#37;6D%75&#37;&#54;Clig%61&#110;&#46;&#100;&#101;v?subject=${subject}`;
   },
 
-  video: (src) => {
-    return `
+  video: (src, caption) => {
+    const html = `
       <video loop muted playsinline controls>
         <source src="${src}.webm" type="video/webm">
         <source src="${src}.mp4" type="video/mp4">
       </video>
     `;
+
+    if (caption) {
+      return `<figure class="video">${html}<figcaption>${caption}</figcaption></figure>`;
+    }
+
+    return html;
   },
 
   year: () => new Date().getFullYear(),
