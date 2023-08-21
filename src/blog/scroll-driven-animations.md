@@ -22,7 +22,7 @@ I turned to a recent [CodePen Challenge](https://codepen.io/challenges) to begin
 
 {% video "/assets/videos/scroll-driven-animations-1" %}
 
-To make this happen, the way we write animation `@keyframes` hasn't changed. Instead, when applying that animation to an element, we introduce two new properties: `animation-timeline` and `animation-range`. Here's the simplified HTML for each "developing" photo as an example:
+To make this happen, the way we write animation `@keyframes` hasn't changed. Instead, when applying that animation to an element, we introduce two new properties: [`animation-timeline`](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timeline) and [`animation-range`](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-range). Here's the simplified HTML for each "developing" photo as an example:
 
 ```html
 <figure>
@@ -69,7 +69,7 @@ Since the default values are `block` and `auto` respectively, they could be omit
 
 Back to the example code above, I initially attemped to use the `view()` function on the "developing" photos but had no success. It seems that wrapping the `img` inside a `div` may be the reason—I believe that the `overflow: hidden` rule on the `div` now makes it the nearest scroll container for the `img`. To get this photo animation working, setting `view-timeline-name` on the parent `figure` and then referencing it via `animation-timeline` ended up being the solution.
 
-As for my chosen [`animation-range`](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-range) values? That was the result of much experimentation, playing with different combinations. I'm still getting the hang of it, but the [Ranges and Progress Animation Visualizer Tool](https://scroll-driven-animations.style/tools/view-timeline/ranges/) proved to be a crucial guide on my journey.
+As for my chosen `animation-range` values? That was the result of much experimentation, playing with different combinations. I'm still getting the hang of it, but the [Ranges and Progress Animation Visualizer Tool](https://scroll-driven-animations.style/tools/view-timeline/ranges/) proved to be a crucial guide on my journey.
 
 ### Additional notes
 
