@@ -42,7 +42,7 @@ figure {
 }
 
 .develop-photo {
-	animation: linear develop;
+	animation: linear develop both;
 	animation-timeline: --photo;
 	animation-range: entry 30% cover 40%;
 }
