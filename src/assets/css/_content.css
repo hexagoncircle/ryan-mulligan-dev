@@ -50,6 +50,10 @@
   grid-column: feature;
 }
 
+.content p:has(video) {
+  grid-column: feature;
+}
+
 .content .image {
   width: 100%;
   height: auto;
@@ -179,6 +183,11 @@ details[open] summary::before {
   line-height: 1.3;
   text-align: center;
   color: var(--color-text-accent);
+}
+
+video {
+  max-width: 100%;
+  margin-block: var(--space-sm) var(--space-xs);
 }
 
 .title {
