@@ -62,12 +62,12 @@ figure {
 
 When applying animations to the heading and shuffling photos, declaring `animation-timeline: view()` with an `animation-range` were the magic ingredients to enable scrubbing through animation progress on scroll. The [`view()`](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timeline/view) function binds the animation to the element as it appears in the viewport on the block axis. This function takes two parameters:
 
-- The [`<axis>`](https://developer.mozilla.org/en-US/docs/Web/CSS/view-timeline-axis) in which the timeline progresses.
-- A [`<view-timeline-inset>`](https://developer.mozilla.org/en-US/docs/Web/CSS/view-timeline-inset) that adjusts the position of the box in which the element is considered visible.
+- The [`<axis>`](https://developer.mozilla.org/en-US/docs/Web/CSS/view-timeline-axis) on which the timeline progresses.
+- A [`<view-timeline-inset>`](https://developer.mozilla.org/en-US/docs/Web/CSS/view-timeline-inset) that adjusts the position of the box where the element is considered visible.
 
-Since the default values are `block` and `auto` respectively, they could be omitted here.
+Since the default values are `block` and `auto` respectively, they can be omitted here.
 
-Back to the example code above, I initially attemped to use the `view()` function on the "developing" photos but had no success. It seems that wrapping the `img` inside a `div` may be the reason—I believe that the `overflow: hidden` rule on the `div` now makes it the nearest scroll container for the `img`. To get this photo animation working, setting `view-timeline-name` on the parent `figure` and then referencing it via `animation-timeline` ended up being the solution.
+Back to the example code above, I initially attemped to use the `view()` function on the "developing" photos but had no success. It seems that wrapping the `img` inside a `div` may be the reason—I believe that the `overflow: hidden` rule on the `div` now makes it the nearest scroll container for the `img` element. To get this photo animation working, setting `view-timeline-name` on the parent `figure` and then referencing it via `animation-timeline` ended up being the solution.
 
 As for my chosen `animation-range` values? That was the result of much experimentation, playing with different combinations. I'm still getting the hang of it, but the [Ranges and Progress Animation Visualizer Tool](https://scroll-driven-animations.style/tools/view-timeline/ranges/) proved to be a crucial guide on my journey.
 
@@ -81,7 +81,7 @@ When working with these new animation properties, there are a few important bits
 
 ## Experiment #2: Weather app prototype
 
-What excites me the most about scroll-driven animations is that it provides us the power to pull off some common native-specific animation techniques directly in CSS. For example: the iOS weather app has been part of my daily ritual for quite some time. A lot of the app's animations are perfect for Scroll Progress Timeline! Check out my [Weather app prototype](https://codepen.io/hexagoncircle/full/OJrJZqR) on CodePen.
+What excites me the most about scroll-driven animations is that it provides us the power to pull off some native-specific animation techniques directly in CSS. For example: the iOS weather app has been part of my daily ritual for quite some time. A lot of the app's animations are perfect for Scroll Progress Timeline! Check out my [Weather app prototype](https://codepen.io/hexagoncircle/full/OJrJZqR) on CodePen.
 
 {% video "/assets/videos/scroll-driven-animations-2" %}
 
