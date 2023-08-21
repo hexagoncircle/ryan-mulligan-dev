@@ -21,7 +21,7 @@ When getting started, these [progress visualizer tools](https://scroll-driven-an
 
 I turned to a recent [CodePen Challenge](https://codepen.io/challenges) to begin my exploration, which leans into View Progress Timeline features.  When scrolling the page in the [Photo figures CodePen demo](https://codepen.io/hexagoncircle/full/PoxMPzM), notice that the heading text follows down as it fades out, the first three Polaroid-style photos have a "develop" effect, and the last stack of photos shuffle between themselves.
 
-{% video "/assets/videos/scroll-driven-animations-1", "Scrolling through the <a href'https://codepen.io/hexagoncircle/full/PoxMPzM'>Photo figures CodePen demo</a>" %}
+{% video "/assets/videos/scroll-driven-animations-1", "Scrolling through the <a href='https://codepen.io/hexagoncircle/full/PoxMPzM'>Photo figures CodePen demo</a>" %}
 
 To make this happen, the way we write animation `@keyframes` hasn't changed. Instead, when applying that animation to an element, we introduce two new properties: [`animation-timeline`](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timeline) and [`animation-range`](https://developer.mozilla.org/en-US/docs/Web/CSS/animation-range). Here's the simplified HTML for each "developing" photo as an example:
 
