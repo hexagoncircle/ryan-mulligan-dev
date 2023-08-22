@@ -91,9 +91,10 @@ module.exports = {
 
   video: (src, caption) => {
     const html = `
-      <video loop muted playsinline controls>
-        <source src="${src}.webm" type="video/webm">
-        <source src="${src}.mp4" type="video/mp4">
+      <video preload="metadata" loop muted playsinline controls>
+        <source src="${src}.webm#t=0.001" type="video/webm">
+        <source src="${src}.mp4#t=0.001" type="video/mp4">
+        <p>Your browser cannot play the provided video file.</p>
       </video>
     `;
 
