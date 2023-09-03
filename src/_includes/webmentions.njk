@@ -68,7 +68,7 @@
                 {% endif %}
               </a>
               <p>
-                {{ item.content.text }}
+                {{ item.content.text | truncateAfterWord(500) }}
                 <a class="reply-source" href="{{ item.url }}" target="_blank" title="Go to source of this reply">
                   {{ 'arrow-square-out' | icon | svgContents | safe }}
                 </a>

@@ -69,4 +69,9 @@ module.exports = {
   removeHttp: (url) => {
     return url.replace(/^https?:\/\//, "");
   },
+
+  truncateAfterWord: (str, max) => {
+    if (str.length <= max) return str;
+    return str.substr(0, str.lastIndexOf(" ", max)) + "...";
+  },
 };
