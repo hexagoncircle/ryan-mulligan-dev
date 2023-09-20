@@ -66,6 +66,7 @@ module.exports = function (eleventyConfig) {
 
   // Passthrough file copy
   eleventyConfig.addPassthroughCopy("src/assets");
+  eleventyConfig.addPassthroughCopy({ "src/assets/robots.txt": "/robots.txt" });
   eleventyConfig.addPassthroughCopy({
     "src/assets/site.webmanifest": "/site.webmanifest",
   });
