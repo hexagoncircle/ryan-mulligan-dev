@@ -65,4 +65,4 @@ One last piece to call out is how the component handles active items hidden outs
 
 ## Thoughts?
 
-I'll wrap things up here. I'd love to hear what you like (or don't like) and how this component could be improved. [Reach out to me on Mastodon](https://fosstodon.org/@hexagoncircle) and let's talk web components.
+I'll wrap things up here. There are still plenty of UX enhancements to explore. Clearer indication that the menu scrolls horizontally and layout considerations in different writing modes are some that come immediately to mind. I'd love to hear what you like (or don't like) and how this component could be improved. [Reach out to me on Mastodon](https://fosstodon.org/@hexagoncircle) and let's talk web components.
