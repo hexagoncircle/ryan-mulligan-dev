@@ -6,6 +6,10 @@ ogImage: /assets/social/scrollspy-nav.png
 date: 2023-10-07
 ---
 
+Just here for the code and demos? Check out the [scrollspy-nav repository](https://github.com/hexagoncircle/scrollspy-nav) on GitHub and its corresponding [demo page](https://hexagoncircle.github.io/scrollspy-nav/).
+
+## The backstory
+
 A "scrollspy" is a method of tracking which link in a menu is active based on a relevant section of information being visible in the viewport. Typically, the menu position is fixed to the browser window and the active link is indicated with some additional styling. I'm not 100% sure, but it might have started as a [Bootstrap plugin](https://getbootstrap.com/docs/5.3/components/scrollspy/). There have been a number of other versions and variations to follow.
 
 This particular `scrollspy-nav` component had more specific needs, so allow me to break it all down:
@@ -16,7 +20,7 @@ This particular `scrollspy-nav` component had more specific needs, so allow me t
 - A change in the active section updates the position of a marker element in the menu. The marker animates from the previous active anchor link to the next, resizing itself to the dimensions of the current link's inline size.
 - If a menu item is obscured in the viewport overflow horizontally, when it becomes active it will be scrolled fully into view.
 
-I had messed around with this general idea some time ago, but a recent project design brought me back to those old experiments. This is my attempt  at turning the concept into a web component and I thought I'd share the results with you all. The project hasn't been packaged on [npm](https://www.npmjs.com/) or anything because it's still, in my opinion, a work in progress. I've always been keen on web components but I am quite fresh in sharing my own. If you are interested in messing with it, then check out the [scrollspy-nav repository](https://github.com/hexagoncircle/scrollspy-nav) on GitHub and its corresponding [demo page](https://hexagoncircle.github.io/scrollspy-nav/).
+I had messed around with this general idea some time ago, but a recent project design brought me back to those old experiments. This is my attempt  at turning the concept into a web component and I thought I'd share the results with you all. The project hasn't been packaged on [npm](https://www.npmjs.com/) or anything because it's still, in my opinion, a work in progress. I've always been keen on web components but I am quite fresh in sharing my own.
 
 ## What's in a name?
 
