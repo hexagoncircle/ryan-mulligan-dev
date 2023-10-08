@@ -21,18 +21,6 @@
   column-gap: var(--column-gap);
 }
 
-.page-header {
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  pointer-events: none;
-}
-
-.page-header [data-theme-controls],
-.page-header .nav-list {
-  pointer-events: auto;
-}
-
 .page-footer {
   margin-top: auto;
   justify-items: center;
@@ -48,4 +36,27 @@
 
 .page-footer > * {
   grid-column: content;
+}
+
+@supports (animation-timeline: scroll()) {
+  .page-header {
+    animation-direction: both;
+    animation-name: animate-nav;
+    animation-range: entry 0 entry 7.5rem;
+    animation-timeline: scroll();
+    animation-timing-function: linear;
+  }
+
+  @keyframes animate-nav {
+    20% {
+      opacity: 1;
+    }
+    80%,
+    100% {
+      opacity: 0;
+    }
+    100% {
+      translate: 0 100%;
+    }
+  }
 }
