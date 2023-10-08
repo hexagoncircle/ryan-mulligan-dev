@@ -13,7 +13,6 @@
     var(--popout) [popout-end]
     var(--feature) [feature-end]
     var(--full) [full-end];
-  scroll-margin-top: var(--space-2xl);
 }
 
 .multi-column {
