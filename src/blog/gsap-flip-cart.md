@@ -8,19 +8,19 @@ date: 2022-01-07
 
 ## What the flip is it?
 
-Every time a new [GSAP plugin](https://greensock.com/gsap-plugins/) is introduced, I'm close to bursting from excitement. The simplicity of the GreenSock API makes learning and applying these tools in projects such a dream. I had the pleasure of beta testing the [ScrollTrigger plugin](https://greensock.com/scrolltrigger/) and was blown away by how easily I was able to dive in and start creating.
+Every time a new [GSAP](https://gsap.com/) plugin is introduced, I'm close to bursting from excitement. The simplicity of the GreenSock API makes learning and applying these tools in projects such a dream. I had the pleasure of beta testing the [ScrollTrigger plugin](https://gsap.com/scrolltrigger/) and was blown away by how easily I was able to dive in and start creating.
 
-The [Flip plugin](https://greensock.com/docs/v3/Plugins/Flip) is no different. And how about this? As of the [3.9 release](https://greensock.com/3-9/) (Dec 2021), it's no longer a members-only plugin. T'was a [Merry Christmas](https://codepen.io/GreenSock/pen/NWadxaR) indeed!
+The [Flip plugin](https://gsap.com/docs/v3/Plugins/Flip) is no different. And how about this? As of the [3.9 release](https://gsap.com/3-9/) (Dec 2021), it's no longer a members-only plugin. T'was a [Merry Christmas](https://codepen.io/GreenSock/pen/NWadxaR) indeed!
 
 Before I continue, let's take a moment to celebrate the amazing GreenSock team for the incredible animation tools they provide for our web community. 🙏
 
 ## The technique
 
-FLIP, coined by [Paul Lewis](https://aerotwist.com/blog/flip-your-animations/), is an acronym for First, Last, Invert, and Play. The Flip plugin harnesses this technique so that web developers can effortlessly and smoothly transition elements between states. Take it straight from [the plugin's introduction](https://greensock.com/docs/v3/Plugins/Flip):
+FLIP, coined by [Paul Lewis](https://aerotwist.com/blog/flip-your-animations/), is an acronym for First, Last, Invert, and Play. The Flip plugin harnesses this technique so that web developers can effortlessly and smoothly transition elements between states. Take it straight from [the plugin's introduction](https://gsap.com/docs/v3/Plugins/Flip):
 
 > Flip records the current position/<wbr>size/<wbr>rotation of your elements, then you make whatever changes you want, and then Flip applies offsets to make them LOOK like they never moved/<wbr>resized/<wbr>rotated and then animates the removal of those offsets! UI transitions become remarkably simple to code. Flip does all the heavy lifting.
 
-I recommend reading [the docs](https://greensock.com/docs/v3/Plugins/Flip) (always!), and watching that intro tutorial video (or jump straight down to their code examples if that's your fancy) to find out how you, too, can produce super sizzlin' layout animations with a minimal amount of code.
+I recommend reading [the docs](https://gsap.com/docs/v3/Plugins/Flip) (always!), and watching that intro tutorial video (or jump straight down to their code examples if that's your fancy) to find out how you, too, can produce super sizzlin' layout animations with a minimal amount of code.
 
 ## The challenge
 
@@ -36,7 +36,7 @@ Let's get into some of the key features that bring this animation to life.
 
 ## How it works
 
-The "Usage" section of the [Flip plugin docs](https://greensock.com/docs/v3/Plugins/Flip) breaks this down into three steps that are followed to execute this add-to-cart animation:
+The "Usage" section of the [Flip plugin docs](https://gsap.com/docs/v3/Plugins/Flip) breaks this down into three steps that are followed to execute this add-to-cart animation:
 
 1. Get the current state
 2. Make your state changes
@@ -51,7 +51,7 @@ const state = Flip.getState(item);
 ```
 
 ::: callout
-The Flip plugin by default only records the following CSS properties: transforms (x, y, scaleX, scaleY, rotation, skewX), width, height, and opacity. However, it can be configured to affect others by adding a `props` property with a comma-delimited list of values in the `options` object. Learn more under the "Usage" section in [the docs](https://greensock.com/docs/v3/Plugins/Flip)!
+The Flip plugin by default only records the following CSS properties: transforms (x, y, scaleX, scaleY, rotation, skewX), width, height, and opacity. However, it can be configured to affect others by adding a `props` property with a comma-delimited list of values in the `options` object. Learn more under the "Usage" section in [the docs](https://gsap.com/docs/v3/Plugins/Flip)!
 :::
 
 ### Step 2: Make the changes
@@ -99,11 +99,11 @@ After that, other animations are run such as sliding the item into place and the
 
 This experiment seems like it only just begins to harness the superpower supplied by the GSAP Flip plugin. I'm looking forward to seeing how you all utilize this in projects. As always, with this great power comes a lot of responsibility. Consider folks that prefer reduced motion or how larger layout animations could affect the overall experience.
 
-Friendly feedback forever welcome. Share with me on [Twitter](https://twitter.com/hexagoncircle/status/1479564224347066368).
+Friendly feedback forever welcome. Share with me on [Mastodon](https://fosstodon.org/@hexagoncircle).
 
 ### Helpful resources
 
-- [GSAP Flip plugin docs](https://greensock.com/docs/v3/Plugins/Flip)
+- [GSAP Flip plugin docs](https://gsap.com/docs/v3/Plugins/Flip)
 - [Flip showcase](https://codepen.io/collection/AEkJmd)
 - [Flip how-to demos](https://codepen.io/collection/nqvwmG)
 - [prefers-reduced-motion: Sometimes less movement is more](https://web.dev/prefers-reduced-motion/)
