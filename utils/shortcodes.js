@@ -22,7 +22,7 @@ module.exports = {
   },
 
   codepenImage: async function (id, attrs = {}) {
-    const url = `https://shots.codepen.io/hexagoncircle/pen/${id}-1280.jpg`;
+    const url = `https://shots.codepen.io/hexagoncircle/pen/${id}-1280.jpg?v=1`;
 
     let metadata = await Image(url, {
       widths: [800],
