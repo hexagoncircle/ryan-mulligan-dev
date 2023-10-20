@@ -27,8 +27,6 @@ An element that I've decidedly dubbed an "intercept"—naming is hard and this f
  </header>
  ```
 
-
-
 The [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) is being used to observe when the intercept is no longer appearing in the visible viewport area which happens as soon as the page scrolls. So when the intercept is _not_ intersecting, a class is applied to the header element.
 
 ```js
@@ -53,5 +51,13 @@ It's also possible to wait on when the shadow should appear by offsetting the in
 ```
 
 This will push the intercept down from the top of the page by 300 pixels. When scrolling the page again, notice that the shadow doesn't appear right away, waiting until the page has been scrolled passed the offset value.
+
+## CSS scroll-driven animations
+
+**Updated on October 20th, 2023:** Here's another [CodePen demo](https://codepen.io/hexagoncircle/pen/LYMweej) that leans into CSS scroll-driven animations. Try it out in a browser that supports this feature.
+
+{% codepen "https://codepen.io/hexagoncircle/pen/LYMweej", "result", "400" %}
+
+I've been justifiably excited about browsers beginning to adopt this API, which I had written about in [this blog post](/blog/scroll-driven-animations/). It's _not quite_ the same as using an intersection observer: The observer toggles a class selector that triggers an animation for the declared duration of time whereas this version links the fade progress to the page scroll position. I find that the latter feels more natural. If a browser doesn't yet support the feature, the styles gracefully degrade to a persistent static shadow.
 
 Have questions? Other ways to handle this? I'd love to hear about it! Reach out to me on [Mastodon](https://fosstodon.org/@hexagoncircle) with your ideas.
