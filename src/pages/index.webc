@@ -6,74 +6,61 @@ permalink: "/"
   const { date, timeOfDay } = getDeployDate();
 </script>
 
-<main class="breakout flow">
-  <h1 class="visually-hidden">Ryan Mulligan</h1>
-  <scroll-pen></scroll-pen>
-  <p>
-    This is a website made by me, <say-my-name></say-my-name>, a fellow passenger through space and
-    time and front-end builder of the web. Some quick stats:
-  </p>
-  <ul>
-    <li>
-      The latest build of this site deployed in the
-      <span @text="timeOfDay" webc:nokeep></span> on <span @text="date" webc:nokeep></span>.
-    </li>
-    <li>
-      During deployment, the weather over here was
-      <span @text="$data.weather.temperature" webc:nokeep></span
-      ><template webc:if="$data.weather.status" webc:nokeep>
-        and <span @text="$data.weather.status" webc:nokeep></span></template
-      >.
-    </li>
-    <li>I was last listening to <last-played-track></last-played-track></li>
-  </ul>
-  <h2>Most recent articles</h2>
-  <article-list count="3"></article-list>
-  <p class="cta arrow-end">
-    <a href="/blog/">Read more articles</a>
-  </p>
-  <h2>The bit about myself</h2>
-  <p>
-    I'm a fun-loving front-end engineer that strives to bridge the gap between web design and
-    development, building user experiences with positive interactivity through thoughtful
-    interfaces. I advocate for modern best practices on the web and love working with diverse,
-    inclusive teams. Currently, I build for the web with a lovely team at Netlify. When I'm not
-    coding, you can catch me noodling on my acoustic guitar or blasting out rhythms if there's a
-    drum kit ready for a lefty nearby.
-  </p>
-  <p>Want to know more? <say-hey-hey></say-hey-hey></p>
+<h1 class="visually-hidden">Ryan Mulligan</h1>
+<scroll-pen></scroll-pen>
+<p>
+  This is a website made by me, <say-my-name></say-my-name>, a fellow passenger through space and
+  time and front-end builder of the web. Some quick stats:
+</p>
+<ul>
+  <li>
+    The latest build of this site deployed in the
+    <span @text="timeOfDay" webc:nokeep></span> on <span @text="date" webc:nokeep></span>.
+  </li>
+  <li>
+    During deployment, the weather over here was
+    <span @text="$data.weather.temperature" webc:nokeep></span
+    ><template webc:if="$data.weather.status" webc:nokeep>
+      and <span @text="$data.weather.status" webc:nokeep></span></template
+    >.
+  </li>
+  <li>I was last listening to <last-played-track></last-played-track></li>
+</ul>
+<h2>Most recent articles</h2>
+<article-list count="3"></article-list>
+<p class="cta arrow-end">
+  <a href="/blog/">Read more articles</a>
+</p>
+<h2>The bit about myself</h2>
+<p>
+  I'm a fun-loving front-end engineer that strives to bridge the gap between web design and
+  development, building user experiences with positive interactivity through thoughtful interfaces.
+  I advocate for modern best practices on the web and love working with diverse, inclusive teams.
+  Currently, I build for the web with a lovely team at Netlify. When I'm not coding, you can catch
+  me noodling on my acoustic guitar or blasting out rhythms if there's a drum kit ready for a lefty
+  nearby.
+</p>
+<p>Want to know more? <say-hey-hey></say-hey-hey></p>
 
-  <h2>A few things I enjoy</h2>
-  <ul class="multi-column">
-    <li>All things CSS</li>
-    <li>Finding the perfect custom cubic Bézier curve</li>
-    <li>Web accessibility</li>
-    <li>CodePen</li>
-    <li>Any beach, any ocean</li>
-    <li>Early morning coffee</li>
-    <li>Nick Drake's <em>Pink Moon</em> in its entirety</li>
-    <li>Cool side of pillow</li>
-    <li>Guitar noodling</li>
-    <li>Trashing a drum kit</li>
-  </ul>
-</main>
+<h2>A few things I enjoy</h2>
+<ul class="multi-column">
+  <li>All things CSS</li>
+  <li>Finding the perfect custom cubic Bézier curve</li>
+  <li>Web accessibility</li>
+  <li>CodePen</li>
+  <li>Any beach, any ocean</li>
+  <li>Early morning coffee</li>
+  <li>Nick Drake's <em>Pink Moon</em> in its entirety</li>
+  <li>Cool side of pillow</li>
+  <li>Guitar noodling</li>
+  <li>Trashing a drum kit</li>
+</ul>
 
 <style>
   .grid {
     --flow-space: var(--space-xs);
     --gap: 2px;
     --min: 14rem;
-  }
-
-  .track-link {
-    --icon-size: 1em;
-    display: inline-flex;
-    gap: 0.1em;
-    align-items: baseline;
-
-    .icon {
-      align-self: center;
-    }
   }
 
   .cta {

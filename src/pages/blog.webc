@@ -5,17 +5,15 @@ description: "Follow my RSS feed for my general thoughts, code snippets, and fro
 development discoveries"
 ---
 
-<main class="breakout flow">
-  <h1 class="title | skewer">The Blog</h1>
-  <p>
-    Sometimes general thoughts and rambles but more often these posts follow my experimentation,
-    learning, and front-end development discoveries that were worth a share with the world wide web.
-    All feedback is always welcome. Below is the whole collection, starting with the most recent
-    stuff. Follow my
-    <a href="/feed.xml">RSS feed</a> to stay in the loop when new content gets published.
-  </p>
-  <article-list></article-list>
-</main>
+<h1 class="title | skewer">The Blog</h1>
+<p>
+  Sometimes general thoughts and rambles but more often these posts follow my experimentation,
+  learning, and front-end development discoveries that were worth a share with the world wide web.
+  All feedback is always welcome. Below is the whole collection, starting with the most recent
+  stuff. Follow my
+  <a href="/feed.xml">RSS feed</a> to stay in the loop when new content gets published.
+</p>
+<article-list></article-list>
 
 <style>
   .title + * {

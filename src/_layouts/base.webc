@@ -20,10 +20,7 @@
     <link href="https://twitter.com/hexagoncircle" rel="me" />
     <link href="https://fosstodon.org/@hexagoncircle" rel="me" />
     <link href="https://codepen.io/hexagoncircle" rel="me" />
-    <link
-      rel="webmention"
-      href="https://webmention.io/ryanmulligan.dev/webmention"
-    />
+    <link rel="webmention" href="https://webmention.io/ryanmulligan.dev/webmention" />
     <link rel="pingback" href="https://webmention.io/ryanmulligan.dev/xmlrpc" />
     <link
       rel="alternate"
@@ -46,7 +43,7 @@
   </head>
   <body>
     <site-header></site-header>
-    <template webc:nokeep @raw="content"></template>
+    <main :class="`breakout flow${classnames ? ` ${classnames}` : ''}`" @raw="content"></main>
     <site-footer></site-footer>
     <script @raw="getJs(page.url)" webc:keep></script>
   </body>

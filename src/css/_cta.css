@@ -6,13 +6,10 @@
 
 .cta.arrow-start::before {
   content: "←";
-  margin-inline-start: -1.1em;
 }
 
 .cta.arrow-end::after {
   content: "→";
-  display: inline-block;
-  pointer-events: none;
 }
 
 .cta.arrow-start:has(:hover, :focus-visible)::before,

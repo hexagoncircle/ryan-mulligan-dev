@@ -19,24 +19,12 @@
 <article webc:if="hasMentions" webc:root="override">
   <h2 class="heading">
     <strong>Webmentions</strong> for this post
-    <a
-      href="https://indieweb.org/webmention.io"
-      title="What are webmentions?"
-      target="_blank"
-    >
-      <inline-svg
-        class="icon"
-        aria-hidden="true"
-        src="./public/icons/question.svg"
-      ></inline-svg>
+    <a href="https://indieweb.org/webmention.io" title="What are webmentions?" target="_blank">
+      <inline-svg class="icon" aria-hidden="true" src="./public/icons/question.svg"></inline-svg>
       <span class="visually-hidden">Learn about webmentions</span>
     </a>
   </h2>
-  <details
-    webc:if="!bucket.length"
-    webc:for="bucket of buckets"
-    :class="bucket.label"
-  >
+  <details webc:if="!bucket.length" webc:for="bucket of buckets" :class="bucket.label">
     <summary>
       <strong @text="bucket.collection.length"></strong>
       <span @text="bucket.label" webc:nokeep></span>
