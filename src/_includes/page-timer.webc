@@ -1,0 +1,180 @@
+<figure aria-hidden="true" webc:root="override">
+  <svg
+    class="timer"
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    fill="currentcolor"
+    viewBox="0 0 256 256"
+  >
+    <rect width="256" height="256" fill="none"></rect>
+    <circle cx="128" cy="128" r="88" fill="var(--color-primary)"></circle>
+    <circle
+      cx="128"
+      cy="128"
+      r="88"
+      fill="none"
+      stroke="currentcolor"
+      stroke-miterlimit="10"
+      stroke-width="16"
+    ></circle>
+    <line
+      class="timer-hand"
+      x1="128"
+      y1="128"
+      x2="167.6"
+      y2="88.4"
+      fill="none"
+      stroke="currentcolor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="16"
+    ></line>
+    <line
+      class="timer-switch"
+      x1="104"
+      y1="8"
+      x2="152"
+      y2="8"
+      fill="none"
+      stroke="currentcolor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="16"
+    ></line>
+  </svg>
+</figure>
+
+<style webc:scoped="post-timer">
+  :host {
+    display: none;
+  }
+
+  @supports (animation-timeline: scroll()) {
+    :host {
+      --range-start: 12rem;
+      --range-end: 15rem;
+      --plunge-start: calc(100% - 4rem);
+      --plunge-end: calc(100% - 1rem);
+      --_x: calc(-100% - 1rem);
+      --_size: 2.5rem;
+
+      place-items: center;
+      place-content: center;
+      grid-template-areas: "container";
+      position: sticky;
+      top: 1rem;
+      width: var(--_size);
+      height: var(--_size);
+      border-radius: 50%;
+      background: conic-gradient(
+        from 45deg,
+        var(--color-primary-accent) calc(var(--progress) * 1%),
+        transparent 0
+      );
+      animation-fill-mode: both;
+      animation-timing-function: linear;
+      animation-name: progress, appear, turn-upright;
+      animation-range: var(--range-start) var(--plunge-start),
+        var(--range-start) var(--range-end),
+        var(--plunge-start) var(--plunge-end),
+        var(--plunge-start) var(--plunge-end);
+      animation-timeline: scroll();
+      z-index: 1;
+      translate: var(--_x) 0.75em;
+    }
+
+    @media (min-width: 56.25rem) {
+      :host {
+        display: grid;
+      }
+    }
+
+    :host > * {
+      grid-area: container;
+    }
+
+    :host + * {
+      --flow-space: 0;
+    }
+
+    .timer {
+      --plunge-depth: 0.25em;
+      width: calc(var(--_size) / 1.25);
+      height: calc(var(--_size) / 1.25);
+      transform-origin: 50% 0;
+      animation-name: plunge;
+      animation-fill-mode: both;
+      animation-timing-function: linear;
+      animation-timeline: scroll();
+      animation-range: var(--plunge-start) var(--plunge-end);
+    }
+
+    .timer-switch {
+      --plunge-depth: 1em;
+      transform-origin: 50% 0;
+      animation-name: plunge;
+      animation-fill-mode: both;
+      animation-timing-function: linear;
+      animation-timeline: scroll();
+      animation-range: var(--plunge-start) var(--plunge-end);
+    }
+
+    .timer-hand {
+      transform-origin: 50%;
+      rotate: calc((var(--progress) / 100) * 360deg);
+      animation-name: progress;
+      animation-fill-mode: both;
+      animation-timing-function: linear;
+      animation-timeline: scroll();
+      animation-range: var(--range-start) var(--plunge-start);
+    }
+
+    @property --progress {
+      syntax: "<integer>";
+      initial-value: 0;
+      inherits: false;
+    }
+
+    @keyframes progress {
+      to {
+        --progress: 100;
+      }
+    }
+
+    @keyframes turn-upright {
+      from {
+        rotate: -10deg;
+      }
+      to {
+        rotate: 0;
+      }
+    }
+
+    @keyframes plunge {
+      50% {
+        translate: 0 var(--plunge-depth);
+      }
+    }
+
+    @keyframes appear {
+      from {
+        opacity: 0;
+        scale: 0.9;
+      }
+      to {
+        opacity: 1;
+        scale: 1;
+      }
+    }
+
+    @keyframes fade-out {
+      from {
+        opacity: 1;
+      }
+      to {
+        opacity: 0;
+      }
+    }
+  }
+</style>

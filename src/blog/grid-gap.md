@@ -1,7 +1,6 @@
 ---
 title: CSS Grid Gap Behavior with Hidden Elements
 description: Some discoveries on how the CSS Grid gap property operates when hiding items in grid-template and grid-auto layouts.
-subtitle: Some discoveries on how the CSS gap property operates when hiding items in grid-template & grid-auto layouts
 ogImage: /assets/social/grid-gap-behavior.png
 date: 2023-02-14
 ---
@@ -51,21 +50,28 @@ This same solution can also work for `grid-template-areas`. While it leads to wr
 
 ```css
 .nav {
-  grid-template-areas: "logo toggle"
+  grid-template-areas: "logo toggle";
 }
 
 .nav.is-open {
-  grid-template-areas: 
+  grid-template-areas:
     "logo toggle"
     "menu menu"
-    "cta  cta"
+    "cta  cta";
 }
 
-.nav .logo   { grid-area: logo;   }
-.nav .toggle { grid-area: toggle; }
-.nav .menu   { grid-area: menu;   }
-.nav .cta    { grid-area: cta;    }
-
+.nav .logo {
+  grid-area: logo;
+}
+.nav .toggle {
+  grid-area: toggle;
+}
+.nav .menu {
+  grid-area: menu;
+}
+.nav .cta {
+  grid-area: cta;
+}
 ```
 
 ## Helpful resources

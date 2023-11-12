@@ -1,7 +1,6 @@
 ---
 title: Layout Breakouts with CSS Grid
 description: Extending elements beyond the content area with CSS Grid and named grid lines.
-subtitle: Extending elements beyond the content area with CSS Grid & named grid lines
 ogImage: /assets/social/layout-breakouts-css-grid.png
 date: 2022-10-07
 ---
@@ -10,7 +9,7 @@ date: 2022-10-07
 
 The previous structure of this page layout was virtually the same, the foundation of it expertly defined in the article [Full-Bleed Layout Using CSS Grid](https://www.joshwcomeau.com/css/full-bleed/) by Josh Comeau. It's a technique I've used on many projects. I've even blogged about it previously in [Horizontal Scrolling in a Centered Max-Width Container](/blog/x-scrolling-centered-max-width-container/).
 
-What I'm documenting here is an extension of the full-bleed CSS Grid layout. In the last version of my site, selected elements  – images, code blocks, quotes – were made wider than the page content area using negative margins. It worked well! For this next iteration, I explored applying these breakout offsets using CSS grid and [named grid lines](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines).
+What I'm documenting here is an extension of the full-bleed CSS Grid layout. In the last version of my site, selected elements – images, code blocks, quotes – were made wider than the page content area using negative margins. It worked well! For this next iteration, I explored applying these breakout offsets using CSS grid and [named grid lines](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines).
 
 ## Layout setup
 
@@ -78,17 +77,17 @@ Much of the real magic here is through the use of `minmax()`. It permits the fle
 Let's revisit the CSS variables declared at the top of the ruleset. I'll explain how this all works in harmony.
 
 ```css
-  --gap: clamp(1rem, 6vw, 3rem);
-  --full: minmax(var(--gap), 1fr);
-  --content: min(50ch, 100% - var(--gap) * 2);
-  --popout: minmax(0, 2rem);
-  --feature: minmax(0, 5rem);
+--gap: clamp(1rem, 6vw, 3rem);
+--full: minmax(var(--gap), 1fr);
+--content: min(50ch, 100% - var(--gap) * 2);
+--popout: minmax(0, 2rem);
+--feature: minmax(0, 5rem);
 ```
 
-* `--gap` represents a gutter size for the left and right sides of the page. This value leans into the [`clamp()`](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp) function for more fluid, flexible sizing.
-* `--full` stretches an element so that it spans the entire horizontal space. By setting `--gap` as the _min_ value, it also takes on the role of visible page gutters for smaller screens.
-* `--content` acts as the main content area. The [`min()`](https://developer.mozilla.org/en-US/docs/Web/CSS/min) function sets the max-width of this column. Once the available space falls below this value, it then switches to 100% while also subtracting the left and right gutter sizes.
-* `--popout` and `--feature` extend elements beyond the content area by `2rem` and `5rem` respectively. As the available horizontal area tightens, these values collapse down to nothing, aligning elements with the main content space on smaller screens.
+- `--gap` represents a gutter size for the left and right sides of the page. This value leans into the [`clamp()`](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp) function for more fluid, flexible sizing.
+- `--full` stretches an element so that it spans the entire horizontal space. By setting `--gap` as the _min_ value, it also takes on the role of visible page gutters for smaller screens.
+- `--content` acts as the main content area. The [`min()`](https://developer.mozilla.org/en-US/docs/Web/CSS/min) function sets the max-width of this column. Once the available space falls below this value, it then switches to 100% while also subtracting the left and right gutter sizes.
+- `--popout` and `--feature` extend elements beyond the content area by `2rem` and `5rem` respectively. As the available horizontal area tightens, these values collapse down to nothing, aligning elements with the main content space on smaller screens.
 
 ## Losing floats
 
@@ -102,8 +101,8 @@ _This article was updated on October 12th, 2022 to include the "Losing Floats" s
 
 ## Helpful Resources
 
-* [Grid layout using named grid lines](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines)
-* [A Deep Dive Into CSS Grid `minmax()`](https://ishadeed.com/article/css-grid-minmax/)
-* [`min()`, `max()`, and `clamp()`: three logical CSS functions to use today](https://web.dev/min-max-clamp/)
-* [Re-thinking the layout grid with CSS grid](https://florian.geierstanger.org/blog/css-layout-grid)
-* [Grid by Example](https://gridbyexample.com/)
+- [Grid layout using named grid lines](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines)
+- [A Deep Dive Into CSS Grid `minmax()`](https://ishadeed.com/article/css-grid-minmax/)
+- [`min()`, `max()`, and `clamp()`: three logical CSS functions to use today](https://web.dev/min-max-clamp/)
+- [Re-thinking the layout grid with CSS grid](https://florian.geierstanger.org/blog/css-layout-grid)
+- [Grid by Example](https://gridbyexample.com/)

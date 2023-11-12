@@ -1,0 +1,50 @@
+@mixin colors-light {
+  --color-hsl: 229 84% 5%;
+  --color-text: hsl(var(--color-hsl));
+  --color-text-accent: #334155;
+  --color-text-shadow: hsla(var(--color-hsl) / 0.1);
+  --color-bg: #fffefd;
+  --color-bg-accent: #f7f5f5;
+  --color-primary: #ffedd5;
+  --color-primary-accent: #fed7aa;
+  --color-primary-decorator: #ea580c;
+  --color-link: #2563eb;
+  --color-link-hover: #ec4899;
+
+  @media (prefers-contrast: less) {
+    body {
+      opacity: 0.8;
+    }
+  }
+}
+
+@mixin colors-dark {
+  --color-hsl: 210 40% 98%;
+  --color-text-accent: #f1f5f9;
+  --color-bg: #020617;
+  --color-bg-accent: #0f172a;
+  --color-primary: #172554;
+  --color-primary-accent: #1e3a8a;
+  --color-primary-decorator: #0ea5e9;
+  --color-link: #60a5fa;
+  --color-link-hover: #93c5fd;
+}
+
+html {
+  @apply colors-light;
+  accent-color: var(--color-primary-decorator);
+}
+
+@media (prefers-color-scheme: dark) {
+  html:not([data-appearance="light"]) {
+    @apply colors-dark;
+  }
+}
+
+[data-appearance="light"] {
+  @apply colors-light;
+}
+
+[data-appearance="dark"] {
+  @apply colors-dark;
+}

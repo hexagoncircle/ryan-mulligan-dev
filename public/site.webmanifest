@@ -1,0 +1,14 @@
+{
+  "name": "Ryan Mulligan | ryanmulligan.dev",
+  "short_name": "ryanmulligan.dev",
+  "description": "Front-end developer and UI engineer",
+  "lang": "en",
+  "dir": "ltr",
+  "icons": [
+    { "src": "/icon-192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "/icon-512.png", "type": "image/png", "sizes": "512x512" }
+  ],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "orientation": "natural"
+}

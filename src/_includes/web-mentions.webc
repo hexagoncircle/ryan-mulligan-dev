@@ -1,0 +1,171 @@
+<script webc:setup>
+  const mentions = getWebmentionsForUrl($data.webmentions, $data.page.url);
+  const likes = getWebmentionsByType(mentions, "like-of");
+  const reposts = getWebmentionsByType(mentions, "repost-of");
+  const replies = getWebmentionsByType(mentions, "in-reply-to, mention-of");
+  const hasMentions = likes.length || reposts.length || replies.length;
+
+  const buckets = [
+    { label: "likes", collection: likes },
+    { label: "reposts", collection: reposts },
+    { label: "replies", collection: replies },
+  ];
+
+  function isReply(value) {
+    return ["in-reply-to", "mention-of"].includes(value);
+  }
+</script>
+
+<article webc:if="hasMentions" webc:root="override">
+  <h2 class="heading">
+    <strong>Webmentions</strong> for this post
+    <a
+      href="https://indieweb.org/webmention.io"
+      title="What are webmentions?"
+      target="_blank"
+    >
+      <inline-svg
+        class="icon"
+        aria-hidden="true"
+        src="./public/icons/question.svg"
+      ></inline-svg>
+      <span class="visually-hidden">Learn about webmentions</span>
+    </a>
+  </h2>
+  <details
+    webc:if="!bucket.length"
+    webc:for="bucket of buckets"
+    :class="bucket.label"
+  >
+    <summary>
+      <strong @text="bucket.collection.length"></strong>
+      <span @text="bucket.label" webc:nokeep></span>
+    </summary>
+    <ul role="list">
+      <li webc:for="item of bucket.collection">
+        <a
+          class="author-source"
+          :href="item.author.url"
+          :title="item.author.name"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img
+            webc:if="item.author.photo"
+            class="image"
+            :src="item.author.photo"
+            :alt="item.author.name"
+            width="60"
+            height="60"
+          />
+          <div webc:else class="image"></div>
+        </a>
+        <p webc:if="isReply(item['wm-property'])">
+          <span @text="truncateAfterWord(item.content.text, 500)"></span>
+          <a
+            class="reply-source"
+            :href="item.url"
+            target="_blank"
+            title="Go to source of this reply"
+            rel="noreferrer"
+          >
+            <inline-svg src="./public/icons/arrow-square-out.svg"></inline-svg>
+          </a>
+        </p>
+      </li>
+    </ul>
+  </details>
+</article>
+
+<style webc:scoped="webmentions">
+  :host {
+    --flow-space: var(--space-l);
+    --border-width: 4px;
+    --icon-size: 1.2em;
+    --offset: calc((var(--border-width) * 3));
+    position: relative;
+  }
+
+  .heading {
+    all: unset;
+    display: block;
+    margin-block-end: var(--space-2xs);
+
+    a {
+      display: inline-flex;
+      margin-inline-start: -0.1em;
+      border-radius: var(--radius-round);
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-inline-start: calc(var(--offset) - var(--border-width));
+    margin-block: var(--space-2xs) var(--space-s);
+  }
+
+  li {
+    margin-inline-start: calc(var(--offset) * -1);
+  }
+
+  :is(li:hover, a:focus-visible) {
+    z-index: 1;
+  }
+
+  :is(li:hover, a:focus-visible) .image {
+    outline: inherit;
+    border-width: calc(var(--border-width) / 2);
+  }
+
+  a {
+    display: block;
+    border-radius: var(--radius-round);
+  }
+
+  .image {
+    width: 3em;
+    height: auto;
+    aspect-ratio: 1;
+    border-radius: var(--radius-round);
+    border: var(--border-width) solid var(--color-bg);
+    background-color: var(--color-bg-accent);
+  }
+
+  .replies li {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    margin-block-start: var(--space-2xs);
+  }
+
+  .replies p {
+    position: relative;
+    padding: var(--space-xs);
+    padding-inline-start: var(--space-m);
+    margin-inline-start: calc(var(--space-xs) * -1);
+    inline-size: 100%;
+    font-size: 0.8em;
+    background-color: var(--color-bg-accent);
+    border-radius: var(--radius-s);
+    line-height: 1.4;
+    word-break: break-word;
+  }
+
+  .replies .image {
+    position: relative;
+    z-index: 1;
+    flex-shrink: 0;
+    align-self: baseline;
+    border-radius: var(--radius-round);
+  }
+
+  .reply-source {
+    display: grid;
+    place-items: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(0.25em, -0.25em);
+  }
+</style>

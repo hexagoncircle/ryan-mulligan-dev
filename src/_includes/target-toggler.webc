@@ -1,0 +1,72 @@
+<script>
+  class TargetToggler extends HTMLElement {
+    constructor() {
+      super();
+      this.name = this.tagName.toLowerCase();
+      this.toggle = this._createToggle();
+      this.append(this.toggle);
+    }
+
+    connectedCallback() {
+      this.toggle = this.querySelector("button");
+
+      if (!this.visible) this.target.setAttribute("hidden", "");
+    }
+
+    _createToggle() {
+      const button = document.createElement("button");
+
+      button.innerHTML = this.innerHTML;
+      button.setAttribute("aria-expanded", this.visible);
+      button.setAttribute("aria-controls", this.controls);
+      button.addEventListener("click", this.handleClick.bind(this));
+
+      this.innerHTML = "";
+      return button;
+    }
+
+    handleClick(event) {
+      let expanded =
+        this.toggle.getAttribute("aria-expanded") === "true" || false;
+
+      this.toggle.setAttribute("aria-expanded", !expanded);
+      this.target.toggleAttribute("hidden", expanded);
+    }
+
+    get controls() {
+      const attr = this.getAttribute("controls");
+
+      if (!attr) {
+        throw new Error(
+          `${this.name} requires a "controls" attribute set to an element id`
+        );
+      }
+
+      return attr;
+    }
+
+    get target() {
+      const el = document.getElementById(this.controls);
+
+      if (!el) {
+        throw new Error(
+          `${this.name} cannot find element with id "${this.controls}".`
+        );
+      }
+
+      return el;
+    }
+
+    get visible() {
+      const attr = "target-visible";
+      return (
+        (this.hasAttribute(attr) && this.getAttribute(attr) !== "false") ||
+        false
+      );
+    }
+  }
+
+  if ("customElements" in window) {
+    window.customElements.define("target-toggler", TargetToggler);
+  }
+</script>

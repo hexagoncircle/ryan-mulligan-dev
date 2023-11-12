@@ -97,7 +97,7 @@ In browser developer tools, we can enable layout grid lines visually and get a s
 - Open the _Layout_ panel and select "Show line names" from the _Overlay display settings_ dropdown.
 - In the _Elements_ panel, click on the `grid` pills to the right of the main content and gallery elements to toggle their grid line visibility.
 
-{% image "./src/assets/images/gallery-grid-lines.png", "Screenshot of dev tools showing the overlap of the gallery's grid lines on top of the parent container's grid lines.", "Dev tools can be used to visualize the overlap of the gallery's grid lines on top of the parent container's grid lines." %}
+{% image "./public/images/gallery-grid-lines.png", "Screenshot of dev tools showing the overlap of the gallery's grid lines on top of the parent container's grid lines.", "Dev tools can be used to visualize the overlap of the gallery's grid lines on top of the parent container's grid lines." %}
 
 ### The inner wrapper
 

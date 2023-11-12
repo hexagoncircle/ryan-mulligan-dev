@@ -1,0 +1,133 @@
+<script webc:setup>
+  const { appearance } = $data.navigation;
+</script>
+
+<theme-machine>
+  <fieldset>
+    <legend class="visually-hidden">Select appearance setting</legend>
+    <template webc:for="item of appearance" webc:nokeep>
+      <input
+        :id="`appearance-${item.id}`"
+        :value="item.value !== 'system' ? item.value : ''"
+        type="radio"
+        name="appearance"
+        class="visually-hidden"
+      />
+      <label :for="`appearance-${item.id}`">
+        <span class="visually-hidden" @text="item.label"></span>
+        <inline-svg
+          class="icon"
+          aria-hidden="true"
+          :src="`./public/icons/${item.icon}.svg`"
+        ></inline-svg>
+      </label>
+    </template>
+    <div class="highlight"></div>
+  </fieldset>
+</theme-machine>
+
+<script webc:bucket="critical">
+  (function () {
+    let root = document.documentElement;
+    let appearance = localStorage.getItem("appearance");
+
+    appearance && root.setAttribute("data-appearance", appearance);
+  })();
+</script>
+
+<script>
+  class ThemeMachine extends HTMLElement {
+    connectedCallback() {
+      const initialValue = localStorage.getItem("appearance") || "";
+      const collection = this.querySelectorAll("[name='appearance']");
+
+      for (let item of collection) {
+        item.checked = item.value === initialValue;
+        item.addEventListener("change", this.handleAppearance);
+      }
+    }
+
+    handleAppearance(e) {
+      const root = document.documentElement;
+      const attr = "data-appearance";
+      const value = e.target.value;
+
+      if (!value) {
+        localStorage.removeItem("appearance");
+        root.removeAttribute(attr);
+        return;
+      }
+
+      localStorage.setItem("appearance", value);
+      root.setAttribute(attr, value);
+    }
+  }
+
+  if ("customElements" in window) {
+    window.customElements.define("theme-machine", ThemeMachine);
+  }
+</script>
+
+<style webc:scoped="theme-machine">
+  fieldset {
+    --_padding: 0.3em;
+    --icon-size: 1.2em;
+    all: unset;
+    display: flex;
+    gap: var(--_padding);
+    background: var(--color-primary);
+    padding: var(--_padding);
+    border-radius: 360px;
+    isolation: isolate;
+    transform: translateZ(0);
+  }
+
+  fieldset {
+    position: relative;
+  }
+
+  label {
+    display: grid;
+    place-items: center;
+    place-content: center;
+    border-radius: 50%;
+    padding: var(--_padding);
+    color: var(--color-primary-decorator);
+    cursor: pointer;
+  }
+
+  input:checked + label {
+    color: currentcolor;
+  }
+
+  input:checked:focus-visible + label {
+    outline: 5px auto Highlight;
+    outline: 5px auto -webkit-focus-ring-color;
+  }
+
+  .highlight {
+    content: "";
+    position: absolute;
+    top: var(--_padding);
+    left: var(--_padding);
+    aspect-ratio: 1;
+    height: calc(100% - var(--_padding) * 2);
+    background: var(--color-primary-accent);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: -1;
+    transition: translate 250ms cubic-bezier(0.65, 0, 0.35, 1);
+  }
+
+  input:focus-visible ~ .highlight {
+    transition: unset;
+  }
+
+  input:nth-of-type(2):checked ~ .highlight {
+    translate: calc(100% + var(--_padding));
+  }
+
+  input:nth-of-type(3):checked ~ .highlight {
+    translate: calc(200% + var(--_padding) * 2);
+  }
+</style>

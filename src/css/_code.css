@@ -1,0 +1,241 @@
+:root {
+  --color-code-bg: #0f172a;
+  --color-code-text: #f8fafc;
+}
+
+code,
+pre {
+  font-size: 0.9em;
+  line-height: 1.4;
+  font-family: var(--font-mono);
+  border-radius: var(--radius-s);
+}
+
+pre[class*="language-"] {
+  padding: var(--space-xs);
+  color: var(--color-code-text);
+  background-color: var(--color-code-bg);
+  border-radius: var(--radius-m);
+}
+
+pre[class*="language-"] {
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+:where(:not(pre)) > code {
+  position: relative;
+  top: -0.025em;
+  background-color: var(--color-bg-accent);
+  padding: 0.02em 0.3em 0.04em;
+  font-size: 0.85em;
+}
+
+:where(:not(a, pre, blockquote)) > code {
+  color: var(--color-text-accent);
+}
+
+pre[class*="language-"] {
+  overflow: auto;
+  position: relative;
+}
+
+.language-css > code,
+.language-sass > code,
+.language-scss > code {
+  color: #fd9170;
+}
+
+[class*="language-"] .namespace {
+  opacity: 0.7;
+}
+
+.token.atrule {
+  color: #c792ea;
+}
+
+.token.attr-name {
+  color: #ffcb6b;
+}
+
+.token.attr-value {
+  color: #c3e88d;
+}
+
+.token.attribute {
+  color: #c3e88d;
+}
+
+.token.boolean {
+  color: #c792ea;
+}
+
+.token.builtin {
+  color: #ffcb6b;
+}
+
+.token.cdata {
+  color: #80cbc4;
+}
+
+.token.char {
+  color: #80cbc4;
+}
+
+.token.class {
+  color: #ffcb6b;
+}
+
+.token.class-name {
+  color: #f2ff00;
+}
+
+.token.color {
+  color: #f2ff00;
+}
+
+.token.comment {
+  color: #779daf;
+}
+
+.token.constant {
+  color: #c792ea;
+}
+
+.token.deleted {
+  color: #f07178;
+}
+
+.token.doctype {
+  color: #546e7a;
+}
+
+.token.entity {
+  color: #f07178;
+}
+
+.token.function {
+  color: #c792ea;
+}
+
+.token.hexcode {
+  color: #f2ff00;
+}
+
+.token.id {
+  color: #c792ea;
+  font-weight: bold;
+}
+
+.token.important {
+  color: #c792ea;
+  font-weight: bold;
+}
+
+.token.inserted {
+  color: #80cbc4;
+}
+
+.token.keyword {
+  color: #c792ea;
+  font-style: italic;
+}
+
+.token.number {
+  color: #fd9170;
+}
+
+.token.operator {
+  color: #89ddff;
+}
+
+.token.prolog {
+  color: #546e7a;
+}
+
+.token.property {
+  color: #80cbc4;
+}
+
+.token.pseudo-class {
+  color: #c3e88d;
+}
+
+.token.pseudo-element {
+  color: #c3e88d;
+}
+
+.token.punctuation {
+  color: #89ddff;
+}
+
+.token.regex {
+  color: #f2ff00;
+}
+
+.token.selector {
+  color: #f07178;
+}
+
+.token.string {
+  color: #c3e88d;
+}
+
+.token.symbol {
+  color: #c792ea;
+}
+
+.token.tag {
+  color: #f07178;
+}
+
+.token.unit {
+  color: #f07178;
+}
+
+.token.url {
+  color: #fd9170;
+}
+
+.token.variable {
+  color: #f07178;
+}
+
+/* CodePen iframe */
+.codepen {
+  padding: var(--space-s);
+  color: var(--color-text-accent);
+  border: 2px dashed var(--color-primary);
+}
+
+.prose .cp_embed_wrapper,
+.prose .cp_embed_wrapper + script + *:not(h2) {
+  --flow-space: var(--space-l);
+}
+
+.cp_embed_wrapper {
+  grid-column: popout;
+  position: relative;
+  overflow: auto;
+  display: grid;
+  place-items: center;
+  grid-template-areas: "container";
+  resize: horizontal;
+}
+
+.cp_embed_wrapper iframe {
+  grid-area: container;
+  width: 100%;
+}

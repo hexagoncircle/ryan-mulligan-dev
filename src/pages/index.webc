@@ -1,0 +1,82 @@
+---
+permalink: "/"
+---
+
+<main class="breakout flow">
+  <scroll-pen></scroll-pen>
+  <section class="introduction flow">
+    <p>This is a website made by <say-my-name></say-my-name></p>
+    <ul>
+      <li>
+        The latest site deploy happened on
+        <span @text="formatDeployDate(new Date())"></span>.
+      </li>
+      <li><code>+268</code> lines of code were added, <code>-95</code> lines were removed.</li>
+      <li>Currently listening to <em>Fade In Nylon</em> by A Beacon School.</li>
+    </ul>
+  </section>
+  <h2>Recent writings</h2>
+  <p>
+    Sometimes general thoughts and rambles, mostly code snippets and front-end development
+    discoveries to share with the world wide web.
+  </p>
+  <article-list count="3"></article-list>
+  <p class="cta arrow-end">
+    <a href="/blog/">Read more articles</a>
+  </p>
+
+  <h2>The bit about myself</h2>
+  <p>
+    I'm a fun-loving front-end engineer that strives to bridge the gap between web design and
+    development, building user experiences with positive interactivity through thoughtful
+    interfaces. I advocate for modern best practices on the web and love working with diverse,
+    inclusive teams. Currently, I build for the web with a lovely team at Netlify. When I'm not
+    coding, you can catch me noodling on my acoustic guitar or blasting out rhythms if there's a
+    drum kit ready for a lefty nearby.
+  </p>
+  <p>Want to know more? Say hello anytime! 👋</p>
+
+  <h2>A few things I enjoy</h2>
+  <ul class="multi-column">
+    <li>All things CSS</li>
+    <li>Finding the perfect custom cubic Bézier curve</li>
+    <li>Web accessibility</li>
+    <li>CodePen</li>
+    <li>Any beach, any ocean</li>
+    <li>Early morning coffee</li>
+    <li>Nick Drake's <em>Pink Moon</em> in its entirety</li>
+    <li>Cool side of pillow</li>
+    <li>Guitar noodling</li>
+    <li>Trashing a drum kit</li>
+  </ul>
+</main>
+
+<style>
+  .grid {
+    --flow-space: var(--space-xs);
+    --gap: 2px;
+    --min: 14rem;
+  }
+
+  .cta {
+    --flow-space: var(--space-l);
+  }
+
+  scroll-pen {
+    margin-block-start: 4vh;
+  }
+
+  [data-scroll-pen-controls] {
+    --flow-space: var(--space-2xs);
+    margin-block-end: 4vh;
+    position: relative;
+    opacity: 0;
+    animation: fade-in-scale-back 200ms 500ms ease-out forwards;
+  }
+
+  @media (min-width: 35rem) {
+    [data-scroll-pen-controls] {
+      max-width: 35rem;
+    }
+  }
+</style>

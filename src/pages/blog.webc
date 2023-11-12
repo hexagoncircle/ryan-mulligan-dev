@@ -1,0 +1,24 @@
+---
+permalink: "blog/"
+title: "Blog posts by Ryan Mulligan"
+description: "Follow my RSS feed for my general thoughts, code snippets, and front-end
+development discoveries"
+---
+
+<main class="breakout flow">
+  <h1 class="title | skewer">The Blog</h1>
+  <p>
+    Sometimes general thoughts and rambles, mostly code snippets and front-end
+    development discoveries to share with the world wide web. Below is the whole
+    collection, starting with the most recent stuff. Follow my
+    <a href="/blog/feed.xml">RSS feed</a> to stay in the loop when new content
+    gets published.
+  </p>
+  <article-list></article-list>
+</main>
+
+<style>
+  .title + * {
+    --flow-space: var(--space-xl);
+  }
+</style>

@@ -1,0 +1,102 @@
+<script webc:setup>
+  const name = "Ryan Mulligan";
+  const lyrics = [
+    "If no one is around you say baby I love you",
+    "If you ain't runnin' game",
+    "Say my name, say my name",
+    "You actin' kinda shady",
+    "Ain't callin' me baby",
+    "Why the sudden change",
+    "Say my name, say my name",
+    "If no one is around you say baby I love you",
+    "If you ain't runnin' game",
+    "Say my name, say my name",
+    "You actin' kinda shady",
+    "Ain't callin' me baby",
+    "Better say my name",
+  ];
+
+  const textWrap = (text, index) =>
+    `<span style="--index: ${index}" aria-hidden="true" data-destiny="${lyrics[index]}">${text}</span>`;
+
+  const splitLetters = (text) => [...text].map(textWrap).join("");
+</script>
+
+<strong
+  @html="splitLetters($data.meta.title)"
+  :aria-label="$data.meta.title"
+  webc:root
+></strong>
+
+<style webc:scoped="say-my-name">
+  :host {
+    --_position: 15 20;
+    --_canvas: var(--space-m);
+
+    display: inline-block;
+    position: relative;
+    padding: var(--space-m) var(--space-m) var(--space-xs);
+    margin: calc(var(--space-m) * -1) calc(var(--space-m) * -1)
+      calc(var(--space-xs) * -1);
+    font-weight: var(--font-bold);
+    letter-spacing: -0.01em;
+  }
+
+  span {
+    display: inline-block;
+    white-space: break-spaces;
+    transform-origin: center bottom;
+  }
+
+  :host:hover {
+    animation: name-emoji 1s steps(3, start) infinite;
+
+    span {
+      animation: name-float 800ms calc(var(--index) * -100ms) ease infinite,
+        name-waver 700ms calc(var(--index) * -100ms) ease infinite;
+    }
+  }
+
+  @keyframes name-emoji {
+    0%,
+    24% {
+      cursor: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" height="64" width="64" style="rotate:-10deg;"><text y="50%">🤗</text></svg>')
+          var(--_position),
+        auto;
+    }
+    25%,
+    49% {
+      cursor: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" height="64" width="64"><text y="50%">😊</text></svg>')
+          var(--_position),
+        auto;
+    }
+    50%,
+    74% {
+      cursor: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" height="64" width="64" style="rotate:10deg;transform-origin: center left"><text y="50%">🤗</text></svg>')
+          var(--_position),
+        auto;
+    }
+    75%,
+    100% {
+      cursor: url('data:image/svg+xml;charset=utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" height="64" width="64"><text y="50%">😄</text></svg>')
+          var(--_position),
+        auto;
+    }
+  }
+
+  @keyframes name-waver {
+    25% {
+      rotate: 2deg;
+    }
+    75% {
+      rotate: -2deg;
+    }
+  }
+
+  @keyframes name-float {
+    50% {
+      translate: 0 2%;
+      scale: 1 1.15;
+    }
+  }
+</style>

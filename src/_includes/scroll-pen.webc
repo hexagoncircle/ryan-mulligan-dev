@@ -1,0 +1,441 @@
+<script webc:setup>
+  const { title, items } = $data.codepens;
+</script>
+
+<article class="scroll-x skewer" tabindex="-1" webc:root>
+  <h2 class="visually-hidden" @text="title"></h2>
+  <ul role="list">
+    <li webc:for="(item, index) of items" :style="`--i: ${index}`">
+      <a
+        class="stack"
+        :href="`https://codepen.io/hexagoncircle/full/${item.id}`"
+        target="_blank"
+        rel="noopener"
+      >
+        <span class="visually-hidden" @text="item.title"></span>
+        <figure class="stack">
+          <script webc:type="js">
+            codepenImage(item.id);
+          </script>
+          <template>
+            <video
+              webc:if="item.preview"
+              loop
+              muted
+              playsinline
+              preload="none"
+              width="400"
+              height="400"
+            >
+              <source :src="`/videos/codepen/${item.id}.webm`" type="video/webm" />
+              <source :src="`/videos/codepen/${item.id}.mp4`" type="video/mp4" />
+            </video>
+          </template>
+        </figure>
+      </a>
+    </li>
+  </ul>
+
+  <template data-scroll-pen-utils>
+    <p data-scroll-pen-focus-arrows>
+      <span class="visually-hidden"> Navigate with left and right arrow keys </span>
+      <span>←</span>
+      <span>→</span>
+    </p>
+
+    <div data-scroll-pen-controls class="cluster">
+      <label data-scroll-pen-scroller>
+        <input type="range" value="0" min="0" max="100" step="0.1" />
+        <span class="visually-hidden">Scroll CodePen collection horizontally</span>
+      </label>
+      <label data-scroll-pen-unskewer class="cluster checkbox">
+        <input type="checkbox" />
+        unskew
+      </label>
+      <label data-scroll-pen-motion class="cluster checkbox">
+        <input type="checkbox" />
+        reduce motion
+      </label>
+    </div>
+  </template>
+</article>
+
+<script>
+  class ScrollPen extends HTMLElement {
+    constructor() {
+      super();
+      this.list;
+      this.items;
+      this.controls;
+      this.scroller;
+      this.unskewer;
+      this.motion;
+      this.focusArrows;
+      this.currentIndex = 0;
+      this.cls = {
+        active: "active",
+        current: "current",
+      };
+    }
+
+    connectedCallback() {
+      this.list = this.querySelector("ul");
+      this.items = this.querySelectorAll("a");
+
+      this.setupTemplateUtils();
+      this.updateCurrentIndex();
+      this.addEventListener("scroll", this.updateRangeScroll);
+      this.addEventListener("keydown", this.handleKeyPress);
+      this.scroller.addEventListener("keydown", this.handleScrollerKeyPress);
+      this.scroller.addEventListener("input", this.handleScrollerInput.bind(this));
+      this.unskewer.addEventListener("input", this.handleUnskewerClick.bind(this));
+      this.motion.addEventListener("input", this.handleReduceMotionClick.bind(this));
+
+      if (matchMedia("(prefers-reduced-motion)").matches) return;
+
+      this.setupVideos();
+    }
+
+    appendFocusArrows() {
+      this.items[this.currentIndex].parentNode.append(this.focusArrows);
+    }
+
+    handleItemEnter(e) {
+      let video = this.querySelector("video");
+      if (!video) return;
+      video.play();
+    }
+
+    handleItemLeave(e) {
+      let video = this.querySelector("video");
+      if (!video) return;
+      video.pause();
+    }
+
+    handleKeyPress(e) {
+      let lastIndex = this.items.length - 1;
+
+      if (e.key === "Tab") {
+        this.list.classList.remove(this.cls.active);
+      }
+
+      if (["ArrowRight", "ArrowDown"].includes(e.key)) {
+        if (this.currentIndex === lastIndex) {
+          this.currentIndex = 0;
+        } else {
+          this.currentIndex++;
+        }
+      }
+
+      if (["ArrowUp", "ArrowLeft"].includes(e.key)) {
+        if (this.currentIndex === 0) {
+          this.currentIndex = lastIndex;
+        } else {
+          this.currentIndex--;
+        }
+      }
+
+      if (["ArrowUp", "ArrowRight", "ArrowDown", "ArrowLeft"].includes(e.key)) {
+        let selected = this.items[this.currentIndex];
+
+        e.preventDefault();
+
+        selected.scrollIntoView({
+          block: "nearest",
+          inline: "center",
+        });
+        selected.focus({ preventScroll: true });
+
+        this.list.classList.add(this.cls.active);
+        this.updateCurrentIndex();
+      }
+    }
+
+    handleScrollerInput(e) {
+      let position = this.scrollWidth - this.offsetWidth;
+      let percentage = position * (e.target.value / 100);
+
+      this.scrollLeft = percentage;
+    }
+
+    handleScrollerKeyPress(e) {
+      let value = Number(e.target.value);
+      let boost = 3;
+
+      if (["ArrowUp", "ArrowRight"].includes(e.key)) {
+        e.target.value = value + boost;
+      }
+
+      if (["ArrowDown", "ArrowLeft"].includes(e.key)) {
+        e.target.value = value - boost;
+      }
+    }
+
+    handleReduceMotionClick(e) {
+      this.classList.toggle("reduce-motion", e.target.checked);
+    }
+
+    handleUnskewerClick(e) {
+      this.classList.toggle("skewer", !e.target.checked);
+    }
+
+    setupTemplateUtils() {
+      let template = this.querySelector("[data-scroll-pen-utils]");
+      let content = template.content.cloneNode(true);
+
+      this.controls = content.querySelector("[data-scroll-pen-controls]");
+      this.scroller = content.querySelector("[data-scroll-pen-scroller]");
+      this.unskewer = content.querySelector("[data-scroll-pen-unskewer]");
+      this.motion = content.querySelector("[data-scroll-pen-motion]");
+      this.focusArrows = content.querySelector("[data-scroll-pen-focus-arrows]");
+
+      this.insertAdjacentElement("afterend", this.controls);
+      this.appendFocusArrows();
+    }
+
+    setupVideos() {
+      this.items.forEach((item) => {
+        let template = item.querySelector("template");
+        let content = template.content.cloneNode(true);
+
+        template.replaceWith(content);
+
+        item.addEventListener("pointerenter", this.handleItemEnter);
+        item.addEventListener("focusin", this.handleItemEnter);
+        item.addEventListener("pointerleave", this.handleItemLeave);
+        item.addEventListener("focusout", this.handleItemLeave);
+      });
+    }
+
+    updateCurrentIndex() {
+      this.items.forEach((item, index) => {
+        item.parentNode.classList.toggle(this.cls.current, index === this.currentIndex);
+      });
+
+      this.updateTabIndex();
+      this.appendFocusArrows();
+    }
+
+    updateRangeScroll() {
+      let position = this.scrollWidth - this.offsetWidth;
+      let percentage = this.scrollLeft / position;
+
+      this.scroller.value = percentage * 100;
+    }
+
+    updateTabIndex() {
+      this.items.forEach((item) => {
+        item.setAttribute("tabIndex", item === this.items[this.currentIndex] ? 0 : -1);
+      });
+    }
+  }
+
+  if ("customElements" in window) {
+    window.customElements.define("scroll-pen", ScrollPen);
+  }
+</script>
+
+<style>
+  scroll-pen a::after {
+    mix-blend-mode: multiply;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    html:not([data-appearance="light"]) scroll-pen a::after {
+      mix-blend-mode: screen;
+    }
+  }
+
+  [data-appearance="dark"] scroll-pen a::after {
+    mix-blend-mode: screen;
+  }
+
+  .checkbox {
+    --align: center;
+    --column-gap: var(--space-3xs);
+    font-size: 0.8em;
+  }
+
+  [data-scroll-pen-controls] {
+    --column-gap: var(--space-xs);
+    --row-gap: var(--space-2xs);
+  }
+
+  [data-scroll-pen-scroller] {
+    flex-grow: 1;
+  }
+</style>
+
+<style webc:scoped="scroll-pen">
+  :host {
+    --_duration: 200ms;
+    --_delay: 250ms;
+    --_offset: 6;
+    --_ease: cubic-bezier(0, 0.55, 0.45, 1);
+    --_transition: 180ms cubic-bezier(0, 0.55, 0.45, 1);
+    --_gap: clamp(var(--space-2xs), 3vw, var(--space-s));
+
+    grid-column: full;
+    display: grid;
+    grid-template-columns: inherit;
+  }
+
+  ul {
+    grid-column: content;
+    display: grid;
+    grid-auto-columns: calc(8rem + 3vw);
+    grid-auto-flow: column;
+    padding-block: var(--space-m) calc(var(--space-m) + 1ex);
+    gap: var(--_gap);
+
+    > :nth-child(3n + 1) {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    &::after {
+      content: "";
+      width: var(--page-gutters);
+      margin-inline-start: calc(var(--_gap) * -1);
+    }
+  }
+
+  li {
+    overflow: hidden;
+    border-radius: var(--radius-l);
+    transform: var(--unskew) translateZ(0);
+    transition: scale var(--_duration) cubic-bezier(0, 0.55, 0.45, 1);
+
+    &:focus-within {
+      outline: 5px auto Highlight;
+      outline: 5px auto -webkit-focus-ring-color;
+      outline-offset: 3px;
+    }
+  }
+
+  a {
+    position: relative;
+    outline: none;
+    aspect-ratio: 1;
+    transform: translateZ(0);
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    background-color: var(--color-primary);
+  }
+
+  a::after {
+    content: "";
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-primary);
+    transition: opacity var(--_transition);
+    z-index: 1;
+  }
+
+  :is(img, video) {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1;
+    pointer-events: none;
+  }
+
+  img {
+    filter: grayscale(1);
+    transform: translateZ(0);
+    transition: var(--_duration) var(--_ease);
+    transition-property: filter, opacity, transform;
+  }
+
+  video {
+    position: relative;
+    opacity: 0;
+    scale: 1.2;
+    transition: scale var(--_duration) var(--_duration) var(--_ease),
+      opacity var(--_duration) var(--_ease);
+  }
+
+  /* Focus arrows */
+  [data-scroll-pen-focus-arrows] {
+    visibility: hidden;
+    display: inline-flex;
+    gap: 0.5em;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    padding-inline: var(--space-2xs);
+    font-size: var(--step--1);
+    transform: translate(-50%, -8px);
+
+    > span {
+      display: grid;
+      place-content: center;
+      padding-inline: var(--space-2xs);
+      aspect-ratio: 1;
+      background-color: var(--color-bg);
+      border-radius: var(--radius-s);
+      outline: 5px auto Highlight;
+      outline: 5px auto -webkit-focus-ring-color;
+    }
+  }
+
+  :where(.current :focus-visible) + [data-scroll-pen-focus-arrows] {
+    visibility: visible;
+  }
+
+  .active [data-scroll-pen-focus-arrows] {
+    visibility: hidden;
+  }
+
+  /* Intro animation */
+  @media (prefers-reduced-motion: no-preference) {
+    li {
+      --_animation: var(--_duration)
+        calc(var(--i) * var(--_duration) / var(--_offset) + var(--_delay)) forwards;
+
+      animation: slide-up-right var(--_animation);
+    }
+
+    a {
+      opacity: 0;
+      transform-origin: bottom left;
+      animation: fade-in-scale-up var(--_animation);
+    }
+
+    img {
+      opacity: 0;
+      animation: fade-in-scale-back calc(var(--_duration) * 2)
+        calc(var(--i) * var(--_duration) / var(--_offset) + var(--_delay) + var(--_duration))
+        forwards;
+    }
+  }
+
+  /* Hover styles */
+  @media (any-hover: hover) {
+    li:is(:hover, :focus-within) {
+      scale: 1.04;
+      z-index: 1;
+
+      a::after {
+        opacity: 0;
+        transition-duration: calc(var(--_duration) * 4);
+      }
+
+      img {
+        transform: translateZ(0);
+        filter: grayscale(0);
+        transition-duration: calc(var(--_duration) * 4);
+      }
+    }
+
+    :host:not(.reduce-motion) li:is(:hover, :focus-within) video {
+      opacity: 1;
+      scale: 1;
+      transition: scale calc(var(--_duration) * 8) var(--_ease),
+        opacity calc(var(--_duration) / 2) var(--_ease);
+    }
+  }
+</style>

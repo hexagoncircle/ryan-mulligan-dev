@@ -1,0 +1,49 @@
+blockquote {
+  grid-column: popout;
+  display: grid;
+  grid-template-areas:
+    "mark quote"
+    "line quote";
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto 1fr;
+  column-gap: 0.2em;
+  padding-block: var(--space-xs);
+  padding-inline-end: var(--space-l);
+  color: var(--color-primary-decorator);
+
+  font-size: var(--step-1);
+  line-height: 1.4;
+}
+
+blockquote > * {
+  grid-area: quote;
+  text-indent: 0.4em;
+}
+
+blockquote code {
+  color: var(--color-primary-decorator);
+  background-color: var(--color-primary);
+}
+
+blockquote::before {
+  grid-area: mark;
+  place-self: start;
+  content: "“";
+  font-family: Georgia, serif;
+  font-size: 3.4em;
+  line-height: 1;
+  height: 0.5em;
+  color: var(--color-primary-decorator);
+  transform: translateY(-0.025em);
+}
+
+blockquote::after {
+  grid-area: line;
+  place-self: stretch center;
+  content: "";
+  width: 0.2em;
+  height: 100%;
+  border-radius: var(--radius-pill);
+  background-color: var(--color-primary-decorator);
+  transform: translateY(-0.1em);
+}

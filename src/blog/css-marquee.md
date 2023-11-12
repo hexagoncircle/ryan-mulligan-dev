@@ -1,7 +1,6 @@
 ---
 title: The Infinite Marquee
 description: A responsive looping marquee-style animation using HTML and CSS.
-subtitle: A responsive looping marquee-style animation using HTML and CSS
 ogImage: /assets/social/the-infinite-marquee.png
 date: 2022-08-06
 ---
@@ -62,7 +61,7 @@ Here are the responsive styles that correspond to the HTML code block above:
 }
 ```
 
-To get a better sense of what's happening, open up [this CodePen demo](https://codepen.io/hexagoncircle/pen/eYMrGwW){target="_blank"}. Try turning each CSS rule off and on to see how it affects the marquee. Adjust the amount of items in the marquee's HTML. Watch how they spread out as the viewport widens or naturally overflow as it narrows.
+To get a better sense of what's happening, open up [this CodePen demo](https://codepen.io/hexagoncircle/pen/eYMrGwW){target="\_blank"}. Try turning each CSS rule off and on to see how it affects the marquee. Adjust the amount of items in the marquee's HTML. Watch how they spread out as the viewport widens or naturally overflow as it narrows.
 
 Allow me to explain what this CSS is doing.
 
