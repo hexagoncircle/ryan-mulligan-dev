@@ -3,12 +3,12 @@
   --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-@keyframes slide-up-right {
+@keyframes fade-in {
   from {
-    translate: -12px 12px;
+    opacity: 0;
   }
   to {
-    translate: 0 0;
+    opacity: 1;
   }
 }
 
@@ -31,5 +31,14 @@
   to {
     opacity: 1;
     scale: 1;
+  }
+}
+
+@keyframes slide-up-right {
+  from {
+    translate: -12px 12px;
+  }
+  to {
+    translate: 0 0;
   }
 }

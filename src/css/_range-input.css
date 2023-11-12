@@ -9,6 +9,7 @@
   appearance: none;
   margin-top: calc((var(--height-thumb) / 2 - var(--height-track) / 2) * -1);
   background-color: var(--color-thumb);
+  border: none;
   border-radius: var(--radius-thumb);
   height: var(--height-thumb);
   width: var(--width-thumb);

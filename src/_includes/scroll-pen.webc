@@ -43,20 +43,23 @@
       <span>→</span>
     </p>
 
-    <div data-scroll-pen-controls class="cluster">
+    <fieldset data-scroll-pen-controls class="cluster">
+      <legend class="visually-hidden">CodePen collection controls</legend>
       <label data-scroll-pen-scroller>
         <input type="range" value="0" min="0" max="100" step="0.1" />
-        <span class="visually-hidden">Scroll CodePen collection horizontally</span>
+        <span class="visually-hidden">Scroll horizontally</span>
       </label>
-      <label data-scroll-pen-unskewer class="cluster checkbox">
-        <input type="checkbox" />
-        unskew
-      </label>
-      <label data-scroll-pen-motion class="cluster checkbox">
-        <input type="checkbox" />
-        reduce motion
-      </label>
-    </div>
+      <div class="cluster">
+        <label data-scroll-pen-unskewer class="cluster checkbox">
+          <input type="checkbox" />
+          Unskew
+        </label>
+        <label data-scroll-pen-motion class="cluster checkbox">
+          <input type="checkbox" />
+          Reduce motion
+        </label>
+      </div>
+    </fieldset>
   </template>
 </article>
 
@@ -84,6 +87,7 @@
 
       this.setupTemplateUtils();
       this.updateCurrentIndex();
+      this.appendFocusArrows();
       this.addEventListener("scroll", this.updateRangeScroll);
       this.addEventListener("keydown", this.handleKeyPress);
       this.scroller.addEventListener("keydown", this.handleScrollerKeyPress);
@@ -94,6 +98,7 @@
       if (matchMedia("(prefers-reduced-motion)").matches) return;
 
       this.setupVideos();
+      this.addVideoEvents();
     }
 
     appendFocusArrows() {
@@ -173,6 +178,7 @@
 
     handleReduceMotionClick(e) {
       this.classList.toggle("reduce-motion", e.target.checked);
+      e.target.checked ? this.removeVideoEvents() : this.addVideoEvents();
     }
 
     handleUnskewerClick(e) {
@@ -190,7 +196,6 @@
       this.focusArrows = content.querySelector("[data-scroll-pen-focus-arrows]");
 
       this.insertAdjacentElement("afterend", this.controls);
-      this.appendFocusArrows();
     }
 
     setupVideos() {
@@ -199,11 +204,24 @@
         let content = template.content.cloneNode(true);
 
         template.replaceWith(content);
+      });
+    }
 
+    addVideoEvents() {
+      this.items.forEach((item) => {
         item.addEventListener("pointerenter", this.handleItemEnter);
         item.addEventListener("focusin", this.handleItemEnter);
         item.addEventListener("pointerleave", this.handleItemLeave);
         item.addEventListener("focusout", this.handleItemLeave);
+      });
+    }
+
+    removeVideoEvents() {
+      this.items.forEach((item) => {
+        item.removeEventListener("pointerenter", this.handleItemEnter);
+        item.removeEventListener("focusin", this.handleItemEnter);
+        item.removeEventListener("pointerleave", this.handleItemLeave);
+        item.removeEventListener("focusout", this.handleItemLeave);
       });
     }
 
@@ -253,12 +271,18 @@
   .checkbox {
     --align: center;
     --column-gap: var(--space-3xs);
-    font-size: 0.8em;
+    font-size: 0.6em;
+    font-weight: var(--font-semibold);
+    text-transform: uppercase;
   }
 
   [data-scroll-pen-controls] {
-    --column-gap: var(--space-xs);
+    --column-gap: var(--space-m);
     --row-gap: var(--space-2xs);
+  }
+
+  [data-scroll-pen-controls] div {
+    --column-gap: var(--space-xs);
   }
 
   [data-scroll-pen-scroller] {

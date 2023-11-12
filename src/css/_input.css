@@ -1,0 +1,9 @@
+input[type="checkbox"] {
+  --_size: 1rem;
+  font: inherit;
+  outline-offset: 3px;
+  inline-size: var(--_size);
+  block-size: var(--_size);
+  flex-shrink: 0;
+  margin: 0;
+}

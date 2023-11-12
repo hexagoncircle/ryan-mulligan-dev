@@ -2,29 +2,54 @@
 permalink: "/"
 ---
 
+<script webc:setup>
+  const { date, timeOfDay } = getDeployDate();
+  const { artist, track } = await $data.spotify;
+</script>
+
 <main class="breakout flow">
+  <h1 class="visually-hidden">Ryan Mulligan</h1>
   <scroll-pen></scroll-pen>
-  <section class="introduction flow">
-    <p>This is a website made by <say-my-name></say-my-name></p>
-    <ul>
-      <li>
-        The latest site deploy happened on
-        <span @text="formatDeployDate(new Date())"></span>.
-      </li>
-      <li><code>+268</code> lines of code were added, <code>-95</code> lines were removed.</li>
-      <li>Currently listening to <em>Fade In Nylon</em> by A Beacon School.</li>
-    </ul>
-  </section>
-  <h2>Recent writings</h2>
   <p>
-    Sometimes general thoughts and rambles, mostly code snippets and front-end development
-    discoveries to share with the world wide web.
+    This is a website made by me, <say-my-name></say-my-name>, a fellow passenger through space and
+    time and front-end builder of the web. Some quick stats:
   </p>
+  <ul>
+    <li>
+      The latest build of this site deployed in the
+      <span @text="timeOfDay" webc:nokeep></span> on <span @text="date" webc:nokeep></span>.
+    </li>
+    <li>
+      During deployment, the weather over here was
+      <span @text="$data.weather.temperature" webc:nokeep></span
+      ><template webc:if="$data.weather.status" webc:nokeep>
+        and <span @text="$data.weather.status" webc:nokeep></span></template
+      >.
+    </li>
+    <li>
+      I was last listening to
+      <a
+        class="track-link"
+        :href="track.url"
+        :title="`Open ${track.name} on Spotify`"
+        target="_blank"
+        ref="noopener"
+      >
+        <inline-svg
+          class="icon"
+          aria-hidden="true"
+          src="./public/icons/music-notes.svg"
+        ></inline-svg>
+        <template @text="track.name" webc:nokeep></template
+      ></a>
+      by <span @text="artist" webc:nokeep></span>.
+    </li>
+  </ul>
+  <h2>Most recent articles</h2>
   <article-list count="3"></article-list>
   <p class="cta arrow-end">
     <a href="/blog/">Read more articles</a>
   </p>
-
   <h2>The bit about myself</h2>
   <p>
     I'm a fun-loving front-end engineer that strives to bridge the gap between web design and
@@ -58,6 +83,17 @@ permalink: "/"
     --min: 14rem;
   }
 
+  .track-link {
+    --icon-size: 1em;
+    display: inline-flex;
+    gap: 0.1em;
+    align-items: baseline;
+
+    .icon {
+      align-self: center;
+    }
+  }
+
   .cta {
     --flow-space: var(--space-l);
   }
@@ -71,7 +107,7 @@ permalink: "/"
     margin-block-end: 4vh;
     position: relative;
     opacity: 0;
-    animation: fade-in-scale-back 200ms 500ms ease-out forwards;
+    animation: fade-in 200ms 500ms ease-out forwards;
   }
 
   @media (min-width: 35rem) {

@@ -12,17 +12,23 @@ const dateToISO = (date) => {
 };
 
 const postDate = (dateObj, format) => {
-  return DateTime.fromJSDate(dateObj).toLocaleString(
-    format || DateTime.DATE_FULL
-  );
+  return DateTime.fromJSDate(dateObj).toLocaleString(format || DateTime.DATE_FULL);
 };
 
 const formatJobDate = (date) => {
   return DateTime.fromFormat(date, "MMMM y").toFormat("y-MM");
 };
 
-const formatDeployDate = (date) => {
-  return DateTime.fromJSDate(date, { zone: "utc" }).toFormat(String("MMMM d"));
+const getDeployDate = () => {
+  let d = new Date();
+  let hour = d.getHours();
+  let timeOfDay = (hour < 12 && "morning") || (hour < 18 && "afternoon") || "evening";
+  let date = DateTime.fromJSDate(d, { zone: "utc" }).toFormat(String("MMMM d"));
+
+  return {
+    timeOfDay,
+    date,
+  };
 };
 
 module.exports = {
@@ -30,5 +36,5 @@ module.exports = {
   dateToISO,
   postDate,
   formatJobDate,
-  formatDeployDate,
+  getDeployDate,
 };

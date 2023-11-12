@@ -15,6 +15,7 @@
 @import "_callout.css" layer(block);
 @import "_code.css" layer(block);
 @import "_cta.css" layer(block);
+@import "_input.css" layer(block);
 @import "_range-input.css" layer(block);
 @import "_quote.css" layer(block);
 

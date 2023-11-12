@@ -1,5 +1,4 @@
 const codepen = require("./codepen");
-const spotify = require("./spotify");
 const media = require("./media");
 
 const mailToPath = (subject) => {
@@ -12,7 +11,6 @@ const mailToPath = (subject) => {
 const shortcodes = {
   ...codepen,
   ...media,
-  ...spotify,
   mailToPath,
 };
 
