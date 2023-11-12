@@ -4,7 +4,6 @@ permalink: "/"
 
 <script webc:setup>
   const { date, timeOfDay } = getDeployDate();
-  const { artist, track } = await $data.spotify;
 </script>
 
 <main class="breakout flow">
@@ -26,24 +25,7 @@ permalink: "/"
         and <span @text="$data.weather.status" webc:nokeep></span></template
       >.
     </li>
-    <li>
-      I was last listening to
-      <a
-        class="track-link"
-        :href="track.url"
-        :title="`Open ${track.name} on Spotify`"
-        target="_blank"
-        ref="noopener"
-      >
-        <inline-svg
-          class="icon"
-          aria-hidden="true"
-          src="./public/icons/music-notes.svg"
-        ></inline-svg>
-        <template @text="track.name" webc:nokeep></template
-      ></a>
-      by <span @text="artist" webc:nokeep></span>.
-    </li>
+    <li>I was last listening to <last-played-track></last-played-track></li>
   </ul>
   <h2>Most recent articles</h2>
   <article-list count="3"></article-list>

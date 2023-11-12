@@ -1,0 +1,17 @@
+<script webc:setup>
+  const { artist, track } = await $data.spotify;
+</script>
+
+<template webc:nokeep webc:root="override">
+  <a
+    class="track-link"
+    :href="track.url"
+    :title="`Open ${track.name} on Spotify`"
+    target="_blank"
+    ref="noopener"
+  >
+    <inline-svg class="icon" aria-hidden="true" src="./public/icons/music-notes.svg"></inline-svg>
+    <template @text="track.name" webc:nokeep></template
+  ></a>
+  by <span @text="artist" webc:nokeep></span>.
+</template>
