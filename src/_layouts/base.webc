@@ -10,10 +10,10 @@
     <meta webc:if="meta.robots" name="robots" :content="meta.robots" />
 
     <!-- favicon-trary to popular belief -->
-    <!-- <link rel="icon" href="/favicon.ico" sizes="32x32" />
-    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" /> -->
+    <link rel="icon" href="/favicon/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/favicon/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
 
     <!-- [deep breath] me, me, me, me, meeee -->
     <link href="https://github.com/hexagoncircle" rel="me" />
