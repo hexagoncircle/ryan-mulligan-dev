@@ -28,8 +28,8 @@ input[type="range"] {
   --radius-track: var(--radius-pill);
   --radius-thumb: var(--radius-s);
   --height-track: 0.3rem;
-  --height-thumb: 1rem;
-  --width-thumb: 2rem;
+  --height-thumb: var(--size-input);
+  --width-thumb: calc(var(--size-input) * 2);
 
   appearance: none;
   outline: none;

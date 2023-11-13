@@ -19,9 +19,10 @@
 <style webc:scoped="last-played-track">
   :host {
     --icon-size: 1em;
+
     display: inline-flex;
-    gap: 0.1em;
     align-items: baseline;
+    gap: 0.1em;
   }
 
   .icon {

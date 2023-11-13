@@ -49,7 +49,7 @@
         <input type="range" value="0" min="0" max="100" step="0.1" />
         <span class="visually-hidden">Scroll horizontally</span>
       </label>
-      <div class="cluster">
+      <div class="wrap cluster">
         <label data-scroll-pen-unskewer class="cluster checkbox">
           <input type="checkbox" />
           Unskew
@@ -190,7 +190,7 @@
       let content = template.content.cloneNode(true);
 
       this.controls = content.querySelector("[data-scroll-pen-controls]");
-      this.scroller = content.querySelector("[data-scroll-pen-scroller]");
+      this.scroller = content.querySelector("[data-scroll-pen-scroller] input");
       this.unskewer = content.querySelector("[data-scroll-pen-unskewer]");
       this.motion = content.querySelector("[data-scroll-pen-motion]");
       this.focusArrows = content.querySelector("[data-scroll-pen-focus-arrows]");
@@ -237,7 +237,6 @@
     updateRangeScroll() {
       let position = this.scrollWidth - this.offsetWidth;
       let percentage = this.scrollLeft / position;
-
       this.scroller.value = percentage * 100;
     }
 
@@ -281,8 +280,10 @@
     --row-gap: var(--space-2xs);
   }
 
-  [data-scroll-pen-controls] div {
+  [data-scroll-pen-controls] .wrap {
     --column-gap: var(--space-xs);
+    position: relative;
+    top: -0.05em;
   }
 
   [data-scroll-pen-scroller] {

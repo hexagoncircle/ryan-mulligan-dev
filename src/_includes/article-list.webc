@@ -1,18 +1,11 @@
 <script webc:setup>
-  const posts = $data.collections.posts.reverse();
+  const posts = $data.collections.posts.sort((a, b) => b.data.date - a.data.date);
 </script>
 
 <ul class="flow" role="list" webc:root="override">
   <li webc:if="!count || index < count" webc:for="(post, index) of posts">
-    <time
-      :datetime="dateToISO(post.data.date)"
-      @text="postDate(post.data.date)"
-    ></time>
-    <a
-      class="text-1 font-semibold"
-      :href="post.url"
-      @text="post.data.title"
-    ></a>
+    <time :datetime="dateToISO(post.data.date)" @text="postDate(post.data.date)"></time>
+    <a class="text-1 font-semibold" :href="post.url" @text="post.data.title"></a>
   </li>
 </ul>
 
@@ -23,7 +16,9 @@
 
   time {
     display: block;
-    font-size: 0.8em;
+    font-size: 0.7em;
+    font-weight: var(--font-semibold);
+    letter-spacing: -0.01em;
   }
 
   li:has(a:hover, a:focus-visible) time {

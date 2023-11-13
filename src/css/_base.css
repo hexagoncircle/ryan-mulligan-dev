@@ -1,3 +1,9 @@
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
@@ -8,6 +14,7 @@ body {
 a {
   color: var(--color-link);
   outline-offset: 3px;
+  scroll-margin-block: var(--space-xl);
 }
 
 a:is(:hover, :focus-visible) {

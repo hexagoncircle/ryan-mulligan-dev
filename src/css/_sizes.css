@@ -18,6 +18,7 @@ html {
   --radius-round: 50%;
 
   --size-border: 1px;
+  --size-input: 1rem;
 
   --page-gutters: var(--space-m);
   --page-max: 44rem;

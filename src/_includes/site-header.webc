@@ -8,7 +8,7 @@
       <li webc:for="item of menu">
         <a
           :href="item.url"
-          :aria-current="item.url === page.url ? 'page' : null"
+          :aria-current="item.url === $data.page.url ? 'page' : null"
           @text="item.label"
         ></a>
       </li>
