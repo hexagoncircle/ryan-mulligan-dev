@@ -9,6 +9,7 @@ body {
   color: var(--color-text);
   font-family: system-ui, sans-serif;
   font-size: var(--step-0);
+  font-weight: var(--font-normal);
 }
 
 a {
@@ -31,11 +32,9 @@ a:is(:hover, :focus-visible) {
 }
 
 :is(h1, h2, h3, h4) {
-  --_shadow: 0.05em;
-  font-family: var(--font-heading);
+  font-family: var(--font-display);
   font-weight: normal;
   text-wrap: balance;
-  text-shadow: var(--_shadow) var(--_shadow) 0 var(--color-text-shadow);
 }
 
 :is(h1, .text-5) {

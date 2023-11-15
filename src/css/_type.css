@@ -9,10 +9,11 @@ html {
   --step-4: clamp(2.0738rem, 1.5596rem + 2.5707vw, 3.5519rem);
   --step-5: clamp(2.4881rem, 1.7066rem + 3.9076vw, 4.735rem);
 
-  --font-primary: system-ui, sans-serif;
-  --font-heading: "Tanker Regular", var(--font-primary);
+  --font-base: system-ui, sans-serif;
+  --font-display: "Tanker Regular", var(--font-base);
   --font-mono: "Jet Brains Mono", monospace;
 
   --font-bold: 700;
   --font-semibold: 600;
+  --font-normal: 400;
 }

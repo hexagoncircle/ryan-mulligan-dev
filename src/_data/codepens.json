@@ -46,8 +46,8 @@
       "title": "Card Hover Interactions"
     },
     {
-      "id": "gORePQx",
-      "title": "Cool Spotlight Shadows",
+      "id": "LYNNYyQ",
+      "title": "Supa Dupa Fly Hover",
       "preview": true
     },
     {
@@ -56,8 +56,9 @@
       "preview": true
     },
     {
-      "id": "gOWjwme",
-      "title": "Horizontal scrolling in a centered max-width container"
+      "id": "bGqVyxm",
+      "title": "Grim Reaper's Used Cars - Deal Wheel",
+      "preview": true
     },
     {
       "id": "zYxzQqa",
@@ -85,9 +86,8 @@
       "preview": true
     },
     {
-      "id": "abJEeXL",
-      "title": "Viewport Gradient Rotation",
-      "preview": true
+      "id": "gOWjwme",
+      "title": "Horizontal scrolling in a centered max-width container"
     },
     {
       "id": "wvJPjQa",
@@ -100,47 +100,55 @@
     },
     {
       "id": "vYJWVvy",
-      "title": "Good Morning Friends"
+      "title": "Good Morning Friends",
+      "preview": true
     },
     {
-      "id": "LYNNYyQ",
-      "title": "Supa Dupa Fly Hover"
-    },
-    {
-      "id": "JjYLLNR",
-      "title": "MCU Timeline Carousel"
-    },
-    {
-      "id": "bGqVyxm",
-      "title": "Grim Reaper's Used Cars - Deal Wheel"
-    },
-    {
-      "id": "gJNPON",
-      "title": "Burger Boxer"
-    },
-    {
-      "id": "oNLZmvV",
-      "title": "Dynamic Sticky Sidebar Component"
-    },
-    {
-      "id": "xxYrpzP",
-      "title": "GSAP Increment Counter + Celebrate"
+      "id": "gORePQx",
+      "title": "Cool Spotlight Shadows",
+      "preview": true
     },
     {
       "id": "xxRNRwP",
       "title": "Simon Says, 'Tetradic Color Palette #CodePenChallenge'"
     },
     {
-      "id": "abmyQBN",
-      "title": "Ask Emoji"
+      "id": "oNLZmvV",
+      "title": "Dynamic Sticky Sidebar Component"
+    },
+    {
+      "id": "gJNPON",
+      "title": "Burger Boxer",
+      "preview": true
+    },
+    {
+      "id": "xxYrpzP",
+      "title": "GSAP Increment Counter + Celebrate",
+      "preview": true
+    },
+    {
+      "id": "abJEeXL",
+      "title": "Viewport Gradient Rotation",
+      "preview": true
+    },
+    {
+      "id": "JjYLLNR",
+      "title": "MCU Timeline Carousel",
+      "preview": true
+    },
+    {
+      "id": "VoExWp",
+      "title": "Waves",
+      "preview": true
     },
     {
       "id": "KexJjm",
       "title": "CSS Grid Menu Panels"
     },
     {
-      "id": "zYqYvEV",
-      "title": "CSSpirograph"
+      "id": "abmyQBN",
+      "title": "Ask Emoji",
+      "preview": true
     },
     {
       "id": "JjRYaZw",
@@ -151,80 +159,97 @@
       "title": "Bold Hover Animations with Splitting.js"
     },
     {
-      "id": "MWJoYxv",
-      "title": "Orbiting Through Torus"
+      "id": "joqYEj",
+      "title": "Rocket Through Space",
+      "preview": true
     },
     {
-      "id": "ExjwZZg",
-      "title": "CSS Chop!"
+      "id": "MWJoYxv",
+      "title": "Orbiting Through Torus",
+      "preview": true
     },
     {
       "id": "jOWyepg",
-      "title": "Horizontal Scroll Cards"
+      "title": "Horizontal Scroll Cards",
+      "preview": true
+    },
+    {
+      "id": "ExjwZZg",
+      "title": "CSS Chop!",
+      "preview": true
     },
     {
       "id": "YzPmyjx",
       "title": "Interactive MOOD Pedal"
     },
     {
-      "id": "VoExWp",
-      "title": "Waves"
+      "id": "zYqYvEV",
+      "title": "CSSpirograph",
+      "preview": true
     },
     {
       "id": "VwLKbWJ",
-      "title": "Spinning CSS"
+      "title": "Spinning CSS",
+      "preview": true
     },
     {
       "id": "OJRLBYJ",
-      "title": "CSS Putt-Putt Radio Buttons"
+      "title": "CSS Putt-Putt Radio Buttons",
+      "preview": true
     },
     {
       "id": "xxwBLMy",
-      "title": "GSAP ScrollTrigger - Marquee Page Border"
+      "title": "GSAP ScrollTrigger - Marquee Page Border",
+      "preview": true
     },
     {
       "id": "poNGaGO",
-      "title": "CSS Triadic Color Palette #CodePenChallenge"
+      "title": "CSS Triadic Color Palette #CodePenChallenge",
+      "preview": true
     },
     {
       "id": "jOWXzrw",
-      "title": "CSS variables in cubic-bezier function"
+      "title": "CSS variables in cubic-bezier function",
+      "preview": true
     },
     {
       "id": "ZZQLoM",
       "title": "Vue.js Mad Libs"
     },
     {
-      "id": "MKaVzM",
-      "title": "Hexagon Circle Panel Transition"
-    },
-    {
-      "id": "joqYEj",
-      "title": "Rocket Through Space"
-    },
-    {
       "id": "PoPpKKg",
-      "title": "CSS Clip-Path Hover Effect"
+      "title": "CSS Clip-Path Hover Effect",
+      "preview": true
+    },
+    {
+      "id": "MKaVzM",
+      "title": "Hexagon Circle Panel Transition",
+      "preview": true
     },
     {
       "id": "dwreYm",
-      "title": "Primary Color Bounce"
+      "title": "Primary Color Bounce",
+      "preview": true
     },
     {
       "id": "XWJGQqy",
-      "title": "Folded Paper Login Form"
+      "title": "Folded Paper Login Form",
+      "preview": true
     },
     {
       "id": "WRqEaV",
-      "title": "Parallax Emoji"
+      "title": "Parallax Emoji",
+      "preview": true
     },
     {
       "id": "GRJPXLa",
-      "title": "Hello, World!"
+      "title": "Hello, World!",
+      "preview": true
     },
     {
       "id": "OJLMgYY",
-      "title": "Fork This Nav"
+      "title": "Fork This Nav",
+      "preview": true
     }
   ]
 }

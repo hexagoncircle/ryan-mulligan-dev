@@ -1,7 +1,5 @@
 @mixin colors-light {
-  --color-hsl: 229 84% 5%;
-  --color-text: hsl(var(--color-hsl));
-  --color-text-shadow: hsla(var(--color-hsl) / 0.1);
+  --color-text: #020617;
   --color-text-accent: #334155;
   --color-bg: #fffefd;
   --color-bg-accent: #f7f5f5;
@@ -21,7 +19,7 @@
 }
 
 @mixin colors-dark {
-  --color-hsl: 210 40% 98%;
+  --color-text: #f8fafc;
   --color-text-accent: #f1f5f9;
   --color-bg: #020617;
   --color-bg-accent: #0f172a;
