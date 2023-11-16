@@ -22,11 +22,11 @@
   const splitLetters = (text) => [...text].map(textWrap).join("");
 </script>
 
-<strong
+<div
+  class="font-bold"
   @html="splitLetters($data.meta.title)"
   :aria-label="$data.meta.title"
-  webc:root
-></strong>
+  webc:root></div>
 
 <style webc:scoped="say-my-name">
   :host {
@@ -36,8 +36,7 @@
     display: inline-block;
     position: relative;
     padding: var(--space-m) var(--space-m) var(--space-xs);
-    margin: calc(var(--space-m) * -1) calc(var(--space-m) * -1)
-      calc(var(--space-xs) * -1);
+    margin: calc(var(--space-m) * -1) calc(var(--space-m) * -1) calc(var(--space-xs) * -1);
     font-weight: var(--font-bold);
     letter-spacing: -0.01em;
   }
