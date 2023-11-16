@@ -54,7 +54,7 @@
           <input type="checkbox" />
           Unskew
         </label>
-        <label data-scroll-pen-motion class="cluster checkbox">
+        <label data-scroll-pen-nomotion class="cluster checkbox">
           <input type="checkbox" />
           Reduce motion
         </label>
@@ -72,7 +72,7 @@
       this.controls;
       this.scroller;
       this.unskewer;
-      this.motion;
+      this.nomotion;
       this.focusArrows;
       this.currentIndex = 0;
       this.cls = {
@@ -93,7 +93,7 @@
       this.scroller.addEventListener("keydown", this.handleScrollerKeyPress);
       this.scroller.addEventListener("input", this.handleScrollerInput.bind(this));
       this.unskewer.addEventListener("input", this.handleUnskewerClick.bind(this));
-      this.motion.addEventListener("input", this.handleReduceMotionClick.bind(this));
+      this.nomotion.addEventListener("input", this.handleReduceMotionClick.bind(this));
 
       if (matchMedia("(prefers-reduced-motion)").matches) return;
 
@@ -192,7 +192,7 @@
       this.controls = content.querySelector("[data-scroll-pen-controls]");
       this.scroller = content.querySelector("[data-scroll-pen-scroller] input");
       this.unskewer = content.querySelector("[data-scroll-pen-unskewer]");
-      this.motion = content.querySelector("[data-scroll-pen-motion]");
+      this.nomotion = content.querySelector("[data-scroll-pen-nomotion]");
       this.focusArrows = content.querySelector("[data-scroll-pen-focus-arrows]");
 
       this.insertAdjacentElement("afterend", this.controls);

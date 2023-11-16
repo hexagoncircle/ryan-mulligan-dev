@@ -19,7 +19,7 @@ const scope = "user-read-recently-played";
 const auth = Buffer.from(`${clientId}:${clientSecret}`).toString("base64");
 
 const getAccessToken = async () => {
-  let res = await EleventyFetch(TOKEN_ENDPOINT, {
+  let response = await EleventyFetch(TOKEN_ENDPOINT, {
     duration: "10m",
     type: "json",
     fetchOptions: {
@@ -32,13 +32,13 @@ const getAccessToken = async () => {
     },
   });
 
-  return res;
+  return response;
 };
 
 module.exports = async () => {
   let { access_token } = await getAccessToken();
 
-  let res = await EleventyFetch(RECENTLY_PLAYED_ENDPOINT + "?limit=1", {
+  let data = await EleventyFetch(RECENTLY_PLAYED_ENDPOINT + "?limit=10", {
     duration: "10m",
     type: "json",
     fetchOptions: {
@@ -48,7 +48,7 @@ module.exports = async () => {
     },
   });
 
-  let { artists, name, external_urls } = res.items[0].track;
+  let { artists, name, external_urls } = data.items[0].track;
 
   return {
     artist: artists[0].name,
