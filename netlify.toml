@@ -9,6 +9,11 @@
 [functions]
   node_bundler = "esbuild"
 
+[[redirects]]
+  from = "/blog/feed.xml"
+  to = "/feed.xml"
+  status = 301
+  force = true
 
 [[plugins]]
 package = "netlify-plugin-cache"
