@@ -104,13 +104,17 @@
       this.items[this.currentIndex].parentNode.append(this.focusArrows);
     }
 
-    handleItemEnter(e) {
+    async handleItemEnter(e) {
       let video = this.querySelector("video");
 
       if (!video) return;
 
-      video.muted = true;
-      video.play();
+      try {
+        video.muted = true;
+        await video.play();
+      } catch (err) {
+        console.log("scroll-pen", err);
+      }
     }
 
     handleItemLeave(e) {
