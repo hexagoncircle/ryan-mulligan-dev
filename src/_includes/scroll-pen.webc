@@ -24,8 +24,10 @@
               playsinline
               preload="none"
               width="100%"
-              height="100%"
-              :src="`/videos/codepen/${item.id}.mp4`"></video>
+              height="100%">
+              <source :src="`${$data.meta.url}/videos/codepen/${item.id}.webm`" type="video/webm" />
+              <source :src="`${$data.meta.url}/videos/codepen/${item.id}.mp4`" type="video/mp4" />
+            </video>
           </template>
         </figure>
       </a>
@@ -107,11 +109,16 @@
 
       if (!video) return;
 
-      try {
+      if (video.readyState !== 4) {
         video.muted = true;
+        video.load();
+      }
+
+      try {
         await video.play();
+        console.log("successful playback");
       } catch (err) {
-        console.log("scroll-pen", err);
+        console.log("scroll-pen enter", err);
       }
     }
 
@@ -230,9 +237,9 @@
 
     addVideoEvents() {
       this.items.forEach((item) => {
-        item.addEventListener("pointerenter", this.handleItemEnter);
+        item.addEventListener("mouseenter", this.handleItemEnter);
         item.addEventListener("focusin", this.handleItemEnter);
-        item.addEventListener("pointerleave", this.handleItemLeave);
+        item.addEventListener("mouseleave", this.handleItemLeave);
         item.addEventListener("focusout", this.handleItemLeave);
       });
     }
