@@ -10,8 +10,7 @@
         class="stack"
         :href="`https://codepen.io/hexagoncircle/full/${item.id}`"
         target="_blank"
-        rel="noopener"
-      >
+        rel="noopener">
         <span class="visually-hidden" @text="item.title"></span>
         <figure class="stack">
           <script webc:type="js">
@@ -25,8 +24,7 @@
               playsinline
               preload="none"
               width="400"
-              height="400"
-            >
+              height="400">
               <source :src="`/videos/codepen/${item.id}.webm`" type="video/webm" />
               <source :src="`/videos/codepen/${item.id}.mp4`" type="video/mp4" />
             </video>
@@ -277,7 +275,7 @@
 
   [data-scroll-pen-controls] {
     --column-gap: var(--space-m);
-    --row-gap: var(--space-2xs);
+    --row-gap: var(--space-xs);
   }
 
   [data-scroll-pen-controls] .wrap {
