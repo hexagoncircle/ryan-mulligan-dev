@@ -52,8 +52,7 @@ permalink: "/"
       <inline-svg
         class="icon"
         aria-hidden="true"
-        :src="`./public/icons/${item.id}.svg`"
-      ></inline-svg>
+        :src="`./public/icons/${item.id}.svg`"></inline-svg>
       <span @text="item.label" webc:nokeep></span>
     </a>
   </li>
@@ -83,14 +82,14 @@ permalink: "/"
     --flow-space: var(--space-l);
   }
 
-  scroll-pen {
-    margin-block-start: 4vh;
-  }
-
   .social-link {
     --icon-size: 1em;
     --gap: var(--space-3xs);
     display: inline-flex;
+  }
+
+  scroll-pen {
+    margin-block-start: 4vh;
   }
 
   [data-scroll-pen-controls] {
