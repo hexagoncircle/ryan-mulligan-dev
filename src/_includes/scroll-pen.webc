@@ -86,6 +86,7 @@
       this.setupTemplateUtils();
       this.updateCurrentIndex();
       this.appendFocusArrows();
+      this.handleImageLoad();
       this.addEventListener("scroll", this.updateRangeScroll);
       this.addEventListener("keydown", this.handleKeyPress);
       this.scroller.addEventListener("keydown", this.handleScrollerKeyPress);
@@ -105,14 +106,18 @@
 
     handleItemEnter(e) {
       let video = this.querySelector("video");
+
       if (!video) return;
+
       video.muted = true;
       video.play();
     }
 
     handleItemLeave(e) {
       let video = this.querySelector("video");
+
       if (!video) return;
+
       video.pause();
     }
 
@@ -195,6 +200,21 @@
       this.focusArrows = content.querySelector("[data-scroll-pen-focus-arrows]");
 
       this.insertAdjacentElement("afterend", this.controls);
+    }
+
+    handleImageLoad() {
+      const attr = "data-is-loading";
+
+      this.querySelectorAll("img").forEach((img) => {
+        img.setAttribute(attr, "");
+
+        if (img.complete) {
+          img.removeAttribute(attr);
+          return;
+        }
+
+        img.addEventListener("load", () => img.removeAttribute(attr));
+      });
     }
 
     setupVideos() {
@@ -368,16 +388,18 @@
   img {
     filter: grayscale(1);
     transform: translateZ(0);
+    opacity: 1;
     transition: var(--_duration) var(--_ease);
     transition-property: filter, opacity, transform;
   }
 
   video {
+    display: none;
     position: relative;
-    opacity: 0;
+    /* opacity: 0;
     scale: 1.2;
     transition: scale var(--_duration) var(--_duration) var(--_ease),
-      opacity var(--_duration) var(--_ease);
+      opacity var(--_duration) var(--_ease); */
   }
 
   /* Focus arrows */
@@ -432,8 +454,7 @@
     img {
       opacity: 0;
       animation: fade-in-scale-back calc(var(--_duration) * 2)
-        calc(var(--i) * var(--_duration) / var(--_offset) + var(--_delay) + var(--_duration))
-        forwards;
+        calc(var(--_duration) / var(--_offset) + var(--_delay) + var(--_duration)) forwards;
     }
   }
 
@@ -456,10 +477,9 @@
     }
 
     :host:not(.reduce-motion) li:is(:hover, :focus-within) video {
-      opacity: 1;
-      scale: 1;
-      transition: scale calc(var(--_duration) * 8) var(--_ease),
-        opacity calc(var(--_duration) / 2) var(--_ease);
+      display: block;
+      animation: scale-back calc(var(--_duration) * 8) var(--_ease) forwards,
+        fade-in calc(var(--_duration) / 2) var(--_ease) forwards;
     }
   }
 </style>

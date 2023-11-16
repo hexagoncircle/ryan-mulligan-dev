@@ -34,6 +34,16 @@
   }
 }
 
+@keyframes scale-back {
+  from {
+    scale: 1.2;
+  }
+
+  to {
+    scale: 1;
+  }
+}
+
 @keyframes slide-up-right {
   from {
     translate: -12px 12px;

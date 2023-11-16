@@ -39,7 +39,6 @@ const codepenImage = async (id, attrs = {}) => {
     sizes: "100vw",
     loading: "lazy",
     decoding: "async",
-    "data-is-loading": true,
     ...attrs,
   };
 
