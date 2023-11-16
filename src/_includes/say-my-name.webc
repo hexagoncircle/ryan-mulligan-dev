@@ -17,12 +17,13 @@
   ];
 
   const textWrap = (text, index) =>
-    `<span style="--index: ${index}" aria-hidden="true" data-destiny="${lyrics[index]}">${text}</span>`;
+    `<span style="--index: ${index}" data-destiny="${lyrics[index]}">${text}</span>`;
 
   const splitLetters = (text) => [...text].map(textWrap).join("");
 </script>
 
-<strong @html="splitLetters($data.meta.title)" :aria-label="$data.meta.title"></strong>
+<span class="visually-hidden">Ryan Mulligan</span>
+<strong class="font-bold" @html="splitLetters($data.meta.title)" aria-hidden="true"> </strong>
 
 <style webc:scoped="say-my-name">
   :host {
