@@ -110,7 +110,8 @@
     },
     {
       "id": "xxRNRwP",
-      "title": "Simon Says, 'Tetradic Color Palette #CodePenChallenge'"
+      "title": "Simon Says, 'Tetradic Color Palette #CodePenChallenge'",
+      "preview": true
     },
     {
       "id": "oNLZmvV",
@@ -142,8 +143,8 @@
       "preview": true
     },
     {
-      "id": "KexJjm",
-      "title": "CSS Grid Menu Panels"
+      "id": "JjRYaZw",
+      "title": "CSS Sticky Parallax Sections"
     },
     {
       "id": "abmyQBN",
@@ -151,21 +152,17 @@
       "preview": true
     },
     {
-      "id": "JjRYaZw",
-      "title": "CSS Sticky Parallax Sections"
-    },
-    {
       "id": "yLeGbgJ",
       "title": "Bold Hover Animations with Splitting.js"
     },
     {
-      "id": "joqYEj",
-      "title": "Rocket Through Space",
+      "id": "MWJoYxv",
+      "title": "Orbiting Through Torus",
       "preview": true
     },
     {
-      "id": "MWJoYxv",
-      "title": "Orbiting Through Torus",
+      "id": "joqYEj",
+      "title": "Rocket Through Space",
       "preview": true
     },
     {
@@ -174,18 +171,23 @@
       "preview": true
     },
     {
+      "id": "OJLMgYY",
+      "title": "Fork This Nav",
+      "preview": true
+    },
+    {
       "id": "ExjwZZg",
       "title": "CSS Chop!",
       "preview": true
     },
     {
-      "id": "YzPmyjx",
-      "title": "Interactive MOOD Pedal"
-    },
-    {
       "id": "zYqYvEV",
       "title": "CSSpirograph",
       "preview": true
+    },
+    {
+      "id": "YzPmyjx",
+      "title": "Interactive MOOD Pedal"
     },
     {
       "id": "VwLKbWJ",
@@ -213,22 +215,8 @@
       "preview": true
     },
     {
-      "id": "ZZQLoM",
-      "title": "Vue.js Mad Libs"
-    },
-    {
-      "id": "PoPpKKg",
-      "title": "CSS Clip-Path Hover Effect",
-      "preview": true
-    },
-    {
-      "id": "MKaVzM",
-      "title": "Hexagon Circle Panel Transition",
-      "preview": true
-    },
-    {
-      "id": "dwreYm",
-      "title": "Primary Color Bounce",
+      "id": "GRJPXLa",
+      "title": "Hello, World!",
       "preview": true
     },
     {
@@ -237,18 +225,18 @@
       "preview": true
     },
     {
+      "id": "dwreYm",
+      "title": "Primary Color Bounce",
+      "preview": true
+    },
+    {
+      "id": "PoPpKKg",
+      "title": "CSS Clip-Path Hover Effect",
+      "preview": true
+    },
+    {
       "id": "WRqEaV",
       "title": "Parallax Emoji",
-      "preview": true
-    },
-    {
-      "id": "GRJPXLa",
-      "title": "Hello, World!",
-      "preview": true
-    },
-    {
-      "id": "OJLMgYY",
-      "title": "Fork This Nav",
       "preview": true
     }
   ]
