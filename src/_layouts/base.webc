@@ -26,8 +26,7 @@
       rel="alternate"
       type="application/atom+xml"
       :href="`${meta.url}/feed.xml`"
-      title="Ryan Mulligan"
-    />
+      title="Ryan Mulligan" />
 
     <!-- assets the situation -->
     <link
@@ -35,8 +34,7 @@
       rel="preload"
       as="font"
       type="font/woff2"
-      crossorigin
-    />
+      crossorigin />
     <link rel="stylesheet" href="/css/styles.css" webc:keep />
     <style @raw="getCss(page.url)" webc:keep></style>
     <script @raw="getBundle('js', 'critical')" webc:keep></script>
@@ -46,5 +44,6 @@
     <main :class="`breakout flow${classnames ? ` ${classnames}` : ''}`" @raw="content"></main>
     <site-footer></site-footer>
     <script @raw="getJs(page.url)" webc:keep></script>
+    <script async defer src="https://scripts.withcabin.com/hello.js" webc:keep></script>
   </body>
 </html>
