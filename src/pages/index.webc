@@ -94,6 +94,7 @@ permalink: "/"
 
   [data-scroll-pen-controls] {
     --flow-space: var(--space-2xs);
+    margin-block-start: var(--space-s);
     margin-block-end: 4vh;
     position: relative;
     opacity: 0;
