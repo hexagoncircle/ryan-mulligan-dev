@@ -19,12 +19,12 @@
           <template>
             <video
               webc:if="item.preview"
-              loop
               muted
+              loop
               playsinline
               preload="none"
-              width="400"
-              height="400">
+              width="100%"
+              height="100%">
               <source :src="`/videos/codepen/${item.id}.webm`" type="video/webm" />
               <source :src="`/videos/codepen/${item.id}.mp4`" type="video/mp4" />
             </video>
@@ -106,6 +106,7 @@
     handleItemEnter(e) {
       let video = this.querySelector("video");
       if (!video) return;
+      video.muted = true;
       video.play();
     }
 
