@@ -5,8 +5,7 @@
     width="24"
     height="24"
     fill="currentcolor"
-    viewBox="0 0 256 256"
-  >
+    viewBox="0 0 256 256">
     <rect width="256" height="256" fill="none"></rect>
     <circle cx="128" cy="128" r="88" fill="var(--color-primary)"></circle>
     <circle
@@ -16,8 +15,7 @@
       fill="none"
       stroke="currentcolor"
       stroke-miterlimit="10"
-      stroke-width="16"
-    ></circle>
+      stroke-width="16"></circle>
     <line
       class="timer-hand"
       x1="128"
@@ -28,8 +26,7 @@
       stroke="currentcolor"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="16"
-    ></line>
+      stroke-width="16"></line>
     <line
       class="timer-switch"
       x1="104"
@@ -40,8 +37,7 @@
       stroke="currentcolor"
       stroke-linecap="round"
       stroke-linejoin="round"
-      stroke-width="16"
-    ></line>
+      stroke-width="16"></line>
   </svg>
 </figure>
 
@@ -52,8 +48,8 @@
 
   @supports (animation-timeline: scroll()) {
     :host {
-      --range-start: 12rem;
-      --range-end: 15rem;
+      --range-start: calc(var(--page-gutters) + 10rem);
+      --range-end: calc(var(--page-gutters) + 12rem);
       --plunge-start: calc(100% - 4rem);
       --plunge-end: calc(100% - 1rem);
       --_x: calc(-100% - 1rem);
@@ -63,7 +59,7 @@
       place-content: center;
       grid-template-areas: "container";
       position: sticky;
-      top: 1rem;
+      top: var(--space-m);
       width: var(--_size);
       height: var(--_size);
       border-radius: 50%;
@@ -75,10 +71,8 @@
       animation-fill-mode: both;
       animation-timing-function: linear;
       animation-name: progress, appear, turn-upright;
-      animation-range: var(--range-start) var(--plunge-start),
-        var(--range-start) var(--range-end),
-        var(--plunge-start) var(--plunge-end),
-        var(--plunge-start) var(--plunge-end);
+      animation-range: var(--range-start) var(--plunge-start), var(--range-start) var(--range-end),
+        var(--plunge-start) var(--plunge-end), var(--plunge-start) var(--plunge-end);
       animation-timeline: scroll();
       z-index: 1;
       translate: var(--_x) 0.75em;

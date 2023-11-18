@@ -1,5 +1,5 @@
 .breakout {
-  --gutter-max: calc(1rem + 8vw);
+  --gutter-max: calc(1rem + 10vw);
   --gap: var(--space-m);
   --content: min(var(--page-max), 100% - var(--gap) * 2);
   --gutter: minmax(var(--gap), var(--gutter-max));
@@ -29,8 +29,7 @@
 .cluster {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--row-gap, var(--gap, var(--space-m)))
-    var(--column-gap, var(--gap, var(--space-m)));
+  gap: var(--row-gap, var(--gap, var(--space-m))) var(--column-gap, var(--gap, var(--space-m)));
   align-items: var(--align, center);
   justify-content: var(--justify, flex-start);
 }
@@ -41,16 +40,14 @@
 
 .grid {
   display: grid;
-  gap: var(--gap, var(--row-gap, var(--space-m)))
-    var(--gap, var(--column-gap, var(--space-m)));
+  gap: var(--gap, var(--row-gap, var(--space-m))) var(--gap, var(--column-gap, var(--space-m)));
   grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
 }
 
 .flex-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--gap, var(--row-gap, var(--space-m)))
-    var(--gap, var(--column-gap, var(--space-m)));
+  gap: var(--gap, var(--row-gap, var(--space-m))) var(--gap, var(--column-gap, var(--space-m)));
 }
 
 .flex-grid > * {

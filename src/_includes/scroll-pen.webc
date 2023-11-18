@@ -13,12 +13,14 @@
         rel="noopener">
         <span class="visually-hidden" @text="item.title"></span>
         <figure class="stack">
-          <script webc:type="js">
-            codepenImage(item.id);
-          </script>
-          <template>
-            <video webc:if="item.preview" muted loop playsinline autoplay width="400" height="400">
-              <source :src="`/videos/codepen/${item.id}.webm`" type="video/webm" />
+          <img
+            webc:is="eleventy-image"
+            :src="`./public/images/codepen/${item.id}.png`"
+            alt=""
+            width="600"
+            height="600" />
+          <template webc:if="item.preview">
+            <video muted loop playsinline preload="none" width="400" height="400">
               <source :src="`/videos/codepen/${item.id}.mp4`" type="video/mp4" />
             </video>
           </template>
@@ -45,9 +47,9 @@
           <input type="checkbox" />
           Unskew
         </label>
-        <label data-scroll-pen-nomotion class="cluster checkbox">
+        <label data-scroll-pen-nopreview class="cluster checkbox">
           <input type="checkbox" />
-          Reduce motion
+          Disable preview
         </label>
       </div>
     </fieldset>
@@ -63,7 +65,7 @@
       this.controls;
       this.scroller;
       this.unskewer;
-      this.nomotion;
+      this.nopreview;
       this.focusArrows;
       this.currentIndex = 0;
       this.cls = {
@@ -83,13 +85,12 @@
       this.setupTemplateUtils();
       this.updateCurrentIndex();
       this.appendFocusArrows();
-      this.handleImageLoad();
       this.addEventListener("scroll", this.updateRangeScroll);
       this.addEventListener("keydown", this.handleKeyPress);
       this.scroller.addEventListener("keydown", this.handleScrollerKeyPress);
       this.scroller.addEventListener("input", this.handleScrollerInput.bind(this));
       this.unskewer.addEventListener("input", this.handleUnskewerClick.bind(this));
-      this.nomotion.addEventListener("input", this.handleReduceMotionClick.bind(this));
+      this.nopreview.addEventListener("input", this.handleReduceMotionClick.bind(this));
 
       if (this.mq.reducedMotion.matches || !this.mq.hover.matches) return;
 
@@ -106,8 +107,12 @@
 
       if (!video) return;
 
+      if (video.readyState === 0) {
+        video.muted = true; // Fix playback issue in Firefox
+        video.load(); // Fix playback issue in Safari
+      }
+
       try {
-        video.muted = true; // Enable playback in Firefox
         await video.play();
       } catch (err) {}
     }
@@ -188,6 +193,10 @@
       this.classList.toggle("skewer", !e.target.checked);
     }
 
+    handleVideoPlayback(e) {
+      this.classList.add("playback-ready");
+    }
+
     setupTemplateUtils() {
       let template = this.querySelector("[data-scroll-pen-utils]");
       let content = template.content.cloneNode(true);
@@ -195,41 +204,31 @@
       this.controls = content.querySelector("[data-scroll-pen-controls]");
       this.scroller = content.querySelector("[data-scroll-pen-scroller] input");
       this.unskewer = content.querySelector("[data-scroll-pen-unskewer]");
-      this.nomotion = content.querySelector("[data-scroll-pen-nomotion]");
+      this.nopreview = content.querySelector("[data-scroll-pen-nopreview]");
       this.focusArrows = content.querySelector("[data-scroll-pen-focus-arrows]");
 
       this.insertAdjacentElement("afterend", this.controls);
     }
 
-    handleImageLoad() {
-      const attr = "data-is-loading";
-
-      this.querySelectorAll("img").forEach((img) => {
-        img.setAttribute(attr, "");
-
-        if (img.complete) {
-          img.removeAttribute(attr);
-          return;
-        }
-
-        img.addEventListener("load", () => img.removeAttribute(attr));
-      });
-    }
-
     setupVideos() {
       this.items.forEach((item) => {
         let template = item.querySelector("template");
+
+        if (!template) return;
+
         let content = template.content.cloneNode(true);
 
         template.replaceWith(content);
+
+        item.querySelector("video").addEventListener("canplaythrough", this.handleVideoPlayback);
       });
     }
 
     addVideoEvents() {
       this.items.forEach((item) => {
-        item.addEventListener("mouseenter", this.handleItemEnter);
+        item.addEventListener("pointerenter", this.handleItemEnter);
         item.addEventListener("focusin", this.handleItemEnter);
-        item.addEventListener("mouseleave", this.handleItemLeave);
+        item.addEventListener("pointerleave", this.handleItemLeave);
         item.addEventListener("focusout", this.handleItemLeave);
       });
     }
@@ -307,6 +306,12 @@
   [data-scroll-pen-scroller] {
     flex-grow: 1;
   }
+
+  @media (any-hover: none) {
+    [data-scroll-pen-nopreview] {
+      display: none;
+    }
+  }
 </style>
 
 <style webc:scoped="scroll-pen">
@@ -350,9 +355,8 @@
     transition: scale var(--_duration) cubic-bezier(0, 0.55, 0.45, 1);
 
     &:focus-within {
-      outline: 5px auto Highlight;
-      outline: 5px auto -webkit-focus-ring-color;
-      outline-offset: 3px;
+      outline: var(--focus-outline);
+      outline-offset: var(--focus-outline-offset);
     }
   }
 
@@ -417,8 +421,7 @@
       aspect-ratio: 1;
       background-color: var(--color-bg);
       border-radius: var(--radius-s);
-      outline: 5px auto Highlight;
-      outline: 5px auto -webkit-focus-ring-color;
+      outline: var(--focus-outline);
     }
   }
 
@@ -470,7 +473,7 @@
       }
     }
 
-    :host:not(.reduce-motion) li:is(:hover, :focus-within) video {
+    :host:not(.reduce-motion) li:is(:hover, :focus-within) video.playback-ready {
       display: block;
       animation: scale-back calc(var(--_duration) * 8) var(--_ease) forwards,
         fade-in calc(var(--_duration) / 2) var(--_ease) forwards;

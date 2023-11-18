@@ -89,13 +89,13 @@ permalink: "/"
   }
 
   scroll-pen {
-    margin-block-start: 4vh;
+    margin-block-start: 2vh;
   }
 
   [data-scroll-pen-controls] {
     --flow-space: var(--space-2xs);
     margin-block-start: var(--space-s);
-    margin-block-end: 4vh;
+    margin-block-end: 3vh;
     position: relative;
     opacity: 0;
     animation: fade-in 200ms 500ms ease-out forwards;

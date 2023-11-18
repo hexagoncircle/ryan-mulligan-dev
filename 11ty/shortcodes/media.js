@@ -1,4 +1,5 @@
 const Image = require("@11ty/eleventy-img");
+const config = require("../image.js");
 
 const image = async (
   src,
@@ -10,6 +11,7 @@ const image = async (
   sizes = "100vw"
 ) => {
   let metadata = await Image(src, {
+    ...config,
     widths,
     formats,
     outputDir: "_site/images",
@@ -19,8 +21,6 @@ const image = async (
   let imageAttributes = {
     alt,
     sizes,
-    loading: "lazy",
-    decoding: "async",
     ...attrs,
   };
 

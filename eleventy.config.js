@@ -3,9 +3,12 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginWebc = require("@11ty/eleventy-plugin-webc");
 const bundlerConfig = require("./11ty/bundler");
+const imageConfig = require("./11ty/image");
+const { eleventyImagePlugin } = require("@11ty/eleventy-img");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginBundler, bundlerConfig);
+  eleventyConfig.addPlugin(eleventyImagePlugin, imageConfig);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginWebc, {
@@ -22,7 +25,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ public: "/" });
 
   eleventyConfig.setServerOptions({
-    showAllHosts: true,
+    showAllHosts: false,
   });
 
   return {

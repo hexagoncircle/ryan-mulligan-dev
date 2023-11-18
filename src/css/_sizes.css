@@ -20,6 +20,6 @@ html {
   --size-border: 1px;
   --size-input: 1rem;
 
-  --page-gutters: var(--space-m);
+  --page-gutters: clamp(var(--space-m), 3vw, var(--space-xl));
   --page-max: 44rem;
 }

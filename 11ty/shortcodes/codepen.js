@@ -1,6 +1,3 @@
-const Image = require("@11ty/eleventy-img");
-const path = require("path");
-
 const codepen = (url, defaultTab = "result", height = 600, preview = false) => {
   const base = "https://codepen.io";
   const pathname = new URL(url).pathname.split("/");
@@ -15,37 +12,6 @@ const codepen = (url, defaultTab = "result", height = 600, preview = false) => {
   `;
 };
 
-const codepenImage = async (id, attrs = {}) => {
-  const url = `https://shots.codepen.io/hexagoncircle/pen/${id}-1280.jpg?version=1`;
-
-  let metadata = await Image(url, {
-    widths: [640, 1280],
-    outputDir: "_site/images",
-    urlPath: "/images",
-    cacheOptions: {
-      duration: "2w",
-      directory: ".cache",
-      removeUrlQueryParams: false,
-    },
-    filenameFormat: function (id, src, width, format, options) {
-      const extension = path.extname(src);
-      const name = path.basename(src, extension).split("-")[0];
-      return `codepen-${name}.${format}`;
-    },
-  });
-
-  let imageAttributes = {
-    alt: "",
-    sizes: "100vw",
-    loading: "lazy",
-    decoding: "async",
-    ...attrs,
-  };
-
-  return Image.generateHTML(metadata, imageAttributes);
-};
-
 module.exports = {
   codepen,
-  codepenImage,
 };

@@ -1,3 +1,8 @@
+:root {
+  --focus-outline: 2px solid var(--color-link);
+  --focus-outline-offset: 3px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;
@@ -14,12 +19,16 @@ body {
 
 a {
   color: var(--color-link);
-  outline-offset: 3px;
   scroll-margin-block: var(--space-xl);
 }
 
 a:is(:hover, :focus-visible) {
   color: var(--color-link-hover);
+}
+
+a:focus-visible {
+  outline: var(--focus-outline);
+  outline-offset: var(--focus-outline-offset);
 }
 
 :is(strong, .font-bold) {

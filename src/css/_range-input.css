@@ -17,9 +17,8 @@
 }
 
 @mixin range-thumb-focus {
-  outline: 5px auto Highlight;
-  outline: 5px auto -webkit-focus-ring-color;
-  outline-offset: 3px;
+  outline: var(--focus-outline);
+  outline-offset: var(--focus-outline-offset);
 }
 
 input[type="range"] {

@@ -11,15 +11,13 @@
         :value="item.value !== 'system' ? item.value : ''"
         type="radio"
         name="appearance"
-        class="visually-hidden"
-      />
+        class="visually-hidden" />
       <label :for="`appearance-${item.id}`">
         <span class="visually-hidden" @text="item.label"></span>
         <inline-svg
           class="icon"
           aria-hidden="true"
-          :src="`./public/icons/${item.icon}.svg`"
-        ></inline-svg>
+          :src="`./public/icons/${item.icon}.svg`"></inline-svg>
       </label>
     </template>
     <div class="highlight"></div>
@@ -101,8 +99,8 @@
   }
 
   input:checked:focus-visible + label {
-    outline: 5px auto Highlight;
-    outline: 5px auto -webkit-focus-ring-color;
+    outline: var(--focus-outline);
+    outline-offset: var(--focus-outline-offset);
   }
 
   .highlight {
