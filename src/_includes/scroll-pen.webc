@@ -328,6 +328,12 @@
     grid-template-columns: inherit;
   }
 
+  @media (forced-colors: active) {
+    :host {
+      forced-color-adjust: none;
+    }
+  }
+
   ul {
     grid-column: content;
     display: grid;

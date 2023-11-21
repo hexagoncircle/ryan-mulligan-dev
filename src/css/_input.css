@@ -27,6 +27,11 @@ input[type="checkbox"] {
   height: var(--height-thumb);
   width: var(--width-thumb);
   box-shadow: var(--color-bg) 0 0 0 4px;
+
+  @media (forced-colors: active) {
+    background-color: CanvasText;
+    box-shadow: Canvas 0 0 0 4px;
+  }
 }
 
 @mixin range-thumb-focus {
@@ -49,6 +54,12 @@ input[type="range"] {
   background: transparent;
   cursor: grab;
   width: 100%;
+}
+
+@media (forced-colors: active) {
+  input[type="range"] {
+    forced-color-adjust: none;
+  }
 }
 
 input[type="range"]:active {

@@ -104,6 +104,12 @@
     isolation: isolate;
   }
 
+  @media (forced-colors: active) {
+    :host {
+      forced-color-adjust: none;
+    }
+  }
+
   .control-appearance {
     all: unset;
     position: relative;
