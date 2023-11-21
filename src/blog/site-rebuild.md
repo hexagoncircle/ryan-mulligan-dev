@@ -1,7 +1,6 @@
 ---
 title: Site Rebuild
 description: Some quick bits about the latest version of my website.
-ogImage: /assets/social/website-themes-and-color-schemes.png
 date: 2023-11-18
 draft: true
 ---
