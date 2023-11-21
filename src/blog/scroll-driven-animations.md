@@ -1,7 +1,7 @@
 ---
 title: Starting Exploration of Scroll-driven Animations in CSS
 description: An initial collection of demos and some early learnings about CSS scroll-driven animations.
-ogImage: /assets/social/scroll-driven-animations.png
+ogImage: /social/scroll-driven-animations.png
 date: 2023-08-21
 ---
 

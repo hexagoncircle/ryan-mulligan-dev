@@ -2,7 +2,7 @@
 title: Horizontal Scrolling in a Centered Max-Width Container
 description: Applying modern CSS techniques to align the start position of a horizontal scrolling gallery to a parent container's max-width while allowing its overflow to span the entire viewport.
 subtitle: Applying modern CSS techniques on horizontal scroll section layouts
-ogImage: /assets/social/horizontal-scrolling-in-a-centered-max-width-container.png
+ogImage: /social/horizontal-scrolling-in-a-centered-max-width-container.png
 date: 2022-03-11
 ---
 

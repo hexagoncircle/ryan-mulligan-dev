@@ -8,7 +8,7 @@
     <title @text="title || meta.title"></title>
     <meta name="description" :content="description || meta.description" />
     <meta webc:if="meta.robots" name="robots" :content="meta.robots" />
-    <meta name="author" :content="meta.author" />
+    <meta name="author" :content="meta.author.name" />
 
     <!-- favicon-trary to popular belief -->
     <link rel="icon" href="/favicon/favicon.ico" sizes="32x32" />

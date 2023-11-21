@@ -1,7 +1,7 @@
 ---
 title: CSS Custom Property Fallbacks in Shorthand Values
 description: Using fallbacks for CSS custom properties for granular control of shorthand values.
-ogImage: /assets/social/css-custom-property-fallbacks.png
+ogImage: /social/css-custom-property-fallbacks.png
 date: 2023-07-14
 ---
 

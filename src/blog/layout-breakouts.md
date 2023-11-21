@@ -1,7 +1,7 @@
 ---
 title: Layout Breakouts with CSS Grid
 description: Extending elements beyond the content area with CSS Grid and named grid lines.
-ogImage: /assets/social/layout-breakouts-css-grid.png
+ogImage: /social/layout-breakouts-css-grid.png
 date: 2022-10-07
 ---
 
