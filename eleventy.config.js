@@ -18,6 +18,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(require("./11ty/filters"));
   eleventyConfig.addPlugin(require("./11ty/markdown"));
   eleventyConfig.addPlugin(require("./11ty/shortcodes"));
+  eleventyConfig.addPlugin(require("./11ty/drafts"));
 
   eleventyConfig.addLayoutAlias("base", "base.webc");
   eleventyConfig.addLayoutAlias("post", "post.webc");
