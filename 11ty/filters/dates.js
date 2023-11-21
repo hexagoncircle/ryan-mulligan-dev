@@ -23,7 +23,7 @@ const getDeployDate = () => {
   let d = new Date();
   let hour = d.getHours();
   let timeOfDay = (hour < 12 && "morning") || (hour < 18 && "afternoon") || "evening";
-  let date = DateTime.fromJSDate(d, { zone: "utc" }).toFormat(String("MMMM d"));
+  let date = DateTime.fromJSDate(d, { zone: "America/Los_Angeles" }).toFormat(String("MMMM d"));
 
   return {
     timeOfDay,
