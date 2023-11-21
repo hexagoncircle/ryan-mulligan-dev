@@ -10,14 +10,14 @@
       "link-hover": "#ec4899",
       "theme": "#ffedd5",
       "theme-accent": "#fed7aa",
-      "theme-offset": "#ea580c"
+      "theme-offset": "#dc2626"
     },
     "dark": {
       "bg": "#020617",
       "bg-accent": "#0f172a",
       "text": "#f8fafc",
       "text-accent": "#f1f5f9",
-      "link": "#60a5fa",
+      "link": "#7ab6ff",
       "link-hover": "#93c5fd",
       "theme": "#172554",
       "theme-accent": "#1e3a8a",
@@ -32,7 +32,8 @@
       "theme-offset": "#ec4899"
     },
     "dark": {
-      "theme": "#500724",
+      "bg": "#0c0508",
+      "theme": "#4f0c27",
       "theme-accent": "#9d174d",
       "theme-offset": "#f9a8d4"
     }
@@ -45,8 +46,8 @@
       "theme-offset": "#3b82f6"
     },
     "dark": {
-      "theme": "#0c4a6e",
-      "theme-accent": "#0369a1",
+      "theme": "#082f49",
+      "theme-accent": "#075985",
       "theme-offset": "#38bdf8"
     }
   },
@@ -58,6 +59,8 @@
       "theme-offset": "#10b981"
     },
     "dark": {
+      "bg": "#0d1110",
+      "bg-accent": "#121e1b",
       "theme": "#064e3b",
       "theme-accent": "#047857",
       "theme-offset": "#34d399"
@@ -71,8 +74,9 @@
       "theme-offset": "#9333ea"
     },
     "dark": {
+      "bg": "#0f031a",
       "theme": "#581c87",
-      "theme-accent": "#7e22ce",
+      "theme-accent": "#9333ea",
       "theme-offset": "#c084fc"
     }
   },
@@ -84,9 +88,10 @@
       "theme-offset": "#475569"
     },
     "dark": {
-      "theme": "#0f172a",
+      "bg": "#020617",
+      "theme": "#1e293b",
       "theme-accent": "#334155",
-      "theme-offset": "#94a3b8"
+      "theme-offset": "#9faec5"
     }
   }
 ]

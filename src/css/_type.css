@@ -1,5 +1,5 @@
 /* @link https://utopia.fyi/type/calculator?c=320,16,1.2,1240,18,1.333,5,2,&s=0.75|0.5,1.5|2|3|4,s-l&g=s,l,xl,12 */
-html {
+:root {
   --step--2: clamp(0.6331rem, 0.7157rem + -0.1065vw, 0.6944rem);
   --step--1: clamp(0.8331rem, 0.8294rem + 0.0185vw, 0.8438rem);
   --step-0: clamp(1rem, 0.9565rem + 0.4174vw, 1.25rem);
@@ -16,4 +16,7 @@ html {
   --font-bold: 700;
   --font-semibold: 600;
   --font-normal: 400;
+
+  --focus-outline: 2px solid var(--color-link);
+  --focus-outline-offset: 3px;
 }

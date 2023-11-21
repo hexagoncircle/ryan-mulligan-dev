@@ -1,8 +1,3 @@
-:root {
-  --focus-outline: 2px solid var(--color-link);
-  --focus-outline-offset: 3px;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   html {
     scroll-behavior: smooth;
@@ -19,6 +14,7 @@ body {
 
 a {
   color: var(--color-link);
+  text-underline-offset: 2px;
   scroll-margin-block: var(--space-xl);
 }
 
