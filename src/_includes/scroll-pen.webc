@@ -337,20 +337,26 @@
   ul {
     grid-column: content;
     display: grid;
-    grid-auto-columns: calc(8rem + 3vw);
+    grid-auto-columns: 100%;
     grid-auto-flow: column;
     padding-block: var(--space-m) calc(var(--space-m) + 1ex);
     gap: var(--_gap);
-
-    > :nth-child(3n + 1) {
-      grid-column: span 2;
-      grid-row: span 2;
-    }
 
     &::after {
       content: "";
       width: var(--page-gutters);
       margin-inline-start: calc(var(--_gap) * -1);
+    }
+  }
+
+  @media (min-width: 21rem) {
+    ul {
+      grid-auto-columns: calc(8rem + 3vw);
+
+      > :nth-child(3n + 1) {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
     }
   }
 
