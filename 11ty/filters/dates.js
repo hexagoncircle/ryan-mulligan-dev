@@ -1,4 +1,6 @@
-const { DateTime } = require("luxon");
+const { DateTime, Settings } = require("luxon");
+
+Settings.defaultZoneName = "America/Los_Angeles";
 
 const dateToFormat = (date, format) => {
   return DateTime.fromJSDate(date, { zone: "utc" }).toFormat(String(format));
@@ -20,10 +22,11 @@ const formatJobDate = (date) => {
 };
 
 const getDeployDate = () => {
+  let zone = "America/Los_Angeles";
   let d = new Date();
-  let hour = d.getHours();
+  let hour = DateTime.fromJSDate(d, { zone }).toFormat(String("H"));
+  let date = DateTime.fromJSDate(d, { zone }).toFormat(String("MMMM d"));
   let timeOfDay = (hour < 12 && "morning") || (hour < 18 && "afternoon") || "evening";
-  let date = DateTime.fromJSDate(d, { zone: "America/Los_Angeles" }).toFormat(String("MMMM d"));
 
   return {
     timeOfDay,
