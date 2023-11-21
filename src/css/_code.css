@@ -1,8 +1,3 @@
-:root {
-  --color-code-bg: #0f172a;
-  --color-code-text: #f8fafc;
-}
-
 code,
 pre {
   font-size: 0.9em;
@@ -13,8 +8,8 @@ pre {
 
 pre[class*="language-"] {
   padding: var(--space-xs);
-  color: var(--color-code-text);
-  background-color: var(--color-code-bg);
+  color: var(--color-text-accent);
+  background-color: var(--color-bg-accent);
   border-radius: var(--radius-m);
 }
 

@@ -33,6 +33,7 @@
     },
     "dark": {
       "bg": "#0c0508",
+      "bg-accent": "#240813",
       "theme": "#4f0c27",
       "theme-accent": "#9d174d",
       "theme-offset": "#f9a8d4"
@@ -47,7 +48,7 @@
     },
     "dark": {
       "theme": "#082f49",
-      "theme-accent": "#075985",
+      "theme-accent": "#0284c7",
       "theme-offset": "#38bdf8"
     }
   },
