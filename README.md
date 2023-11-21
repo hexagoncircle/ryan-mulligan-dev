@@ -4,4 +4,4 @@
 
 Now it's personal 👀 [ryanmulligan.dev](https://ryanmulligan.dev)
 
-Static site built with 11ty and deployed on Netlify ❤️
+Static site built with 11ty + WebC and deployed on Netlify ❤️
