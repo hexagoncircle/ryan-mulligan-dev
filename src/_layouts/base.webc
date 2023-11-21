@@ -8,12 +8,23 @@
     <title @text="title || meta.title"></title>
     <meta name="description" :content="description || meta.description" />
     <meta webc:if="meta.robots" name="robots" :content="meta.robots" />
+    <meta name="author" :content="meta.author" />
 
     <!-- favicon-trary to popular belief -->
     <link rel="icon" href="/favicon/favicon.ico" sizes="32x32" />
     <link rel="icon" href="/favicon/favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- social club -->
+    <meta name="generator" :content="{{ eleventy.generator }}" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" :content="title || meta.title" />
+    <meta name="twitter:description" :content="description || meta.description" />
+    <meta name="twitter:image" :content="ogImage || meta.ogImage" />
+    <meta name="og:title" :content="title || meta.title" />
+    <meta name="og:description" :content="description || meta.description" />
+    <meta property="og:image" :content="ogImage || meta.ogImage" />
 
     <!-- [deep breath] me, me, me, me, meeee -->
     <link href="https://github.com/hexagoncircle" rel="me" />
