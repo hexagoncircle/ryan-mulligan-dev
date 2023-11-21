@@ -26,6 +26,11 @@
     z-index: 1;
   }
 
+  nav {
+    --row-gap: var(--space-s);
+    --justify: center;
+  }
+
   a {
     display: grid;
     place-items: center;
