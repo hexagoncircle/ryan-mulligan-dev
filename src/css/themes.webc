@@ -40,7 +40,7 @@ excludeFromSitemap: true
   }
 
   @media (prefers-color-scheme: dark) {
-    :where(html) {
+    :where(html:not([data-appearance])) {
       ${getThemeVariables("dark")}
     }
   }
