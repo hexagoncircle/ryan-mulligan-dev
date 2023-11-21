@@ -7,6 +7,6 @@ input[type="checkbox"] {
   outline-offset: 3px;
   inline-size: var(--size-input);
   block-size: var(--size-input);
-  border: 1px solid var(--color-primary-decorator);
+  border: 1px solid var(--color-theme-offset);
   flex-shrink: 0;
 }

@@ -14,7 +14,7 @@
 
 .cta.arrow-start:has(:hover, :focus-visible)::before,
 .cta.arrow-end:has(:hover, :focus-visible)::after {
-  color: var(--color-link-hover);
+  color: var(--color-theme-offset);
   animation: cta 400ms ease-out infinite;
 }
 

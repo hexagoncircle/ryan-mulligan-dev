@@ -20,7 +20,7 @@
     width: 100%;
     height: 100%;
     border-radius: var(--radius-m);
-    background: linear-gradient(to right, transparent 20%, var(--color-primary));
+    background: linear-gradient(to right, transparent 20%, var(--color-theme));
     mask-image: linear-gradient(70deg, transparent 25%, black);
     z-index: -1;
   }

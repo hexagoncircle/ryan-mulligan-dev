@@ -217,7 +217,7 @@ pre[class*="language-"] {
 .codepen {
   padding: var(--space-s);
   color: var(--color-text-accent);
-  border: 2px dashed var(--color-primary);
+  border: 2px dashed var(--color-theme);
 }
 
 .prose .cp_embed_wrapper,

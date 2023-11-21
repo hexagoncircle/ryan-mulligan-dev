@@ -9,7 +9,7 @@ blockquote {
   column-gap: 0.2em;
   padding-block: var(--space-xs);
   padding-inline-end: var(--space-l);
-  color: var(--color-primary-decorator);
+  color: var(--color-theme-offset);
 
   font-size: var(--step-1);
   line-height: 1.4;
@@ -21,8 +21,8 @@ blockquote > * {
 }
 
 blockquote code {
-  color: var(--color-primary-decorator);
-  background-color: var(--color-primary);
+  color: var(--color-theme-offset);
+  background-color: var(--color-theme);
 }
 
 blockquote::before {
@@ -33,7 +33,7 @@ blockquote::before {
   font-size: 3.4em;
   line-height: 1;
   height: 0.5em;
-  color: var(--color-primary-decorator);
+  color: var(--color-theme-offset);
   transform: translateY(-0.025em);
 }
 
@@ -44,6 +44,6 @@ blockquote::after {
   width: 0.2em;
   height: 100%;
   border-radius: var(--radius-pill);
-  background-color: var(--color-primary-decorator);
+  background-color: var(--color-theme-offset);
   transform: translateY(-0.1em);
 }

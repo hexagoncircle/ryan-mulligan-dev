@@ -22,7 +22,7 @@
   }
 
   li:has(a:hover, a:focus-visible) time {
-    color: var(--color-link-hover);
+    color: var(--color-theme-offset);
   }
 
   a {

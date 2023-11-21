@@ -22,8 +22,8 @@
 }
 
 input[type="range"] {
-  --color-track: var(--color-primary);
-  --color-thumb: var(--color-primary-decorator);
+  --color-track: var(--color-theme);
+  --color-thumb: var(--color-theme-offset);
   --radius-track: var(--radius-pill);
   --radius-thumb: var(--radius-s);
   --height-track: 0.3rem;

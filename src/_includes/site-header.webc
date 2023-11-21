@@ -9,8 +9,7 @@
         <a
           :href="item.url"
           :aria-current="item.url === $data.page.url ? 'page' : null"
-          @text="item.label"
-        ></a>
+          @text="item.label"></a>
       </li>
     </ul>
     <theme-machine></theme-machine>
@@ -36,31 +35,6 @@
   }
 
   a:is(:hover, :focus-visible) {
-    color: var(--color-link-hover);
-  }
-
-  @supports (animation-timeline: scroll()) {
-    :host {
-      animation-range: entry 0 entry 6rem;
-      animation-timeline: scroll();
-      animation-direction: both;
-      animation-name: animate-nav;
-      animation-timing-function: linear;
-      animation-fill-mode: forwards;
-    }
-
-    @keyframes animate-nav {
-      20% {
-        opacity: 1;
-      }
-      80%,
-      100% {
-        opacity: 0;
-        pointer-events: none;
-      }
-      100% {
-        translate: 0 50%;
-      }
-    }
+    color: var(--color-theme-offset);
   }
 </style>

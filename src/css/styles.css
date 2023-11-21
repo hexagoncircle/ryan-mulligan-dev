@@ -3,7 +3,6 @@
 @import "_reset.css" layer(reset);
 
 @import "_font.css" layer(variables);
-@import "_colors.css" layer(variables);
 @import "_motion.css" layer(variables);
 @import "_sizes.css" layer(variables);
 @import "_type.css" layer(variables);

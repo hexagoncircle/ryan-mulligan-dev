@@ -8,4 +8,8 @@ module.exports = {
     (process.env.CONTEXT === "production" ? process.env.URL : process.env.DEPLOY_PRIME_URL) ||
     "http://localhost:8080",
   ogImage: "/social/ryan-mulligan-dev.png",
+  author: {
+    name: "Ryan Mulligan",
+    email: "hey@ryanmulligan.dev",
+  },
 };

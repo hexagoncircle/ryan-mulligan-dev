@@ -14,7 +14,7 @@ permalink: "/"
 </p>
 <ul>
   <li>
-    The latest build of this site deployed in the
+    The latest site build was deployed in the
     <span @text="timeOfDay" webc:nokeep></span> on <span @text="date" webc:nokeep></span>.
   </li>
   <li webc:if="$data.weather">
@@ -89,13 +89,13 @@ permalink: "/"
   }
 
   scroll-pen {
-    margin-block-start: 2vh;
+    margin-block-start: var(--space-m);
   }
 
   [data-scroll-pen-controls] {
     --flow-space: var(--space-2xs);
     margin-block-start: var(--space-s);
-    margin-block-end: 3vh;
+    margin-block-end: var(--space-m);
     position: relative;
     opacity: 0;
     animation: fade-in 200ms 500ms ease-out forwards;

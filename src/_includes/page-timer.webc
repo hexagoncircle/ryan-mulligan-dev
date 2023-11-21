@@ -7,7 +7,7 @@
     fill="currentcolor"
     viewBox="0 0 256 256">
     <rect width="256" height="256" fill="none"></rect>
-    <circle cx="128" cy="128" r="88" fill="var(--color-primary)"></circle>
+    <circle cx="128" cy="128" r="88" fill="var(--color-theme)"></circle>
     <circle
       cx="128"
       cy="128"
@@ -65,7 +65,7 @@
       border-radius: 50%;
       background: conic-gradient(
         from 45deg,
-        var(--color-primary-accent) calc(var(--progress) * 1%),
+        var(--color-theme-accent) calc(var(--progress) * 1%),
         transparent 0
       );
       animation-fill-mode: both;

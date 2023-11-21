@@ -8,7 +8,7 @@ const { browserslistToTargets } = require("lightningcss");
 let mixins = new Map();
 
 module.exports = {
-  minify: true,
+  minify: process.env.URL ? true : false,
   sourceMap: false,
   targets: browserslistToTargets(browserslist("> 0.2% and not dead")),
   drafts: {

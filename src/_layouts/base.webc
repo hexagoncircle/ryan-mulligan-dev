@@ -35,11 +35,12 @@
       as="font"
       type="font/woff2"
       crossorigin />
+    <link rel="stylesheet" href="/css/themes.css" webc:keep />
     <link rel="stylesheet" href="/css/styles.css" webc:keep />
     <style @raw="getCss(page.url)" webc:keep></style>
-    <script @raw="getBundle('js', 'critical')" webc:keep></script>
   </head>
   <body>
+    <script @raw="getBundle('js', 'critical')" webc:keep></script>
     <site-header></site-header>
     <main :class="`breakout flow${classnames ? ` ${classnames}` : ''}`" @raw="content"></main>
     <site-footer></site-footer>

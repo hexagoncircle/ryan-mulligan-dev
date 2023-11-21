@@ -23,7 +23,7 @@ a {
 }
 
 a:is(:hover, :focus-visible) {
-  color: var(--color-link-hover);
+  color: var(--color-theme-offset);
 }
 
 a:focus-visible {
