@@ -1,7 +1,7 @@
 ---
 title: CSS Custom Property Fallbacks in Shorthand Values
 description: Using fallbacks for CSS custom properties for granular control of shorthand values.
-ogImage: /assets/social/css-custom-property-fallbacks.png
+ogImage: /social/css-custom-property-fallbacks.png
 date: 2023-07-14
 ---
 
@@ -137,7 +137,7 @@ Excellent point, and agreed: Inheritance of custom properties is a good thing. T
 </ul>
 ```
 
-What do you think? Please feel free to join us on [the Mastadon thread](https://fosstodon.org/@hexagoncircle/110713633805281051) with your opinions and feedback. Also, [check out this CodePen](https://codepen.io/hexagoncircle/pen/ExOEjGG) if you'd like to experiment with the different methods described here.
+What do you think? Please feel free to join us on [the Mastodon thread](https://fosstodon.org/@hexagoncircle/110713633805281051) with your opinions and feedback. Also, [check out this CodePen](https://codepen.io/hexagoncircle/pen/ExOEjGG) if you'd like to experiment with the different methods described here.
 
 ## Helpful resources
 

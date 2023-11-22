@@ -1,0 +1,57 @@
+---
+permalink: "/css/themes.css"
+excludeFromSitemap: true
+---
+
+<script webc:setup>
+  const themes = $data.themes;
+</script>
+
+<script webc:type="js">
+  const getThemeVariables = (variant) => {
+    let output = "";
+
+    function outputVars(theme) {
+      for (let prop in theme[variant]) {
+        output += `--color-${prop}: ${theme[variant][prop]};\n`;
+      }
+    }
+
+    themes.map((theme, index) => {
+      if (index === 0) {
+        outputVars(theme);
+        output += `[data-theme="${theme.name}"] {\n`;
+        outputVars(theme);
+        output += `}\n`;
+      } else {
+        output += `[data-theme="${theme.name}"] {\n`;
+        outputVars(theme);
+        output += `}\n`;
+      }
+    });
+
+    return output;
+  };
+
+  `
+@layer variables {
+  :where(html) {
+    ${getThemeVariables("light")}
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :where(html:not([data-appearance])) {
+      ${getThemeVariables("dark")}
+    }
+  }
+
+  [data-appearance="light"] {
+    ${getThemeVariables("light")}
+  }
+
+  [data-appearance="dark"] {
+    ${getThemeVariables("dark")}
+  }
+}
+  `;
+</script>

@@ -1,0 +1,61 @@
+{
+  "appearances": [
+    {
+      "id": "system",
+      "icon": "monitor",
+      "label": "System",
+      "value": "system"
+    },
+    {
+      "id": "light",
+      "icon": "sun",
+      "label": "Light",
+      "value": "light"
+    },
+    {
+      "id": "dark",
+      "icon": "moon",
+      "label": "Dark",
+      "value": "dark"
+    }
+  ],
+  "menu": [
+    {
+      "id": "home",
+      "label": "Home",
+      "url": "/"
+    },
+    {
+      "id": "blog",
+      "label": "Blog",
+      "url": "/blog/"
+    },
+    {
+      "id": "rss",
+      "label": "RSS",
+      "url": "/feed.xml"
+    }
+  ],
+  "social": [
+    {
+      "id": "mastodon",
+      "label": "Mastodon",
+      "url": "https://fosstodon.org/@hexagoncircle"
+    },
+    {
+      "id": "codepen",
+      "label": "CodePen",
+      "url": "https://codepen.io/hexagoncircle"
+    },
+    {
+      "id": "github",
+      "label": "GitHub",
+      "url": "https://github.com/hexagoncircle"
+    },
+    {
+      "id": "linkedin",
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/mulliganryan/"
+    }
+  ]
+}

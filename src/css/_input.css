@@ -1,0 +1,91 @@
+input:focus-visible {
+  outline: var(--focus-outline);
+}
+
+input[type="checkbox"] {
+  font: inherit;
+  outline-offset: 3px;
+  inline-size: var(--size-input);
+  block-size: var(--size-input);
+  border: 1px solid var(--color-theme-offset);
+  flex-shrink: 0;
+}
+
+@mixin range-track {
+  background-color: var(--color-track);
+  border-radius: var(--radius-track);
+  height: var(--height-track);
+  width: 100%;
+}
+
+@mixin range-thumb {
+  appearance: none;
+  margin-top: calc((var(--height-thumb) / 2 - var(--height-track) / 2) * -1);
+  background-color: var(--color-thumb);
+  border: none;
+  border-radius: var(--radius-thumb);
+  height: var(--height-thumb);
+  width: var(--width-thumb);
+  box-shadow: var(--color-bg) 0 0 0 4px;
+
+  @media (forced-colors: active) {
+    background-color: CanvasText;
+    box-shadow: Canvas 0 0 0 4px;
+  }
+}
+
+@mixin range-thumb-focus {
+  outline: var(--focus-outline);
+  outline-offset: var(--focus-outline-offset);
+}
+
+input[type="range"] {
+  --color-track: var(--color-theme);
+  --color-thumb: var(--color-theme-offset);
+  --radius-track: var(--radius-pill);
+  --radius-thumb: var(--radius-s);
+  --height-track: 0.3rem;
+  --height-thumb: var(--size-input);
+  --width-thumb: calc(var(--size-input) * 2);
+
+  appearance: none;
+  outline: none;
+  padding-block: var(--space-3xs);
+  background: transparent;
+  cursor: grab;
+  width: 100%;
+}
+
+@media (forced-colors: active) {
+  input[type="range"] {
+    forced-color-adjust: none;
+  }
+}
+
+input[type="range"]:active {
+  cursor: grabbing;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  @apply range-track;
+}
+
+input[type="range"]::-moz-range-track {
+  @apply range-track;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  @apply range-thumb;
+}
+
+input[type="range"]::-moz-range-thumb {
+  @apply range-thumb;
+}
+
+input[type="range"]:focus-visible::-webkit-slider-thumb {
+  @apply range-thumb-focus;
+}
+
+input[type="range"]:focus-visible::-moz-range-thumb {
+  @apply range-thumb-focus;
+}

@@ -1,0 +1,25 @@
+.cta::before,
+.cta::after {
+  display: inline-block;
+  pointer-events: none;
+}
+
+.cta.arrow-start::before {
+  content: "←";
+}
+
+.cta.arrow-end::after {
+  content: "→";
+}
+
+.cta.arrow-start:has(:hover, :focus-visible)::before,
+.cta.arrow-end:has(:hover, :focus-visible)::after {
+  color: var(--color-theme-offset);
+  animation: cta 400ms ease-out infinite;
+}
+
+@keyframes cta {
+  50% {
+    transform: translateX(2px);
+  }
+}

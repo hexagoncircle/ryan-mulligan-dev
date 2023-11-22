@@ -1,0 +1,22 @@
+/* @link https://utopia.fyi/type/calculator?c=320,16,1.2,1240,18,1.333,5,2,&s=0.75|0.5,1.5|2|3|4,s-l&g=s,l,xl,12 */
+:root {
+  --step--2: clamp(0.6331rem, 0.7157rem + -0.1065vw, 0.6944rem);
+  --step--1: clamp(0.8331rem, 0.8294rem + 0.0185vw, 0.8438rem);
+  --step-0: clamp(1rem, 0.9565rem + 0.4174vw, 1.25rem);
+  --step-1: clamp(1.2rem, 1.0959rem + 0.5207vw, 1.4994rem);
+  --step-2: clamp(1.44rem, 1.2457rem + 0.9717vw, 1.9988rem);
+  --step-3: clamp(1.7281rem, 1.4025rem + 1.6283vw, 2.6644rem);
+  --step-4: clamp(2.0738rem, 1.5596rem + 2.5707vw, 3.5519rem);
+  --step-5: clamp(2.4881rem, 1.7066rem + 3.9076vw, 4.735rem);
+
+  --font-base: system-ui, sans-serif;
+  --font-display: "Tanker Regular", var(--font-base);
+  --font-mono: "Jet Brains Mono", monospace;
+
+  --font-bold: 700;
+  --font-semibold: 600;
+  --font-normal: 400;
+
+  --focus-outline: 2px solid var(--color-link);
+  --focus-outline-offset: 3px;
+}

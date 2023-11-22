@@ -2,7 +2,7 @@
 title: Scrollspy Navigation Web Component
 subtitle: A web component for sticky-positioned page anchor menus
 description: A web component for sticky-positioned page anchor menus.
-ogImage: /assets/social/scrollspy-nav.png
+ogImage: /social/scrollspy-nav.png
 date: 2023-10-07
 ---
 

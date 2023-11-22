@@ -1,41 +1,44 @@
 {
   "name": "ryan-mulligan-dev",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Personal website",
   "scripts": {
-    "start": "npx @11ty/eleventy --serve --quiet --incremental",
-    "build": "npx @11ty/eleventy",
-    "clean": "rm -rf _site",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "eleventy",
+    "clean": "rm -rf _site && rm -rf .cache",
+    "start": "eleventy --serve --quiet"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hexagoncircle/ryan-mulligan-dev.git"
+  },
+  "author": {
+    "name": "Ryan Mulligan",
+    "email": "hey@ryanmulligan.dev",
+    "url": "https://ryanmulligan.dev"
+  },
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "@11ty/eleventy-img": "^3.1.0",
+    "@11ty/eleventy-fetch": "^4.0.0",
+    "@11ty/eleventy-img": "^3.1.1",
+    "@11ty/eleventy-plugin-bundle": "^1.0.4",
     "@11ty/eleventy-plugin-rss": "^1.2.0",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "@11ty/eleventy-plugin-webc": "^0.11.1",
-    "autoprefixer": "^10.4.14",
-    "cssnano": "^6.0.1",
+    "@netlify/functions": "^2.4.0",
+    "@unpic/webc": "^0.0.29",
+    "browserslist": "^4.22.1",
     "dotenv": "^16.3.1",
-    "eleventy-plugin-postcss": "^1.0.4",
-    "eleventy-plugin-svg-contents": "^0.7.0",
-    "eleventy-plugin-time-to-read": "^1.3.0",
-    "luxon": "^3.3.0",
-    "markdown-it": "^13.0.1",
+    "lightningcss": "^1.22.0",
+    "lodash": "^4.17.21",
+    "markdown-it": "^13.0.2",
+    "markdown-it-anchor": "^8.6.7",
     "markdown-it-attrs": "^4.1.6",
     "markdown-it-container": "^3.0.0",
-    "postcss-import": "^15.1.0",
-    "postcss-nesting": "^12.0.0"
+    "patch-package": "^8.0.0",
+    "svgo": "^3.0.2"
   },
-  "dependencies": {
-    "@11ty/webc": "^0.11.4",
-    "@netlify/functions": "^1.6.0",
-    "fs": "^0.0.1-security",
-    "lodash": "^4.17.21",
-    "netlify-plugin-cache": "^1.0.3",
-    "node-fetch": "^2.6.12"
+  "devDependencies": {
+    "netlify-plugin-cache": "^1.0.3"
   }
 }

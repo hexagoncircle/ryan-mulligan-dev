@@ -1,88 +1,105 @@
 [
   {
-    "name": "cookies and cream",
-    "variants": {
-      "base": {
-        "text": "hsl(0, 0%, 5%)",
-        "text-accent": "hsl(0, 0%, 20%)",
-        "bg": "hsl(0, 0%, 98%)",
-        "bg-accent": "hsl(0, 0%, 93%)",
-        "bg-shadow": "hsl(0, 0%, 95%)",
-        "primary": "hsl(314, 88%, 51%)",
-        "secondary": "hsl(230, 80%, 60%)"
-      },
-      "dark": {
-        "text": "hsl(0, 0%, 88%)",
-        "text-accent": "hsl(0 0% 86%)",
-        "bg": "hsl(285, 18%, 4%)",
-        "bg-accent": "hsl(285, 18%, 15%)",
-        "bg-shadow": "hsl(285, 18%, 10%)",
-        "primary": "hsl(314, 88%, 51%)",
-        "secondary": "hsl(63, 88%, 64%)"
-      }
+    "name": "default",
+    "light": {
+      "bg": "#fffefd",
+      "bg-accent": "#f7f5f5",
+      "bg-code": "#0f172a",
+      "text": "#020617",
+      "text-accent": "#334155",
+      "text-code": "#f1f5f9",
+      "link": "#2563eb",
+      "link-hover": "#ec4899",
+      "theme": "#ffedd5",
+      "theme-accent": "#fed7aa",
+      "theme-offset": "#ef4444"
+    },
+    "dark": {
+      "bg": "#020617",
+      "bg-accent": "#0f172a",
+      "bg-code": "#0f172a",
+      "text": "#f8fafc",
+      "text-accent": "#f1f5f9",
+      "link": "#7ab6ff",
+      "link-hover": "#93c5fd",
+      "theme": "#172554",
+      "theme-accent": "#1e3a8a",
+      "theme-offset": "#0ea5e9"
     }
   },
   {
-    "name": "brambleberry crisp",
-    "variants": {
-      "base": {
-        "text": "hsl(197, 100%, 15%)",
-        "text-accent": "hsl(197, 100%, 20%)",
-        "bg": "hsl(200 87% 94%)",
-        "bg-accent": "hsl(210, 55%, 85%)",
-        "bg-shadow": "hsl(200 87% 90%)",
-        "primary": "hsl(177 70% 49%)",
-        "secondary": "hsl(239 72% 54%)"
-      },
-      "dark": {
-        "text": "hsl(197, 100%, 75%)",
-        "text-accent": "hsl(197, 100%, 55%)",
-        "bg": "hsl(210, 100%, 12%)",
-        "bg-accent": "hsl(210, 100%, 22%)",
-        "bg-shadow": "hsl(210, 100%, 16%)",
-        "primary": "hsl(146, 100%, 50%)",
-        "secondary": "hsl(146, 100%, 50%)"
-      }
+    "name": "pink",
+    "light": {
+      "theme": "#fce7f3",
+      "theme-accent": " #f9a8d4",
+      "theme-offset": "#ec4899"
+    },
+    "dark": {
+      "bg": "#0c0508",
+      "bg-accent": "#240813",
+      "bg-code": "#240813",
+      "theme": "#4f0c27",
+      "theme-accent": "#9d174d",
+      "theme-offset": "#f9a8d4"
     }
   },
   {
-    "name": "lemon blueberry parfait",
-    "variants": {
-      "base": {
-        "text": "hsl(0, 0%, 100%)",
-        "text-accent": "hsl(0, 0%, 94%)",
-        "bg": "hsl(217, 71%, 49%)",
-        "bg-accent": "hsl(217, 92%, 41%)",
-        "bg-shadow": "hsl(217, 72%, 47%)",
-        "primary": "hsl(217 79% 78%)",
-        "secondary": "hsl(57, 100%, 50%)"
-      },
-      "dark": {
-        "bg": "hsl(217, 52%, 10%)",
-        "bg-accent": "hsl(218, 76%, 21%)",
-        "bg-shadow": "hsl(217, 52%, 14%)",
-        "primary": "hsl(67, 18%, 68%)",
-        "secondary": "hsl(0, 75%, 65%)"
-      }
+    "name": "blue",
+    "light": {
+      "theme": "#dbeafe",
+      "theme-accent": "#93c5fd",
+      "theme-offset": "#3b82f6"
+    },
+    "dark": {
+      "theme": "#082f49",
+      "theme-accent": "#0284c7",
+      "theme-offset": "#38bdf8"
     }
   },
   {
-    "name": "fruit sorbet",
-    "variants": {
-      "base": {
-        "text": "hsl(0, 0%, 7%)",
-        "text-accent": "hsl(0, 0%, 0%)",
-        "bg": "hsl(63, 88%, 64%)",
-        "bg-accent": "hsl(63, 88%, 78%)",
-        "bg-shadow": "hsl(63, 83%, 57%)",
-        "primary": "hsl(0, 0%, 7%)",
-        "secondary": "hsl(0, 0%, 7%)"
-      },
-      "dark": {
-        "bg": "hsl(314, 88%, 51%)",
-        "bg-accent": "hsl(314, 88%, 71%)",
-        "bg-shadow": "hsl(314, 100%, 44%)"
-      }
+    "name": "green",
+    "light": {
+      "theme": "#d1fae5",
+      "theme-accent": "#6ee7b7",
+      "theme-offset": "#10b981"
+    },
+    "dark": {
+      "bg": "#0d1110",
+      "bg-accent": "#121e1b",
+      "bg-code": "#121e1b",
+      "theme": "#064e3b",
+      "theme-accent": "#047857",
+      "theme-offset": "#34d399"
+    }
+  },
+  {
+    "name": "purple",
+    "light": {
+      "theme": "#f3e8ff",
+      "theme-accent": "#d8b4fe",
+      "theme-offset": "#9333ea"
+    },
+    "dark": {
+      "bg": "#0f031a",
+      "bg-accent": "#1f0733",
+      "bg-code": "#1f0733",
+      "theme": "#581c87",
+      "theme-accent": "#9333ea",
+      "theme-offset": "#c084fc"
+    }
+  },
+  {
+    "name": "slate",
+    "light": {
+      "theme": "#f1f5f9",
+      "theme-accent": "#cbd5e1",
+      "theme-offset": "#475569"
+    },
+    "dark": {
+      "bg": "#020617",
+      "theme": "#1e293b",
+      "theme-accent": "#334155",
+      "theme-offset": "#9faec5"
     }
   }
 ]

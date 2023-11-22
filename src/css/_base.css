@@ -1,0 +1,126 @@
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: system-ui, sans-serif;
+  font-size: var(--step-0);
+  font-weight: var(--font-normal);
+}
+
+a {
+  color: var(--color-link);
+  text-underline-offset: 2px;
+  scroll-margin-block: var(--space-xl);
+}
+
+a:is(:hover, :focus-visible) {
+  color: var(--color-theme-offset);
+}
+
+a:focus-visible {
+  outline: var(--focus-outline);
+  outline-offset: var(--focus-outline-offset);
+}
+
+:is(strong, .font-bold) {
+  font-weight: var(--font-bold);
+  letter-spacing: -0.01em;
+}
+
+.font-semibold {
+  font-weight: var(--font-semibold);
+}
+
+:is(h1, h2, h3, h4) {
+  font-family: var(--font-display);
+  font-weight: normal;
+  text-wrap: balance;
+}
+
+:is(h1, .text-5) {
+  font-size: var(--step-5);
+  line-height: 1.1;
+}
+
+:is(.text-4) {
+  font-size: var(--step-4);
+  line-height: 1.1;
+}
+
+:is(h2, .text-3) {
+  font-size: var(--step-3);
+  line-height: 1.1;
+}
+
+:is(h3, .text-2) {
+  font-size: var(--step-2);
+  line-height: 1.3;
+}
+
+:is(h4, .text-1) {
+  font-size: var(--step-1);
+  line-height: 1.4;
+}
+
+.text-reset {
+  font: inherit;
+  line-height: inherit;
+  text-shadow: unset;
+  text-wrap: initial;
+}
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.85em;
+  line-height: 1.3;
+  margin-inline-start: 0.2rem;
+  margin-block-start: var(--space-2xs);
+}
+
+summary {
+  display: inline;
+  outline-offset: 3px;
+  list-style: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::before {
+  content: "+";
+  margin-inline-end: 0.2em;
+}
+
+details[open] summary::before {
+  content: "−";
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}
+
+.prose img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-l);
+}
+
+.prose * + :is(h2, h3, h4) {
+  --flow-space: var(--space-xl);
+}
+
+.prose pre[class*="language-"],
+.prose figure {
+  margin-block: var(--space-l) var(--space-s);
+  grid-column: popout;
+}

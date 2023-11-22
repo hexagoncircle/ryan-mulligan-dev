@@ -1,0 +1,311 @@
+<script webc:setup>
+  const { appearances } = $data.navigation;
+  const themes = $data.themes;
+</script>
+
+<!--- appearance --->
+<fieldset class="control-appearance">
+  <legend class="visually-hidden">Select appearance</legend>
+  <template webc:for="appearance of appearances" webc:nokeep>
+    <input
+      :id="`appearance-${appearance.id}`"
+      :value="appearance.value !== 'system' ? appearance.value : ''"
+      type="radio"
+      name="appearance"
+      class="visually-hidden" />
+    <label :for="`appearance-${appearance.id}`">
+      <span class="visually-hidden" @text="appearance.label"></span>
+      <inline-svg
+        class="icon"
+        aria-hidden="true"
+        :src="`./public/icons/${appearance.icon}.svg`"></inline-svg>
+    </label>
+  </template>
+  <div class="highlighter"></div>
+</fieldset>
+
+<!--- theme --->
+<target-toggler controls="theme-display">
+  <button aria-expanded="false">
+    <span class="visually-hidden">Select theme</span>
+    <inline-svg class="icon" aria-hidden="true" :src="`./public/icons/dropper.svg`"></inline-svg>
+  </button>
+</target-toggler>
+<div id="theme-display" hidden>
+  <fieldset class="control-theme">
+    <legend class="visually-hidden">Select theme</legend>
+    <div class="options">
+      <template webc:for="theme of themes" webc:nokeep>
+        <label :for="`theme-${theme.name}`" :data-theme="theme.name">
+          <span class="visually-hidden" @text="theme.name"></span>
+          <input :id="`theme-${theme.name}`" :value="theme.name" type="radio" name="theme" />
+        </label>
+      </template>
+    </div>
+  </fieldset>
+</div>
+
+<script webc:bucket="critical">
+  (function () {
+    let root = document.documentElement;
+    let body = document.body;
+
+    let appearance = localStorage.getItem("appearance");
+    let theme = localStorage.getItem("theme");
+
+    appearance && root.setAttribute("data-appearance", appearance);
+    theme && body.setAttribute("data-theme", theme);
+  })();
+</script>
+
+<script>
+  class ThemeMachine extends HTMLElement {
+    connectedCallback() {
+      this.setupControl("appearance", document.documentElement);
+      this.setupControl("theme", document.body);
+    }
+
+    handleChange(e, prop, el) {
+      const attr = `data-${prop}`;
+      const value = e.target.value;
+
+      if (!value) {
+        localStorage.removeItem(prop);
+        el.removeAttribute(attr);
+        return;
+      }
+
+      localStorage.setItem(prop, value);
+      el.setAttribute(attr, value);
+    }
+
+    setupControl(prop, el) {
+      const initialValue = localStorage.getItem(prop) || "";
+      const collection = this.querySelectorAll(`[name='${prop}']`);
+
+      for (let item of collection) {
+        item.checked = item.value === initialValue;
+        item.addEventListener("change", (e) => this.handleChange(e, prop, el));
+      }
+    }
+  }
+
+  if ("customElements" in window) {
+    window.customElements.define("theme-machine", ThemeMachine);
+  }
+</script>
+
+<style webc:scoped="theme-machine">
+  :host {
+    --_padding: 0.3em;
+    --_radius: var(--radius-pill);
+    --icon-size: 1.2em;
+
+    position: relative;
+    display: flex;
+    isolation: isolate;
+  }
+
+  @media (forced-colors: active) {
+    :host {
+      forced-color-adjust: none;
+    }
+  }
+
+  .control-appearance {
+    all: unset;
+    position: relative;
+    display: flex;
+    gap: var(--_padding);
+    background: var(--color-theme);
+    padding: var(--_padding);
+    border-radius: 360px;
+    isolation: isolate;
+    transform: translateZ(0);
+    inline-size: fit-content;
+    z-index: 2;
+  }
+
+  .control-appearance label {
+    display: grid;
+    place-items: center;
+    place-content: center;
+    border-radius: 50%;
+    padding: var(--_padding);
+    color: var(--color-theme-offset);
+    cursor: pointer;
+  }
+
+  .control-appearance input:checked + label {
+    color: currentcolor;
+  }
+
+  .control-appearance input:checked:focus-visible + label {
+    outline: var(--focus-outline);
+    outline-offset: 2px;
+  }
+
+  .control-appearance .highlighter {
+    content: "";
+    position: absolute;
+    top: var(--_padding);
+    left: var(--_padding);
+    aspect-ratio: 1;
+    height: calc(100% - var(--_padding) * 2);
+    background: var(--color-theme-accent);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: -1;
+    transition: translate 250ms cubic-bezier(0.65, 0, 0.35, 1);
+  }
+
+  .control-appearance input:focus-visible ~ .highlighter {
+    transition: unset;
+  }
+
+  .control-appearance input:nth-of-type(2):checked ~ .highlighter {
+    translate: calc(100% + var(--_padding));
+  }
+
+  .control-appearance input:nth-of-type(3):checked ~ .highlighter {
+    translate: calc(200% + var(--_padding) * 2);
+  }
+
+  target-toggler {
+    position: relative;
+    z-index: 1;
+  }
+
+  button {
+    --_pull: 2rem;
+    all: unset;
+    display: grid;
+    align-items: center;
+    cursor: pointer;
+    padding-block: calc(var(--_padding) * 2);
+    border-radius: 0 var(--_radius) var(--_radius) 0;
+    background-color: var(--color-theme-offset);
+    margin-inline-start: calc(var(--_pull) * -1);
+    padding-inline: calc(var(--_pull) + var(--_padding)) calc(var(--_padding) + 0.3rem);
+  }
+
+  button .icon {
+    scale: 1.01;
+    border-radius: var(--radius-round);
+  }
+
+  button:focus-visible .icon {
+    outline: 2px solid var(--color-bg-accent);
+    outline-offset: 2px;
+  }
+
+  #theme-display {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: grid;
+    align-items: start;
+    inline-size: calc(100% - var(--_padding));
+    block-size: 200%;
+    mask-image: linear-gradient(transparent 25%, black 0);
+    z-index: 0;
+  }
+
+  .control-theme {
+    display: flex;
+    gap: var(--space-3xs);
+    padding: var(--space-xs);
+    block-size: 50%;
+    border-radius: var(--_radius);
+    background-color: var(--color-theme-offset);
+  }
+
+  .control-theme::before {
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    inline-size: 100%;
+    block-size: 100%;
+    background-color: inherit;
+    z-index: -1;
+  }
+
+  .control-theme .options {
+    --_border-color: var(--color-theme-accent);
+    display: flex;
+    gap: var(--space-3xs);
+    justify-content: space-between;
+    inline-size: 100%;
+  }
+
+  .control-theme input {
+    --_size: 0.95em;
+
+    appearance: none;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: var(--_size);
+    height: var(--_size);
+    border: 2px solid var(--color-theme);
+    border-radius: var(--radius-round);
+    background-color: var(--color-theme-offset);
+    display: grid;
+    place-content: center;
+  }
+
+  .control-theme input::before {
+    --_size: 0.5em;
+    content: "";
+    width: var(--_size);
+    height: var(--_size);
+    border-radius: var(--radius-round);
+    background-color: var(--color-theme);
+    scale: 0;
+  }
+
+  .control-theme input:focus-visible {
+    outline: 2px solid var(--color-theme-accent);
+    outline-offset: 1px;
+  }
+
+  .control-theme input:checked::before {
+    scale: 1;
+    transition: 200ms scale cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  .control-theme input:checked {
+    background-color: transparent;
+  }
+
+  .control-theme input:active:not(:checked) {
+    translate: 0 1px;
+  }
+
+  /* Transition theme display */
+  button,
+  #theme-display {
+    --_transition: translate 300ms cubic-bezier(0.16, 1, 0.3, 1);
+    translate: var(--_padding) var(--_padding);
+    transition: var(--_transition);
+  }
+
+  .control-theme {
+    translate: 0 calc(100% - var(--_padding));
+    transition: var(--_transition);
+  }
+
+  button[aria-expanded="false"],
+  #theme-display[hidden] {
+    translate: 0 0;
+  }
+
+  #theme-display[hidden] .control-theme {
+    translate: 0 0;
+  }
+
+  #theme-display[hidden] input {
+    display: none;
+  }
+</style>

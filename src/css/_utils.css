@@ -1,0 +1,97 @@
+.skewer {
+  --angle: -3deg;
+  --unskew: rotate(calc(var(--angle) * -1)) skew(calc(var(--angle) * -1));
+  transform: rotate(var(--angle)) skew(var(--angle));
+}
+
+.unskew {
+  transform: var(--unskew);
+}
+
+.pseudo-gradient {
+  position: relative;
+  isolation: isolate;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: var(--radius-m);
+    background: linear-gradient(to right, transparent 20%, var(--color-theme));
+    mask-image: linear-gradient(70deg, transparent 25%, black);
+    z-index: -1;
+  }
+}
+
+.checkerboard-pattern {
+  background-image: conic-gradient(
+    var(--color-1, white) 90deg,
+    var(--color-2, black) 0 180deg,
+    var(--color-1, white) 0 270deg,
+    var(--color-2, black) 0
+  );
+  background-size: var(--bg-size, 36px) var(--bg-size, 36px);
+}
+
+.icon {
+  width: var(--icon-size, 1.75rem);
+  height: var(--icon-size, 1.75rem);
+}
+
+.multi-column {
+  column-width: var(--column-width, 250px);
+  column-gap: var(--column-gap, var(--space-m));
+}
+
+.scroll-x {
+  --scrollbar-offset: 4px;
+  max-width: 100%;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .scroll-x:focus-within {
+    scroll-behavior: smooth;
+  }
+}
+
+.scroll-x::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-x::-webkit-scrollbar {
+  height: 12px;
+  background-color: transparent;
+}
+
+.scroll-x::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.scroll-x:hover::-webkit-scrollbar,
+.scroll-x::-webkit-scrollbar:active {
+  background-color: var(--color-text);
+  box-shadow: inset var(--color-bg) 0 0 0 var(--scrollbar-offset);
+}
+
+.scroll-x:hover::-webkit-scrollbar-thumb,
+.scroll-x::-webkit-scrollbar-thumb:active {
+  background-color: var(--color-text);
+  border-left: var(--scrollbar-offset) solid var(--color-bg);
+  border-right: var(--scrollbar-offset) solid var(--color-bg);
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}

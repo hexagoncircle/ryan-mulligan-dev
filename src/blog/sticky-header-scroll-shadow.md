@@ -1,7 +1,7 @@
 ---
 title: Sticky Page Header Shadow on Scroll
 description: Applying a shadow to a sticky page header when scrolling using the Intersection Observer API.
-ogImage: /assets/social/sticky-page-header-shadow-scroll.png
+ogImage: /social/sticky-page-header-shadow-scroll.png
 date: 2023-04-02
 ---
 

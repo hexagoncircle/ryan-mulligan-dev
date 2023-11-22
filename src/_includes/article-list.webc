@@ -1,0 +1,36 @@
+<script webc:setup>
+  const posts = $data.collections.posts.sort((a, b) => b.data.date - a.data.date);
+</script>
+
+<ul class="flow" role="list" webc:root="override">
+  <li webc:if="!count || index < count" webc:for="(post, index) of posts">
+    <time :datetime="dateToISO(post.data.date)" @text="postDate(post.data.date)"></time>
+    <a class="text-1 font-semibold" :href="post.url" @text="post.data.title"></a>
+  </li>
+</ul>
+
+<style webc:scoped="article-list">
+  :host {
+    --flow-space: var(--space-m);
+  }
+
+  time {
+    display: block;
+    font-size: 0.7em;
+    font-weight: var(--font-semibold);
+    letter-spacing: -0.01em;
+  }
+
+  li:has(a:hover, a:focus-visible) time {
+    color: var(--color-theme-offset);
+  }
+
+  a {
+    text-wrap: balance;
+    outline-offset: 3px;
+  }
+
+  a:not(:hover, :focus-visible) {
+    text-decoration: none;
+  }
+</style>

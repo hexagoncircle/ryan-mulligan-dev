@@ -1,0 +1,66 @@
+.breakout {
+  --gutter-max: calc(1rem + 10vw);
+  --gap: var(--space-m);
+  --content: min(var(--page-max), 100% - var(--gap) * 2);
+  --gutter: minmax(var(--gap), var(--gutter-max));
+  --popout: minmax(0, 1rem);
+
+  display: grid;
+  grid-template-columns:
+    [full-start] 0
+    [gutter-start] var(--gutter)
+    [popout-start] var(--popout)
+    [content-start] var(--content) [content-end]
+    var(--popout) [popout-end]
+    var(--gutter) [gutter-end]
+    1fr [full-end];
+}
+
+:where(.breakout) > * {
+  grid-column: content;
+}
+
+.center {
+  margin-inline: auto;
+  padding-inline: var(--gutters, var(--page-gutters));
+  inline-size: min(var(--max, var(--page-max)), 100%);
+}
+
+.cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--row-gap, var(--gap, var(--space-m))) var(--column-gap, var(--gap, var(--space-m)));
+  align-items: var(--align, center);
+  justify-content: var(--justify, flex-start);
+}
+
+.flow > * + * {
+  margin-block-start: var(--flow-space, 1em);
+}
+
+.grid {
+  display: grid;
+  gap: var(--gap, var(--row-gap, var(--space-m))) var(--gap, var(--column-gap, var(--space-m)));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
+}
+
+.flex-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap, var(--row-gap, var(--space-m))) var(--gap, var(--column-gap, var(--space-m)));
+}
+
+.flex-grid > * {
+  flex: 1 1 var(--min, auto);
+}
+
+.stack {
+  display: grid;
+  grid-template-areas: "stack";
+
+  > *,
+  &::before,
+  &::after {
+    grid-area: stack;
+  }
+}

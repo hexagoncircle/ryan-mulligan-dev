@@ -1,12 +1,15 @@
 module.exports = {
   lang: "en",
-  domain: "ryanmulligan.dev",
-  url: process.env.URL || "http://localhost:8080",
-  baseUrl: "https://ryanmulligan.dev",
   title: "Ryan Mulligan",
   description:
     "Passenger through space and time, front-end web builder & bittersweet songs enthusiast",
-  author: "Ryan Mulligan",
-  twitterHandle: "hexagoncircle",
-  ogImage: "/assets/social/ryan-mulligan-dev.png",
+  domain: "ryanmulligan.dev",
+  url:
+    (process.env.CONTEXT === "production" ? process.env.URL : process.env.DEPLOY_PRIME_URL) ||
+    "http://localhost:8080",
+  ogImage: "/social/ryan-mulligan-dev.png",
+  author: {
+    name: "Ryan Mulligan",
+    email: "hey@ryanmulligan.dev",
+  },
 };

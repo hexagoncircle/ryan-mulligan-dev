@@ -1,0 +1,44 @@
+.callout {
+  grid-column: popout;
+  position: relative;
+  margin-block: var(--space-l) var(--space-s);
+  padding: var(--space-s);
+  border-radius: var(--radius-l);
+  background-color: var(--color-theme);
+  font-size: 0.875em;
+  isolation: isolate;
+}
+
+.callout::before,
+.callout::after {
+  --_offset-x: 20%;
+  --_offset-y: 40%;
+  font-family: var(--font-mono);
+  font-size: 0.5em;
+  position: absolute;
+  color: var(--color-theme-offset);
+  background: var(--color-bg);
+  border-radius: var(--radius-m);
+  padding: 0.2em 0.5em;
+}
+
+.callout::before {
+  content: "<aside>";
+  content: "<aside>" / "";
+  top: 0;
+  left: 0;
+  transform: translate(calc(var(--_offset-x) * -1), calc(var(--_offset-y) * -1));
+}
+
+.callout::after {
+  content: "</aside>";
+  content: "</aside>" / "";
+  bottom: 0;
+  right: 0;
+  transform: translate(var(--_offset-x), var(--_offset-y));
+}
+
+.callout code {
+  color: var(--color-text);
+  background-color: var(--color-theme-accent);
+}

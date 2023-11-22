@@ -1,0 +1,45 @@
+<script webc:setup>
+  const { menu } = $data.navigation;
+</script>
+
+<header webc:root="override">
+  <nav class="cluster">
+    <ul class="cluster" role="list">
+      <li webc:for="item of menu">
+        <a
+          :href="item.url"
+          :aria-current="item.url === $data.page.url ? 'page' : null"
+          @text="item.label"></a>
+      </li>
+    </ul>
+    <theme-machine></theme-machine>
+  </nav>
+</header>
+
+<style webc:scoped="site-header">
+  :host {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    padding-inline: var(--page-gutters);
+    margin-block: var(--page-gutters) var(--space-xl);
+    z-index: 1;
+  }
+
+  nav {
+    --row-gap: var(--space-s);
+    --justify: center;
+  }
+
+  a {
+    display: grid;
+    place-items: center;
+    place-content: center;
+    color: currentcolor;
+    text-decoration: none;
+  }
+
+  a:is(:hover, :focus-visible) {
+    color: var(--color-theme-offset);
+  }
+</style>

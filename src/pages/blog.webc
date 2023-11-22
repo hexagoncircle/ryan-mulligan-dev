@@ -1,0 +1,17 @@
+---
+permalink: "blog/"
+title: "Blog posts by Ryan Mulligan"
+description: "Blogging my general thoughts and rambles, code snippets, and front-end
+web dev discoveries"
+classnames: "flow"
+---
+
+<h1 class="title | skewer">The Blog</h1>
+<p style="--flow-space: var(--space-xl)">
+  Sometimes general thoughts and rambles but more often these posts follow my experimentation,
+  learning, and front-end development discoveries that were worth a share with the world wide web.
+  All feedback is always welcome. Below is the whole collection, starting with the most recent
+  stuff. Follow my
+  <a href="/feed.xml">RSS feed</a> to stay in the loop when new content gets published.
+</p>
+<article-list></article-list>

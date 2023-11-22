@@ -1,0 +1,111 @@
+---
+permalink: "/"
+---
+
+<script webc:setup>
+  const { date, timeOfDay } = getDeployDate();
+</script>
+
+<h1 class="visually-hidden">Ryan Mulligan</h1>
+<scroll-pen></scroll-pen>
+<section class="flow prose">
+  <p>
+    This is a website made by me, <strong>Ryan Mulligan</strong>, a front-end builder of the web and
+    fellow passenger through space and time.
+  </p>
+  <ul>
+    <li>
+      The latest site build was deployed in the
+      <span @text="timeOfDay" webc:nokeep></span> on <span @text="date" webc:nokeep></span>.
+    </li>
+    <li webc:if="$data.weather">
+      During deployment, the weather over here was
+      <span @text="$data.weather.temperature" webc:nokeep></span
+      ><template webc:if="$data.weather.status" webc:nokeep>
+        and <span @text="$data.weather.status" webc:nokeep></span></template
+      >.
+    </li>
+    <li webc:if="$data.spotify">I was listening to <last-played-track></last-played-track></li>
+  </ul>
+  <h2>Most recent articles</h2>
+  <article-list count="3"></article-list>
+  <p class="cta arrow-end">
+    <a href="/blog/">Read more articles</a>
+  </p>
+  <h2>The bit about myself</h2>
+  <p>
+    I'm a fun-loving front-end engineer that strives to bridge the gap between web design and
+    development, building user experiences with positive interactivity through thoughtful
+    interfaces. I advocate for modern best practices on the web and love working with diverse,
+    inclusive teams. Currently, I build for the web with a lovely team at Netlify. When I'm not
+    coding, you can catch me noodling on my acoustic guitar or blasting out rhythms if there's a
+    drum kit ready for a lefty nearby.
+  </p>
+  <p>Want to know more? <say-hey-hey></say-hey-hey></p>
+  <h2>Me around the web</h2>
+  <p>
+    Other virtual networks where you can find me if you're feeling adventurous. Let's connect and
+    fork and toot or whatever.
+  </p>
+  <ul class="multi-column" role="list">
+    <li webc:for="item of $data.navigation.social">
+      <a class="social-link cluster" :href="item.url" target="_blank" rel="me">
+        <inline-svg
+          class="icon"
+          aria-hidden="true"
+          :src="`./public/icons/${item.id}.svg`"></inline-svg>
+        <span @text="item.label" webc:nokeep></span>
+      </a>
+    </li>
+  </ul>
+
+  <h2>Some personal joy</h2>
+  <ul class="multi-column">
+    <li>All things CSS</li>
+    <li>Finding the perfect custom cubic Bézier curve</li>
+    <li>Building an inclusive web</li>
+    <li>Any beach, any ocean</li>
+    <li>Early morning coffee</li>
+    <li>Nick Drake's <em>Pink Moon</em> in its entirety</li>
+    <li>Cool side of the pillow</li>
+    <li>Guitar noodling</li>
+    <li>Trashing a drum kit</li>
+  </ul>
+</section>
+
+<style>
+  .grid {
+    --flow-space: var(--space-xs);
+    --gap: 2px;
+    --min: 14rem;
+  }
+
+  .cta {
+    --flow-space: var(--space-m);
+  }
+
+  .social-link {
+    --icon-size: 1em;
+    --gap: var(--space-3xs);
+    display: inline-flex;
+  }
+
+  scroll-pen {
+    margin-block-start: var(--space-m);
+  }
+
+  [data-scroll-pen-controls] {
+    --flow-space: var(--space-2xs);
+    margin-block-start: var(--space-s);
+    margin-block-end: var(--space-m);
+    position: relative;
+    opacity: 0;
+    animation: fade-in 200ms 500ms ease-out forwards;
+  }
+
+  @media (min-width: 35rem) {
+    [data-scroll-pen-controls] {
+      max-width: 35rem;
+    }
+  }
+</style>

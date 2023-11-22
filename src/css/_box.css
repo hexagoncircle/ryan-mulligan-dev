@@ -1,0 +1,5 @@
+.box {
+  border-radius: var(--radius-m);
+  border: 1px solid var(--color-theme-accent);
+  background: linear-gradient(60deg, var(--color-bg), var(--color-theme));
+}

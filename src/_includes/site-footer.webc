@@ -1,0 +1,61 @@
+<script webc:setup>
+  const { menu } = $data.navigation;
+</script>
+
+<footer class="breakout" webc:root="override">
+  <p class="copyright">
+    © <strong>Ryan Mulligan</strong> from day one to this magic moment in
+    <span @text="new Date().getFullYear()" webc:nokeep></span>
+  </p>
+  <p>
+    Assembled with a boundless affinity for the web
+    <inline-svg
+      class="icon"
+      aria-hidden="true"
+      src="./public/icons/heart.svg"
+    ></inline-svg>
+  </p>
+  <ul class="cluster" style="--gap: var(--space-2xs)" role="list">
+    <li webc:for="item of menu">
+      <a
+        :href="item.url"
+        :aria-current="item.url === page.url ? 'page' : null"
+        @text="item.label"
+      ></a>
+    </li>
+  </ul>
+</footer>
+
+<style webc:scoped="site-footer">
+  :host {
+    position: sticky;
+    top: 100vh;
+    padding-block: var(--space-2xl);
+    font-size: 0.75em;
+  }
+
+  p {
+    text-wrap: balance;
+  }
+
+  .copyright {
+    margin-inline-start: -0.1em;
+  }
+
+  .icon {
+    --_size: 1.2em;
+
+    position: relative;
+    top: 0.2em;
+    margin-inline: 0.1em;
+    width: var(--_size);
+    height: var(--_size);
+    color: red;
+  }
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 0.2em;
+  }
+</style>

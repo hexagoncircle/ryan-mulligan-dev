@@ -1,7 +1,6 @@
-const fs = require("fs");
-const fetch = require("node-fetch");
 const unionBy = require("lodash/unionBy");
-const domain = require("./meta.js").domain;
+const fs = require("fs");
+const { domain } = require("./meta.js");
 
 require("dotenv").config();
 
@@ -79,7 +78,6 @@ function readFromCache() {
 
 module.exports = async function () {
   const cache = readFromCache();
-
   if (cache.children.length) {
     console.log(`> ${cache.children.length} webmentions loaded from cache`);
   }

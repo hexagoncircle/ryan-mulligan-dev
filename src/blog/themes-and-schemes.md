@@ -2,7 +2,7 @@
 title: Website Themes and Color Schemes
 description: In this post I share how I created theme variants based on light and dark mode preferences.
 subtitle: Tailoring site themes based on light and dark mode preferences
-ogImage: /assets/social/website-themes-and-color-schemes.png
+ogImage: /social/website-themes-and-color-schemes.png
 date: 2022-02-01
 ---
 
