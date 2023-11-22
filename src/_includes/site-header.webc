@@ -26,9 +26,14 @@
     z-index: 1;
   }
 
-  nav {
-    --row-gap: var(--space-s);
-    --justify: center;
+  @media (max-width: 40rem) {
+    nav {
+      --column-gap: clamp(var(--space-s), 5vw, var(--space-m));
+      --row-gap: var(--space-s);
+      --justify: space-between;
+
+      inline-size: 100%;
+    }
   }
 
   a {
