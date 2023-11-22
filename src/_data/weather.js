@@ -54,7 +54,7 @@ const getWeatherStatus = (code) => {
 
 module.exports = async () => {
   let res = await EleventyFetch(url.toString(), {
-    duration: "1d",
+    duration: "1h",
     type: "json",
   });
 
