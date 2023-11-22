@@ -17,8 +17,9 @@ I plan to dive into some site features in future blog posts, but here's a quick 
 
 - I rebuilt from scratch. I stuck with 11ty but this time leaned 100% into [WebC](https://www.11ty.dev/docs/languages/webc/) for templating.
 - There are some pretty neat (to me!) web components to be discovered in this project. Both of the following were built to progressively enhance the experience.
-- The `<scroll-pen>` extends the homepage CodePen collection's keyboard interactions, adds video previews that can be disabled, introduces input range slider control, and the ability to toggle the skew.
-- The `<theme-machine>` is what you might guess: A total package for changing the site appearance and adjusting theme colors.
+  - The `<scroll-pen>` extends the homepage CodePen collection's keyboard interactions, adds video previews that can be disabled, introduces input range slider control, and the ability to toggle the skew.
+  - The `<theme-machine>` is what you might guess: A total package for changing the site appearance and adjusting theme colors.
+- The homepage includes a few dynamic stats about the latest site deployment date, what the weather was like during that time, and the latest track I had been jamming to on Spotify.
 - I've been messing around with [scroll-driven animations in CSS](/blog/scroll-driven-animations/) a lot and why not be a little extra? When using a supported browser on a wide enough viewport, notice that a progress timer appears on blog posts. The progress ring fills itself up as the page is scrolled.
 - My eleventy config is feeling more organized than ever. It was very much inspired by Lene Saile's [Organizing the Eleventy config file](https://www.lenesaile.com/en/blog/organizing-the-eleventy-config-file/) article.
 
