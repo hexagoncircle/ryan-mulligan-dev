@@ -26,10 +26,12 @@
 
 <!--- theme --->
 <target-toggler controls="theme-display">
-  <span class="visually-hidden">Select theme</span>
-  <inline-svg class="icon" aria-hidden="true" :src="`./public/icons/dropper.svg`"></inline-svg>
+  <button aria-expanded="false">
+    <span class="visually-hidden">Select theme</span>
+    <inline-svg class="icon" aria-hidden="true" :src="`./public/icons/dropper.svg`"></inline-svg>
+  </button>
 </target-toggler>
-<div id="theme-display">
+<div id="theme-display" hidden>
   <fieldset class="control-theme">
     <legend class="visually-hidden">Select theme</legend>
     <div class="options">

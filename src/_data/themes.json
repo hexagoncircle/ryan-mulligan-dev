@@ -4,6 +4,7 @@
     "light": {
       "bg": "#fffefd",
       "bg-accent": "#f7f5f5",
+      "bg-code": "#0f172a",
       "text": "#020617",
       "text-accent": "#334155",
       "link": "#2563eb",
@@ -15,6 +16,7 @@
     "dark": {
       "bg": "#020617",
       "bg-accent": "#0f172a",
+      "bg-code": "#0f172a",
       "text": "#f8fafc",
       "text-accent": "#f1f5f9",
       "link": "#7ab6ff",
@@ -34,6 +36,7 @@
     "dark": {
       "bg": "#0c0508",
       "bg-accent": "#240813",
+      "bg-code": "#240813",
       "theme": "#4f0c27",
       "theme-accent": "#9d174d",
       "theme-offset": "#f9a8d4"
@@ -62,6 +65,7 @@
     "dark": {
       "bg": "#0d1110",
       "bg-accent": "#121e1b",
+      "bg-code": "#121e1b",
       "theme": "#064e3b",
       "theme-accent": "#047857",
       "theme-offset": "#34d399"
@@ -76,6 +80,8 @@
     },
     "dark": {
       "bg": "#0f031a",
+      "bg-accent": "#1f0733",
+      "bg-code": "#1f0733",
       "theme": "#581c87",
       "theme-accent": "#9333ea",
       "theme-offset": "#c084fc"

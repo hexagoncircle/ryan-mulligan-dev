@@ -9,7 +9,7 @@ pre {
 pre[class*="language-"] {
   padding: var(--space-xs);
   color: var(--color-text-accent);
-  background-color: var(--color-bg-accent);
+  background-color: var(--color-bg-code);
   border-radius: var(--radius-m);
 }
 
@@ -209,10 +209,12 @@ pre[class*="language-"] {
 }
 
 /* CodePen iframe */
-.codepen {
-  padding: var(--space-s);
-  color: var(--color-text-accent);
-  border: 2px dashed var(--color-theme);
+.codepen a {
+  --icon-size: 1.2em;
+
+  display: flex;
+  align-items: center;
+  gap: var(--space-3xs);
 }
 
 .prose .cp_embed_wrapper,

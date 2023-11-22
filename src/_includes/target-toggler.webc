@@ -3,31 +3,30 @@
     constructor() {
       super();
       this.name = this.tagName.toLowerCase();
-      this.toggle = this._createToggle();
-      this.append(this.toggle);
+      this.toggle = this.setupToggle();
     }
 
     connectedCallback() {
-      this.toggle = this.querySelector("button");
-
       if (!this.visible) this.target.setAttribute("hidden", "");
     }
 
-    _createToggle() {
-      const button = document.createElement("button");
+    setupToggle() {
+      const button = this.querySelector("button");
 
-      button.innerHTML = this.innerHTML;
+      if (!button) {
+        throw new Error(`${this.name} requires a <button> element.`);
+        return;
+      }
+
       button.setAttribute("aria-expanded", this.visible);
       button.setAttribute("aria-controls", this.controls);
       button.addEventListener("click", this.handleClick.bind(this));
 
-      this.innerHTML = "";
       return button;
     }
 
     handleClick(event) {
-      let expanded =
-        this.toggle.getAttribute("aria-expanded") === "true" || false;
+      let expanded = this.toggle.getAttribute("aria-expanded") === "true" || false;
 
       this.toggle.setAttribute("aria-expanded", !expanded);
       this.target.toggleAttribute("hidden", expanded);
@@ -37,9 +36,7 @@
       const attr = this.getAttribute("controls");
 
       if (!attr) {
-        throw new Error(
-          `${this.name} requires a "controls" attribute set to an element id`
-        );
+        throw new Error(`${this.name} requires a "controls" attribute set to an element id`);
       }
 
       return attr;
@@ -49,9 +46,7 @@
       const el = document.getElementById(this.controls);
 
       if (!el) {
-        throw new Error(
-          `${this.name} cannot find element with id "${this.controls}".`
-        );
+        throw new Error(`${this.name} cannot find element with id "${this.controls}".`);
       }
 
       return el;
@@ -59,10 +54,7 @@
 
     get visible() {
       const attr = "target-visible";
-      return (
-        (this.hasAttribute(attr) && this.getAttribute(attr) !== "false") ||
-        false
-      );
+      return (this.hasAttribute(attr) && this.getAttribute(attr) !== "false") || false;
     }
   }
 
