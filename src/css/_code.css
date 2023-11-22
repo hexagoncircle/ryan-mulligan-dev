@@ -8,7 +8,7 @@ pre {
 
 pre[class*="language-"] {
   padding: var(--space-xs);
-  color: var(--color-text-accent);
+  color: var(--color-text-code);
   background-color: var(--color-bg-code);
   border-radius: var(--radius-m);
 }
