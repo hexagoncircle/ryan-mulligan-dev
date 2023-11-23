@@ -4,40 +4,6 @@ const getWebmentionsByType = (mentions, mentionType) => {
   return mentions.filter((entry) => mentionType.split(", ").includes(entry["wm-property"]));
 };
 
-// const getWebmentionsForUrl = (webmentions, url) => {
-//   const commentTypes = ["in-reply-to", "mention-of", "like-of", "repose-of"];
-//   const allowedHTML = {
-//     allowedTags: ["b", "i", "em", "strong"],
-//   };
-
-//   const orderByDate = (a, b) => new Date(a.published) - new Date(b.published);
-
-//   const checkRequiredFields = (entry) => {
-//     const { author, published, content } = entry;
-//     return author.name && published && content;
-//   };
-
-//   const sanitizeContent = (entry) => {
-//     const { html, text } = entry.content;
-
-//     if (html) {
-//       entry.content.value =
-//         html.length > 2000 ? `mentioned in entry["wm-source"]` : sanitizeHTML(html, allowedHTML);
-//     } else {
-//       entry.content.value = sanitizeHTML(text, allowedHTML);
-//     }
-
-//     return entry;
-//   };
-
-//   return webmentions.children
-//     .filter((entry) => entry["wm-target"] === url)
-//     .filter((entry) => commentTypes.includes(entry["wm-property"]))
-//     .filter(checkRequiredFields)
-//     .sort(orderByDate)
-//     .map(sanitizeContent);
-// };
-
 const getWebmentionsForUrl = (webmentions, url) => {
   const commentTypes = ["in-reply-to", "mention-of"];
   const allowedHTML = {
