@@ -25,7 +25,7 @@
       <span class="visually-hidden">Learn about webmentions</span>
     </a>
   </h2>
-  <details webc:if="!bucket.length" webc:for="bucket of buckets" :class="bucket.label">
+  <details webc:if="bucket.collection.length" webc:for="bucket of buckets" :class="bucket.label">
     <summary>
       <strong @text="bucket.collection.length"></strong>
       <span @text="bucket.label" webc:nokeep></span>
