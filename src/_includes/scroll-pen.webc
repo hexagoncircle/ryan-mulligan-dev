@@ -43,11 +43,11 @@
         <span class="visually-hidden">Scroll horizontally</span>
       </label>
       <div class="wrap cluster">
-        <label data-scroll-pen-unskewer class="cluster checkbox">
+        <label data-scroll-pen-unskewer class="cluster checkbox text-label">
           <input type="checkbox" />
           Unskew
         </label>
-        <label data-scroll-pen-nopreview class="cluster checkbox">
+        <label data-scroll-pen-nopreview class="cluster checkbox text-label">
           <input type="checkbox" />
           Disable preview
         </label>
@@ -287,9 +287,6 @@
   .checkbox {
     --align: center;
     --column-gap: var(--space-3xs);
-    font-size: 0.6em;
-    font-weight: var(--font-semibold);
-    text-transform: uppercase;
   }
 
   [data-scroll-pen-controls] {

@@ -6,7 +6,7 @@
   <nav class="cluster">
     <ul class="cluster" role="list">
       <li class="jump-to-content">
-        <a href="#main">Jump to main content</a>
+        <a href="#main" class="text-label">Jump to main content</a>
       </li>
       <li webc:for="item of menu">
         <a
@@ -67,9 +67,8 @@
     }
 
     a {
-      padding: var(--space-3xs) var(--space-2xs);
+      padding: var(--space-2xs) var(--space-s);
       background-color: var(--color-bg);
-      font-size: 0.9em;
     }
   }
 </style>

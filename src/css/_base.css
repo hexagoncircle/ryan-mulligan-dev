@@ -74,6 +74,12 @@ a:focus-visible {
   text-wrap: initial;
 }
 
+.text-label {
+  font-size: 0.6em;
+  font-weight: var(--font-semibold);
+  text-transform: uppercase;
+}
+
 figcaption {
   text-align: center;
   font-style: italic;
