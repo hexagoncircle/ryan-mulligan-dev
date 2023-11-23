@@ -25,13 +25,11 @@
 </fieldset>
 
 <!--- theme --->
-<target-toggler controls="theme-display">
-  <button aria-expanded="false">
-    <span class="visually-hidden">Select theme</span>
-    <inline-svg class="icon" aria-hidden="true" :src="`./public/icons/dropper.svg`"></inline-svg>
-  </button>
-</target-toggler>
-<div id="theme-display" hidden>
+<button class="theme-display-toggle" aria-expanded="false" aria-controls="theme-display">
+  <span class="visually-hidden">Select theme</span>
+  <inline-svg class="icon" aria-hidden="true" :src="`./public/icons/dropper.svg`"></inline-svg>
+</button>
+<div id="theme-display" class="theme-display-wrapper" hidden>
   <fieldset class="control-theme">
     <legend class="visually-hidden">Select theme</legend>
     <div class="options">
@@ -60,9 +58,21 @@
 
 <script>
   class ThemeMachine extends HTMLElement {
+    constructor() {
+      super();
+      this.themeToggle;
+      this.themeDisplay;
+    }
+
     connectedCallback() {
       this.setupControl("appearance", document.documentElement);
       this.setupControl("theme", document.body);
+
+      this.themeToggle = this.querySelector(".theme-display-toggle");
+      this.themeDisplay = this.querySelector(".theme-display-wrapper");
+
+      this.handleClickOutside();
+      this.themeToggle.addEventListener("click", this.handleThemeToggleClick.bind(this));
     }
 
     handleChange(e, prop, el) {
@@ -77,6 +87,26 @@
 
       localStorage.setItem(prop, value);
       el.setAttribute(attr, value);
+    }
+
+    handleThemeToggleClick() {
+      let expanded = this.themeToggle.getAttribute("aria-expanded") === "true" || false;
+
+      this.themeToggle.setAttribute("aria-expanded", !expanded);
+      this.themeDisplay.toggleAttribute("hidden", expanded);
+    }
+
+    handleClickOutside() {
+      document.addEventListener(
+        "click",
+        (e) => {
+          if (!e.target.closest("theme-machine")) {
+            this.themeToggle.setAttribute("aria-expanded", false);
+            this.themeDisplay.toggleAttribute("hidden", true);
+          }
+        },
+        false
+      );
     }
 
     setupControl(prop, el) {
@@ -171,14 +201,11 @@
     translate: calc(200% + var(--_padding) * 2);
   }
 
-  target-toggler {
-    position: relative;
-    z-index: 1;
-  }
-
-  button {
+  .theme-display-toggle {
     --_pull: 2rem;
     all: unset;
+    position: relative;
+    z-index: 1;
     display: grid;
     align-items: center;
     cursor: pointer;
@@ -189,17 +216,17 @@
     padding-inline: calc(var(--_pull) + var(--_padding)) calc(var(--_padding) + 0.3rem);
   }
 
-  button .icon {
+  .theme-display-toggle .icon {
     scale: 1.01;
     border-radius: var(--radius-round);
   }
 
-  button:focus-visible .icon {
+  .theme-display-toggle:focus-visible .icon {
     outline: 2px solid var(--color-bg-accent);
     outline-offset: 2px;
   }
 
-  #theme-display {
+  .theme-display-wrapper {
     position: absolute;
     top: 0;
     right: 0;
@@ -284,8 +311,8 @@
   }
 
   /* Transition theme display */
-  button,
-  #theme-display {
+  .theme-display-toggle,
+  .theme-display-wrapper {
     --_transition: translate 300ms cubic-bezier(0.16, 1, 0.3, 1);
     translate: var(--_padding) var(--_padding);
     transition: var(--_transition);
@@ -296,16 +323,16 @@
     transition: var(--_transition);
   }
 
-  button[aria-expanded="false"],
-  #theme-display[hidden] {
+  .theme-display-toggle[aria-expanded="false"],
+  .theme-display-wrapper[hidden] {
     translate: 0 0;
   }
 
-  #theme-display[hidden] .control-theme {
+  .theme-display-wrapper[hidden] .control-theme {
     translate: 0 0;
   }
 
-  #theme-display[hidden] input {
+  .theme-display-wrapper[hidden] input {
     display: none;
   }
 </style>
