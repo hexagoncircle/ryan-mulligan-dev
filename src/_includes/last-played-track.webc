@@ -8,24 +8,26 @@
     :href="track.url"
     :title="`Open ${track.name} by ${artist} on Spotify`"
     target="_blank"
-    ref="noopener"
-  >
+    ref="noopener">
     <inline-svg class="icon" aria-hidden="true" src="./public/icons/music-notes.svg"></inline-svg>
-    <template @text="track.name" webc:nokeep></template>
-  </a>
+    <template @text="track.name" webc:nokeep></template
+  ></a>
   by <span @text="artist" webc:nokeep></span>.
 </template>
 
 <style webc:scoped="last-played-track">
   :host {
     --icon-size: 1em;
+    --icon-offset: 0.1em;
 
-    display: inline-flex;
-    align-items: baseline;
-    gap: 0.1em;
+    position: relative;
+    margin-inline-start: calc(var(--icon-size) + var(--icon-offset));
   }
 
   .icon {
-    align-self: center;
+    position: absolute;
+    top: 0.1em;
+    right: calc(100% + var(--icon-offset));
+    text-decoration: none;
   }
 </style>
