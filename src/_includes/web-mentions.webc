@@ -96,11 +96,12 @@
   }
 
   a {
+    position: relative;
     display: block;
     border-radius: var(--radius-round);
   }
 
-  a:is(:hover, :focus-visible) {
+  :is(.likes, .reposts) a:is(:hover, :focus-visible) {
     z-index: 1;
 
     .image {
@@ -152,6 +153,6 @@
     position: absolute;
     right: 0;
     top: 0;
-    transform: translate(0.25em, -0.25em);
+    transform: translate(0.5em, -0.5em);
   }
 </style>
