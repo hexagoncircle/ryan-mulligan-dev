@@ -15,9 +15,7 @@ async function fetchWebmentions(since, perPage = 10000) {
   }
 
   if (!TOKEN) {
-    console.warn(
-      "> unable to fetch webmentions: no access token specified in environment."
-    );
+    console.warn("> unable to fetch webmentions: no access token specified in environment.");
     return false;
   }
 
@@ -29,9 +27,7 @@ async function fetchWebmentions(since, perPage = 10000) {
 
   if (response.ok) {
     const feed = await response.json();
-    console.log(
-      `> ${feed.children.length} new webmentions fetched from ${API_ORIGIN}`
-    );
+    console.log(`> ${feed.children.length} new webmentions fetched from ${API_ORIGIN}`);
     return feed;
   }
 
@@ -65,11 +61,14 @@ function readFromCache() {
   const filePath = `${CACHE_DIR}/webmentions.json`;
 
   if (fs.existsSync(filePath)) {
+    console.log("Reading webmentions from cache dir");
     const cacheFile = fs.readFileSync(filePath);
     return JSON.parse(cacheFile);
   }
 
   // no cache found.
+  console.log("No webmentions cache found");
+
   return {
     lastFetched: null,
     children: [],
@@ -83,18 +82,16 @@ module.exports = async function () {
   }
 
   // Only fetch new mentions in production
-  if (process.env.URL) {
-    const feed = await fetchWebmentions(cache.lastFetched);
+  const feed = await fetchWebmentions(cache.lastFetched);
 
-    if (feed) {
-      const webmentions = {
-        lastFetched: new Date().toISOString(),
-        children: mergeWebmentions(cache, feed),
-      };
+  if (feed) {
+    const webmentions = {
+      lastFetched: new Date().toISOString(),
+      children: mergeWebmentions(cache, feed),
+    };
 
-      writeToCache(webmentions);
-      return webmentions;
-    }
+    writeToCache(webmentions);
+    return webmentions;
   }
 
   return cache;
