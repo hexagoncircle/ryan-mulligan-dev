@@ -5,6 +5,9 @@
 <header webc:root="override">
   <nav class="cluster">
     <ul class="cluster" role="list">
+      <li class="jump-to-content">
+        <a href="#main">Jump to main content</a>
+      </li>
       <li webc:for="item of menu">
         <a
           :href="item.url"
@@ -26,6 +29,10 @@
     z-index: 1;
   }
 
+  nav {
+    position: relative;
+  }
+
   @media (max-width: 40rem) {
     nav {
       --column-gap: clamp(var(--space-s), 5vw, var(--space-m));
@@ -44,7 +51,25 @@
     text-decoration: none;
   }
 
-  a:is(:hover, :focus-visible) {
+  a:hover {
     color: var(--color-theme-offset);
+  }
+
+  .jump-to-content {
+    position: absolute;
+    top: -9999px;
+    left: 0;
+
+    &:focus-within {
+      top: 50%;
+      translate: 0 -50%;
+      z-index: 1;
+    }
+
+    a {
+      padding: var(--space-3xs) var(--space-2xs);
+      background-color: var(--color-bg);
+      font-size: 0.9em;
+    }
   }
 </style>

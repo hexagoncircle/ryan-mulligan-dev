@@ -53,7 +53,10 @@
   <body>
     <script @raw="getBundle('js', 'critical')" webc:keep></script>
     <site-header></site-header>
-    <main :class="`breakout flow${classnames ? ` ${classnames}` : ''}`" @raw="content"></main>
+    <main
+      id="main"
+      :class="`breakout flow${classnames ? ` ${classnames}` : ''}`"
+      @raw="content"></main>
     <site-footer></site-footer>
     <script @raw="getJs(page.url)" webc:keep></script>
     <script async defer src="https://scripts.withcabin.com/hello.js" webc:keep></script>
