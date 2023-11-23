@@ -5,7 +5,8 @@
   "scripts": {
     "build": "eleventy",
     "clean": "rm -rf _site && rm -rf .cache",
-    "start": "eleventy --serve --quiet"
+    "start": "eleventy --serve --quiet",
+    "postinstall": "patch-package"
   },
   "repository": {
     "type": "git",
