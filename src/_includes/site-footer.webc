@@ -9,22 +9,21 @@
   </p>
   <p>
     Assembled with a boundless affinity for the web
-    <inline-svg
-      class="icon"
-      aria-hidden="true"
-      src="./public/icons/heart.svg"
-    ></inline-svg>
+    <inline-svg class="icon" aria-hidden="true" src="./public/icons/heart.svg"></inline-svg>
   </p>
   <ul class="cluster" style="--gap: var(--space-2xs)" role="list">
     <li webc:for="item of menu">
       <a
         :href="item.url"
         :aria-current="item.url === page.url ? 'page' : null"
-        @text="item.label"
-      ></a>
+        @text="item.label"></a>
     </li>
   </ul>
 </footer>
+
+<script>
+  console.log("I appreciate you and glad you're here ❤️");
+</script>
 
 <style webc:scoped="site-footer">
   :host {
