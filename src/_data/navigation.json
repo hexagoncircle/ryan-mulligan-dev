@@ -34,6 +34,12 @@
       "id": "rss",
       "label": "RSS",
       "url": "/feed.xml"
+    },
+    {
+      "id": "issue",
+      "label": "Report an issue",
+      "url": "https://github.com/hexagoncircle/ryan-mulligan-dev/issues/new",
+      "target": "_blank"
     }
   ],
   "social": [

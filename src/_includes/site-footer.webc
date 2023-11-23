@@ -16,6 +16,8 @@
       <a
         :href="item.url"
         :aria-current="item.url === page.url ? 'page' : null"
+        :target="item.target"
+        :ref="item.target ? 'noreferrer noopener' : null"
         @text="item.label"></a>
     </li>
   </ul>

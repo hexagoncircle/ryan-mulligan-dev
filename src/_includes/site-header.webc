@@ -8,7 +8,7 @@
       <li class="jump-to-content">
         <a href="#main" class="text-label">Jump to main content</a>
       </li>
-      <li webc:for="item of menu">
+      <li webc:if="index < 3" webc:for="(item, index) of menu">
         <a
           :href="item.url"
           :aria-current="item.url === $data.page.url ? 'page' : null"
