@@ -1,0 +1,19 @@
+---
+permalink: 404.html
+title: This page is missing
+description: Head back to the home page or check out the blog
+---
+
+<section class="flow prose" style="--flow-space: var(--space-xl)">
+  <h1 class="skewer">And you may ask yourself, "Well, how did I get here?"</h1>
+
+  <p>
+    This is a <strong>404</strong> page. It means that this page no longer exists. There's a
+    possibility that it never did. Best bet is to head back <a href="/">home</a> or check out the
+    <a href="/blog">blog</a> for that content you crave. Or, if you've now got "Once in a Lifetime"
+    stuck in your head, maybe roll with that and pop on
+    <a href="https://youtu.be/5IsSpAOD6K8?si=XunuMw8BGaCDy1Yj" rel="noopener noreferrer"
+      >the music video</a
+    >.
+  </p>
+</section>
