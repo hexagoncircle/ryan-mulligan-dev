@@ -3,11 +3,11 @@
   --gap: var(--space-m);
   --content: min(var(--page-max), 100% - var(--gap) * 2);
   --gutter: minmax(var(--gap), var(--gutter-max));
-  --popout: minmax(0, 1rem);
+  --popout: minmax(0px, 1rem);
 
   display: grid;
   grid-template-columns:
-    [full-start] 0
+    [full-start] 0px
     [gutter-start] var(--gutter)
     [popout-start] var(--popout)
     [content-start] var(--content) [content-end]
@@ -17,7 +17,7 @@
 }
 
 :where(.breakout) > * {
-  grid-column: content;
+  grid-column: content-start / content-end;
 }
 
 .center {
