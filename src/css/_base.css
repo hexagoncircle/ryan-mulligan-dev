@@ -7,7 +7,7 @@
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
-  font-family: system-ui, sans-serif;
+  font-family: var(--font-base);
   font-size: var(--step-0);
   font-weight: var(--font-normal);
 }
