@@ -2,9 +2,8 @@
 
 @import "_reset.css" layer(reset);
 
-@import "_font.css" layer(vars);
+@import "_dimensions.css" layer(vars);
 @import "_motion.css" layer(vars);
-@import "_sizes.css" layer(vars);
 @import "_type.css" layer(vars);
 
 @import "_base.css" layer(layout);

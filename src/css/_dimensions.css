@@ -1,6 +1,6 @@
 /* @link https://utopia.fyi/space/calculator?c=320,16,1.2,1240,18,1.25,5,2,&s=0.75|0.5|0.25,1.5|2|3|4|5,s-l&g=s,l,xl,12 */
 
-html {
+:root {
   --space-3xs: clamp(0.25rem, 0.2283rem + 0.1087vw, 0.3125rem);
   --space-2xs: clamp(0.5rem, 0.4783rem + 0.1087vw, 0.5625rem);
   --space-xs: clamp(0.75rem, 0.7065rem + 0.2174vw, 0.875rem);
@@ -16,9 +16,6 @@ html {
   --radius-l: 0.5rem;
   --radius-pill: 360px;
   --radius-round: 50%;
-
-  --size-border: 1px;
-  --size-input: 1rem;
 
   --page-gutters: clamp(var(--space-m), 3vw, var(--space-xl));
   --page-max: 44rem;
