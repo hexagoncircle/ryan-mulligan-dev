@@ -45,7 +45,9 @@
             :alt="item.author.name"
             width="60"
             height="60" />
-          <div webc:else class="image"></div>
+          <div webc:else class="image stack">
+            <inline-svg class="icon" src="./public/icons/user.svg"></inline-svg>
+          </div>
         </a>
         <div class="reply" webc:if="isReply(item['wm-property'])">
           <template @html="item.content.output" webc:nokeep></template>
@@ -116,7 +118,12 @@
     aspect-ratio: 1;
     border-radius: var(--radius-round);
     border: var(--border-width) solid var(--color-bg);
-    background-color: var(--color-bg-accent);
+    background-color: var(--color-theme);
+  }
+
+  .image .icon {
+    margin: auto;
+    color: var(--color-text-accent);
   }
 
   .replies li {
