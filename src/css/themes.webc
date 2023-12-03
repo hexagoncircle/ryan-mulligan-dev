@@ -8,7 +8,7 @@ excludeFromSitemap: true
   const lightningcssConfig = require("./11ty/css/config");
 
   const getThemeVars = (variant) => {
-    let css = "";
+    let result = "";
 
     function outputVars(theme) {
       let vars = "";
@@ -28,17 +28,17 @@ excludeFromSitemap: true
 
     $data.themes.map((theme, index) => {
       if (index === 0) {
-        css += outputVars(theme);
-        css += outputThemeVars(theme);
+        result += outputVars(theme);
+        result += outputThemeVars(theme);
       } else {
-        css += outputThemeVars(theme);
+        result += outputThemeVars(theme);
       }
     });
 
-    return css;
+    return result;
   };
 
-  let result = `
+  let css = `
     :where(html) {
       ${getThemeVars("light")}
     }
@@ -59,7 +59,7 @@ excludeFromSitemap: true
   `;
 
   let { code } = transform({
-    code: Buffer.from(result),
+    code: Buffer.from(css),
     ...lightningcssConfig,
   });
 
