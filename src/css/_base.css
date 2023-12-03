@@ -15,6 +15,7 @@ body {
 a {
   color: var(--color-link);
   text-underline-offset: 2px;
+  text-decoration-skip-ink: auto;
   scroll-margin-block: var(--space-xl);
 }
 
