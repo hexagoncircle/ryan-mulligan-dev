@@ -3,55 +3,65 @@ permalink: "/css/themes.css"
 excludeFromSitemap: true
 ---
 
-<script webc:setup>
-  const themes = $data.themes;
-</script>
-
 <script webc:type="js">
-  const getThemeVariables = (variant) => {
-    let output = "";
+  const { transform } = require("lightningcss");
+  const lightningcssConfig = require("./11ty/css/config");
+
+  const getThemeVars = (variant) => {
+    let css = "";
 
     function outputVars(theme) {
+      let vars = "";
+
       for (let prop in theme[variant]) {
-        output += `--color-${prop}: ${theme[variant][prop]};\n`;
+        vars += `--color-${prop}: ${theme[variant][prop]};`;
       }
+
+      return vars;
     }
 
-    themes.map((theme, index) => {
+    function outputThemeVars(theme) {
+      return `[data-theme="${theme.name}"] { 
+        ${outputVars(theme)}
+      }`;
+    }
+
+    $data.themes.map((theme, index) => {
       if (index === 0) {
-        outputVars(theme);
-        output += `[data-theme="${theme.name}"] {\n`;
-        outputVars(theme);
-        output += `}\n`;
+        css += outputVars(theme);
+        css += outputThemeVars(theme);
       } else {
-        output += `[data-theme="${theme.name}"] {\n`;
-        outputVars(theme);
-        output += `}\n`;
+        css += outputThemeVars(theme);
       }
     });
 
-    return output;
+    return css;
   };
 
-  `
-@layer vars {
-  :where(html) {
-    ${getThemeVariables("light")}
-  }
-
-  @media (prefers-color-scheme: dark) {
-    :where(html:not([data-appearance])) {
-      ${getThemeVariables("dark")}
+  let result = `
+    :where(html) {
+      ${getThemeVars("light")}
     }
-  }
 
-  [data-appearance="light"] {
-    ${getThemeVariables("light")}
-  }
+    @media (prefers-color-scheme: dark) {
+      :where(html:not([data-appearance])) {
+        ${getThemeVars("dark")}
+      }
+    }
 
-  [data-appearance="dark"] {
-    ${getThemeVariables("dark")}
-  }
-}
+    [data-appearance="light"] {
+      ${getThemeVars("light")}
+    }
+
+    [data-appearance="dark"] {
+      ${getThemeVars("dark")}
+    }
   `;
+
+  let { code } = transform({
+    code: Buffer.from(result),
+    ...lightningcssConfig,
+  });
+
+  code;
 </script>
