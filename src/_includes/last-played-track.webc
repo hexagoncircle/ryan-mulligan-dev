@@ -6,7 +6,7 @@
   <a
     class="last-played-track"
     :href="track.url"
-    :title="`Open ${track.name} by ${artist} on Spotify`"
+    :title="`Listen to ${track.name} by ${artist} on Spotify`"
     target="_blank"
     ref="noopener">
     <inline-svg class="icon" aria-hidden="true" src="./public/icons/music-notes.svg"></inline-svg>
