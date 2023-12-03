@@ -154,6 +154,10 @@
     word-break: break-word;
   }
 
+  .author-source {
+    align-self: baseline;
+  }
+
   .reply-source {
     display: grid;
     place-items: center;
