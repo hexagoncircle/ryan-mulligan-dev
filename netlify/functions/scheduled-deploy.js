@@ -1,11 +1,8 @@
 import fetch from "node-fetch";
 import { schedule } from "@netlify/functions";
 
-const BUILD_HOOK =
-  "https://api.netlify.com/build_hooks/642cf9ebbb1b6847f8cf5470";
-
 const handler = schedule("0 0 * * 1,5", async () => {
-  await fetch(BUILD_HOOK, {
+  await fetch(process.env.SCHEDULED_DEPLOY_BUILD_HOOK_URL, {
     method: "POST",
   }).then((response) => {
     console.log("Build hook response:", response);
