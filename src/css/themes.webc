@@ -39,18 +39,14 @@ excludeFromSitemap: true
   };
 
   let css = `
-    :where(html) {
+    :root {
       ${getThemeVars("light")}
     }
 
     @media (prefers-color-scheme: dark) {
-      :where(html:not([data-appearance])) {
+      :root:not([data-appearance]) {
         ${getThemeVars("dark")}
       }
-    }
-
-    [data-appearance="light"] {
-      ${getThemeVars("light")}
     }
 
     [data-appearance="dark"] {
