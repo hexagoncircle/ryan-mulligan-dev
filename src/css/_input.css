@@ -13,6 +13,16 @@ input[type="checkbox"] {
   flex-shrink: 0;
 }
 
+button.link {
+  display: inline;
+  cursor: pointer;
+  padding: 0;
+  border-width: 0;
+  background-color: transparent;
+  font: inherit;
+  line-height: inherit;
+}
+
 @mixin range-track {
   background-color: var(--color-track);
   border-radius: var(--radius-track);

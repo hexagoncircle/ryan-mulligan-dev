@@ -12,18 +12,19 @@ body {
   font-weight: var(--font-normal);
 }
 
-a {
+:is(a, .link) {
   color: var(--color-link);
+  text-decoration: underline;
   text-underline-offset: 2px;
   text-decoration-skip-ink: auto;
   scroll-margin-block: var(--space-xl);
 }
 
-a:is(:hover, :focus-visible) {
+:is(a, .link):where(:hover, :focus-visible) {
   color: var(--color-theme-offset);
 }
 
-a:focus-visible {
+:is(a, .link):focus-visible {
   outline: var(--focus-outline);
   outline-offset: var(--focus-outline-offset);
 }

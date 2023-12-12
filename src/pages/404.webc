@@ -8,10 +8,20 @@ description: Head back to the home page or check out the blog
 
 <p style="--flow-space: var(--space-xl)">
   This is a <strong>404</strong> page. It means that this page no longer exists. There's a
-  possibility that it never did. Best bet is to head back <a href="/">home</a> or check out the
-  <a href="/blog">blog</a> for that content you crave. Or, if you've now got "Once in a Lifetime"
-  stuck in your head, maybe roll with that and pop on
-  <a href="https://youtu.be/5IsSpAOD6K8?si=XunuMw8BGaCDy1Yj" rel="noopener noreferrer"
-    >the music video</a
-  >.
+  possibility that it never did. Same as it ever was.
 </p>
+<p>
+  So what now? Head back <a href="/">home</a> or check out the
+  <a href="/blog">blog</a> for that content you crave. Or, if you've now got "Once in a Lifetime"
+  stuck in your head, maybe roll with that and pop on <target-toggler controls="music-video"><button class="link">the music video</button></button></target-toggler>.
+</p>
+<figure style="--flow-space: var(--space-l)" id="music-video">
+  <iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/5IsSpAOD6K8?si=isBB-nC0CAnVwk05"
+  title="Once in a Lifetime by Talking Heads"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  allowfullscreen></iframe>
+</figure>
