@@ -16,5 +16,5 @@ description: Head back to the home page or check out the blog
   stuck in your head, maybe roll with that and pop on <target-toggler controls="music-video"><button class="link">the music video</button></button></target-toggler>.
 </p>
 <figure style="--flow-space: var(--space-l)" id="music-video">
-  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/5IsSpAOD6K8?si=wWovKuUw3IDgEPSW&rel=0" title="Once in a Lifetime by Talking Heads" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <lite-youtube videoid="5IsSpAOD6K8" params="rel=0"></lite-youtube>
 </figure>
