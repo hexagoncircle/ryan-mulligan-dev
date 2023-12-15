@@ -1,5 +1,12 @@
 <script webc:setup>
   const { title, items } = $data.codepens;
+
+  function setDimensionValue(i) {
+    let large = "600";
+    let small = "300";
+
+    return i % 3 === 0 ? large : small;
+  }
 </script>
 
 <article class="scroll-x skewer" tabindex="-1" webc:root>
@@ -17,10 +24,16 @@
             webc:is="eleventy-image"
             :src="`./public/images/codepen/${item.id}.png`"
             alt=""
-            width="600"
-            height="600" />
+            :width="setDimensionValue(index)"
+            :height="setDimensionValue(index)" />
           <template webc:if="item.preview">
-            <video muted loop playsinline preload="none" width="400" height="400">
+            <video
+              muted
+              loop
+              playsinline
+              preload="none"
+              :width="setDimensionValue(index)"
+              :height="setDimensionValue(index)">
               <source :src="`/videos/codepen/${item.id}.mp4`" type="video/mp4" />
             </video>
           </template>
