@@ -23,6 +23,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLayoutAlias("post", "post.webc");
 
   eleventyConfig.addPassthroughCopy({ public: "/" });
+  eleventyConfig.addPassthroughCopy({ "node_modules/@11ty/is-land/is-land.js": "js/is-land.js" });
+  eleventyConfig.addPassthroughCopy({
+    "node_modules/@zachleat/snow-fall/snow-fall.js": "js/snow-fall.js",
+  });
 
   eleventyConfig.setServerOptions({
     showAllHosts: false,
