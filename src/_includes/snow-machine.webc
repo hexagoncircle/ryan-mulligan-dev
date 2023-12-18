@@ -72,13 +72,13 @@
   button:not(.activated) {
     cursor: pointer;
     opacity: 0;
-    animation: appear var(--_duration) var(--_delay) var(--_ease) forwards,
+    animation: snow-fall-toggle-appear var(--_duration) var(--_delay) var(--_ease) forwards,
       fade-in 200ms var(--_delay) ease-out forwards;
   }
 
   button.activated {
     pointer-events: none;
-    animation: disappear 1.4s ease-out forwards;
+    animation: snow-fall-toggle-disappear 1.4s ease-out forwards;
   }
 
   button:not(.activated):active {
@@ -90,13 +90,13 @@
     place-self: center;
   }
 
-  @keyframes appear {
+  @keyframes snow-fall-toggle-appear {
     from {
       translate: 0 40%;
     }
   }
 
-  @keyframes disappear {
+  @keyframes snow-fall-toggle-disappear {
     30% {
       background-color: transparent;
     }
