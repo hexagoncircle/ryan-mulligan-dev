@@ -1,5 +1,10 @@
 const codepen = require("./codepen");
 const media = require("./media");
+const meta = require("../../src/_data/meta.js");
+
+const metaTitle = (title) => title || meta.title;
+const metaDescription = (description) => description || meta.description;
+const metaOGImage = (source) => meta.url + (source || meta.ogImage);
 
 const mailToPath = (subject) => {
   if (!subject) {
@@ -11,6 +16,9 @@ const mailToPath = (subject) => {
 const shortcodes = {
   ...codepen,
   ...media,
+  metaTitle,
+  metaDescription,
+  metaOGImage,
   mailToPath,
 };
 
