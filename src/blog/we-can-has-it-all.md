@@ -46,7 +46,7 @@ Using `:has()` to alter layout and filter collections of elements is incredibly 
 
 ## Skate or theme!
 
-In the next demo, the select dropdown acts as a progressive enhancement. The skateboard's theme will update based on the option selected.
+In the next demo, the select dropdown acts as a progressive enhancement. The skateboard's theme will update based on the option selected. The following is a simplified example:
 
 ```scss
 :root {
