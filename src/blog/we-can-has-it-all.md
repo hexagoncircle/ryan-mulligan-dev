@@ -1,7 +1,7 @@
 ---
 title: We can :has it all
 description: The functional :has() CSS pseudo class is available in all evergreen browsers.
-ogImage: /we-can-has-it-all.png
+ogImage: /social/we-can-has-it-all.png
 date: 2023-12-19
 ---
 
