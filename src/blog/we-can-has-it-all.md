@@ -9,7 +9,7 @@ date: 2023-12-19
 
 With [the release of Firefox 121.0](https://www.mozilla.org/en-US/firefox/121.0/releasenotes/), I'm excited to see that my semi-dusty `:has()` demos are finally realizing their full potential in Firefox. The amount of opportunity unlocked with this selector seems nearly infinite. It can simplify some of the more complex CSS selectors and hacks used in the past. It also opens the door to replacing JavaScript solutions that weren't yet possible to achieve with only CSS.
 
-This post is merely a celebration of `:has()` browser support and shares a quick dive into some of my previous experiments. At the end of this article are helpful resources that do an amazing job explaining how the selector works and the unbelieveable power it gives us.
+This post is merely a celebration of `:has()` browser support and shares a quick dive into some of my previous experiments. At the end of this article are [helpful resources](#helpful-resources) that do an amazing job explaining how the selector works and the unbelieveable power it gives us.
 
 ## Themes, layouts, and filters
 
