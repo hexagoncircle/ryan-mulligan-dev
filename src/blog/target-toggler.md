@@ -2,7 +2,7 @@
 title: <target-toggler> Web Component
 description: A web component to toggle the appearance of page elements.
 ogImage: /social/target-toggler.png
-date: 2023-12-21
+date: 2023-12-22
 ---
 
 There are very rare occasions that I want `<details>` element disclosure widget-style funtionality but would like to have the `<summary>` element detached or live outside of it's related `<details>` container. Typically it's related to design constraints and layout styles: A `<summary>` element appears inline with other controls or content.
