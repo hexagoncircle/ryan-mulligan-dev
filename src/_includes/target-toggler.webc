@@ -3,20 +3,24 @@
 <script>
   class TargetToggler extends HTMLElement {
     connectedCallback() {
-      this.setupToggle();
-      if (!this.visible) this.target.setAttribute("hidden", "");
-    }
-
-    setupToggle() {
       this.toggle = this.querySelector("button");
 
       if (!this.toggle) {
-        throw new Error(`${this.tagName} must contain a <button> element.`);
+        throw new Error(`${this.localName} must contain a <button> element.`);
       }
 
+      if (!this.visible) this.target.setAttribute("hidden", "");
+
+      this.controller = new AbortController();
+      const { signal } = this.controller;
+
       this.toggle.setAttribute("aria-expanded", this.visible);
-      this.toggle.setAttribute("aria-controls", this.controls);
-      this.toggle.addEventListener("click", this.handleClick.bind(this));
+      this.toggle.setAttribute("aria-controls", this.targetId);
+      this.toggle.addEventListener("click", () => this.handleClick(), { signal });
+    }
+
+    disconnectedCallback() {
+      this.controller.abort();
     }
 
     handleClick() {
@@ -26,24 +30,24 @@
       this.target.toggleAttribute("hidden", expanded);
     }
 
-    get controls() {
-      const attr = this.getAttribute("controls");
-
-      if (!attr) {
-        throw new Error(`${this.tagName} requires a "controls" attribute set to an element id`);
-      }
-
-      return attr;
-    }
-
     get target() {
-      const el = document.getElementById(this.controls);
+      const el = document.getElementById(this.targetId);
 
       if (!el) {
-        throw new Error(`${this.tagName} cannot find element with id "${this.controls}".`);
+        throw new Error(`${this.localName} cannot find element with id "${this.targetId}".`);
       }
 
       return el;
+    }
+
+    get targetId() {
+      const attr = this.getAttribute("target-id");
+
+      if (!attr) {
+        throw new Error(`${this.localName} requires a "target-id" attribute set to an element id`);
+      }
+
+      return attr;
     }
 
     get visible() {
@@ -52,13 +56,15 @@
     }
   }
 
-  if ("customElements" in window) {
-    window.customElements.define("target-toggler", TargetToggler);
-  }
+  window.customElements.define("target-toggler", TargetToggler);
 </script>
 
 <style>
-  target-toggler {
-    display: inline-block;
+  target-toggler:not(:defined) {
+    display: none;
+  }
+
+  target-toggler:defined {
+    display: contents;
   }
 </style>

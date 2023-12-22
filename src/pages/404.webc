@@ -13,7 +13,7 @@ description: Head back to the home page or check out the blog
 <p>
   So what now? Head back <a href="/">home</a> or check out the
   <a href="/blog">blog</a> for that content you crave. Or, if you've now got "Once in a Lifetime"
-  stuck in your head, maybe roll with that and pop on <target-toggler controls="music-video"><button class="link">the music video</button></button></target-toggler>.
+  stuck in your head, maybe roll with that and pop on <target-toggler target-id="music-video"><button class="link">the music video</button></button></target-toggler>.
 </p>
 <figure style="--flow-space: var(--space-l)" id="music-video">
   <lite-youtube videoid="5IsSpAOD6K8" params="rel=0"></lite-youtube>
