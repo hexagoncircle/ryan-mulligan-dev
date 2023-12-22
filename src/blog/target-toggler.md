@@ -5,12 +5,12 @@ ogImage: /social/target-toggler.png
 date: 2023-12-22
 ---
 
-There are very rare occasions that I want `<details>` element disclosure widget-style funtionality but would like to have the `<summary>` element detached or live outside of it's related `<details>` container. Typically it's related to design constraints and layout styles: A `<summary>` element appears inline with other controls or content.
+There are very rare occasions that I want `<details>` element disclosure widget-style funtionality but would like to have the `<summary>` element detached or live outside of it's related `<details>` container. This commonly stems from designs that may, for example, expect a toggle button to appear inline with other controls or content. Here's my attempt at a Web Component to handle that pattern.
 
 - [Source code](https://github.com/hexagoncircle/target-toggler)
 - [Demo](https://hexagoncircle.github.io/target-toggler/demo.html)
 
-The gist of this Web Component is to enhance an HTML `<button>` with the ability to toggle an element's visibility anywhere on a page. Simply wrap a button element with this component and supply a `target-id` attribute that matches the `id` of any page element.
+The gist of this component is to enhance an HTML `<button>` with the ability to toggle an element's visibility anywhere on a page. Simply wrap a button element with this component and supply a `target-id` attribute that matches the `id` of any page element.
 
 ```html
 <script type="module" src="target-toggler.js"></script>
@@ -22,11 +22,11 @@ The gist of this Web Component is to enhance an HTML `<button>` with the ability
 <section>A special announcement</section>
 
 <section id="more-info">
-  <!-- some good extra info -->
+  <!-- some additional information -->
 </section>
 ```
 
-A `hidden` attribute will be added to the targeted `more-info` element. Now the button toggle can control the visibility of that piece of content. Want that content to be visible by default? Add a `target-visible` attribute.
+In the above example, a `hidden` attribute will be added to the targeted `more-info` element. Now the button toggle can control the visibility of that piece of content. Want that content to be visible by default? Add a `target-visible` attribute.
 
 ```html
 <target-toggler target-id="more-info" target-visible>
@@ -34,7 +34,7 @@ A `hidden` attribute will be added to the targeted `more-info` element. Now the 
 </target-toggler>
 ```
 
-Be sure to check out [the repo demo page](https://hexagoncircle.github.io/target-toggler/demo.html) for examples of this component in action.
+Be sure to check out [the demo page](https://hexagoncircle.github.io/target-toggler/demo.html) for examples of this component in action.
 
 ## Improvements
 
