@@ -39,3 +39,8 @@ Be sure to check out [the demo page](https://hexagoncircle.github.io/target-togg
 ## Improvements
 
 Want to weigh in? [Add a new issue](https://github.com/hexagoncircle/target-toggler/issues/new) to the repo and share your ideas! I highly value any community feedback on how to improve this implementation.
+
+## Helpful resources
+
+- [Open UI: Invoker Buttons](https://open-ui.org/components/invokers.explainer/)
+- [12 days of Web: Web Components](https://12daysofweb.dev/2023/web-components/)
