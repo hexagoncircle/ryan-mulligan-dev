@@ -103,6 +103,10 @@
     border-radius: var(--radius-round);
   }
 
+  a:focus-visible {
+    outline-offset: unset;
+  }
+
   :is(.likes, .reposts) a:is(:hover, :focus-visible) {
     z-index: 1;
 
