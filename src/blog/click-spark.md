@@ -9,8 +9,14 @@ Last week I had made this fun little experiment. When clicking or tapping on the
 
 Try it out in the CodePen demo below.
 
-{% codepen "https://codepen.io/hexagoncircle/pen/bGZdWyw" %}
+{% codepen "https://codepen.io/hexagoncircle/pen/bGZdWyw", 350 %}
 
-The spark color can be customized by setting any color value to a `--click-spark-color` custom property. Have your sparks your way.
+The spark color can be modified by setting a color value to the `--click-spark-color` custom property:
+
+```html
+<click-spark style="--click-spark-color: hotpink"></click-spark>
+```
+
+Have your sparks your way. ✨
 
 
