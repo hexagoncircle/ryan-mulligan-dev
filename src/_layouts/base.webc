@@ -49,7 +49,6 @@
     <link rel="stylesheet" href="/css/themes.css" webc:keep />
     <link rel="stylesheet" href="/css/styles.css" webc:keep />
     <style @raw="getCss(page.url)" webc:keep></style>
-    <script type="module" src="/js/is-land.js" webc:keep></script>
   </head>
   <body>
     <script @raw="getBundle('js', 'critical')" webc:keep></script>
@@ -59,7 +58,6 @@
       :class="`breakout flow${classnames ? ` ${classnames}` : ''}`"
       @raw="content"></main>
     <site-footer></site-footer>
-    <snow-machine></snow-machine>
     <script @raw="getJs(page.url)" webc:keep></script>
     <script async defer src="https://scripts.withcabin.com/hello.js" webc:keep></script>
   </body>
