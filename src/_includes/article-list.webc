@@ -27,14 +27,11 @@
   }
 
   .info {
+    --icon-size: 1em;
+
     font-size: 0.7em;
     font-weight: var(--font-semibold);
     letter-spacing: -0.01em;
-  }
-
-  .source {
-    --icon-size: 1em;
-    color: var(--color-text-accent);
   }
 
   li:has(a:hover, a:focus-visible) :is(time, .source) {
