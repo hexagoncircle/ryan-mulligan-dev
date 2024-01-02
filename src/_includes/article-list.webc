@@ -1,11 +1,23 @@
 <script webc:setup>
-  const posts = $data.collections.posts.sort((a, b) => b.data.date - a.data.date);
+  const articles = $data.articles.map((article) => ({ ...article, date: new Date(article.date) }));
+  const blog = $data.collections.posts.map(({ data, url }) => ({ ...data, url }));
+  const posts = [...blog, ...articles].sort((a, b) => b.date - a.date);
 </script>
 
 <ul class="flow" role="list" webc:root="override">
   <li webc:if="!count || index < count" webc:for="(post, index) of posts">
-    <time :datetime="dateToISO(post.data.date)" @text="postDate(post.data.date)"></time>
-    <a class="text-1 font-semibold" :href="post.url" @text="post.data.title"></a>
+    <div class="info">
+      <time :datetime="dateToISO(post.date)" @text="postDate(post.date)"></time>
+      <span webc:if="post.source" class="source">
+        — <template @text="post.source" webc:nokeep></template>
+        <inline-svg class="icon" src="./public/icons/arrow-square-out.svg"></inline-svg>
+      </span>
+    </div>
+    <a
+      class="text-1 font-semibold"
+      :href="post.url"
+      :target="post.source ? '_blank' : null"
+      @text="post.title"></a>
   </li>
 </ul>
 
@@ -14,14 +26,18 @@
     --flow-space: var(--space-m);
   }
 
-  time {
-    display: block;
+  .info {
     font-size: 0.7em;
     font-weight: var(--font-semibold);
     letter-spacing: -0.01em;
   }
 
-  li:has(a:hover, a:focus-visible) time {
+  .source {
+    --icon-size: 1em;
+    color: var(--color-text-accent);
+  }
+
+  li:has(a:hover, a:focus-visible) :is(time, .source) {
     color: var(--color-theme-offset);
   }
 

@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Positioning Overlay Content with CSS Grid",
+    "url": "https://css-tricks.com/positioning-overlay-content-with-css-grid/",
+    "source": "CSS-Tricks",
+    "date": "2021-06-28"
+  },
+  {
+    "title": "A Dynamically-Sized Sticky Sidebar with HTML and CSS",
+    "url": "https://css-tricks.com/a-dynamically-sized-sticky-sidebar-with-html-and-css/",
+    "source": "CSS-Tricks",
+    "date": "2020-11-20"
+  },
+  {
+    "title": "React Slider with Parallax Hover Effects",
+    "url": "https://tympanus.net/codrops/2019/08/20/react-slider-with-parallax-hover-effects/",
+    "source": "Codrops",
+    "date": "2019-08-20"
+  },
+  {
+    "title": "CodePen Radio 357: Ryan Mulligan",
+    "url": "https://blog.codepen.io/2022/03/02/357-ryan-mulligan/",
+    "source": "CodePen Podcast",
+    "date": "2022-03-02"
+  }
+]
