@@ -1,4 +1,4 @@
-const codepen = (url, defaultTab = "result", height = 600, preview = false) => {
+const codepen = (url, height = 600, preview = false, defaultTab = "result") => {
   const base = "https://codepen.io";
   const pathname = new URL(url).pathname.split("/");
   const user = pathname[1];
