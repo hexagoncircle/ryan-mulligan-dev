@@ -39,6 +39,6 @@
 }
 
 .callout code {
-  color: var(--color-text);
-  background-color: var(--color-theme-accent);
+  padding-inline: unset;
+  background-color: transparent;
 }
