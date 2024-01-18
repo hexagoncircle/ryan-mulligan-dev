@@ -19,7 +19,7 @@ blank_issues_enabled: false
 contact_links:
   - name: 🐛 Bug Report
     url: [link to create bug report]
-    about: Please file a bug report in our team's of choice.
+    about: Please file a bug report in our team's app of choice.
   - name: 💡 Feature Request
     url: [link to create feature request]
     about: Have some great ideas to improve our site or this codebase? Open a new feature request in our team's app of choice.
