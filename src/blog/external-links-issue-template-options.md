@@ -16,7 +16,7 @@ There is a solution for this! It's new to me, so in the spirit of "today I learn
 
 We can [configure the template chooser](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository#configuring-the-template-chooser) with external links and even lock down the ability to create new issues on the repo. Create a `config.yml` file in the repo's `.github/ISSUE_TEMPLATE` directory.
 
-The issue template directory may not exist if templates have not been set up on the repo yet. If manually created, the directory should exist at the root of the project.
+The `.github/ISSUE_TEMPLATE` directory may not exist yet if templates have not been configured for the repo. If it needs to be manually created, it should live at the root of the project.
 {.callout}
 
 ```yaml
