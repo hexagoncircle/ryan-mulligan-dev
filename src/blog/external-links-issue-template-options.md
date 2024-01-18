@@ -14,7 +14,7 @@ There is a solution for this! It's new to me, so in the spirit of "today I learn
 
 ## Creating custom config
 
-We can [configure the template chooser](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository#configuring-the-template-chooser) with external links and even lock down the ability to create new issues on the repo. Create a `config.yml` file in the repo's `.github/ISSUE_TEMPLATE` directory.
+We can [configure the template chooser](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository#configuring-the-template-chooser) with external links and even lock down the ability to open new issues on the repo. To do this, we create a `config.yml` file in the repo's `.github/ISSUE_TEMPLATE` directory.
 
 The `.github/ISSUE_TEMPLATE` directory may not exist yet if templates have not been configured for the repo. If it needs to be manually created, the path should start at the root of the project.
 {.callout}
