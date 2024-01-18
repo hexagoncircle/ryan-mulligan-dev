@@ -2,7 +2,7 @@
 layout: post
 title: Using External Links as GitHub Issue Template Options
 description: Customize the GitHub issue template chooser to handle new bug reports or feature requests in a team's preferred task management app.
-ogimage: /social/external-links-issue-template-options.png
+ogImage: /social/external-links-issue-template-options.png
 date: 2024-01-17
 ---
 
