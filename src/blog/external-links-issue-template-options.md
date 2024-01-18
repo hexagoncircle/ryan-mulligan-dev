@@ -29,6 +29,6 @@ The screenshot below shows how this will render on the "issue chooser" page. The
 
 {% image "./public/images/github-template-chooser-example.jpg", "Screenshot of custom external options added to the GitHub issue selection interface." %}
 
-The first line in that code example, `blank_issues_enabled: false` removes the hyperlink that appears below these custom options. If this isn't set, folks would still have the ability to add a new blank issue.
+The first line in that code example, `blank_issues_enabled: false` removes the hyperlink that appears below these custom options. If this isn't set, folks would still have the ability to add a new blank issue on the repo.
 
 With all of this in order, the repo can stay free from user-entered issues, reducing some friction and redundancy. As an aside: I'm not 100% sure, but I'd wager that automated bot issues would still appear in the repo's issue queue.
