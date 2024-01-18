@@ -6,7 +6,7 @@ ogImage: /social/external-links-issue-template-options.png
 date: 2024-01-18
 ---
 
-I've been down the road of [configuring custom issue templates](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository) on GitHub repos before. It even seems like there have been some nice improvements to help make creating them even easier. Thanks for setting me up with nice bug report template to start from so I don't have to build one from scratch. 🐛
+I've been down the road of [configuring custom issue templates](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository) on GitHub repos before. It even seems like there have been some nice improvements to help make creating them even easier. Thanks for setting me up with a reasonable bug report template to start from so I don't have to build one from scratch. 🐛
 
 However, teams may rely on a variety of other tools—Jira, Asana, Linear, an Excel spreadsheet (Kidding! But maybe?)—to manage a backlog of tasks. I'd prefer teammates not add new issues on the repo only to then recreate those items in some other workflow. It would be great if folks could be guided to the right place and avoid double entry.
 
