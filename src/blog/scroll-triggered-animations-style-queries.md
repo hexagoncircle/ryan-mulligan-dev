@@ -3,7 +3,7 @@ layout: post
 title: CSS Scroll-triggered Animations with Style Queries
 description: Combine scroll-driven animations and style queries to trigger an animation sequence powered only by CSS.
 ogImage: /social/scroll-triggered-animations-style-queries.png
-date: 2024-01-24
+date: 2024-01-27
 ---
 
 Topping my CSS wishlist in 2024 are [scroll-driven animations](https://developer.chrome.com/docs/css-ui/scroll-driven-animations) and [style queries](https://developer.chrome.com/docs/css-ui/style-queries). At the time of writing this post, both lack full support but I've got fingers crossed they become available in all evergreen browsers not too long from now. I had done some [exploration of scroll-driven animations](/blog/scroll-driven-animations/) but have not yet spent much time with style queries beyond reading and daydreaming about the amazing possibilities they'll unlock.
