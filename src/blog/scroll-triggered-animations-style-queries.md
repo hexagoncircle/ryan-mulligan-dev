@@ -52,7 +52,7 @@ Once the `.box` element reaches the end of the `animation-range`, the `trigger` 
 
 ## Additional thoughts
 
-I find this fascinating. Modern CSS continues to blow my mind. However, keep in mind that the CodePen demo works well here because the animated elements are hidden outside of the viewport on initial page load. We'd see the text animate on load if it were on screen, which may not be ideal. There are a few ways to handle supressing animation playback on load using JavaScript but I'd love to have this ability through a CSS rule.
+I find this fascinating. Modern CSS continues to deliver fresh delight. However, keep in mind that the CodePen demo works well here because the animated elements are hidden outside of the viewport on initial page load. We'd see the text animate on load if it were visible on screen, which may not be ideal. There are a few ways to handle supressing animation playback on load using JavaScript but I'd love to have this control through a CSS rule.
 
 Another thought I had, which Bramus asks the reader in the intro of his [article about scroll-driven animations](https://www.bram.us/2023/10/05/run-a-scroll-driven-animation-only-once/):
 
