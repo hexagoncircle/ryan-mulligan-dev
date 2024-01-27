@@ -48,6 +48,9 @@ The magic is in the following CSS code. It has been stripped back from the demo 
 }
 ```
 
+Note that only the `animation-range` end value is relevant for the trigger. Declaring `animation-range-end: contain 40%` instead would also work here. However, the demo includes the start value to explicitly set where the `fade` animation starts on the same element.
+{.callout}
+
 Once the `.box` element reaches the end of the `animation-range`, the `trigger` animation runs instantly, sets `--animate: true` on the element, then kicks off the elastic popup and background gradient transition on its child `.text` element. If the page is scrolled back up, the text recedes back to its starting position.
 
 ## Additional thoughts
