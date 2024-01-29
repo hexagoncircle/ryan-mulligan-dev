@@ -61,7 +61,7 @@ Another thought I had, which Bramus asks the reader in the intro of his [article
 
 > [...] what if you want a scroll-driven animation to stay on its endframe once it was entirely played?
 
-Play through one and done? Sounds like an excellent option. Unfortunately, this cannot be done in CSS but Bramus shared a set of [scroll-driven animation utilities](https://github.com/bramus/sda-utilities) which includes a way to run a scroll-driven animation only once.
+Play through one and done? Sounds like an excellent option. Unfortunately, this cannot be done in CSS but Bramus created a set of [scroll-driven animation utilities](https://github.com/bramus/sda-utilities) which includes a way to run a scroll-driven animation only once.
 
 Have any feedback or other ideas? Come and [join the conversation](https://fosstodon.org/@hexagoncircle/111829670640360211) on Mastodon.
 
