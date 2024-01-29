@@ -65,7 +65,7 @@ Play through one and done? Sounds like an excellent option. Unfortunately, this 
 
 Have any feedback or other ideas? Come and [join the conversation](https://fosstodon.org/@hexagoncircle/111829670640360211) on Mastodon.
 
-**Updated on January 29th, 2023**: Bramus shared with me his own [experiment with this concept](https://www.bram.us/2023/06/15/scroll-triggered-animations/) from last year. The article does an excellent job explaining how it works and I recommend checking it out. Our conclusion on this seem to be the same.
+**Updated on January 29th, 2023**: Bramus shared with me his own [experiment with this concept](https://www.bram.us/2023/06/15/scroll-triggered-animations/) from last year. The article does an excellent job explaining how it works and I recommend checking it out. Our conclusions on this seem to be the same.
 
 > This was a fun experiment to do. However, it’s only an experiment and to me makes the case that we still need proper Scroll-Triggered Animations in the future – maybe something to work on for `scroll-animations-2`? 😉
 
