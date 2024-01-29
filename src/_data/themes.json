@@ -102,7 +102,7 @@
     "name": "slate",
     "light": {
       "theme": "#f1f5f9",
-      "theme-muted": "#ffffff",
+      "theme-muted": "#e6edf2",
       "theme-accent": "#cbd5e1",
       "theme-offset": "#475569"
     },

@@ -22,7 +22,7 @@ blockquote > * {
 
 blockquote code {
   color: var(--color-theme-offset);
-  background-color: var(--color-theme);
+  background-color: var(--color-theme-muted);
 }
 
 blockquote::before {
