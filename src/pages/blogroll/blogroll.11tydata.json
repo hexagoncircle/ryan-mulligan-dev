@@ -1,0 +1,119 @@
+{
+  "blogs": [
+    {
+      "name": "Adrian Roselli",
+      "url": "https://adrianroselli.com/",
+      "feed": "https://adrianroselli.com/feed"
+    },
+    {
+      "name": "Andy Bell",
+      "url": "https://piccalil.li/",
+      "feed": "https://piccalil.li/feed.xml"
+    },
+    {
+      "name": "Ashlee M. Boyer",
+      "url": "https://ashleemboyer.com/",
+      "feed": "https://ashleemboyer.com/rss.xml"
+    },
+    {
+      "name": "Ben Myers",
+      "url": "https://benmyers.dev/",
+      "feed": "https://benmyers.dev/feed.xml"
+    },
+    {
+      "name": "Boost by Frontend Masters",
+      "url": "https://frontendmasters.com/blog/",
+      "feed": "https://frontendmasters.com/blog/feed/"
+    },
+    {
+      "name": "Bramus Van Damme",
+      "url": "https://bram.us/",
+      "feed": "https://bram.us/feed/"
+    },
+    {
+      "name": "Chris Coyier",
+      "url": "https://chriscoyier.net/",
+      "feed": "https://chriscoyier.net/feed/"
+    },
+    {
+      "name": "Chris Ferdinandi",
+      "url": "https://gomakethings.com/",
+      "feed": "https://gomakethings.com/feed/index.xml"
+    },
+    {
+      "name": "CSS { In Real Life }",
+      "url": "https://css-irl.info/",
+      "feed": "https://css-irl.info/rss.xml"
+    },
+    {
+      "name": "Dave Rupert",
+      "url": "https://daverupert.com/",
+      "feed": "https://daverupert.com/atom.xml"
+    },
+    {
+      "name": "David Darnes",
+      "url": "https://darn.es/",
+      "feed": "https://darn.es/rss.xml"
+    },
+    {
+      "name": "Eric Bailey",
+      "url": "https://ericwbailey.website/",
+      "feed": "https://ericwbailey.website/feed/feed.xml"
+    },
+    {
+      "name": "Hidde de Vries",
+      "url": "https://hidde.blog/",
+      "feed": "https://hidde.blog/feed"
+    },
+    {
+      "name": "HTMHell",
+      "url": "https://htmhell.dev/",
+      "feed": "https://htmhell.dev/feed.xml"
+    },
+    {
+      "name": "Lene Saile",
+      "url": "https://lenesaile.com/",
+      "feed": "https://lenesaile.com/en/feed.xml"
+    },
+    {
+      "name": "Lynn Fisher",
+      "url": "https://lynnandtonic.com/",
+      "feed": "https://lynnandtonic.com/feed.xml"
+    },
+    {
+      "name": "Max Böck",
+      "url": "https://mxb.dev/",
+      "feed": "https://mxb.dev/feed.xml"
+    },
+    {
+      "name": "Mayank",
+      "url": "https://mayank.co/",
+      "feed": "https://mayank.co/blog/rss.xml"
+    },
+    {
+      "name": "Robin Rendle",
+      "url": "https://robinrendle.com/",
+      "feed": "https://robinrendle.com/feed.xml"
+    },
+    {
+      "name": "Sara Soueidan",
+      "url": "https://www.sarasoueidan.com/",
+      "feed": "https://www.sarasoueidan.com/blog/index.xml"
+    },
+    {
+      "name": "That HTML blog",
+      "url": "https://thathtml.blog/",
+      "feed": "https://thathtml.blog/feed.xml"
+    },
+    {
+      "name": "Tyler Sticka",
+      "url": "https://tylersticka.com/",
+      "feed": "https://tylersticka.com/journal/feed.xml"
+    },
+    {
+      "name": "Zach Leatherman",
+      "url": "https://zachleat.com/",
+      "feed": "https://zachleat.com/feed/"
+    }
+  ]
+}
