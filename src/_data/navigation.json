@@ -36,6 +36,11 @@
       "url": "/feed.xml"
     },
     {
+      "id": "blogroll",
+      "label": "Blogroll",
+      "url": "/blogroll/"
+    },
+    {
       "id": "issue",
       "label": "Report an issue",
       "url": "https://github.com/hexagoncircle/ryan-mulligan-dev/issues/new",

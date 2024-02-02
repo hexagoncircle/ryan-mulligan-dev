@@ -1,0 +1,49 @@
+---
+permalink: "blogroll/"
+title: "Blogroll"
+description: "An evolving collection of blogs that I enjoy."
+classnames: "flow"
+---
+
+<script webc:setup>
+  const { date } = getDeployDate();
+
+  function getDomain(url) {
+    const site = new URL(url);
+    const output = site.hostname + site.pathname.replace(/\/$/, "");
+    return output;
+  }
+</script>
+
+<h1 class="title | skewer">Blogroll, please!</h1>
+<p style="--flow-space: var(--space-xl)">
+  Inspired by all the blogroll greatness across the web, I present this endlessly evolving
+  collection of blogs that I enjoy. Their latest posts were gathered together on
+  <span @text="date" webc:nokeep></span>.
+</p>
+<ul class="flow" style="--flow-space: var(--space-l)" role="list">
+  <li webc:for="item of $data.blogData">
+    <p>
+      <span class="text-1 font-semibold" @text="item.name"></span>
+      <a class="website-link" :href="item.url" target="_blank" :title="getDomain(item.url)">
+        <inline-svg src="./public/icons/browsers.svg"></inline-svg>
+      </a>
+    </p>
+    <p>
+      <a
+        webc:if="item.latestPost && item.latestPost.title"
+        target="_blank"
+        :href="item.latestPost.url"
+        @text="item.latestPost.title"></a>
+    </p>
+  </li>
+</ul>
+
+<style>
+  .website-link {
+    display: inline-grid;
+    place-items: center;
+    border-radius: var(--radius-round);
+    color: var(--color-theme-offset);
+  }
+</style>
