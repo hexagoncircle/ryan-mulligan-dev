@@ -91,6 +91,11 @@
       "feed": "https://mayank.co/blog/rss.xml"
     },
     {
+      "name": "Modern CSS Solutions",
+      "url": "https://moderncss.dev",
+      "feed": "https://moderncss.dev/feed"
+    },
+    {
       "name": "Robin Rendle",
       "url": "https://robinrendle.com/",
       "feed": "https://robinrendle.com/feed.xml"
