@@ -23,10 +23,11 @@ classnames: "flow"
 </p>
 <ul class="flow" style="--flow-space: var(--space-l)" role="list">
   <li webc:for="item of $data.blogData">
-    <p>
+    <p class="cluster" style="--column-gap: var(--space-3xs); --row-gap: 0">
       <span class="text-1 font-semibold" @text="item.name"></span>
-      <a class="website-link" :href="item.url" target="_blank" :title="getDomain(item.url)">
-        <inline-svg src="./public/icons/browsers.svg"></inline-svg>
+      <a class="blogroll-site" :href="item.url" target="_blank">
+        <inline-svg class="icon" src="./public/icons/browsers.svg"></inline-svg>
+        <span @text="getDomain(item.url)"></span>
       </a>
     </p>
     <p>
@@ -40,10 +41,24 @@ classnames: "flow"
 </ul>
 
 <style>
-  .website-link {
-    display: inline-grid;
-    place-items: center;
-    border-radius: var(--radius-round);
+  .blogroll-site {
+    --icon-size: 1em;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.2em;
+    font-family: var(--font-mono);
     color: var(--color-theme-offset);
+    background: var(--color-theme-muted);
+    padding: 0.1rem var(--space-3xs);
+    border-radius: var(--radius-m);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    span {
+      font-size: 0.7em;
+    }
   }
 </style>
