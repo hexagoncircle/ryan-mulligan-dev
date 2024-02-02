@@ -21,11 +21,21 @@ const formatJobDate = (date) => {
   return DateTime.fromFormat(date, "MMMM y").toFormat("y-MM");
 };
 
+const ordinal = (n) => {
+  var s = ["th", "st", "nd", "rd"];
+  var v = n % 100;
+  return n + (s[(v - 20) % 10] || s[v] || s[0]);
+};
+
 const getDeployDate = () => {
   let zone = "America/Los_Angeles";
   let d = new Date();
-  let hour = DateTime.fromJSDate(d, { zone }).toFormat(String("H"));
-  let date = DateTime.fromJSDate(d, { zone }).toFormat(String("MMMM d"));
+  let dateObj = DateTime.fromJSDate(d, { zone });
+  let day = dateObj.toFormat("d");
+  let hour = dateObj.toFormat("H");
+  let month = dateObj.toFormat("MMMM");
+
+  let date = `${month} ${ordinal(day)}`;
   let timeOfDay = (hour < 12 && "morning") || (hour < 18 && "afternoon") || "evening";
 
   return {
