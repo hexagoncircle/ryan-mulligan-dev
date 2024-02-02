@@ -51,10 +51,13 @@ classnames: "flow"
     background: var(--color-theme-muted);
     padding: 0.1rem var(--space-3xs);
     border-radius: var(--radius-m);
+    border: 1px solid transparent;
     text-decoration: none;
 
-    &:hover {
-      text-decoration: underline;
+    &:is(:hover, :focus-visible) {
+      outline-offset: 1px;
+      color: var(--color-text);
+      border-color: var(--color-theme-accent);
     }
 
     span {
