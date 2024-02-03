@@ -111,9 +111,19 @@
       "feed": "https://nicolas-hoizey.com/feeds/articles.xml"
     },
     {
+      "name": "Rach Smith",
+      "url": "https://rachsmith.com/",
+      "feed": "https://rachsmith.com/feed.xml"
+    },
+    {
       "name": "Robin Rendle",
       "url": "https://robinrendle.com/",
       "feed": "https://robinrendle.com/feed.xml"
+    },
+    {
+      "name": "Roman Komarov",
+      "url": "https://kizu.dev/",
+      "feed": "https://feeds.feedburner.com/kizuruen"
     },
     {
       "name": "Sara Soueidan",
