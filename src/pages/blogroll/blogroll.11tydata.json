@@ -111,6 +111,11 @@
       "feed": "https://www.sarasoueidan.com/blog/index.xml"
     },
     {
+      "name": "Stefan Judis",
+      "url": "https://www.stefanjudis.com/",
+      "feed": "https://www.stefanjudis.com/rss.xml"
+    },
+    {
       "name": "That HTML blog",
       "url": "https://thathtml.blog/",
       "feed": "https://thathtml.blog/feed.xml"
