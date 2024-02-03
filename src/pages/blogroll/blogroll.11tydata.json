@@ -96,9 +96,19 @@
       "feed": "https://mayank.co/blog/rss.xml"
     },
     {
+      "name": "Miriam Suzanne",
+      "url": "https://www.miriamsuzanne.com/",
+      "feed": "https://www.miriamsuzanne.com/feed.xml"
+    },
+    {
       "name": "Modern CSS Solutions",
       "url": "https://moderncss.dev",
       "feed": "https://moderncss.dev/feed"
+    },
+    {
+      "name": "Nicolas Hoizey",
+      "url": "https://nicolas-hoizey.com/",
+      "feed": "https://nicolas-hoizey.com/feeds/articles.xml"
     },
     {
       "name": "Robin Rendle",
@@ -114,6 +124,11 @@
       "name": "Stefan Judis",
       "url": "https://www.stefanjudis.com/",
       "feed": "https://www.stefanjudis.com/rss.xml"
+    },
+    {
+      "name": "Stephanie Eckles",
+      "url": "https://thinkdobecreate.com/",
+      "feed": "https://thinkdobecreate.com/feed"
     },
     {
       "name": "That HTML blog",
