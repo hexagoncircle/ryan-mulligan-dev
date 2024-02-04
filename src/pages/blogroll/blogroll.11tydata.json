@@ -76,6 +76,11 @@
       "feed": "https://htmhell.dev/feed.xml"
     },
     {
+      "name": "Jake Lazaroff",
+      "url": "https://jakelazaroff.com/",
+      "feed": "https://jakelazaroff.com/rss.xml"
+    },
+    {
       "name": "Lene Saile",
       "url": "https://lenesaile.com/",
       "feed": "https://lenesaile.com/en/feed.xml"
@@ -114,6 +119,11 @@
       "name": "Rach Smith",
       "url": "https://rachsmith.com/",
       "feed": "https://rachsmith.com/feed.xml"
+    },
+    {
+      "name": "Robb Knight",
+      "url": "https://rknight.me/",
+      "feed": "https://rknight.me/subscribe/posts/atom.xml"
     },
     {
       "name": "Robin Rendle",
