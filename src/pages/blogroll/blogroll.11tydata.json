@@ -96,6 +96,11 @@
       "feed": "https://lynnandtonic.com/feed.xml"
     },
     {
+      "name": "Matthias Ott",
+      "url": "https://matthiasott.com/",
+      "feed": "https://matthiasott.com/feed"
+    },
+    {
       "name": "Max Böck",
       "url": "https://mxb.dev/",
       "feed": "https://mxb.dev/feed.xml"
