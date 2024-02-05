@@ -1,6 +1,11 @@
 {
   "blogs": [
     {
+      "name": "Adam Stoddard",
+      "url": "https://aaadaaam.com/",
+      "feed": "https://aaadaaam.com/feed.xml"
+    },
+    {
       "name": "Adrian Roselli",
       "url": "https://adrianroselli.com/",
       "feed": "https://adrianroselli.com/feed"
@@ -123,7 +128,7 @@
     {
       "name": "Robb Knight",
       "url": "https://rknight.me/",
-      "feed": "https://rknight.me/subscribe/posts/atom.xml"
+      "feed": "https://rknight.me/subscribe/posts/rss.xml"
     },
     {
       "name": "Robin Rendle",
