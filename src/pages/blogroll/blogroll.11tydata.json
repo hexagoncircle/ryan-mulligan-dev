@@ -1,6 +1,11 @@
 {
   "blogs": [
     {
+      "name": "Adam Argyle",
+      "url": "https://nerdy.dev/",
+      "feed": "https://nerdy.dev/rss.xml"
+    },
+    {
       "name": "Adam Stoddard",
       "url": "https://aaadaaam.com/",
       "feed": "https://aaadaaam.com/feed.xml"
@@ -86,6 +91,11 @@
       "feed": "https://jakelazaroff.com/rss.xml"
     },
     {
+      "name": "Julia Evans",
+      "url": "https://jvns.ca/",
+      "feed": "https://jvns.ca/atom.xml"
+    },
+    {
       "name": "Lene Saile",
       "url": "https://lenesaile.com/",
       "feed": "https://lenesaile.com/en/feed.xml"
@@ -169,6 +179,11 @@
       "name": "Tyler Sticka",
       "url": "https://tylersticka.com/",
       "feed": "https://tylersticka.com/journal/feed.xml"
+    },
+    {
+      "name": "Una Kravets",
+      "url": "https://una.im/",
+      "feed": "https://una.im/rss.xml"
     },
     {
       "name": "Zach Leatherman",
