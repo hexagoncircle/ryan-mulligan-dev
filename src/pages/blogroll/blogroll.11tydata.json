@@ -56,6 +56,11 @@
       "feed": "https://gomakethings.com/feed/index.xml"
     },
     {
+      "name": "Christopher Kirk-Nielsen",
+      "url": "https://chriskirknielsen.com/",
+      "feed": "https://chriskirknielsen.com/rss.xml"
+    },
+    {
       "name": "CSS { In Real Life }",
       "url": "https://css-irl.info/",
       "feed": "https://css-irl.info/rss.xml"
@@ -74,6 +79,16 @@
       "name": "Eric Bailey",
       "url": "https://ericwbailey.website/",
       "feed": "https://ericwbailey.website/feed/feed.xml"
+    },
+    {
+      "name": "Henry Desroches",
+      "url": "https://henry.codes/",
+      "feed": "https://henry.codes/feed.xml"
+    },
+    {
+      "name": "Heydon Pickering",
+      "url": "https://heydonworks.com/",
+      "feed": "https://heydonworks.com/feed.xml"
     },
     {
       "name": "Hidde de Vries",
