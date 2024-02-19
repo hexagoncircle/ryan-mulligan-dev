@@ -116,3 +116,8 @@ The [CodePen demo](https://codepen.io/hexagoncircle/pen/PoLdzzo) introduced at t
 ```
 
 If we desired more modular control than a media query can provide, we could consider using a [container query](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_queries) to manage these styles. A solid enhancement to add when it becomes necessary.
+
+## Helpful resources
+
+- The [Fifty-Fifty Split collection](https://codepen.io/collection/NqoVpN) of all the CodePen demos in this article.
+- Temani Afif's [collection of solutions](https://stackoverflow.com/questions/48943233/how-can-you-set-the-height-of-an-outer-div-to-always-be-equal-to-a-particular-in/48943583#48943583) on Stack Overflow.
