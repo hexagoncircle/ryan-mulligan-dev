@@ -63,9 +63,7 @@ This seems tricky to pull off, but both the flexbox and grid patterns can accomm
     <!-- this content controls overall height -->
   </section>
   <section class="scroll-container">
-      <div>
-        <!-- overflowing section content -->
-      </div>
+    <!-- overflowing section content -->
   </section>
 </article>
 ```
@@ -78,16 +76,14 @@ This seems tricky to pull off, but both the flexbox and grid patterns can accomm
 }
 
 .scroll-container {
-  position: relative;
+  contain: size;
   overflow-y: auto;
-}
-
-.scroll-container > * {
-  position: absolute;
 }
 ```
 
-The `scroll-container` selector sets relative positioning and enables scrolling on the element. The child element is absolutely positioned, removing it from the normal document flow so that its dimensions no longer affect the size of its parent. Now, when the sections are side by side, the height of the `fifty-fifty` container is based on the size of the non-scrolling section.
+My original take on this has been massively improved after some [feedback from Roma Komarov](https://front-end.social/@kizu/111959588855601850). I totally slept on the [`contain`](https://developer.mozilla.org/en-US/docs/Web/CSS/contain) property! After setting the `contain: size` rule, I can drop my previous iteration which had an additional nested element with absolute positioning applied. This simplifies both the template and styles. Thank you, Roma! 👏
+
+Now, when the sections are side by side, the height of the `fifty-fifty` container is based on the size of the non-scrolling section.
 
 ### Visually collapsed when stacked
 
