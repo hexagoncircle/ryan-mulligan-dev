@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Fifty-Fifty Split and Overflow
-description: Description
+description: A responsive 50/50 component with a scrollable section
 ogImage: /social/50-50-overflow.png
 date: 2024-02-19
 ---
