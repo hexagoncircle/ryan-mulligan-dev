@@ -10,7 +10,7 @@ permalink: "/"
 <scroll-pen></scroll-pen>
 <section class="flow prose">
   <p>
-    This is a website made by me, <strong>Ryan Mulligan</strong>, a frontend builder of the web and
+    This is a website made by me, <strong>Ryan Mulligan</strong>, a front-end builder of the web and
     fellow passenger through space and time.
   </p>
   <ul>
@@ -34,7 +34,7 @@ permalink: "/"
   </p>
   <h2>The bit about myself</h2>
   <p>
-    I'm a fun-loving frontend engineer with over a decade of experience building for the web. I've
+    I'm a fun-loving front-end engineer with over a decade of experience building for the web. I've
     developed a well-rounded skillset servicing both product and marketing teams. My back catalog of
     roles range from individual contribution to management, team building, and leadership.
   </p>
