@@ -39,6 +39,16 @@
       :href="`${meta.url}/feed.xml`"
       title="Ryan Mulligan" />
 
+    <script webc:if="page.url === '/'" webc:keep type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "Ryan Mulligan",
+        "url": "https://ryanmulligan.dev/",
+        "image": "https://ryanmulligan.dev/images/headshot.jpg"
+      }
+    </script>
+
     <!-- assets the situation -->
     <link
       href="/fonts/Tanker-Regular.woff2"
