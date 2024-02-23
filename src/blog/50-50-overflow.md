@@ -119,5 +119,6 @@ If we desired more modular control than a media query can provide, we could cons
 
 ## Helpful resources
 
-- The [Fifty-Fifty Split collection](https://codepen.io/collection/NqoVpN) of all the CodePen demos in this article.
-- Temani Afif's [collection of solutions](https://stackoverflow.com/questions/48943233/how-can-you-set-the-height-of-an-outer-div-to-always-be-equal-to-a-particular-in/48943583#48943583) on Stack Overflow.
+- [Fifty-Fifty Split CodePen collection](https://codepen.io/collection/NqoVpN)
+- [Equal height and scrolling solutions on Stack Overflow](https://stackoverflow.com/questions/48943233/how-can-you-set-the-height-of-an-outer-div-to-always-be-equal-to-a-particular-in/48943583#48943583)
+- [Using the CSS contain property: A deep dive](https://blog.logrocket.com/using-css-contain-property-deep-dive/)
