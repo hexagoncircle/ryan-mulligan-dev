@@ -20,7 +20,7 @@ When travel began to return, lockdown restrictions being lifted, we made a decis
 
 At home, Oscar would watch intently as we cooked meals. When the doorbell rang, he'd jump up to greet guests with glee. I'd play the acoustic guitar and Oscar would settle nearby to listen, often drifting off to sleep. He never said it, but I'm pretty confident he enjoyed hearing me play. I tell myself that anyway.
 
-Late at night, the three of us would snuggle up on the couch and watch television. Oscar was typically first to leave for bed. If it was getting too late, he'd sometimes peek his head back into the room. His stare seemed to say, "It's bedtime, you two, come along!" Then he'd stalk off as quickly as he appeared. In retrospect, he was probably right as we woke up groggy the next morning.
+Late at night, the three of us would snuggle up on the couch and watch television. Oscar was typically first to leave for bed. If it were getting too late, he'd sometimes peek his head back into the room. His stare seemed to say, "It's bedtime, you two, come along!" Then he'd stalk off as quickly as he appeared. In retrospect, he was probably right as we woke up groggy the next morning.
 
 I'd like to continue but I've reached a breaking point emotionally. My eyes are starting to swell. There is so much wonder around Oscar, so many stories to share. He elevated the mood of anyone that met him. On a personal level, he made me feel important and loved in times I felt small or invisible. There was not and never will be anyone that matches his unique disposition. He was our emotional companion and a beautiful friend.
 
