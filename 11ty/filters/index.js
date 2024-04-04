@@ -1,6 +1,5 @@
 const dates = require("./dates");
 const text = require("./text");
-const webmentions = require("./webmentions");
 const pluralize = require("../pluralize");
 const meta = require("../../src/_data/meta");
 
@@ -50,7 +49,6 @@ const truncateAfterWord = (str, max) => {
 const filters = {
   ...dates,
   ...text,
-  ...webmentions,
   getVarFromString,
   getIcon,
   isExternalUrl,
