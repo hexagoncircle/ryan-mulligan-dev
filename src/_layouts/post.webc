@@ -21,7 +21,6 @@ classnames: "prose"
 <p class="cta arrow-start" style="--flow-space: var(--space-l)">
   <a href="/blog/">Back to all blog posts</a>
 </p>
-<web-mentions></web-mentions>
 
 <style>
   :is(.post-timer, .title) {
