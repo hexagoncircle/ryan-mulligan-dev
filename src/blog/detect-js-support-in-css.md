@@ -6,7 +6,7 @@ ogImage: /social/detect-js-support-in-css.png
 date: 2024-04-20
 ---
 
-I had been aware of the [`scripting` CSS media feature](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/scripting) but I was still under the impression that cross-browser support was lacking. What a pleasant surprise to discover that it has been available in all modern browsers as of December 2023 according to [caniuse.com](https://caniuse.com/?search=scripting). With this feature, we can provide alternative CSS rules depending on whether or not JavaScript is available in the user's browser.  It can also be help reduce flashes of unstyled content or undesirable layout shifts.
+I had been aware of the [`scripting` CSS media feature](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/scripting) but I was still under the impression that cross-browser support was lacking. What a pleasant surprise to discover that it has been available in all modern browsers as of December 2023 according to [caniuse.com](https://caniuse.com/?search=scripting). With this feature, we can provide alternative CSS rules depending on whether or not JavaScript is available in the user's browser.  It can also help reduce flashes of unstyled content or undesirable layout shifts.
 
 ## Usage
 
