@@ -68,7 +68,7 @@ To really make the intro animation feel smooth on page load, I'm relying on the 
 
 In the following video, watch what happens when the headline is not hidden on page load. The text flashing is even more glaring when throttling on a slower network.
 
-{% video "/videos/detect-js-support-in-css", "The CodePen demo is reloaded to catch that unwanted flash of unstyled text. By throttling on a 3G network, the issue becomes even more egregious." %}
+{% video "/videos/detect-js-support-in-css", "The demo is reloaded without hiding the headline on page load to share that pesky flash of unstyled text. When testing on a slower network, the issue becomes even more egregious." %}
 
 In the CSS tab of the demo, catch that the media queries can be combined to check both scripting and reduced-motion conditions.
 
