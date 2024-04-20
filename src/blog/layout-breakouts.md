@@ -99,7 +99,7 @@ That wraps things up! The potential of this concept doesn't stop here. How might
 
 _This article was updated on October 12th, 2022 to include the "Losing Floats" section._
 
-## Helpful Resources
+## Helpful resources
 
 - [Grid layout using named grid lines](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Layout_using_Named_Grid_Lines)
 - [A Deep Dive Into CSS Grid `minmax()`](https://ishadeed.com/article/css-grid-minmax/)
