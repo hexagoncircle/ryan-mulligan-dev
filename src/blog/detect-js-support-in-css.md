@@ -2,7 +2,7 @@
 layout: post
 title: Detect JavaScript Support in CSS
 description: Description
-ogImage: detect-js-support-in-css.png
+ogImage: /social/detect-js-support-in-css.png
 date: 2024-04-20
 ---
 
