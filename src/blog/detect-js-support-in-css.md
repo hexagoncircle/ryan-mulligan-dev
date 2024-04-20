@@ -66,11 +66,11 @@ This media query unlocks the ability to provide CSS rules that are a better fit 
 
 ## Watch that flash
 
-To really make the intro animation feel smooth on page load, the demo relies on the scripting media query to hide the headline with CSS. By doing so, we won't catch a flash of unstyled text before the GSAP animation is loaded. Also, we _only_ want to hide the headline if JavaScript _is_ available, otherwise it would be hidden for users when it's disabled.
+To really make the intro animation feel smooth on page load, the demo relies on the `scripting` media query to hide the headline with CSS. By doing so, we won't catch a flash of unstyled text before the GSAP animation is loaded. Also, we _only_ want to hide the headline if JavaScript _is_ available, otherwise it would be hidden for users when it's disabled.
 
 In the following video, watch what happens when the headline is not hidden on page load. The text flashing is even more glaring when throttling on a slower network.
 
-{% video "/videos/detect-js-support-in-css", "The demo is reloaded without hiding the headline on page load to share that pesky flash of unstyled text. When testing on a slower network, the issue becomes even more egregious." %}
+{% video "/videos/detect-js-support-in-css", "In the video, the headline is no longer hidden on page load to share that pesky flash of unstyled text. When testing on a slower network, the issue becomes even more egregious." %}
 
 ## Combining queries
 
