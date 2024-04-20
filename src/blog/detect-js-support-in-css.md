@@ -64,6 +64,12 @@ This media query unlocks the ability to provide CSS rules that are a better fit 
 
 {% codepen "https://codepen.io/hexagoncircle/pen/NWmEMmJ/e1e382620c5897b4c72fa29b36227fd4" %}
 
+To really make the intro animation feel smooth on page load, I'm relying on the scripting media query to hide the headline with CSS. By doing so, we won't catch a flash of unstyled text before the GSAP animation is loaded. Also, we _only_ want to hide the headline if JavaScript _is_ available, otherwise it would be hidden for users when it's disabled.
+
+In the following video, watch what happens when the headline is not hidden on page load. The text flashing is even more glaring when throttling on a slower network.
+
+{% video "/videos/detect-js-support-in-css", "The CodePen demo is reloaded to catch that unwanted flash of unstyled text. By throttling on a 3G network, the issue becomes even more egregious." %}
+
 In the CSS tab of the demo, catch that the media queries can be combined to check both scripting and reduced-motion conditions.
 
 ```scss
