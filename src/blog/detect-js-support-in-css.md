@@ -38,7 +38,7 @@ I don't personally imagine using `initial-only` much, if ever. Although, I'd be 
 
 ## The time before the query
 
-Before this feature, one approach for detecting JavaScript support was by setting a custom selector on the opening `html` tag—a common one seen in the wild is the `no-js` class name. If JavaScript is supported and enabled, it removes that selector just prior to rendering page content. When JavaScript is disabled, we can supply alternative styles that adapt to that experience.
+Before this feature, one approach for detecting JavaScript support was by setting a custom selector on the opening `html` tag—a common one seen in the wild is the `no-js` class name. If JavaScript is supported and enabled, it removes that selector just prior to rendering page content. When JavaScript is disabled, we can supply alternative styles that adapt to the experience.
 
 ```html
 <html class="no-js">
