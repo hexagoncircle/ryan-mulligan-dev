@@ -94,7 +94,7 @@ Each condition can surely have exclusive styles if the desired outcome calls for
 
 **Updated on April 21st, 2024** - After publishing this post, some feedback surfaced explaining where this media feature unexpectedly fails.
 
-1. It does not behave as expected when a browser extension such as NoScript or uBlock Origin is used to disable page scripts. `scripting: enabled` still matches even though the extension has JavaScript turned off.
+1. It does not behave as anticipated when a browser extension such as NoScript or uBlock Origin is used to disable page scripts. `scripting: enabled` still matches even though the extension has JavaScript turned off.
 2. If a script gets blocked or fails to load, a fallback would need to be handled via JavaScript. In the demo above, the fallback would need to tap into the demo's `scripting: none` media query ruleset so that the static version of the hero is displayed.
 
 Tremendous thanks to [Sara](https://front-end.social/@SaraSoueidan/112307456267714875), [Šime](https://mastodon.social/@simevidas/112305703318360235), and [Vadim](https://mastodon.social/@pepelsbey/112308080752283580) for sharing!
