@@ -8,6 +8,8 @@ date: 2024-04-20
 
 I had been aware of the [`scripting` CSS media feature](https://developer.mozilla.org/en-US/docs/Web/CSS/@media/scripting) but I was still under the impression that cross-browser support was lacking. What a pleasant surprise to discover that it has been available in all modern browsers as of December 2023 according to [caniuse.com](https://caniuse.com/?search=scripting). With this feature, we can provide alternative CSS rules depending on whether or not JavaScript is available in the user's browser.  It can also help reduce flashes of unstyled content or undesirable layout shifts.
 
+*Before we dive in:* As exciting as this feature is, I've learned that there are a couple unfortunate gotchas. I've amended the article with an [issues](#issues) section below.
+
 ## Usage
 
 We can progressively enhance our styles:
@@ -66,11 +68,11 @@ This media query unlocks the ability to provide CSS rules that are a better fit 
 
 ## Watch that flash
 
-To really make the intro animation feel smooth on page load, the demo relies on the `scripting` media query to hide the headline with CSS. By doing so, we won't catch a flash of unstyled text before the GSAP animation is loaded. Also, we _only_ want to hide the headline if JavaScript _is_ available, otherwise it would be hidden for users when it's disabled.
+To really make the intro animation feel smooth on page load, the demo relies on the `scripting` media query to hide the headline with CSS. By doing so, we won't catch a flash of unstyled text before the GSAP animation is loaded. Also, we only want to hide the headline if JavaScript _is_ available, otherwise it would be hidden for users when it's disabled.
 
 In the following video, watch what happens when the headline is not hidden on page load. The text flashing is even more glaring when throttling on a slower network.
 
-{% video "/videos/detect-js-support-in-css", "In the video, the headline is no longer hidden on page load to share that pesky flash of unstyled text. When testing on a slower network, the issue becomes even more egregious." %}
+{% video "/videos/detect-js-support-in-css", "In the video, the headline is no longer hidden on page load to share that pesky flash of unstyled text. When emulating slower network speeds, the issue becomes even more egregious." %}
 
 ## Combining queries
 
@@ -87,6 +89,15 @@ In the CSS tab of the demo, notice that the media queries are combined to check 
 ```
 
 Each condition can surely have exclusive styles if the desired outcome calls for it, but it's nice that we can combine them where there's overlap in rulesets.
+
+## Issues
+
+**Updated on April 21st, 2024** - After publishing this post, some feedback surfaced explaining where this media feature unexpectedly fails.
+
+1. It does not behave as expected when a browser extension such as NoScript or uBlock Origin is used to disable page scripts. `scripting: enabled` still matches even though the extension has JavaScript turned off.
+2. If a script gets blocked or fails to load, a fallback would need to be handled via JavaScript. In the demo above, the fallback would need to tap into the demo's `scripting: none` media query ruleset so that the static version of the hero is displayed.
+
+Tremendous thanks to [Sara](https://front-end.social/@SaraSoueidan/112307456267714875), [Šime](https://mastodon.social/@simevidas/112305703318360235), and [Vadim](https://mastodon.social/@pepelsbey/112308080752283580) for sharing!
 
 ## Helpful resources
 
