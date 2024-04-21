@@ -17,7 +17,7 @@ The spark color can be modified by setting a color value to the `--click-spark-c
 <click-spark style="--click-spark-color: hotpink"></click-spark>
 ```
 
-**Updated on January 5, 2023** — I had been thinking about a case where I'd like to have click sparks, but only when clicking on particular elements. I've updated the [code](https://github.com/hexagoncircle/click-spark) so that an `active-on` attribute can be set on the custom element to target a comma-separated list of selectors. If any of the selectors match, let the sparks fly. Here's a [CodePen demo](https://codepen.io/hexagoncircle/pen/rNReOPd) of the following example.
+**Updated on January 5th, 2023** — I had been thinking about a case where I'd like to have click sparks, but only when clicking on particular elements. I've updated the [code](https://github.com/hexagoncircle/click-spark) so that an `active-on` attribute can be set on the custom element to target a comma-separated list of selectors. If any of the selectors match, let the sparks fly. Here's a [CodePen demo](https://codepen.io/hexagoncircle/pen/rNReOPd) of the following example.
 
 ```html
 <click-spark active-on=".send-sparks, #i-love-sparks, [data-sparks]"></click-spark>
