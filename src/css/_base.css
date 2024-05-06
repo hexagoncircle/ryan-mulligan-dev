@@ -136,3 +136,9 @@ fieldset {
   margin-block: var(--space-l) var(--space-s);
   grid-column: popout;
 }
+
+.prose .eleventy-plugin-youtube-embed {
+  --flow-space: var(--space-l);
+
+  grid-column: popout;
+}

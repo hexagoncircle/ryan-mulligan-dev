@@ -5,6 +5,7 @@ const pluginWebc = require("@11ty/eleventy-plugin-webc");
 const bundlerConfig = require("./11ty/bundler");
 const imageConfig = require("./11ty/image");
 const { eleventyImagePlugin } = require("@11ty/eleventy-img");
+const embeds = require("eleventy-plugin-embed-everything");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginBundler, bundlerConfig);
@@ -18,6 +19,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(require("./11ty/filters"));
   eleventyConfig.addPlugin(require("./11ty/markdown"));
   eleventyConfig.addPlugin(require("./11ty/shortcodes"));
+  eleventyConfig.addPlugin(embeds);
 
   eleventyConfig.addLayoutAlias("base", "base.webc");
   eleventyConfig.addLayoutAlias("post", "post.webc");
