@@ -336,6 +336,7 @@
     grid-column: full;
     display: grid;
     grid-template-columns: inherit;
+    transition: transform 200ms var(--ease-out);
   }
 
   @media (forced-colors: active) {
@@ -373,8 +374,9 @@
   li {
     overflow: hidden;
     border-radius: var(--radius-l);
-    transform: var(--unskew) translateZ(0);
-    transition: scale var(--_duration) cubic-bezier(0, 0.55, 0.45, 1);
+    transform: var(--unskew);
+    transition: var(--_duration) cubic-bezier(0, 0.55, 0.45, 1);
+    transition-property: scale, transform;
 
     &:focus-within {
       outline: var(--focus-outline);
