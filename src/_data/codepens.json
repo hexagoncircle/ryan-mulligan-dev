@@ -7,8 +7,8 @@
       "preview": true
     },
     {
-      "id": "jgGxKR",
-      "title": "React Slider with Hover Effect",
+      "id": "NWmEMmJ",
+      "title": "Make it pop",
       "preview": true
     },
     {
@@ -27,13 +27,28 @@
       "preview": true
     },
     {
-      "id": "XWxZgqx",
-      "title": "Diamond Spin",
+      "id": "jgGxKR",
+      "title": "React Slider with Hover Effect",
       "preview": true
     },
     {
       "id": "JjOaabp",
       "title": "Metrognome",
+      "preview": true
+    },
+    {
+      "id": "vYwKNzR",
+      "title": "<pointer-particles> Web Component",
+      "preview": true
+    },
+    {
+      "id": "XWxZgqx",
+      "title": "Diamond Spin",
+      "preview": true
+    },
+    {
+      "id": "LYNNYyQ",
+      "title": "Supa Dupa Fly Hover",
       "preview": true
     },
     {
@@ -47,8 +62,8 @@
       "preview": true
     },
     {
-      "id": "LYNNYyQ",
-      "title": "Supa Dupa Fly Hover",
+      "id": "zYxzQqa",
+      "title": "Password Input Light",
       "preview": true
     },
     {
@@ -62,8 +77,8 @@
       "preview": true
     },
     {
-      "id": "zYxzQqa",
-      "title": "Password Input Light",
+      "id": "jOzybYa",
+      "title": "Infinite Roll",
       "preview": true
     },
     {
@@ -77,8 +92,8 @@
       "preview": true
     },
     {
-      "id": "jOzybYa",
-      "title": "Infinite Roll",
+      "id": "wvJPjQa",
+      "title": "Thank you – have a nice day",
       "preview": true
     },
     {
@@ -91,8 +106,8 @@
       "title": "Horizontal scrolling in a centered max-width container"
     },
     {
-      "id": "wvJPjQa",
-      "title": "Thank you – have a nice day",
+      "id": "JjYLLNR",
+      "title": "MCU Timeline Carousel",
       "preview": true
     },
     {
@@ -105,8 +120,8 @@
       "preview": true
     },
     {
-      "id": "gORePQx",
-      "title": "Cool Spotlight Shadows",
+      "id": "abmyQBN",
+      "title": "Ask Emoji",
       "preview": true
     },
     {
@@ -134,8 +149,8 @@
       "preview": true
     },
     {
-      "id": "JjYLLNR",
-      "title": "MCU Timeline Carousel",
+      "id": "gORePQx",
+      "title": "Cool Spotlight Shadows",
       "preview": true
     },
     {
@@ -148,8 +163,8 @@
       "title": "CSS Sticky Parallax Sections"
     },
     {
-      "id": "abmyQBN",
-      "title": "Ask Emoji",
+      "id": "joqYEj",
+      "title": "Rocket Through Space",
       "preview": true
     },
     {
@@ -159,11 +174,6 @@
     {
       "id": "MWJoYxv",
       "title": "Orbiting Through Torus",
-      "preview": true
-    },
-    {
-      "id": "joqYEj",
-      "title": "Rocket Through Space",
       "preview": true
     },
     {
@@ -226,6 +236,11 @@
       "preview": true
     },
     {
+      "id": "WRqEaV",
+      "title": "Parallax Emoji",
+      "preview": true
+    },
+    {
       "id": "dwreYm",
       "title": "Primary Color Bounce",
       "preview": true
@@ -233,11 +248,6 @@
     {
       "id": "PoPpKKg",
       "title": "CSS Clip-Path Hover Effect",
-      "preview": true
-    },
-    {
-      "id": "WRqEaV",
-      "title": "Parallax Emoji",
       "preview": true
     }
   ]
