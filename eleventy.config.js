@@ -1,24 +1,30 @@
-const pluginBundler = require("@11ty/eleventy-plugin-bundle");
-const pluginRss = require("@11ty/eleventy-plugin-rss");
-const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const pluginWebc = require("@11ty/eleventy-plugin-webc");
-const bundlerConfig = require("./11ty/bundler");
-const imageConfig = require("./11ty/image");
-const { eleventyImagePlugin } = require("@11ty/eleventy-img");
-const embeds = require("eleventy-plugin-embed-everything");
+import pluginBundler from "@11ty/eleventy-plugin-bundle";
+import pluginRss from "@11ty/eleventy-plugin-rss";
+import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import pluginWebc from "@11ty/eleventy-plugin-webc";
+import { eleventyImagePlugin } from "@11ty/eleventy-img";
+import embeds from "eleventy-plugin-embed-everything";
 
-module.exports = function (eleventyConfig) {
-  eleventyConfig.addPlugin(pluginBundler, bundlerConfig);
-  eleventyConfig.addPlugin(eleventyImagePlugin, imageConfig);
+/** Plugin configuration */
+import bundler from "./11ty/bundler.js";
+import image from "./11ty/image.js";
+import css from "./11ty/css/index.js";
+import filters from "./11ty/filters/index.js";
+import markdown from "./11ty/markdown.js";
+import shortcodes from "./11ty/shortcodes/index.js";
+
+export default function (eleventyConfig) {
+  eleventyConfig.addPlugin(pluginBundler, bundler);
+  eleventyConfig.addPlugin(eleventyImagePlugin, image);
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.addPlugin(pluginWebc, {
     components: ["src/_includes/**/*.webc", "npm:@11ty/eleventy-img/*.webc"],
   });
-  eleventyConfig.addPlugin(require("./11ty/css"));
-  eleventyConfig.addPlugin(require("./11ty/filters"));
-  eleventyConfig.addPlugin(require("./11ty/markdown"));
-  eleventyConfig.addPlugin(require("./11ty/shortcodes"));
+  eleventyConfig.addPlugin(css);
+  eleventyConfig.addPlugin(filters);
+  eleventyConfig.addPlugin(markdown);
+  eleventyConfig.addPlugin(shortcodes);
   eleventyConfig.addPlugin(embeds);
 
   eleventyConfig.addLayoutAlias("base", "base.webc");
@@ -39,4 +45,4 @@ module.exports = function (eleventyConfig) {
       layouts: "_layouts",
     },
   };
-};
+}

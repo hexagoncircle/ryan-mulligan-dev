@@ -1,6 +1,6 @@
-const codepen = require("./codepen");
-const media = require("./media");
-const meta = require("../../src/_data/meta.js");
+import codepen from "./codepen.js";
+import { image, video } from "./media.js";
+import meta from "../../src/_data/meta.js";
 
 const metaTitle = (title) => title || meta.title;
 const metaDescription = (description) => description || meta.description;
@@ -14,15 +14,16 @@ const mailToPath = (subject) => {
 };
 
 const shortcodes = {
-  ...codepen,
-  ...media,
+  codepen,
+  image,
+  video,
   metaTitle,
   metaDescription,
   metaOGImage,
   mailToPath,
 };
 
-module.exports = (eleventyConfig) => {
+export default (eleventyConfig) => {
   return Object.keys(shortcodes).forEach((shortcode) => {
     eleventyConfig.addShortcode(shortcode, shortcodes[shortcode]);
   });

@@ -2,7 +2,7 @@
  * Eleventy Image configuration
  * {@link https://www.11ty.dev/docs/plugins/image/}
  */
-module.exports = {
+export default {
   formats: ["webp", "jpeg"],
   urlPath: "/images/",
   defaultAttributes: {

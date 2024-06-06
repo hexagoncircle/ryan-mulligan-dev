@@ -1,7 +1,7 @@
-const dates = require("./dates");
-const text = require("./text");
-const pluralize = require("../pluralize");
-const meta = require("../../src/_data/meta");
+import dates from "./dates.js";
+import text from "./text.js";
+import pluralize from "../pluralize.js";
+import meta from "../../src/_data/meta.js";
 
 const getVarFromString = (varName) => {
   return this.getVariables()[varName];
@@ -59,7 +59,7 @@ const filters = {
   truncateAfterWord,
 };
 
-module.exports = (eleventyConfig) => {
+export default (eleventyConfig) => {
   return Object.keys(filters).forEach((filter) => {
     eleventyConfig.addFilter(filter, filters[filter]);
   });

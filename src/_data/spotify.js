@@ -3,10 +3,10 @@
  * {@link https://luigicruz.dev/blog/using-spotify-api}
  * {@link https://henry.codes/writing/spotify-now-playing/}
  */
-const EleventyFetch = require("@11ty/eleventy-fetch");
-const dotenv = require("dotenv");
+import EleventyFetch from "@11ty/eleventy-fetch";
+import { config } from "dotenv";
 
-dotenv.config();
+config();
 
 const TOKEN_ENDPOINT = "https://accounts.spotify.com/api/token";
 const RECENTLY_PLAYED_ENDPOINT = "https://api.spotify.com/v1/me/player/recently-played";
@@ -35,7 +35,7 @@ const getAccessToken = async () => {
   return response;
 };
 
-module.exports = async () => {
+export default async () => {
   let { access_token } = await getAccessToken();
 
   let data = await EleventyFetch(RECENTLY_PLAYED_ENDPOINT + "?limit=10", {

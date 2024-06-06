@@ -1,4 +1,4 @@
-const EleventyFetch = require("@11ty/eleventy-fetch");
+import EleventyFetch from "@11ty/eleventy-fetch";
 
 const url = new URL("https://api.open-meteo.com/v1/forecast");
 
@@ -52,7 +52,7 @@ const getWeatherStatus = (code) => {
   return status.label;
 };
 
-module.exports = async () => {
+export default async () => {
   let res = await EleventyFetch(url.toString(), {
     duration: "1h",
     type: "json",

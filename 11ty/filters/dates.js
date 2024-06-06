@@ -1,6 +1,6 @@
-const { DateTime, Settings } = require("luxon");
+import { DateTime, Settings } from "luxon";
 
-Settings.defaultZoneName = "America/Los_Angeles";
+Settings.defaultZone = "America/Los_Angeles";
 
 const dateToFormat = (date, format) => {
   return DateTime.fromJSDate(date, { zone: "utc" }).toFormat(String(format));
@@ -44,7 +44,7 @@ const getDeployDate = () => {
   };
 };
 
-module.exports = {
+export default {
   dateToFormat,
   dateToISO,
   postDate,

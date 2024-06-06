@@ -3,8 +3,9 @@
  * {@link https://benmyers.dev/blog/eleventy-blogroll/}
  */
 
-const { AssetCache } = require("@11ty/eleventy-fetch");
-const RssParser = require("rss-parser");
+import { AssetCache } from "@11ty/eleventy-fetch";
+import RssParser from "rss-parser";
+
 const rssParser = new RssParser({ timeout: 5000 });
 /** Sorter function for an array of feed items with dates */
 function sortByDateDescending(feedItemA, feedItemB) {
@@ -12,6 +13,7 @@ function sortByDateDescending(feedItemA, feedItemB) {
   const itemBDate = new Date(feedItemB.isoDate);
   return itemBDate - itemADate;
 }
+
 /** Fetch RSS feed at a given URL and return its latest post (or get it from cache, if possible) */
 async function getLatestPost(feedUrl) {
   const asset = new AssetCache(feedUrl);
@@ -39,19 +41,18 @@ async function getLatestPost(feedUrl) {
   await asset.save(rssPost, "json");
   return rssPost;
 }
-module.exports = {
-  eleventyComputed: {
-    /** Augments blog info with fetched information from the actual blogs */
-    async blogData({ blogs }) {
-      const augmentedBlogInfo = await Promise.all(
-        blogs.map(async (rawBlogInfo) => {
-          return {
-            ...rawBlogInfo,
-            latestPost: rawBlogInfo.feed ? await getLatestPost(rawBlogInfo.feed) : null,
-          };
-        })
-      );
-      return augmentedBlogInfo;
-    },
+
+export const eleventyComputed = {
+  /** Augments blog info with fetched information from the actual blogs */
+  async blogData({ blogs }) {
+    const augmentedBlogInfo = await Promise.all(
+      blogs.map(async (rawBlogInfo) => {
+        return {
+          ...rawBlogInfo,
+          latestPost: rawBlogInfo.feed ? await getLatestPost(rawBlogInfo.feed) : null,
+        };
+      })
+    );
+    return augmentedBlogInfo;
   },
 };
