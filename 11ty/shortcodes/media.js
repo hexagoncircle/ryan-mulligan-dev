@@ -1,5 +1,5 @@
-const Image = require("@11ty/eleventy-img");
-const config = require("../image.js");
+import Image, { generateHTML } from "@11ty/eleventy-img";
+import config from "../image.js";
 
 const image = async (
   src,
@@ -28,7 +28,7 @@ const image = async (
     return `<figure>${output}<figcaption>${caption}</figcaption></figure>`;
   }
 
-  const pictureOutput = Image.generateHTML(metadata, imageAttributes);
+  const pictureOutput = generateHTML(metadata, imageAttributes);
 
   return caption ? wrapFigure(pictureOutput, caption) : pictureOutput;
 };
@@ -49,7 +49,4 @@ const video = (src, caption) => {
   return html;
 };
 
-module.exports = {
-  image,
-  video,
-};
+export { image, video };

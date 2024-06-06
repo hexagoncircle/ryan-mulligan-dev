@@ -12,4 +12,4 @@ const pluralize = (count, singular, plural) => {
   }
 };
 
-module.exports = pluralize;
+export default pluralize;

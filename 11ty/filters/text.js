@@ -5,7 +5,7 @@ const splitLetters = (text) => [...text].map(textWrap).join("");
 
 const splitWords = (text) => text.split(" ").map(textWrap).join("");
 
-module.exports = {
+export default {
   splitLetters,
   splitWords,
 };

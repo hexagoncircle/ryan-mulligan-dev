@@ -15,6 +15,4 @@ const codepen = (url, height = 600, preview = false, defaultTab = "result") => {
   `;
 };
 
-module.exports = {
-  codepen,
-};
+export default codepen;

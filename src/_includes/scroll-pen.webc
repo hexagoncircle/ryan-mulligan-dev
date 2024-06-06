@@ -20,12 +20,12 @@
         rel="noopener">
         <span class="visually-hidden" @text="item.title"></span>
         <figure class="stack">
-          <img
-            webc:is="eleventy-image"
+          <eleventy-image
             :src="`./public/images/codepen/${item.id}.png`"
             alt=""
             :width="setDimensionValue(index)"
-            :height="setDimensionValue(index)" />
+            :height="setDimensionValue(index)">
+          </eleventy-image>
           <template webc:if="item.preview">
             <video
               muted

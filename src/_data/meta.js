@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   lang: "en",
   title: "Ryan Mulligan",
   description:

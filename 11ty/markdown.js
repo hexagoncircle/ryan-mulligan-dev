@@ -1,10 +1,10 @@
-const markdown = require("markdown-it");
-const markdownAnchor = require("markdown-it-anchor");
-const markdownAttrs = require("markdown-it-attrs");
-const markdownContainer = require("markdown-it-container");
-const slugify = require("@sindresorhus/slugify");
+import markdown from "markdown-it";
+import markdownAnchor from "markdown-it-anchor";
+import markdownAttrs from "markdown-it-attrs";
+import markdownContainer from "markdown-it-container";
+import slugify from "@sindresorhus/slugify";
 
-module.exports = (eleventyConfig) => {
+export default (eleventyConfig) => {
   eleventyConfig.setLibrary(
     "md",
     markdown({
