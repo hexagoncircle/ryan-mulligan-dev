@@ -2,6 +2,11 @@ import { transform } from "lightningcss";
 import lightningcssConfig from "../../11ty/css/config.js";
 import { createRequire } from "module";
 
+/**
+ * Leverage the cjs require function to import json files
+ * {@link https://pawelgrzybek.com/all-you-need-to-know-to-move-from-commonjs-to-ecmascript-modules-esm-in-node-js/#importing-json}
+ * {@link https://www.stefanjudis.com/snippets/how-to-import-json-files-in-es-modules-node-js/}
+ */
 const require = createRequire(import.meta.url);
 const themes = require("../_data/themes.json");
 
