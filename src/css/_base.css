@@ -125,6 +125,28 @@ fieldset {
   min-width: 0;
 }
 
+.chip {
+  --icon-size: 1.2em;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 0.2em;
+  padding: 0.1rem var(--space-3xs);
+  font-size: 0.7em;
+  font-family: var(--font-mono);
+  color: var(--color-theme-offset);
+  border-radius: var(--radius-m);
+  background: var(--color-theme-muted);
+  border: 1px solid var(--color-theme);
+  text-decoration: none;
+}
+
+a.chip:where(:hover, :focus-visible) {
+  outline-offset: 1px;
+  color: var(--color-text);
+  border-color: var(--color-theme-accent);
+}
+
 .prose img {
   width: 100%;
   height: auto;

@@ -23,9 +23,9 @@ classnames: "flow"
 </p>
 <ul class="flow" style="--flow-space: var(--space-l)" role="list">
   <li webc:for="item of $data.blogData">
-    <p class="cluster" style="--column-gap: var(--space-3xs); --row-gap: 0">
+    <p class="cluster" style="--column-gap: var(--space-2xs); --row-gap: 0">
       <span class="text-1 font-semibold" @text="item.name"></span>
-      <a class="blogroll-site" :href="item.url" target="_blank">
+      <a class="chip" :href="item.url" target="_blank">
         <inline-svg class="icon" src="./public/icons/browsers.svg"></inline-svg>
         <span @text="getDomain(item.url)"></span>
       </a>
@@ -35,33 +35,8 @@ classnames: "flow"
         webc:if="item.latestPost && item.latestPost.title"
         target="_blank"
         :href="item.latestPost.url"
-        @text="item.latestPost.title"></a>
+        @text="item.latestPost.title"
+      ></a>
     </p>
   </li>
 </ul>
-
-<style>
-  .blogroll-site {
-    --icon-size: 1em;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.2em;
-    font-family: var(--font-mono);
-    color: var(--color-theme-offset);
-    background: var(--color-theme-muted);
-    padding: 0.1rem var(--space-3xs);
-    border-radius: var(--radius-m);
-    border: 1px solid transparent;
-    text-decoration: none;
-
-    &:is(:hover, :focus-visible) {
-      outline-offset: 1px;
-      color: var(--color-text);
-      border-color: var(--color-theme-accent);
-    }
-
-    span {
-      font-size: 0.7em;
-    }
-  }
-</style>

@@ -75,8 +75,8 @@ description: "A summary of Ryan Mulligan's career, qualifications, and education
 
 <h2>Skills</h2>
 <template webc:nokeep @html="skills.content"></template>
-<ul class="multi-column">
-  <li webc:for="skill of skills.list" @text="skill"></li>
+<ul class="skills | cluster" role="list">
+  <li webc:for="skill of skills.list" class="chip" @text="skill"></li>
 </ul>
 
 <h2 class="section-title">Awards</h2>
@@ -238,5 +238,9 @@ description: "A summary of Ryan Mulligan's career, qualifications, and education
     .header-title {
       color: var(--color-text);
     }
+  }
+
+  .skills {
+    --gap: var(--space-2xs);
   }
 </style>
