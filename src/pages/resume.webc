@@ -204,8 +204,19 @@ description: "A summary of Ryan Mulligan's career, qualifications, and education
   }
 
   @media print {
+    .info-cta {
+      line-height: 1.4;
+
+      .icon {
+        top: -0.275em;
+      }
+    }
+
     .view-online-cta {
       margin-inline-start: auto;
+      margin-block-end: var(--space-s);
+      column-gap: 0.2rem;
+      font-size: 0.6em;
     }
 
     body {
