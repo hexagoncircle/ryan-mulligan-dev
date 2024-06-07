@@ -155,7 +155,7 @@ description: "A summary of Ryan Mulligan's career, qualifications, and education
   .info div {
     display: grid;
     grid-template-columns: auto 1fr;
-    column-gap: var(--space-3xs);
+    column-gap: 0.4rem;
     width: fit-content;
 
     :where(dt, dd) {
@@ -167,9 +167,9 @@ description: "A summary of Ryan Mulligan's career, qualifications, and education
     }
 
     .icon {
-      --icon-size: 1.3em;
+      --icon-size: 1.2em;
       position: relative;
-      top: -0.2em;
+      top: -0.12em;
       align-self: start;
       grid-row: span 2;
     }
