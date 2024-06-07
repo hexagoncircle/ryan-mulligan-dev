@@ -1,0 +1,44 @@
+<div class="info-cta" webc:root="override">
+  <inline-svg webc:if="icon" class="icon" :src="`./public/icons/${icon}.svg`"></inline-svg>
+  <dt class="text-label" @text="category"></dt>
+  <dd>
+    <a webc:if="url" :href="url" @text="label"></a>
+    <span webc:else @text="label"></span>
+  </dd>
+</div>
+
+<style webc:scoped="info-cta">
+  :host {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 0.4rem;
+  }
+
+  :where(dt, dd) {
+    grid-column: 2;
+  }
+
+  dt {
+    margin-block-end: -0.4em;
+  }
+
+  .icon {
+    --icon-size: 1.2em;
+    position: relative;
+    top: -0.12em;
+    align-self: start;
+    grid-row: span 2;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:where(:hover, :focus) {
+      text-decoration: underline;
+    }
+  }
+
+  :host:has(a:hover, a:focus-visible) * {
+    color: var(--color-theme-offset);
+  }
+</style>

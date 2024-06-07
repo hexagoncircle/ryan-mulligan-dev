@@ -11,8 +11,7 @@
     {
       "category": "Email",
       "label": "hey@ryanmulligan.dev",
-      "url": "mailto",
-      "subject": "I found your resume, now tell me more",
+      "url": "mailto:hey@ryanmulligan.dev?subject=I discovered your resume, tell me more",
       "icon": "email"
     },
     {
