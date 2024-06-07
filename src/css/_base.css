@@ -12,7 +12,11 @@ body {
   font-weight: var(--font-normal);
 }
 
-:is(a, .link) {
+.font-base {
+  font-family: var(--font-base);
+}
+
+:where(a, .link) {
   color: var(--color-link);
   text-decoration: underline;
   text-underline-offset: 2px;
@@ -20,11 +24,11 @@ body {
   scroll-margin-block: var(--space-xl);
 }
 
-:is(a, .link):where(:hover, :focus-visible) {
+:where(a, .link):where(:hover, :focus-visible) {
   color: var(--color-theme-offset);
 }
 
-:is(a, .link):focus-visible {
+:where(a, .link):focus-visible {
   outline: var(--focus-outline);
   outline-offset: var(--focus-outline-offset);
 }

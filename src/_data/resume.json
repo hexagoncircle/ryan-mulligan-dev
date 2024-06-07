@@ -1,0 +1,182 @@
+{
+  "name": "Ryan Mulligan",
+  "pronouns": "he/him",
+  "title": "Front-end Engineer + Creative Developer",
+  "info": [
+    {
+      "category": "Current Location",
+      "label": "Los Angeles, California",
+      "icon": "map-pin"
+    },
+    {
+      "category": "Email",
+      "label": "hey@ryanmulligan.dev",
+      "url": "mailto",
+      "subject": "I found your resume, now tell me more",
+      "icon": "email"
+    },
+    {
+      "category": "Website",
+      "label": "ryanmulligan.dev",
+      "url": "https://ryanmulligan.dev",
+      "icon": "user"
+    },
+    {
+      "category": "LinkedIn",
+      "label": "linkedin.com/in/mulliganryan",
+      "url": "https://www.linkedin.com/in/mulliganryan",
+      "icon": "linkedin"
+    }
+  ],
+  "introduction": "<p>I'm a creative front-end engineer with over a decade of experience building for the web. I've developed a well-rounded skillset servicing both product and marketing teams. My back catalog of roles range from individual contribution to management, team building, and leadership.</p><p>I perpetually advocate for modern web standards, embrace the web platform, and believe in the rule of least power—use the simplest language to do the job well, then scale as it becomes necessary. My priorities are influenced by empathy: lift up those around me so we may succeed together, always care for the end user, and deliver a performant, inclusive, and accessible web.</p>",
+  "experience": [
+    {
+      "company": "Netlify",
+      "location": "Remote",
+      "roles": [
+        {
+          "title": "Marketing Engineering Lead",
+          "type": "Full-time",
+          "startDate": "February 2022",
+          "endDate": "Present",
+          "description": "Currently, I am an engineering team leader focused on scaling our web properties within the Netlify marketing ecosystem. Beyond team and project management, this role includes active code contribution, developing new, creative facets of the website, architecting content schemas for our CMS, and connecting multiple datasets to our front end templates and visual editor. I've successfully launched web campaigns that have generated solid consumer leads and boosted app sign-ups. I've been actively working on our incremental site rebuild, creating a foundational design token system and component architecture while also maintaining legacy codebases. My team and I strive to enable the entire org to be more efficient and self-serving when it comes to creating and deploying new content on the web."
+        }
+      ]
+    },
+    {
+      "company": "Inspirato",
+      "location": "Denver, Colorado",
+      "roles": [
+        {
+          "title": "Manager, UI Engineering",
+          "type": "Full-time",
+          "startDate": "May 2021",
+          "endDate": "January 2022",
+          "description": "UI engineering team lead on the Inspirato Pass product. I advocated for modern best practices and inclusive patterns across application teams and the web platform while continuing to commit code updates as an individual contributor. The management role extended previous senior level duties and included conducting teammate 1:1s, working with recruitment in the hiring process, and providing direction towards organizational growth."
+        },
+        {
+          "title": "Senior UI Engineer",
+          "type": "Full-time",
+          "startDate": "August 2019",
+          "endDate": "May 2021",
+          "description": "I started as a front-end engineer on the Pass UX and List Architecture team. Notable work included building our latest front-end design system, developing consumer-facing application workflows for our Inspirato Pass property listings and trip collections, and evolving our user experience to make a more stable, performant, and accessible product."
+        }
+      ]
+    },
+    {
+      "company": "Elevated Third",
+      "location": "Seattle, Washington",
+      "roles": [
+        {
+          "title": "Senior Frontend Developer",
+          "type": "Full-time",
+          "startDate": "July 2018",
+          "endDate": "April 2019",
+          "description": "I returned to Elevated Third to build and manage a development team at their new Seattle location. I was a lead developer and web engineer on multiple projects, presented project build specs, estimated feature scope, and worked directly with many clients as a technical liason. On the management side, I mentored junior-level team members both in office and virtual."
+        }
+      ]
+    },
+    {
+      "company": "Expedia Group",
+      "location": "Bellevue, Washington",
+      "roles": [
+        {
+          "title": "Software Dev Engineer II",
+          "type": "Full-time",
+          "startDate": "June 2017",
+          "endDate": "May 2018",
+          "description": "I became a core member of the Global UI Engineering Team and worked on the UI toolkit for our suite of applications. I led our internal Front-end Improvements Team assisting engineering teams with development direction and code contributions while advocating for quality and consistency in the presentation layer of our products."
+        },
+        {
+          "title": "Senior Design Engineer",
+          "type": "Full-time",
+          "startDate": "June 2016",
+          "endDate": "June 2017",
+          "description": "I joined the design team to focus on engineering responsive product prototypes concentrated around business travel consumer needs. Being involved in user studies helped guide a rapid, iterative process for UX feature A/B testing. I contributed work to our global UI toolkit where I iterated, tested, and ensured we met design standards."
+        }
+      ]
+    },
+    {
+      "company": "Elevated Third",
+      "location": "Denver, Colorado",
+      "roles": [
+        {
+          "title": "Senior Frontend Developer",
+          "type": "Full-time",
+          "startDate": "May 2012",
+          "endDate": "May 2016",
+          "description": "I led projects from inception to completion. Most of my commitment with client projects focused on front-end web development, Drupal site theming, admin/client-facing site configuration, custom module development, and lighter back-end development. I had also estimated development time on new projects and features, as well as the information architecture for new site builds."
+        }
+      ]
+    }
+  ],
+  "education": {
+    "school": "Ramapo College of New Jersey",
+    "degree": "Bachelors, Communications, Graphic Design",
+    "startDate": "2001",
+    "endDate": "2005"
+  },
+  "awards": [
+    {
+      "title": "The Most Hearted of 2022",
+      "company": "CodePen",
+      "date": "December 2022",
+      "description": "#2 in the top 100 most hearted projects of 2022 on CodePen.",
+      "url": "https://codepen.io/2022/popular/pens"
+    },
+    {
+      "title": "Big Dreamer Award: Most Innovative and Creative",
+      "company": "Inspirato Tech and Product",
+      "date": "February 2021",
+      "description": "Awarded for work done in 2020 based on team votes."
+    },
+    {
+      "title": "The Most Hearted of 2020",
+      "company": "CodePen",
+      "date": "December 2020",
+      "description": "#1 in the top 100 most hearted projects of 2020 on CodePen.",
+      "url": "https://codepen.io/2020/popular/pens"
+    },
+    {
+      "title": "The Most Hearted of 2019",
+      "company": "CodePen",
+      "date": "December 2020",
+      "description": "#34 and #18 in the top 100 most hearted projects of 2019.",
+      "url": "https://codepen.io/2019/popular/pens"
+    },
+    {
+      "title": "The Most Hearted of 2016",
+      "company": "CodePen",
+      "date": "January 2017",
+      "description": "#90 of the top 100 most hearted pens of 2016.",
+      "url": "http://codepen.io/2016/popular/pens"
+    }
+  ],
+  "skills": {
+    "content": "<p>My primary goal is to build delightful, inclusive online experiences using the foundational building blocks of the web. Develop systems that are straightforward, extensible, and well-documented. Use the simplest language suitable for the job before jumping into more complex frameworks. Keep code portable and reusable. Below highlights some general areas of expertise and familiarity.</p>",
+    "list": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Accessibility",
+      "Animation and motion design",
+      "Design systems",
+      "Web Components",
+      "Typescript",
+      "Astro",
+      "Next.js",
+      "React",
+      "Vue",
+      "Svelte",
+      "11ty",
+      "Supabase",
+      "Sanity",
+      "Contentful",
+      "MPAs + SPAs",
+      "Website and app development",
+      "Data architecture",
+      "Structured content",
+      "Team leadership and mentoring"
+    ]
+  }
+}

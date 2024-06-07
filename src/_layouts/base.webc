@@ -37,7 +37,8 @@
       rel="alternate"
       type="application/atom+xml"
       :href="`${meta.url}/feed.xml`"
-      title="Ryan Mulligan" />
+      title="Ryan Mulligan"
+    />
 
     <script webc:if="page.url === '/'" webc:keep type="application/ld+json">
       {
@@ -55,7 +56,8 @@
       rel="preload"
       as="font"
       type="font/woff2"
-      crossorigin />
+      crossorigin
+    />
     <link rel="stylesheet" href="/css/themes.css" webc:keep />
     <link rel="stylesheet" href="/css/styles.css" webc:keep />
     <style @raw="getCss(page.url)" webc:keep></style>
@@ -66,7 +68,8 @@
     <main
       id="main"
       :class="`breakout flow${classnames ? ` ${classnames}` : ''}`"
-      @raw="content"></main>
+      @raw="content"
+    ></main>
     <site-footer></site-footer>
     <script @raw="getJs(page.url)" webc:keep></script>
     <script async defer src="https://scripts.withcabin.com/hello.js" webc:keep></script>

@@ -1,0 +1,242 @@
+---
+permalink: "resume/"
+title: "Resume – Ryan Mulligan"
+description: "A summary of Ryan Mulligan's career, qualifications, and education."
+---
+
+<script webc:setup>
+  const { name, pronouns, title, info, introduction, education, experience, awards, skills } =
+    $data.resume;
+</script>
+
+<h1 class="visually-hidden">Resume of Ryan Mulligan</h1>
+
+<article class="header">
+  <figure class="avatar">
+    <eleventy-image
+      src="public/images/headshot.jpg"
+      alt=""
+      width="200"
+      height="200"
+      eleventy:widths="200"
+    ></eleventy-image>
+  </figure>
+  <div>
+    <h2 class="header-name | text-5">
+      <span @text="name"></span>
+      <span class="pronouns">(<template @text="pronouns" webc:nokeep></template>)</span>
+    </h2>
+    <p class="header-title" @text="title"></p>
+  </div>
+</article>
+
+<dl class="info">
+  <div webc:for="item of info">
+    <inline-svg
+      webc:if="item.icon"
+      class="icon"
+      :src="`./public/icons/${item.icon}.svg`"
+    ></inline-svg>
+    <dt class="text-label" @text="item.category"></dt>
+    <dd>
+      <a webc:if="item.url" :href="item.url" @text="item.label"></a>
+      <span webc:else @text="item.label"></span>
+    </dd>
+  </div>
+</dl>
+
+<h2 class="section-title">Introduction</h2>
+<template webc:nokeep @html="introduction"></template>
+
+<h2 class="section-title">Experience</h2>
+<article webc:for="job of experience" class="job">
+  <h3 class="job-company">
+    <span @text="job.company"></span>
+  </h3>
+  <dl class="roles flow">
+    <div webc:for="role of job.roles" class="role | flow">
+      <dt class="role-title" @text="role.title"></dt>
+      <dd class="role-tenure | text-label">
+        <time @text="role.startDate"></time> – <time @text="role.endDate"></time>
+      </dd>
+      <dd class="role-description p-summary" @text="role.description"></dd>
+    </div>
+  </dl>
+</article>
+
+<h2 class="section-title">Education</h2>
+<dl>
+  <dt>
+    <strong @text="education.school"></strong>
+  </dt>
+  <dd @text="education.degree"></dd>
+  <dd><time @text="education.startDate"></time>—<time @text="education.endDate"></time></dd>
+</dl>
+
+<h2>Skills</h2>
+<template webc:nokeep @html="skills.content"></template>
+<ul class="multi-column">
+  <li webc:for="skill of skills.list" @text="skill"></li>
+</ul>
+
+<h2 class="section-title">Awards</h2>
+<dl class="awards | flow">
+  <div webc:for="award of awards">
+    <dt>
+      <strong @text="award.title"></strong>
+    </dt>
+    <dd class="text-label">
+      <span @text="award.company"></span> • <span @text="award.date"></span>
+    </dd>
+  </div>
+</dl>
+
+<style>
+  .header {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr;
+    column-gap: var(--space-s);
+  }
+
+  .header-title {
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(
+      45deg,
+      var(--color-text),
+      var(--color-theme-offset) 30%,
+      var(--color-text)
+    );
+    background-size: 200% auto;
+    line-height: 1.3;
+    animation: animate-gradient 4s linear infinite;
+  }
+
+  @keyframes animate-gradient {
+    to {
+      background-position: 200%;
+    }
+  }
+
+  .avatar {
+    --_size: clamp(3rem, 1rem + 10vw, 6rem);
+
+    position: relative;
+    align-self: baseline;
+    inline-size: var(--_size);
+    block-size: var(--_size);
+    border-radius: var(--radius-round);
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: var(--radius-round);
+    }
+  }
+
+  .pronouns {
+    display: inline-block;
+    position: relative;
+    top: -0.2em;
+    font-size: var(--step--1);
+    font-family: var(--font-base);
+    letter-spacing: 0.01em;
+  }
+
+  .info {
+    --flow-space: var(--space-l);
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-s);
+  }
+
+  .info div {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: var(--space-3xs);
+    width: fit-content;
+
+    :where(dt, dd) {
+      grid-column: 2;
+    }
+
+    dt {
+      margin-block-end: -0.4em;
+    }
+
+    .icon {
+      --icon-size: 1.3em;
+      position: relative;
+      top: -0.2em;
+      align-self: start;
+      grid-row: span 2;
+    }
+  }
+
+  .info a {
+    text-decoration: none;
+
+    &:where(:hover, :focus) {
+      text-decoration: underline;
+    }
+  }
+
+  .info div:has(a:hover, a:focus-visible) * {
+    color: var(--color-theme-offset);
+  }
+
+  .section-title {
+    --flow-space: var(--space-2xl);
+  }
+
+  .job {
+    --flow-space: var(--space-l);
+  }
+
+  .job-company {
+    display: flex;
+    gap: var(--space-s);
+    align-items: center;
+
+    span {
+      flex-shrink: 0;
+    }
+  }
+
+  .job-company::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: var(--color-theme-accent);
+  }
+
+  .role {
+    --flow-space: var(--space-s);
+  }
+
+  .role-tenure {
+    --flow-space: 0;
+  }
+
+  .roles {
+    margin-block-start: var(--space-xs);
+
+    dt {
+      font-weight: var(--font-bold);
+    }
+  }
+
+  @media print {
+    .site-header,
+    .site-footer {
+      display: none !important;
+    }
+
+    .header-title {
+      color: var(--color-text);
+    }
+  }
+</style>

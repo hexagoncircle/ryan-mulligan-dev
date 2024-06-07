@@ -3,7 +3,6 @@ permalink: "blog/"
 title: "Blog posts by Ryan Mulligan"
 description: "Blogging my general thoughts and rambles, code snippets, and front-end
 web dev discoveries"
-classnames: "flow"
 ---
 
 <h1 class="title | skewer">The Blog</h1>
