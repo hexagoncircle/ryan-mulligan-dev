@@ -48,10 +48,10 @@ description: "A summary of Ryan Mulligan's career, qualifications, and education
   ></info-cta>
 </dl>
 
-<h2 class="section-title">Introduction</h2>
+<h2 id="introduction" class="section-title">Introduction</h2>
 <template webc:nokeep @html="introduction"></template>
 
-<h2 class="section-title">Experience</h2>
+<h2 id="experience" class="section-title">Experience</h2>
 <article webc:for="job of experience" class="job">
   <h3 class="job-company">
     <span @text="job.company"></span>
@@ -67,7 +67,7 @@ description: "A summary of Ryan Mulligan's career, qualifications, and education
   </dl>
 </article>
 
-<h2 class="section-title">Education</h2>
+<h2 id="education" class="section-title">Education</h2>
 <dl>
   <dt>
     <strong @text="education.school"></strong>
@@ -76,13 +76,13 @@ description: "A summary of Ryan Mulligan's career, qualifications, and education
   <dd><time @text="education.startDate"></time>—<time @text="education.endDate"></time></dd>
 </dl>
 
-<h2>Skills</h2>
+<h2 id="skills">Skills</h2>
 <template webc:nokeep @html="skills.content"></template>
 <ul class="skills | cluster" role="list">
   <li webc:for="skill of skills.list" class="chip" @text="skill"></li>
 </ul>
 
-<h2 class="section-title">Awards</h2>
+<h2 id="awards" class="section-title">Awards</h2>
 <dl class="awards | flow">
   <div webc:for="award of awards">
     <dt>
@@ -204,6 +204,25 @@ description: "A summary of Ryan Mulligan's career, qualifications, and education
   }
 
   @media print {
+    :root {
+      --step-5: 2rem;
+      --step-4: 1.5rem;
+      --step-3: 1.25rem;
+      --step-2: 1.125rem;
+      --step-1: 1rem;
+    }
+
+    body {
+      font-size: 1rem;
+      font-family: sans-serif;
+      line-height: 1.4;
+    }
+
+    .site-header,
+    .site-footer {
+      display: none !important;
+    }
+
     .info-cta {
       line-height: 1.4;
 
@@ -216,17 +235,7 @@ description: "A summary of Ryan Mulligan's career, qualifications, and education
       margin-inline-start: auto;
       margin-block-end: var(--space-s);
       column-gap: 0.2rem;
-      font-size: 0.6em;
-    }
-
-    body {
-      font-size: 1rem;
-      font-family: sans-serif;
-    }
-
-    .site-header,
-    .site-footer {
-      display: none !important;
+      font-size: 0.8em;
     }
 
     .header-title {
