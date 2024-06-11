@@ -15,6 +15,12 @@
       "icon": "email"
     },
     {
+      "category": "View resume on the web",
+      "label": "ryanmulligan.dev/resume",
+      "url": "https://ryanmulligan.dev/resume",
+      "icon": "cursor-click"
+    },
+    {
       "category": "Website",
       "label": "ryanmulligan.dev",
       "url": "https://ryanmulligan.dev",

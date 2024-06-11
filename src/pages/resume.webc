@@ -9,90 +9,87 @@ description: "A summary of Ryan Mulligan's career, qualifications, and education
     $data.resume;
 </script>
 
-<h1 class="visually-hidden">Resume of Ryan Mulligan</h1>
+<section class="print-section | flow">
+  <h1 class="visually-hidden">Resume of Ryan Mulligan</h1>
 
-<info-cta
-  class="view-online-cta"
-  @icon="resume"
-  @category="View web version"
-  @label="ryanmulligan.dev/resume"
-  @url="https://ryanmulligan.dev/resume/"
-></info-cta>
+  <article class="header">
+    <figure class="avatar">
+      <eleventy-image
+        src="public/images/headshot.jpg"
+        alt=""
+        width="200"
+        height="200"
+        eleventy:widths="200"
+      ></eleventy-image>
+    </figure>
+    <div>
+      <h2 class="header-name | text-5">
+        <span @text="name"></span>
+        <span class="pronouns">(<template @text="pronouns" webc:nokeep></template>)</span>
+      </h2>
+      <p class="header-title" @text="title"></p>
+    </div>
+  </article>
+  <dl class="info">
+    <info-cta
+      webc:for="item of info"
+      :class="icon === 'cursor-click' ? 'resume-cta' : ''"
+      :@icon="item.icon"
+      :@category="item.category"
+      :@url="item.url"
+      :@label="item.label"
+    ></info-cta>
+  </dl>
+</section>
 
-<article class="header">
-  <figure class="avatar">
-    <eleventy-image
-      src="public/images/headshot.jpg"
-      alt=""
-      width="200"
-      height="200"
-      eleventy:widths="200"
-    ></eleventy-image>
-  </figure>
-  <div>
-    <h2 class="header-name | text-5">
-      <span @text="name"></span>
-      <span class="pronouns">(<template @text="pronouns" webc:nokeep></template>)</span>
-    </h2>
-    <p class="header-title" @text="title"></p>
-  </div>
-</article>
+<section class="print-section | flow">
+  <h2 id="introduction" class="section-title">Introduction</h2>
+  <template webc:nokeep @html="introduction"></template>
 
-<dl class="info">
-  <info-cta
-    webc:for="item of info"
-    :@icon="item.icon"
-    :@category="item.category"
-    :@url="item.url"
-    :@label="item.label"
-  ></info-cta>
-</dl>
+  <h2 id="experience" class="section-title">Experience</h2>
+  <article webc:for="job of experience" class="job">
+    <h3 class="job-company">
+      <span @text="job.company"></span>
+    </h3>
+    <dl class="roles flow">
+      <div webc:for="role of job.roles" class="role | flow">
+        <dt class="role-title" @text="role.title"></dt>
+        <dd class="role-tenure | text-label">
+          <time @text="role.startDate"></time> – <time @text="role.endDate"></time>
+        </dd>
+        <dd class="role-description p-summary" @text="role.description"></dd>
+      </div>
+    </dl>
+  </article>
+</section>
 
-<h2 id="introduction" class="section-title">Introduction</h2>
-<template webc:nokeep @html="introduction"></template>
+<section class="print-section | flow">
+  <h2 id="education" class="section-title">Education</h2>
+  <dl>
+    <dt>
+      <strong @text="education.school"></strong>
+    </dt>
+    <dd @text="education.degree"></dd>
+    <dd><time @text="education.startDate"></time>—<time @text="education.endDate"></time></dd>
+  </dl>
 
-<h2 id="experience" class="section-title">Experience</h2>
-<article webc:for="job of experience" class="job">
-  <h3 class="job-company">
-    <span @text="job.company"></span>
-  </h3>
-  <dl class="roles flow">
-    <div webc:for="role of job.roles" class="role | flow">
-      <dt class="role-title" @text="role.title"></dt>
-      <dd class="role-tenure | text-label">
-        <time @text="role.startDate"></time> – <time @text="role.endDate"></time>
+  <h2 id="skills">Skills</h2>
+  <ul class="skills | cluster" role="list">
+    <li webc:for="skill of skills.list" class="chip" @text="skill"></li>
+  </ul>
+
+  <h2 id="awards" class="section-title">Awards</h2>
+  <dl class="awards | flow">
+    <div webc:for="award of awards">
+      <dt>
+        <strong @text="award.title"></strong>
+      </dt>
+      <dd class="text-label">
+        <span @text="award.company"></span> • <span @text="award.date"></span>
       </dd>
-      <dd class="role-description p-summary" @text="role.description"></dd>
     </div>
   </dl>
-</article>
-
-<h2 id="education" class="section-title">Education</h2>
-<dl>
-  <dt>
-    <strong @text="education.school"></strong>
-  </dt>
-  <dd @text="education.degree"></dd>
-  <dd><time @text="education.startDate"></time>—<time @text="education.endDate"></time></dd>
-</dl>
-
-<h2 id="skills">Skills</h2>
-<template webc:nokeep @html="skills.content"></template>
-<ul class="skills | cluster" role="list">
-  <li webc:for="skill of skills.list" class="chip" @text="skill"></li>
-</ul>
-
-<h2 id="awards" class="section-title">Awards</h2>
-<dl class="awards | flow">
-  <div webc:for="award of awards">
-    <dt>
-      <strong @text="award.title"></strong>
-    </dt>
-    <dd class="text-label">
-      <span @text="award.company"></span> • <span @text="award.date"></span>
-    </dd>
-  </div>
-</dl>
+</section>
 
 <style>
   .header {
@@ -123,12 +120,12 @@ description: "A summary of Ryan Mulligan's career, qualifications, and education
   }
 
   .avatar {
-    --_size: clamp(3rem, 1rem + 10vw, 6rem);
+    --avatar-size: clamp(3rem, 1rem + 10vw, 6rem);
 
     position: relative;
     align-self: baseline;
-    inline-size: var(--_size);
-    block-size: var(--_size);
+    inline-size: var(--avatar-size);
+    block-size: var(--avatar-size);
     border-radius: var(--radius-round);
 
     img {
@@ -151,7 +148,7 @@ description: "A summary of Ryan Mulligan's career, qualifications, and education
     --flow-space: var(--space-l);
 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(var(--min, 250px), 1fr));
     gap: var(--space-s);
   }
 
@@ -197,8 +194,16 @@ description: "A summary of Ryan Mulligan's career, qualifications, and education
     }
   }
 
+  .skills {
+    --gap: var(--space-2xs);
+  }
+
   @media not print {
-    .view-online-cta {
+    .print-section + .print-section {
+      margin-block-start: var(--space-2xl);
+    }
+
+    .resume-cta {
       display: none;
     }
   }
@@ -210,10 +215,15 @@ description: "A summary of Ryan Mulligan's career, qualifications, and education
       --step-3: 1.25rem;
       --step-2: 1.125rem;
       --step-1: 1rem;
+
+      --space-s: 1rem;
+      --space-m: 1.25rem;
+      --space-l: 2rem;
+      --space-2xl: 2.25rem;
     }
 
     body {
-      font-size: 1rem;
+      font-size: 0.9rem;
       font-family: sans-serif;
       line-height: 1.4;
     }
@@ -221,6 +231,26 @@ description: "A summary of Ryan Mulligan's career, qualifications, and education
     .site-header,
     .site-footer {
       display: none !important;
+    }
+
+    #main {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: var(--space-l);
+
+      > :nth-child(1) {
+        grid-column: 1 / -1;
+      }
+      > :nth-child(2) {
+        grid-column: 1;
+      }
+      > :nth-child(3) {
+        grid-column: 2;
+      }
+    }
+
+    .info {
+      --min: 220px;
     }
 
     .info-cta {
@@ -231,19 +261,49 @@ description: "A summary of Ryan Mulligan's career, qualifications, and education
       }
     }
 
-    .view-online-cta {
-      margin-inline-start: auto;
-      margin-block-end: var(--space-s);
-      column-gap: 0.2rem;
-      font-size: 0.8em;
+    .section-title {
+      display: flex;
+      gap: var(--space-xs);
+      align-items: center;
+    }
+
+    .section-title::after {
+      content: "";
+      display: block;
+      width: 100%;
+      border-bottom: 1px solid lightgray;
+    }
+
+    .avatar {
+      --avatar-size: 50px;
     }
 
     .header-title {
       color: var(--color-text);
     }
-  }
 
-  .skills {
-    --gap: var(--space-2xs);
+    .job {
+      --flow-space: var(--space-s);
+    }
+
+    .job-company::after {
+      content: unset;
+    }
+
+    .role-description,
+    .role-tenure {
+      margin-block-start: var(--space-3xs);
+    }
+
+    .skills {
+      gap: 0.2rem;
+    }
+
+    .awards {
+      dt {
+        line-height: 1.3;
+        margin-bottom: 0.2em;
+      }
+    }
   }
 </style>
