@@ -64,6 +64,11 @@ description: "A summary of Ryan Mulligan's career, qualifications, and education
 </section>
 
 <section class="print-section | flow">
+  <h2 id="skills" class="section-title">Skills</h2>
+  <ul class="skills | cluster" role="list">
+    <li webc:for="skill of skills.list" class="chip" @text="skill"></li>
+  </ul>
+
   <h2 id="education" class="section-title">Education</h2>
   <dl>
     <dt>
@@ -72,11 +77,6 @@ description: "A summary of Ryan Mulligan's career, qualifications, and education
     <dd @text="education.degree"></dd>
     <dd><time @text="education.startDate"></time>—<time @text="education.endDate"></time></dd>
   </dl>
-
-  <h2 id="skills">Skills</h2>
-  <ul class="skills | cluster" role="list">
-    <li webc:for="skill of skills.list" class="chip" @text="skill"></li>
-  </ul>
 
   <h2 id="awards" class="section-title">Awards</h2>
   <dl class="awards | flow">
@@ -199,8 +199,8 @@ description: "A summary of Ryan Mulligan's career, qualifications, and education
   }
 
   @media not print {
-    .print-section + .print-section {
-      margin-block-start: var(--space-2xl);
+    .print-section + .print-section h2 {
+      margin-block-start: var(--space-xl);
     }
 
     .resume-cta {
@@ -284,6 +284,8 @@ description: "A summary of Ryan Mulligan's career, qualifications, and education
 
     .job {
       --flow-space: var(--space-s);
+
+      margin-block-start: var(--space-m);
     }
 
     .job-company::after {
