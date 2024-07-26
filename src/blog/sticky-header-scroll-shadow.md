@@ -56,7 +56,7 @@ This will push the intercept down from the top of the page by 300 pixels. When s
 
 **Updated on October 20th, 2023:** Here's another [CodePen demo](https://codepen.io/hexagoncircle/pen/LYMweej) that leans into CSS scroll-driven animations. Try it out in a browser that supports this feature.
 
-{% codepen "https://codepen.io/hexagoncircle/pen/LYMweej", "result", "400" %}
+{% codepen "https://codepen.io/hexagoncircle/pen/LYMweej", 400 %}
 
 I've been justifiably excited about browsers beginning to adopt this API, which I had written about in [this blog post](/blog/scroll-driven-animations/). It's _not quite_ the same as using an intersection observer: The observer toggles a class selector that triggers an animation for the declared duration of time whereas this version links the fade progress to the page scroll position. I find that the latter feels more natural. If a browser doesn't yet support the feature, the styles gracefully degrade to a persistent static shadow.
 
