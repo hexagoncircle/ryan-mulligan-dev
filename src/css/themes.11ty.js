@@ -52,8 +52,10 @@ let css = `
     }
   }
 
-  [data-appearance="dark"] {
-    ${getThemeVars("dark")}
+  @media not print {
+    [data-appearance="dark"] {
+      ${getThemeVars("dark")}
+    }
   }
 `;
 
