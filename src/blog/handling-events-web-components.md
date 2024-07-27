@@ -8,13 +8,7 @@ date: 2024-07-27
 
 My [`click-spark` web component](/blog/click-spark/) was a fun, silly project at best. Yet I've seen it's had some love since being shared. So why not publish it as an [npm package](https://www.npmjs.com/package/click-spark)? No better time than the present, some say.
 
-I had done a major refactor before publishing, the most notable was that the spark would now be contained to the custom element's parent node. After announcing the updates in a [Mastodon post](https://fosstodon.org/@hexagoncircle/112855152216537788), I soon received a [PR](https://github.com/hexagoncircle/click-spark/pull/7#discussion_r1693933865) with some quality feedback that helped clean up my initial—admittedly clumsy—implementation for handling the parent click event.
-
-## Events & Web Components
-
-Chris Ferdinandi's article, [The handleEvent() method is the absolute best way to handle events in Web Components](https://gomakethings.com/the-handleevent-method-is-the-absolute-best-way-to-handle-events-in-web-components/) is an excellent read on why `handleEvent()` is a top choice for architecting event listeners in Web Components. He also shares insight from Andrea Giammarchi's [DOM handleEvent: a cross-platform standard since year 2000](https://webreflection.medium.com/dom-handleevent-a-cross-platform-standard-since-year-2000-5bf17287fd38) article which contains solid techniques for handling multiple event types.
-
-Rather than me regurgitating, I recommend jumping into both of those articles to get a proper grasp on `handleEvent()`.
+I had done a major refactor before publishing, the most notable was that the spark would now be contained to the custom element's parent node. After announcing the updates in a [Mastodon post](https://fosstodon.org/@hexagoncircle/112855152216537788), I soon received a [PR](https://github.com/hexagoncircle/click-spark/pull/7#discussion_r1693933865) with some quality feedback that shared a more advantageous way to handle the parent click event using the `handleEvent()` method.
 
 ## The click-spark click
 
@@ -45,7 +39,7 @@ handleClick() {
 }
 ```
 
-Switching to `handleEvent()` tidies things up quite nicely.
+Switching to `handleEvent()` removes the need to store the event callback function. Passing `this` into the event listener will run the component's `handleEvent()` method every time we click.
 
 ```js
 constructor() {
@@ -67,10 +61,8 @@ handleEvent(e) {
 }
 ```
 
-I'm already convinced! The "after" solution, in my humble opinion, is easier to grok and can be scaled to handle multiple events quite nicely. [Andrea's article](https://webreflection.medium.com/dom-handleevent-a-cross-platform-standard-since-year-2000-5bf17287fd38) lists a handful of other remarkable reasons that make `handleEvent()` a top choice.
-
 ## Helpful resources
 
-- [The handleEvent() method is the absolute best way to handle events in Web Components](https://gomakethings.com/the-handleevent-method-is-the-absolute-best-way-to-handle-events-in-web-components/)
-- [DOM handleEvent: a cross-platform standard since year 2000](https://webreflection.medium.com/dom-handleevent-a-cross-platform-standard-since-year-2000-5bf17287fd38)
-- [EventTarget: addEventListener() method](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
+Chris Ferdinandi's article, [The handleEvent() method is the absolute best way to handle events in Web Components](https://gomakethings.com/the-handleevent-method-is-the-absolute-best-way-to-handle-events-in-web-components/) is an excellent read on why `handleEvent()` is a top choice for architecting event listeners in Web Components. He also shares insight from Andrea Giammarchi's [DOM handleEvent: a cross-platform standard since year 2000](https://webreflection.medium.com/dom-handleevent-a-cross-platform-standard-since-year-2000-5bf17287fd38) article which contains solid techniques for handling multiple event types.
+
+Rather than me regurgitating, I recommend jumping into both of those articles to get a proper grasp on `handleEvent()`.
