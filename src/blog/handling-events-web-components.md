@@ -8,7 +8,7 @@ date: 2024-07-27
 
 My [`click-spark` web component](/blog/click-spark/) was a fun, silly project at best. Yet I've seen it's had some love since being shared. So why not publish it as an [npm package](https://www.npmjs.com/package/click-spark)? No better time than the present, some say.
 
-I had done a major refactor before publishing, the most notable was that the spark would now be contained to the custom element's parent node. After announcing the updates in a [Mastodon post](https://fosstodon.org/@hexagoncircle/112855152216537788), I soon received a [PR](https://github.com/hexagoncircle/click-spark/pull/7#discussion_r1693933865) with some quality feedback that shared a more advantageous way to handle the parent click event using the `handleEvent()` method.
+I had done a major refactor before publishing, the most notable was that the spark would now be contained to the custom element's parent node. After announcing the updates in a [Mastodon post](https://fosstodon.org/@hexagoncircle/112855152216537788), I soon received a [PR](https://github.com/hexagoncircle/click-spark/pull/7#discussion_r1693933865) with some quality feedback including a more advantageous way to handle the parent click event using the `handleEvent()` method.
 
 ## The click-spark click
 
