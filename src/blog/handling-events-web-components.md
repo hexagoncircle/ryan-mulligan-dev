@@ -17,7 +17,7 @@ Let's dive into a "before and after" for handling the click event on this compon
 In both examples, notice that the parent node is being stored in a variable when `connectedCallback` runs. This ensures that the click event is properly removed from the parent since it's not available by the time `disconnectedCallback` is invoked as [FND's comment](https://github.com/hexagoncircle/click-spark/pull/7#discussion_r1693936577) explains.
 {.callout}
 
-In the "before" approach, the event callback function is stored in a variable so that it's cleared from the parent node whenever the `click-spark` element is removed from the DOM.
+In the "before" approach, the event handler is stored in a variable so that it's cleared from the parent node whenever the `click-spark` element is removed from the DOM.
 
 ```js
 constructor() {
@@ -39,7 +39,7 @@ handleClick() {
 }
 ```
 
-Switching to `handleEvent()` removes the need to store the event callback function. Passing `this` into the event listener will run the component's `handleEvent()` method every time we click.
+Switching to `handleEvent()` removes the need to store the event handler. Passing `this` into the event listener will run the component's `handleEvent()` method every time we click.
 
 ```js
 constructor() {
