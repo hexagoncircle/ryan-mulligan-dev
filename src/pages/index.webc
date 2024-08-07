@@ -62,7 +62,8 @@ permalink: "/"
         <inline-svg
           class="icon"
           aria-hidden="true"
-          :src="`./public/icons/${item.id}.svg`"></inline-svg>
+          :src="`./public/icons/${item.id}.svg`"
+        ></inline-svg>
         <span @text="item.label" webc:nokeep></span>
       </a>
     </li>
@@ -108,8 +109,13 @@ permalink: "/"
     margin-block-start: var(--space-s);
     margin-block-end: var(--space-m);
     position: relative;
-    opacity: 0;
-    animation: fade-in 200ms 500ms ease-out forwards;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    [data-scroll-pen-controls] {
+      opacity: 0;
+      animation: fade-in 200ms 500ms ease-out forwards;
+    }
   }
 
   @media (min-width: 35rem) {

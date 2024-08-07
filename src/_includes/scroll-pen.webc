@@ -17,14 +17,16 @@
         class="stack"
         :href="`https://codepen.io/hexagoncircle/full/${item.id}`"
         target="_blank"
-        rel="noopener">
+        rel="noopener"
+      >
         <span class="visually-hidden" @text="item.title"></span>
         <figure class="stack">
           <eleventy-image
             :src="`./public/images/codepen/${item.id}.png`"
             alt=""
             :width="setDimensionValue(index)"
-            :height="setDimensionValue(index)">
+            :height="setDimensionValue(index)"
+          >
           </eleventy-image>
           <template webc:if="item.preview">
             <video
@@ -33,7 +35,8 @@
               playsinline
               preload="none"
               :width="setDimensionValue(index)"
-              :height="setDimensionValue(index)">
+              :height="setDimensionValue(index)"
+            >
               <source :src="`/videos/codepen/${item.id}.mp4`" type="video/mp4" />
             </video>
           </template>
@@ -103,11 +106,17 @@
       this.scroller.addEventListener("keydown", this.handleScrollerKeyPress);
       this.scroller.addEventListener("input", this.handleScrollerInput.bind(this));
       this.unskewer.addEventListener("input", this.handleUnskewerClick.bind(this));
-      this.nopreview.addEventListener("input", this.handleReduceMotionClick.bind(this));
+      this.nopreview.addEventListener("input", this.handleNoPreviewClick.bind(this));
 
-      if (this.mq.reducedMotion.matches || !this.mq.hover.matches) return;
+      if (!this.mq.hover.matches) return;
 
       this.setupVideos();
+
+      if (this.mq.reducedMotion.matches) {
+        this.nopreview.click();
+        return;
+      }
+
       this.addVideoEvents();
     }
 
@@ -197,8 +206,8 @@
       }
     }
 
-    handleReduceMotionClick(e) {
-      this.classList.toggle("reduce-motion", e.target.checked);
+    handleNoPreviewClick(e) {
+      this.classList.toggle("no-preview", e.target.checked);
       e.target.checked ? this.removeVideoEvents() : this.addVideoEvents();
     }
 
@@ -498,7 +507,7 @@
       }
     }
 
-    :host:not(.reduce-motion) li:is(:hover, :focus-within) video.playback-ready {
+    :host:not(.no-preview) li:is(:hover, :focus-within) video.playback-ready {
       display: block;
       animation: scale-back calc(var(--_duration) * 8) var(--_ease) forwards,
         fade-in calc(var(--_duration) / 2) var(--_ease) forwards;
