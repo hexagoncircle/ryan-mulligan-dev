@@ -19,18 +19,18 @@
   },
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "3.0.0-alpha.17",
+    "@11ty/eleventy": "3.0.0-beta.1",
     "@11ty/eleventy-fetch": "^4.0.1",
     "@11ty/eleventy-img": "^4.0.2",
     "@11ty/eleventy-plugin-bundle": "^2.0.2",
     "@11ty/eleventy-plugin-rss": "^2.0.2",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.0",
     "@11ty/eleventy-plugin-webc": "^0.11.2",
-    "browserslist": "^4.23.2",
+    "browserslist": "^4.23.3",
     "click-spark": "^2.1.0",
     "dotenv": "^16.4.5",
     "eleventy-plugin-embed-everything": "^1.18.2",
-    "lightningcss": "^1.25.1",
+    "lightningcss": "^1.26.0",
     "lodash": "^4.17.21",
     "markdown-it": "^14.1.0",
     "markdown-it-anchor": "^9.0.1",
@@ -39,7 +39,7 @@
     "rss-parser": "^3.13.0",
     "sanitize-html": "^2.13.0",
     "svgo": "^3.3.2",
-    "terser": "^5.31.3"
+    "terser": "^5.31.5"
   },
   "devDependencies": {
     "netlify-plugin-cache": "^1.0.3"
