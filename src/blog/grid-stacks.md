@@ -102,7 +102,7 @@ In the above demo, you may have discovered some configurations for the *Grid Sta
 - This calls for a five-column grid visually, so it sets `--columns: 5`. Recall that this value gets doubled and outputs a template of ten columns.
 - We'll nudge the first item in each row with `grid-column-start`. The top row element's start position is equal to the `--column` value. Subsequent rules will decrease this value by 1.
 
-It's surely possible to develop a Sass or PostCSS function that could dynamically generate this CSS output but that seemed a bit overkill for the demo. If you're looking for another way to output a pyramid of elements, Temani Afif offers [another solution for generating a pyramid](https://stackoverflow.com/a/67267124) using `float` and `shape-outside`. Very cool!
+It's surely possible to develop a Sass or PostCSS function that could dynamically generate this CSS output but that seemed a bit overkill for the demo. As an added bonus, check out Temani Afif's [Stack Overflow answer](https://stackoverflow.com/a/67267124) that styles elements in a pyramid using `float` and `shape-outside`. Very cool!
 
 ## Limitations
 
