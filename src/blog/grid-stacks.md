@@ -75,7 +75,7 @@ The `--columns` value gets doubled as it passes through the CSS `calc()` functio
 
 ## Bonus! Pyramid stacks
 
-In the above demo, scroll down further to discover some configurations for the *Grid Stack* that result in a pyramid-style stack. Maybe _now_ we can call it a pyragrid. Still not sure about that one? Anyway, to achieve this layout involves a few extra ingredients. We'll need to adjust the `grid-column-start` position of the first element in each row. Let's jump right to the `grid-stack-15` example:
+In the above demo, you may have discovered some configurations for the *Grid Stack* that result in a pyramid-style stack. Maybe _now_ we can call it a pyragrid. Still not sure about that one? Anyway, to achieve this layout involves a few extra ingredients. We'll need to adjust the `grid-column-start` position of the first element in each row. Let's jump right to the `grid-stack-15` example:
 
 ```scss
 .grid-stack-15 {
