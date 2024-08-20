@@ -18,7 +18,7 @@ I've included a [CodePen demo](#demo) at the end of this article if you'd like t
 
 ## Grid Stacks
 
-Is it a trapezoid grid? Grid pyramid? Pyragrid? For the sake of this article, I ultimately picked a more generic name, calling it *Grid Stack*. Here's how we'll build a *Grid Stack* that contains five cards displayed in a three-column grid.
+Is it a trapezoid grid? Brick grid? Grid pyramid? Pyragrid? For the sake of this article, I ultimately picked a more generic name, calling it *Grid Stack*. Here's how we'll build a *Grid Stack* that contains five cards displayed in a three-column grid.
 
 ```scss
 .grid-stack {
@@ -44,7 +44,7 @@ The parent `grid-stack` container produces a template with six columns. Notice t
 
 ## Variations
 
-So far, the styles we've created only apply when there are five cards positioned across three columns. We may want different variations depending on our designs. Three cards displayed in two columns? Seven cards in four? Let's tweak the above ruleset to utilize a CSS variable for the `grid-template-columns` repeat count. Recall that this value should double our expected column amount. We could also think of it as the amount of child elements plus one.
+So far, the styles we've created only apply when there are five cards positioned across three columns. We may want different variations depending on our designs. Three cards displayed in two columns? Seven cards in four? Let's tweak the above ruleset to utilize a CSS variable for the `grid-template-columns` repeat count. Recall that this value should be twice the amount of expected columns.
 
 ```scss
 .grid-stack {
