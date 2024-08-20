@@ -73,13 +73,9 @@ The `--columns` value gets doubled as it passes through the CSS `calc()` functio
 
 {% codepen "https://codepen.io/hexagoncircle/pen/gONvbNL/1a52c8d987cc2f6faf90dfe0b98310b2?editors=1100" %}
 
-## Limitations
-
-Each layout variation expects a specific odd-number of child elements to be rendered. I have explored ways of automatically adjusting the layout based on the element count but there were too many edge cases to consider. It created more problems than it solved. Additionally, while this layout works nicely on a wider viewport, it may not fare as well where less space is available. A `media` or `container` query ruleset can ensure our content adapts appropriately, but it certainly couldn't be a one-size-fits-all conditional set of styles.
-
 ## Bonus! Pyramid stacks
 
-In the above demo, scroll down further to discover some configurations for the *Grid Stack* that result in a pyramid-style stack. Maybe we can call it a pyragrid? Still not sure about that one? Anyway, to achieve this layout involves a few extra ingredients. We'll need to adjust the `grid-column-start` position of the first element in each row. Let's jump right to the `grid-stack-15` example:
+In the above demo, scroll down further to discover some configurations for the *Grid Stack* that result in a pyramid-style stack. Maybe _now_ we can call it a pyragrid. Still not sure about that one? Anyway, to achieve this layout involves a few extra ingredients. We'll need to adjust the `grid-column-start` position of the first element in each row. Let's jump right to the `grid-stack-15` example:
 
 ```scss
 .grid-stack-15 {
@@ -107,3 +103,7 @@ In the above demo, scroll down further to discover some configurations for the *
 - We'll nudge the first item in each row with `grid-column-start`. The top row element's start position is equal to the `--column` value. Subsequent rules will decrease this value by 1.
 
 It's surely possible to develop a Sass or PostCSS function that could dynamically generate this CSS output but that seemed a bit overkill for the demo. If you're looking for another way to output a pyramid of elements, Temani Afif offers [another solution for generating a pyramid](https://stackoverflow.com/a/67267124) using `float` and `shape-outside`. Very cool!
+
+## Limitations
+
+Each layout variation expects a specific odd-number of child elements to be rendered. I have explored ways of automatically adjusting the layout based on the element count but there were too many edge cases to consider. It created more problems than it solved. Additionally, while these layouts work nicely on a wider viewport, it may not fare as well where less space is available. A `media` or `container` query ruleset can ensure our content adapts appropriately, but it certainly couldn't be a one-size-fits-all conditional set of styles.
