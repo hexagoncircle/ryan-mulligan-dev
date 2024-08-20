@@ -71,7 +71,7 @@ The `--columns` value gets doubled as it passes through the CSS `calc()` functio
 
 ## Demo
 
-{% codepen "https://codepen.io/hexagoncircle/pen/gONvbNL/1a52c8d987cc2f6faf90dfe0b98310b2?editors=1100" %}
+{% codepen "https://codepen.io/hexagoncircle/pen/gONvbNL" %}
 
 ## Bonus! Pyramid stacks
 
