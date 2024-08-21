@@ -26,6 +26,7 @@
             alt=""
             :width="setDimensionValue(index)"
             :height="setDimensionValue(index)"
+            :loading="index < 7 ? 'eager' : 'lazy'"
           >
           </eleventy-image>
           <template webc:if="item.preview">
