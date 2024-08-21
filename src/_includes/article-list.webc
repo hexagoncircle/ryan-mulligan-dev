@@ -7,7 +7,7 @@
 <ul class="flow" role="list" webc:root="override">
   <li webc:if="!count || index < count" webc:for="(post, index) of posts">
     <div class="info">
-      <time :datetime="dateToISO(post.date)" @text="postDate(post.date)"></time>
+      <time :datetime="post.date.toISOString()" @text="postDate(post.date)"></time>
       <span webc:if="post.source" class="source">
         — <template @text="post.source" webc:nokeep></template>
         <inline-svg class="icon" src="./public/icons/arrow-square-out.svg"></inline-svg>
@@ -17,7 +17,8 @@
       class="text-1 font-semibold"
       :href="post.url"
       :target="post.source ? '_blank' : null"
-      @text="post.title"></a>
+      @text="post.title"
+    ></a>
   </li>
 </ul>
 
