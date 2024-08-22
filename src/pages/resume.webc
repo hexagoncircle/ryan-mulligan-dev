@@ -64,7 +64,7 @@ description: "A summary of Ryan Mulligan's career, qualifications, and education
 </section>
 
 <section class="print-section | flow">
-  <h2 id="skills" class="section-title">Skills</h2>
+  <h2 id="skills" class="section-title">Competencies</h2>
   <ul class="skills | cluster" role="list">
     <li webc:for="skill of skills.list" class="chip" @text="skill"></li>
   </ul>
