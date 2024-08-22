@@ -164,6 +164,8 @@
       "CSS",
       "JavaScript",
       "Accessibility",
+      "Performance",
+      "Intrinsic design",
       "Animation",
       "Web Components",
       "Design systems",
@@ -184,10 +186,9 @@
       "GraphQL",
       "GROQ",
       "Supabase",
-      "MPAs + SPAs",
-      "Website and app development",
       "Data architecture",
       "Structured content",
+      "Website and app development",
       "Team leadership and mentoring"
     ]
   }
