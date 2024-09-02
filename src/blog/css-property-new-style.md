@@ -88,7 +88,7 @@ I had to fine-tune the percent and offset values until the shine length and tran
 
 This [CSS tip to slow down a rotation on hover](https://css-tip.com/slow-down-rotation/) truly blew my mind. In the tip's example code, the same rotate animation is declared twice. The second one is reversed and paused, its duration divided in half. When the element is hovered, `animation-play-state: running` overrides the `paused` value and slows the rotation to half speed. The mind-blowing part, at least to me, is that the animation speeds back up at the current position when the element is no longer hovered. No snapping back to a start position, no extra wrapper elements necessary. That is one heck of a tip.
 
-[The article demo](#cp_embed_MWMqXbK) relies on this method to slow down animations when the button is hovered. This technique keeps all the rotations and movements in sync as they change speed.
+The [call-to-action animations](#cp_embed_MWMqXbK) rely on this method to slow them down when the button is hovered. This technique keeps all the rotations and movements in sync as they change speed.
 
 ## Tiny shiny dots
 
