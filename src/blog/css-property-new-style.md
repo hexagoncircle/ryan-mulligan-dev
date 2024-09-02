@@ -78,7 +78,7 @@ A few special ingredients help facilitate a buttery smooth gradient transition w
 }
 ```
 
-Each custom property that needs to animate has a syntax set in its `@property` rules allowing the browser to interpolate between corresponding value changes and transition them seamlessly. The size of the shiny area is determined by the `--gradient-percent` value. On hover, a higher percentage lengthens the shine. The `--gradient-angle-offset` value is used to readjust the gradient angle so that the shine doesn't rubber band back and forth on hover.
+Each custom property that needs to animate has a `syntax` set in its `@property` rules allowing the browser to interpolate between corresponding value changes and transition them seamlessly. The size of the shiny area is determined by the `--gradient-percent` value. On hover, a higher percentage lengthens the shine. The `--gradient-angle-offset` value is used to readjust the gradient angle so that the shine doesn't rubber band back and forth on hover.
 
 {% video "/videos/shiny-cta-angle-offset", "Demonstrating the transition behavior without the angle offset value" %}
 
