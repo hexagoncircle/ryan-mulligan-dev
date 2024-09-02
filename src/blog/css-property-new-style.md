@@ -24,7 +24,7 @@ There's a ton to unpack in this demo. Let's start with that shine looping around
 }
 ```
 
-The `@property` rule communicates to the browser that [`<angle>`](https://developer.mozilla.org/en-US/docs/Web/CSS/angle) is the allowed syntax for this custom property and its initial value is `0deg`. This enables the browser to smoothly transition from `0deg` to `360deg` and output a rotating gradient. I put together a simple gradient spin demo to focus on the handful of lines necessary to render this concept.
+The `@property` rule communicates to the browser that [`<angle>`](https://developer.mozilla.org/en-US/docs/Web/CSS/angle) is the allowed syntax for this custom property and its initial value is `0deg`. This enables the browser to smoothly transition from `0deg` to `360deg` and output a rotating gradient.
 
 ```scss
 @keyframes rotate-gradient {
@@ -36,6 +36,8 @@ The `@property` rule communicates to the browser that [`<angle>`](https://develo
   animation: rotate-gradient 10s linear infinite;
 }
 ```
+
+I put together a simple gradient spin demo to focus on the handful of lines necessary to render this concept.
 
 {% codepen "https://codepen.io/hexagoncircle/pen/eYwLqJx", 300, result, true %}
 
