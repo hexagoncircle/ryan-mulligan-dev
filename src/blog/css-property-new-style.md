@@ -6,7 +6,7 @@ ogImage: /social/css-property-new-style.png
 date: 2024-09-02
 ---
 
-The [`@property`](https://developer.mozilla.org/en-US/docs/Web/CSS/@property) at-rule has recently gained support across all modern browsers, unlocking the ability to explicitly define a syntax, initial value, and inheritance for CSS custom properties. It seems like forever ago that CSS Houdini and its [CSS Properties and Values API](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Properties_and_Values_API) were initially introduced. I experimented sparingly over time, reading articles that danced around the concepts, but I had barely scratched the surface of what `@property` could offer. The ensuing demo explores what's possible in the next generation of CSS.
+The [`@property`](https://developer.mozilla.org/en-US/docs/Web/CSS/@property) at-rule recently gained support across all modern browsers, unlocking the ability to explicitly define a syntax, initial value, and inheritance for CSS custom properties. It seems like forever ago that CSS Houdini and its [CSS Properties and Values API](https://developer.mozilla.org/en-US/docs/Web/API/CSS_Properties_and_Values_API) were initially introduced. I experimented sparingly over time, reading articles that danced around the concepts, but I had barely scratched the surface of what `@property` could offer. The ensuing demo explores what's possible in the next generation of CSS.
 
 ## Calls to action
 
