@@ -133,7 +133,7 @@ The button's `::before` and `::after` pseudo elements were already in use so I w
 
 ## In with the new style
 
-Many of the above techniques would have been nearly impossible only a short time ago. Explicitly defining custom properties unlocks a great big world of opportunity. I'm especially eager to see how `@property` will be utilized in large-scale applications and design systems. Adam Argyle's [Type safe CSS design systems with @property](https://nerdy.dev/cant-break-this-design-system) is just one glimpse into a really promising future for publishing our CSS.
+Many of the above techniques would have been nearly impossible only a short time ago. Explicitly defining custom properties unlocks a great big world of opportunity. I'm especially eager to see how `@property` will be utilized in large-scale applications and design systems. Adam Argyle's [Type safe CSS design systems with @property](https://nerdy.dev/cant-break-this-design-system) and [Providing Type Definitions for CSS with @property](https://moderncss.dev/providing-type-definitions-for-css-with-at-property/) by Stephanie Eckles are just a couple glimpses into a really promising future for publishing our CSS.
 
 ## Helpful resources
 
