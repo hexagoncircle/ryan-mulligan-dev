@@ -122,7 +122,7 @@ Remember that `--gradient-angle` custom property? It has returned! But this time
 }
 ```
 
-For one last touch of magic, a gradient containing the highlight color is added to the `::after` pseudo element, spinning in unison with the shine area. These highlights flowing through the button add a pleasant, welcoming ambience it was previously missing.
+For one last touch of magic, a gradient containing the highlight color is added to the `::after` pseudo element, spinning in unison with the shine area. These highlights flowing through the button add a pleasant, welcoming ambience that was previously missing.
 
 ## Enhancing the hover colors
 
@@ -133,7 +133,7 @@ The button's `::before` and `::after` pseudo elements were already in use so I w
 
 ## In with the new style
 
-Many of the above techniques would have been nearly impossible only a short time ago. Explicitly defining custom properties unlocks a great big world of opportunity. I'm especially eager to see how `@property` will be utilized in large-scale applications and design systems. Adam Argyle's [Type safe CSS design systems with @property](https://nerdy.dev/cant-break-this-design-system) and [Providing Type Definitions for CSS with @property](https://moderncss.dev/providing-type-definitions-for-css-with-at-property/) by Stephanie Eckles are just a couple glimpses into a really promising future for publishing our CSS.
+Many of the above techniques would have been nearly impossible only a short time ago. Explicitly defining custom properties unlocks a great big world of opportunity. I'm especially eager to see how `@property` will be utilized in large-scale applications and design systems. [Providing Type Definitions for CSS with @property](https://moderncss.dev/providing-type-definitions-for-css-with-at-property/) by Stephanie Eckles as well as Adam Argyle's [Type safe CSS design systems with @property](https://nerdy.dev/cant-break-this-design-system) are just a couple glimpses into a really promising future for publishing our CSS.
 
 ## Helpful resources
 
