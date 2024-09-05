@@ -107,3 +107,7 @@ It's surely possible to develop a Sass or PostCSS function that could dynamicall
 ## Limitations
 
 Each layout variation expects a specific odd-number of child elements to be rendered. I have explored ways of automatically adjusting the layout based on the element count but there were too many edge cases to consider. It created more problems than it solved. Additionally, while these layouts work nicely on a wider viewport, it may not fare as well where less space is available. A `media` or `container` query ruleset can ensure our content adapts appropriately, but it certainly couldn't be a one-size-fits-all conditional set of styles.
+
+## From the community
+
+*Updated on September 5th* — [Kevin Powell reached out on Mastodon](https://fosstodon.org/@kevinpowell@front-end.social/113085254739679608) and shared a [CodePen Example](https://codepen.io/kevinpowell/pen/abgQreW) that uses `:has(:nth-child():last-child)` to result in this layout. I certainly dig the approach! Keep in mind that the same aforementioned limitations still apply.
