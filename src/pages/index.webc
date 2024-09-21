@@ -14,10 +14,7 @@ permalink: "/"
     fellow passenger through space and time.
   </p>
   <ul>
-    <li>
-      The latest site build was deployed in the
-      <span @text="timeOfDay" webc:nokeep></span> on <span @text="date" webc:nokeep></span>.
-    </li>
+    <li>The latest site build was deployed on the 21st night of September.</li>
     <li webc:if="$data.weather">
       During deployment, the weather over here was
       <span @text="$data.weather.temperature" webc:nokeep></span
