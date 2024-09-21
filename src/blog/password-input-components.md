@@ -28,7 +28,7 @@ Below is an example of using both custom elements with a password input.
 
 ```html
 <label for="new-password">Password</label>
-<input type="password" id="new-password" pattern="^(?=.*[A-Z])(?=.*\d).{9,}$" autocomplete="new-password" />
+<input type="password" id="new-password" />
 <div id="status" aria-live="polite"></div>
 
 <password-toggle data-input-id="new-password" data-status-id="status">
@@ -67,7 +67,7 @@ button[aria-pressed="true"] {
 }
 ```
 
-Using the `[aria-pressed]` attribute selector ensures that our styles stay in sync with their accessibility counterpart. It also means that we don't need to manage a semantic attribute value as well as some generic class selector like "is-active". Ben Myers shares great knowledge on this subject in [Style with stateful, semantic selectors](https://benmyers.dev/blog/semantic-selectors/). A must-have in the bookmarks 🏆
+Targeting the `[aria-pressed]` attribute selector ensures that our styles stay in sync with their accessibility counterpart. It also means that we don't need to manage a semantic attribute value as well as some generic class selector like "is-active". Ben Myers shares great knowledge on this subject in [Style with stateful, semantic selectors](https://benmyers.dev/blog/semantic-selectors/). A must-have in the bookmarks 🏆
 {.callout}
 
 ## Password rules
@@ -100,7 +100,7 @@ When a rule is met that matches the `data-rule-index` value on an element, an `i
 
 ### score/total
 
-The current password _score_ and rules _total_ appear on the custom element as data attributes and CSS variables. The score values update as rules are met. This allows us to do some fancy things like change the colors in a score meter and a visible tally. All of it done with CSS.
+The current password "score" and rules "total" are passed to the custom element as data attributes and CSS variables. The score value updates as rules are met. This allows us to do some fancy things like change the colors in a score meter and present the current tally. All of it done with CSS.
 
 ```scss
 /** Incrementally adjust background colors */
@@ -117,7 +117,7 @@ password-rules[data-score="5"] .password-rules__meter :nth-child(-n + 5) {
 }
 ```
 
-The CSS variables are passed into a [CSS `counter()`](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_counter_styles/Using_CSS_counters) to render the score tally.
+CSS variables are passed into a [CSS `counter()`](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_counter_styles/Using_CSS_counters) to render the current score and total.
 
 ```scss
 .password-rules__score::before {
