@@ -28,7 +28,7 @@ Below is an example of using both custom elements with a password input.
 
 ```html
 <label for="new-password">Password</label>
-<input type="password" id="new-password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{9,}$" autocomplete="new-password" />
+<input type="password" id="new-password" pattern="^(?=.*[A-Z])(?=.*\d).{9,}$" autocomplete="new-password" />
 <div id="status" aria-live="polite"></div>
 
 <password-toggle data-input-id="new-password" data-status-id="status">
