@@ -19,7 +19,7 @@
   },
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "3.0.0-beta.1",
+    "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-fetch": "^4.0.1",
     "@11ty/eleventy-img": "^4.0.2",
     "@11ty/eleventy-plugin-bundle": "^2.0.2",
