@@ -51,13 +51,6 @@
     </script>
 
     <!-- assets the situation -->
-    <link
-      href="/fonts/Tanker-Regular.woff2"
-      rel="preload"
-      as="font"
-      type="font/woff2"
-      crossorigin
-    />
     <link rel="stylesheet" href="/css/themes.css" webc:keep />
     <link rel="stylesheet" href="/css/styles.css" webc:keep />
     <style @raw="getCss(page.url)" webc:keep></style>
