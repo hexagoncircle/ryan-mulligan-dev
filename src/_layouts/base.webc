@@ -25,6 +25,7 @@
     <meta name="og:title" :content="metaTitle(title)" />
     <meta name="og:description" :content="metaDescription(description)" />
     <meta property="og:image" :content="metaOGImage(ogImage)" />
+    <meta name="fediverse:creator" content="@hexagoncircle@fosstodon.org" />
 
     <!-- [deep breath] me, me, me, me, meeee -->
     <link href="https://github.com/hexagoncircle" rel="me" />
