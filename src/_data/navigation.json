@@ -64,6 +64,11 @@
       "url": "https://github.com/hexagoncircle"
     },
     {
+      "id": "bluesky",
+      "label": "Bluesky",
+      "url": "https://bsky.app/profile/ryanmulligan.dev"
+    },
+    {
       "id": "linkedin-fill",
       "label": "LinkedIn",
       "url": "https://www.linkedin.com/in/mulliganryan/"
