@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The pixel canvas shimmer effect
+title: The Pixel Canvas Shimmer Effect
 description: The one about a Web Component that reveals a shimmering pixel background when its parent element is hovered.
 ogImage: /social/pixel-canvas.png
 date: 2024-12-03
