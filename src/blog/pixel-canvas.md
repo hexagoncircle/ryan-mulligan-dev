@@ -29,7 +29,7 @@ The `pixel-canvas` stretches to the edges of the parent container. When the pare
 
 The custom element has a few optional attributes available to customize the effect. Check out the CodePen demo's html panel to see how each variation is made.
 
-- `data-colors` takes a comma separated set of color values.
+- `data-colors` takes a comma separated list of color values.
 - `data-gap` sets the amount of space between each pixel.
 - `data-speed` controls the general duration of the shimmer. This value is slightly randomized on each pixel to make give it, in my opinion, a little more character.
 
