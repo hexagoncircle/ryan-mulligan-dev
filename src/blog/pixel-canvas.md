@@ -32,5 +32,6 @@ The custom element has a few optional attributes available to customize the effe
 - `data-colors` takes a comma separated list of color values.
 - `data-gap` sets the amount of space between each pixel.
 - `data-speed` controls the general duration of the shimmer. This value is slightly randomized on each pixel that, in my opinion, adds a little more character.
+- `data-no-focus` disables the animation and removes focus event listeners. By default the animation will play when any sibling element is focused.
 
 There's likely more testing and tweaking necessary before I'd consider using this anywhere, but my goal was to run with this inspiration simply for the joy of coding. What a mesmerizing concept. I tip my hat to the creative engineers over at Clerk.
