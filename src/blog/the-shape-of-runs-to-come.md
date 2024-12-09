@@ -20,6 +20,6 @@ There's certainly some layer of nostalgia, my younger spirit awakened and reigni
 
 > Can I scream?!
 
-Oh my goodness, yes. Yes you can. I quickly morphed into a runner decades younger. I had erupted, my entire being barreling full speed ahead. The midpoint of this track pulls out the same sequence of build up, drop off, and teasing long enough before unleashing another loud burst of noise, driving to its explosive outro. As the song wraps up, "The New Beat!" is howled repeatedly to a cheering crowd that, I would imagine, had not been standing still.
+Oh my goodness, yes. Yes you can. I quickly morphed into a runner decades younger. I had erupted, my entire being barreling full speed ahead. The midpoint of this track pulls out the same sequence of build up, drop off, and teasing just long enough before unleashing another loud burst of noise, driving to its explosive outro. As the song wraps up, "The New Beat!" is howled repeatedly to a cheering crowd that, I would imagine, had not been standing still.
 
 I definitely needed a long stretch after this run.
