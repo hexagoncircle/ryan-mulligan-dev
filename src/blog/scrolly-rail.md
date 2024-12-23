@@ -32,8 +32,6 @@ Wrap any collection of items with the custom tag:
 </scrolly-rail>
 ```
 
-The custom element script checks if the direct child within `scrolly-rail` is a wrapper element, which is true for the above HTML.
-
 While it is possible to have items without a wrapper element, if the custom element script runs and button controls are connected, _sentinel_ elements are inserted at the start and end bounds of the scroll container. Wrapping the items makes controlling spacing between them much easier, avoiding any undesired gaps appearing due to these sentinels. We'll discover [what the sentinels are for](#observing-inline-scroll-bounds) later in the post.
 {.callout}
 
