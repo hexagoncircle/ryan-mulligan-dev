@@ -93,7 +93,7 @@ Now clicking these buttons will pull the previous or next set of items into view
 
 ### Observing inline scroll bounds
 
-Notice that the "previous" button element in the demo's top component. As we begin to scroll to the right, the button appears. Scrolling to the end causes the "next" button to disappear. Similarly, for the bottom component we can see either button fade when their respective scroll bound is reached.
+Let's review the demo's top component. As we begin to scroll to the right, the "previous" button appears. Scrolling to the component's end causes the "next" button to disappear. Similarly, for the bottom component we can see either button fade when their respective scroll bound is reached.
 
 Recall the sentinels discussed earlier in this post? With a little help from the [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API), the component watches for either sentinel intersecting the visible scroll area, indicating that we've reached a boundary. When this happens, a `data-bound` attribute is toggled on the corresponding `button` element. This presents an opportunity to alter styles and provide additional visual feedback.
 
