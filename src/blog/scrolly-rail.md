@@ -67,11 +67,11 @@ scrolly-rail li {
 }
 ```
 
-As mentioned earlier, this is everything our component needs for layout, inline scrolling, and scroll snapping. Note that the [CodePen demo](https://codepen.io/hexagoncircle/pen/yyBMGrL) takes it a step further with some additional padding and margin styles (check out the demo CSS panel). However, if we'd like to wire up controls, we'll need to include the custom element script in our HTML.
+As mentioned earlier, this is everything our component needs for layout, inline scrolling, and scroll snapping. Note that the [CodePen demo](https://codepen.io/hexagoncircle/pen/yyBMGrL) takes it a step further with some additional padding and margin styles (check out the demo CSS panel). If we'd like to wire up previous/next controls, we'll need to include the custom element script in our HTML.
 
 ## The custom element script
 
-Include the script file on the page.
+Add the script file on the page.
 
 ```html
 <script type="module" src="scrolly-rail.js"></script>
@@ -97,7 +97,7 @@ Now clicking these buttons will pull the previous or next set of items into view
 
 Notice that the "previous" button element in the demo's top component. As we begin to scroll to the right, the button appears. Scrolling to the end causes the "next" button to disappear. Similarly, for the bottom component we can see either button fade when their respective scroll bound is reached.
 
-Recall the sentinels discussed earlier in this post? With a little help from the [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API), the component watches for either sentinel intersecting the visible scroll area, indicating that we've reached a boundary. When this happens, a `data-bound` attribute is toggled on the respective `button`. This presents the opportunity to alter styles and provide additional visual feedback.
+Recall the sentinels discussed earlier in this post? With a little help from the [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API), the component watches for either sentinel intersecting the visible scroll area, indicating that we've reached a boundary. When this happens, a `data-bound` attribute is toggled on the corresponding `button` element. This presents an opportunity to alter styles and provide additional visual feedback.
 
 ```scss
 .btn-scrolly-rail {
