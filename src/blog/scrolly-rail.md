@@ -52,14 +52,19 @@ scrolly-rail {
 }
 ```
 
-- When JavaScript is enabled, sentinel elements are inserted before and after the unordered list (`<ul>`) element in the HTML example above. Flexbox ensures that the sentinels are positioned on either side of the element. We'll find out why later in this post.
+- When JavaScript is enabled, sentinel elements are inserted before and after the unordered list (`ul`) element in the HTML example above. Flexbox ensures that the sentinels are positioned on either side of the element. We'll find out why later in this post.
 - Containing the [overscroll behavior](https://developer.mozilla.org/en-US/docs/Web/CSS/overscroll-behavior#contain) will prevent us accidentally triggering browser navigation when scrolling beyond either edge of the `scrolly-rail` container.
 - [`scroll-snap-type`](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-type) enforces mandatory scroll snapping.
 - Smooth scrolling behavior applies when items scroll into view on button click, or if interactive elements (links, buttons, etc.) inside items overflowing the visible scroll area are focused.
 
-Finally, [`scroll-snap-align: start`](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-align) should be set on the elements that will snap into place. This snap position aligns an item to the beginning of the scroll snap container. In the above HTML, this would apply to the `<li>` elements.
+Any wrapper element, such as the example `ul`, will need a flex display to position items in a single row and introduce gap spacing if desired. Then [`scroll-snap-align: start`](https://developer.mozilla.org/en-US/docs/Web/CSS/scroll-snap-align) is applied to each item. This aligns the targeted snap item to the inline start of the component's scroll snap area. In the HTML example, this would apply to the `li` elements.
 
 ```scss
+scrolly-rail ul {
+  display: flex;
+  gap: 1rem;
+}
+
 scrolly-rail li {
   scroll-snap-align: start;
 }
