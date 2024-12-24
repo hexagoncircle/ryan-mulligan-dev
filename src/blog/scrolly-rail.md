@@ -15,7 +15,9 @@ Behold! The holy grail of scrolling rails... the `scrolly-rail`!
 
 {% codepen "https://codepen.io/hexagoncircle/pen/yyBMGrL" %}
 
-I'm being quite facetious about the "holy grail" part, if that's not clear. 😅 This is an initial try on an idea I'll likely experiment more with. I've shared some thoughts on potential [future improvements](#future-improvements) at the end of the post. With that out of the way, let's explore!
+I'm being quite facetious about the "holy grail" part, if that's not clear. 😅 This is an initial try on an idea I'll likely experiment more with. I've shared some thoughts on potential [future improvements](#future-improvements) at the end of the post. On top of that, after I began experimenting, I discovered the possibility of [CSS Carousels](https://nerdy.dev/css-wishlist-2025#css-carousel). If those scroll enhancing features become a cross browser standard, then we'll be able to generate scroll buttons and more, all with CSS. That's a _lot_ of power.
+
+With all of that out of the way, let's explore!
 
 ## The HTML
 
