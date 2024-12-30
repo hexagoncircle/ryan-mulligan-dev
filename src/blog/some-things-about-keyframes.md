@@ -100,9 +100,9 @@ Under ["Timing functions for keyframes"](https://www.w3.org/TR/css-animations-1/
 
 > A keyframe style rule may also declare the timing function that is to be used as the animation moves to the next keyframe.
 
-Toggle open the CSS panel in the ensuing [CodePen demo](https://codepen.io/hexagoncircle/full/yyBozpm) and look for the `@keyframes` block. Inside one of the percentages, a custom easing is applied using the [`linear()` CSS function](https://developer.mozilla.org/en-US/docs/Web/CSS/easing-function/linear) to give each element some wobble as it lands.
+Toggle open the CSS panel in the ensuing CodePen demo and look for the `@keyframes` block. Inside one of the percentages, a custom easing is applied using the [`linear()` CSS function](https://developer.mozilla.org/en-US/docs/Web/CSS/easing-function/linear) to give each element some wobble as it lands.
 
-{% codepen "https://codepen.io/hexagoncircle/pen/yyBozpm" %}
+{% codepen "https://codepen.io/hexagoncircle/pen/yyBozpm", "500" %}
 
 I think that looks quite nice! Adding keyframe-specific easing brings an extra layer of polish and vitality to our animations. One minor snag, though: We can't set a CSS variable as an `animation-timing-function` value. This unfortunately means we're unable to access shared custom easing values, say from a library or design system.
 
