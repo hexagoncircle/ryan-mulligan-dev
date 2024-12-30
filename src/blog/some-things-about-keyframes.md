@@ -78,7 +78,7 @@ Another semi-interesting qwirk is that we can rearrange the keyframe order.
 }
 ```
 
-["Resolving Duplicates" from the MDN docs](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes#resolving_duplicates) mentions that `@keyframes` rules don't cascade, which explains why this order still returns the expected animation. Customizing the order could be useful for grouping property changes within a `@keyframes` block as an animation becomes more complex.
+["Resolving Duplicates"](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes#resolving_duplicates) from the MDN docs mentions that `@keyframes` rules do not cascade, which explains why this order still returns the expected animation. Customizing the order could be useful for grouping property changes within a `@keyframes` block as an animation becomes more complex.
 
 That same section of the MDN docs also points out that cascading _does_ occur when multiple keyframes define the same percentage values. So, in the following `@keyframes` block, the second `translate` declaration overrides the first.
 
