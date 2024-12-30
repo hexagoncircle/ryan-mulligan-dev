@@ -16,7 +16,7 @@ This is a quick post pointing out some other minor particulars:
 
 ## Duplicate keyframe properties
 
-Imagine an "appearance" animation where an element slides down, scales up, and changes color. The starting `0%` keyframe sets the element's y-axis position and scales down the size. The element glides down to its initial position for the full duration of the animation. About halfway through, the element's size is scaled back up and the background color changes. At first, we might be tempted to duplicate the `background-color` and `scale` properties in both `0%` and `50%` keyframe blocks.
+Imagine an "appearance" animation where an element slides down, scales up, and changes color. The starting `0%` keyframe sets the element's y-axis offset position and scales down the size. When the animation is triggered, the element glides up from the offset to its central position for the full duration of the animation. About halfway through, the element's size is scaled back up and the background color changes. At first, we might be tempted to duplicate the `background-color` and `scale` properties in both `0%` and `50%` keyframe blocks.
 
 ```css
 @keyframes animate {
