@@ -6,7 +6,7 @@ ogImage: /social/some-things-about-keyframes.png
 date: 2024-12-30
 ---
 
-Whether you've barely scratched the surface of keyframe animations in CSS or fancy yourself as a seasoned pro, I suggest reading [An Interactive Guide to Keyframe Animations](https://www.joshwcomeau.com/animation/keyframe-animations/). Josh (as always) does an impeccable deep dive that includes interactive demos for multi-step animations, loops, setting dynamic values, and more.
+Whether you've barely scratched the surface of keyframe animations in CSS or fancy yourself a seasoned pro, I suggest reading [An Interactive Guide to Keyframe Animations](https://www.joshwcomeau.com/animation/keyframe-animations/). Josh (as always) does an impeccable deep dive that includes interactive demos for multi-step animations, loops, setting dynamic values, and more.
 
 This is a quick post pointing out some other minor particulars:
 
@@ -78,7 +78,27 @@ Another semi-interesting qwirk is that we can rearrange the keyframe order.
 }
 ```
 
-["Resolving Duplicates"](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes#resolving_duplicates) from the MDN docs mentions that `@keyframes` rules do not cascade, which explains why this order still returns the expected animation. Customizing the order could be useful for grouping property changes within a `@keyframes` block as an animation becomes more complex.
+Just for kicks, here is a version that swaps `0%` and `100%` for their corresponding `from` and `to` keyword values.
+
+```css
+@keyframes animate {
+  from {
+    translate: 0 100%;
+  }
+  to {
+    background-color: green;
+    scale: 1;
+    translate: 0 0;
+  }
+  /* Set and hold values until halfway through animation */
+  from, 50% {
+    background-color: red;
+    scale: 0.5;
+  }
+}
+```
+
+The ["Resolving Duplicates"](https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes#resolving_duplicates) section from the MDN docs mentions that `@keyframes` rules do not cascade, which explains why this order still returns the expected animation. Customizing the order could be useful for grouping property changes within a `@keyframes` block as an animation becomes more complex.
 
 That same section of the MDN docs also points out that cascading _does_ occur when multiple keyframes define the same percentage values. So, in the following `@keyframes` block, the second `translate` declaration overrides the first.
 
