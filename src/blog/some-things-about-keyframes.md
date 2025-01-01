@@ -58,7 +58,7 @@ Although this functions correctly, it requires us to manage the same property de
 
 ## Keyframe rules order
 
-Another semi-interesting qwirk is that we can rearrange the keyframe order.
+Another semi-interesting quirk is that we can rearrange the keyframe order.
 
 ```css
 @keyframes animate {
