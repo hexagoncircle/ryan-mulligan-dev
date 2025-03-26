@@ -32,7 +32,7 @@ Always via laptop, never on my phone. I manage posts in markdown files, push the
 
 ## When do you feel most inspired to write?
 
-Typically I'll write up a post about something new I discovered while on my wild coding escapades, whether at work or in my free time. If I have trouble finding solutions to my particular problem on the world wide webs, I'm even more inclined to post about it. Most of my ideas are pursued on weekends, but I've had some early morning or late night weekday sessions.
+Typically I'll write up a post about something new I discovered while on my wild coding escapades, whether it's solving an issue at work or exploring new web features in my free time. If I have trouble finding solutions to my particular problem on the world wide net, I'm even more inclined to post about it. Most of my ideas are pursued on weekends, but I've had some early morning or late night weekday sessions.
 
 What I'm trying to say is that anytime is a good time for blogging. It's like pizza when it's on a bagel.
 
