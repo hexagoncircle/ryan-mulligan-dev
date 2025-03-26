@@ -20,7 +20,7 @@ Anyway, I pretty much stopped blogging for a while after high school. I turned m
 
 ## What platform are you using to manage your blog and why?
 
-At the moment and the forseeable future, I'm using [11ty](https://www.11ty.dev/). I published a short post about [migrating to 11ty](https://ryanmulligan.dev/blog/migrating-to-11ty/) back in 2021. I still feel the same sentiments and still admire those same people. And many new community friends as well!
+At the moment and the foreseeable future, I'm using [11ty](https://www.11ty.dev/). I published a short post about [migrating my site to 11ty](https://ryanmulligan.dev/blog/migrating-to-11ty/) back in 2021. I still feel the same sentiments and still admire those same people. And many new community friends as well!
 
 ## Have you blogged on other platforms before?
 
