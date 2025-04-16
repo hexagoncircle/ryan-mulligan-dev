@@ -72,6 +72,11 @@
       "id": "linkedin-fill",
       "label": "LinkedIn",
       "url": "https://www.linkedin.com/in/mulliganryan/"
+    },
+    {
+      "id": "buymeacoffee",
+      "label": "Buy me a coffee",
+      "url": "https://buymeacoffee.com/ryanmulligan"
     }
   ]
 }
