@@ -12,7 +12,7 @@ I now realize there's a much simpler approach using [container query units](http
 
 ## The demo
 
-Switch the translate option to `100cqi/cqb - 100%` then click and hold the container to witness the magic. Try changing the element dimensions or resizing the parent container using its handle on the bottom right.
+Select the `container query units` option if it's not already, then click and hold the container to witness the magic. Try changing the element dimensions or resizing the parent container using its handle on the bottom right.
 
 {% codepen "https://codepen.io/hexagoncircle/pen/gbPxYaW" %}
 
@@ -47,7 +47,7 @@ Individual transform properties are also available and well supported in modern 
 Keep in mind that there's a pre-defined order for independent transform properties. Stefan's article explains [the fundamental differences between transform functions and individual transforms](https://www.stefanjudis.com/blog/order-in-css-transformation-transform-functions-vs-individual-transforms/). Not an issue with our current examples, but something to remember when multiple individual transforms are being applied.
 {.callout}
 
-Check out [the demo](#the-demo) with `x` checked and the `100%` translate option selected. When we click and hold the container, the element transitions the width of itself to the right. We can see that this percentage is based on the element's dimensions. While handy, it doesn't achieve our goal of moving the element all the way to the opposite side.
+Check out [the demo](#the-demo) with `x` checked and the `percentage` option selected. When we click and hold the container, the element transitions the width of itself to the right. We can see that this percentage is based on the element's dimensions. While handy, it doesn't achieve our goal of moving the element all the way to the opposite side.
 
 ### Explicit dimensions
 
@@ -93,7 +93,7 @@ Fair enough. So we'll focus on moving the element using transform properties. It
 
 ## The solution
 
-In the demo's controls, switch the translate option to `100cqi/cqb - 100%`. Click and hold the container. Watch as the element smoothly transitions to the opposite side of the parent container. Try changing the element dimensions using the sliders, or resize the parent with the resize handle on its bottom right. It _still_ works!
+In the demo's controls, check that `container query units` is selected. Click and hold the container. Watch as the element smoothly transitions to the opposite side of the parent container. Try changing the element dimensions using the sliders, or resize the parent with the resize handle on its bottom right. It _still_ works!
 
 Here's the gist when we only need to transition to the opposite side of the parent horizontally.
 
