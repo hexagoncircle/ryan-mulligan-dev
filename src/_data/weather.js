@@ -3,8 +3,8 @@ import EleventyFetch from "@11ty/eleventy-fetch";
 const url = new URL("https://api.open-meteo.com/v1/forecast");
 
 const params = {
-  latitude: 33.767,
-  longitude: -118.1892,
+  latitude: 47.620422,
+  longitude: -122.349358,
   current: "temperature_2m,weather_code",
   temperature_unit: "fahrenheit",
 };
