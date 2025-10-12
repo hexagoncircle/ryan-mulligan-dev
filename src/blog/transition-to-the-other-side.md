@@ -141,6 +141,7 @@ Take a moment to enjoy the wonder and magic that is modern CSS.
 
 ## Helpful resources
 
-- [Order in CSS transformations – transform functions vs individual transforms](https://www.stefanjudis.com/blog/order-in-css-transformation-transform-functions-vs-individual-transforms/)
 - [Container Queries and Units](https://frontendmasters.com/blog/container-queries-and-units/)
 - [How to create high-performance CSS animations](https://web.dev/articles/animations-guide)
+- [Order in CSS transformations – transform functions vs individual transforms](https://www.stefanjudis.com/blog/order-in-css-transformation-transform-functions-vs-individual-transforms/)
+- [Digging Into CSS Logical Properties](https://ishadeed.com/article/css-logical-properties/)
