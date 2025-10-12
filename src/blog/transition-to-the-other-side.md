@@ -20,14 +20,14 @@ Switch the translate option to `100cqi/cqb - 100%` then click and hold the conta
 
 ## Transition exploration
 
-The following CSS will transition an element smoothly to the right when its parent container is hovered:
+The following CSS will transition an element smoothly to the right when its parent container is pressed:
 
 ```scss
 .element {
   transition: transform 200ms ease-out;
 }
 
-.parent:hover .element {
+.parent:active .element {
   transform: translateX(100%);
 }
 ```
@@ -39,7 +39,7 @@ Individual transform properties are also available and well supported in modern 
   transition: translate 200ms ease-out;
 }
 
-.parent:hover .element {
+.parent:active .element {
   translate: 100%;
 }
 ```
@@ -62,7 +62,7 @@ If we knew the exact dimensions of the parent container, we could declare a `cal
   transition: translate 200ms ease-out;
 }
 
-.parent:hover .element {
+.parent:active .element {
   translate: calc(300px - 100%);
 }
 ```
@@ -81,7 +81,7 @@ Properties like `top` and `left` are available to us. Could we transition the el
   transition-property: translate, left;
 }
 
-.parent:hover .element {
+.parent:active .element {
   left: 100%;
   translate: -100%;
 }
@@ -106,7 +106,7 @@ Here's the gist when we only need to transition to the opposite side of the pare
   transition: translate 200ms ease-out;
 }
 
-.parent:hover .element {
+.parent:active .element {
   translate: calc(100cqi - 100%);
 }
 ```
@@ -122,7 +122,7 @@ If we want to transition vertically or in both directions, we'll need the `size`
   transition: translate 200ms ease-out;
 }
 
-.parent:hover .element {
+.parent:active .element {
   translate: 0 calc(100cqb - 100%);
 }
 ```
