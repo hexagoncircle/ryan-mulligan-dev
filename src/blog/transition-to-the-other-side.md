@@ -87,7 +87,7 @@ Properties like `top` and `left` are available to us. Could we transition the el
 }
 ```
 
-Seems that we can, at least in the context of the demo. However, animating position properties has a negative impact on layout and creates performance issues. The browser works harder to recalculate element positions, repaint pixels, and then composite the result. This inevitably leads to janky or sluggish animations.
+Seems that we can, at least in the context of the demo. However, animating position properties has a negative impact on layout and creates performance issues. The browser works harder to recalculate element positions, repaint pixels, and then composite the result. This inevitably leads to janky or sluggish animations. GPU-accelerated properties such as  `transform` and `translate` avoid triggering repaints so animations run buttery-smooth and fluid.
 
 Fair enough. So we'll focus on moving the element using transform properties. It's time to reveal the strongest solution.
 
