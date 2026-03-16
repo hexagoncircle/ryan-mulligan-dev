@@ -25,7 +25,6 @@ permalink: "/"
         and <span @text="$data.weather.status" webc:nokeep></span></template
       >.
     </li>
-    <li webc:if="$data.spotify">I was listening to <last-played-track></last-played-track></li>
   </ul>
   <h2>Most recent articles</h2>
   <article-list count="3"></article-list>
