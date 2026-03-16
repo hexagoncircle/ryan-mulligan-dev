@@ -25,6 +25,10 @@ permalink: "/"
         and <span @text="$data.weather.status" webc:nokeep></span></template
       >.
     </li>
+    <li>
+      I was listening to
+      <a href="https://fugazi.bandcamp.com/track/full-disclosure">Full Disclosure</a> by Fugazi
+    </li>
   </ul>
   <h2>Most recent articles</h2>
   <article-list count="3"></article-list>

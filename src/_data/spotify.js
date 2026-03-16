@@ -38,6 +38,11 @@ const getAccessToken = async () => {
 export default async () => {
   let { access_token } = await getAccessToken();
 
+  if (!access_token) {
+    console.warn("No access token found, skipping Spotify data retrieval");
+    return;
+  }
+
   let data = await EleventyFetch(RECENTLY_PLAYED_ENDPOINT + "?limit=10", {
     duration: "10m",
     type: "json",
