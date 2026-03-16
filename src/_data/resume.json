@@ -36,6 +36,19 @@
   "introduction": "<p>I'm a creative front-end engineer with over a decade of experience building for the web. I've developed a well-rounded skillset servicing both product and marketing teams. My back catalog of roles range from individual contribution to management, team building, and leadership.</p><p>I perpetually advocate for modern web standards, embrace the web platform, and believe in the rule of least power—use the simplest language to do the job well, then scale as it becomes necessary. My priorities are influenced by empathy: lift up those around me so we may succeed together, always care for the end user, and deliver a performant, inclusive, and accessible web.</p>",
   "experience": [
     {
+      "company": "Function Health",
+      "location": "Remote",
+      "roles": [
+        {
+          "title": "Senior Design Engineer",
+          "type": "Full-time",
+          "startDate": "August 2025",
+          "endDate": "Present",
+          "description": "Platform and infrastructure team member working as a cross-team collaborator prototyping interfaces, animations, and new features that align with company strategy and product goals. Developing a universal component and token library to be used in apps on web, iOS, and Android. Exploring AI tooling in an effort to streamline design contributions to the codebase."
+        }
+      ]
+    },
+    {
       "company": "Netlify",
       "location": "Remote",
       "roles": [
@@ -43,7 +56,7 @@
           "title": "Staff Software Engineer",
           "type": "Full-time",
           "startDate": "February 2022",
-          "endDate": "Present",
+          "endDate": "July 2025",
           "description": "Engineering team leader building web properties within the marketing ecosystem. Managed team and web projects, developed new, creative facets for our sites, architected content schemas for our CMS, and connected multiple datasets to our front end templates and visual editor. Actively worked on site rebuild, foundational design token system and component architecture while also maintaining legacy codebases. Lead team enablement strategies to streamline campaign creation."
         }
       ]
