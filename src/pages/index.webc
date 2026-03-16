@@ -27,7 +27,15 @@ permalink: "/"
     </li>
     <li>
       I was listening to
-      <a href="https://fugazi.bandcamp.com/track/full-disclosure">Full Disclosure</a> by Fugazi
+      <a class="last-played-track" href="https://fugazi.bandcamp.com/track/full-disclosure"
+        ><inline-svg
+          class="icon"
+          aria-hidden="true"
+          src="./public/icons/music-notes.svg"
+        ></inline-svg
+        >Full Disclosure</a
+      >
+      by Fugazi
     </li>
   </ul>
   <h2>Most recent articles</h2>
@@ -94,6 +102,21 @@ permalink: "/"
 
   .cta {
     --flow-space: var(--space-m);
+  }
+
+  .last-played-track {
+    --icon-size: 1em;
+    --icon-offset: 0.1em;
+
+    position: relative;
+    margin-inline-start: calc(var(--icon-size) + var(--icon-offset));
+
+    .icon {
+      position: absolute;
+      top: 0.1em;
+      right: calc(100% + var(--icon-offset));
+      text-decoration: none;
+    }
   }
 
   .social-link {
