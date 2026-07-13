@@ -1,7 +1,7 @@
 {
   "name": "Ryan Mulligan",
   "pronouns": "he/him",
-  "title": "Front-end Engineer + Creative Developer",
+  "title": "Senior Design Engineer",
   "info": [
     {
       "category": "Current Location",
@@ -33,7 +33,7 @@
       "icon": "linkedin"
     }
   ],
-  "introduction": "<p>I'm a creative front-end engineer with over a decade of experience building for the web. I've developed a well-rounded skillset servicing both product and marketing teams. My back catalog of roles range from individual contribution to management, team building, and leadership.</p><p>I perpetually advocate for modern web standards, embrace the web platform, and believe in the rule of least power—use the simplest language to do the job well, then scale as it becomes necessary. My priorities are influenced by empathy: lift up those around me so we may succeed together, always care for the end user, and deliver a performant, inclusive, and accessible web.</p>",
+  "introduction": "<p>I'm a design engineer with over a decade of experience building for the web, working at the intersection of design craft and frontend development. My work spans design systems, interactive experiences, content architecture, and prototyping that closes the gap between static design and production-ready interfaces. I advocate for modern web standards and the rule of least power: simple technologies first, scaling as necessary, always prioritizing a performant, inclusive, and accessible web.</p>",
   "experience": [
     {
       "company": "Function Health",
@@ -44,7 +44,7 @@
           "type": "Full-time",
           "startDate": "August 2025",
           "endDate": "Present",
-          "description": "Platform and infrastructure team member collaborating across teams to prototype interfaces, animations, and new features aligned with product strategy. Developing a universal component and design token library used across web, iOS, and Android applications. Exploring AI tooling to streamline design contributions to the codebase."
+          "description": "Cross-team collaborator prototyping interfaces, animations, and new features that align with company strategy and product goals. Focused on the latest design system, documentation, and building out the universal cross-platform component library for Function Health's web and native apps. Refactoring current codebase while working on new component implementation strategies. Enhancing our design-to-engineering handoff process utilizing agentic workflows and AI experimentation to help support future product enhancements and features."
         }
       ]
     },
@@ -103,7 +103,7 @@
           "type": "Full-time",
           "startDate": "June 2017",
           "endDate": "May 2018",
-          "description": "Core member of Global UI Engineering Team focused on toolkit of components used across applications. Led the Front-end Improvements Team, providing engineering team guidance, development direction, and code contributions for quality and consistency across app presentation layers."
+          "description": "Core member of the Global UI Engineering Team, building and maintaining a shared component toolkit used across Expedia's application suite. Led the Front-End Improvements Team, providing engineering direction and code contributions to improve quality and consistency across product presentation layers."
         },
         {
           "title": "Senior Design Engineer",
@@ -123,7 +123,7 @@
           "type": "Full-time",
           "startDate": "May 2012",
           "endDate": "May 2016",
-          "description": "Front-end web development, Drupal site theming, admin/client-facing site configuration, custom module development, and some back-end development. Estimated new projects and feature scope. Information architecture and content schemas for new site builds."
+          "description": "Front-end web development across a range of client projects, including site architecture, content modeling, and custom development. Scoped new projects, defined information architecture, and contributed to both front-end and back-end implementation."
         }
       ]
     }
@@ -196,7 +196,7 @@
       "Radix UI",
       "Tailwind CSS",
       "Styled Components",
-      "Generative AI tooling",
+      "AI workflows/skills",
       "Sanity",
       "Contentful",
       "GraphQL",
