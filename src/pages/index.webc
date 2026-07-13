@@ -27,15 +27,15 @@ permalink: "/"
     </li>
     <li>
       I was listening to
-      <a class="last-played-track" href="https://fugazi.bandcamp.com/track/full-disclosure"
+      <a class="last-played-track" href="https://ulrikaspacek.bandcamp.com/track/picto"
         ><inline-svg
           class="icon"
           aria-hidden="true"
           src="./public/icons/music-notes.svg"
         ></inline-svg
-        >Full Disclosure</a
+        >Picto</a
       >
-      by Fugazi
+      by Ulrika Spacek
     </li>
   </ul>
   <h2>Most recent articles</h2>
