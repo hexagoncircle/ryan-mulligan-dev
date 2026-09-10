@@ -77,18 +77,6 @@ description: "A summary of Ryan Mulligan's career, qualifications, and education
     <dd @text="education.degree"></dd>
     <dd><time @text="education.startDate"></time>—<time @text="education.endDate"></time></dd>
   </dl>
-
-  <h2 id="awards" class="section-title">Awards</h2>
-  <dl class="awards | flow">
-    <div webc:for="award of awards">
-      <dt>
-        <strong @text="award.title"></strong>
-      </dt>
-      <dd class="text-label">
-        <span @text="award.company"></span> • <span @text="award.date"></span>
-      </dd>
-    </div>
-  </dl>
 </section>
 
 <style>

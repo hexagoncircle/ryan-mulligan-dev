@@ -176,14 +176,18 @@
       "HTML",
       "CSS",
       "JavaScript",
+      "TypeScript",
       "Accessibility",
       "Performance",
       "Intrinsic design",
       "Animation",
       "Web Components",
       "Design systems",
+      "Design tokens",
+      "Component APIs",
       "Prototyping",
-      "TypeScript",
+      "Design-to-code",
+      "AI-assisted development",
       "Astro",
       "Next.js",
       "React",
@@ -196,15 +200,14 @@
       "Radix UI",
       "Tailwind CSS",
       "Styled Components",
-      "AI workflows/skills",
       "Sanity",
       "Contentful",
       "GraphQL",
       "GROQ",
       "Data architecture",
       "Structured content",
-      "Website and app development",
-      "Team leadership and mentoring"
+      "Leadership",
+      "Mentoring"
     ]
   }
 }
