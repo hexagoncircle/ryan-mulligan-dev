@@ -27,15 +27,15 @@ permalink: "/"
     </li>
     <li>
       I was listening to
-      <a class="last-played-track" href="https://ulrikaspacek.bandcamp.com/track/picto"
+      <a class="last-played-track" href="https://oliviatremorcontrol.bandcamp.com/track/timewaster"
         ><inline-svg
           class="icon"
           aria-hidden="true"
           src="./public/icons/music-notes.svg"
         ></inline-svg
-        >Picto</a
+        >Timewaster</a
       >
-      by Ulrika Spacek
+      by The Olivia Tremor Control
     </li>
   </ul>
   <h2>Most recent articles</h2>
