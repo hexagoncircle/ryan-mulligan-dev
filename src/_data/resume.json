@@ -44,7 +44,7 @@
           "type": "Full-time",
           "startDate": "August 2025",
           "endDate": "Present",
-          "description": "Cross-team collaborator prototyping interfaces, animations, and new features that align with company strategy and product goals. Focused on the latest design system, documentation, and building out the universal cross-platform component library for Function Health's web and native apps. Refactoring current codebase while working on new component implementation strategies. Enhancing our design-to-engineering handoff process utilizing agentic workflows and AI experimentation to help support future product enhancements and features."
+          "description": "Build and integrate Function Health’s cross-platform component library for web and native apps, designed for composability. Accessible, semantic, token-styled primitives combine into patterns and templates, so teams assemble consistent interfaces. Migrate legacy screens to this system, including member scheduling, clinician notes, and test-cycle flows. Set up an automated token pipeline that converts Product Design-owned token values into shared configuration and values for the apps. Write component guidelines and agent skills that help engineers and AI tools stay aligned with design intent."
         }
       ]
     },
@@ -90,7 +90,7 @@
           "type": "Full-time",
           "startDate": "July 2018",
           "endDate": "April 2019",
-          "description": "Helped build and manage a development at new remote location. Lead web engineer on multiple projects, presented project build specs, estimated feature scope, and worked directly with many clients as a technical liason. On management side, I mentored junior-level team members both in office and virtual."
+          "description": "Helped build and manage a development team at new remote location. Lead web engineer on multiple projects, presented project build specs, estimated feature scope, and worked directly with many clients as a technical liason. On management side, I mentored junior-level team members both in office and virtual."
         }
       ]
     },
@@ -184,10 +184,17 @@
       "Web Components",
       "Design systems",
       "Design tokens",
+      "Atomic design",
+      "Token pipelines",
+      "DTCG",
+      "Terrazzo",
+      "Figma variables",
+      "Cross-platform component architecture",
       "Component APIs",
       "Prototyping",
       "Design-to-code",
       "AI-assisted development",
+      "Agent skills",
       "Astro",
       "Next.js",
       "React",
@@ -199,6 +206,7 @@
       "Framer Motion",
       "Radix UI",
       "Tailwind CSS",
+      "NativeWind",
       "Styled Components",
       "Sanity",
       "Contentful",
